@@ -205,3 +205,10 @@ BUILT-101 的印字、透光塑料板、内部电灯芯和木金属框分别使�
 `tests/atlas-material-correction.test.ts` 对键帽、插座、冰箱内衬和门面、盆体、坐便座圈、机壳及钢刃的实际坐标断言材质；也检查书页与油墨、鱼各部位、玻璃瓶与塑料盖、仅换织物不影响陶瓷纸张、外国 ID 冲突、回滚及原生/GLB 往返。MCP 另查询盆、座圈、毛巾格子，并让 UI 实际显示织物独立换色与一次撤销。
 
 上一轮整改报告：[分类对照](../artifacts/atlas/atlas-20261003063047/material-classification.html)。M012 当时 144 件的[材质用量与复核](../artifacts/atlas/atlas-20261003092028/material-audit.json)、[M011 几何修正实图](../artifacts/atlas/atlas-20261003081509/festival-revision.html)和[十二份总览支撑审计](../artifacts/atlas/atlas-20261003092028/gallery-support-audit.json)保留实际范围。M002 壁挂柜未安装支架的既有告警仍存在；分类复核不等于完成安装或美术验收。
+
+
+## M017 窗带、实体暖牌与渡口显示件
+
+本批沿用125个独立用途角色；不新增同色重复角色。BUILT-106/111/115的玻璃、橡胶密封、木梃和金属压条分别赋值。BUILT-109的实体暖牌使用signDiffuser、printedDark和warm，不是屏幕。BUILT-113/114分别使用screen、displayGlyph、displayWhite、glass、polymerDark；静态锚/船画面不使用灯芯、印墨或纸页。
+
+`tests/atlas-waterfront.test.ts`与`scripts/verify-waterfront-mcp.ts`查询实际坐标，验证玻璃/屏幕/像素/透光板外观包仅改外观，体素、接口、角色类别、碰撞和其他材质不变，一次撤销完整恢复。204件当前候选的实际材质用量重新审查，人工美术验收仍未完成。

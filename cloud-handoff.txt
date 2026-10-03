@@ -1,3 +1,13 @@
+当前接续目标（优先于下面迁移时快照）：完成3d资产转化，按图册批次验证并推送远程origin/main。用户已明确授权每批推送现有远程分支，不需重新确认。
+有效进度源：projects/conversion-goal.json 与 projects/atlas-production-index.json。
+M017已制作并验证，下一批M018；推送状态以Git远程为准。M001–M017累计204个参考候选、223个基础母版（含19个旧候选），原清单已生成278项/未生成790项；参考尚余589条。已验收美术仍为0。
+M017检查：187项测试（首轮184通过/3条旧数量断言失败，三条修正后全部复测通过）、6项本批专项、8项真实MCP、36张新截图。完整日志不把复测改称首轮全过。
+当前M017源码：src/production/atlas-waterfront.ts。实图及证据：artifacts/atlas/atlas-20261003163406。M017每件原生40mm，125个材质用途角色；屏幕、像素、玻璃、灯芯、实体牌面独立。渡口3个母版/9个实例、医馆窗带和前厅通道均有真实MCP验证。
+分批预览：npm run preview:atlas -- --sheets=M018（先实现和produce本批）。共享浏览器缓存设置PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。material预览关闭AO，纯色/材质截图都需保存。scripts/package-atlas-batch.py用于本批打包；老的package-reference-atlas.py需要未完整迁移的历史文件。
+提交前确认本批测试、MCP、原生/GLB、材质和截图记录齐全。不要把参考组合/变体改算基础母版；同母版重复实例不增加资产数量。剩余完整目标仍未完成。
+
+以下是迁移时历史快照，测试数字、目录及原机事实保留原值：
+
 云山体素工坊 · 云端接续说明
 
 这是用户要求迁移的独立体素资产工作区。仓库代码和数据为真实可编辑体素；图像是参考或实际截图，不能当作新生成的三维资产。

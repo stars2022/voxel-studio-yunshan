@@ -1,0 +1,84 @@
+{
+  "format": "yunshan.asset-conversion-goal",
+  "version": 1,
+  "objective": "完成3d资产转化",
+  "status": "in-progress",
+  "submission": {
+    "mode": "one-validated-batch-per-git-commit",
+    "remote": "origin",
+    "branch": "main",
+    "authorization": "用户明确要求每批推送到现有远程分支"
+  },
+  "scope": {
+    "referenceEntries": 793,
+    "referenceSheets": 67,
+    "catalogEntries": 1068
+  },
+  "progress": {
+    "referenceCandidates": 204,
+    "remainingReferenceEntries": 589,
+    "completedReferenceSheets": 17,
+    "catalogCounts": {
+      "catalogEntries": 1068,
+      "baseModels": 223,
+      "auxiliaryMasters": 1,
+      "assemblies": 51,
+      "variantEntries": 4,
+      "variantModels": 9,
+      "accepted": 0,
+      "notProduced": 790,
+      "generatedEntries": 278
+    },
+    "humanArtAccepted": 0
+  },
+  "activeBatch": {
+    "sheet": "M017",
+    "state": "validated",
+    "run": "atlas-20261003163406",
+    "ids": [
+      "BUILT-104",
+      "BUILT-105",
+      "BUILT-106",
+      "BUILT-107",
+      "BUILT-108",
+      "BUILT-109",
+      "BUILT-110",
+      "BUILT-111",
+      "BUILT-112",
+      "BUILT-113",
+      "BUILT-114",
+      "BUILT-115"
+    ],
+    "technicalValidation": {
+      "tests": 187,
+      "mcpChecks": 8,
+      "materialCandidatesReviewed": 204,
+      "nativeVoxels": 1615586,
+      "run": "atlas-20261003163406",
+      "report": "artifacts/atlas/atlas-20261003163406/validation.json"
+    },
+    "evidence": "artifacts/atlas/atlas-20261003163406",
+    "screenshots": 36,
+    "package": "artifacts/atlas/atlas-20261003163406/云山-M017-12件体素资产包.zip"
+  },
+  "nextBatch": "M018",
+  "workflow": [
+    "核对清单范围、明确米制尺寸并查看参考图",
+    "制作真实体素、独立材质角色、部件、安装接口及开口",
+    "验证实际占用材质、连通性、开口、拼装和一次撤销",
+    "生成原生文件与GLB并校验重导入",
+    "拍摄正面、等轴和材质实图，完成MCP验证",
+    "记录证据、打包、提交并推送main；继续下一批"
+  ],
+  "limitations": [
+    "reference-candidate为技术转化候选，不能视为人工美术验收",
+    "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
+    "当前仅M001–M017；剩余589条参考尚未完成"
+  ],
+  "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
+  "nextBatchNotes": [
+    "M018为BUILT-116、117、131–140，均为基础组件。",
+    "图册提示词把道路/墩帽误套为屏幕/穿戴件；按实际清单语义和参考图核对，不能照抄通用提示词。",
+    "M018含医馆标识、光带、道路面/中心线/横缝/双路肩/护栏和高架基础、墩柱、墩帽、拉结、路床，需独立母版与真实拼装接口。"
+  ]
+}

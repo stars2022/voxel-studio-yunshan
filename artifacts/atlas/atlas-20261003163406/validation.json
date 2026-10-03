@@ -1,0 +1,42 @@
+{
+  "run": "atlas-20261003163406",
+  "status": "passed",
+  "method": "full suite plus explicit rerun of all failed tests; latest geometry also rechecked in six M017-specific tests",
+  "distinctTestsPassed": 187,
+  "fullSuiteFirstRun": {
+    "tests": 187,
+    "pass": 184,
+    "fail": 3,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "failedTestsRerun": {
+    "tests": 3,
+    "pass": 3,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "latestM017Geometry": {
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "build": "passed",
+  "typecheckAfterPreviewFix": "passed",
+  "correctedTests": [
+    "mixed LIFE and BUILT creation uses one previewed transaction with collision-safe IDs, rollback and one undo",
+    "only validated widths regenerate legal voxel structures and interfaces",
+    "all authored reconstructions use persistent voxels, declared source hashes, metre ports and no accidental floating geometry"
+  ],
+  "reason": "Three historical assertions hard-coded 50/192 recipe counts. Updated to recipe set cardinality/ID uniqueness; no geometry assertion relaxed. The 5.6m M017 check uses the exact integer grid coordinate 140 to avoid decimal representation equality.",
+  "logs": [
+    "full-tests-first.txt",
+    "failed-tests-rerun.txt",
+    "waterfront-tests.txt",
+    "build.txt"
+  ],
+  "unresolvedFailures": []
+}

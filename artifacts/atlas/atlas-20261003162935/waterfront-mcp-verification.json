@@ -1,0 +1,977 @@
+{
+  "run": "atlas-20261003162935",
+  "startedAt": "2026-10-03T16:32:03.610Z",
+  "status": "passed",
+  "checks": [
+    "Twelve M017 native masters and actual glass, seal, diffuser, ink, lamp, screen and pixel cells verified through stdio MCP",
+    "Glass/screen/pixel/diffuser appearance changes exactly four roles, no geometry or collision, with matching canonical UI hashes, plastic filtering, dry-run, idempotency, version conflict, failure rollback and one undo",
+    "One dock, six repeated piles and two docked side rails: three masters, nine supported placements, no collision or blocked boarding corridor",
+    "20/40mm docking mismatch rejected with complete transaction rollback",
+    "Two clinic window bands connect with real ventilation openings, no collision or seam gap, one shared master",
+    "Terminal front retains both glass bands and a real 4.32m central door; separate four-column colonnade retains three clear passages",
+    "All three scenarios save genuine MCP multi-view previews and GLB/native/collision/interface/material-atlas exports",
+    "Native save and server restart restore the exact canonical document"
+  ],
+  "errors": [],
+  "uiSync": [
+    {
+      "version": 1,
+      "ms": 5990.456708999998
+    },
+    {
+      "version": 2,
+      "ms": 5356.941003
+    },
+    {
+      "version": 3,
+      "ms": 224.03416799999832
+    },
+    {
+      "version": 4,
+      "ms": 2843.6603869999963
+    },
+    {
+      "version": 5,
+      "ms": 1169.5167550000042
+    },
+    {
+      "version": 6,
+      "ms": 1158.862626000002
+    },
+    {
+      "version": 7,
+      "ms": 900.7758990000002
+    },
+    {
+      "version": 8,
+      "ms": 3588.2730659999943
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "waterfront-assembly",
+      "masters": 3,
+      "placements": 9,
+      "geometry": {
+        "pitchM": 0.04,
+        "occupiedCollisionCells": 878008,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "deck-1",
+              "pile-0-0",
+              "pile-0-288",
+              "pile-0-576",
+              "pile-780-0",
+              "pile-780-288",
+              "pile-780-576",
+              "rail-left",
+              "rail-right"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 878008
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "deck-1": [],
+          "pile-0-0": [
+            "deck-1"
+          ],
+          "pile-0-288": [
+            "deck-1"
+          ],
+          "pile-0-576": [
+            "deck-1"
+          ],
+          "pile-780-0": [
+            "deck-1"
+          ],
+          "pile-780-288": [
+            "deck-1"
+          ],
+          "pile-780-576": [
+            "deck-1"
+          ],
+          "rail-left": [
+            "deck-1"
+          ],
+          "rail-right": [
+            "deck-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "deck-1",
+            "index": 0,
+            "widthM": 6.5200000000000005,
+            "heightM": 2.4,
+            "emptyCells": 1809300,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "渡口中央前后登离通道",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/exports/waterfront-assembly",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 656836,
+        "isError": false
+      },
+      "previews": {
+        "version": 4,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/previews/89e4ff98-f7d5-460a-9d77-ccadf8a384f7/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/previews/89e4ff98-f7d5-460a-9d77-ccadf8a384f7/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "waterfront-clinic",
+      "masters": 1,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.04,
+        "occupiedCollisionCells": 154496,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "left",
+              "right"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 154496
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "left": [],
+          "right": []
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "left",
+            "index": 0,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 1,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 2,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 3,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 4,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 5,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 6,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 7,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 8,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 9,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 10,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 11,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 12,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "left",
+            "index": 13,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 0,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 1,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 2,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 3,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 4,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 5,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 6,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 7,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 8,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 9,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 10,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 11,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 12,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 13,
+            "widthM": 0.16,
+            "heightM": 0.16,
+            "emptyCells": 256,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/exports/waterfront-clinic",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 324624,
+        "isError": false
+      },
+      "previews": {
+        "version": 6,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/previews/164bd7fd-252b-4618-a5cc-98e6e1e16ba7/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/previews/164bd7fd-252b-4618-a5cc-98e6e1e16ba7/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "waterfront-entrance",
+      "masters": 2,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.04,
+        "occupiedCollisionCells": 338788,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "front-1"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 136252
+          },
+          {
+            "instanceIds": [
+              "colonnade-1"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 202536
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "front-1": [],
+          "colonnade-1": []
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "front-1",
+            "index": 0,
+            "widthM": 4.32,
+            "heightM": 3.2,
+            "emptyCells": 259200,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "colonnade-1",
+            "index": 0,
+            "widthM": 1.6,
+            "heightM": 2.68,
+            "emptyCells": 107200,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "colonnade-1",
+            "index": 1,
+            "widthM": 1.6,
+            "heightM": 2.68,
+            "emptyCells": 107200,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "colonnade-1",
+            "index": 2,
+            "widthM": 1.6,
+            "heightM": 2.68,
+            "emptyCells": 107200,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "4.32m central entrance",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/exports/waterfront-entrance",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 703336,
+        "isError": false
+      },
+      "previews": {
+        "version": 8,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/previews/9b309c15-4941-4c03-bf8b-74d4e6e1e16a/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003162935/waterfront-mcp-runtime/previews/9b309c15-4941-4c03-bf8b-74d4e6e1e16a/front.png"
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "gallery": {
+    "pitchM": 0.04,
+    "occupiedCollisionCells": 1994903,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "built-104-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 515042
+      },
+      {
+        "instanceIds": [
+          "built-105-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 48432
+      },
+      {
+        "instanceIds": [
+          "built-106-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 59922
+      },
+      {
+        "instanceIds": [
+          "built-107-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 93576
+      },
+      {
+        "instanceIds": [
+          "built-108-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 202536
+      },
+      {
+        "instanceIds": [
+          "built-109-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 80732
+      },
+      {
+        "instanceIds": [
+          "built-110-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 295244
+      },
+      {
+        "instanceIds": [
+          "built-111-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 136252
+      },
+      {
+        "instanceIds": [
+          "built-112-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 395046
+      },
+      {
+        "instanceIds": [
+          "built-113-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 75304
+      },
+      {
+        "instanceIds": [
+          "built-114-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 15569
+      },
+      {
+        "instanceIds": [
+          "built-115-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 77248
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [],
+    "contacts": {
+      "built-104-display": [],
+      "built-105-display": [],
+      "built-106-display": [],
+      "built-107-display": [],
+      "built-108-display": [],
+      "built-109-display": [],
+      "built-110-display": [],
+      "built-111-display": [],
+      "built-112-display": [],
+      "built-113-display": [],
+      "built-114-display": [],
+      "built-115-display": []
+    },
+    "gaps": [],
+    "openings": [
+      {
+        "instanceId": "built-104-display",
+        "index": 0,
+        "widthM": 1.6,
+        "heightM": 2.08,
+        "emptyCells": 22880,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-105-display",
+        "index": 0,
+        "widthM": 0.16,
+        "heightM": 0.08,
+        "emptyCells": 16,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-105-display",
+        "index": 1,
+        "widthM": 0.16,
+        "heightM": 0.08,
+        "emptyCells": 16,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-107-display",
+        "index": 0,
+        "widthM": 0.16,
+        "heightM": 0.12,
+        "emptyCells": 48,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-108-display",
+        "index": 0,
+        "widthM": 1.6,
+        "heightM": 2.68,
+        "emptyCells": 107200,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-108-display",
+        "index": 1,
+        "widthM": 1.6,
+        "heightM": 2.68,
+        "emptyCells": 107200,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-108-display",
+        "index": 2,
+        "widthM": 1.6,
+        "heightM": 2.68,
+        "emptyCells": 107200,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-110-display",
+        "index": 0,
+        "widthM": 1.2,
+        "heightM": 2.36,
+        "emptyCells": 138060,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-111-display",
+        "index": 0,
+        "widthM": 4.32,
+        "heightM": 3.2,
+        "emptyCells": 259200,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-112-display",
+        "index": 0,
+        "widthM": 6.5200000000000005,
+        "heightM": 2.4,
+        "emptyCells": 1809300,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 0,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 1,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 2,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 3,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 4,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 5,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 6,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 7,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 8,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 9,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 10,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 11,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 12,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-115-display",
+        "index": 13,
+        "widthM": 0.16,
+        "heightM": 0.16,
+        "emptyCells": 256,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+    ],
+    "isError": false
+  },
+  "completedAt": "2026-10-03T16:34:44.379Z"
+}

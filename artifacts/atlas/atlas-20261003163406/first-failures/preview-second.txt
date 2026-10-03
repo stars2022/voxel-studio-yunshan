@@ -1,0 +1,28 @@
+
+> yunshan-voxel-studio@0.1.0 preview:atlas
+> tsx scripts/preview-reference-atlas.ts --sheets=M017
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.screenshot: Timeout 18038.331ms exceeded.
+Call log:
+[2m  - taking element screenshot[22m
+[2m  - waiting for fonts to load...[22m
+[2m  - fonts loaded[22m
+[2m  - attempting scroll into view action[22m
+[2m    - waiting for element to be stable[22m
+
+    at <anonymous> (/workspace/voxel-studio-yunshan/scripts/preview-reference-atlas.ts:53:332) {
+  log: [
+    '  - taking element screenshot',
+    '  - waiting for fonts to load...',
+    '  - fonts loaded',
+    '  - attempting scroll into view action',
+    '    - waiting for element to be stable'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.19.0

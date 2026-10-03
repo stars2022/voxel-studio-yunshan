@@ -7,6 +7,7 @@ import {createHash} from 'node:crypto';
 import {NodeIO} from '@gltf-transform/core';
 import {KHRMaterialsEmissiveStrength} from '@gltf-transform/extensions';
 import {productionProject} from '../src/production/style';
+import {atlasBuiltRecipes} from '../src/production/atlas-built';
 import {makeCatalogAsset,atlasRecipe} from '../src/production/catalog-assets';
 import {makeFlowerAsset} from '../src/production/life';
 import {lifeLayouts,makeLifeAssembly,nativeLifeId} from '../src/production/layouts';
@@ -53,7 +54,7 @@ test('M012 material packs retain voxel identities and physical flags; GLB and na
 
 test('mixed LIFE and BUILT creation uses one previewed transaction with collision-safe IDs, rollback and one undo',async()=>{
  const doc=productionProject('mixed'),rows=parseCatalogCSV(await readFile('projects/catalog/city-assets.csv','utf8'));doc.catalog={sourceName:'city-assets.csv',importedAt:'test',entries:Object.fromEntries(rows.map(r=>[r.id,r]))};const e=new Engine(doc),before=structuredClone(e.project),commands=[{op:'produceCatalogAsset',catalogId:'BUILT-003',id:'floor'},{op:'produceCatalogAsset',catalogId:'BUILT-007',id:'stairs'},{op:'produceCatalogAsset',catalogId:'LIFE-192',id:'tea'}];
- assert.throws(()=>commit(e,[...commands,{op:'produceCatalogAsset',catalogId:'BUILT-999',id:'bad'}]));assert.deepEqual(e.project,before);const req={expectedVersion:e.project.version,requestId:'cross-domain',commands},dry=e.execute({...req,dryRun:true});assert.deepEqual(e.project,before);const result=e.execute({...req,previewToken:dry.previewToken});assert.deepEqual(e.execute(req),result);assert.equal(e.project.assets.floor.source!.catalogId,'BUILT-003');assert.equal(productionRecipes(e.project,{query:'BUILT-',limit:100}).total,50);assert.throws(()=>e.execute({...req,requestId:'stale'}),/版本冲突/);commit(e,[{op:'undo'}]);assert.deepEqual(e.project.assets,before.assets);assert.deepEqual(e.project.materials,before.materials);
+ assert.throws(()=>commit(e,[...commands,{op:'produceCatalogAsset',catalogId:'BUILT-999',id:'bad'}]));assert.deepEqual(e.project,before);const req={expectedVersion:e.project.version,requestId:'cross-domain',commands},dry=e.execute({...req,dryRun:true});assert.deepEqual(e.project,before);const result=e.execute({...req,previewToken:dry.previewToken});assert.deepEqual(e.execute(req),result);assert.equal(e.project.assets.floor.source!.catalogId,'BUILT-003');assert.equal(productionRecipes(e.project,{query:'BUILT-',limit:100}).total,Object.keys(atlasBuiltRecipes).length);assert.throws(()=>e.execute({...req,requestId:'stale'}),/版本冲突/);commit(e,[{op:'undo'}]);assert.deepEqual(e.project.assets,before.assets);assert.deepEqual(e.project.materials,before.materials);
 });
 
 test('dependent domestic arrangements keep master scope, real support and free access',()=>{

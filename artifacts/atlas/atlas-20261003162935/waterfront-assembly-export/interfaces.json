@@ -1,0 +1,874 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151
+    }
+  },
+  "assets": [
+    {
+      "id": "deck",
+      "name": "旧渡口木栈台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.4,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9.8,
+            0,
+            7
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "pile-0-0",
+          "kind": "dock-pile",
+          "position": [
+            0.6,
+            2.4,
+            0.6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.2
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "pile-0-288",
+          "kind": "dock-pile",
+          "position": [
+            0.6,
+            2.4,
+            3.48
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.2
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "pile-0-576",
+          "kind": "dock-pile",
+          "position": [
+            0.6,
+            2.4,
+            6.359999999999999
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.2
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "pile-780-0",
+          "kind": "dock-pile",
+          "position": [
+            8.4,
+            2.4,
+            0.6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.2
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "pile-780-288",
+          "kind": "dock-pile",
+          "position": [
+            8.4,
+            2.4,
+            3.48
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.2
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "pile-780-576",
+          "kind": "dock-pile",
+          "position": [
+            8.4,
+            2.4,
+            6.359999999999999
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.2
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "rail-left",
+          "kind": "dock-rail",
+          "position": [
+            -0.2,
+            2.4,
+            3.48
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            7
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "rail-right",
+          "kind": "dock-rail",
+          "position": [
+            9.2,
+            2.4,
+            3.52
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            7
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -10,
+              0,
+              0
+            ],
+            "max": [
+              235,
+              60,
+              175
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "六组石足、木桩与金属桩帽",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              0,
+              4
+            ],
+            "max": [
+              221,
+              48,
+              172
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "0.6m厚度内的主梁横梁与连续基层",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              45,
+              0
+            ],
+            "max": [
+              225,
+              55,
+              175
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "逐根木铺板、可见板缝与边框",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              55,
+              0
+            ],
+            "max": [
+              225,
+              60,
+              175
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "六组独立木桩安装鞍和侧栏承托面",
+          "parent": "root",
+          "region": {
+            "min": [
+              -10,
+              55,
+              0
+            ],
+            "max": [
+              235,
+              60,
+              175
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "渡口木栈台：9×7m桩基台、0.6m真实木板梁厚度、六桩石足及开放前后口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -10,
+              0,
+              0
+            ],
+            "max": [
+              235,
+              60,
+              175
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            31,
+            60,
+            -5
+          ],
+          "max": [
+            194,
+            120,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile",
+      "name": "旧渡口木桩显示件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.08
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.28
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "foot",
+          "kind": "dock-pile",
+          "position": [
+            0.6,
+            0,
+            0.6
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1.2
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              30,
+              150,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "分层石足与0.8m木芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              30,
+              150,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "上下抱箍、铜角锁和木端盖",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              16,
+              3
+            ],
+            "max": [
+              26,
+              150,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "竖屏玻璃、显示像素与独立机壳",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              60,
+              -2
+            ],
+            "max": [
+              27,
+              114,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "机壳侧通风实孔与键区",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              53,
+              1
+            ],
+            "max": [
+              28,
+              106,
+              17
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "6m木桩显示件：0.8m方木芯、上下铜角箍、独立显示底面/玻璃/图形和后壳散热孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              30,
+              150,
+              30
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "rail",
+      "name": "旧渡口侧栏显示件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.16
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            7,
+            0,
+            0.56
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "bottom",
+          "kind": "dock-rail",
+          "position": [
+            3.52,
+            0,
+            0.2
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            7,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -4
+            ],
+            "max": [
+              175,
+              28,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两端石脚、木立柱和铜箍",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              175,
+              28,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "连续双横杆和七根独立竖栏",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              6,
+              3
+            ],
+            "max": [
+              170,
+              27,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "中置静态航船显示器",
+          "parent": "root",
+          "region": {
+            "min": [
+              55,
+              9,
+              -4
+            ],
+            "max": [
+              120,
+              24,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "屏底电缆槽与两只固定鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              53,
+              7,
+              -3
+            ],
+            "max": [
+              122,
+              25,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "渡口独立侧栏显示件：双横杆、七根竖栏、石脚木柱与横向静态航船屏",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -4
+            ],
+            "max": [
+              175,
+              28,
+              10
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "deck-1",
+      "assetId": "deck",
+      "name": "旧渡口木栈台",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "pile-0-0",
+      "assetId": "pile",
+      "name": "旧渡口木桩显示件",
+      "position": [
+        0,
+        2.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": "deck-1"
+    },
+    {
+      "id": "pile-0-288",
+      "assetId": "pile",
+      "name": "旧渡口木桩显示件",
+      "position": [
+        0,
+        2.4,
+        2.88
+      ],
+      "rotation": 0,
+      "parent": "deck-1"
+    },
+    {
+      "id": "pile-0-576",
+      "assetId": "pile",
+      "name": "旧渡口木桩显示件",
+      "position": [
+        0,
+        2.4,
+        5.76
+      ],
+      "rotation": 0,
+      "parent": "deck-1"
+    },
+    {
+      "id": "pile-780-0",
+      "assetId": "pile",
+      "name": "旧渡口木桩显示件",
+      "position": [
+        7.800000000000001,
+        2.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": "deck-1"
+    },
+    {
+      "id": "pile-780-288",
+      "assetId": "pile",
+      "name": "旧渡口木桩显示件",
+      "position": [
+        7.800000000000001,
+        2.4,
+        2.88
+      ],
+      "rotation": 0,
+      "parent": "deck-1"
+    },
+    {
+      "id": "pile-780-576",
+      "assetId": "pile",
+      "name": "旧渡口木桩显示件",
+      "position": [
+        7.800000000000001,
+        2.4,
+        5.76
+      ],
+      "rotation": 0,
+      "parent": "deck-1"
+    },
+    {
+      "id": "rail-left",
+      "assetId": "rail",
+      "name": "旧渡口侧栏显示件",
+      "position": [
+        -0.4,
+        2.4,
+        7
+      ],
+      "rotation": 1,
+      "parent": "deck-1"
+    },
+    {
+      "id": "rail-right",
+      "assetId": "rail",
+      "name": "旧渡口侧栏显示件",
+      "position": [
+        9.399999999999999,
+        2.4,
+        0
+      ],
+      "rotation": 3,
+      "parent": "deck-1"
+    }
+  ]
+}
