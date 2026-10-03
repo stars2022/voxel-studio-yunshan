@@ -1,0 +1,1032 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160
+    }
+  },
+  "assets": [
+    {
+      "id": "runway",
+      "name": "既有南岫960×44m跑道",
+      "version": 1,
+      "origin": [
+        0,
+        0.1,
+        0
+      ],
+      "cellSize": 0.5,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            960,
+            0,
+            44
+          ],
+          "pitch": 0.5
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              1920,
+              3,
+              88
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续道路混凝土磨耗面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              0
+            ],
+            "max": [
+              1920,
+              3,
+              88
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "承力侧梁和8m节奏横肋",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              1920,
+              2,
+              88
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两端钢质接岸边梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              0
+            ],
+            "max": [
+              1920,
+              3,
+              88
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "角部石质压块和铜接点",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              2,
+              1
+            ],
+            "max": [
+              1919,
+              3,
+              87
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "真实960×44m跑道面：连续磨耗层、周边梁与8m横肋、独立端锁和维护空腔",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              1920,
+              3,
+              88
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            2,
+            0,
+            2
+          ],
+          "max": [
+            16,
+            2,
+            86
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mark",
+      "name": "既有跑道暖色中心短划",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            6,
+            0,
+            1
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              3,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "6×1m连续钢底托",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              1,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "内缩灯芯与边框",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              1,
+              0
+            ],
+            "max": [
+              120,
+              3,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "分段玻璃盖及隔条",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              2,
+              2
+            ],
+            "max": [
+              118,
+              3,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四角铜固定片",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              1,
+              0
+            ],
+            "max": [
+              120,
+              3,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "6×1m暖色跑道短划：独立钢托、内缩暖光芯、分段透明罩和端锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              3,
+              20
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "light",
+      "name": "既有跑道两侧青灯点",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.9,
+            0,
+            0.9
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              6,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石质安装鞋和金属底托",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              3,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "钢壳与真实内部腔",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              3,
+              2
+            ],
+            "max": [
+              16,
+              5,
+              16
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承托压圈与独立玻璃顶盖",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              4,
+              4
+            ],
+            "max": [
+              14,
+              6,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四角铜扣和电源端口",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              5,
+              2
+            ],
+            "max": [
+              16,
+              6,
+              16
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "0.9×0.3×0.9m青色跑道边灯：石鞋、空腔钢壳、灯芯、透明玻璃盖与四角铜扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              6,
+              18
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            7,
+            1,
+            0
+          ],
+          "max": [
+            11,
+            2,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "runway-1",
+      "assetId": "runway",
+      "name": "既有南岫960×44m跑道",
+      "position": [
+        710,
+        13,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-0",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        747,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-0-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        749.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-0-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        749.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-1",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        827,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-1-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        829.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-1-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        829.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-2",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        907,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-2-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        909.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-2-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        909.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-3",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        987,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-3-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        989.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-3-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        989.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-4",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1067,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-4-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1069.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-4-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1069.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-5",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1147,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-5-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1149.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-5-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1149.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-6",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1227,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-6-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1229.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-6-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1229.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-7",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1307,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-7-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1309.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-7-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1309.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-8",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1387,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-8-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1389.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-8-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1389.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-9",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1467,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-9-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1469.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-9-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1469.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-10",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1547,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-10-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1549.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-10-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1549.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "mark-11",
+      "assetId": "mark",
+      "name": "既有跑道暖色中心短划",
+      "position": [
+        1627,
+        14.6,
+        -0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-11-0",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1629.55,
+        14.6,
+        -16.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "light-11-1",
+      "assetId": "light",
+      "name": "既有跑道两侧青灯点",
+      "position": [
+        1629.55,
+        14.6,
+        16.05
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

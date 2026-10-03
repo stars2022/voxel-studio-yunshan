@@ -79,6 +79,7 @@ for scenario in verification.get('assemblies', []):
     files.update(out.glob(name + '-view-*.png'))
 files.update(out.glob('*-tests*.txt'))
 files.update(out.glob('*-mcp-client.txt'))
+files.update(out.glob('*-mcp-initial.json'))
 files.update(out.glob('mcp-*.png'))
 for name in ['final-geometry-recheck.json', 'camera-framing-verification.json']:
     if (out / name).exists():

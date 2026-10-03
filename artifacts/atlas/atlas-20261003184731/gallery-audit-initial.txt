@@ -1,0 +1,12 @@
+/workspace/voxel-studio-yunshan/src/core/checks.ts:24
+   expandedRows+=merged.length*scale*scale;if(expandedRows>3_000_000)throw new Error('混合精度碰撞检查超过 3,000,000 个行区间展开项，缩小场景');
+                                                                           ^
+
+Error: 混合精度碰撞检查超过 3,000,000 个行区间展开项，缩小场景
+    at checkConnectedGeometry (/workspace/voxel-studio-yunshan/src/core/checks.ts:24:76)
+    at <anonymous> (/workspace/voxel-studio-yunshan/src/core/checks.ts:72:87)
+    at Array.map (<anonymous>)
+    at checkGeometry (/workspace/voxel-studio-yunshan/src/core/checks.ts:72:36)
+    at <anonymous> (/workspace/voxel-studio-yunshan/scripts/audit-atlas-galleries.ts:9:107)
+
+Node.js v24.19.0

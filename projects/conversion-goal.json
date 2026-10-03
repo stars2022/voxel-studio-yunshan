@@ -15,50 +15,47 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 228,
-    "remainingReferenceEntries": 565,
-    "completedReferenceSheets": 19,
+    "referenceCandidates": 240,
+    "remainingReferenceEntries": 553,
+    "completedReferenceSheets": 20,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 247,
+      "baseModels": 259,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 766,
-      "generatedEntries": 302,
+      "notProduced": 754,
+      "generatedEntries": 314,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 228
+      "atlasReferenceCandidates": 240
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M019",
+    "sheet": "M020",
     "state": "validated",
-    "run": "atlas-20261003180004",
     "ids": [
-      "BUILT-141",
-      "BUILT-142",
-      "BUILT-143",
-      "BUILT-144",
-      "BUILT-145",
-      "BUILT-146",
-      "BUILT-147",
-      "BUILT-148",
-      "BUILT-149",
-      "BUILT-150",
-      "BUILT-151",
-      "BUILT-152"
+      "BUILT-153",
+      "BUILT-154",
+      "BUILT-155",
+      "BUILT-156",
+      "BUILT-157",
+      "BUILT-158",
+      "BUILT-159",
+      "BUILT-160",
+      "BUILT-177",
+      "BUILT-178",
+      "BUILT-179",
+      "BUILT-183"
     ],
-    "revisedDependencies": [
-      "BUILT-140"
-    ],
-    "evidence": "artifacts/atlas/atlas-20261003180004",
-    "validation": "artifacts/atlas/atlas-20261003180004/validation.json"
+    "run": "atlas-20261003185344",
+    "evidence": "artifacts/atlas/atlas-20261003185344",
+    "validation": "artifacts/atlas/atlas-20261003185344/validation.json"
   },
-  "nextBatch": "M020",
+  "nextBatch": "M021",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作真实体素、独立材质角色、部件、安装接口及开口",
@@ -70,15 +67,16 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M019共228件技术转化候选；尚余565条参考未完成，人工美术验收为0。"
+    "M001–M020共240件技术转化候选；尚余553条参考未完成，人工美术验收为0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "M020共12件：BUILT-153–160、177–179、183。桥头块、站台、雨棚、站名牌、路口牌、跑道、标线、侧灯、车辆主体/玻璃/底灯、机位标识。",
-    "153桥头块按桥面和实际地形高差制作；154站台22×18m、厚1m；155雨棚立柱6m，屋面23×11m。",
-    "158清单跑道长960m、宽44m；选择可追溯格距，保留物理尺度和独立159标线/160侧灯。新相机深度适配有960m回归测试，但仍需实图核对。",
-    "177–179必须按运输模式核对车体参数，并保持实体机壳、玻璃和底部灯带独立母版与材质角色。",
-    "源清单的世界坐标和地形高程应转为明确的安装基准，不用未知地形臆造已验证高度。",
-    "M019已解决140导轨座偏移及细网格拼装预算；保持原生体素、独立角色与精准碰撞验证。"
+    "M021共12件：BUILT-186–195、205–206。四旋翼支臂、叶片、脚，飞机舱片/顶盖/主翼/垂尾/平尾/动力盒/操纵台，以及隔离高桥板缝与梁体。",
+    "186单根支臂1.8×0.2×0.2m，187单叶2×0.08×0.2m，188单脚0.2×0.8×0.2m；四个复用实例不增加母版计数。",
+    "189左右舱片每片0.2×1.2×2m；190顶盖1.8×0.2×2.4m；191主翼8.4×0.2×2.4m；192垂尾0.4×1.8×2m；193平尾4×0.2×1m。",
+    "194为尾前动力盒及两侧1.6m盒体，195控制台1.2×0.2×1.4m，须保留驾驶眼位与脚部空腔；本仓库没有原AerialVehicle完整运行状态。",
+    "205/206保留原清单高桥巨块/ray负例和下层pier冲突记录；6板/5缝为组合复用语义，顶254.6/底254m、梁底252.8m必须明确基准。独立资产转化不得冒称原游戏桥梁最终PASS或已经合入。",
+    "若实际展示世界Y254.6m，要检查编辑器默认Y100截面裁切；本地母版坐标与世界高程应分别记录并测试。",
+    "构建完成后再启动实图。总览间距已按最大格距的碰撞邻近范围扩展；保持精确碰撞预算，不跳过异常。"
   ]
 }

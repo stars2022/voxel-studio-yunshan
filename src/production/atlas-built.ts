@@ -1,3 +1,4 @@
+import {stationRecipes,stationMaterialRules,configureStationAsset} from './atlas-stations';
 import {bridgeRecipes,bridgeMaterialRules,configureBridgeAsset} from './atlas-bridges';
 import {transportRecipes,transportMaterialRules,configureTransportAsset} from './atlas-transport';
 import {waterfrontRecipes,waterfrontMaterialRules,configureWaterfrontAsset} from './atlas-waterfront';
@@ -27,7 +28,7 @@ export const atlasBuiltRecipes:Record<string,AtlasRecipe>={
  }},
 };
 
-Object.assign(atlasBuiltRecipes,structureRecipes,legacyBuildingRecipes,joineryRecipes,exteriorRecipes,waterfrontRecipes,transportRecipes,bridgeRecipes);
+Object.assign(atlasBuiltRecipes,structureRecipes,legacyBuildingRecipes,joineryRecipes,exteriorRecipes,waterfrontRecipes,transportRecipes,bridgeRecipes,stationRecipes);
 
 export function builtWidthParameter(id:string){
  if(id==='BUILT-149')return{height:{minimum:12.4,maximum:12.8,default:12.4,enum:[12.4,12.8],unit:'metres'}};
@@ -39,7 +40,7 @@ export function builtWidthParameter(id:string){
 export function inspectBuiltMaterialAssignments(id:string,a:Asset,roles:Record<string,number>){
  if(!atlasBuiltRecipes[id])return null;
  const used=new Set([...new Grid(a.chunks).cells()].map(([,m])=>m));
- const rule=structureMaterialRules[id]??legacyBuildingMaterialRules[id]??joineryMaterialRules[id]??exteriorMaterialRules[id]??waterfrontMaterialRules[id]??transportMaterialRules[id]??bridgeMaterialRules[id];
+ const rule=structureMaterialRules[id]??legacyBuildingMaterialRules[id]??joineryMaterialRules[id]??exteriorMaterialRules[id]??waterfrontMaterialRules[id]??transportMaterialRules[id]??bridgeMaterialRules[id]??stationMaterialRules[id];
  for(const role of rule?.required??['stone','wall','metal','bronze','energy'])if(!used.has(roles[role]))throw new Error(id+' 缺少实际材质 '+role);
  const permitted=new Set((rule?.allowed??['stone','wall','metal','trim','wood','bronze','energy']).map(r=>roles[r]));
  for(const m of used)if(!permitted.has(m))throw new Error(id+' 非建筑材质 '+m);
@@ -66,6 +67,6 @@ export function makeAtlasBuiltAsset(catalogId:string,name:string,id:string,style
   a.openings=[box([.28,.20,2.40],[width-.28,.90,3.30])];
   for(let i=0;i<8;i++)a.openings.push(box([.22,.42+i*.20,.48+i*.40],[width-.22,2.30+i*.20,.72+i*.40]));
   a.ports.push({id:'bottom-walkway',kind,position:[width/2,.20,0],normal:[0,0,-1],size:[width,.20,0],pitch:.02},{id:'top-walkway',kind,position:[width/2,1.80,4.40],normal:[0,0,1],size:[width,.20,0],pitch:.02});
- }else{configureStructureAsset(a,catalogId);configureLegacyBuildingAsset(a,catalogId);configureJoineryAsset(a,catalogId);configureExteriorAsset(a,catalogId);configureWaterfrontAsset(a,catalogId);configureTransportAsset(a,catalogId);configureBridgeAsset(a,catalogId);}
+ }else{configureStructureAsset(a,catalogId);configureLegacyBuildingAsset(a,catalogId);configureJoineryAsset(a,catalogId);configureExteriorAsset(a,catalogId);configureWaterfrontAsset(a,catalogId);configureTransportAsset(a,catalogId);configureBridgeAsset(a,catalogId);configureStationAsset(a,catalogId);}
  a.source!.materialAssignmentReview=inspectBuiltMaterialAssignments(catalogId,a,style);return a;
 }

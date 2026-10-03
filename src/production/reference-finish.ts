@@ -3,10 +3,14 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=11;
+export const referenceFinishVersion=12;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ signalStopLamp:{name:'停止灯芯 · 未绑定状态',color:'#b94037',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
+ signalCautionLamp:{name:'警示灯芯 · 未绑定状态',color:'#d4a44d',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
+ signalGoLamp:{name:'通行灯芯 · 未绑定状态',color:'#408563',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
+ vehicleSeal:{name:'车辆玻璃密封边',color:'#283337',roughness:.93,metalness:0,...surface('none',.1,0,0)},
  stone:{name:'青灰基座石',color:'#666a6b',roughness:.86,metalness:0,...surface('stone',.72,.48,307)},
  wall:{name:'暖灰石灰岩',color:'#d2cbbb',roughness:.82,metalness:0,...surface('stone',.64,.48,221)},
  wood:{name:'烟熏榆木 · 顺纹',color:'#74543b',roughness:.62,metalness:0,...surface('wood',.75,.35,117)},

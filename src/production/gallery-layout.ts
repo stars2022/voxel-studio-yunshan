@@ -10,7 +10,10 @@ export function layoutAtlasGallery(p:Project){
  const ticks=limits.map(({a})=>{const t=Math.round(a.cellSize*1e6);if(!t||Math.abs(t/1e6-a.cellSize)>1e-10)throw new Error('图册格距须能以微米表示');return t;});
  const common=ticks.reduce((a,b)=>a/gcd(a,b)*b)/1e6;
  if(!Number.isFinite(common)||common>100)throw new Error('图册格距的公倍格过大');
- const strideX=Math.ceil((Math.max(...limits.map(({a,b})=>(b.max[0]-b.min[0])*a.cellSize))+.5)/common)*common;
- const strideZ=Math.ceil((Math.max(...limits.map(({a,b})=>(b.max[2]-b.min[2])*a.cellSize))+.5)/common)*common;
+ // Display neighbours are independent masters. Keep them beyond the largest
+ // collision-neighbour margin, including coarse airfield slabs beside fine trim.
+ const gap=Math.max(.5,Math.max(...limits.map(({a})=>a.cellSize))*1.51+common);
+ const strideX=Math.ceil((Math.max(...limits.map(({a,b})=>(b.max[0]-b.min[0])*a.cellSize))+gap)/common)*common;
+ const strideZ=Math.ceil((Math.max(...limits.map(({a,b})=>(b.max[2]-b.min[2])*a.cellSize))+gap)/common)*common;
  for(const[j,{i,a,b}]of limits.entries())i.position=[j%4*strideX,0,Math.floor(j/4)*strideZ].map((n,k)=>Math.round((n-b.min[k]*a.cellSize-a.origin[k])*1e8)/1e8) as V3;
 }

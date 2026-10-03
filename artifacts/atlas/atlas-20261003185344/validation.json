@@ -1,0 +1,81 @@
+{
+  "run": "atlas-20261003185344",
+  "status": "passed",
+  "method": "221 full regression tests, ten final M020 targeted tests and ten real stdio MCP checks; every final scene inspected with saved base and material previews.",
+  "distinctTestsPassed": 221,
+  "fullSuite": {
+    "tests": 221,
+    "pass": 221,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "finalM020": {
+    "tests": 10,
+    "pass": 10,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "build": "passed",
+  "finalScriptTypecheck": "passed",
+  "mcpChecks": 10,
+  "newCandidateMasters": 12,
+  "assetScreenshots": 36,
+  "assemblyScreenshots": 10,
+  "candidateMaterialAudit": 240,
+  "unresolvedFailures": [],
+  "history": [
+    "atlas-20261003184731 first generated all twelve new IDs. Its gallery gap grouped the coarse runway with fine trim and exceeded the exact collision budget; initial MCP and gallery failures are retained.",
+    "Gallery spacing now exceeds the largest native collision-neighbour margin. A regression proves all twelve display masters remain independent without changing their native chunks.",
+    "atlas-20261003185344 is the corrected gallery/index/export run. Its newCatalogIds=0 counts additions during that rebuild; the batch added twelve unique IDs in the initial run, with no double count.",
+    "All 36 single-asset captures from the first run are reused only after exact native-asset, material/palette, browser and renderer comparisons. The five scene captures and successful MCP checks use the final run.",
+    "The full-suite process was launched into the initial run directory; its 221-test result includes the new gallery regression and final source. The raw log is copied unchanged here."
+  ],
+  "limitations": [
+    "Missing terrain is retained as unsupported runway-1 in the world-elevation scene; no collisions, gaps, blocked passages or grid warnings. This is not a completed airport or flight simulation.",
+    "Vehicle 3x3.4x10m envelope is an authored rail-interface study because the original mode dimension table was not supplied; the three modules do not implement driving or all original vehicle modes.",
+    "Station signal state is unbound and all three optical signal roles remain non-emissive. Pad sign remains blank.",
+    "Abutment uses explicit deck=3m and terrain=0m; the historical 154.6m block/game-body failure remains unresolved runtime context.",
+    "Technical candidates have not passed human art acceptance."
+  ],
+  "reviewedViews": [
+    "12 asset isometric base views",
+    "12 asset material comparisons",
+    "five scene isometric views",
+    "960m runway full-span framing"
+  ],
+  "logs": [
+    "cloud-tests.txt",
+    "station-tests-initial.txt",
+    "station-tests-final.txt",
+    "build.txt",
+    "typecheck-final.txt",
+    "station-mcp-client.txt",
+    "station-mcp-initial.json",
+    "gallery-tests-initial.txt"
+  ],
+  "runwayGLB": {
+    "localMin": [
+      0,
+      0.10000000149011612,
+      0
+    ],
+    "localMax": [
+      960,
+      1.600000023841858,
+      44
+    ],
+    "worldMin": [
+      710,
+      13.100000001490116,
+      -22
+    ],
+    "worldMax": [
+      1670,
+      14.600000023841858,
+      22
+    ],
+    "matchesExactFloat32LocalEncoding": true
+  }
+}

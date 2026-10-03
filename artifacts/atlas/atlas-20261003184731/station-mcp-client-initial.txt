@@ -1,0 +1,18 @@
+{"tool":"check_geometry","ms":3992.471819000002,"error":true}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"混合精度碰撞检查超过 3,000,000 个行区间展开项，缩小场景","code":"OPERATION_FAILED","isError":true}
+    at call (/workspace/voxel-studio-yunshan/scripts/verify-station-mcp.ts:28:82)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-station-mcp.ts:32:63) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

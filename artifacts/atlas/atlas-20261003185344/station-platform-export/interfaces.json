@@ -1,0 +1,738 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160
+    }
+  },
+  "assets": [
+    {
+      "id": "platform",
+      "name": "既有22×18m站台显示件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            22,
+            0,
+            18
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "canopy-left",
+          "kind": "canopy-foot",
+          "position": [
+            1.4,
+            1,
+            8.5
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.8,
+            0,
+            0.8
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "canopy-right",
+          "kind": "canopy-foot",
+          "position": [
+            20.6,
+            1,
+            8.5
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.8,
+            0,
+            0.8
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              10,
+              180
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "结构承板与可维护的纵横梁肋",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              9,
+              180
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "砂浆床与分缝石铺装",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              9,
+              0
+            ],
+            "max": [
+              220,
+              10,
+              180
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两侧钢边、青灯和入口断口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              7,
+              0
+            ],
+            "max": [
+              220,
+              10,
+              180
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两柱定位座和端部铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              9,
+              3
+            ],
+            "max": [
+              217,
+              10,
+              177
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "22×18m独立站台承板：1m总厚、下部梁肋、分区石铺面、青色边线及两柱安装座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              10,
+              180
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            4,
+            0,
+            4
+          ],
+          "max": [
+            54,
+            7,
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canopy",
+      "name": "既有站台两柱候车棚",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            23,
+            0,
+            11
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "left",
+          "kind": "canopy-foot",
+          "position": [
+            1.9,
+            0,
+            5
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.8,
+            0,
+            0.8
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "right",
+          "kind": "canopy-foot",
+          "position": [
+            21.1,
+            0,
+            5
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.8,
+            0,
+            0.8
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              230,
+              68,
+              110
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两只石鞋、连续木柱与钢肩",
+          "parent": "root",
+          "region": {
+            "min": [
+              15,
+              0,
+              46
+            ],
+            "max": [
+              215,
+              60,
+              54
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "纵横木梁与六组真实挑檐撑",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              51,
+              3
+            ],
+            "max": [
+              226,
+              60,
+              107
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "连续木基层、独立防水层和金属收边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              60,
+              0
+            ],
+            "max": [
+              230,
+              64,
+              110
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "分块瓦板、压脊和铜扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              63,
+              1
+            ],
+            "max": [
+              230,
+              68,
+              108
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "前檐灯芯与柱前暖灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              10,
+              0
+            ],
+            "max": [
+              225,
+              60,
+              47
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "23×11m两柱雨棚：6m木柱、石鞋钢肩、挑檐梁、防水基层与分块瓦盖",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              230,
+              68,
+              110
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            23,
+            0,
+            2
+          ],
+          "max": [
+            207,
+            51,
+            108
+          ]
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "name": "既有站台信号杆与牌体",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              106,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石脚、钢杆与套肩",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              94,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "木夹芯挑臂与挂扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              76,
+              6
+            ],
+            "max": [
+              72,
+              90,
+              13
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "可换屏幕外框与显示底面",
+          "parent": "root",
+          "region": {
+            "min": [
+              24,
+              53,
+              6
+            ],
+            "max": [
+              64,
+              76,
+              11
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "清晰静态箭头和列车图形",
+          "parent": "root",
+          "region": {
+            "min": [
+              30,
+              57,
+              5
+            ],
+            "max": [
+              58,
+              72,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立信号灯壳、保护玻璃和三色灯芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              80,
+              2
+            ],
+            "max": [
+              15,
+              106,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "站台信号杆牌：层叠钢座、独立红黄绿光学面、悬臂显示牌及像素箭头",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              106,
+              20
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "platform-1",
+      "assetId": "platform",
+      "name": "既有22×18m站台显示件",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "canopy-1",
+      "assetId": "canopy",
+      "name": "既有站台两柱候车棚",
+      "position": [
+        -0.5,
+        1,
+        3.5
+      ],
+      "rotation": 0,
+      "parent": "platform-1"
+    },
+    {
+      "id": "signal-1",
+      "assetId": "signal",
+      "name": "既有站台信号杆与牌体",
+      "position": [
+        22.5,
+        0,
+        19.5
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}
