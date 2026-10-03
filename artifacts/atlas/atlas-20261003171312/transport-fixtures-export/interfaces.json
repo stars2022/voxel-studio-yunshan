@@ -1,0 +1,665 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155
+    }
+  },
+  "assets": [
+    {
+      "id": "sign",
+      "name": "旧医馆红十字外墙标识",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.2,
+            0,
+            0.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "wall",
+          "kind": "wall-sign",
+          "position": [
+            1.1,
+            1.1,
+            0.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            2.2,
+            2.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              110,
+              110,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "浅色涂装金属牌胎",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              2
+            ],
+            "max": [
+              110,
+              110,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "牌面包边和铜螺栓",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              110,
+              110,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实1.8m十字印墨层",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              10,
+              1
+            ],
+            "max": [
+              100,
+              100,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双背轨与挂钩实孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              16,
+              6
+            ],
+            "max": [
+              96,
+              94,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "医馆墙装标识：1.8m朱红十字印墨、金属牌胎、四角固定件与背部挂轨",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              110,
+              110,
+              10
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            20,
+            18,
+            8
+          ],
+          "max": [
+            26,
+            22,
+            10
+          ]
+        },
+        {
+          "min": [
+            84,
+            18,
+            8
+          ],
+          "max": [
+            90,
+            22,
+            10
+          ]
+        },
+        {
+          "min": [
+            20,
+            88,
+            8
+          ],
+          "max": [
+            26,
+            92,
+            10
+          ]
+        },
+        {
+          "min": [
+            84,
+            88,
+            8
+          ],
+          "max": [
+            90,
+            92,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rail",
+      "name": "共享交通护栏横杆",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            0.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "left",
+          "kind": "rail-200",
+          "position": [
+            0,
+            0.1,
+            0.1
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.2,
+            0.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "right",
+          "kind": "rail-200",
+          "position": [
+            4,
+            0.1,
+            0.1
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.2,
+            0.2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              200,
+              10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续空腔钢梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              200,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "实木扶手面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              8,
+              0
+            ],
+            "max": [
+              200,
+              10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两端钢套",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              200,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "铜销与端接实孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              2,
+              0
+            ],
+            "max": [
+              198,
+              6,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "4m共享护栏横杆：0.2m截面、空腔钢梁、顶面木扶手与端套铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              200,
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            8,
+            2,
+            2
+          ],
+          "max": [
+            192,
+            6,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall-fixture",
+      "name": "安装试验墙，不计入清单",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    },
+    {
+      "id": "stand-fixture",
+      "name": "横杆安装试验托架，不计入清单",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "wall",
+      "assetId": "wall-fixture",
+      "name": "安装试验墙，不计入清单",
+      "position": [
+        0,
+        0,
+        0.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "sign-1",
+      "assetId": "sign",
+      "name": "旧医馆红十字外墙标识",
+      "position": [
+        0.4,
+        1,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "stand-0",
+      "assetId": "stand-fixture",
+      "name": "横杆安装试验托架，不计入清单",
+      "position": [
+        5,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "stand-1",
+      "assetId": "stand-fixture",
+      "name": "横杆安装试验托架，不计入清单",
+      "position": [
+        8.8,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "stand-2",
+      "assetId": "stand-fixture",
+      "name": "横杆安装试验托架，不计入清单",
+      "position": [
+        11,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "stand-3",
+      "assetId": "stand-fixture",
+      "name": "横杆安装试验托架，不计入清单",
+      "position": [
+        14.8,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "rail-a",
+      "assetId": "rail",
+      "name": "共享交通护栏横杆",
+      "position": [
+        5,
+        1,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "rail-b",
+      "assetId": "rail",
+      "name": "共享交通护栏横杆",
+      "position": [
+        11,
+        1,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

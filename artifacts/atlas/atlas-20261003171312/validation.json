@@ -1,0 +1,41 @@
+{
+  "run": "atlas-20261003171312",
+  "status": "passed",
+  "method": "full regression suite plus eight final M018 tests after lamp-cover material and track-datum review",
+  "distinctTestsPassed": 195,
+  "fullSuite": {
+    "tests": 195,
+    "pass": 195,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "finalM018": {
+    "tests": 8,
+    "pass": 8,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "build": "passed",
+  "mcpChecks": 9,
+  "newScreenshots": 36,
+  "candidateMaterialAudit": 216,
+  "unresolvedFailures": [],
+  "reviewChanges": [
+    "BUILT-140 catalogue centre offset -0.9m interpreted on Y: local track datum is Y=1.6m for a 1.4m bed; top is 0.2m below the datum.",
+    "BUILT-117 uses separate protective glass and cyan/warm lamp cores. The earlier warm acrylic draft muted the cyan and was retained separately."
+  ],
+  "history": [
+    "atlas-20261003170707 is the initial draft and original full-suite log location.",
+    "atlas-20261003171016 corrected the track datum. Its partial captures are not final evidence.",
+    "atlas-20261003171312 is the active batch; all 36 screenshots and nine MCP checks are from this run."
+  ],
+  "logs": [
+    "cloud-tests.txt",
+    "transport-tests-initial.txt",
+    "transport-tests-final.txt",
+    "build.txt",
+    "transport-mcp-client.txt"
+  ]
+}

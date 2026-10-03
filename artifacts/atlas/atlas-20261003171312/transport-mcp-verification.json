@@ -1,0 +1,756 @@
+{
+  "run": "atlas-20261003171312",
+  "startedAt": "2026-10-03T17:14:05.401Z",
+  "status": "passed",
+  "checks": [
+    "Twelve M018 native masters with actual medical ink, lamp, glass, concrete, ceramic inlay, seal and bearing cells verified through stdio MCP",
+    "Pavement/inlay/bearing/joint appearance changes exactly four roles, no geometry or collision, with matching canonical UI hashes, rubber filtering, dry-run, idempotency, version conflict, failure rollback and one undo",
+    "10m road, 0.16m centre inlay, 7m joint and two 0.4m curbs: four masters, no collision, clear drainage and travel space on shared 10mm grid",
+    "10/20mm direct docking mismatch rejected with complete transaction rollback",
+    "7m foundation, 3m by 32m pier, 7m by 1.8m cap and 6m by 1.4m bed dock through all four true bearing interfaces",
+    "Two reused high piers support one timber tie at shaft level 16m; repeated instances do not inflate master counts",
+    "Medical sign and 1.1m-centre-height rails mounted to explicit auxiliary fixtures; 2m intersection cut remains open; fixtures are not catalogue masters",
+    "All four scenarios save genuine MCP multi-view previews and GLB/native/collision/interface/material-atlas exports",
+    "Native save and server restart restore the exact canonical document"
+  ],
+  "errors": [],
+  "uiSync": [
+    {
+      "version": 1,
+      "ms": 5357.182289
+    },
+    {
+      "version": 2,
+      "ms": 4560.243578000001
+    },
+    {
+      "version": 3,
+      "ms": 466.0319920000038
+    },
+    {
+      "version": 4,
+      "ms": 5494.865001999999
+    },
+    {
+      "version": 5,
+      "ms": 1453.7096089999977
+    },
+    {
+      "version": 6,
+      "ms": 4086.962753
+    },
+    {
+      "version": 7,
+      "ms": 1027.0299529999902
+    },
+    {
+      "version": 8,
+      "ms": 3362.5683030000073
+    },
+    {
+      "version": 9,
+      "ms": 340.1970039999869
+    },
+    {
+      "version": 10,
+      "ms": 3992.0270969999838
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "transport-road",
+      "masters": 4,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.01,
+        "occupiedCollisionCells": 2898840,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "road-1",
+              "joint-1",
+              "line-1",
+              "curbs-1"
+            ],
+            "pitchM": 0.01,
+            "occupiedCells": 2898840
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "road-1": [],
+          "joint-1": [
+            "road-1"
+          ],
+          "line-1": [
+            "road-1",
+            "joint-1"
+          ],
+          "curbs-1": [
+            "road-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "road-1",
+            "index": 0,
+            "widthM": 2.2,
+            "heightM": 0.32,
+            "emptyCells": 140800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "curbs-1",
+            "index": 0,
+            "widthM": 0.4,
+            "heightM": 0.06,
+            "emptyCells": 1920,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "curbs-1",
+            "index": 1,
+            "widthM": 0.4,
+            "heightM": 0.06,
+            "emptyCells": 1920,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "curbs-1",
+            "index": 2,
+            "widthM": 0.4,
+            "heightM": 0.06,
+            "emptyCells": 1920,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "curbs-1",
+            "index": 3,
+            "widthM": 0.4,
+            "heightM": 0.06,
+            "emptyCells": 1920,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "道路双肩之间上部通行体",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/exports/transport-road",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 444232,
+        "isError": false
+      },
+      "previews": {
+        "version": 4,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/ec8a233a-4a9d-4eb9-9bd7-551ac4f00510/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/ec8a233a-4a9d-4eb9-9bd7-551ac4f00510/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "transport-viaduct",
+      "masters": 4,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.1,
+        "occupiedCollisionCells": 453088,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "foundation-1",
+              "pier-1",
+              "cap-1",
+              "bed-1"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 453088
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "foundation-1": [],
+          "pier-1": [
+            "foundation-1"
+          ],
+          "cap-1": [
+            "pier-1"
+          ],
+          "bed-1": [
+            "cap-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "bed-1",
+            "index": 0,
+            "widthM": 2.4000000000000004,
+            "heightM": 0.8,
+            "emptyCells": 15360,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "bed-1",
+            "index": 1,
+            "widthM": 2.4000000000000004,
+            "heightM": 0.8,
+            "emptyCells": 15360,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/exports/transport-viaduct",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 291148,
+        "isError": false
+      },
+      "previews": {
+        "version": 6,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/42512a21-c87a-4298-9afa-9a62e7435536/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/42512a21-c87a-4298-9afa-9a62e7435536/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "transport-tie",
+      "masters": 3,
+      "placements": 5,
+      "geometry": {
+        "pitchM": 0.1,
+        "occupiedCollisionCells": 774256,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "foundation-0",
+              "pier-0",
+              "foundation-1",
+              "pier-1",
+              "tie-1"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 774256
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "foundation-0": [],
+          "pier-0": [
+            "foundation-0"
+          ],
+          "foundation-1": [],
+          "pier-1": [
+            "foundation-1"
+          ],
+          "tie-1": [
+            "pier-0",
+            "pier-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/exports/transport-tie",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 208236,
+        "isError": false
+      },
+      "previews": {
+        "version": 8,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/ab34b9eb-f58c-4696-b0f0-51ceec3a377e/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/ab34b9eb-f58c-4696-b0f0-51ceec3a377e/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "transport-fixtures",
+      "masters": 4,
+      "placements": 8,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 371372,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "wall",
+              "sign-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 320396
+          },
+          {
+            "instanceIds": [
+              "stand-0",
+              "stand-1",
+              "rail-a"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 25488
+          },
+          {
+            "instanceIds": [
+              "stand-2",
+              "stand-3",
+              "rail-b"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 25488
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "wall": [],
+          "sign-1": [
+            "wall"
+          ],
+          "stand-0": [],
+          "stand-1": [],
+          "rail-a": [
+            "stand-0",
+            "stand-1"
+          ],
+          "stand-2": [],
+          "stand-3": [],
+          "rail-b": [
+            "stand-2",
+            "stand-3"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "sign-1",
+            "index": 0,
+            "widthM": 0.12,
+            "heightM": 0.08,
+            "emptyCells": 48,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "sign-1",
+            "index": 1,
+            "widthM": 0.12,
+            "heightM": 0.08,
+            "emptyCells": 48,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "sign-1",
+            "index": 2,
+            "widthM": 0.12,
+            "heightM": 0.08,
+            "emptyCells": 48,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "sign-1",
+            "index": 3,
+            "widthM": 0.12,
+            "heightM": 0.08,
+            "emptyCells": 48,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "rail-a",
+            "index": 0,
+            "widthM": 3.68,
+            "heightM": 0.08,
+            "emptyCells": 4416,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "rail-b",
+            "index": 0,
+            "widthM": 3.68,
+            "heightM": 0.08,
+            "emptyCells": 4416,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "护栏交口2m断口",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/exports/transport-fixtures",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 189596,
+        "isError": false
+      },
+      "previews": {
+        "version": 10,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/7b22112b-e510-446c-8d47-1ac7a50afe90/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003171312/transport-mcp-runtime/previews/7b22112b-e510-446c-8d47-1ac7a50afe90/front.png"
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "gallery": {
+    "pitchM": 0.01,
+    "occupiedCollisionCells": 1193934,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "built-116-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 59896
+      },
+      {
+        "instanceIds": [
+          "built-117-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 37992
+      },
+      {
+        "instanceIds": [
+          "built-131-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 314240
+      },
+      {
+        "instanceIds": [
+          "built-132-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 3200
+      },
+      {
+        "instanceIds": [
+          "built-133-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 7350
+      },
+      {
+        "instanceIds": [
+          "built-134-display"
+        ],
+        "pitchM": 0.01,
+        "occupiedCells": 300520
+      },
+      {
+        "instanceIds": [
+          "built-135-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 15488
+      },
+      {
+        "instanceIds": [
+          "built-136-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 98000
+      },
+      {
+        "instanceIds": [
+          "built-137-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 288048
+      },
+      {
+        "instanceIds": [
+          "built-138-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 30560
+      },
+      {
+        "instanceIds": [
+          "built-139-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 2160
+      },
+      {
+        "instanceIds": [
+          "built-140-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 36480
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [],
+    "contacts": {
+      "built-116-display": [],
+      "built-117-display": [],
+      "built-131-display": [],
+      "built-132-display": [],
+      "built-133-display": [],
+      "built-134-display": [],
+      "built-135-display": [],
+      "built-136-display": [],
+      "built-137-display": [],
+      "built-138-display": [],
+      "built-139-display": [],
+      "built-140-display": []
+    },
+    "gaps": [],
+    "openings": [
+      {
+        "instanceId": "built-116-display",
+        "index": 0,
+        "widthM": 0.12,
+        "heightM": 0.08,
+        "emptyCells": 48,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-116-display",
+        "index": 1,
+        "widthM": 0.12,
+        "heightM": 0.08,
+        "emptyCells": 48,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-116-display",
+        "index": 2,
+        "widthM": 0.12,
+        "heightM": 0.08,
+        "emptyCells": 48,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-116-display",
+        "index": 3,
+        "widthM": 0.12,
+        "heightM": 0.08,
+        "emptyCells": 48,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-131-display",
+        "index": 0,
+        "widthM": 2.2,
+        "heightM": 0.32,
+        "emptyCells": 140800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-134-display",
+        "index": 0,
+        "widthM": 0.4,
+        "heightM": 0.06,
+        "emptyCells": 1920,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-134-display",
+        "index": 1,
+        "widthM": 0.4,
+        "heightM": 0.06,
+        "emptyCells": 1920,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-134-display",
+        "index": 2,
+        "widthM": 0.4,
+        "heightM": 0.06,
+        "emptyCells": 1920,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-134-display",
+        "index": 3,
+        "widthM": 0.4,
+        "heightM": 0.06,
+        "emptyCells": 1920,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-135-display",
+        "index": 0,
+        "widthM": 3.68,
+        "heightM": 0.08,
+        "emptyCells": 4416,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-140-display",
+        "index": 0,
+        "widthM": 2.4000000000000004,
+        "heightM": 0.8,
+        "emptyCells": 15360,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-140-display",
+        "index": 1,
+        "widthM": 2.4000000000000004,
+        "heightM": 0.8,
+        "emptyCells": 15360,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+    ],
+    "isError": false
+  },
+  "completedAt": "2026-10-03T17:18:10.253Z"
+}

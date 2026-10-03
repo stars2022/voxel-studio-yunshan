@@ -1,0 +1,891 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155
+    }
+  },
+  "assets": [
+    {
+      "id": "road",
+      "name": "既有道路实体显示路面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            10,
+            0,
+            2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "front",
+          "kind": "road-10000",
+          "position": [
+            5,
+            0.5,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            10,
+            0.5,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "back",
+          "kind": "road-10000",
+          "position": [
+            5,
+            0.5,
+            2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            10,
+            0.5,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "joint",
+          "kind": "road-joint",
+          "position": [
+            5,
+            0.42,
+            1
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            7,
+            0,
+            0.12
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "line",
+          "kind": "road-line",
+          "position": [
+            5,
+            0.5,
+            1
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.16,
+            0,
+            2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              500,
+              25,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "承板与可见纵横混凝土肋",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              500,
+              23,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "道路独立混凝土磨耗面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              23,
+              0
+            ],
+            "max": [
+              500,
+              25,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "端面连接钢板及铜锁销",
+          "parent": "root",
+          "region": {
+            "min": [
+              16,
+              6,
+              0
+            ],
+            "max": [
+              484,
+              14,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "10m道路面分段：0.5m梁板厚、独立磨耗面、下层肋与7m横缝嵌装槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              500,
+              25,
+              100
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            10,
+            0,
+            10
+          ],
+          "max": [
+            120,
+            16,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line",
+      "name": "既有道路中心浅色线",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.16,
+            0,
+            2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom",
+          "kind": "road-line",
+          "position": [
+            0.08,
+            0,
+            1
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.16,
+            0,
+            2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              8,
+              4,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "独立密封底垫",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              8,
+              1,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "金属承托片",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              1,
+              0
+            ],
+            "max": [
+              8,
+              2,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "四段陶瓷条与可见弹性分缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              0
+            ],
+            "max": [
+              8,
+              4,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两端铜固定销",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              2,
+              2
+            ],
+            "max": [
+              5,
+              4,
+              98
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "0.16m宽0.08m高陶瓷中心嵌条：金属托片、弹性底垫、分段条及端部固定",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              8,
+              4,
+              100
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "joint",
+      "name": "既有非跑道路面横缝",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            7,
+            0,
+            0.12
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom",
+          "kind": "road-joint",
+          "position": [
+            3.5,
+            0,
+            0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            7,
+            0,
+            0.12
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              350,
+              4,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续钢质底托",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              350,
+              1,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双排钢边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              1,
+              0
+            ],
+            "max": [
+              350,
+              4,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实凹进的弹性芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              1,
+              1
+            ],
+            "max": [
+              350,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两侧铜紧固件",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              3,
+              0
+            ],
+            "max": [
+              347,
+              4,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "7m横向伸缩缝嵌件：双钢边、波形弹性芯、底托和分布铜扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              350,
+              4,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "curbs",
+      "name": "既有路缘双肩条",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9.9,
+            0,
+            2
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              990,
+              20,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "双肩砂浆底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              990,
+              5,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立石块与分缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              5,
+              0
+            ],
+            "max": [
+              990,
+              20,
+              198
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "内侧金属压条",
+          "parent": "root",
+          "region": {
+            "min": [
+              38,
+              5,
+              0
+            ],
+            "max": [
+              952,
+              10,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双路肩：单条0.4m宽0.2m高、中心距9.5m，石铺块、灰缝、真实排水缺口和边压条",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              990,
+              20,
+              200
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            0,
+            0,
+            16
+          ],
+          "max": [
+            40,
+            6,
+            24
+          ]
+        },
+        {
+          "min": [
+            0,
+            0,
+            176
+          ],
+          "max": [
+            40,
+            6,
+            184
+          ]
+        },
+        {
+          "min": [
+            950,
+            0,
+            16
+          ],
+          "max": [
+            990,
+            6,
+            24
+          ]
+        },
+        {
+          "min": [
+            950,
+            0,
+            176
+          ],
+          "max": [
+            990,
+            6,
+            184
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "road-1",
+      "assetId": "road",
+      "name": "既有道路实体显示路面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "joint-1",
+      "assetId": "joint",
+      "name": "既有非跑道路面横缝",
+      "position": [
+        1.5,
+        0.42,
+        0.94
+      ],
+      "rotation": 0,
+      "parent": "road-1"
+    },
+    {
+      "id": "line-1",
+      "assetId": "line",
+      "name": "既有道路中心浅色线",
+      "position": [
+        4.92,
+        0.5,
+        0
+      ],
+      "rotation": 0,
+      "parent": "road-1"
+    },
+    {
+      "id": "curbs-1",
+      "assetId": "curbs",
+      "name": "既有路缘双肩条",
+      "position": [
+        0.05,
+        0.5,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

@@ -212,3 +212,13 @@ BUILT-101 的印字、透光塑料板、内部电灯芯和木金属框分别使�
 本批沿用125个独立用途角色；不新增同色重复角色。BUILT-106/111/115的玻璃、橡胶密封、木梃和金属压条分别赋值。BUILT-109的实体暖牌使用signDiffuser、printedDark和warm，不是屏幕。BUILT-113/114分别使用screen、displayGlyph、displayWhite、glass、polymerDark；静态锚/船画面不使用灯芯、印墨或纸页。
 
 `tests/atlas-waterfront.test.ts`与`scripts/verify-waterfront-mcp.ts`查询实际坐标，验证玻璃/屏幕/像素/透光板外观包仅改外观，体素、接口、角色类别、碰撞和其他材质不变，一次撤销完整恢复。204件当前候选的实际材质用量重新审查，人工美术验收仍未完成。
+
+## M018 道路与高架组件
+
+本批新增四个实际用途角色，共129个：`pavementConcrete` 为道路混凝土磨耗面，`roadInlay` 为浅色陶瓷中心嵌条，`bridgeBearing` 为桥梁橡胶支座，`jointSeal` 为伸缩缝弹性密封条。后两者与 `rubber`、`waterproofMembrane` 各自独立。首选152–155只是新项目默认值；用户占用这些ID时，创建配方会原子分配其他空闲ID。
+
+BUILT-116的红十字为 `printedRed` 印墨和 `enamel` 涂装金属牌胎，不借朱红消防金属或红色塑料。BUILT-117的水平青光与竖向暖光分别使用 `energy`、`warm`，透明保护罩为 `glass`，与内部灯芯独立；母版保留两个有意分离的可选部件。BUILT-134是两条成对路肩，也保留两个连通分量。所有其他M018母版均为一个连通分量。
+
+道路四件套用10mm共同网格验证精确碰撞；20mm道路与10mm路肩通过米制实例位置拼装，不能调用要求同格距的 `connect`。高架基础、柱、帽、床通过100mm接口逐层拼接。护栏栏柱属于下一批BUILT-147；M018安装试验用的托架和墙体仅为辅助夹具，不增加清单母版数量。
+
+`tests/atlas-transport.test.ts`覆盖实际材质坐标、米制尺寸、孔洞、四种拼装、新角色避让既有ID、失败回滚、换材质包、原生/GLB映射及一次撤销。`scripts/verify-transport-mcp.ts`通过真实stdio MCP核对同样的几何和材质行为，并保存实际编辑器截图。

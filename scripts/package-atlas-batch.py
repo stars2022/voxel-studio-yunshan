@@ -72,6 +72,8 @@ for scenario in verification.get('assemblies', []):
     files.update((out / (name + '-export')).glob('*'))
     files.update(out.glob(name + '-view-*.png'))
 files.update(out.glob('*-tests*.txt'))
+files.update(out.glob('*-mcp-client.txt'))
+files.update(out.glob('mcp-*.png'))
 files.add(out / 'build.txt')
 manifest = {'format': 'yunshan.atlas-batch', 'version': 1, 'sheet': args.sheet, 'run': index['run'],
             'candidateMasters': len(entries), 'humanArtAccepted': 0, 'assets': entries,

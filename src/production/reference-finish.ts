@@ -3,7 +3,7 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=9;
+export const referenceFinishVersion=10;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
@@ -127,6 +127,10 @@ export const referenceFinishes:Record<string,Finish>={
  earthCutaway:{name:'剖面土层',color:'#6b5943',roughness:1,metalness:0,...surface('stone',.5,.2,846)},
  signDiffuser:{name:'灯箱丙烯酸透光板',color:'#e5c995',roughness:.65,metalness:0,opacity:.86,...surface('none',.1,0,0)},
  energyField:{name:'非碰撞能量区示意',color:'#60bdce',roughness:.9,metalness:0,emissive:'#78e9f1',intensity:1.8,...surface('none',.1,0,0)},
+ pavementConcrete:{name:'道路混凝土磨耗面',color:'#555f61',roughness:.95,metalness:0,...surface('stone',.3,.15,752)},
+ roadInlay:{name:'浅色陶瓷道路标线嵌条',color:'#d9d6bc',roughness:.7,metalness:0,...surface('ceramic',.12,.06,753)},
+ bridgeBearing:{name:'桥梁橡胶支座',color:'#344345',roughness:.9,metalness:0,...surface('none',.1,0,0)},
+ jointSeal:{name:'伸缩缝弹性密封条',color:'#283439',roughness:.95,metalness:0,...surface('none',.1,0,0)},
  flueLiner:{name:'烟道耐火陶内衬',color:'#9a7356',roughness:1,metalness:0,...surface('stone',.40,.18,751)},
  lanternTassel:{name:'灯笼纤维流苏',color:'#994b3c',roughness:1,metalness:0,...surface('fabric',.12,.20,748)},
  lanternPaper:{name:'米黄灯笼纸罩 · 透明混合近似',color:'#ead6a8',roughness:.96,metalness:0,opacity:.82,...surface('none',.1,0,0)},
