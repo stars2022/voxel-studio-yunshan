@@ -35,3 +35,12 @@ test('removing a material releases only its textures and material while keeping 
  let unrelated=0;kept.addEventListener('dispose',()=>unrelated++);kept.map!.addEventListener('dispose',()=>unrelated++);
  delete p.materials[3];cache.sync(p.materials,100,8);assert.equal(released,4);assert.equal(unrelated,0);assert.equal(cache.materials.has(3),false);assert.equal(cache.materials.get(4),kept);
 });
+
+
+test('disabled clipping shows native assets above 100m without infinite GPU planes, and finite heights reuse the shader',()=>{
+ const p=productionProject('high bridge'),cache=new RenderMaterialLibrary();cache.sync(p.materials,Infinity,8);
+ const mat=cache.materials.get(4)!,v=mat.version;assert.equal(mat.clippingPlanes?.length??0,0);
+ cache.sync(p.materials,254.2,8);assert.equal(mat.clippingPlanes![0].constant,254.2);assert.ok(mat.version>v);
+ const plane=mat.clippingPlanes![0],v2=mat.version;cache.sync(p.materials,254.6,8);assert.equal(mat.clippingPlanes![0],plane);assert.equal(mat.version,v2);
+ cache.sync(p.materials,Infinity,8);assert.equal(mat.clippingPlanes!.length,0);assert.ok(mat.version>v2);assert.equal(cache.materials.get(4),mat);
+});

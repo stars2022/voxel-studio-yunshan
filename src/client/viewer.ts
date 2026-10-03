@@ -8,7 +8,7 @@ import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
-import {RenderMaterialLibrary} from './render-materials';
+import {RenderMaterialLibrary,setMaterialClip} from './render-materials';
 import type {VoxelEmitter} from '../core/emission';
 import {Grid} from '../core/grid';
 import {clone,validRegion,type Project,type Asset,type V3,type Bounds,type Material} from '../core/types';
@@ -20,7 +20,7 @@ export class Viewer {
  worker=new Worker(new URL('./mesh-worker.ts',import.meta.url),{type:'module'});cache=new Map<string,Map<string,Built[]>>();renderCache=new Map<string,Built[]>();private materialLibrary=new RenderMaterialLibrary();materials=this.materialLibrary.materials;pending=new Map<string,(v:any)=>void>();
  private cacheSources=new Map<string,{asset:Asset;signature:string}>();private materialSignature='';private cacheAccess=new Map<string,number>();private accessClock=0;
  isolatedRegion:Bounds|null=null;lastMeshedAssets:string[]=[];meshJobs=0;lastMeshError:string|null=null;
- project!:Project;assetId:string|null=null;mode:'scene'|'asset'='scene';ready=false;tool='orbit';selectedInstance:string|null=null;clipY=100;layer:number|null=null;
+ project!:Project;assetId:string|null=null;mode:'scene'|'asset'='scene';ready=false;tool='orbit';selectedInstance:string|null=null;clipY=Infinity;layer:number|null=null;
  onPick:(p:V3|null,normal:V3|null,assetId:string|null,instanceId:string|null,event:PointerEvent)=>void=()=>{};onDrag:(p:V3|null,event:PointerEvent)=>void=()=>{};
  onStats:(stats:any)=>void=()=>{};hover=new THREE.Box3Helper(new THREE.Box3(),0xc7e2a8);selection=new THREE.Box3Helper(new THREE.Box3(),0xefd892);preview=new THREE.Box3Helper(new THREE.Box3(),0x80dfd1);
  lastMeshMs=0;frameTimes:number[]=[];lastFrame=performance.now();revision=0;
@@ -60,7 +60,7 @@ export class Viewer {
   this.scene.add(this.hover,this.selection,this.preview);for(const h of[this.hover,this.selection,this.preview]){h.visible=false;(h.material as THREE.Material).depthTest=false;h.renderOrder=99;}
   this.composer=new EffectComposer(this.renderer);this.composer.renderTarget1.samples=Math.min(4,this.renderer.capabilities.maxSamples);this.composer.renderTarget2.samples=Math.min(4,this.renderer.capabilities.maxSamples);this.renderPass=new RenderPass(this.scene,this.camera);this.aoPass=new SSAOPass(this.scene,this.camera,512,512,16);this.aoPass.kernelRadius=.25;this.aoPass.minDistance=.00005;this.aoPass.maxDistance=.015;
   const hide=(this.aoPass as any)._overrideVisibility.bind(this.aoPass);(this.aoPass as any)._overrideVisibility=()=>{hide();this.scene.traverse(o=>{if(o instanceof THREE.Mesh&&o.visible&&(Array.isArray(o.material)?o.material.some(m=>m.transparent):o.material.transparent)){o.visible=false;(this.aoPass as any)._visibilityCache.push(o);}});};
-  this.aoPass.normalMaterial.clippingPlanes=[new THREE.Plane(new THREE.Vector3(0,-1,0),this.clipY)];this.composer.addPass(this.renderPass);this.composer.addPass(this.aoPass);this.bloomPass=new UnrealBloomPass(new THREE.Vector2(512,512),.22,.22,1.55);this.composer.addPass(this.bloomPass);this.composer.addPass(new OutputPass());this.renderer.info.autoReset=false;
+  setMaterialClip(this.aoPass.normalMaterial,this.clipY);this.composer.addPass(this.renderPass);this.composer.addPass(this.aoPass);this.bloomPass=new UnrealBloomPass(new THREE.Vector2(512,512),.22,.22,1.55);this.composer.addPass(this.bloomPass);this.composer.addPass(new OutputPass());this.renderer.info.autoReset=false;
   new ResizeObserver(()=>this.resize()).observe(el);this.worker.onmessage=e=>{this.pending.get(e.data.id)?.(e.data);this.pending.delete(e.data.id);};
   this.worker.onerror=e=>{for(const done of this.pending.values())done({error:e.message||'体素网格线程失败'});this.pending.clear();};
   this.renderer.domElement.addEventListener('pointerdown',e=>{if(e.button!==0)return;const hit=this.pick(e);this.onPick(hit?.voxel??null,hit?.normal??null,hit?.assetId??null,hit?.instanceId??null,e);});
@@ -165,11 +165,11 @@ export class Viewer {
  toggleProjection(){this.view(this.camera instanceof THREE.PerspectiveCamera?'front':'perspective');}
  setClay(enabled:boolean){
   this.clayEnabled=enabled;this.scene.overrideMaterial=enabled?this.clayMaterial:null;
-  this.clayMaterial.clippingPlanes=[new THREE.Plane(new THREE.Vector3(0,-1,0),this.clipY)];
+  setMaterialClip(this.clayMaterial,this.clipY);
   if(enabled){this.renderer.setClearColor(0xcacaca);this.renderer.shadowMap.enabled=false;this.scene.environment=null;this.ground.visible=false;this.grid.visible=false;this.practicalLights.visible=false;this.hover.visible=false;this.selection.visible=false;this.preview.visible=false;}
   else this.setStudio(this.studio);
  }
- setClip(value:number){this.clipY=value;if(this.clayMaterial.clippingPlanes)this.clayMaterial.clippingPlanes[0].constant=value;this.practicalLights.children.forEach(l=>l.visible=l.position.y<value);this.aoPass.normalMaterial.clippingPlanes![0].constant=value;for(const material of this.materials.values())material.clippingPlanes![0].constant=value;}
+ setClip(value:number){if(!Number.isFinite(value)&&value!==Infinity)throw new Error("Invalid clip height");this.clipY=value;setMaterialClip(this.clayMaterial,value);this.practicalLights.children.forEach(l=>l.visible=l.position.y<value);setMaterialClip(this.aoPass.normalMaterial,value);for(const material of this.materials.values())setMaterialClip(material,value);}
  setStudio(enabled:boolean){
   this.studio=enabled;const soft=enabled&&this.referenceLighting;
   this.practicalLights.visible=enabled&&this.practicalsEnabled;document.body.classList.toggle('studio-light',enabled);

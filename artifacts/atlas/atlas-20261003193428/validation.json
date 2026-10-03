@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "run": "atlas-20261003193428",
+  "sheet": "M021",
+  "scope": [
+    "BUILT-186",
+    "BUILT-187",
+    "BUILT-188",
+    "BUILT-189",
+    "BUILT-190",
+    "BUILT-191",
+    "BUILT-192",
+    "BUILT-193",
+    "BUILT-194",
+    "BUILT-195",
+    "BUILT-205",
+    "BUILT-206"
+  ],
+  "tests": {
+    "fullRegression": 231,
+    "finalTargeted": 15,
+    "fullLog": "full-tests.txt",
+    "targetedLog": "targeted-tests-final.txt",
+    "note": "The full run began before the final 189 seal-frame cutout. All eight affected M021 tests and seven material/camera tests were rerun on the final source after that fix; both runs pass. Counts are not added as unique tests."
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 10,
+  "mcpStatus": "passed",
+  "materialCandidates": 252,
+  "nativeVoxels": 618914,
+  "triangles": 15084,
+  "glbBoundsMaxErrorM": 3.8146972691777137e-07,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 10,
+  "highBridgeClipScreenshots": 8,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Final base/material montage and front views inspected; glazing clears both opaque seal faces.",
+      "Five fixture scenes inspected for framing and missing parts.",
+      "Real high-bridge off/slice/legacy-100/restored screenshots inspected; pixel hashes restore exactly in both render paths."
+    ]
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "superseded": {
+    "run": "atlas-20261003192606",
+    "reason": "189 opaque seal covered the glass faces; actual voxel cutout was corrected and all final images recaptured. Initial MCP timed out filling hidden clip input; retry hit an existing export name. A later compositor screenshot comparison differed only in UI glyph antialiasing; direct WebGL framebuffer capture fixed that assertion. Fixed UI order and isolated per-run runtime directory. All failed reports are retained.",
+    "firstRunNewCatalogIds": 12,
+    "finalRebuildNewCatalogIds": 0
+  },
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 271,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 742,
+    "generatedEntries": 326,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 252
+  },
+  "limitations": [
+    "Static authored aviation fixtures; original AerialVehicle transforms, eye position and driving state unavailable. No rotor sweep, flight, aerodynamics or animated controls.",
+    "Bridge is isolated: six unsupported beams remain due to absent terrain; ten deliberate 0.1m non-mating AABB proximity notices remain, all five actual joints contact both adjacent cap supports.",
+    "Original giant-block/ray mismatch and lower-pier conflict remain unresolved. No original-game final PASS or integration claim.",
+    "SwiftShader software WebGL, not hardware GPU validation.",
+    "All 252 reference assets remain candidates pending human art acceptance."
+  ]
+}

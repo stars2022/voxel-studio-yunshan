@@ -1,0 +1,44 @@
+{"tool":"check_geometry","ms":1653.0926680000002,"error":false}
+{"tool":"query_voxels","ms":22.41203300000052,"error":false}
+{"tool":"query_voxels","ms":34.03719199999978,"error":false}
+{"tool":"query_voxels","ms":12.378617000000304,"error":false}
+{"tool":"query_voxels","ms":25.591683000000558,"error":false}
+{"tool":"query_voxels","ms":8.860835999999836,"error":false}
+{"tool":"query_voxels","ms":12.855246000000989,"error":false}
+{"tool":"query_voxels","ms":31.222813000000315,"error":false}
+{"tool":"query_voxels","ms":7.1060880000004545,"error":false}
+{"tool":"query_voxels","ms":6.078566000000137,"error":false}
+{"tool":"query_voxels","ms":8.042379999998957,"error":false}
+{"tool":"query_voxels","ms":6.57079899999917,"error":false}
+{"tool":"query_voxels","ms":8.670788999999786,"error":false}
+{"tool":"query_voxels","ms":6.52365699999973,"error":false}
+{"tool":"edit_transaction","ms":365.8401180000001,"error":false}
+{"tool":"edit_transaction","ms":616.5954739999997,"error":false}
+{"tool":"edit_transaction","ms":7.959114999999656,"error":false}
+{"tool":"edit_transaction","ms":8.568669999998747,"error":true}
+{"tool":"edit_transaction","ms":145.76725699999952,"error":true}
+{"tool":"edit_transaction","ms":553.3614909999997,"error":false}
+{"tool":"load_project","ms":304.7023610000015,"error":false}
+{"tool":"edit_transaction","ms":157.8978530000004,"error":false}
+{"tool":"edit_transaction","ms":177.7013220000008,"error":false}
+{"tool":"check_geometry","ms":147.32433800000035,"error":false}
+{"tool":"save_project","ms":34.89710700000069,"error":false}
+{"tool":"export_project","ms":8.92362999999932,"error":true}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"EEXIST: file already exists, mkdir '/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003192606/aerial-mcp-runtime/exports/aerial-quad'","code":"EEXIST","isError":true}
+    at call (/workspace/voxel-studio-yunshan/scripts/verify-aerial-mcp.ts:30:82)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async scenario (/workspace/voxel-studio-yunshan/scripts/verify-aerial-mcp.ts:51:148)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-aerial-mcp.ts:55:13) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

@@ -81,6 +81,8 @@ files.update(out.glob('*-tests*.txt'))
 files.update(out.glob('*-mcp-client.txt'))
 files.update(out.glob('*-mcp-initial.json'))
 files.update(out.glob('mcp-*.png'))
+files.update(out.glob('high-bridge-*.png'))
+files.update(p for p in (out / 'high-bridge-ui-before').rglob('*') if p.is_file())
 for name in ['final-geometry-recheck.json', 'camera-framing-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'

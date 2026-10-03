@@ -1,0 +1,67 @@
+✖ M021 has twelve measured native masters, faithful source hashes, empty openings and two intentional side windows (2860.540568ms)
+✖ aircraft coating, golden blade, landing rubber, window seal, glass, control pixels and bridge layers use distinct real cells (0.461537ms)
+✔ four arms, four blades and four legs dock to an explicit auxiliary fixture with real vertical contacts (320.555396ms)
+✔ two separated cockpit windows receive the roof and leave the authored eye line open above the low console (3018.807488ms)
+✔ 8.4m wing root is supported independently while the 4m tail, fin and power box assemble without covering intake cavities (3764.347835ms)
+✔ six high-bridge decks, five joints and six beams keep exact 254.6/254/252.8 elevations, support contacts and historical limitations (1702.844448ms)
+✔ colour and roughness edits retain GPU materials, texture objects and shader versions across all other roles (24.665454ms)
+✔ appearance undo changes surface and transparency without disposing shared shader-owning materials (11.951362ms)
+✔ removing a material releases only its textures and material while keeping unrelated roles alive (13.888495ms)
+✔ disabled clipping shows native assets above 100m without infinite GPU planes, and finite heights reuse the shader (1.880738ms)
+✔ perspective framing keeps small assets, 160m bridges and 960m runways inside all six clip planes (4.649425ms)
+✔ orthographic framing keeps small assets, 160m bridges and 960m runways inside all six clip planes (3.023823ms)
+✔ clip toggles synchronise native, clay, AO and lights, and reject invalid heights atomically (1.428415ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 11
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 35395.266069
+
+✖ failing tests:
+
+test at tests/atlas-aerial.test.ts:30:1
+✖ M021 has twelve measured native masters, faithful source hashes, empty openings and two intentional side windows (2860.540568ms)
+  AssertionError [ERR_ASSERTION]: BUILT-195
+  + actual - expected
+  
+    [
+      1.2,
+      0.2,
+  +   1.4000000000000001
+  -   1.4
+    ]
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-aerial.test.ts:32:613)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 1.2, 0.2, 1.4000000000000001 ],
+    expected: [ 1.2, 0.2, 1.4 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-aerial.test.ts:34:1
+✖ aircraft coating, golden blade, landing rubber, window seal, glass, control pixels and bridge layers use distinct real cells (0.461537ms)
+  AssertionError [ERR_ASSERTION]: BUILT-191 aircraftSkin 2,0.01,1
+  
+  4 !== 161
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-aerial.test.ts:41:35)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 4,
+    expected: 161,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

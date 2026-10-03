@@ -3,10 +3,13 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=12;
+export const referenceFinishVersion=13;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ aircraftSkin:{name:'航空蒙皮 · 米白涂装金属',color:'#ddd9c9',roughness:.42,metalness:.36,...surface('metal',.3,.15,521)},
+ rotorBlade:{name:'旋翼叶身 · 金色涂层',color:'#c5a65d',roughness:.4,metalness:.55,...surface('metal',.18,.14,523)},
+ landingPadRubber:{name:'落地脚 · 防滑胶垫',color:'#293437',roughness:.95,metalness:0,...surface('none',.1,0,0)},
  signalStopLamp:{name:'停止灯芯 · 未绑定状态',color:'#b94037',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
  signalCautionLamp:{name:'警示灯芯 · 未绑定状态',color:'#d4a44d',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
  signalGoLamp:{name:'通行灯芯 · 未绑定状态',color:'#408563',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},

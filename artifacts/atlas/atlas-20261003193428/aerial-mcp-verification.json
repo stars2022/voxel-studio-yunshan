@@ -1,0 +1,1251 @@
+{
+  "run": "atlas-20261003193428",
+  "startedAt": "2026-10-03T19:39:59.350Z",
+  "status": "passed",
+  "checks": [
+    "Twelve M021 masters verified from actual native coordinates: aircraft coating, golden metal blade, landing rubber, optical glass, control pixels and bridge layers",
+    "Four independent aircraft appearance roles, canonical UI hashes, rubber filtering, dry run, version conflicts, idempotency, failure rollback and one undo all verified",
+    "Four arm, blade and landing-leg copies dock with real vertical contact to a clearly auxiliary test block; only three catalogue masters, no flight or rotor-sweep claim",
+    "Two independent 0.2x1.2x2m windows and separate roof preserve a clear authored Y1.1m eye line above the 0.4m installed console; unavailable original vehicle state remains explicit",
+    "Full 8.4m main wing docks to its root saddle without filling the native wing cavity",
+    "4m horizontal tail, 1.8m fin and authored power box align with clear intake openings; no flight dynamics claim",
+    "Six decks, five joints and six beams use two catalogue families at exact 254.6/254/252.8m datums; terrain support and ten non-mating proximity notices remain explicit, original-game negative history retained",
+    "Real UI clipping at 254.2m and former 100m limit changes both base and material pixels; disabled clipping restores the identical high-bridge framebuffer and exports retain world Y254.6",
+    "All five scenarios save real stdio MCP multiview previews plus GLB/native/collision/interface/material-atlas exports",
+    "Native save and server restart restore the exact canonical document"
+  ],
+  "errors": [],
+  "uiSync": [
+    {
+      "version": 1,
+      "ms": 1581.702467000001
+    },
+    {
+      "version": 2,
+      "ms": 458.6485109999994
+    },
+    {
+      "version": 3,
+      "ms": 186.07737300000008
+    },
+    {
+      "version": 4,
+      "ms": 283.7993749999987
+    },
+    {
+      "version": 5,
+      "ms": 340.89587399999436
+    },
+    {
+      "version": 6,
+      "ms": 3796.754320999993
+    },
+    {
+      "version": 7,
+      "ms": 569.211120999993
+    },
+    {
+      "version": 8,
+      "ms": 2018.337102999998
+    },
+    {
+      "version": 9,
+      "ms": 178.64501800001017
+    },
+    {
+      "version": 10,
+      "ms": 1745.0616169999994
+    },
+    {
+      "version": 11,
+      "ms": 232.31798000000708
+    },
+    {
+      "version": 12,
+      "ms": 771.9592209999973
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "aerial-quad",
+      "masters": 4,
+      "placements": 13,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 55604,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "fixture-1",
+              "leg-0",
+              "leg-1",
+              "leg-2",
+              "leg-3",
+              "arm-0",
+              "blade-0",
+              "arm-1",
+              "blade-1",
+              "arm-2",
+              "blade-2",
+              "arm-3",
+              "blade-3"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 55604
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "fixture-1": [
+            "leg-0",
+            "leg-1",
+            "leg-2",
+            "leg-3"
+          ],
+          "leg-0": [],
+          "leg-1": [],
+          "leg-2": [],
+          "leg-3": [],
+          "arm-0": [
+            "fixture-1"
+          ],
+          "blade-0": [
+            "arm-0"
+          ],
+          "arm-1": [
+            "fixture-1"
+          ],
+          "blade-1": [
+            "arm-1"
+          ],
+          "arm-2": [
+            "fixture-1"
+          ],
+          "blade-2": [
+            "arm-2"
+          ],
+          "arm-3": [
+            "fixture-1"
+          ],
+          "blade-3": [
+            "arm-3"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "arm-0",
+            "index": 0,
+            "widthM": 0.4,
+            "heightM": 0.04,
+            "emptyCells": 80,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "arm-1",
+            "index": 0,
+            "widthM": 0.4,
+            "heightM": 0.04,
+            "emptyCells": 80,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "arm-2",
+            "index": 0,
+            "widthM": 0.4,
+            "heightM": 0.04,
+            "emptyCells": 80,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "arm-3",
+            "index": 0,
+            "widthM": 0.4,
+            "heightM": 0.04,
+            "emptyCells": 80,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "中心块下方实际空隙",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/exports/aerial-quad",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 136612,
+        "isError": false
+      },
+      "previews": {
+        "version": 4,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/382eb1ba-5996-481f-8cf9-1ececf0a81f6/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/382eb1ba-5996-481f-8cf9-1ececf0a81f6/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "aerial-cockpit",
+      "masters": 4,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.01,
+        "occupiedCollisionCells": 1800696,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "floor-1",
+              "glazing-1",
+              "roof-1",
+              "console-1"
+            ],
+            "pitchM": 0.01,
+            "occupiedCells": 1800696
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "floor-1": [],
+          "glazing-1": [
+            "floor-1"
+          ],
+          "roof-1": [
+            "glazing-1"
+          ],
+          "console-1": [
+            "floor-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "glazing-1",
+            "index": 0,
+            "widthM": 1.4000000000000001,
+            "heightM": 0.8,
+            "emptyCells": 235200,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "roof-1",
+            "index": 0,
+            "widthM": 0.08,
+            "heightM": 0.12,
+            "emptyCells": 288,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "roof-1",
+            "index": 1,
+            "widthM": 0.08,
+            "heightM": 0.12,
+            "emptyCells": 288,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "roof-1",
+            "index": 2,
+            "widthM": 0.08,
+            "heightM": 0.12,
+            "emptyCells": 288,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "roof-1",
+            "index": 3,
+            "widthM": 0.08,
+            "heightM": 0.12,
+            "emptyCells": 288,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "roof-1",
+            "index": 4,
+            "widthM": 0.08,
+            "heightM": 0.12,
+            "emptyCells": 288,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "console-1",
+            "index": 0,
+            "widthM": 1,
+            "heightM": 0.04,
+            "emptyCells": 44000,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "作者Y1.1m眼位直视通道",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/exports/aerial-cockpit",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 344104,
+        "isError": false
+      },
+      "previews": {
+        "version": 6,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/0a5f782b-a186-4fd0-979e-c34c63f9a619/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/0a5f782b-a186-4fd0-979e-c34c63f9a619/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "aerial-wing",
+      "masters": 2,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 131318,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "stand-1",
+              "wing-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 131318
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "stand-1": [],
+          "wing-1": [
+            "stand-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "wing-1",
+            "index": 0,
+            "widthM": 0.12,
+            "heightM": 0.12,
+            "emptyCells": 180,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "主翼左侧下方检查空间",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/exports/aerial-wing",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 453548,
+        "isError": false
+      },
+      "previews": {
+        "version": 8,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/89679713-782c-499e-8c37-471a58b56a39/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/89679713-782c-499e-8c37-471a58b56a39/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "aerial-tail",
+      "masters": 3,
+      "placements": 3,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 186538,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "power-1",
+              "tail-1",
+              "fin-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 186538
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "power-1": [],
+          "tail-1": [
+            "power-1"
+          ],
+          "fin-1": [
+            "tail-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "power-1",
+            "index": 0,
+            "widthM": 1,
+            "heightM": 0.4,
+            "emptyCells": 35000,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "power-1",
+            "index": 1,
+            "widthM": 0.28,
+            "heightM": 0.42,
+            "emptyCells": 10290,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "tail-1",
+            "index": 0,
+            "widthM": 0.12,
+            "heightM": 0.12,
+            "emptyCells": 180,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "动力盒前方进气通道",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/exports/aerial-tail",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 400336,
+        "isError": false
+      },
+      "previews": {
+        "version": 10,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/b33a9a64-e2b3-4474-b777-83f01aa521fc/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/b33a9a64-e2b3-4474-b777-83f01aa521fc/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "aerial-bridge",
+      "masters": 3,
+      "placements": 17,
+      "geometry": {
+        "pitchM": 0.1,
+        "occupiedCollisionCells": 470664,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "beam-0",
+              "deck-0",
+              "beam-1",
+              "deck-1",
+              "beam-2",
+              "deck-2",
+              "beam-3",
+              "deck-3",
+              "beam-4",
+              "deck-4",
+              "beam-5",
+              "deck-5",
+              "joint-0",
+              "joint-1",
+              "joint-2",
+              "joint-3",
+              "joint-4"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 470664
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [
+          "beam-0",
+          "beam-1",
+          "beam-2",
+          "beam-3",
+          "beam-4",
+          "beam-5"
+        ],
+        "contacts": {
+          "beam-0": [],
+          "deck-0": [
+            "beam-0"
+          ],
+          "beam-1": [],
+          "deck-1": [
+            "beam-1"
+          ],
+          "beam-2": [],
+          "deck-2": [
+            "beam-2"
+          ],
+          "beam-3": [],
+          "deck-3": [
+            "beam-3"
+          ],
+          "beam-4": [],
+          "deck-4": [
+            "beam-4"
+          ],
+          "beam-5": [],
+          "deck-5": [
+            "beam-5"
+          ],
+          "joint-0": [
+            "beam-0",
+            "beam-1"
+          ],
+          "joint-1": [
+            "beam-1",
+            "beam-2"
+          ],
+          "joint-2": [
+            "beam-2",
+            "beam-3"
+          ],
+          "joint-3": [
+            "beam-3",
+            "beam-4"
+          ],
+          "joint-4": [
+            "beam-4",
+            "beam-5"
+          ]
+        },
+        "gaps": [
+          {
+            "instances": [
+              "beam-0",
+              "deck-1"
+            ],
+            "distanceM": 0.09999999999999964
+          },
+          {
+            "instances": [
+              "deck-0",
+              "beam-1"
+            ],
+            "distanceM": 0.09999999999999964
+          },
+          {
+            "instances": [
+              "beam-1",
+              "deck-2"
+            ],
+            "distanceM": 0.10000000000000142
+          },
+          {
+            "instances": [
+              "deck-1",
+              "beam-2"
+            ],
+            "distanceM": 0.09999999999999787
+          },
+          {
+            "instances": [
+              "beam-2",
+              "deck-3"
+            ],
+            "distanceM": 0.09999999999999787
+          },
+          {
+            "instances": [
+              "deck-2",
+              "beam-3"
+            ],
+            "distanceM": 0.09999999999999787
+          },
+          {
+            "instances": [
+              "beam-3",
+              "deck-4"
+            ],
+            "distanceM": 0.10000000000000142
+          },
+          {
+            "instances": [
+              "deck-3",
+              "beam-4"
+            ],
+            "distanceM": 0.10000000000000142
+          },
+          {
+            "instances": [
+              "beam-4",
+              "deck-5"
+            ],
+            "distanceM": 0.10000000000000142
+          },
+          {
+            "instances": [
+              "deck-4",
+              "beam-5"
+            ],
+            "distanceM": 0.10000000000000142
+          }
+        ],
+        "openings": [
+          {
+            "instanceId": "beam-0",
+            "index": 0,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-0",
+            "index": 1,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-1",
+            "index": 0,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-1",
+            "index": 1,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-2",
+            "index": 0,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-2",
+            "index": 1,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-3",
+            "index": 0,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-3",
+            "index": 1,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-4",
+            "index": 0,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-4",
+            "index": 1,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-5",
+            "index": 0,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "beam-5",
+            "index": 1,
+            "widthM": 4.2,
+            "heightM": 0.8,
+            "emptyCells": 12768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "隔离高桥板顶3m净空",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [
+        "beam-0",
+        "beam-1",
+        "beam-2",
+        "beam-3",
+        "beam-4",
+        "beam-5"
+      ],
+      "expectedNearPairs": [
+        [
+          "beam-0",
+          "deck-1"
+        ],
+        [
+          "deck-0",
+          "beam-1"
+        ],
+        [
+          "beam-1",
+          "deck-2"
+        ],
+        [
+          "deck-1",
+          "beam-2"
+        ],
+        [
+          "beam-2",
+          "deck-3"
+        ],
+        [
+          "deck-2",
+          "beam-3"
+        ],
+        [
+          "beam-3",
+          "deck-4"
+        ],
+        [
+          "deck-3",
+          "beam-4"
+        ],
+        [
+          "beam-4",
+          "deck-5"
+        ],
+        [
+          "deck-4",
+          "beam-5"
+        ]
+      ],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/exports/aerial-bridge",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 173512,
+        "isError": false
+      },
+      "previews": {
+        "version": 12,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/9e572df0-b455-41da-a67b-3e7aa473599d/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261003193428/aerial-mcp-1791056399211-runtime/previews/9e572df0-b455-41da-a67b-3e7aa473599d/front.png"
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "gallery": {
+    "pitchM": 0.01,
+    "occupiedCollisionCells": 598546,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "built-186-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 4896
+      },
+      {
+        "instanceIds": [
+          "built-187-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 2750
+      },
+      {
+        "instanceIds": [
+          "built-188-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 2020
+      },
+      {
+        "instanceIds": [
+          "built-189-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 39784
+      },
+      {
+        "instanceIds": [
+          "built-190-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 64104
+      },
+      {
+        "instanceIds": [
+          "built-191-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 115318
+      },
+      {
+        "instanceIds": [
+          "built-192-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 44970
+      },
+      {
+        "instanceIds": [
+          "built-193-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 27160
+      },
+      {
+        "instanceIds": [
+          "built-194-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 114408
+      },
+      {
+        "instanceIds": [
+          "built-195-display"
+        ],
+        "pitchM": 0.01,
+        "occupiedCells": 105592
+      },
+      {
+        "instanceIds": [
+          "built-205-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 43200
+      },
+      {
+        "instanceIds": [
+          "built-206-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 34344
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [],
+    "contacts": {
+      "built-186-display": [],
+      "built-187-display": [],
+      "built-188-display": [],
+      "built-189-display": [],
+      "built-190-display": [],
+      "built-191-display": [],
+      "built-192-display": [],
+      "built-193-display": [],
+      "built-194-display": [],
+      "built-195-display": [],
+      "built-205-display": [],
+      "built-206-display": []
+    },
+    "gaps": [],
+    "openings": [
+      {
+        "instanceId": "built-186-display",
+        "index": 0,
+        "widthM": 0.4,
+        "heightM": 0.04,
+        "emptyCells": 80,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-189-display",
+        "index": 0,
+        "widthM": 1.4000000000000001,
+        "heightM": 0.8,
+        "emptyCells": 235200,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-190-display",
+        "index": 0,
+        "widthM": 0.08,
+        "heightM": 0.12,
+        "emptyCells": 288,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-190-display",
+        "index": 1,
+        "widthM": 0.08,
+        "heightM": 0.12,
+        "emptyCells": 288,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-190-display",
+        "index": 2,
+        "widthM": 0.08,
+        "heightM": 0.12,
+        "emptyCells": 288,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-190-display",
+        "index": 3,
+        "widthM": 0.08,
+        "heightM": 0.12,
+        "emptyCells": 288,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-190-display",
+        "index": 4,
+        "widthM": 0.08,
+        "heightM": 0.12,
+        "emptyCells": 288,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-191-display",
+        "index": 0,
+        "widthM": 0.12,
+        "heightM": 0.12,
+        "emptyCells": 180,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-193-display",
+        "index": 0,
+        "widthM": 0.12,
+        "heightM": 0.12,
+        "emptyCells": 180,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-194-display",
+        "index": 0,
+        "widthM": 1,
+        "heightM": 0.4,
+        "emptyCells": 35000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-194-display",
+        "index": 1,
+        "widthM": 0.28,
+        "heightM": 0.42,
+        "emptyCells": 10290,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-195-display",
+        "index": 0,
+        "widthM": 1,
+        "heightM": 0.04,
+        "emptyCells": 44000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-206-display",
+        "index": 0,
+        "widthM": 4.2,
+        "heightM": 0.8,
+        "emptyCells": 12768,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-206-display",
+        "index": 1,
+        "widthM": 4.2,
+        "heightM": 0.8,
+        "emptyCells": 12768,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+    ],
+    "isError": false
+  },
+  "highBridgeGLB": {
+    "deck0Translation": [
+      0,
+      254,
+      0
+    ],
+    "worldTopYM": 254.60000002384186
+  },
+  "clipping": [
+    {
+      "clay": true,
+      "off": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-base-off.png",
+        "sha256": "05cab0f719dcd6a93c842b7182654f6c2c2f8c9fc281903697ebf44162c04bd4"
+      },
+      "sliced": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-base-slice.png",
+        "sha256": "adf889aac8bcdd1177b17bc4973b31feca06f8a284a41d2f014f61a2beff77cc"
+      },
+      "legacy": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-base-legacy-100.png",
+        "sha256": "d60724020e9f5e88f1be2af2097a7d66f87281b12944c9a60f4bd209971548b1"
+      },
+      "restored": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-base-restored.png",
+        "sha256": "05cab0f719dcd6a93c842b7182654f6c2c2f8c9fc281903697ebf44162c04bd4"
+      },
+      "exactRestore": true
+    },
+    {
+      "clay": false,
+      "off": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-material-off.png",
+        "sha256": "598d50eda2e9b3d40650d66ad8f1cb6246426b238c9b4820435a50c9de0e3e6d"
+      },
+      "sliced": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-material-slice.png",
+        "sha256": "ed195252b4bbb50908cc37776855174ac0665c5032a4f9ad7fd9fcce6826c716"
+      },
+      "legacy": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-material-legacy-100.png",
+        "sha256": "4d4369027200796febd533b4c95730e30e6ace75ace4aab8e770b16c16029a66"
+      },
+      "restored": {
+        "file": "artifacts/atlas/atlas-20261003193428/high-bridge-material-restored.png",
+        "sha256": "598d50eda2e9b3d40650d66ad8f1cb6246426b238c9b4820435a50c9de0e3e6d"
+      },
+      "exactRestore": true
+    }
+  ],
+  "completedAt": "2026-10-03T19:42:03.091Z"
+}

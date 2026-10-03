@@ -1,0 +1,103 @@
+{"tool":"check_geometry","ms":2522.465357000001,"error":false}
+{"tool":"query_voxels","ms":20.025752999999895,"error":false}
+{"tool":"query_voxels","ms":39.1000210000002,"error":false}
+{"tool":"query_voxels","ms":11.895814999999857,"error":false}
+{"tool":"query_voxels","ms":19.495973999999478,"error":false}
+{"tool":"query_voxels","ms":18.58394699999917,"error":false}
+{"tool":"query_voxels","ms":12.150374000000738,"error":false}
+{"tool":"query_voxels","ms":51.516145999999935,"error":false}
+{"tool":"query_voxels","ms":7.002021000000241,"error":false}
+{"tool":"query_voxels","ms":9.27313999999933,"error":false}
+{"tool":"query_voxels","ms":13.399991000000227,"error":false}
+{"tool":"query_voxels","ms":12.303794999999809,"error":false}
+{"tool":"query_voxels","ms":33.52770799999962,"error":false}
+{"tool":"query_voxels","ms":9.778943999999683,"error":false}
+{"tool":"edit_transaction","ms":755.6909300000007,"error":false}
+{"tool":"edit_transaction","ms":1308.7640420000007,"error":false}
+{"tool":"edit_transaction","ms":11.154732999999396,"error":false}
+{"tool":"edit_transaction","ms":4.418171999999686,"error":true}
+{"tool":"edit_transaction","ms":268.82663500000126,"error":true}
+{"tool":"edit_transaction","ms":1083.4498340000027,"error":false}
+{"tool":"load_project","ms":244.06892099999823,"error":false}
+{"tool":"edit_transaction","ms":286.17185699999754,"error":false}
+{"tool":"edit_transaction","ms":242.85826599999928,"error":false}
+{"tool":"check_geometry","ms":215.64385299999776,"error":false}
+{"tool":"save_project","ms":49.90399300000354,"error":false}
+{"tool":"export_project","ms":1327.3856019999985,"error":false}
+{"tool":"generate_previews","ms":6239.747874000001,"error":false}
+{"tool":"load_project","ms":89.09917499999938,"error":false}
+{"tool":"edit_transaction","ms":1639.6855370000012,"error":false}
+{"tool":"edit_transaction","ms":2188.7737599999964,"error":false}
+{"tool":"check_geometry","ms":1236.7255910000022,"error":false}
+{"tool":"save_project","ms":92.77229699999589,"error":false}
+{"tool":"export_project","ms":5812.315342000002,"error":false}
+{"tool":"generate_previews","ms":16105.570529999997,"error":false}
+{"tool":"load_project","ms":283.29453299999295,"error":false}
+{"tool":"edit_transaction","ms":1659.075324000005,"error":false}
+{"tool":"edit_transaction","ms":2177.4019229999976,"error":false}
+{"tool":"check_geometry","ms":336.3154460000078,"error":false}
+{"tool":"save_project","ms":30.80926600001112,"error":false}
+{"tool":"export_project","ms":2756.1460560000123,"error":false}
+{"tool":"generate_previews","ms":14910.694316000008,"error":false}
+{"tool":"load_project","ms":325.6638569999923,"error":false}
+{"tool":"edit_transaction","ms":1680.632396999994,"error":false}
+{"tool":"edit_transaction","ms":1533.713109000004,"error":false}
+{"tool":"check_geometry","ms":867.5387979999941,"error":false}
+{"tool":"save_project","ms":66.68047799999476,"error":false}
+{"tool":"export_project","ms":2826.7430840000015,"error":false}
+{"tool":"generate_previews","ms":14858.454822,"error":false}
+{"tool":"load_project","ms":194.59810799999104,"error":false}
+{"tool":"edit_transaction","ms":748.4693589999952,"error":false}
+{"tool":"edit_transaction","ms":805.0507499999949,"error":false}
+{"tool":"check_geometry","ms":938.8063890000049,"error":false}
+{"tool":"save_project","ms":25.812042999983532,"error":false}
+{"tool":"export_project","ms":1020.3403999999864,"error":false}
+{"tool":"generate_previews","ms":13202.934967999987,"error":false}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.fill: Timeout 120000ms exceeded.
+Call log:
+[2m  - waiting for locator('#clip-height')[22m
+[2m    - locator resolved to <input value="2.4" step="0.025" type="number" id="clip-height"/>[22m
+[2m    - fill("254.2")[22m
+[2m  - attempting fill action[22m
+[2m    2 × waiting for element to be visible, enabled and editable[22m
+[2m      - element is not visible[22m
+[2m    - retrying fill action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and editable[22m
+[2m      - element is not visible[22m
+[2m    - retrying fill action[22m
+[2m      - waiting 100ms[22m
+[2m    123 × waiting for element to be visible, enabled and editable[22m
+[2m        - element is not visible[22m
+[2m      - retrying fill action[22m
+[2m        - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and editable[22m
+
+    at <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-aerial-mcp.ts:66:69) {
+  log: [
+    "  - waiting for locator('#clip-height')",
+    '    - locator resolved to <input value="2.4" step="0.025" type="number" id="clip-height"/>',
+    '    - fill("254.2")',
+    '  - attempting fill action',
+    '    2 × waiting for element to be visible, enabled and editable',
+    '      - element is not visible',
+    '    - retrying fill action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be visible, enabled and editable',
+    '      - element is not visible',
+    '    - retrying fill action',
+    '      - waiting 100ms',
+    '    123 × waiting for element to be visible, enabled and editable',
+    '        - element is not visible',
+    '      - retrying fill action',
+    '        - waiting 500ms',
+    '    - waiting for element to be visible, enabled and editable'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.19.0
