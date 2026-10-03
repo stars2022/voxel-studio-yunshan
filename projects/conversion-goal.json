@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 252,
-    "remainingReferenceEntries": 541,
-    "completedReferenceSheets": 21,
+    "referenceCandidates": 264,
+    "remainingReferenceEntries": 529,
+    "completedReferenceSheets": 22,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 271,
+      "baseModels": 283,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 742,
-      "generatedEntries": 326,
+      "notProduced": 730,
+      "generatedEntries": 338,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 252
+      "atlasReferenceCandidates": 264
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M021",
+    "sheet": "M022",
     "state": "validated-for-batch-push",
     "ids": [
-      "BUILT-186",
-      "BUILT-187",
-      "BUILT-188",
-      "BUILT-189",
-      "BUILT-190",
-      "BUILT-191",
-      "BUILT-192",
-      "BUILT-193",
-      "BUILT-194",
-      "BUILT-195",
-      "BUILT-205",
-      "BUILT-206"
+      "BUILT-207",
+      "BUILT-208",
+      "BUILT-209",
+      "BUILT-210",
+      "BUILT-212",
+      "BUILT-213",
+      "BUILT-214",
+      "BUILT-215",
+      "BUILT-216",
+      "BUILT-217",
+      "BUILT-218",
+      "BUILT-219"
     ],
-    "run": "atlas-20261003193428",
-    "evidence": "artifacts/atlas/atlas-20261003193428"
+    "run": "atlas-20261003200831",
+    "evidence": "artifacts/atlas/atlas-20261003200831"
   },
-  "nextBatch": "M022",
+  "nextBatch": "M023",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作真实体素、独立材质角色、部件、安装接口及开口",
@@ -66,15 +66,15 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M021共252件技术转化候选；尚余541条参考未完成，人工美术验收为0。"
+    "M001–M022共264件技术转化候选；尚余529条参考未完成，人工美术验收为0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "M022共12件：BUILT-207–210、212–219。隔离高桥落台/墩帽/基础/护栏，市场铺面/坡接/边沟/路缘/挡土/十级台阶，现代幕墙与竖向遮阳。",
-    "207电梯侧与岸侧落台分开；208保留下层pier碰撞FAIL；209仅允许正高基础实体、不能编造原160个terrain采样点。M021梁底252.8、顶254、桥板顶254.6m为明确基准；没有原桥全坐标，不冒称修复原游戏。",
-    "210按清单圆盘0.35与身体1.72m作明确净空样件；需要三桥/高架/上下层原状态才能声明全净空。",
-    "212–216真实surface/solid层次和有限台基，terrain填挖≤4m是清单约束；无原terrain场时使用明确作者样件。217为3.2m步行连接、十级0.2m步高，不接车辆。",
-    "218幕墙真实框/玻璃分层、退界与楼层相接；219金属细片遮阳复用，不侵占入口和屋面。",
-    "按图查看参考；保持137个材质角色和实际ID映射。先完成构建再拍图，MCP使用新的临时runtime避免重复导出同名。"
+    "M023共12件：BUILT-225、232–235、240–246。连廊端支座、顺等高线基台、0.2m外阶梯、低坡道、院墙院门、绿化架/花池壳、全息发射座、双跑梯扶手、屋面安全栏、木门扇、木窗棂、4.8m薄瓦檐梁椽。",
+    "225需与连廊上下层真实连接；232有限台地与真实terrain接合，原地形缺失时必须显式作者样件，不能伪称原地形适配。233台阶0.2m，234要求连续实体坡；保持体素离散表面与原解析控制器区别，不冒称运行时通过。",
+    "235院门真实开敞，与共享开口对齐；240仅绿化安装架和花池壳，不把植物内容混入建筑母版；241仅实体全息发射座，不烘入UI中文或假全息功能。",
+    "242双跑楼梯扶手含半转与上层井边，正常上行出口保持空；243屋面安全栏按明确可用边界，出口不封堵。",
+    "244/245按真实洞口匹配木门扇与窗棂，榫接/硬边为实际几何；246清单给定4.8m薄瓦檐，必须按RoofRegion定位约束记录，原对象缺失时使用作者安装场景。",
+    "角色库140项；component参数仅适用于对应家族命名选项。新模块atlas-urban.ts避免覆盖旧atlas-civic.ts生活配方。先完成构建再拍图，MCP使用独立runtime。"
   ]
 }

@@ -1,0 +1,53 @@
+✔ M022 has twelve catalogue families and seventeen explicit component shapes, correct dimensions, one connected body each and true openings (5307.007074ms)
+✔ actual stone, concrete, mortar, structural bearings, facade frames, window seals and golden aluminium stay separate (159.346996ms)
+✖ component selection is explicit and recipe-specific, rejects cross-family and mistyped parameters, and rebuild preserves origin plus one undo (275.967908ms)
+✔ lift and bank landings remain separate, with a clear 1.72m body and a fully supported 0.35m-radius authored walking disk (653.390227ms)
+✔ five-height positive footings contact explicit sample terrain, then support foundation, pier, cap and M021 high bridge at exact datums (1452.990834ms)
+✔ ramp top and closed solid bottom come from the same column heights; ten real 0.2m steps meet the finite 2m platform (4514.595593ms)
+✔ drain cover stays independent, tree surround stays hollow, and wall weeps continue through the finite auxiliary soil (374.030637ms)
+✔ two-storey facade accepts nine real shade brackets in cut pockets and leaves both floors, side route and roof volume clear (4404.68738ms)
+✔ architectural role appearance remains independent through palette application, native and GLB export and one undo (8381.376495ms)
+✔ foreign architectural IDs stay intact, role creation rejects partial failures and one undo removes all newly allocated roles (527.020713ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 26619.858582
+
+✖ failing tests:
+
+test at tests/atlas-urban.test.ts:47:1
+✖ component selection is explicit and recipe-specific, rejects cross-family and mistyped parameters, and rebuild preserves origin plus one undo (275.967908ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      edge: {
+        category: 'base',
+        cellSize: 0.05,
+        chunks: {
+  ...
+        },
+  +     version: 3
+  -     version: 1
+      }
+    }
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-urban.test.ts:49:534)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { edge: { id: 'edge', name: '隔离矮路缘和树池围边', version: 3, category: 'base', cellSize: 0.05, origin: [Array], chunks: [Object], parts: [Array], openings: [], ports: [Array], source: [Object] } },
+    expected: { edge: { id: 'edge', name: '隔离矮路缘和树池围边', version: 1, category: 'base', cellSize: 0.05, origin: [Array], chunks: [Object], parts: [Array], openings: [], ports: [Array], source: [Object] } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

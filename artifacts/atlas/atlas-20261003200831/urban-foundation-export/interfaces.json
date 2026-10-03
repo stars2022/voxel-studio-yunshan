@@ -1,0 +1,1221 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166
+    }
+  },
+  "assets": [
+    {
+      "id": "pier",
+      "name": "隔离共享高桥墩/墩帽",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            3
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "cap",
+          "kind": "civic-cap",
+          "position": [
+            2,
+            8,
+            1.5
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            3
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              80,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两级石鞋与混凝土基础芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              12,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "连续承载柱芯与分缝石砌皮",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              12,
+              7
+            ],
+            "max": [
+              33,
+              76,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶部阶梯钢肩及承台",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              10,
+              1
+            ],
+            "max": [
+              39,
+              80,
+              29
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "柱面内缩灯槽、检修盖及铜锚",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              15,
+              3
+            ],
+            "max": [
+              37,
+              80,
+              27
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "8m作者高桥墩：分级石鞋、真实混凝土芯、石砌包层、钢肩和检修灯槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              80,
+              30
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "cap",
+      "name": "隔离共享高桥墩/墩帽",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            3.2
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "pier",
+          "kind": "civic-cap",
+          "position": [
+            4.5,
+            0,
+            1.6
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            3
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              12,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "阶梯混凝土承梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              10,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "浅石侧压面与端部护角",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              6,
+              0
+            ],
+            "max": [
+              90,
+              10,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实钢围带和三组橡胶支座",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              9,
+              2
+            ],
+            "max": [
+              85,
+              12,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              9,
+              1
+            ],
+            "max": [
+              84,
+              10,
+              31
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立9m高桥墩帽：连续混凝土承梁、石侧皮、钢围带及三组橡胶支座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              12,
+              32
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "foundation",
+      "name": "隔离共享高桥分段terrain基础",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            3
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              10,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "混凝土承台与退层石边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              10,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "真实承重铺面与四足钢底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              10,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两侧钢压带",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              9,
+              3
+            ],
+            "max": [
+              37,
+              10,
+              27
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四角铜固定锚",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              9,
+              3
+            ],
+            "max": [
+              37,
+              10,
+              27
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "4×3m独立基础承台：连续混凝土、浅石压面、四足接口和实际钢锚",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              10,
+              30
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "footing",
+      "name": "隔离共享高桥分段terrain基础",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1,
+            0,
+            1
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              10,
+              10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "按五个显式接触高度生成的混凝土实体",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              10,
+              10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "前后分段石皮保持真实阶梯底面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              10,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "连续钢顶托",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              8,
+              0
+            ],
+            "max": [
+              10,
+              10,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四颗铜定位钉",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              9,
+              1
+            ],
+            "max": [
+              9,
+              10,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "五高度带的正高实体承足：真实阶梯底面、混凝土芯、钢顶托及独立铜锚",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              10,
+              10,
+              10
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "beam",
+      "name": "隔离共享高桥梁体",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.1
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            8.2
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "deck",
+          "kind": "high-deck",
+          "position": [
+            4.5,
+            1.2,
+            4
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            8
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              90,
+              12,
+              81
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续混凝土上下翼板与三道腹板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              12,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "中部横隔板与实际贯通检查口",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              2,
+              38
+            ],
+            "max": [
+              88,
+              10,
+              42
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "端部承缝钢托与侧面钢加强带",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              -1
+            ],
+            "max": [
+              90,
+              12,
+              81
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "真实端托铜锁与独立浅石侧压块",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              8,
+              -1
+            ],
+            "max": [
+              90,
+              12,
+              81
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "隔离高桥箱梁：9m宽、1.2m高、8m节段、真实检查腔及两端0.1m承缝顶托",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              90,
+              12,
+              81
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            2,
+            2,
+            0
+          ],
+          "max": [
+            44,
+            10,
+            38
+          ]
+        },
+        {
+          "min": [
+            46,
+            2,
+            42
+          ],
+          "max": [
+            88,
+            10,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deck",
+      "name": "隔离共享高桥桥板/接缝",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            8
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "beam",
+          "kind": "high-deck",
+          "position": [
+            4.5,
+            0,
+            4
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            8
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "结构混凝土层与钢边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立磨耗铺面与缝段密封层",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              4,
+              0
+            ],
+            "max": [
+              88,
+              6,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实端部钢锚或交替伸缩齿",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              5,
+              2
+            ],
+            "max": [
+              87,
+              6,
+              78
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立黄铜锚钉",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              5,
+              3
+            ],
+            "max": [
+              83,
+              6,
+              76
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "隔离高桥共享板/缝：9m宽承板、混凝土铺面、钢边锚点与独立伸缩密封",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              80
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "terrain-fixture",
+      "name": "显式五高度带试验地形（辅助，非原采样）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "terrain-1",
+      "assetId": "terrain-fixture",
+      "name": "显式五高度带试验地形（辅助，非原采样）",
+      "position": [
+        2.5,
+        241.2,
+        2.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "footing-0-0",
+      "assetId": "footing",
+      "name": "隔离共享高桥分段terrain基础",
+      "position": [
+        2.5,
+        241.6,
+        2.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "footing-0-1",
+      "assetId": "footing",
+      "name": "隔离共享高桥分段terrain基础",
+      "position": [
+        2.5,
+        241.6,
+        4.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "footing-1-0",
+      "assetId": "footing",
+      "name": "隔离共享高桥分段terrain基础",
+      "position": [
+        5.5,
+        241.6,
+        2.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "footing-1-1",
+      "assetId": "footing",
+      "name": "隔离共享高桥分段terrain基础",
+      "position": [
+        5.5,
+        241.6,
+        4.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "foundation-1",
+      "assetId": "foundation",
+      "name": "隔离共享高桥分段terrain基础",
+      "position": [
+        2.5,
+        242.6,
+        2.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "pier-1",
+      "assetId": "pier",
+      "name": "隔离共享高桥墩/墩帽",
+      "position": [
+        2.5,
+        243.6,
+        2.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "cap-1",
+      "assetId": "cap",
+      "name": "隔离共享高桥墩/墩帽",
+      "position": [
+        0,
+        251.6,
+        2.4
+      ],
+      "rotation": 0,
+      "parent": "pier-1"
+    },
+    {
+      "id": "beam-1",
+      "assetId": "beam",
+      "name": "隔离共享高桥梁体",
+      "position": [
+        0,
+        252.8,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-1",
+      "assetId": "deck",
+      "name": "隔离共享高桥桥板/接缝",
+      "position": [
+        0,
+        254,
+        0
+      ],
+      "rotation": 0,
+      "parent": "beam-1"
+    }
+  ]
+}

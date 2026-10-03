@@ -81,7 +81,7 @@ export class Engine{
   }
   if(c.op==='rebuildCatalogAsset'){
    const old=p.assets[c.assetId];if(old?.source?.kind!=='catalog-recipe')throw new Error('不是清单配方生成的母版');
-   const styleName=String(old.source.style??'yunshan');ensureProductionRoles(p,styleName);const a=makeCatalogAsset(String(old.source.catalogId),old.name,old.id,p.styles[styleName],{...(old.source.parameters as Record<string,number>),...c.params});a.origin=old.origin;a.source!.style=styleName;p.assets[a.id]=a;warnings.push('重新生成母版几何；手工体素修改会被替换，所有放置实例同步。');return;
+   const styleName=String(old.source.style??'yunshan');ensureProductionRoles(p,styleName);const a=makeCatalogAsset(String(old.source.catalogId),old.name,old.id,p.styles[styleName],{...(old.source.parameters as Record<string,number|string>),...c.params});a.origin=old.origin;a.source!.style=styleName;p.assets[a.id]=a;warnings.push('重新生成母版几何；手工体素修改会被替换，所有放置实例同步。');return;
   }
   if(c.op==='produceCatalogAssembly'){
    const e=p.catalog?.entries[c.catalogId];if(!e||e.source['条目类型']!=='组合模板')throw new Error('先导入对应组合清单');

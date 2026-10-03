@@ -3,10 +3,13 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=13;
+export const referenceFinishVersion=14;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ facadeSeal:{name:'幕墙独立窗封',color:'#27373a',roughness:.94,metalness:0,...surface('none',.1,0,0)},
+ facadeFrame:{name:'幕墙铝框 · 石墨涂装',color:'#3a4950',roughness:.36,metalness:.64,...surface('metal',.24,.17,541)},
+ sunshadeMetal:{name:'竖向铝叶 · 金色阳极氧化',color:'#bd9450',roughness:.35,metalness:.68,...surface('metal',.2,.16,543)},
  aircraftSkin:{name:'航空蒙皮 · 米白涂装金属',color:'#ddd9c9',roughness:.42,metalness:.36,...surface('metal',.3,.15,521)},
  rotorBlade:{name:'旋翼叶身 · 金色涂层',color:'#c5a65d',roughness:.4,metalness:.55,...surface('metal',.18,.14,523)},
  landingPadRubber:{name:'落地脚 · 防滑胶垫',color:'#293437',roughness:.95,metalness:0,...surface('none',.1,0,0)},

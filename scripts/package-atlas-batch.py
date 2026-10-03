@@ -87,7 +87,7 @@ for name in ['final-geometry-recheck.json', 'camera-framing-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)
-for name in ['camera-framing-first-attempt.json', 'catalog-counts.json', 'typecheck-final.txt']:
+for name in ['camera-framing-first-attempt.json', 'catalog-counts.json', 'component-variants.json', 'typecheck-final.txt']:
     if (out / name).exists():
         files.add(out / name)
 files.update(p for p in (out / 'camera-framing-before').rglob('*') if p.is_file())

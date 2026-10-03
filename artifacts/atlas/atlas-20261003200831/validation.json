@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "run": "atlas-20261003200831",
+  "sheet": "M022",
+  "scope": [
+    "BUILT-207",
+    "BUILT-208",
+    "BUILT-209",
+    "BUILT-210",
+    "BUILT-212",
+    "BUILT-213",
+    "BUILT-214",
+    "BUILT-215",
+    "BUILT-216",
+    "BUILT-217",
+    "BUILT-218",
+    "BUILT-219"
+  ],
+  "tests": {
+    "fullRegression": 241,
+    "targeted": 10,
+    "fullLog": "full-tests.txt",
+    "targetedLog": "targeted-tests-final.txt",
+    "note": "Initial targeted test expected the old asset version after undo. Undo deliberately advances versions; the corrected assertion verifies identical geometry/metadata with a newer version. Final targeted and full runs pass."
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 10,
+  "mcpStatus": "passed",
+  "materialCandidates": 264,
+  "nativeVoxels": 1022806,
+  "triangles": 12620,
+  "glbBoundsMaxErrorM": 9.536743128535363e-08,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 10,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Base, front and material captures inspected for all twelve catalogue families.",
+      "Five real fixture scenes inspected; glazing faces remain clear and shade brackets fit native recesses.",
+      "Seventeen component shapes retain source IDs and explicit parameter names; default and scenario copies share identical chunk hashes."
+    ]
+  },
+  "components": {
+    "families": 12,
+    "shapes": 17,
+    "inventory": "component-variants.json"
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 283,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 730,
+    "generatedEntries": 338,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 264
+  },
+  "limitations": [
+    "Most dimensions are explicit authored fixtures because original bridge/market descriptors, terrain contacts and FloorPlan are absent.",
+    "Original giant-block/ray mismatch and lower-pier conflict remain unresolved; no original-game final PASS or three-bridge clearance claim.",
+    "Four author footings use twenty sample height bands, not the original 32/8/160 source counts. The finite terrain fixture has no deeper supplied geology; its unsupported boundary remains reported.",
+    "Market ramp uses 50mm voxel terracing with a closed solid bottom; no continuous analytical slope or original movement/24tick runtime claim.",
+    "Auxiliary floor/soil/terrain/channel fixtures and repeated shade blades do not add catalogue masters.",
+    "SwiftShader software WebGL; all 264 references remain candidates pending human art acceptance."
+  ]
+}

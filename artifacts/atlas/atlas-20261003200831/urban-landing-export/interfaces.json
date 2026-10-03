@@ -1,0 +1,862 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166
+    }
+  },
+  "assets": [
+    {
+      "id": "lift",
+      "name": "隔离共享电梯侧与岸侧落台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            4
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "bridge",
+          "kind": "high-landing",
+          "position": [
+            4.5,
+            0.6,
+            4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            9,
+            0.6,
+            0
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "有限混凝土承板和接岸钢边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "分格石铺面和真实灰缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              5,
+              0
+            ],
+            "max": [
+              88,
+              6,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "落台端部金属收边与井口边框",
+          "parent": "root",
+          "region": {
+            "min": [
+              29,
+              4,
+              0
+            ],
+            "max": [
+              61,
+              6,
+              31
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "角部铜锚和分离光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              3,
+              2
+            ],
+            "max": [
+              87,
+              6,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立电梯侧U形落台：9×4m石铺承板、3×3m贯通井口、钢边及暖光端接",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              40
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            30,
+            0,
+            0
+          ],
+          "max": [
+            60,
+            30,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank",
+      "name": "隔离共享电梯侧与岸侧落台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            4
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "bridge",
+          "kind": "high-landing",
+          "position": [
+            4.5,
+            0.6,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            9,
+            0.6,
+            0
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "有限混凝土承板和接岸钢边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "分格石铺面和真实灰缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              5,
+              0
+            ],
+            "max": [
+              88,
+              6,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "落台端部金属收边与井口边框",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              4,
+              0
+            ],
+            "max": [
+              88,
+              6,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "角部铜锚和分离光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              3,
+              2
+            ],
+            "max": [
+              87,
+              6,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立岸侧落台：9×4m连续石铺承板、混凝土芯、接岸端梁与明确桥侧接口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              6,
+              40
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "rail",
+      "name": "隔离共享高桥护栏与转弯端接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            0.30000000000000004
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              24,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "低石座、三柱与金属横杆",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              24,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两片真实玻璃与暖色柱芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              7,
+              0
+            ],
+            "max": [
+              79,
+              21,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "铜扣与顶端状态窗",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              22,
+              1
+            ],
+            "max": [
+              79,
+              24,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "前柱底部独立铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              2,
+              0
+            ],
+            "max": [
+              3,
+              3,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "4m独立玻璃护栏：石脚钢柱、真实薄玻璃、灯芯护面与铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              24,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            6,
+            8,
+            0
+          ],
+          "max": [
+            36,
+            21,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corner",
+      "name": "隔离共享高桥护栏与转弯端接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            4
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              24,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "低石座、三柱与金属横杆",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              24,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两片真实玻璃与暖色柱芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              7,
+              0
+            ],
+            "max": [
+              79,
+              21,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "铜扣与顶端状态窗",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              22,
+              1
+            ],
+            "max": [
+              79,
+              24,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "转角真实内钢鞋",
+          "parent": "root",
+          "region": {
+            "min": [
+              74,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              4,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "前柱底部独立铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              2,
+              0
+            ],
+            "max": [
+              3,
+              3,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "4×4m转角护栏：两翼连续顶杆、共享转角柱、真实玻璃与开放内侧",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              24,
+              80
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            6,
+            8,
+            0
+          ],
+          "max": [
+            36,
+            21,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "lift-1",
+      "assetId": "lift",
+      "name": "隔离共享电梯侧与岸侧落台",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "bank-1",
+      "assetId": "bank",
+      "name": "隔离共享电梯侧与岸侧落台",
+      "position": [
+        11,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "rail-left",
+      "assetId": "rail",
+      "name": "隔离共享高桥护栏与转弯端接",
+      "position": [
+        0.3,
+        0.6,
+        0
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "rail-right",
+      "assetId": "rail",
+      "name": "隔离共享高桥护栏与转弯端接",
+      "position": [
+        9,
+        0.6,
+        0
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "corner-1",
+      "assetId": "corner",
+      "name": "隔离共享高桥护栏与转弯端接",
+      "position": [
+        11,
+        0.6,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}
