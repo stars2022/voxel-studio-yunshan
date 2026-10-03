@@ -16,7 +16,7 @@
     "undoSteps": 2,
     "redoSteps": 0
   },
-  "bytes": 2311137212,
+  "bytes": 2311161518,
   "files": [
     {
       "path": ".gitignore",
@@ -20213,6 +20213,30 @@
       "bytes": 42810958,
       "sha256": "068b32c104d41a3db83e7e0bee1395572bd98f3ac57e711a4a768e9d05aedf78",
       "sourceSHA256": "068b32c104d41a3db83e7e0bee1395572bd98f3ac57e711a4a768e9d05aedf78"
+    },
+    {
+      "path": "cloud/verification/result.json",
+      "bytes": 1062,
+      "sha256": "cb00cac65fa76a551b981d8303129bfc89f9c0cdb0fd7172cda672ad419e0576",
+      "source": "generated local migration verification"
+    },
+    {
+      "path": "cloud/verification/setup.log",
+      "bytes": 1682,
+      "sha256": "f5c23a905754602e7d8a54597b5956b9c107ddd67b5524d99ef71a567abeac68",
+      "source": "generated local migration verification"
+    },
+    {
+      "path": "cloud/verification/stdio-mcp.json",
+      "bytes": 921,
+      "sha256": "4c31072eb3d781462799d2e213052c2de1ad73874713a1da78dfcfd59bf0b8e6",
+      "source": "generated local migration verification"
+    },
+    {
+      "path": "cloud/verification/tests.log",
+      "bytes": 20641,
+      "sha256": "52f47be297da02aee4d1e35cfbb11e5f632242aeb2586fb819bdbb93fa99c475",
+      "source": "generated local migration verification"
     }
   ],
   "relocatedReports": [
@@ -20295,5 +20319,5 @@
     "runtime locks",
     "duplicate archives and unreferenced historical evidence"
   ],
-  "validation": "No cloud run yet. Historical performance figures identify their original host."
+  "validation": "Local relocated checkout passed build, SHA-256 inventory, 181 tests and real stdio MCP restoration. See cloud/verification/result.json. No cloud run yet."
 }

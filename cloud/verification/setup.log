@@ -1,0 +1,46 @@
+
+> yunshan-voxel-studio@0.1.0 cloud:setup
+> bash scripts/cloud-setup.sh
+
+
+added 144 packages, and audited 145 packages in 2s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm warn allow-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn allow-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn allow-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+
+> yunshan-voxel-studio@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 44 modules transformed.
+rendering chunks...
+computing gzip size...
+../../dist/index.html                        0.36 kB │ gzip:   0.29 kB
+../../dist/assets/mesh-worker-BXmqNYgq.js    4.30 kB
+../../dist/assets/index-QSCSnhzj.css        14.15 kB │ gzip:   4.21 kB
+../../dist/assets/index-DmCbgMGA.js        739.97 kB │ gzip: 197.34 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 747ms
+
+> yunshan-voxel-studio@0.1.0 cloud:check
+> python3 scripts/verify-cloud-snapshot.py
+
+{
+  "status": "passed",
+  "files": 3366,
+  "atlasRun": "atlas-20261003132803",
+  "errors": []
+}
+Setup complete. Run npm run test:cloud, then npm run cloud:start.
