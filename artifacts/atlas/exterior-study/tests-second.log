@@ -1,0 +1,44 @@
+✔ M016 keeps twelve unique native masters, authored scope, actual holes, source hash and deliberate disconnected canopies (9380.874291ms)
+✔ lamp-box diffuser, printed ink, lamp core, non-solid energy, glass and fireclay are separate actual voxel materials (226.154375ms)
+✔ large catalogue dimensions remain metres, not scaled tabletop props, and central entrances are genuinely empty (63.555708ms)
+✖ observation stairs, supported balcony and rail, two side aprons, double canopies and four repeated posts assemble cleanly (16928.258667ms)
+✔ two true eaves-corridor segments dock with continuous floor and no colliding end ornaments (2015.345458ms)
+✔ resource pack preserves material categories, IDs, physical collision, geometry and ports and survives native/GLB export with one undo (1635.680459ms)
+✔ foreign IDs remain intact; stale versions, missing semantic roles and failed creation do not partially mutate the document (162.558959ms)
+✔ float32 export validation accepts only exact accessor rounding and rejects actual geometric drift (2338.969042ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 7
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 33258.533208
+
+✖ failing tests:
+
+test at tests/atlas-exterior.test.ts:55:1
+✖ observation stairs, supported balcony and rail, two side aprons, double canopies and four repeated posts assemble cleanly (16928.258667ms)
+  AssertionError [ERR_ASSERTION]: unsupported
+  + actual - expected
+  
+  + [
+  +   'sign-1'
+  + ]
+  - []
+  
+      at clean (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-exterior.test.ts:29:129)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-exterior.test.ts:56:109)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'sign-1' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

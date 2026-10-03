@@ -1,0 +1,244 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-112",
+      "name": "实验台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6700000000000002,
+            0,
+            0.74
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              166,
+              140,
+              73
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四柱、柜体侧壁、背撑和石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              163,
+              90,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "左三屉、右检修门与中间浅屉",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              18,
+              -1
+            ],
+            "max": [
+              153,
+              86,
+              54
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "厚嵌芯台面、真实水槽内腔与排水口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              63,
+              -1
+            ],
+            "max": [
+              166,
+              92,
+              73
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "背架双柱、水电插盒和中央状态槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              88,
+              47
+            ],
+            "max": [
+              161,
+              140,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "实验台：耐洗石台面、贯通洗槽、双接口背架、细龙头、三抽屉、检修柜与开放膝位",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              166,
+              140,
+              73
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            51,
+            16,
+            10
+          ],
+          "max": [
+            113,
+            70,
+            59
+          ]
+        },
+        {
+          "min": [
+            120,
+            68,
+            30
+          ],
+          "max": [
+            149,
+            93,
+            57
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

@@ -1,0 +1,49 @@
+✖ M011 source and twelve native models retain editable spaces, metre axes and actual construction support (2526.560416ms)
+✔ cloth, gift ribbon/paper, ball skins, ceramic pieces, cake, wax and light retain independent physical roles (2493.541833ms)
+✔ ball cavities, separated racket strings, coffin chamber, drawer access and cups remain true empty cells (0.097792ms)
+✔ material packs change appearance only and preserve all festive material identities through one undo (4147.321083ms)
+✖ affected debate, games, training and ritual layouts use actual revised sizes without duplicated props or unsupported placements (8779.269042ms)
+✔ wax and food classification survives actual GLB/native export, conflicting user IDs, failed transaction and undo (3203.009875ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21472.9105
+
+✖ failing tests:
+
+test at tests/atlas-festival.test.ts:25:1
+✖ M011 source and twelve native models retain editable spaces, metre axes and actual construction support (2526.560416ms)
+  AssertionError [ERR_ASSERTION]: 185 obstructed void 28,149,7
+  
+  41 !== 0
+  
+      at <anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:27:612)
+      at eachCell (/Users/stars/Downloads/云山/voxel-studio/src/core/types.ts:21:169)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:27:589)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 41,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-festival.test.ts:56:1
+✖ affected debate, games, training and ritual layouts use actual revised sizes without duplicated props or unsupported placements (8779.269042ms)
+  Error: 混合精度碰撞检查超过 3,000,000 格，缩小场景
+      at checkConnectedGeometry (/Users/stars/Downloads/云山/voxel-studio/src/core/checks.ts:16:35)
+      at <anonymous> (/Users/stars/Downloads/云山/voxel-studio/src/core/checks.ts:47:87)
+      at Array.map (<anonymous>)
+      at checkGeometry (/Users/stars/Downloads/云山/voxel-studio/src/core/checks.ts:47:36)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:57:346)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)

@@ -1,0 +1,426 @@
+{
+  "run": "atlas-20261003124439",
+  "startedAt": "2026-10-03T12:45:44.743Z",
+  "status": "passed",
+  "checks": [
+    "Twelve M015 masters retain their 20/40/100mm grids with no collision or blocked declared opening; unsupported standalone lantern display is explicitly retained; actual paper/wood/fibre/lamp-core cells are queried by MCP",
+    "Paper/wood/fibre/lamp appearance changes exactly four roles, no geometry or collision, with matching canonical UI hashes, fibre filtering, dry-run, idempotency, version conflict, failure rollback and one undo",
+    "Seven catalogue masters and two support masters form independent window, lamp and roof assemblies with zero collision, gap, blocked opening or unsupported instance",
+    "A six-floor, 20m column stacks with a second instance of the same master; incompatible 20/100mm docking rejects and rolls back without resampling",
+    "Both assemblies produce actual multi-view screenshots and GLB/native/collision/interface/material-atlas exports; exported native document hashes match the canonical source",
+    "Saved native project and server restart restore the exact canonical document"
+  ],
+  "errors": [],
+  "uiSync": [
+    {
+      "version": 1,
+      "ms": 304.20816600000035
+    },
+    {
+      "version": 2,
+      "ms": 315.1475420000006
+    },
+    {
+      "version": 3,
+      "ms": 39.88566700000047
+    },
+    {
+      "version": 4,
+      "ms": 374.5137079999986
+    },
+    {
+      "version": 5,
+      "ms": 37.487999999997555
+    },
+    {
+      "version": 6,
+      "ms": 306.1261249999952
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "joinery-assembly",
+      "masters": 9,
+      "placements": 9,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 522385,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "frame-1",
+              "panel-1",
+              "lattice-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 143529
+          },
+          {
+            "instanceIds": [
+              "wall-1",
+              "arm-1",
+              "lantern-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 61148
+          },
+          {
+            "instanceIds": [
+              "support-1",
+              "brackets-1",
+              "eave-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 317708
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "frame-1": [
+            "lattice-1"
+          ],
+          "panel-1": [
+            "frame-1"
+          ],
+          "lattice-1": [
+            "panel-1"
+          ],
+          "wall-1": [],
+          "arm-1": [
+            "wall-1"
+          ],
+          "lantern-1": [
+            "arm-1"
+          ],
+          "support-1": [],
+          "brackets-1": [
+            "support-1"
+          ],
+          "eave-1": [
+            "brackets-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "lattice-1",
+            "index": 0,
+            "widthM": 0.54,
+            "heightM": 0.84,
+            "emptyCells": 3402,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "lantern-1",
+            "index": 0,
+            "widthM": 0.08,
+            "heightM": 0.4,
+            "emptyCells": 1120,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "brackets-1",
+            "index": 0,
+            "widthM": 0.58,
+            "heightM": 0.9400000000000001,
+            "emptyCells": 51794,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "柱间下窗安装后前侧步道",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "artifacts/atlas/atlas-20261003124439/joinery-mcp-runtime/exports/joinery-assembly",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 1157376,
+        "isError": false
+      },
+      "previews": {
+        "version": 4,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "artifacts/atlas/atlas-20261003124439/joinery-mcp-runtime/previews/1d831c50-0c9f-4947-9c6e-92dcced49dbf/isometric.png",
+          "artifacts/atlas/atlas-20261003124439/joinery-mcp-runtime/previews/1d831c50-0c9f-4947-9c6e-92dcced49dbf/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "giant-column-assembly",
+      "masters": 1,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.1,
+        "occupiedCollisionCells": 113280,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "lower",
+              "upper"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 113280
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "lower": [],
+          "upper": [
+            "lower"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "artifacts/atlas/atlas-20261003124439/joinery-mcp-runtime/exports/giant-column-assembly",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 222128,
+        "isError": false
+      },
+      "previews": {
+        "version": 6,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "artifacts/atlas/atlas-20261003124439/joinery-mcp-runtime/previews/c3d6b1f5-a928-497b-8dc1-cc4194ec805f/isometric.png",
+          "artifacts/atlas/atlas-20261003124439/joinery-mcp-runtime/previews/c3d6b1f5-a928-497b-8dc1-cc4194ec805f/front.png"
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)",
+  "gallery": {
+    "pitchM": 0.02,
+    "occupiedCollisionCells": 1129989,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "built-065-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 7772
+      },
+      {
+        "instanceIds": [
+          "built-066-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 378162
+      },
+      {
+        "instanceIds": [
+          "built-067-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 98181
+      },
+      {
+        "instanceIds": [
+          "built-068-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 37576
+      },
+      {
+        "instanceIds": [
+          "built-069-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 15644
+      },
+      {
+        "instanceIds": [
+          "built-070-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 11076
+      },
+      {
+        "instanceIds": [
+          "built-071-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 13680
+      },
+      {
+        "instanceIds": [
+          "built-072-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 96626
+      },
+      {
+        "instanceIds": [
+          "built-073-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 112128
+      },
+      {
+        "instanceIds": [
+          "built-074-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 91916
+      },
+      {
+        "instanceIds": [
+          "built-088-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 210588
+      },
+      {
+        "instanceIds": [
+          "built-089-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 56640
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [
+      "built-071-display"
+    ],
+    "contacts": {
+      "built-065-display": [],
+      "built-066-display": [],
+      "built-067-display": [],
+      "built-068-display": [],
+      "built-069-display": [],
+      "built-070-display": [],
+      "built-071-display": [],
+      "built-072-display": [],
+      "built-073-display": [],
+      "built-074-display": [],
+      "built-088-display": [],
+      "built-089-display": []
+    },
+    "gaps": [],
+    "openings": [
+      {
+        "instanceId": "built-065-display",
+        "index": 0,
+        "widthM": 0.54,
+        "heightM": 0.84,
+        "emptyCells": 3402,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-069-display",
+        "index": 0,
+        "widthM": 0.04,
+        "heightM": 0.12,
+        "emptyCells": 48,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-071-display",
+        "index": 0,
+        "widthM": 0.08,
+        "heightM": 0.4,
+        "emptyCells": 1120,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-072-display",
+        "index": 0,
+        "widthM": 0.32,
+        "heightM": 0.9,
+        "emptyCells": 20160,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-074-display",
+        "index": 0,
+        "widthM": 0.58,
+        "heightM": 0.9400000000000001,
+        "emptyCells": 51794,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-088-display",
+        "index": 0,
+        "widthM": 4.5600000000000005,
+        "heightM": 2.64,
+        "emptyCells": 752400,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+    ],
+    "isError": false
+  },
+  "completedAt": "2026-10-03T12:46:24.036Z"
+}

@@ -1,0 +1,813 @@
+{
+  "startedAt": "2026-10-02T09:58:23.221Z",
+  "environment": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "osRelease": "27.2.0",
+    "cpu": "Apple M3 Pro",
+    "logicalCPUs": 12,
+    "totalMemoryGiB": 18,
+    "node": "v24.19.0",
+    "browser": "153.0.8010.12",
+    "webgl": {
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+      "vendor": "Google Inc. (Google)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  },
+  "checks": [
+    {
+      "name": "MCP SDK stdio 协议真实握手 / 工具发现",
+      "passed": true,
+      "toolCount": 13
+    },
+    {
+      "name": "母版 / 组合模板 / 配色 / 放置实例分开计数",
+      "passed": true,
+      "uniqueAssets": 15,
+      "placements": 16,
+      "assemblies": 1
+    },
+    {
+      "name": "民居碰撞 / 支撑 / 门窗 / 楼梯净空",
+      "passed": true,
+      "pitchM": 0.1,
+      "occupiedCollisionCells": 39069,
+      "collisions": [],
+      "unsupported": [],
+      "contacts": {
+        "base-1": [],
+        "floor-1": [
+          "base-1"
+        ],
+        "entry-1": [
+          "floor-1"
+        ],
+        "window-1": [
+          "floor-1"
+        ],
+        "wall-west": [
+          "floor-1"
+        ],
+        "wall-east": [
+          "floor-1"
+        ],
+        "wall-back": [
+          "floor-1"
+        ],
+        "stairs-1": [],
+        "roof-1": [
+          "entry-1",
+          "wall-west",
+          "wall-back",
+          "window-1",
+          "wall-east"
+        ],
+        "ridge-1": [
+          "roof-1"
+        ],
+        "rail-1": [
+          "base-1"
+        ],
+        "planter-1": [],
+        "bed-1": [
+          "floor-1"
+        ],
+        "table-1": [
+          "floor-1"
+        ],
+        "monitor-1": [
+          "table-1"
+        ],
+        "lamp-1": []
+      },
+      "gaps": [
+        {
+          "instances": [
+            "floor-1",
+            "rail-1"
+          ],
+          "distanceM": 0.1
+        },
+        {
+          "instances": [
+            "window-1",
+            "rail-1"
+          ],
+          "distanceM": 0.1
+        }
+      ],
+      "openings": [
+        {
+          "instanceId": "entry-1",
+          "index": 0,
+          "widthM": 1.4000000000000001,
+          "heightM": 2.4000000000000004,
+          "emptyCells": 672,
+          "ownSolidCells": 0,
+          "nonCollisionCells": 0,
+          "blockedBy": []
+        },
+        {
+          "instanceId": "window-1",
+          "index": 0,
+          "widthM": 1.6,
+          "heightM": 1.4000000000000001,
+          "emptyCells": 210,
+          "ownSolidCells": 14,
+          "nonCollisionCells": 224,
+          "blockedBy": []
+        }
+      ],
+      "clearances": [
+        {
+          "name": "门洞通行",
+          "clear": true,
+          "occupiedCells": 0,
+          "blockedBy": []
+        },
+        {
+          "name": "首阶上方 2m",
+          "clear": true,
+          "occupiedCells": 0,
+          "blockedBy": []
+        },
+        {
+          "name": "最高阶上方 2m",
+          "clear": true,
+          "occupiedCells": 0,
+          "blockedBy": []
+        }
+      ],
+      "warnings": [],
+      "limitations": [
+        "支撑检查为垂直接触检测，不作结构受力分析。",
+        "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+      ]
+    },
+    {
+      "name": "MCP 一批修改同步可视化界面",
+      "passed": true,
+      "version": 1,
+      "modifiedVoxels": 6122,
+      "affectedAssets": [
+        "window",
+        "sidewall",
+        "backwall",
+        "foundation",
+        "floor",
+        "entry",
+        "stairs",
+        "roof",
+        "ridge",
+        "railing",
+        "planter",
+        "bed",
+        "table",
+        "monitor",
+        "lamp"
+      ],
+      "affectedInstances": [
+        "base-1",
+        "floor-1",
+        "entry-1",
+        "window-1",
+        "wall-west",
+        "wall-east",
+        "wall-back",
+        "stairs-1",
+        "roof-1",
+        "ridge-1",
+        "rail-1",
+        "planter-1",
+        "bed-1",
+        "table-1",
+        "monitor-1",
+        "lamp-1",
+        "planter-mcp"
+      ],
+      "bounds": {
+        "window": {
+          "min": [
+            3,
+            8,
+            0
+          ],
+          "max": [
+            27,
+            24,
+            2
+          ]
+        },
+        "sidewall": {
+          "min": [
+            0,
+            2,
+            0
+          ],
+          "max": [
+            2,
+            30,
+            46
+          ]
+        },
+        "backwall": {
+          "min": [
+            0,
+            2,
+            0
+          ],
+          "max": [
+            60,
+            30,
+            2
+          ]
+        }
+      },
+      "warnings": [
+        "参数重建替换该母版的手工体素编辑；所有引用实例同步。"
+      ],
+      "dryRun": false,
+      "dirtyChunks": {
+        "window": [
+          "0,0,0",
+          "1,0,0",
+          "0,1,0",
+          "1,1,0"
+        ],
+        "sidewall": [
+          "0,0,0",
+          "0,0,1",
+          "0,0,2",
+          "0,1,0",
+          "0,1,1",
+          "0,1,2"
+        ],
+        "backwall": [
+          "0,0,0",
+          "1,0,0",
+          "2,0,0",
+          "3,0,0",
+          "0,1,0",
+          "1,1,0",
+          "2,1,0",
+          "3,1,0"
+        ],
+        "foundation": [
+          "0,0,0",
+          "1,0,0",
+          "2,0,0",
+          "3,0,0",
+          "0,0,1",
+          "1,0,1",
+          "2,0,1",
+          "3,0,1",
+          "0,0,2",
+          "1,0,2",
+          "2,0,2",
+          "3,0,2",
+          "0,0,3",
+          "1,0,3",
+          "2,0,3",
+          "3,0,3"
+        ],
+        "floor": [
+          "0,0,0",
+          "1,0,0",
+          "2,0,0",
+          "3,0,0",
+          "0,0,1",
+          "1,0,1",
+          "2,0,1",
+          "3,0,1",
+          "0,0,2",
+          "1,0,2",
+          "2,0,2",
+          "3,0,2",
+          "0,0,3",
+          "1,0,3",
+          "2,0,3",
+          "3,0,3"
+        ],
+        "entry": [
+          "0,0,0",
+          "1,0,0",
+          "0,1,0",
+          "1,1,0"
+        ],
+        "stairs": [
+          "0,0,0"
+        ],
+        "roof": [
+          "0,0,0",
+          "0,0,1",
+          "0,0,2",
+          "0,0,3",
+          "1,0,0",
+          "1,0,1",
+          "1,0,2",
+          "1,0,3",
+          "2,0,0",
+          "2,0,1",
+          "2,0,2",
+          "2,0,3",
+          "3,0,0",
+          "3,0,1",
+          "3,0,2",
+          "3,0,3",
+          "4,0,0",
+          "4,0,1",
+          "4,0,2",
+          "4,0,3"
+        ],
+        "ridge": [
+          "0,0,0",
+          "1,0,0",
+          "2,0,0",
+          "3,0,0",
+          "4,0,0"
+        ],
+        "railing": [
+          "0,0,0",
+          "1,0,0"
+        ],
+        "planter": [
+          "0,0,0"
+        ],
+        "bed": [
+          "0,0,0",
+          "0,0,1"
+        ],
+        "table": [
+          "0,0,0"
+        ],
+        "monitor": [
+          "0,0,0"
+        ],
+        "lamp": [
+          "0,0,0"
+        ]
+      },
+      "label": "MCP · 加宽窗户 / 石墙 / 复制花槽 / 调整灯带",
+      "durationMs": 31.10441600000013
+    },
+    {
+      "name": "幂等请求不重复创建实例",
+      "passed": true
+    },
+    {
+      "name": "版本冲突被拒绝",
+      "passed": true
+    },
+    {
+      "name": "一次撤销恢复整批体素 / 材质 / 实例",
+      "passed": true
+    },
+    {
+      "name": "后续命令失败回滚前序修改",
+      "passed": true,
+      "error": "材质不存在",
+      "code": "OPERATION_FAILED"
+    },
+    {
+      "name": "体素分页查询 / 材质 / 层级 / 接口读取",
+      "passed": true
+    },
+    {
+      "name": "异常区域 / 输入预算拒绝",
+      "passed": true
+    },
+    {
+      "name": "目录越界及跨来源 HTTP 拒绝",
+      "passed": true
+    },
+    {
+      "name": "原生另存为保持全部内容",
+      "passed": true
+    },
+    {
+      "name": "自动保存失败回滚内存文档与历史",
+      "passed": true
+    },
+    {
+      "name": "GLB 重导入坐标 / 开放体素无损重载",
+      "passed": true,
+      "glbBytes": 789000,
+      "boundsM": {
+        "min": [
+          -0.4,
+          0,
+          -1.2
+        ],
+        "max": [
+          6.400000190734863,
+          5.000000002980232,
+          5.400000190734863
+        ]
+      },
+      "sourceTriangles": 9918
+    },
+    {
+      "name": "同源缺陷网格双格距转换 / 可视对照 / 导入事务",
+      "passed": true
+    },
+    {
+      "name": "非封闭粘连网格拒绝实体填充并保留失败证据",
+      "passed": true,
+      "error": "实体填充拒绝非封闭/非流形网格；使用表面模式或手工修复"
+    },
+    {
+      "name": "取消真实后台长任务不修改文档",
+      "passed": true,
+      "cancelRoundtripMs": 26.723165999999765
+    },
+    {
+      "name": "界面大选区预览取消保持文档",
+      "passed": true
+    },
+    {
+      "name": "浏览器按格笔刷真实写回共享文档",
+      "passed": true
+    },
+    {
+      "name": "实际 WebGL 界面 / 编辑工具无脚本异常",
+      "passed": true,
+      "pageErrors": []
+    },
+    {
+      "name": "262,144 格大选区 dry-run / 提交 / 回滚",
+      "passed": true,
+      "previewMs": 747.5183749999997,
+      "commitMs": 923.4490000000005
+    },
+    {
+      "name": "进程重启自动恢复原生体素与撤销历史",
+      "passed": true,
+      "recovery": {
+        "recovered": true,
+        "from": "autosave.ysvox.json",
+        "warning": ""
+      },
+      "history": {
+        "undo": 1,
+        "redo": 2
+      }
+    },
+    {
+      "name": "同项目目录第二服务被锁拒绝",
+      "passed": true
+    },
+    {
+      "name": "MCP 生成七张真实多视角 PNG",
+      "passed": true,
+      "files": [
+        "perspective.png",
+        "front.png",
+        "back.png",
+        "left.png",
+        "right.png",
+        "top.png",
+        "bottom.png"
+      ]
+    },
+    {
+      "name": "后台合面与局部脏块真实计时",
+      "passed": true,
+      "milliseconds": 843.7535419999986,
+      "voxels": 36916,
+      "quads": 4923,
+      "rssDeltaBytes": 78200832
+    }
+  ],
+  "measurements": {
+    "initialBrowserReadyMs": 2132.855917,
+    "browserSteady": {
+      "frameIntervalsMs": [
+        36.39999997615814,
+        17.5,
+        1085.3999999761581,
+        108.20000004768372,
+        44.199999928474426,
+        61.200000047683716,
+        61,
+        81.69999992847443,
+        86.40000009536743,
+        62.699999928474426,
+        48.60000002384186,
+        48.5,
+        990,
+        79,
+        80.29999995231628,
+        89.5,
+        81.20000004768372,
+        84.70000004768372,
+        82.39999997615814,
+        77.89999997615814,
+        75.70000004768372,
+        77.69999992847443,
+        80.39999997615814,
+        970,
+        51.700000047683716,
+        52.5,
+        52.60000002384186,
+        49.89999997615814,
+        51.200000047683716,
+        51.89999997615814,
+        51.39999997615814,
+        50.299999952316284,
+        52,
+        57.700000047683716,
+        47.89999997615814,
+        55.39999997615814,
+        53.200000047683716,
+        50.10000002384186,
+        51,
+        54,
+        51,
+        65.29999995231628,
+        1010.3999999761581,
+        53.40000009536743,
+        54.09999990463257,
+        56,
+        52.60000002384186,
+        55.5,
+        54.800000071525574,
+        52.299999952316284,
+        55,
+        54.60000002384186,
+        53.199999928474426,
+        54.40000009536743,
+        54.09999990463257,
+        90.90000009536743,
+        58.59999990463257,
+        54.10000002384186,
+        58.10000002384186,
+        54.39999997615814,
+        57.700000047683716,
+        55.199999928474426,
+        48.200000047683716,
+        53.5,
+        50.89999997615814,
+        54.39999997615814,
+        52.700000047683716,
+        50.39999997615814,
+        52.200000047683716,
+        51.699999928474426,
+        53.40000009536743,
+        53.699999928474426,
+        55,
+        60,
+        57.89999997615814,
+        58.60000002384186,
+        59.200000047683716,
+        59.699999928474426,
+        61.200000047683716,
+        63.200000047683716,
+        68.5,
+        68.29999995231628,
+        57,
+        58.700000047683716,
+        59.39999997615814,
+        55.299999952316284,
+        65.39999997615814,
+        1109.5,
+        142.10000002384186,
+        107.30000007152557,
+        97.89999997615814,
+        81.19999992847443,
+        83.40000009536743,
+        83.59999990463257,
+        82.80000007152557,
+        81.60000002384186,
+        81.69999992847443,
+        81.60000002384186,
+        77.60000002384186,
+        81.60000002384186,
+        79.89999997615814,
+        96.89999997615814,
+        82.10000002384186,
+        80.5,
+        78.60000002384186,
+        77.79999995231628,
+        78.20000004768372,
+        84.89999997615814,
+        78.79999995231628,
+        74.89999997615814,
+        86.70000004768372,
+        84.79999995231628,
+        77.60000002384186
+      ],
+      "drawCalls": 86,
+      "triangles": 19838,
+      "objects": 42,
+      "lastWorkerMeshMs": 5.800000071525574
+    },
+    "largePreviewRoundtripMs": 747.5183749999997,
+    "largeCommitRoundtripMs": 923.4490000000005,
+    "largeCommandComputeMs": 849.6200409999983,
+    "headlessMesh": {
+      "milliseconds": 843.7535419999986,
+      "voxels": 36916,
+      "quads": 4923,
+      "rssDeltaBytes": 78200832
+    },
+    "singleCell": {
+      "commandMs": 29.271583000001556,
+      "dirtyChunks": 3,
+      "totalAssetChunks": 5
+    }
+  },
+  "artifacts": {
+    "runRoot": "artifacts/run-2026-10-02T09-58-23-215Z"
+  },
+  "limitations": [
+    "浏览器数值来自本机无头 Chromium，不能代表所有 GPU。",
+    "三角形体素化保留表面格，低于格距的缝隙仍可能闭合。"
+  ],
+  "imports": [
+    {
+      "pitch": 0.1,
+      "diagnostics": {
+        "estimatedWorkingMemoryMB": 0.113152,
+        "sourceSignedVolumeM3": null,
+        "triangles": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 9,
+        "duplicateFaces": 2,
+        "degenerateTriangles": 0,
+        "transparentTriangles": 0,
+        "subVoxelEdgeTriangles": 36,
+        "thinComponents": 3,
+        "possibleComponentAABBOverlaps": 0,
+        "connectedComponents": 4,
+        "watertight": false,
+        "boundsM": {
+          "min": [
+            5.9604643443123e-10,
+            0,
+            -3.5762786065873797e-9
+          ],
+          "max": [
+            0.9200000166893005,
+            1,
+            0.24
+          ]
+        },
+        "cellSizeM": 0.1,
+        "estimatedGridCells": 720,
+        "estimatedDenseMemoryMB": 0.00576,
+        "estimatedTriangleCellTests": 4988,
+        "risk": "normal",
+        "warnings": [
+          "OBJ 无标准单位；已使用显式 scale 与 upAxis。多边形采用扇形三角化，凹多边形应先在源端三角化。",
+          "存在重复或非流形/粘连面；表面体素化合并占用格，但不能恢复被粘连结构。",
+          "发现厚度小于格距的连通片，可能膨胀或丢失。",
+          "存在多个独立连通片；未自动删除漂浮碎片。",
+          "采样只转移源颜色/贴图，不推断石材、木材、金属等语义。"
+        ]
+      },
+      "comparison": {
+        "sourceBoundsM": {
+          "min": [
+            5.9604643443123e-10,
+            0,
+            -3.5762786065873797e-9
+          ],
+          "max": [
+            0.9200000166893005,
+            1,
+            0.24
+          ]
+        },
+        "voxelBoundsM": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            1,
+            1,
+            0.30000000000000004
+          ]
+        },
+        "sourceTriangles": 86,
+        "surfaceVoxels": 194,
+        "filledVoxels": 0,
+        "occupiedVolumeM3": 0.19400000000000003,
+        "voxelComponents": 1,
+        "smallComponents": 0,
+        "overlappingSurfaceCells": 173,
+        "detailScaleM": 0.1,
+        "dimensionDeltaM": [
+          0.0799999839067459,
+          0,
+          0.05999999642372145
+        ],
+        "holeAssessment": "未自动识别语义门窗；开放边、连通片及双精度预览用于人工确认。",
+        "warnings": [
+          "保守采样最多造成一格厚度偏差；格距以下孔洞和细缝可能闭合，必须对照原件。"
+        ]
+      },
+      "performance": {
+        "durationMs": 8.418083000000479,
+        "triangleCellTests": 964,
+        "voxels": 194,
+        "chunks": 1
+      }
+    },
+    {
+      "pitch": 0.05,
+      "diagnostics": {
+        "estimatedWorkingMemoryMB": 0.354496,
+        "sourceSignedVolumeM3": null,
+        "triangles": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 9,
+        "duplicateFaces": 2,
+        "degenerateTriangles": 0,
+        "transparentTriangles": 0,
+        "subVoxelEdgeTriangles": 28,
+        "thinComponents": 3,
+        "possibleComponentAABBOverlaps": 0,
+        "connectedComponents": 4,
+        "watertight": false,
+        "boundsM": {
+          "min": [
+            5.9604643443123e-10,
+            0,
+            -3.5762786065873797e-9
+          ],
+          "max": [
+            0.9200000166893005,
+            1,
+            0.24
+          ]
+        },
+        "cellSizeM": 0.05,
+        "estimatedGridCells": 3234,
+        "estimatedDenseMemoryMB": 0.025872,
+        "estimatedTriangleCellTests": 11664,
+        "risk": "normal",
+        "warnings": [
+          "OBJ 无标准单位；已使用显式 scale 与 upAxis。多边形采用扇形三角化，凹多边形应先在源端三角化。",
+          "存在重复或非流形/粘连面；表面体素化合并占用格，但不能恢复被粘连结构。",
+          "发现厚度小于格距的连通片，可能膨胀或丢失。",
+          "存在多个独立连通片；未自动删除漂浮碎片。",
+          "采样只转移源颜色/贴图，不推断石材、木材、金属等语义。"
+        ]
+      },
+      "comparison": {
+        "sourceBoundsM": {
+          "min": [
+            5.9604643443123e-10,
+            0,
+            -3.5762786065873797e-9
+          ],
+          "max": [
+            0.9200000166893005,
+            1,
+            0.24
+          ]
+        },
+        "voxelBoundsM": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            0.9500000000000001,
+            1,
+            0.25
+          ]
+        },
+        "sourceTriangles": 86,
+        "surfaceVoxels": 888,
+        "filledVoxels": 0,
+        "occupiedVolumeM3": 0.11100000000000003,
+        "voxelComponents": 2,
+        "smallComponents": 1,
+        "overlappingSurfaceCells": 622,
+        "detailScaleM": 0.05,
+        "dimensionDeltaM": [
+          0.029999983906745964,
+          0,
+          0.009999996423721402
+        ],
+        "holeAssessment": "未自动识别语义门窗；开放边、连通片及双精度预览用于人工确认。",
+        "warnings": [
+          "保守采样最多造成一格厚度偏差；格距以下孔洞和细缝可能闭合，必须对照原件。"
+        ]
+      },
+      "performance": {
+        "durationMs": 24.97508299999936,
+        "triangleCellTests": 3154,
+        "voxels": 888,
+        "chunks": 3
+      }
+    }
+  ],
+  "success": true,
+  "finishedAt": "2026-10-02T09:59:13.870Z"
+}

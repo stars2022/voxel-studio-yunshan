@@ -1,0 +1,55 @@
+
+> yunshan-voxel-studio@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ detail templates preserve real cells, part hierarchy and deterministic regeneration (3047.499042ms)
+✔ detailed bay retains a clear door after parameter change and atomic undo (3719.662708ms)
+✔ planter is hollow and contains distinct stems, leaves, flowers and raised ornament cells (58.912416ms)
+✔ rail gap, joinery and lantern emitters are geometry; shading keeps the same occupancy (254.392625ms)
+✔ detail budget, unsupported pitch and invalid texture input fail without changing document (1.732083ms)
+✔ sparse chunks round-trip negative coordinates and seam dirty neighbours (2.409875ms)
+✔ greedy solid block is six quads; cross-chunk internal faces are culled (88.894417ms)
+✔ opacity material batches preserve visible opaque surface behind glass (41.344375ms)
+✔ batch atomic rollback on missing material / no version advance (1.010625ms)
+✔ dry-run does not mutate and large modification requires exact preview (95.719375ms)
+✔ version conflict and idempotency replay / payload conflict (0.902166ms)
+✔ transaction undo redo restores all voxel/material/instance edits in one step (207.955583ms)
+✔ voxel replace, mirrored brush, bounded connected fill and surface rules (3.658959ms)
+✔ integer rotation, mirror, move, copy array and collision rollback (4.479208ms)
+✔ extrude adds exposed face columns and is undoable (5.492209ms)
+✔ all general templates generate legal structures and unknown parameters reject (78.05075ms)
+✔ assembly template instantiation shares masters and preserves relative placement (79.700458ms)
+✔ mixed-resolution opening obstruction detects subcell blocking geometry (554.105125ms)
+✔ interfaces require common pitch, normal and footprint; detach preserves master (20.05475ms)
+✔ metadata transforms preserve port/part spatial relationship; cyclic parents rejected (15.852916ms)
+✔ schema rejects pathological selection, decimals, unknown fields and invalid materials (0.870125ms)
+✔ demo has enterable door, window and stairs clearances without collisions (133.038334ms)
+✔ thin diagonal voxel paths remain face-connected in all octants (3.316417ms)
+✔ planter soil, rim and leaves stay attached at 1, 2 and 2.5cm pitch (1816.354083ms)
+✔ hanging lantern encloses air, has a connected bracket and a grid-aligned wall interface (14.948125ms)
+✔ railing sockets preserve open spans and a continuous supporting frame (44.792708ms)
+✔ bay ornament and handles leave both door variants open; glazing can still be removed (565.336375ms)
+✔ surface and watertight solid voxelization keep exact aligned dimensions (20.047125ms)
+✔ open boundary and transparent shells cannot silently solid-fill (2.967834ms)
+✔ solid even-odd fill preserves nested enclosed cavity (6.038083ms)
+✔ adversarial bonded/thin/hole mesh diagnoses, preserves failure, differs by pitch (21.199584ms)
+✔ colour sampling does not claim semantic/PBR recovery (3.111167ms)
+✔ OBJ explicit unit scaling and Z-up conversion (0.275667ms)
+✔ glTF nodes and GPU instances have world transforms applied (5.625083ms)
+✔ external glTF buffers resolved only from provided resource map (1.46475ms)
+✔ visual GLB reimport preserves asset origin, dimensions, material atlas and emission (85.281167ms)
+✔ assembled GLB preserves negative placement coordinates and instance count (805.866125ms)
+✔ texture-only alpha in exported GLB is diagnosed and cannot silently solid-fill (11.414917ms)
+✔ MCP material command creates complete new semantic materials and rolls back incomplete definitions (12.028291ms)
+✔ all twelve image-guided templates create native voxel structures with reproducible regeneration (2294.904375ms)
+✔ reference bay and gateway preserve real, editable passage volume after width changes and undo (420.083292ms)
+✔ reference glass walkway keeps collision-free walkable strip and validates impossible openings (134.175208ms)
+✔ unsupported controls reject without silently changing geometry; asymmetric corner is explicit (16.753708ms)
+ℹ tests 43
+ℹ suites 0
+ℹ pass 43
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7479.7945

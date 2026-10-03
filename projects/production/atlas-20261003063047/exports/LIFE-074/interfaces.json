@@ -1,0 +1,185 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-074",
+      "name": "可回收袋筐",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.44,
+            0,
+            0.34
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              43,
+              57,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "承框、角脚与软袋空腔",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              43,
+              52,
+              31
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "布包缝、翻边与蓝灰提耳",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              7,
+              -1
+            ],
+            "max": [
+              34,
+              57,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "可回收袋筐：空心软袋、外部承架、上缘翻边、缝带和两只提耳",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              43,
+              57,
+              33
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

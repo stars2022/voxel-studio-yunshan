@@ -1,0 +1,63 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {chromium} from 'playwright';
+import {Client} from '@modelcontextprotocol/sdk/client/index.js';
+import {StdioClientTransport} from '@modelcontextprotocol/sdk/client/stdio.js';
+import {atelierFinishCommands} from '../src/core/atelier-finish';
+import {validateProject} from '../src/core/engine';
+import type {Project,Command} from '../src/core/types';
+
+const url='http://127.0.0.1:4317',root=path.resolve('artifacts/polish');
+const prepared:Project=JSON.parse(await readFile('projects/four-components-polished.ysvox.json','utf8'));
+const ids=Object.keys(prepared.assets),hash=(v:unknown)=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
+const client=new Client({name:'four-component-polish',version:'3'});
+await client.connect(new StdioClientTransport({command:process.execPath,args:['--import','tsx','src/server/mcp.ts'],cwd:process.cwd(),env:{...process.env as Record<string,string>,VOXEL_URL:url},stderr:'pipe'}));
+const raw=async(name:string,args:any={})=>{const result:any=await client.callTool({name,arguments:args});return{...JSON.parse(result.content[0].text),isError:result.isError};};
+const call=async(name:string,args:any={})=>{const result=await raw(name,args);if(result.isError)throw new Error(JSON.stringify(result));delete result.isError;return result;};
+let browser:Awaited<ReturnType<typeof chromium.launch>>|undefined;
+try{
+ const before=await fetch(url+'/api/state').then(r=>r.json());
+ assert.ok(ids.every(id=>before.project.assets[id]),'all four existing master IDs must be present');
+ assert.ok(ids.every(id=>!Object.values<any>(before.project.instances).some(i=>i.assetId===id)),'refuse replacing a placed master');
+ for(const id of Object.keys(prepared.materials).filter(k=>Number(k)>=201))assert.ok(!before.project.materials[id],'do not overwrite an existing material ID');
+ await writeFile(path.join(root,'live-before-state.json'),JSON.stringify(before));
+ const backup=await call('save_project',{filename:'before-four-polish-'+Date.now()+'.ysvox.json'});
+ const commands:Command[]=[...atelierFinishCommands(),...ids.map(id=>({op:'removeAsset',id})),...ids.map(id=>{const a=prepared.assets[id];return{op:'createAsset',id,name:a.name,template:a.template!.type,params:a.template!.params,cellSize:a.cellSize,style:'atelier-finish'};})];
+ browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:1660,height:1100}}),errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(url+'/?asset=study-planter&view=perspective&flat=1');await page.waitForFunction(()=>!!(window as any).voxelStudio?.ready,null,{timeout:180000});
+ const envelope={expectedVersion:before.project.version,requestId:crypto.randomUUID(),commands,label:'精修四构件与材质 · 可整批撤销'};
+ const dry=await call('edit_transaction',{...envelope,dryRun:true});assert.equal((await call('read_project')).version,before.project.version);
+ const commit=await call('edit_transaction',{...envelope,previewToken:dry.previewToken});
+ await page.waitForFunction(v=>(window as any).voxelStudio?.performance.renderedVersion===v,commit.version,{timeout:180000});
+ assert.equal((await call('edit_transaction',{...envelope,previewToken:dry.previewToken})).version,commit.version);
+ const installed=await fetch(url+'/api/state').then(r=>r.json());
+ for(const id of ids){const a=installed.project.assets[id];assert.equal(hash(a.chunks),hash(prepared.assets[id].chunks));assert.equal(a.cellSize,prepared.assets[id].cellSize);}
+ assert.equal(Object.keys(installed.project.assets).length,Object.keys(before.project.assets).length,'four existing masters refined, no extra asset count');
+ for(const [id,a]of Object.entries(before.project.assets))if(!ids.includes(id))assert.equal(hash(installed.project.assets[id]),hash(a),id);
+ for(const [id,m]of Object.entries(before.project.materials))assert.deepEqual(installed.project.materials[id],m);
+ for(const key of['instances','assemblies','selection'])assert.deepEqual(installed.project[key],before.project[key]);
+ const undo=await call('edit_transaction',{expectedVersion:commit.version,requestId:crypto.randomUUID(),commands:[{op:'undo'}]});
+ await page.waitForFunction(v=>(window as any).voxelStudio?.performance.renderedVersion===v,undo.version,{timeout:180000});
+ const undone=await fetch(url+'/api/state').then(r=>r.json());
+ for(const key of['materials','styles','instances','assemblies','selection'])assert.equal(hash(undone.project[key]),hash(before.project[key]),'one undo restores '+key);
+ // Revision counters remain monotonic across undo to invalidate stale clients;
+ // all actual asset data must return to the earlier state.
+ for(const id of Object.keys(before.project.assets))assert.equal(hash({...undone.project.assets[id],version:0}),hash({...before.project.assets[id],version:0}),'one undo restores asset '+id);
+ const redo=await call('edit_transaction',{expectedVersion:undo.version,requestId:crypto.randomUUID(),commands:[{op:'redo'}]});
+ await page.waitForFunction(v=>(window as any).voxelStudio?.performance.renderedVersion===v,redo.version,{timeout:180000});
+ const redone=await fetch(url+'/api/state').then(r=>r.json());
+ const conflict=await raw('edit_transaction',{expectedVersion:commit.version,requestId:crypto.randomUUID(),commands:[{op:'material',id:201,properties:{roughness:.1}}]});assert.ok(conflict.isError);assert.equal(conflict.code,'VERSION_CONFLICT');
+ const rollback=await raw('edit_transaction',{expectedVersion:redo.version,requestId:crypto.randomUUID(),commands:[{op:'material',id:201,properties:{roughness:.1}},{op:'regenerate',assetId:'study-bay',params:{openingWidth:40}}]});assert.ok(rollback.isError);
+ assert.equal(hash((await fetch(url+'/api/state').then(r=>r.json())).project),hash(redone.project),'failed second command rolls back material edit');
+ await page.locator('#toast').waitFor({state:'hidden',timeout:15000});
+ await page.locator('#material-view').click();assert.equal(await page.evaluate(()=>(window as any).voxelStudio.clayEnabled),false);await page.waitForTimeout(300);await page.screenshot({path:path.join(root,'live-material-editor.png')});
+ await page.locator('#clay').click();assert.equal(await page.evaluate(()=>(window as any).voxelStudio.clayEnabled),true);await page.waitForTimeout(200);await page.screenshot({path:path.join(root,'live-flat-editor.png')});
+ const saved=await call('save_project',{filename:'four-components-with-house.ysvox.json'}),disk:Project=JSON.parse(await readFile(saved.path,'utf8'));validateProject(disk);assert.equal(hash(disk),hash(redone.project));
+ await writeFile(path.join(root,'live-after-state.json'),JSON.stringify(redone));
+ await writeFile(path.join(root,'mcp-tools.json'),JSON.stringify(await fetch(url+'/api/tools').then(r=>r.json()),null,2));
+ assert.deepEqual(errors,[]);
+ const report={backup,versions:{before:before.project.version,commit:commit.version,undo:undo.version,redo:redo.version},modifiedVoxels:commit.modifiedVoxels,changedMasters:ids,uniqueMasterCount:Object.keys(redone.project.assets).length,originalOtherAssetsPreserved:true,originalMaterialsPreserved:true,instancesPreserved:true,checks:['official stdio MCP dry-run and idempotent commit','browser WebSocket renders new geometry at committed version','one undo restores all four masters and their materials; redo restores finish','stale version rejected','second-command failure rolls back earlier material write','visible flat/material buttons tested in browser','native save read back without loss'],saved,history:redone.history,errors};
+ await writeFile(path.join(root,'installed.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+}finally{await browser?.close();await client.close();}

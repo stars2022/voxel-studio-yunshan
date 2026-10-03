@@ -1,0 +1,49 @@
+✔ M012 native masters preserve the source, real voids, supported details and distinct catalog domains (8596.193958ms)
+✔ actual tea, pet food, nylon, coated metal, glass, mirror and wrapping cells are classified independently (322.2685ms)
+✔ washer cylinder, gift interiors, teapot spout, floor layering and 0.2m stair risers are actual voxel geometry (0.228083ms)
+✔ M012 material packs retain voxel identities and physical flags; GLB and native export preserve new roles (3643.946708ms)
+✔ mixed LIFE and BUILT creation uses one previewed transaction with collision-safe IDs, rollback and one undo (3100.626334ms)
+✔ dependent domestic arrangements keep master scope, real support and free access (13009.667ms)
+✖ BUILT floor and stair ports assemble a supported two-level route without collisions or blocked headroom (1002.491875ms)
+✔ library counts newly modelled BUILT IDs once while retaining existing LIFE upgrade counts (3.661417ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 7
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 30069.614916
+
+✖ failing tests:
+
+test at tests/atlas-domestic.test.ts:63:1
+✖ BUILT floor and stair ports assemble a supported two-level route without collisions or blocked headroom (1002.491875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   {
+  +     distanceM: 0.019999999999999574,
+  +     instances: [
+  +       'stairs',
+  +       'column-0'
+  +     ]
+  +   }
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-domestic.test.ts:72:76)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { instances: [Array], distanceM: 0.019999999999999574 } ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

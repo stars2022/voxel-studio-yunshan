@@ -1,0 +1,68 @@
+{
+  "id": "928c2d95-4127-4ba5-a1d0-016fcae681a6",
+  "status": "failed",
+  "sourceId": "940ddb4f-22d2-40ea-b7ee-1c484e928c0c",
+  "options": {
+    "sourceId": "940ddb4f-22d2-40ea-b7ee-1c484e928c0c",
+    "name": "Tripo 实体填充失败案例",
+    "cellSize": 0.01,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1,
+    "upAxis": "Y",
+    "mode": "solid",
+    "colorMode": "sample",
+    "colorLevels": 8,
+    "material": 2,
+    "thinPolicy": "conservative",
+    "expectedVersion": 7,
+    "requestId": "d63a3de3-fd59-4366-a8e4-15acd33abdb7",
+    "assetId": "import-928c2d95",
+    "materialStart": 234
+  },
+  "createdAt": "2026-10-02T09:43:50.053Z",
+  "diagnostics": {
+    "estimatedWorkingMemoryMB": 33.439232,
+    "sourceSignedVolumeM3": null,
+    "triangles": 8089,
+    "boundaryEdges": 2653,
+    "nonManifoldEdges": 77,
+    "duplicateFaces": 0,
+    "degenerateTriangles": 1,
+    "transparentTriangles": 0,
+    "subVoxelEdgeTriangles": 7257,
+    "thinComponents": 163,
+    "possibleComponentAABBOverlaps": 602,
+    "connectedComponents": 307,
+    "watertight": false,
+    "boundsM": {
+      "min": [
+        -0.499755859375,
+        0,
+        -0.328369140625
+      ],
+      "max": [
+        0.499755859375,
+        0.4145507514476776,
+        0.328369140625
+      ]
+    },
+    "cellSizeM": 0.01,
+    "estimatedGridCells": 305184,
+    "estimatedDenseMemoryMB": 2.441472,
+    "estimatedTriangleCellTests": 574701,
+    "risk": "normal",
+    "warnings": [
+      "存在开放边界/孔洞；实体填充会被拒绝。",
+      "存在重复或非流形/粘连面；表面体素化合并占用格，但不能恢复被粘连结构。",
+      "发现厚度小于格距的连通片，可能膨胀或丢失。",
+      "独立连通片包围盒有重叠，需对照源模型检查真实相交。",
+      "存在多个独立连通片；未自动删除漂浮碎片。",
+      "采样只转移源颜色/贴图，不推断石材、木材、金属等语义。"
+    ]
+  },
+  "error": "实体填充拒绝非封闭/非流形网格；使用表面模式或手工修复"
+}

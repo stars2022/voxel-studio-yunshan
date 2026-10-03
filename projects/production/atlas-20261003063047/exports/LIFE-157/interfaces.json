@@ -1,0 +1,232 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-157",
+      "name": "巡逻岗亭信息台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.06,
+            0,
+            -0.07
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.94,
+            0,
+            0.69
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -6,
+              0,
+              -7
+            ],
+            "max": [
+              88,
+              157,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四柱、空心下柜与单门检修面",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              -4
+            ],
+            "max": [
+              81,
+              150,
+              55
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "分层防雨罩、上沿挂槽和内缩暖光面",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              143,
+              -7
+            ],
+            "max": [
+              88,
+              157,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实后倾屏面、实体输入沿和侧指示柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              79,
+              -1
+            ],
+            "max": [
+              81,
+              117,
+              38
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "话筒托座、数字键与有支撑的盘绕线缆",
+          "parent": "root",
+          "region": {
+            "min": [
+              59,
+              52,
+              10
+            ],
+            "max": [
+              78,
+              116,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "岗亭信息台：石芯柜门、空腔、倾斜屏、话筒挂槽、实体线缆、抬高防雨檐和暖光灯盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              0,
+              -7
+            ],
+            "max": [
+              88,
+              157,
+              62
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            13,
+            120,
+            8
+          ],
+          "max": [
+            69,
+            140,
+            33
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

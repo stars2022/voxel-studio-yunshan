@@ -1,0 +1,13 @@
+{"id":"LIFE-182","components":[{"count":112340,"minM":[0.02,0,0.04],"maxM":[1.3800000000000001,1.55,0.42]},{"count":2104,"minM":[0.15,0.26,0.14],"maxM":[0.33,0.45,0.32]},{"count":2104,"minM":[0.38,0.26,0.14],"maxM":[0.56,0.45,0.32]},{"count":1269,"minM":[0.65,0.27,0.12],"maxM":[0.86,0.5,0.32]}]}
+/Users/stars/Downloads/云山/voxel-studio/src/production/life.ts:227
+ if(dims.reduce((n,v)=>n*Math.ceil(v/recipe.pitch),1)>2_000_000)throw new Error('配方包围盒超过体素预算');
+                                                                      ^
+
+Error: 配方包围盒超过体素预算
+    at makeLifeAsset (/Users/stars/Downloads/云山/voxel-studio/src/production/life.ts:227:71)
+    at <anonymous> (/Users/stars/Downloads/云山/voxel-studio/scripts/audit-atlas-components.ts:10:39)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0

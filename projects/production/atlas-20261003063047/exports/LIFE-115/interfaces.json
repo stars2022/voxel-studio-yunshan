@@ -1,0 +1,268 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-115",
+      "name": "研究样品容器",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.055,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.495,
+            0,
+            0.28500000000000003
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -11,
+              0,
+              0
+            ],
+            "max": [
+              88,
+              55,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "厚底敞口量杯、玻璃壁和双金属口沿",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              0,
+              14
+            ],
+            "max": [
+              41,
+              55,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "量杯方把、双连接耳、真实指孔及销钉",
+          "parent": "root",
+          "region": {
+            "min": [
+              -11,
+              11,
+              24
+            ],
+            "max": [
+              9,
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双层收肩的两只样品瓶、细颈和盖筋",
+          "parent": "root",
+          "region": {
+            "min": [
+              46,
+              0,
+              35
+            ],
+            "max": [
+              88,
+              48,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立培养皿、内凹底与双边沿",
+          "parent": "root",
+          "region": {
+            "min": [
+              52,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              8,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "研究容器：敞口量杯、两只带颈瓶、培养皿、厚唇圈、指孔把手及刻度格",
+          "parent": "root",
+          "region": {
+            "min": [
+              -11,
+              0,
+              0
+            ],
+            "max": [
+              88,
+              55,
+              57
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            13,
+            10,
+            22
+          ],
+          "max": [
+            33,
+            50,
+            42
+          ]
+        },
+        {
+          "min": [
+            54,
+            4,
+            43
+          ],
+          "max": [
+            60,
+            33,
+            49
+          ]
+        },
+        {
+          "min": [
+            77,
+            4,
+            44
+          ],
+          "max": [
+            81,
+            19,
+            48
+          ]
+        },
+        {
+          "min": [
+            59,
+            2,
+            7
+          ],
+          "max": [
+            73,
+            6,
+            21
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

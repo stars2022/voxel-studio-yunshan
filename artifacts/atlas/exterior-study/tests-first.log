@@ -1,0 +1,98 @@
+✖ M016 keeps twelve unique native masters, authored scope, actual holes, source hash and deliberate disconnected canopies (7726.922667ms)
+✔ lamp-box diffuser, printed ink, lamp core, non-solid energy, glass and fireclay are separate actual voxel materials (762.691083ms)
+✖ large catalogue dimensions remain metres, not scaled tabletop props, and central entrances are genuinely empty (58.7545ms)
+✖ observation stairs, supported balcony and rail, two side aprons, double canopies and four repeated posts assemble cleanly (16734.965125ms)
+✔ two true eaves-corridor segments dock with continuous floor and no colliding end ornaments (1951.812834ms)
+✔ resource pack preserves material categories, IDs, physical collision, geometry and ports and survives native/GLB export with one undo (1636.249333ms)
+✔ foreign IDs remain intact; stale versions, missing semantic roles and failed creation do not partially mutate the document (162.729709ms)
+✔ float32 export validation accepts only exact accessor rounding and rejects actual geometric drift (2324.83325ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 5
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31871.782542
+
+✖ failing tests:
+
+test at tests/atlas-exterior.test.ts:31:1
+✖ M016 keeps twelve unique native masters, authored scope, actual holes, source hash and deliberate disconnected canopies (7726.922667ms)
+  AssertionError [ERR_ASSERTION]: BUILT-099
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-exterior.test.ts:34:629)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/atlas-exterior.test.ts:47:1
+✖ large catalogue dimensions remain metres, not scaled tabletop props, and central entrances are genuinely empty (58.7545ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 1.0999999999999999
+  - 1.1
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-exterior.test.ts:50:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1.0999999999999999,
+    expected: 1.1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-exterior.test.ts:55:1
+✖ observation stairs, supported balcony and rail, two side aprons, double canopies and four repeated posts assemble cleanly (16734.965125ms)
+  AssertionError [ERR_ASSERTION]: collisions
+  + actual - expected
+  
+  + [
+  +   {
+  +     cells: 120,
+  +     instances: [
+  +       'column-60',
+  +       'sign-1'
+  +     ],
+  +     pitchM: 0.04,
+  +     volumeM3: 0.007680000000000001
+  +   },
+  +   {
+  +     cells: 120,
+  +     instances: [
+  +       'column-240',
+  +       'sign-1'
+  +     ],
+  +     pitchM: 0.04,
+  +     volumeM3: 0.007680000000000001
+  +   }
+  + ]
+  - []
+  
+      at clean (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-exterior.test.ts:29:129)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-exterior.test.ts:56:109)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ { instances: [Array], cells: 120, volumeM3: 0.007680000000000001, pitchM: 0.04 }, { instances: [Array], cells: 120, volumeM3: 0.007680000000000001, pitchM: 0.04 } ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,202 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-090",
+      "name": "银行办理柜台屏",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.02,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.03,
+            0,
+            0.2
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -2,
+              0,
+              0
+            ],
+            "max": [
+              101,
+              58,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "桌面锁座、退层立柱与底连接梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              0
+            ],
+            "max": [
+              101,
+              58,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双层压框、玻璃面板和后加劲边",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              10,
+              1
+            ],
+            "max": [
+              98,
+              58,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "侧控制框、几何识别角标与底部传声槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              7,
+              0
+            ],
+            "max": [
+              97,
+              49,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "柜台屏：双柱桌面锁座、双层边框、透青屏芯、后置加强梁、传声槽和终端接口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              0
+            ],
+            "max": [
+              101,
+              58,
+              20
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

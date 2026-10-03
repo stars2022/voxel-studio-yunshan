@@ -1,0 +1,253 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-043",
+      "name": "冰箱/冷藏柜外壳",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.08
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.7100000000000001,
+            0,
+            0.78
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -8
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              68,
+              182,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              55,
+              2
+            ],
+            "max": [
+              64,
+              140,
+              65
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "隔热壳、内部搁板和橡胶调平脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -2
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "双门板、门封线和长拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              15,
+              -8
+            ],
+            "max": [
+              64,
+              174,
+              0
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "下格栅、可见换热背肋和角锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              5,
+              -7
+            ],
+            "max": [
+              68,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "双开冷藏柜：内腔、门封凹槽、铜长拉手、右门控制屏与散热格栅",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -8
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

@@ -1,0 +1,202 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-076",
+      "name": "托盘货物固定带",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.09
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.8,
+            0,
+            0.69
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -9
+            ],
+            "max": [
+              80,
+              70,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "绕箱竖带与横向织带",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              70,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "棘轮承架、双耳、压带空槽与铜轴",
+          "parent": "root",
+          "region": {
+            "min": [
+              32,
+              23,
+              -9
+            ],
+            "max": [
+              44,
+              43,
+              0
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "自由带尾、回折和开口挂钩",
+          "parent": "root",
+          "region": {
+            "min": [
+              37,
+              7,
+              -7
+            ],
+            "max": [
+              42,
+              26,
+              -1
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "固定带分件：绕箱双向带体、棘轮架、透空压带槽、销轴和末端钩",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -9
+            ],
+            "max": [
+              80,
+              70,
+              60
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

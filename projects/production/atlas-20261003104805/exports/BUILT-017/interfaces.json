@@ -1,0 +1,331 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146
+    }
+  },
+  "assets": [
+    {
+      "id": "built-017",
+      "name": "共享间隔窗洞布局",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            12.8,
+            0,
+            0.42000000000000004
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "wall-left",
+          "kind": "wall-3000",
+          "position": [
+            0,
+            1.5,
+            0.2
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3,
+            0.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "wall-right",
+          "kind": "wall-3000",
+          "position": [
+            12.8,
+            1.5,
+            0.2
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3,
+            0.4
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              640,
+              150,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "砌块墙体、基脚与压顶",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              640,
+              150,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "窗台、木压条和真实窗格孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              35,
+              34,
+              2
+            ],
+            "max": [
+              605,
+              113,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "独立石柱、金属套肩与铜锁销",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              10,
+              -1
+            ],
+            "max": [
+              640,
+              140,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "三跨窗洞墙：默认 4.8m 中心距、1.6m 窗、间隔墙垛与独立木格",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              640,
+              150,
+              20
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            60,
+            56,
+            4
+          ],
+          "max": [
+            99,
+            92,
+            17
+          ]
+        },
+        {
+          "min": [
+            300,
+            56,
+            4
+          ],
+          "max": [
+            339,
+            92,
+            17
+          ]
+        },
+        {
+          "min": [
+            540,
+            56,
+            4
+          ],
+          "max": [
+            579,
+            92,
+            17
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

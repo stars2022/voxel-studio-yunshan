@@ -1,0 +1,1596 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148
+    }
+  },
+  "assets": [
+    {
+      "id": "lattice",
+      "name": "旧三面木窗细棂",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.48,
+            0,
+            0.66
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "sill",
+          "kind": "joinery-lattice",
+          "position": [
+            1.24,
+            0,
+            0.1
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.48,
+            0,
+            0.2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              124,
+              72,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "三分正面细框与双横棂",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              124,
+              72,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两面返窗细棂和连续端边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              2
+            ],
+            "max": [
+              124,
+              72,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "上角穿插格纹和小回字",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              2,
+              -1
+            ],
+            "max": [
+              114,
+              70,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "六处金属夹、铜销与装配舌",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              -1
+            ],
+            "max": [
+              123,
+              72,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "可拆三面细木棂：三分正面、双横棂、U形两侧返边、角部回纹与独立铜锁片",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              124,
+              72,
+              32
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            9,
+            14,
+            0
+          ],
+          "max": [
+            36,
+            56,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame",
+      "name": "旧窗开间木柱与头梁",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.2,
+            0,
+            0.5
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "panel",
+          "kind": "joinery-panel",
+          "position": [
+            1.6,
+            0.2,
+            0.3
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.48,
+            0,
+            0.2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              3
+            ],
+            "max": [
+              160,
+              140,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "双木柱、叠石脚与金属柱靴",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              6
+            ],
+            "max": [
+              160,
+              140,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "分层木头梁和底部窗台承枋",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              4,
+              5
+            ],
+            "max": [
+              156,
+              138,
+              27
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "终止在两侧同柱的短斜托",
+          "parent": "root",
+          "region": {
+            "min": [
+              16,
+              104,
+              14
+            ],
+            "max": [
+              157,
+              129,
+              19
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "梁肩压箍与独立铜榫件",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              124,
+              3
+            ],
+            "max": [
+              156,
+              136,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立窗开间柱梁：全高木柱、叠石脚、退层头梁、同柱短斜托和可接窗下护板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              3
+            ],
+            "max": [
+              160,
+              140,
+              28
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "panel",
+      "name": "旧住宅工坊书院窗下护板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.48,
+            0,
+            0.22
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom",
+          "kind": "joinery-panel",
+          "position": [
+            1.24,
+            0,
+            0.1
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.48,
+            0,
+            0.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "lattice",
+          "kind": "joinery-lattice",
+          "position": [
+            1.24,
+            0.84,
+            0.1
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.48,
+            0,
+            0.2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              124,
+              42,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续木背框、顶底枨与四道立枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              124,
+              42,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三块浅石芯及真退进阴槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              4,
+              2
+            ],
+            "max": [
+              120,
+              38,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "石质回纹浮雕独立于木框",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              14,
+              2
+            ],
+            "max": [
+              110,
+              28,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四角夹与固定铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              124,
+              42,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "可拆窗下护板：三块攒边浅石嵌芯、真实阴槽回纹、木竖枨、金属角夹和铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              124,
+              42,
+              10
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "arm",
+      "name": "旧墙侧灯笼杆",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.14,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.3,
+            0,
+            0.96
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "wall",
+          "kind": "joinery-lantern-arm",
+          "position": [
+            0.3,
+            0.56,
+            0.98
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.28,
+            1.12,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "lantern",
+          "kind": "joinery-lantern-seat",
+          "position": [
+            0.3,
+            0.76,
+            0.14
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.16,
+            0,
+            0.16
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              7,
+              0,
+              1
+            ],
+            "max": [
+              22,
+              56,
+              49
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "木背枋、斜撑和独立横杆",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              0,
+              1
+            ],
+            "max": [
+              22,
+              56,
+              49
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "木臂顶层收边",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              54,
+              4
+            ],
+            "max": [
+              21,
+              56,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "背枋下榫与阶梯锁座",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              0,
+              41
+            ],
+            "max": [
+              22,
+              4,
+              49
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "挂臂侧面的铜插销",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              48,
+              14
+            ],
+            "max": [
+              10,
+              52,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立贴墙灯笼杆：木背枋、阶梯斜托、铜锁接头、承托舌和独立灯笼接口",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              0,
+              1
+            ],
+            "max": [
+              22,
+              56,
+              49
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "lantern",
+      "name": "旧木框纸罩灯笼",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.56,
+            0,
+            0.62
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "hanger",
+          "kind": "joinery-lantern-seat",
+          "position": [
+            0.28,
+            1.32,
+            0.28
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.16,
+            0,
+            0.16
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              28,
+              72,
+              29
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "上下木盘、金属帽和铜角钉",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              12,
+              0
+            ],
+            "max": [
+              28,
+              61,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "细木骨、上下一体格边",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              16,
+              2
+            ],
+            "max": [
+              26,
+              55,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "纸罩、内部灯芯和电源座",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              16,
+              5
+            ],
+            "max": [
+              23,
+              55,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "帽沿阶梯角鞍与外露铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              13,
+              -2
+            ],
+            "max": [
+              27,
+              61,
+              29
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "铜挂环开口和流苏独立底结",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              0,
+              10
+            ],
+            "max": [
+              18,
+              72,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "分件木框纸罩灯笼：四片纸罩、四角木骨、上下金属帽、内部灯芯、铜挂环与织物流苏",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              28,
+              72,
+              29
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            7,
+            25,
+            7
+          ],
+          "max": [
+            11,
+            45,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eave",
+      "name": "旧真实飞檐边瓦与瓦口",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.12
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            1.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "column-seat",
+          "kind": "joinery-roof",
+          "position": [
+            1.5,
+            0,
+            0.64
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            1.28
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom",
+          "kind": "joinery-eave-pair",
+          "position": [
+            1.5,
+            0,
+            0.64
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            1.28
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "left",
+          "kind": "joinery-eave-end",
+          "position": [
+            0,
+            0.28,
+            0.64
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.56,
+            1.28
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "right",
+          "kind": "joinery-eave-end",
+          "position": [
+            3,
+            0.28,
+            0.64
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.56,
+            1.28
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -6
+            ],
+            "max": [
+              150,
+              22,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "木檐基层、防水膜和阶梯瓦面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -6
+            ],
+            "max": [
+              150,
+              22,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两端石质封头和凹入端纹",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              4,
+              -6
+            ],
+            "max": [
+              150,
+              22,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "后侧接檐木枋与金属固定扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              6,
+              58
+            ],
+            "max": [
+              142,
+              15,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "五个椽端木收口",
+          "parent": "root",
+          "region": {
+            "min": [
+              11,
+              1,
+              0
+            ],
+            "max": [
+              139,
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "真实飞檐瓦口：0.6m节奏五道凹瓦、前端圆瓦当回纹、曲线阶梯截面、木椽、防水膜与金属侧收口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -6
+            ],
+            "max": [
+              150,
+              22,
+              64
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "brackets",
+      "name": "旧飞檐局部成对斗拱",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0.1
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            1.14
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "roof",
+          "kind": "joinery-eave-pair",
+          "position": [
+            1.5,
+            1.24,
+            0.64
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            1.28
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "wall",
+          "kind": "joinery-bracket-bearing",
+          "position": [
+            1.5,
+            0,
+            1.04
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.52,
+            0,
+            0.32
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              5
+            ],
+            "max": [
+              150,
+              62,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "后侧连续木背枋及双组短竖托",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              0,
+              44
+            ],
+            "max": [
+              138,
+              22,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "左侧交叠栱与斜托",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              10,
+              5
+            ],
+            "max": [
+              58,
+              60,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "右侧交叠栱与斜托",
+          "parent": "root",
+          "region": {
+            "min": [
+              92,
+              10,
+              5
+            ],
+            "max": [
+              144,
+              60,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "顶部连续承枋与可见铜锁件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              6
+            ],
+            "max": [
+              150,
+              62,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "成对檐下斗栱：双组交错木托、同柱斜撑、真实空隙、连续承枋和背侧金属抱箍",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              5
+            ],
+            "max": [
+              150,
+              62,
+              62
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            60,
+            12,
+            2
+          ],
+          "max": [
+            89,
+            59,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "name": "灯杆安装墙 · 验证辅件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "arm",
+          "kind": "joinery-lantern-arm",
+          "position": [
+            0.24,
+            2.06,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.28,
+            1.12,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": []
+    },
+    {
+      "id": "bracket-support",
+      "name": "成对斗拱承柱 · 验证辅件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "joinery-bracket-bearing",
+          "position": [
+            1.5,
+            1.6,
+            1.04
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.52,
+            0,
+            0.32
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "frame-1",
+      "assetId": "frame",
+      "name": "旧窗开间木柱与头梁",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "panel-1",
+      "assetId": "panel",
+      "name": "旧住宅工坊书院窗下护板",
+      "position": [
+        0.3600000000000001,
+        0.2,
+        0.19999999999999998
+      ],
+      "rotation": 0,
+      "parent": "frame-1"
+    },
+    {
+      "id": "lattice-1",
+      "assetId": "lattice",
+      "name": "旧三面木窗细棂",
+      "position": [
+        0.3600000000000001,
+        1.04,
+        0.19999999999999998
+      ],
+      "rotation": 0,
+      "parent": "panel-1"
+    },
+    {
+      "id": "wall-1",
+      "assetId": "wall",
+      "name": "灯杆安装墙 · 验证辅件",
+      "position": [
+        4.06,
+        0,
+        0.98
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "arm-1",
+      "assetId": "arm",
+      "name": "旧墙侧灯笼杆",
+      "position": [
+        4,
+        1.5,
+        0
+      ],
+      "rotation": 0,
+      "parent": "wall-1"
+    },
+    {
+      "id": "lantern-1",
+      "assetId": "lantern",
+      "name": "旧木框纸罩灯笼",
+      "position": [
+        4.02,
+        0.9399999999999997,
+        -0.14
+      ],
+      "rotation": 0,
+      "parent": "arm-1"
+    },
+    {
+      "id": "support-1",
+      "assetId": "bracket-support",
+      "name": "成对斗拱承柱 · 验证辅件",
+      "position": [
+        8,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "brackets-1",
+      "assetId": "brackets",
+      "name": "旧飞檐局部成对斗拱",
+      "position": [
+        8,
+        1.6,
+        0
+      ],
+      "rotation": 0,
+      "parent": "support-1"
+    },
+    {
+      "id": "eave-1",
+      "assetId": "eave",
+      "name": "旧真实飞檐边瓦与瓦口",
+      "position": [
+        8,
+        2.84,
+        0
+      ],
+      "rotation": 0,
+      "parent": "brackets-1"
+    }
+  ]
+}

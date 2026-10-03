@@ -1,0 +1,96 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "assets": [
+    {
+      "id": "study-planter",
+      "name": "研究版 · 花槽 · 口沿与分簇植物",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            0.6
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "研究版 · 花槽 · 口沿与分簇植物",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              60,
+              45,
+              30
+            ]
+          }
+        },
+        {
+          "id": "vessel",
+          "name": "阶梯口沿 / 内壁 / 实填土层 / 回纹面板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              60,
+              23,
+              30
+            ]
+          }
+        },
+        {
+          "id": "planting",
+          "name": "分簇栽植 / 连通枝干 / 多向叶片 / 疏密花序",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              18,
+              0
+            ],
+            "max": [
+              60,
+              51,
+              30
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

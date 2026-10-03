@@ -1,0 +1,244 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-125",
+      "name": "救护担架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.02,
+            0,
+            -0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.77,
+            0,
+            2.0900000000000003
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -2,
+              0,
+              -6
+            ],
+            "max": [
+              75,
+              84,
+              203
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四只脚轮、下纵梁、端梁与双X承架",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              0,
+              19
+            ],
+            "max": [
+              68,
+              66,
+              175
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "上承框、轮廓端角、开孔提手与侧面护栏",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              64,
+              -6
+            ],
+            "max": [
+              75,
+              83,
+              203
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "三段橙色软垫、抬高头枕与织物缝边",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              70,
+              11
+            ],
+            "max": [
+              63,
+              84,
+              183
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "三条深色织带、金属扣框与分体锁扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              66,
+              24
+            ],
+            "max": [
+              67,
+              82,
+              179
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "救护担架：橙色分段软垫、织带锁扣、四个贯通抬握孔、双X剪叉与橡胶脚轮",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -6
+            ],
+            "max": [
+              75,
+              84,
+              203
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            22,
+            68,
+            -2
+          ],
+          "max": [
+            50,
+            71,
+            1
+          ]
+        },
+        {
+          "min": [
+            22,
+            68,
+            197
+          ],
+          "max": [
+            50,
+            71,
+            199
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

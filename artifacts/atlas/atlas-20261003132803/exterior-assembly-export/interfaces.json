@@ -1,0 +1,1923 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151
+    }
+  },
+  "assets": [
+    {
+      "id": "deck",
+      "name": "天枢顶层开放观景层",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            6.4,
+            0,
+            4.819999999999999
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "entry",
+          "kind": "walkway-1600",
+          "position": [
+            3.2,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              320,
+              145,
+              240
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四角真实承柱与分层石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              0,
+              5
+            ],
+            "max": [
+              315,
+              84,
+              235
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三层楼板与分缝浅石铺面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              84,
+              0
+            ],
+            "max": [
+              320,
+              90,
+              240
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "精确1.1m围护与前侧开放入口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              90,
+              -1
+            ],
+            "max": [
+              320,
+              145,
+              240
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "角柱状态灯、铜嵌件与边缘安装锁口",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              88,
+              -1
+            ],
+            "max": [
+              318,
+              129,
+              230
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "顶层开放观景层：四角承柱、连续楼板、精确1.1m围护、玻璃嵌板、1.6m开放入口与安装插座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              320,
+              145,
+              240
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            120,
+            90,
+            -10
+          ],
+          "max": [
+            200,
+            190,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balcony",
+      "name": "旧住宅临街阳台板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.8000000000000003,
+            0,
+            2.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "rail",
+          "kind": "balcony-rail-2800",
+          "position": [
+            1.4,
+            1.2,
+            0.14
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.8,
+            0,
+            0.28
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "wall",
+          "kind": "balcony-wall",
+          "position": [
+            1.4,
+            0.6,
+            2.4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            2.8,
+            1.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              140,
+              60,
+              120
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "实体木板、双纵梁和墙端嵌入根",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              140,
+              56,
+              120
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立灰缝、石铺面和浅石包边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              56,
+              0
+            ],
+            "max": [
+              140,
+              60,
+              120
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承托金属抱箍、铜销与可见根部锁片",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              8,
+              5
+            ],
+            "max": [
+              134,
+              49,
+              120
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "真实底边滴水槽与四处栏杆脚座",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              56,
+              2
+            ],
+            "max": [
+              138,
+              60,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "2.4m深木阳台板：三层木承板与石铺装、两组穿墙根部、斜托、滴水槽和栏杆安装面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              140,
+              60,
+              120
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            20,
+            48,
+            5
+          ],
+          "max": [
+            120,
+            50,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rail",
+      "name": "旧住宅阳台扶栏",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.8000000000000003,
+            0,
+            0.32
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom",
+          "kind": "balcony-rail-2800",
+          "position": [
+            1.4,
+            0,
+            0.14
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.8,
+            0,
+            0.28
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              140,
+              55,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两端柱脚、柱芯与柱帽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              140,
+              55,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "下枨、连续木扶手和五根细竖栏",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              11,
+              3
+            ],
+            "max": [
+              133,
+              51,
+              11
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "独立薄玻璃与轻浅蚀刻端角",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              15,
+              5
+            ],
+            "max": [
+              126,
+              47,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "金属玻璃压条、独立灯芯与端部铜榫",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              15,
+              -2
+            ],
+            "max": [
+              137,
+              47,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立阳台扶栏：两端木柱石脚、五根细竖栏、连续扶手、独立玻璃嵌片和连接铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              140,
+              55,
+              14
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "apron",
+      "name": "旧住宅门侧石接台和木扶条",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            7,
+            0,
+            1.6400000000000001
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "door-side",
+          "kind": "side-apron-1600",
+          "position": [
+            7,
+            0.8,
+            0.8
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.24,
+            1.6
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              175,
+              48,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四级真实踏体与7m长顶接台",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              175,
+              20,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "侧石护边和顶部连续压条",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              175,
+              22,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "四角与顶台扶柱、真实斜扶手",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              7,
+              -1
+            ],
+            "max": [
+              175,
+              48,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "顶台中竖栏与独立暖灯槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              17,
+              0
+            ],
+            "max": [
+              174,
+              45,
+              39
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "7m门侧石接台：四级实心踏步、顶台石铺面、双侧连续木扶条和独立端柱暖灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              175,
+              48,
+              40
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            1,
+            5,
+            8
+          ],
+          "max": [
+            9,
+            55,
+            32
+          ]
+        },
+        {
+          "min": [
+            11,
+            10,
+            8
+          ],
+          "max": [
+            19,
+            60,
+            32
+          ]
+        },
+        {
+          "min": [
+            21,
+            15,
+            8
+          ],
+          "max": [
+            29,
+            65,
+            32
+          ]
+        },
+        {
+          "min": [
+            31,
+            20,
+            8
+          ],
+          "max": [
+            39,
+            70,
+            32
+          ]
+        },
+        {
+          "min": [
+            48,
+            20,
+            8
+          ],
+          "max": [
+            166,
+            70,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canopies",
+      "name": "旧商肆双侧店檐",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            -0.08,
+            -0.08
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            10,
+            0,
+            5.8
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "column-60",
+          "kind": "shop-canopy-column",
+          "position": [
+            0.6,
+            0,
+            4.8
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "column-240",
+          "kind": "shop-canopy-column",
+          "position": [
+            2.4,
+            0,
+            4.8
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "column-760",
+          "kind": "shop-canopy-column",
+          "position": [
+            7.6,
+            0,
+            4.8
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "column-940",
+          "kind": "shop-canopy-column",
+          "position": [
+            9.4,
+            0,
+            4.8
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "sign",
+          "kind": "shop-sign",
+          "position": [
+            1.52,
+            0,
+            5.6
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.2,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              -2,
+              -2
+            ],
+            "max": [
+              250,
+              19,
+              143
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "左侧分层薄瓦棚与灯槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -2
+            ],
+            "max": [
+              75,
+              19,
+              140
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "右侧分层薄瓦棚与灯槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              175,
+              0,
+              -2
+            ],
+            "max": [
+              250,
+              19,
+              140
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "四根独立柱的实木承座",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              0,
+              115
+            ],
+            "max": [
+              240,
+              8,
+              125
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "店牌出挑铜座与穿吊耳承托销",
+          "parent": "root",
+          "region": {
+            "min": [
+              19,
+              -2,
+              130
+            ],
+            "max": [
+              58,
+              8,
+              143
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "双侧独立店檐：各3m宽/5.6m深的薄瓦棚、递层唇口、真实木托、独立暖灯和中央4m留空",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              -2,
+              -2
+            ],
+            "max": [
+              250,
+              19,
+              143
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            75,
+            0,
+            -5
+          ],
+          "max": [
+            175,
+            75,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "column",
+      "name": "旧商肆店檐立柱",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.04,
+            0,
+            1.04
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "top",
+          "kind": "shop-canopy-column",
+          "position": [
+            0.52,
+            3.6,
+            0.56
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              26,
+              90,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "双层石脚和木柱芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              0,
+              5
+            ],
+            "max": [
+              22,
+              82,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "金属柱靴、套肩和铜固定件",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              16,
+              7
+            ],
+            "max": [
+              19,
+              78,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两层出挑短枋与真实承托斜材",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              72,
+              2
+            ],
+            "max": [
+              26,
+              90,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "短枋端部黄铜锁鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              82,
+              0
+            ],
+            "max": [
+              25,
+              86,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "0.4m店檐木柱：精确3.6m高、分层石脚、可见套肩、两层短枋和独立安装顶面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              26,
+              90,
+              26
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "sign",
+      "name": "旧商肆店檐暖牌体",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.2,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "hanger",
+          "kind": "shop-sign",
+          "position": [
+            1.12,
+            2.4,
+            0.24
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.2,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              55,
+              60,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "木攒边、背板与上下金属包边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              55,
+              55,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立透光板和后侧独立发光层",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              4,
+              3
+            ],
+            "max": [
+              51,
+              51,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "茶壶图标与简化茶字的实体油墨",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              12,
+              2
+            ],
+            "max": [
+              41,
+              48,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四角铜夹、后侧支撑及两只贯孔吊耳",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              1,
+              0
+            ],
+            "max": [
+              54,
+              60,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "暖色实体灯箱牌：木攒边、可换丙烯酸透光板、内部灯芯、实体印墨茶壶/简化茶字和独立吊耳",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              55,
+              60,
+              10
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "stairs",
+      "name": "共享双跑上行踏步",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            4.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            0.2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "top-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            4.4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底平台、顶接台与浅石铺面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八块独立踏面、踢面和两侧实木梯梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              7
+            ],
+            "max": [
+              80,
+              90,
+              180
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶台双柱、石足、金属套肩与横枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              0,
+              205
+            ],
+            "max": [
+              77,
+              80,
+              214
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两端嵌入状态窗与踏步防滑条",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              3,
+              0
+            ],
+            "max": [
+              78,
+              90,
+              212
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "共享上行一跑：八级 0.2m 踢高 / 0.4m 进深、底顶平台、双侧木梁与真实梯下空间",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            14,
+            10,
+            120
+          ],
+          "max": [
+            66,
+            45,
+            165
+          ]
+        },
+        {
+          "min": [
+            11,
+            21,
+            24
+          ],
+          "max": [
+            69,
+            115,
+            36
+          ]
+        },
+        {
+          "min": [
+            11,
+            31,
+            44
+          ],
+          "max": [
+            69,
+            125,
+            56
+          ]
+        },
+        {
+          "min": [
+            11,
+            41,
+            64
+          ],
+          "max": [
+            69,
+            135,
+            76
+          ]
+        },
+        {
+          "min": [
+            11,
+            51,
+            84
+          ],
+          "max": [
+            69,
+            145,
+            96
+          ]
+        },
+        {
+          "min": [
+            11,
+            61,
+            104
+          ],
+          "max": [
+            69,
+            155,
+            116
+          ]
+        },
+        {
+          "min": [
+            11,
+            71,
+            124
+          ],
+          "max": [
+            69,
+            165,
+            136
+          ]
+        },
+        {
+          "min": [
+            11,
+            81,
+            144
+          ],
+          "max": [
+            69,
+            175,
+            156
+          ]
+        },
+        {
+          "min": [
+            11,
+            91,
+            164
+          ],
+          "max": [
+            69,
+            185,
+            176
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balcony-wall",
+      "name": "阳台安装墙 · 验证辅件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "balcony",
+          "kind": "balcony-wall",
+          "position": [
+            1.4,
+            1.6,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            2.8,
+            1.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "deck-1",
+      "assetId": "deck",
+      "name": "天枢顶层开放观景层",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "stairs-1",
+      "assetId": "stairs",
+      "name": "共享双跑上行踏步",
+      "position": [
+        2.4000000000000004,
+        0,
+        -4.4
+      ],
+      "rotation": 0,
+      "parent": "deck-1"
+    },
+    {
+      "id": "wall-1",
+      "assetId": "balcony-wall",
+      "name": "阳台安装墙 · 验证辅件",
+      "position": [
+        10,
+        0,
+        2.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "balcony-1",
+      "assetId": "balcony",
+      "name": "旧住宅临街阳台板",
+      "position": [
+        10,
+        1,
+        0
+      ],
+      "rotation": 0,
+      "parent": "wall-1"
+    },
+    {
+      "id": "rail-1",
+      "assetId": "rail",
+      "name": "旧住宅阳台扶栏",
+      "position": [
+        10,
+        2.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": "balcony-1"
+    },
+    {
+      "id": "apron-left",
+      "assetId": "apron",
+      "name": "旧住宅门侧石接台和木扶条",
+      "position": [
+        18,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "apron-right",
+      "assetId": "apron",
+      "name": "旧住宅门侧石接台和木扶条",
+      "position": [
+        34,
+        0,
+        1.6
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "canopies-1",
+      "assetId": "canopies",
+      "name": "旧商肆双侧店檐",
+      "position": [
+        38,
+        3.6,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "column-60",
+      "assetId": "column",
+      "name": "旧商肆店檐立柱",
+      "position": [
+        38.08,
+        0,
+        4.24
+      ],
+      "rotation": 0,
+      "parent": "canopies-1"
+    },
+    {
+      "id": "column-240",
+      "assetId": "column",
+      "name": "旧商肆店檐立柱",
+      "position": [
+        39.879999999999995,
+        0,
+        4.24
+      ],
+      "rotation": 0,
+      "parent": "canopies-1"
+    },
+    {
+      "id": "column-760",
+      "assetId": "column",
+      "name": "旧商肆店檐立柱",
+      "position": [
+        45.08,
+        0,
+        4.24
+      ],
+      "rotation": 0,
+      "parent": "canopies-1"
+    },
+    {
+      "id": "column-940",
+      "assetId": "column",
+      "name": "旧商肆店檐立柱",
+      "position": [
+        46.879999999999995,
+        0,
+        4.24
+      ],
+      "rotation": 0,
+      "parent": "canopies-1"
+    },
+    {
+      "id": "sign-1",
+      "assetId": "sign",
+      "name": "旧商肆店檐暖牌体",
+      "position": [
+        38.400000000000006,
+        1.2000000000000002,
+        5.359999999999999
+      ],
+      "rotation": 0,
+      "parent": "canopies-1"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107
+    }
+  },
+  "assets": [
+    {
+      "id": "life-171",
+      "name": "书法纸砚及笔架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.8200000000000001,
+            0,
+            0.45
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              164,
+              104,
+              90
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "木托盘、双底足与侧围",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              164,
+              12,
+              90
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "悬笔架、五个真实吊环与木杆纤维笔锋",
+          "parent": "root",
+          "region": {
+            "min": [
+              15,
+              8,
+              69
+            ],
+            "max": [
+              105,
+              104,
+              82
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "宣纸、印墨行列与卷起端边",
+          "parent": "root",
+          "region": {
+            "min": [
+              16,
+              8,
+              11
+            ],
+            "max": [
+              103,
+              12,
+              58
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "砚石内腔、墨液格、印章和纸本",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              8,
+              12
+            ],
+            "max": [
+              153,
+              49,
+              87
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "桌面文房组：有底托盘、宣纸折边、镂空砚池、悬笔木架、挂环与分层笔尖",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              164,
+              104,
+              90
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            120,
+            15,
+            20
+          ],
+          "max": [
+            142,
+            18,
+            30
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

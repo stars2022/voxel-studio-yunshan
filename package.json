@@ -1,0 +1,53 @@
+{
+  "name": "yunshan-voxel-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server/main.ts",
+    "start": "tsx src/server/main.ts",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "test:cloud": "tsx --test --test-concurrency=2 tests/*.test.ts",
+    "cloud:check": "python3 scripts/verify-cloud-snapshot.py",
+    "cloud:setup": "bash scripts/cloud-setup.sh",
+    "cloud:start": "bash scripts/cloud-start.sh",
+    "verify": "tsx scripts/verify.ts",
+    "mcp": "tsx src/server/mcp.ts",
+    "seed": "tsx scripts/seed.ts",
+    "produce:life": "tsx scripts/produce-life.ts",
+    "verify:reference": "tsx scripts/reference-study.ts && tsx scripts/reference-house.ts",
+    "report": "tsx scripts/report.ts && tsx scripts/reference-report.ts",
+    "produce:architecture": "tsx scripts/produce-architecture.ts",
+    "verify:architecture": "tsx scripts/verify-architecture.ts",
+    "produce:materials": "tsx scripts/produce-reference-materials.ts",
+    "preview:materials": "tsx scripts/preview-reference-materials.ts",
+    "export:materials": "tsx scripts/export-reference-materials.ts",
+    "verify:materials": "tsx scripts/verify-reference-materials.ts",
+    "atlas:index": "tsx scripts/index-reference-atlas.ts",
+    "produce:atlas": "tsx scripts/produce-reference-atlas.ts",
+    "preview:atlas": "tsx scripts/preview-reference-atlas.ts",
+    "verify:atlas": "tsx scripts/verify-reference-atlas.ts"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "^4.2.0",
+    "@gltf-transform/extensions": "^4.2.0",
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "ajv": "^8.17.1",
+    "express": "^5.1.0",
+    "sharp": "^0.35.5",
+    "three": "^0.180.0",
+    "ws": "^8.18.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "@types/three": "^0.180.0",
+    "@types/ws": "^8.18.0",
+    "playwright": "^1.55.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

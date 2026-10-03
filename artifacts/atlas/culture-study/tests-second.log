@@ -1,0 +1,58 @@
+✔ M010 twelve authored candidates preserve reference source, axis, editable cavities and actual connected support (5754.705542ms)
+✖ same-colour fire equipment, paper, canvas, pigment, membrane and acoustic/optical surfaces use distinct actual material cells (135.811958ms)
+✖ drum bore, print feed slit, lyre sound holes, open reel spindle and hanging brush intervals are actual voids (0.252583ms)
+✔ two stage units dock along actual flush sides and the revised performance arrangement has supported instruments (7266.286792ms)
+✔ independent role-pack replacement affects no geometry, category or collision flags and one undo restores everything (2667.784708ms)
+✔ M010 semantic roles can be allocated in a foreign palette atomically; failed creation restores IDs and document (2986.547708ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19141.377583
+
+✖ failing tests:
+
+test at tests/atlas-culture.test.ts:27:1
+✖ same-colour fire equipment, paper, canvas, pigment, membrane and acoustic/optical surfaces use distinct actual material cells (135.811958ms)
+  AssertionError [ERR_ASSERTION]: incense body
+  
+  0 !== 104
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-culture.test.ts:36:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 104,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-culture.test.ts:40:1
+✖ drum bore, print feed slit, lyre sound holes, open reel spindle and hanging brush intervals are actual voids (0.252583ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 101
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-culture.test.ts:46:47)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 101,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

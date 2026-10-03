@@ -1,0 +1,275 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-056",
+      "name": "给排水接头与阀门",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "pipe-bottom",
+          "kind": "water-pipe-60",
+          "position": [
+            0.17,
+            0,
+            0.14
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.06,
+            0,
+            0.06
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "pipe-top",
+          "kind": "water-pipe-60",
+          "position": [
+            0.17,
+            0.38,
+            0.14
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.06,
+            0,
+            0.06
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "pipe-left",
+          "kind": "water-pipe-50",
+          "position": [
+            0,
+            0.15,
+            0.14
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.05,
+            0.05
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "pipe-right",
+          "kind": "water-pipe-50",
+          "position": [
+            0.34,
+            0.15,
+            0.14
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.05,
+            0.05
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              7
+            ],
+            "max": [
+              34,
+              38,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "竖向空心主管与水平三通",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              7
+            ],
+            "max": [
+              34,
+              38,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "法兰螺栓和接口加厚唇",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              8,
+              7
+            ],
+            "max": [
+              34,
+              35,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "手轮阀与杠杆阀的静态驱动件",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              18,
+              10
+            ],
+            "max": [
+              33,
+              29,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "给排水节点：三通真实空腔、分体法兰、圈口、螺栓、手轮和杠杆阀",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              7
+            ],
+            "max": [
+              34,
+              38,
+              21
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            0,
+            13
+          ],
+          "max": [
+            19,
+            38,
+            15
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

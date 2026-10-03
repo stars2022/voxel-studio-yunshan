@@ -1,0 +1,43 @@
+{
+  "backup": {
+    "version": 47,
+    "filename": "before-four-polish-1790943592769.ysvox.json",
+    "path": "projects/before-four-polish-1790943592769.ysvox.json"
+  },
+  "versions": {
+    "before": 47,
+    "commit": 48,
+    "undo": 49,
+    "redo": 50
+  },
+  "modifiedVoxels": 911545,
+  "changedMasters": [
+    "study-bay",
+    "study-railing",
+    "study-planter",
+    "study-lantern"
+  ],
+  "uniqueMasterCount": 20,
+  "originalOtherAssetsPreserved": true,
+  "originalMaterialsPreserved": true,
+  "instancesPreserved": true,
+  "checks": [
+    "official stdio MCP dry-run and idempotent commit",
+    "browser WebSocket renders new geometry at committed version",
+    "one undo restores all four masters and their materials; redo restores finish",
+    "stale version rejected",
+    "second-command failure rolls back earlier material write",
+    "visible flat/material buttons tested in browser",
+    "native save read back without loss"
+  ],
+  "saved": {
+    "version": 50,
+    "filename": "four-components-with-house.ysvox.json",
+    "path": "projects/four-components-with-house.ysvox.json"
+  },
+  "history": {
+    "undo": 9,
+    "redo": 0
+  },
+  "errors": []
+}

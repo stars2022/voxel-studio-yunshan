@@ -1,0 +1,296 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107
+    }
+  },
+  "assets": [
+    {
+      "id": "life-159",
+      "name": "消防工具柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            0.54
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -6
+            ],
+            "max": [
+              119,
+              172,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              112,
+              172,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              54,
+              14,
+              2
+            ],
+            "max": [
+              58,
+              168,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              114,
+              172,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "左右分仓承板、靠背挂轨与双门压框",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              16,
+              -6
+            ],
+            "max": [
+              108,
+              164,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "红色钢瓶、上下箍、喷管、金属阀和纸质标签",
+          "parent": "root",
+          "region": {
+            "min": [
+              72,
+              14,
+              14
+            ],
+            "max": [
+              101,
+              76,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "红色橡胶盘管、间隔槽、固定绑带和黄铜管口",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              14,
+              12
+            ],
+            "max": [
+              50,
+              66,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "红色塑料急救箱、白色印字与挂置工具",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              89,
+              -6
+            ],
+            "max": [
+              119,
+              156,
+              45
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "消防工具柜：玻璃双门、分仓承板、独立灭火器、盘管与喷嘴、塑料急救箱和工具挂扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -6
+            ],
+            "max": [
+              119,
+              172,
+              48
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            128,
+            12
+          ],
+          "max": [
+            46,
+            151,
+            30
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

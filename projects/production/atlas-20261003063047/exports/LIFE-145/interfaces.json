@@ -1,0 +1,244 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-145",
+      "name": "公共审计取证盒",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.015
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.66,
+            0,
+            0.445
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              132,
+              90,
+              86
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "涂装金属箱壁、内底、四只护脚与上沿密封",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              132,
+              67,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "阶梯箱盖、边框、后合页与前搭扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              51,
+              -3
+            ],
+            "max": [
+              132,
+              78,
+              86
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双支座、可穿指手柄、顶部加强片",
+          "parent": "root",
+          "region": {
+            "min": [
+              44,
+              73,
+              34
+            ],
+            "max": [
+              89,
+              90,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "前部独立刻印、平衡纹样和金属压边",
+          "parent": "root",
+          "region": {
+            "min": [
+              32,
+              14,
+              -1
+            ],
+            "max": [
+              100,
+              58,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "取证盒：涂装薄壳与内腔、独立上盖、橡胶密封条、金属护角、搭扣和贯通手柄",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              132,
+              90,
+              86
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            13,
+            11,
+            13
+          ],
+          "max": [
+            119,
+            64,
+            71
+          ]
+        },
+        {
+          "min": [
+            51,
+            79,
+            39
+          ],
+          "max": [
+            82,
+            86,
+            45
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

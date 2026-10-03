@@ -1,0 +1,38 @@
+✔ M015 twelve reference masters have connected physical cells, provenance, clear holes and explicit precision (3598.469375ms)
+✖ actual paper, fibre tassel, ink on timber and roof layers retain independent material identities (0.780916ms)
+✔ parts stay within catalogue scope: no duplicate glass, lamp, wall, door, pavilion roof or thirty-storey mass (2.174084ms)
+✔ independent window, supported hanging lantern and paired roof brackets assemble without collision or blocked access (3965.598833ms)
+✔ six storey units stack through 100mm ports; finer sockets reject without partial assets (493.790375ms)
+✔ a lantern appearance pack changes paper, tassel and lamp separately, exports semantic IDs, and undoes in one transaction (983.251292ms)
+✔ foreign fibre IDs survive, dry-run is immutable, stale versions and failed commands roll back new roles (143.404584ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9618.844209
+
+✖ failing tests:
+
+test at tests/atlas-joinery.test.ts:39:1
+✖ actual paper, fibre tassel, ink on timber and roof layers retain independent material identities (0.780916ms)
+  AssertionError [ERR_ASSERTION]: BUILT-066 mortar 1,0.31,0.09
+  
+  2 !== 144
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-joinery.test.ts:42:39)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 144,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

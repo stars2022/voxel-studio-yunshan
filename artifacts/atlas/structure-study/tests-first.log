@@ -1,0 +1,56 @@
+✔ M013 saves twelve distinct metre masters with actual empty passages and connected detail (15764.819459ms)
+✔ concrete, mortar, stone, timber, roof tile, membrane, earth and physical sign ink are real independent voxel IDs (545.010542ms)
+✔ return stairs rise exactly 0.2m every 0.4m, courtyard doors remain open and thin waterproof strip stays 0.2m (5.460792ms)
+✔ only validated widths regenerate legal voxel structures and interfaces (3061.270583ms)
+✖ structural appearance pack changes no occupancy, interface, role, category or collision and undoes together (0.801083ms)
+✔ foreign role IDs are preserved, failed structure transactions roll back and a successful batch undoes once (3364.68625ms)
+✖ service wing uses four masters, aligned two-flight connections and unobstructed human clearance (20660.766625ms)
+✔ canopy waterproof strip and doorway/window wall dock on compatible grids with no blocked apertures (6875.195833ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 6
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 50854.116333
+
+✖ failing tests:
+
+test at tests/atlas-structure.test.ts:59:1
+✖ structural appearance pack changes no occupancy, interface, role, category or collision and undoes together (0.801083ms)
+  Error: 无效资产坐标系
+      at validateProject (/Users/stars/Downloads/云山/voxel-studio/src/core/engine.ts:22:173)
+      at new Engine (/Users/stars/Downloads/云山/voxel-studio/src/core/engine.ts:39:25)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-structure.test.ts:60:86)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/atlas-structure.test.ts:73:1
+✖ service wing uses four masters, aligned two-flight connections and unobstructed human clearance (20660.766625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   'return-1'
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-structure.test.ts:74:229)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'return-1' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

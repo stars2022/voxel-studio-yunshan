@@ -1,0 +1,228 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107
+    }
+  },
+  "assets": [
+    {
+      "id": "life-175",
+      "name": "打击乐器鼓体",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.04,
+            0,
+            0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.01,
+            0,
+            0.52
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              4,
+              0,
+              6
+            ],
+            "max": [
+              105,
+              131,
+              58
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "双侧木抱架、石脚、前后横枨和鼓座",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              0,
+              6
+            ],
+            "max": [
+              95,
+              75,
+              58
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "膨胀鼓腹、两道金属箍与独立鼓膜",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              33,
+              8
+            ],
+            "max": [
+              101,
+              131,
+              54
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "环绕铜钉、拉紧件、印膜纹样和侧置鼓槌",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              17,
+              6
+            ],
+            "max": [
+              105,
+              128,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "立式鼓：鼓腹空腔、独立前后合成膜、铆钉环、抱架、静态鼓槌与侧槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              0,
+              6
+            ],
+            "max": [
+              105,
+              131,
+              58
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            45,
+            75,
+            20
+          ],
+          "max": [
+            60,
+            95,
+            40
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

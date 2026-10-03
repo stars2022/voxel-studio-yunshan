@@ -1,0 +1,232 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-118",
+      "name": "数据/通信机柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.8,
+            0,
+            0.68
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              79,
+              186,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四根结构柱、石脚、顶部横梁与双侧壳",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              1
+            ],
+            "max": [
+              79,
+              186,
+              67
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八个设备底托、前板、凹拉柄与逐层状态槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              16,
+              1
+            ],
+            "max": [
+              71,
+              174,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "左右贯通百叶、顶网与背部竖向线槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              17,
+              60
+            ],
+            "max": [
+              68,
+              174,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双侧冷却立管、抱箍、侧检修口和青色引导条",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              18,
+              0
+            ],
+            "max": [
+              77,
+              178,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "通信机柜：内外双框、八个抽拉设备层、真通风孔、线缆槽、侧立管和石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              79,
+              186,
+              68
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            14,
+            24,
+            10
+          ],
+          "max": [
+            64,
+            31,
+            55
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

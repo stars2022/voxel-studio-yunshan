@@ -1,0 +1,66 @@
+{
+  "id": "6893613e-a5a0-4a9e-a3c4-bb6a852e5352",
+  "status": "failed",
+  "sourceId": "82476d1a-ce63-44c8-90c3-907e7eadf34c",
+  "options": {
+    "sourceId": "82476d1a-ce63-44c8-90c3-907e7eadf34c",
+    "name": "粘连薄壁孔洞案例",
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1,
+    "upAxis": "Y",
+    "mode": "solid",
+    "colorMode": "sample",
+    "material": 2,
+    "thinPolicy": "conservative",
+    "expectedVersion": 4,
+    "cellSize": 0.1,
+    "requestId": "solid-failure",
+    "assetId": "import-6893613e",
+    "materialStart": 15
+  },
+  "createdAt": "2026-10-02T09:58:39.903Z",
+  "diagnostics": {
+    "estimatedWorkingMemoryMB": 0.113152,
+    "sourceSignedVolumeM3": null,
+    "triangles": 86,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 9,
+    "duplicateFaces": 2,
+    "degenerateTriangles": 0,
+    "transparentTriangles": 0,
+    "subVoxelEdgeTriangles": 36,
+    "thinComponents": 3,
+    "possibleComponentAABBOverlaps": 0,
+    "connectedComponents": 4,
+    "watertight": false,
+    "boundsM": {
+      "min": [
+        5.9604643443123e-10,
+        0,
+        -3.5762786065873797e-9
+      ],
+      "max": [
+        0.9200000166893005,
+        1,
+        0.24
+      ]
+    },
+    "cellSizeM": 0.1,
+    "estimatedGridCells": 720,
+    "estimatedDenseMemoryMB": 0.00576,
+    "estimatedTriangleCellTests": 4988,
+    "risk": "normal",
+    "warnings": [
+      "OBJ 无标准单位；已使用显式 scale 与 upAxis。多边形采用扇形三角化，凹多边形应先在源端三角化。",
+      "存在重复或非流形/粘连面；表面体素化合并占用格，但不能恢复被粘连结构。",
+      "发现厚度小于格距的连通片，可能膨胀或丢失。",
+      "存在多个独立连通片；未自动删除漂浮碎片。",
+      "采样只转移源颜色/贴图，不推断石材、木材、金属等语义。"
+    ]
+  },
+  "error": "实体填充拒绝非封闭/非流形网格；使用表面模式或手工修复"
+}

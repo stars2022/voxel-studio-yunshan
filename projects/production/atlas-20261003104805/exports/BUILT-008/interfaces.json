@@ -1,0 +1,420 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146
+    }
+  },
+  "assets": [
+    {
+      "id": "built-008",
+      "name": "共享双跑回行踏步",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            4.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            0.2,
+            4.4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "top-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              142,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石质底顶平台和金属端鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八级石踏面、真实踢面与两侧木梯梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              35
+            ],
+            "max": [
+              80,
+              90,
+              215
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶台承柱和横枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              4
+            ],
+            "max": [
+              78,
+              80,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双侧连续扶手、竖梃与独立暖光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              9,
+              1
+            ],
+            "max": [
+              79,
+              142,
+              218
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "回行单跑：1.6m 跑道、八级 0.2/0.4m 石踏步、连续扶手与反向出口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              142,
+              220
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            10,
+            55
+          ],
+          "max": [
+            65,
+            45,
+            100
+          ]
+        },
+        {
+          "min": [
+            12,
+            21,
+            184
+          ],
+          "max": [
+            68,
+            115,
+            196
+          ]
+        },
+        {
+          "min": [
+            12,
+            31,
+            164
+          ],
+          "max": [
+            68,
+            125,
+            176
+          ]
+        },
+        {
+          "min": [
+            12,
+            41,
+            144
+          ],
+          "max": [
+            68,
+            135,
+            156
+          ]
+        },
+        {
+          "min": [
+            12,
+            51,
+            124
+          ],
+          "max": [
+            68,
+            145,
+            136
+          ]
+        },
+        {
+          "min": [
+            12,
+            61,
+            104
+          ],
+          "max": [
+            68,
+            155,
+            116
+          ]
+        },
+        {
+          "min": [
+            12,
+            71,
+            84
+          ],
+          "max": [
+            68,
+            165,
+            96
+          ]
+        },
+        {
+          "min": [
+            12,
+            81,
+            64
+          ],
+          "max": [
+            68,
+            175,
+            76
+          ]
+        },
+        {
+          "min": [
+            12,
+            91,
+            44
+          ],
+          "max": [
+            68,
+            185,
+            56
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

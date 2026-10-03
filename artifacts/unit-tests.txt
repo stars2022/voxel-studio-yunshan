@@ -1,0 +1,45 @@
+
+> yunshan-voxel-studio@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ sparse chunks round-trip negative coordinates and seam dirty neighbours (2.699917ms)
+✔ greedy solid block is six quads; cross-chunk internal faces are culled (34.700792ms)
+✔ opacity material batches preserve visible opaque surface behind glass (4.9105ms)
+✔ batch atomic rollback on missing material / no version advance (0.825334ms)
+✔ dry-run does not mutate and large modification requires exact preview (85.311583ms)
+✔ version conflict and idempotency replay / payload conflict (1.305417ms)
+✔ transaction undo redo restores all voxel/material/instance edits in one step (169.556667ms)
+✔ voxel replace, mirrored brush, bounded connected fill and surface rules (4.993625ms)
+✔ integer rotation, mirror, move, copy array and collision rollback (4.004333ms)
+✔ extrude adds exposed face columns and is undoable (1.637125ms)
+✔ all 20 templates generate legal structures and unknown parameters reject (49.756083ms)
+✔ assembly template instantiation shares masters and preserves relative placement (53.341458ms)
+✔ mixed-resolution opening obstruction detects subcell blocking geometry (587.747042ms)
+✔ interfaces require common pitch, normal and footprint; detach preserves master (21.507167ms)
+✔ metadata transforms preserve port/part spatial relationship; cyclic parents rejected (16.29875ms)
+✔ schema rejects pathological selection, decimals, unknown fields and invalid materials (0.806084ms)
+✔ demo has enterable door, window and stairs clearances without collisions (100.105792ms)
+✔ surface and watertight solid voxelization keep exact aligned dimensions (18.999084ms)
+✔ open boundary and transparent shells cannot silently solid-fill (1.026917ms)
+✔ solid even-odd fill preserves nested enclosed cavity (7.293458ms)
+✔ adversarial bonded/thin/hole mesh diagnoses, preserves failure, differs by pitch (10.714334ms)
+✔ colour sampling does not claim semantic/PBR recovery (3.297875ms)
+✔ OBJ explicit unit scaling and Z-up conversion (0.940833ms)
+✔ glTF nodes and GPU instances have world transforms applied (5.351375ms)
+✔ external glTF buffers resolved only from provided resource map (1.74225ms)
+✔ visual GLB reimport preserves asset origin, dimensions, material atlas and emission (96.020834ms)
+✔ assembled GLB preserves negative placement coordinates and instance count (641.903459ms)
+✔ texture-only alpha in exported GLB is diagnosed and cannot silently solid-fill (12.246416ms)
+✔ MCP material command creates complete new semantic materials and rolls back incomplete definitions (12.727417ms)
+✔ all twelve image-guided templates create native voxel structures with reproducible regeneration (1727.941375ms)
+✔ reference bay and gateway preserve real, editable passage volume after width changes and undo (366.645458ms)
+✔ reference glass walkway keeps collision-free walkable strip and validates impossible openings (137.681375ms)
+✔ unsupported controls reject without silently changing geometry; asymmetric corner is explicit (18.400416ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2526.579458

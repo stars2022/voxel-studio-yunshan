@@ -1,0 +1,269 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131
+    }
+  },
+  "assets": [
+    {
+      "id": "life-186",
+      "name": "节庆花灯外壳",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0.18
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.9400000000000001,
+            0,
+            0.37000000000000005
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              18
+            ],
+            "max": [
+              94,
+              205,
+              55
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石座、木立柱与阶梯悬臂",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              27
+            ],
+            "max": [
+              90,
+              205,
+              54
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三节穿环、灯体上下退层盖和四柱框骨",
+          "parent": "root",
+          "region": {
+            "min": [
+              49,
+              68,
+              18
+            ],
+            "max": [
+              94,
+              197,
+              55
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "四面玻璃与独立发光内芯、非发光金属回纹",
+          "parent": "root",
+          "region": {
+            "min": [
+              54,
+              76,
+              22
+            ],
+            "max": [
+              89,
+              163,
+              51
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "下垂结与红色纤维穗",
+          "parent": "root",
+          "region": {
+            "min": [
+              68,
+              29,
+              34
+            ],
+            "max": [
+              75,
+              70,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "花灯外壳及支架：阶梯悬臂、真实链环、四面框罩、玻璃扩散面、独立内芯和布穗",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              18
+            ],
+            "max": [
+              94,
+              205,
+              55
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            28,
+            20,
+            20
+          ],
+          "max": [
+            44,
+            149,
+            52
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

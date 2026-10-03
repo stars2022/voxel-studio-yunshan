@@ -1,0 +1,121 @@
+✖ M011 source and twelve native models retain editable spaces, metre axes and actual construction support (2009.541625ms)
+✔ cloth, gift ribbon/paper, ball skins, ceramic pieces, cake, wax and light retain independent physical roles (2672.775042ms)
+✖ ball cavities, separated racket strings, coffin chamber, drawer access and cups remain true empty cells (0.228875ms)
+✖ material packs change appearance only and preserve all festive material identities through one undo (168.869833ms)
+✖ affected debate, games, training and ritual layouts use actual revised sizes without duplicated props or unsupported placements (3766.141916ms)
+✔ wax and food classification survives actual GLB/native export, conflicting user IDs, failed transaction and undo (3189.371625ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 2
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12165.067333
+
+✖ failing tests:
+
+test at tests/atlas-festival.test.ts:25:1
+✖ M011 source and twelve native models retain editable spaces, metre axes and actual construction support (2009.541625ms)
+  AssertionError [ERR_ASSERTION]: unintended disconnected details 183
+  
+  3 !== 2
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:27:422)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-festival.test.ts:43:1
+✖ ball cavities, separated racket strings, coffin chamber, drawer access and cups remain true empty cells (0.228875ms)
+  AssertionError [ERR_ASSERTION]: upright adjustment slot
+  
+  4 !== 0
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:47:81)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 4,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-festival.test.ts:50:1
+✖ material packs change appearance only and preserve all festive material identities through one undo (168.869833ms)
+  Error: data/commands must NOT have more than 100 items
+      at Engine.execute (/Users/stars/Downloads/云山/voxel-studio/src/core/engine.ts:41:25)
+      at commit (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:23:137)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:51:125)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    code: 'INVALID_INPUT',
+    details: undefined
+  }
+
+test at tests/atlas-festival.test.ts:56:1
+✖ affected debate, games, training and ritual layouts use actual revised sizes without duplicated props or unsupported placements (3766.141916ms)
+  AssertionError [ERR_ASSERTION]: 206 collision
+  + actual - expected
+  
+  + [
+  +   {
+  +     cells: 9832,
+  +     instances: [
+  +       'room-0',
+  +       'room-2'
+  +     ],
+  +     pitchM: 0.005,
+  +     volumeM3: 0.0012290000000000003
+  +   },
+  +   {
+  +     cells: 13344,
+  +     instances: [
+  +       'room-0',
+  +       'room-3'
+  +     ],
+  +     pitchM: 0.005,
+  +     volumeM3: 0.0016680000000000002
+  +   },
+  +   {
+  +     cells: 4599,
+  +     instances: [
+  +       'room-1',
+  +       'room-3'
+  +     ],
+  +     pitchM: 0.005,
+  +     volumeM3: 0.0005748750000000001
+  +   }
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-festival.test.ts:57:372)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ { instances: [Array], cells: 9832, volumeM3: 0.0012290000000000003, pitchM: 0.005 }, { instances: [Array], cells: 13344, volumeM3: 0.0016680000000000002, pitchM: 0.005 }, { instances: [Array], cells: 4599, volumeM3: 0.0005748750000000001, pitchM: 0.005 } ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,300 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-114",
+      "name": "显微观察设备",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.025
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.44,
+            0,
+            0.49500000000000005
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              88,
+              121,
+              94
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "分层底框、嵌装面板、四角黑金脚套和前检修槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              86,
+              17,
+              94
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "后立柱涂装壳、前导轨、滑座、刻度与承台连臂",
+          "parent": "root",
+          "region": {
+            "min": [
+              47,
+              16,
+              47
+            ],
+            "max": [
+              78,
+              97,
+              87
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双侧调焦轴、金属法兰、铜套和分齿防滑旋钮",
+          "parent": "root",
+          "region": {
+            "min": [
+              41,
+              31,
+              65
+            ],
+            "max": [
+              88,
+              86,
+              83
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "载物台凹框、贯通光孔、玻璃载片与双夹片",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              57,
+              14
+            ],
+            "max": [
+              71,
+              69,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "下聚光器、独立暖光投射座和分层压环",
+          "parent": "root",
+          "region": {
+            "min": [
+              27,
+              16,
+              21
+            ],
+            "max": [
+              62,
+              57,
+              47
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "分件机头、黑色密封带、物镜转换盘与三根套筒",
+          "parent": "root",
+          "region": {
+            "min": [
+              21,
+              71,
+              21
+            ],
+            "max": [
+              75,
+              113,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "双目斜筒、内缩眼罩、独立青色镜芯与前玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              89,
+              -5
+            ],
+            "max": [
+              59,
+              111,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "机头状态屏、仪器涂装分板、后立筒与顶调节钮",
+          "parent": "root",
+          "region": {
+            "min": [
+              16,
+              89,
+              27
+            ],
+            "max": [
+              74,
+              121,
+              89
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "显微镜精修：分层机壳、双目发光镜芯、导轨滑座、转换物镜、透孔载物台与锁固底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              88,
+              121,
+              94
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            38,
+            40,
+            31
+          ],
+          "max": [
+            42,
+            62,
+            35
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

@@ -1,0 +1,283 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-153",
+      "name": "司法审判席",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.4,
+            0,
+            1.6
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              120,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              1
+            ],
+            "max": [
+              119,
+              43,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              43,
+              0
+            ],
+            "max": [
+              120,
+              45,
+              38
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "前围、浅石侧芯及中央铜制平衡图形",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              7,
+              -1
+            ],
+            "max": [
+              114,
+              39,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "木台面分板、固定屏、弯颈话筒与木槌",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              44,
+              2
+            ],
+            "max": [
+              118,
+              64,
+              36
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立高背椅 1",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              0,
+              50
+            ],
+            "max": [
+              36,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "独立高背椅 2",
+          "parent": "root",
+          "region": {
+            "min": [
+              46,
+              0,
+              50
+            ],
+            "max": [
+              74,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "独立高背椅 3",
+          "parent": "root",
+          "region": {
+            "min": [
+              85,
+              0,
+              50
+            ],
+            "max": [
+              113,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "三席审判工位：木构长台、凹芯前围、三组固定屏与话筒、铜制平衡纹以及三把独立高背椅",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              120,
+              77,
+              79
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            13,
+            5,
+            7
+          ],
+          "max": [
+            106,
+            32,
+            33
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

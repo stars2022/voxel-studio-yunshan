@@ -1,0 +1,232 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-082",
+      "name": "加工机床外壳",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.15
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.29,
+            0,
+            0.93
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -15
+            ],
+            "max": [
+              129,
+              145,
+              78
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石脚、机架和倒阶围壳",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              114,
+              145,
+              78
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "观察门真实凹口、压框、门轨与内腔承轨",
+          "parent": "root",
+          "region": {
+            "min": [
+              17,
+              28,
+              -8
+            ],
+            "max": [
+              97,
+              130,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "退层检修盖、通风实孔和格栅压边",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              31,
+              -4
+            ],
+            "max": [
+              25,
+              124,
+              66
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "侧端控制座、线缆托和底检修带",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              13,
+              -15
+            ],
+            "max": [
+              129,
+              101,
+              13
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "机床外壳：阶梯围壳、可检查内腔、双压框观察门、通风栅、检修盖与外置控制座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -15
+            ],
+            "max": [
+              129,
+              145,
+              78
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            26,
+            35,
+            16
+          ],
+          "max": [
+            88,
+            120,
+            65
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

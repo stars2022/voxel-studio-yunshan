@@ -1,0 +1,357 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151
+    }
+  },
+  "assets": [
+    {
+      "id": "built-098",
+      "name": "旧住宅门侧石接台和木扶条",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            7,
+            0,
+            1.6400000000000001
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "door-side",
+          "kind": "side-apron-1600",
+          "position": [
+            7,
+            0.8,
+            0.8
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.24,
+            1.6
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              175,
+              48,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四级真实踏体与7m长顶接台",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              175,
+              20,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "侧石护边和顶部连续压条",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              175,
+              22,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "四角与顶台扶柱、真实斜扶手",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              7,
+              -1
+            ],
+            "max": [
+              175,
+              48,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "顶台中竖栏与独立暖灯槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              17,
+              0
+            ],
+            "max": [
+              174,
+              45,
+              39
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "7m门侧石接台：四级实心踏步、顶台石铺面、双侧连续木扶条和独立端柱暖灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              175,
+              48,
+              40
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            1,
+            5,
+            8
+          ],
+          "max": [
+            9,
+            55,
+            32
+          ]
+        },
+        {
+          "min": [
+            11,
+            10,
+            8
+          ],
+          "max": [
+            19,
+            60,
+            32
+          ]
+        },
+        {
+          "min": [
+            21,
+            15,
+            8
+          ],
+          "max": [
+            29,
+            65,
+            32
+          ]
+        },
+        {
+          "min": [
+            31,
+            20,
+            8
+          ],
+          "max": [
+            39,
+            70,
+            32
+          ]
+        },
+        {
+          "min": [
+            48,
+            20,
+            8
+          ],
+          "max": [
+            166,
+            70,
+            32
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

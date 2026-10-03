@@ -1,0 +1,273 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-147",
+      "name": "城市信息查询终端",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.05
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.1500000000000001,
+            0,
+            0.6200000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四立柱与石脚、空心柜腔及上下背撑",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双石芯柜门、铜拉手与中分承板",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              14,
+              -3
+            ],
+            "max": [
+              111,
+              72,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "上部大屏、后壳通风和框端灯盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              92,
+              41
+            ],
+            "max": [
+              110,
+              161,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "阶梯斜面输入台、随坡嵌屏、独立键帽与贯通读卡槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              71,
+              -5
+            ],
+            "max": [
+              114,
+              97,
+              45
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "侧控灯、前铜销和后部走线通孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              33,
+              -2
+            ],
+            "max": [
+              115,
+              61,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "城市终端：空心双门柜、双层竖框大屏、倾斜输入台、实体按键、读卡孔与后检修口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            12,
+            20,
+            12
+          ],
+          "max": [
+            49,
+            65,
+            44
+          ]
+        },
+        {
+          "min": [
+            65,
+            20,
+            12
+          ],
+          "max": [
+            102,
+            65,
+            44
+          ]
+        },
+        {
+          "min": [
+            40,
+            24,
+            48
+          ],
+          "max": [
+            54,
+            34,
+            52
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

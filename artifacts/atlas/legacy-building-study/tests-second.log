@@ -1,0 +1,36 @@
+✔ M014 saves twelve unique connected masters, source provenance, real openings and their individual precision (8252.364375ms)
+✔ paper shade, lamp core, glazing and all building layers are different actual voxel roles, never similar-colour substitutes (233.078708ms)
+✔ solid foundation, four-piece well, ten exact stair rises and the 0.7m timber shaft are real grid geometry (13.029042ms)
+✔ paper resource pack preserves geometry, role IDs, collision and unrelated materials, survives native/GLB export and undoes together (1032.569792ms)
+✔ foreign paper IDs remain intact and failed or conflicting creation is atomic (194.567ms)
+✖ four-piece floor connects to the ten-step solid stair with supports and eleven unobstructed human envelopes (3905.618208ms)
+✔ independent wall-side leaf and supported paper lantern dock without blocking the six-metre door approach (2027.282375ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16054.684292
+
+✖ failing tests:
+
+test at tests/atlas-legacy-building.test.ts:71:1
+✖ four-piece floor connects to the ten-step solid stair with supports and eleven unobstructed human envelopes (3905.618208ms)
+  AssertionError [ERR_ASSERTION]: [{"instanceId":"floor-1","index":0,"widthM":2.4,"heightM":0.24,"emptyCells":46800,"ownSolidCells":0,"nonCollisionCells":0,"blockedBy":["stair-1"]}]
+      at clean (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-legacy-building.test.ts:28:157)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-legacy-building.test.ts:72:109)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

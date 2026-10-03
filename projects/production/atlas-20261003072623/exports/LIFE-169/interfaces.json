@@ -1,0 +1,228 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107
+    }
+  },
+  "assets": [
+    {
+      "id": "life-169",
+      "name": "画框及展架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.16,
+            0,
+            0.39999999999999997
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              118,
+              170,
+              42
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "双柱、贯通顶梁、底横撑和石质长脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              118,
+              170,
+              42
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "实际挂环、画轴、纸面与阶梯山形颜料",
+          "parent": "root",
+          "region": {
+            "min": [
+              21,
+              29,
+              15
+            ],
+            "max": [
+              99,
+              153,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两座挂灯、承台与低位展签",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              18,
+              8
+            ],
+            "max": [
+              118,
+              55,
+              31
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "画框展架：双柱穿榫横梁、挂环与卷轴、独立纸面颜料、退层石脚和双灯台",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              118,
+              170,
+              42
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            18,
+            65,
+            13
+          ],
+          "max": [
+            22,
+            125,
+            17
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

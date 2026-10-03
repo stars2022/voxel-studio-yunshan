@@ -1,0 +1,248 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107
+    }
+  },
+  "assets": [
+    {
+      "id": "life-178",
+      "name": "信仰礼仪供台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            0.64
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "tabletop",
+          "kind": "desktop",
+          "position": [
+            0,
+            0.98,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            0.64
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              98,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              158,
+              98,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "纯木台面、连续退层边口和铜包角",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              93,
+              0
+            ],
+            "max": [
+              160,
+              98,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "束腰嵌纹和两端真实回纹透孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              16,
+              1
+            ],
+            "max": [
+              154,
+              85,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "礼仪供台本体：攒边木面、双层束腰、阶梯牙头、透空回纹裙边与长脚枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              98,
+              64
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            20,
+            27,
+            13
+          ],
+          "max": [
+            135,
+            65,
+            45
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

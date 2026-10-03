@@ -1,0 +1,281 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-149",
+      "name": "边境/移民办理台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.1,
+            0,
+            0.79
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "desktop-support",
+          "kind": "desktop",
+          "position": [
+            0,
+            0.79,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.1,
+            0,
+            0.76
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              210,
+              115,
+              76
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              208,
+              74,
+              74
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              74,
+              0
+            ],
+            "max": [
+              210,
+              79,
+              76
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "左柜、右抽屉和后横撑",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              12,
+              -3
+            ],
+            "max": [
+              204,
+              72,
+              72
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "固定双工位屏、独立扫描底座与中央挡片",
+          "parent": "root",
+          "region": {
+            "min": [
+              19,
+              79,
+              11
+            ],
+            "max": [
+              185,
+              115,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "共享交接槽、证件读头与两处真实走线孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              86,
+              79,
+              8
+            ],
+            "max": [
+              201,
+              85,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "双工位办理台：石芯桌面、左柜右双抽、双终端支座、中央透明挡片、纸件槽与开放膝位",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              210,
+              115,
+              76
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            58,
+            12,
+            10
+          ],
+          "max": [
+            148,
+            62,
+            60
+          ]
+        },
+        {
+          "min": [
+            189,
+            82,
+            21
+          ],
+          "max": [
+            196,
+            83,
+            42
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

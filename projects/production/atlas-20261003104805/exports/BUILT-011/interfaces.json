@@ -1,0 +1,341 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146
+    }
+  },
+  "assets": [
+    {
+      "id": "built-011",
+      "name": "共享封闭山墙坡屋面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.04,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.94,
+            0,
+            3.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "ridge-left",
+          "kind": "gable-ridge",
+          "position": [
+            0,
+            1.76,
+            1.6
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.2,
+            0.3
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "ridge-right",
+          "kind": "gable-ridge",
+          "position": [
+            4,
+            1.76,
+            1.6
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.2,
+            0.3
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              0
+            ],
+            "max": [
+              199,
+              93,
+              160
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底封板、檐枋及独立檐下椽条",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              0,
+              2
+            ],
+            "max": [
+              196,
+              9,
+              158
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "薄木屋壳、防水膜与两面实际坡度",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              4,
+              0
+            ],
+            "max": [
+              198,
+              78,
+              160
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "阶梯瓦垄、逐片瓦口和檐口",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              8,
+              0
+            ],
+            "max": [
+              198,
+              82,
+              160
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两端封闭山墙、砖缝与踏步封檐",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              7,
+              2
+            ],
+            "max": [
+              195,
+              90,
+              158
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "连续屋脊、金属脊鞍与檐下电灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              3,
+              2
+            ],
+            "max": [
+              199,
+              93,
+              157
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "双坡屋面：真实瓦垄、重叠瓦口、端山墙、可接屋脊与檐下椽梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              0
+            ],
+            "max": [
+              199,
+              93,
+              160
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            30,
+            20,
+            65
+          ],
+          "max": [
+            40,
+            40,
+            75
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

@@ -1,0 +1,232 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-148",
+      "name": "外交仪仗旗座",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.76,
+            0,
+            0.39
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              78,
+              212,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石台阶、木金属灯座和承插套筒",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              42,
+              45,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "分节方杆、三道夹箍和封顶榫",
+          "parent": "root",
+          "region": {
+            "min": [
+              17,
+              40,
+              17
+            ],
+            "max": [
+              27,
+              212,
+              25
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "连续褶皱旗布、上下包边和两处挂耳",
+          "parent": "root",
+          "region": {
+            "min": [
+              23,
+              78,
+              18
+            ],
+            "max": [
+              78,
+              200,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "沿褶皱连续织入的双菱形纹样",
+          "parent": "root",
+          "region": {
+            "min": [
+              33,
+              121,
+              19
+            ],
+            "max": [
+              65,
+              153,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "单面仪仗旗：三层基座、嵌灯套筒、分节旗杆、夹环、连续折旗面与织入纹样",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              78,
+              212,
+              41
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            24,
+            83,
+            20
+          ],
+          "max": [
+            25,
+            85,
+            23
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

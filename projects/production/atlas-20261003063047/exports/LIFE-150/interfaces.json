@@ -1,0 +1,266 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-150",
+      "name": "慈善救济柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.21,
+            0,
+            0.54
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -4
+            ],
+            "max": [
+              120,
+              172,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              118,
+              172,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              120,
+              172,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "中隔与三道承托板",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              17,
+              -4
+            ],
+            "max": [
+              114,
+              167,
+              45
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "三层折叠棉毯及两只纸板救济箱",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              63,
+              5
+            ],
+            "max": [
+              110,
+              156,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "塑料急救盒、红色油墨标记和铜扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              98,
+              5
+            ],
+            "max": [
+              51,
+              121,
+              39
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "四只硬塑料示意液体瓶及独立塑料盖",
+          "parent": "root",
+          "region": {
+            "min": [
+              61,
+              98,
+              17
+            ],
+            "max": [
+              103,
+              122,
+              27
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "救济柜：两列三层空格、折叠棉毯、硬塑料急救盒、纸板箱、独立瓶盖液体及下双门",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -4
+            ],
+            "max": [
+              120,
+              172,
+              50
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            11,
+            19,
+            10
+          ],
+          "max": [
+            51,
+            55,
+            38
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

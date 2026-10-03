@@ -1,0 +1,792 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147
+    }
+  },
+  "assets": [
+    {
+      "id": "legacy-stair",
+      "name": "旧天枢楼体十级楼梯体",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.4,
+            0,
+            5.2
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "top-walkway",
+          "kind": "legacy-stair-2400",
+          "position": [
+            1.2,
+            2.64,
+            5.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            2.4,
+            0.24,
+            0
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "bottom-walkway",
+          "kind": "legacy-stair-2400",
+          "position": [
+            1.2,
+            0.24,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            2.4,
+            0.24,
+            0
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              92,
+              130
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "十级完整实心石梯体及底顶接台",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              66,
+              130
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两侧石压边、真实踏鼻和竖向灰缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              3,
+              10
+            ],
+            "max": [
+              60,
+              68,
+              110
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两侧连续木扶手、立柱、金属锁固及暖灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              6,
+              0
+            ],
+            "max": [
+              60,
+              92,
+              119
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "旧天枢十级实体楼梯：十级 0.24m 踢高 / 0.4m 踏深、实心石梯体、顶台和两侧木扶手",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              92,
+              130
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            9,
+            12,
+            11
+          ],
+          "max": [
+            51,
+            60,
+            19
+          ]
+        },
+        {
+          "min": [
+            9,
+            18,
+            21
+          ],
+          "max": [
+            51,
+            66,
+            29
+          ]
+        },
+        {
+          "min": [
+            9,
+            24,
+            31
+          ],
+          "max": [
+            51,
+            72,
+            39
+          ]
+        },
+        {
+          "min": [
+            9,
+            30,
+            41
+          ],
+          "max": [
+            51,
+            78,
+            49
+          ]
+        },
+        {
+          "min": [
+            9,
+            36,
+            51
+          ],
+          "max": [
+            51,
+            84,
+            59
+          ]
+        },
+        {
+          "min": [
+            9,
+            42,
+            61
+          ],
+          "max": [
+            51,
+            90,
+            69
+          ]
+        },
+        {
+          "min": [
+            9,
+            48,
+            71
+          ],
+          "max": [
+            51,
+            96,
+            79
+          ]
+        },
+        {
+          "min": [
+            9,
+            54,
+            81
+          ],
+          "max": [
+            51,
+            102,
+            89
+          ]
+        },
+        {
+          "min": [
+            9,
+            60,
+            91
+          ],
+          "max": [
+            51,
+            108,
+            99
+          ]
+        },
+        {
+          "min": [
+            9,
+            66,
+            101
+          ],
+          "max": [
+            51,
+            114,
+            109
+          ]
+        }
+      ]
+    },
+    {
+      "id": "well-floor",
+      "name": "旧楼楼梯井分片楼板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            6.4,
+            0,
+            6.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "stair-top",
+          "kind": "legacy-stair-2400",
+          "position": [
+            3.2,
+            0.24,
+            5.6
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            2.4,
+            0.24,
+            0
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "bearing-40-40",
+          "kind": "legacy-floor-bearing",
+          "position": [
+            0.4,
+            0,
+            0.4
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "bearing-40-600",
+          "kind": "legacy-floor-bearing",
+          "position": [
+            0.4,
+            0,
+            6
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "bearing-600-40",
+          "kind": "legacy-floor-bearing",
+          "position": [
+            6,
+            0,
+            0.4
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        },
+        {
+          "id": "bearing-600-600",
+          "kind": "legacy-floor-bearing",
+          "position": [
+            6,
+            0,
+            6
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              6,
+              160
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "左侧楼板片及铺面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              50,
+              6,
+              160
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "右侧楼板片及铺面",
+          "parent": "root",
+          "region": {
+            "min": [
+              110,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              6,
+              160
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "井口前侧楼板片",
+          "parent": "root",
+          "region": {
+            "min": [
+              50,
+              0,
+              0
+            ],
+            "max": [
+              110,
+              6,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "井口后侧楼板片",
+          "parent": "root",
+          "region": {
+            "min": [
+              50,
+              0,
+              140
+            ],
+            "max": [
+              110,
+              6,
+              160
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "井沿木包边、四角金属鞍与铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              158,
+              6,
+              158
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "旧楼楼梯井分片楼板：四块相接楼板、2.4×5.2m 真梯井、混凝土承板、木底梁和石铺面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              6,
+              160
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            60,
+            6,
+            10
+          ],
+          "max": [
+            100,
+            54,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "id": "floor-bearing",
+      "name": "40mm 楼板承柱 · 拼装辅件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.04,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "legacy-floor-bearing",
+          "position": [
+            0.2,
+            2.4,
+            0.2
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.04
+        }
+      ],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "stair-1",
+      "assetId": "legacy-stair",
+      "name": "旧天枢楼体十级楼梯体",
+      "position": [
+        2,
+        0,
+        0.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "floor-1",
+      "assetId": "well-floor",
+      "name": "旧楼楼梯井分片楼板",
+      "position": [
+        0,
+        2.4000000000000004,
+        8.881784197001252e-16
+      ],
+      "rotation": 0,
+      "parent": "stair-1"
+    },
+    {
+      "id": "bearing-40-40",
+      "assetId": "floor-bearing",
+      "name": "40mm 楼板承柱 · 拼装辅件",
+      "position": [
+        0.2,
+        4.440892098500626e-16,
+        0.2000000000000009
+      ],
+      "rotation": 0,
+      "parent": "floor-1"
+    },
+    {
+      "id": "bearing-40-600",
+      "assetId": "floor-bearing",
+      "name": "40mm 楼板承柱 · 拼装辅件",
+      "position": [
+        0.2,
+        4.440892098500626e-16,
+        5.800000000000001
+      ],
+      "rotation": 0,
+      "parent": "floor-1"
+    },
+    {
+      "id": "bearing-600-40",
+      "assetId": "floor-bearing",
+      "name": "40mm 楼板承柱 · 拼装辅件",
+      "position": [
+        5.8,
+        4.440892098500626e-16,
+        0.2000000000000009
+      ],
+      "rotation": 0,
+      "parent": "floor-1"
+    },
+    {
+      "id": "bearing-600-600",
+      "assetId": "floor-bearing",
+      "name": "40mm 楼板承柱 · 拼装辅件",
+      "position": [
+        5.8,
+        4.440892098500626e-16,
+        5.800000000000001
+      ],
+      "rotation": 0,
+      "parent": "floor-1"
+    }
+  ]
+}

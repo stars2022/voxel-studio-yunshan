@@ -1,0 +1,101 @@
+✖ M010 twelve authored candidates preserve reference source, axis, editable cavities and actual connected support (4005.521875ms)
+✖ same-colour fire equipment, paper, canvas, pigment, membrane and acoustic/optical surfaces use distinct actual material cells (260.88275ms)
+✖ drum bore, print feed slit, lyre sound holes, open reel spindle and hanging brush intervals are actual voids (0.547834ms)
+✖ two stage units dock along actual flush sides and the revised performance arrangement has supported instruments (6680.992125ms)
+✔ independent role-pack replacement affects no geometry, category or collision flags and one undo restores everything (2718.381792ms)
+✔ M010 semantic roles can be allocated in a foreign palette atomically; failed creation restores IDs and document (2996.2635ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 2
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17023.970834
+
+✖ failing tests:
+
+test at tests/atlas-culture.test.ts:21:1
+✖ M010 twelve authored candidates preserve reference source, axis, editable cavities and actual connected support (4005.521875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 0
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-culture.test.ts:23:392)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-culture.test.ts:27:1
+✖ same-colour fire equipment, paper, canvas, pigment, membrane and acoustic/optical surfaces use distinct actual material cells (260.88275ms)
+  AssertionError [ERR_ASSERTION]: rubber coil
+  
+  0 !== 103
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-culture.test.ts:32:165)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 103,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-culture.test.ts:40:1
+✖ drum bore, print feed slit, lyre sound holes, open reel spindle and hanging brush intervals are actual voids (0.547834ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 101
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-culture.test.ts:46:47)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 101,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-culture.test.ts:49:1
+✖ two stage units dock along actual flush sides and the revised performance arrangement has supported instruments (6680.992125ms)
+  AssertionError [ERR_ASSERTION]: 203 unsupported
+  + actual - expected
+  
+  + [
+  +   'room-4',
+  +   'room-5'
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-culture.test.ts:53:422)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'room-4', 'room-5' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

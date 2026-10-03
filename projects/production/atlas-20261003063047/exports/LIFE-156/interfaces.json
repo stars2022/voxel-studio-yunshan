@@ -1,0 +1,290 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-156",
+      "name": "监所床位/储物组合",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.06,
+            0,
+            0.94
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              103,
+              99,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四角柱、分层纵梁、床板与端板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              103,
+              99,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "上下床品、独立棉枕与可见缝边",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              27,
+              5
+            ],
+            "max": [
+              98,
+              81,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "上铺前后护栏、端栏及固定卡座",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              71,
+              2
+            ],
+            "max": [
+              100,
+              93,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "外挂直梯、贯通梯间空格和踏面橡胶",
+          "parent": "root",
+          "region": {
+            "min": [
+              74,
+              0,
+              -3
+            ],
+            "max": [
+              99,
+              94,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "床下双门空柜、开放纸盒格和底托",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              5,
+              0
+            ],
+            "max": [
+              97,
+              23,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "端柱检修面板与独立状态灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              97,
+              37,
+              -1
+            ],
+            "max": [
+              101,
+              54,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "双层床储物组合：木金属四柱、上下承床、两组棉枕与床品、长短防护栏、贯通梯级与空心下柜",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              103,
+              99,
+              44
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            25,
+            34,
+            8
+          ],
+          "max": [
+            66,
+            66,
+            37
+          ]
+        },
+        {
+          "min": [
+            27,
+            82,
+            8
+          ],
+          "max": [
+            68,
+            95,
+            37
+          ]
+        },
+        {
+          "min": [
+            78,
+            12,
+            -2
+          ],
+          "max": [
+            95,
+            18,
+            -1
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

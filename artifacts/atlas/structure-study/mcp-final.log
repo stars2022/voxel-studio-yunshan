@@ -1,0 +1,35 @@
+{"tool":"check_geometry","ms":21862.164792000003,"error":false}
+{"tool":"query_voxels","ms":24.862542000002577,"error":false}
+{"tool":"query_voxels","ms":20.566875000004075,"error":false}
+{"tool":"query_voxels","ms":17.604832999997598,"error":false}
+{"tool":"query_voxels","ms":24.127250000005006,"error":false}
+{"tool":"edit_transaction","ms":1561.984083999996,"error":false}
+{"tool":"edit_transaction","ms":2443.363250000002,"error":false}
+{"tool":"edit_transaction","ms":9.4834170000031,"error":false}
+{"tool":"edit_transaction","ms":6.11491599999863,"error":true}
+{"tool":"edit_transaction","ms":607.1262910000005,"error":true}
+{"tool":"edit_transaction","ms":2199.821750000003,"error":false}
+{"tool":"edit_transaction","ms":1548.5087920000005,"error":false}
+{"tool":"edit_transaction","ms":1812.6955409999937,"error":false}
+{"tool":"edit_transaction","ms":1301.374874999994,"error":false}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ '88f06b83dde19e429a11b57656cd7d045315779976bf7f392b3b454cbcbdd888'
+- '6dff48db9e7e61d79673ae2880081348e6d7d9252e56786fb5487cd77f1c4f95'
+
+    at <anonymous> (/Users/stars/Downloads/云山/voxel-studio/scripts/verify-structure-mcp.ts:42:930)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '88f06b83dde19e429a11b57656cd7d045315779976bf7f392b3b454cbcbdd888',
+  expected: '6dff48db9e7e61d79673ae2880081348e6d7d9252e56786fb5487cd77f1c4f95',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

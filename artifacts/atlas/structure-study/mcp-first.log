@@ -1,0 +1,31 @@
+{"tool":"check_geometry","ms":24174.439542000004,"error":false}
+{"tool":"query_voxels","ms":23.836291999999958,"error":false}
+{"tool":"query_voxels","ms":22.05829200000153,"error":false}
+{"tool":"query_voxels","ms":18.107374999999593,"error":false}
+{"tool":"query_voxels","ms":19.215584000005038,"error":false}
+{"tool":"edit_transaction","ms":1135.778916000003,"error":false}
+{"tool":"edit_transaction","ms":2201.420790999997,"error":false}
+{"tool":"edit_transaction","ms":15.344082999996317,"error":false}
+{"tool":"edit_transaction","ms":7.76258300000336,"error":true}
+{"tool":"edit_transaction","ms":585.0250830000004,"error":true}
+{"tool":"edit_transaction","ms":2088.855666999996,"error":false}
+{"tool":"edit_transaction","ms":1522.6932920000036,"error":false}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(preview.affectedInstances.includes('built-017-display'))
+
+    at <anonymous> (/Users/stars/Downloads/云山/voxel-studio/scripts/verify-structure-mcp.ts:42:227)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

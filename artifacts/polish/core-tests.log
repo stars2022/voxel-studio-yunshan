@@ -1,0 +1,58 @@
+
+> yunshan-voxel-studio@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ detail templates preserve real cells, part hierarchy and deterministic regeneration (5073.582ms)
+✔ detailed bay retains a clear door after parameter change and atomic undo (3569.479625ms)
+✔ planter is hollow and contains distinct stems, leaves, flowers and raised ornament cells (48.878959ms)
+✔ rail gap, joinery and lantern emitters are geometry; shading keeps the same occupancy (597.329167ms)
+✔ detail budget, unsupported pitch and invalid texture input fail without changing document (2.600333ms)
+✔ sparse chunks round-trip negative coordinates and seam dirty neighbours (9.091625ms)
+✔ greedy solid block is six quads; cross-chunk internal faces are culled (72.155ms)
+✔ opacity material batches preserve visible opaque surface behind glass (50.639542ms)
+✔ batch atomic rollback on missing material / no version advance (8.5985ms)
+✔ dry-run does not mutate and large modification requires exact preview (208.710083ms)
+✔ version conflict and idempotency replay / payload conflict (2.745792ms)
+✔ transaction undo redo restores all voxel/material/instance edits in one step (502.044584ms)
+✔ voxel replace, mirrored brush, bounded connected fill and surface rules (67.589416ms)
+✔ integer rotation, mirror, move, copy array and collision rollback (7.750375ms)
+✔ extrude adds exposed face columns and is undoable (4.380083ms)
+✔ all general templates generate legal structures and unknown parameters reject (71.903959ms)
+✔ assembly template instantiation shares masters and preserves relative placement (117.162125ms)
+✔ mixed-resolution opening obstruction detects subcell blocking geometry (1661.287083ms)
+✔ interfaces require common pitch, normal and footprint; detach preserves master (34.824083ms)
+✔ metadata transforms preserve port/part spatial relationship; cyclic parents rejected (26.066375ms)
+✔ schema rejects pathological selection, decimals, unknown fields and invalid materials (0.970042ms)
+✔ demo has enterable door, window and stairs clearances without collisions (195.442042ms)
+✔ thin diagonal voxel paths remain face-connected in all octants (8.425875ms)
+✔ planter soil, rim and leaves stay attached at 1, 2 and 2.5cm pitch (3039.896708ms)
+✔ hanging lantern encloses air, has a connected bracket and a grid-aligned wall interface (41.664959ms)
+✔ railing sockets preserve open spans and a continuous supporting frame (83.515333ms)
+✔ bay ornament and handles leave both door variants open; glazing can still be removed (834.713958ms)
+✔ surface and watertight solid voxelization keep exact aligned dimensions (91.622167ms)
+✔ open boundary and transparent shells cannot silently solid-fill (0.947292ms)
+✔ solid even-odd fill preserves nested enclosed cavity (54.394125ms)
+✔ adversarial bonded/thin/hole mesh diagnoses, preserves failure, differs by pitch (28.539833ms)
+✔ colour sampling does not claim semantic/PBR recovery (8.597209ms)
+✔ OBJ explicit unit scaling and Z-up conversion (0.549167ms)
+✔ glTF nodes and GPU instances have world transforms applied (17.761209ms)
+✔ external glTF buffers resolved only from provided resource map (0.875834ms)
+✔ visual GLB reimport preserves asset origin, dimensions, material atlas and emission (220.584083ms)
+✔ assembled GLB preserves negative placement coordinates and instance count (2034.531667ms)
+✔ texture-only alpha in exported GLB is diagnosed and cannot silently solid-fill (37.267458ms)
+✔ compact entry and centimetre detail assets have no floating hardware or disconnected plants (4531.964666ms)
+✔ surface edits change material maps without changing native geometry; invalid stored fields fail (805.073167ms)
+✔ GLB preserves horizontal timber grain direction, maps and editable material metadata (1097.251ms)
+✔ MCP material command creates complete new semantic materials and rolls back incomplete definitions (18.433416ms)
+✔ all twelve image-guided templates create native voxel structures with reproducible regeneration (4132.992709ms)
+✔ reference bay and gateway preserve real, editable passage volume after width changes and undo (723.72425ms)
+✔ reference glass walkway keeps collision-free walkable strip and validates impossible openings (311.175208ms)
+✔ unsupported controls reject without silently changing geometry; asymmetric corner is explicit (28.94ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10129.397292

@@ -1,0 +1,19 @@
+
+> yunshan-voxel-studio@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 33 modules transformed.
+rendering chunks...
+computing gzip size...
+../../dist/index.html                        0.36 kB │ gzip:   0.30 kB
+../../dist/assets/mesh-worker-BXmqNYgq.js    4.30 kB
+../../dist/assets/index-CGH_J9Ox.css         9.83 kB │ gzip:   3.16 kB
+../../dist/assets/index-D7DkPr5a.js        709.25 kB │ gzip: 186.30 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 656ms

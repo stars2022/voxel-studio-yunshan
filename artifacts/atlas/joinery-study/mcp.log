@@ -1,0 +1,25 @@
+{"tool":"check_geometry","ms":16222.696916999997,"error":false}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: unsupported
++ actual - expected
+
++ [
++   'built-071-display'
++ ]
+- []
+
+    at clean (/Users/stars/Downloads/云山/voxel-studio/scripts/verify-joinery-mcp.ts:24:91)
+    at <anonymous> (/Users/stars/Downloads/云山/voxel-studio/scripts/verify-joinery-mcp.ts:32:92)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [ 'built-071-display' ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

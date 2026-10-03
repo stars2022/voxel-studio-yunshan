@@ -1,0 +1,851 @@
+{
+  "run": "atlas-20261003132803",
+  "startedAt": "2026-10-03T13:30:00.827Z",
+  "status": "passed",
+  "checks": [
+    "Twelve M016 masters retain their 20/40/100/200mm grids; actual diffuser, ink, lamp core, glass, non-solid energy, ceramic flue, masonry and mortar cells are queried through MCP",
+    "Diffuser/energy/flue/ink appearance changes exactly four roles, no geometry or collision, with matching canonical UI hashes, plastic filtering, dry-run, idempotency, version conflict, failure rollback and one undo",
+    "Observation stairs, bracket-supported balcony with independent rail, two side platforms and double canopies with four instances of one column and hung sign form 13 placements from 9 masters, without collision, unsupported instance or blocked entrance",
+    "20/40mm incompatible docking rejects and rolls back the entire transaction without silently resampling",
+    "Two actual voxel eaves-corridor segments dock with continuous floor, no colliding roof-end ornaments and one shared master",
+    "42m-major-radius ring and separate 35m energy column keep true metre dimensions and independent 200/100mm grids; non-solid energy remains distinct from physical glass and structure",
+    "All three scenarios save actual multi-view screenshots and GLB/native/collision/interface/material-atlas exports; native document hashes match canonical assets, instances, materials and styles",
+    "Saved native project and server restart restore the exact canonical document"
+  ],
+  "errors": [],
+  "uiSync": [
+    {
+      "version": 1,
+      "ms": 601.4490000000005
+    },
+    {
+      "version": 2,
+      "ms": 578.2252499999995
+    },
+    {
+      "version": 3,
+      "ms": 33.89641699999993
+    },
+    {
+      "version": 4,
+      "ms": 3228.664334000001
+    },
+    {
+      "version": 5,
+      "ms": 35.798500000004424
+    },
+    {
+      "version": 6,
+      "ms": 893.5648750000109
+    },
+    {
+      "version": 7,
+      "ms": 30.698292000000947
+    },
+    {
+      "version": 8,
+      "ms": 3227.642292000004
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "exterior-assembly",
+      "masters": 9,
+      "placements": 13,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 1960641,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "deck-1",
+              "stairs-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 858510
+          },
+          {
+            "instanceIds": [
+              "wall-1",
+              "balcony-1",
+              "rail-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 601822
+          },
+          {
+            "instanceIds": [
+              "apron-left"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 138459
+          },
+          {
+            "instanceIds": [
+              "apron-right"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 138459
+          },
+          {
+            "instanceIds": [
+              "canopies-1",
+              "column-60",
+              "column-240",
+              "column-760",
+              "column-940",
+              "sign-1"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 223391
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "deck-1": [],
+          "stairs-1": [],
+          "wall-1": [],
+          "balcony-1": [
+            "wall-1"
+          ],
+          "rail-1": [
+            "balcony-1"
+          ],
+          "apron-left": [],
+          "apron-right": [],
+          "canopies-1": [
+            "column-60",
+            "column-240",
+            "sign-1",
+            "column-760",
+            "column-940"
+          ],
+          "column-60": [],
+          "column-240": [],
+          "column-760": [],
+          "column-940": [],
+          "sign-1": [
+            "canopies-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "deck-1",
+            "index": 0,
+            "widthM": 1.6,
+            "heightM": 2,
+            "emptyCells": 1200000,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 0,
+            "widthM": 1.04,
+            "heightM": 0.7000000000000001,
+            "emptyCells": 81900,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 1,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 2,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 3,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 4,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 5,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 6,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 7,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "stairs-1",
+            "index": 8,
+            "widthM": 1.16,
+            "heightM": 1.8800000000000001,
+            "emptyCells": 65424,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "balcony-1",
+            "index": 0,
+            "widthM": 2,
+            "heightM": 0.04,
+            "emptyCells": 400,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-left",
+            "index": 0,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-left",
+            "index": 1,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-left",
+            "index": 2,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-left",
+            "index": 3,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-left",
+            "index": 4,
+            "widthM": 4.72,
+            "heightM": 2,
+            "emptyCells": 141600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-right",
+            "index": 0,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-right",
+            "index": 1,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-right",
+            "index": 2,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-right",
+            "index": 3,
+            "widthM": 0.32,
+            "heightM": 2,
+            "emptyCells": 9600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "apron-right",
+            "index": 4,
+            "widthM": 4.72,
+            "heightM": 2,
+            "emptyCells": 141600,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "canopies-1",
+            "index": 0,
+            "widthM": 4,
+            "heightM": 3,
+            "emptyCells": 1125000,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "观景层入口与平台净空",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "两侧7m接台之间中央2m入口",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "双侧店檐间4m入口",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/exports/exterior-assembly",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 2872372,
+        "isError": false
+      },
+      "previews": {
+        "version": 4,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/previews/56cedf1e-e33c-4541-ae3b-e6cc4e4dee34/isometric.png",
+          "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/previews/56cedf1e-e33c-4541-ae3b-e6cc4e4dee34/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "exterior-corridors",
+      "masters": 1,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.04,
+        "occupiedCollisionCells": 350776,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "left",
+              "right"
+            ],
+            "pitchM": 0.04,
+            "occupiedCells": 350776
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "left": [],
+          "right": []
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "left",
+            "index": 0,
+            "widthM": 4.88,
+            "heightM": 2,
+            "emptyCells": 183000,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "right",
+            "index": 0,
+            "widthM": 4.88,
+            "heightM": 2,
+            "emptyCells": 183000,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/exports/exterior-corridors",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 1619732,
+        "isError": false
+      },
+      "previews": {
+        "version": 6,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/previews/8e4e8a96-9a87-418a-9de0-50f59d5baa59/isometric.png",
+          "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/previews/8e4e8a96-9a87-418a-9de0-50f59d5baa59/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "exterior-starport",
+      "masters": 2,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.1,
+        "occupiedCollisionCells": 442326,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "ring-1"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 193974
+          },
+          {
+            "instanceIds": [
+              "tower-1"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 248352
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "ring-1": [],
+          "tower-1": []
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "ring-1",
+            "index": 0,
+            "widthM": 40,
+            "heightM": 7,
+            "emptyCells": 1400000,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "tower-1",
+            "index": 0,
+            "widthM": 1.6,
+            "heightM": 2,
+            "emptyCells": 2240,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+        ],
+        "isError": false
+      },
+      "exported": {
+        "directory": "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/exports/exterior-starport",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 6643416,
+        "isError": false
+      },
+      "previews": {
+        "version": 8,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/previews/1987ef4a-05f9-484a-87db-49a0e27a4ebf/isometric.png",
+          "artifacts/atlas/atlas-20261003132803/exterior-mcp-runtime/previews/1987ef4a-05f9-484a-87db-49a0e27a4ebf/front.png"
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)",
+  "gallery": {
+    "pitchM": 0.02,
+    "occupiedCollisionCells": 2273988,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "built-090-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 175388
+      },
+      {
+        "instanceIds": [
+          "built-091-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 729024
+      },
+      {
+        "instanceIds": [
+          "built-094-display"
+        ],
+        "pitchM": 0.2,
+        "occupiedCells": 193974
+      },
+      {
+        "instanceIds": [
+          "built-095-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 248352
+      },
+      {
+        "instanceIds": [
+          "built-096-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 270540
+      },
+      {
+        "instanceIds": [
+          "built-097-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 27346
+      },
+      {
+        "instanceIds": [
+          "built-098-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 138459
+      },
+      {
+        "instanceIds": [
+          "built-099-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 150150
+      },
+      {
+        "instanceIds": [
+          "built-100-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 15344
+      },
+      {
+        "instanceIds": [
+          "built-101-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 11865
+      },
+      {
+        "instanceIds": [
+          "built-102-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 78718
+      },
+      {
+        "instanceIds": [
+          "built-103-display"
+        ],
+        "pitchM": 0.04,
+        "occupiedCells": 234828
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [],
+    "contacts": {
+      "built-090-display": [],
+      "built-091-display": [],
+      "built-094-display": [],
+      "built-095-display": [],
+      "built-096-display": [],
+      "built-097-display": [],
+      "built-098-display": [],
+      "built-099-display": [],
+      "built-100-display": [],
+      "built-101-display": [],
+      "built-102-display": [],
+      "built-103-display": []
+    },
+    "gaps": [],
+    "openings": [
+      {
+        "instanceId": "built-090-display",
+        "index": 0,
+        "widthM": 4.88,
+        "heightM": 2,
+        "emptyCells": 183000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-091-display",
+        "index": 0,
+        "widthM": 1.6,
+        "heightM": 2,
+        "emptyCells": 1200000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-094-display",
+        "index": 0,
+        "widthM": 40,
+        "heightM": 7,
+        "emptyCells": 1400000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-095-display",
+        "index": 0,
+        "widthM": 1.6,
+        "heightM": 2,
+        "emptyCells": 2240,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-096-display",
+        "index": 0,
+        "widthM": 2,
+        "heightM": 0.04,
+        "emptyCells": 400,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-098-display",
+        "index": 0,
+        "widthM": 0.32,
+        "heightM": 2,
+        "emptyCells": 9600,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-098-display",
+        "index": 1,
+        "widthM": 0.32,
+        "heightM": 2,
+        "emptyCells": 9600,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-098-display",
+        "index": 2,
+        "widthM": 0.32,
+        "heightM": 2,
+        "emptyCells": 9600,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-098-display",
+        "index": 3,
+        "widthM": 0.32,
+        "heightM": 2,
+        "emptyCells": 9600,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-098-display",
+        "index": 4,
+        "widthM": 4.72,
+        "heightM": 2,
+        "emptyCells": 141600,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-099-display",
+        "index": 0,
+        "widthM": 4,
+        "heightM": 3,
+        "emptyCells": 1125000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-102-display",
+        "index": 0,
+        "widthM": 2,
+        "heightM": 8,
+        "emptyCells": 32000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-102-display",
+        "index": 1,
+        "widthM": 2,
+        "heightM": 8,
+        "emptyCells": 32000,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-102-display",
+        "index": 2,
+        "widthM": 0.8,
+        "heightM": 0.8,
+        "emptyCells": 320,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-103-display",
+        "index": 0,
+        "widthM": 1.6,
+        "heightM": 2.88,
+        "emptyCells": 201600,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。单个相邻组仍保留 3,000,000 格的检查预算。"
+    ],
+    "isError": false
+  },
+  "completedAt": "2026-10-03T13:31:45.875Z"
+}

@@ -1,0 +1,344 @@
+{
+  "startedAt": "2026-10-02T11:35:38.841Z",
+  "sourceVersion": 34,
+  "pitchM": 0.02,
+  "scope": "Actual voxel geometry, same base colours and display; no textures or scene illumination",
+  "environment": {
+    "platform": "darwin",
+    "release": "27.2.0",
+    "arch": "arm64",
+    "cpu": "Apple M3 Pro",
+    "logicalCPUs": 12,
+    "memoryBytes": 19327352832,
+    "node": "v24.19.0",
+    "browser": "153.0.8010.12",
+    "webgl": {
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  },
+  "assets": [
+    {
+      "id": "study-bay",
+      "name": "研究版 · 开间 · 饰牌与五金",
+      "cellSizeM": 0.02,
+      "oldVoxels": 393573,
+      "newVoxels": 393799,
+      "oldComponentCount": 1,
+      "newComponentCount": 1,
+      "oldLargestComponent": 393573,
+      "boundsCells": {
+        "min": [
+          -1,
+          0,
+          -2
+        ],
+        "max": [
+          181,
+          160,
+          61
+        ]
+      },
+      "parts": [
+        "精作开间",
+        "薄地砖 / 实心灰浆 / 石基",
+        "实体灯匣与发光格",
+        "实体灯匣与发光格",
+        "石柱 / 木柱 / 金属箍",
+        "砖檩 / 叠梁 / 内嵌线槽",
+        "玻璃 / 压条 / 门框 / 五金"
+      ],
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            1.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3.6,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            1.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.2
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            3.2,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "generationMs": 116.08837500000004,
+      "meshingMs": 1569.0453329999998,
+      "quads": 4386,
+      "geometrySHA256": "afc168568e465f675b659475fa4e016e598ab242c336d6ecbb04017059a0a036"
+    },
+    {
+      "id": "study-railing",
+      "name": "研究版 · 栏杆 · 截面与插接",
+      "cellSizeM": 0.02,
+      "oldVoxels": 10324,
+      "newVoxels": 10377,
+      "oldComponentCount": 1,
+      "newComponentCount": 1,
+      "oldLargestComponent": 10324,
+      "boundsCells": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          90,
+          48,
+          10
+        ]
+      },
+      "parts": [
+        "研究版 · 栏杆 · 截面与插接",
+        "阶梯截面木扶手 / 端部套箍",
+        "叠层柱帽 / 石底脚 / 插接座 / 铆钉"
+      ],
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.8,
+            0,
+            0.2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "generationMs": 8.345166000000063,
+      "meshingMs": 75.80987499999992,
+      "quads": 624,
+      "geometrySHA256": "67044e1332edb6eb61862aa51ba45baabf373886c6276f10a5e8e2b1001729aa"
+    },
+    {
+      "id": "study-planter",
+      "name": "研究版 · 花槽 · 口沿与分簇植物",
+      "cellSizeM": 0.02,
+      "oldVoxels": 19067,
+      "newVoxels": 40037,
+      "oldComponentCount": 39,
+      "newComponentCount": 1,
+      "oldLargestComponent": 16668,
+      "boundsCells": {
+        "min": [
+          0,
+          0,
+          -2
+        ],
+        "max": [
+          60,
+          45,
+          30
+        ]
+      },
+      "parts": [
+        "研究版 · 花槽 · 口沿与分簇植物",
+        "阶梯口沿 / 内壁 / 实填土层 / 回纹面板",
+        "分簇栽植 / 连通枝干 / 多向叶片 / 疏密花序"
+      ],
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            0.6
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "generationMs": 52.495166000000154,
+      "meshingMs": 159.60629100000006,
+      "quads": 5525,
+      "geometrySHA256": "606d5a45f8301e07d89b816f28c6330b2e601a643d57785edbf9c593c4cd2c08"
+    },
+    {
+      "id": "study-lantern",
+      "name": "研究版 · 灯笼 · 薄罩与墙座",
+      "cellSizeM": 0.02,
+      "oldVoxels": 1440,
+      "newVoxels": 1166,
+      "oldComponentCount": 1,
+      "newComponentCount": 1,
+      "oldLargestComponent": 1440,
+      "boundsCells": {
+        "min": [
+          0,
+          2,
+          0
+        ],
+        "max": [
+          11,
+          34,
+          13
+        ]
+      },
+      "parts": [
+        "研究版 · 灯笼 · 薄罩与墙座",
+        "墙座 / 螺钉 / 悬臂 / 斜撑",
+        "叠层顶盖 / 薄灯罩 / 骨架 / 连续底坠"
+      ],
+      "ports": [
+        {
+          "id": "wall",
+          "kind": "wall-mount",
+          "position": [
+            0.07999999999999999,
+            0.46,
+            0.26
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.08,
+            0.22000000000000006,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "generationMs": 0.5914999999999964,
+      "meshingMs": 11.554125000000113,
+      "quads": 214,
+      "geometrySHA256": "81f359c6e15e64653263f8bbedc80522f3f513d76c4302c1d3da8730bb0c098a"
+    }
+  ],
+  "checks": [
+    "真实 stdio MCP dry-run、原子提交、幂等重放；浏览器 WebSocket 同步",
+    "一次撤销移除整批四构件，重做恢复",
+    "快速撤销/重做后，四构件均有合并网格与非空实际像素；素色预览与剖切不修改权威文档",
+    "原生保存无损读回；花槽 GLB 导出重导入尺寸坐标一致"
+  ],
+  "errors": [],
+  "transaction": {
+    "preview": {
+      "modifiedVoxels": 445379,
+      "affectedAssets": [
+        "study-bay",
+        "study-railing",
+        "study-planter",
+        "study-lantern"
+      ]
+    },
+    "commit": 1,
+    "undo": 2,
+    "redo": 3
+  },
+  "export": {
+    "directory": "projects/exports/geometry-study-planter",
+    "files": [
+      "visual.glb",
+      "voxels.ysvox.json",
+      "collision.json",
+      "interfaces.json",
+      "atlas.png",
+      "atlas.json"
+    ],
+    "glbBytes": 1029056,
+    "reimportBoundsM": {
+      "min": [
+        0,
+        0,
+        -0.03999999910593033
+      ],
+      "max": [
+        1.2000000476837158,
+        0.8999999761581421,
+        0.6000000238418579
+      ]
+    }
+  },
+  "finishedAt": "2026-10-02T11:36:08.551Z"
+}

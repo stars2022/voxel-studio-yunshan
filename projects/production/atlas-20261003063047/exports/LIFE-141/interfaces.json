@@ -1,0 +1,346 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-141",
+      "name": "会议桌及席位",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.68
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.2,
+            0,
+            2.36
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -34
+            ],
+            "max": [
+              110,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              1
+            ],
+            "max": [
+              109,
+              36,
+              49
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              36,
+              0
+            ],
+            "max": [
+              110,
+              38,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "会议桌本体：四足、牙头、石芯桌面和走线槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              110,
+              39,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "桌端两块薄控制台和压角",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              38,
+              19
+            ],
+            "max": [
+              105,
+              42,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "近侧独立座椅 1",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              0,
+              -34
+            ],
+            "max": [
+              32,
+              52,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "远侧独立座椅 1",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              0,
+              59
+            ],
+            "max": [
+              33,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "近侧独立座椅 2",
+          "parent": "root",
+          "region": {
+            "min": [
+              43,
+              0,
+              -34
+            ],
+            "max": [
+              67,
+              52,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "远侧独立座椅 2",
+          "parent": "root",
+          "region": {
+            "min": [
+              44,
+              0,
+              59
+            ],
+            "max": [
+              68,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "近侧独立座椅 3",
+          "parent": "root",
+          "region": {
+            "min": [
+              77,
+              0,
+              -34
+            ],
+            "max": [
+              101,
+              52,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-9",
+          "name": "远侧独立座椅 3",
+          "parent": "root",
+          "region": {
+            "min": [
+              78,
+              0,
+              59
+            ],
+            "max": [
+              102,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-10",
+          "name": "会议桌席：石芯长桌、双列六椅、开放下枨、走线槽、端部控制屏和独立软垫",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -34
+            ],
+            "max": [
+              110,
+              52,
+              84
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            5,
+            6
+          ],
+          "max": [
+            95,
+            30,
+            44
+          ]
+        },
+        {
+          "min": [
+            41,
+            36,
+            23
+          ],
+          "max": [
+            63,
+            39,
+            25
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

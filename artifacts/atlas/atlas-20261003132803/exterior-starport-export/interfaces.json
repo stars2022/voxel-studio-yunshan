@@ -1,0 +1,482 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151
+    }
+  },
+  "assets": [
+    {
+      "id": "ring",
+      "name": "星港停泊能量环",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            1,
+            0,
+            1.2000000000000002
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            88,
+            0,
+            87.60000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              5,
+              0,
+              6
+            ],
+            "max": [
+              445,
+              33,
+              444
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "32径向段与四边截面实体环体",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              10,
+              7
+            ],
+            "max": [
+              443,
+              24,
+              443
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八座承环石脚与金属承塔",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              0,
+              6
+            ],
+            "max": [
+              444,
+              33,
+              444
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "三十二段检修脊与铜锁块",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              22,
+              14
+            ],
+            "max": [
+              436,
+              25,
+              436
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "承塔石踏座与侧向金属检修格",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              0,
+              215
+            ],
+            "max": [
+              445,
+              24,
+              235
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "实际42m主半径停泊环：32段轮廓、四边截面、贯通中央停泊空域、八座实体支腿和独立青色发光带",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              0,
+              6
+            ],
+            "max": [
+              445,
+              33,
+              444
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            125,
+            0,
+            125
+          ],
+          "max": [
+            325,
+            35,
+            325
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "星港中央能量塔光柱",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            10,
+            0,
+            10
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              100,
+              420,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四级承台、实体核心与可见石分层",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              100,
+              60,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "正面检修凹腔、金属门框和铜门扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              40,
+              26,
+              28
+            ],
+            "max": [
+              60,
+              50,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "35m非碰撞能量示意与底部发射器",
+          "parent": "root",
+          "region": {
+            "min": [
+              30,
+              54,
+              35
+            ],
+            "max": [
+              70,
+              410,
+              65
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四根实体导流柱、分离玻璃护片和底肩",
+          "parent": "root",
+          "region": {
+            "min": [
+              33,
+              52,
+              33
+            ],
+            "max": [
+              67,
+              414,
+              67
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "上部发射冠、青色节点及可检修铜鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              32,
+              408,
+              31
+            ],
+            "max": [
+              68,
+              420,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "能量塔与35m光柱：台阶基座、检修口、实体骨架、玻璃护片、独立非碰撞能量区和顶部发射冠",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              100,
+              420,
+              100
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            42,
+            28,
+            29
+          ],
+          "max": [
+            58,
+            48,
+            36
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "ring-1",
+      "assetId": "ring",
+      "name": "星港停泊能量环",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tower-1",
+      "assetId": "tower",
+      "name": "星港中央能量塔光柱",
+      "position": [
+        100,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

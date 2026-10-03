@@ -1,0 +1,232 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-124",
+      "name": "输液支架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.01,
+            0,
+            0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.56,
+            0,
+            0.52
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              1,
+              0,
+              3
+            ],
+            "max": [
+              57,
+              182,
+              55
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "五个橡胶脚轮、金属轮毂和星形底脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              0,
+              3
+            ],
+            "max": [
+              57,
+              28,
+              55
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "内外伸缩杆、锁套、锁紧旋钮与顶横杆",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              26,
+              25
+            ],
+            "max": [
+              56,
+              178,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "挂钩和两只透明柔性袋，液体独立于塑料袋壁",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              91,
+              19
+            ],
+            "max": [
+              51,
+              182,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "夹持式输液泵壳、状态屏和独立控制键",
+          "parent": "root",
+          "region": {
+            "min": [
+              24,
+              103,
+              18
+            ],
+            "max": [
+              32,
+              117,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "输液架：五辐脚轮、伸缩立杆、锁套、双挂钩、空心软袋、液面和滴管回路",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              3
+            ],
+            "max": [
+              57,
+              182,
+              55
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            5,
+            167,
+            27
+          ],
+          "max": [
+            8,
+            171,
+            29
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

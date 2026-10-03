@@ -1,0 +1,1195 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146
+    }
+  },
+  "assets": [
+    {
+      "id": "wing",
+      "name": "固定梯井服务翼结构",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4.4,
+            0,
+            7.6000000000000005
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "lower-flight",
+          "kind": "walkway-1600",
+          "position": [
+            1.2,
+            0.2,
+            1.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "upper-flight",
+          "kind": "walkway-1600",
+          "position": [
+            3.2,
+            3.4,
+            1.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "周边基础、前厅铺面和上层前接台",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              170,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四根贯层石柱、连接圈梁与剖面封顶",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              10,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "背部砌体与局部保留侧壁",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              10,
+              301
+            ],
+            "max": [
+              206,
+              304,
+              379
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "入口门楣、上接台侧护边与可见柱脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              10,
+              4
+            ],
+            "max": [
+              206,
+              176,
+              59
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "两层服务翼剖面：真实梯井空洞、前接台、后墙、石柱、木梁与入口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            101,
+            11,
+            61
+          ],
+          "max": [
+            119,
+            300,
+            279
+          ]
+        },
+        {
+          "min": [
+            30,
+            11,
+            0
+          ],
+          "max": [
+            190,
+            130,
+            59
+          ]
+        },
+        {
+          "min": [
+            30,
+            181,
+            0
+          ],
+          "max": [
+            190,
+            295,
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outbound",
+      "name": "共享双跑上行踏步",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            4.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            0.2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "top-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            4.4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底平台、顶接台与浅石铺面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八块独立踏面、踢面和两侧实木梯梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              7
+            ],
+            "max": [
+              80,
+              90,
+              180
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶台双柱、石足、金属套肩与横枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              0,
+              205
+            ],
+            "max": [
+              77,
+              80,
+              214
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两端嵌入状态窗与踏步防滑条",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              3,
+              0
+            ],
+            "max": [
+              78,
+              90,
+              212
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "共享上行一跑：八级 0.2m 踢高 / 0.4m 进深、底顶平台、双侧木梁与真实梯下空间",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            14,
+            10,
+            120
+          ],
+          "max": [
+            66,
+            45,
+            165
+          ]
+        },
+        {
+          "min": [
+            11,
+            21,
+            24
+          ],
+          "max": [
+            69,
+            115,
+            36
+          ]
+        },
+        {
+          "min": [
+            11,
+            31,
+            44
+          ],
+          "max": [
+            69,
+            125,
+            56
+          ]
+        },
+        {
+          "min": [
+            11,
+            41,
+            64
+          ],
+          "max": [
+            69,
+            135,
+            76
+          ]
+        },
+        {
+          "min": [
+            11,
+            51,
+            84
+          ],
+          "max": [
+            69,
+            145,
+            96
+          ]
+        },
+        {
+          "min": [
+            11,
+            61,
+            104
+          ],
+          "max": [
+            69,
+            155,
+            116
+          ]
+        },
+        {
+          "min": [
+            11,
+            71,
+            124
+          ],
+          "max": [
+            69,
+            165,
+            136
+          ]
+        },
+        {
+          "min": [
+            11,
+            81,
+            144
+          ],
+          "max": [
+            69,
+            175,
+            156
+          ]
+        },
+        {
+          "min": [
+            11,
+            91,
+            164
+          ],
+          "max": [
+            69,
+            185,
+            176
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return",
+      "name": "共享双跑回行踏步",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            4.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            0.2,
+            4.4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "top-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              142,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石质底顶平台和金属端鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八级石踏面、真实踢面与两侧木梯梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              35
+            ],
+            "max": [
+              80,
+              90,
+              215
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶台承柱和横枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              4
+            ],
+            "max": [
+              78,
+              80,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双侧连续扶手、竖梃与独立暖光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              9,
+              1
+            ],
+            "max": [
+              79,
+              142,
+              218
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "回行单跑：1.6m 跑道、八级 0.2/0.4m 石踏步、连续扶手与反向出口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              142,
+              220
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            10,
+            55
+          ],
+          "max": [
+            65,
+            45,
+            100
+          ]
+        },
+        {
+          "min": [
+            12,
+            21,
+            184
+          ],
+          "max": [
+            68,
+            115,
+            196
+          ]
+        },
+        {
+          "min": [
+            12,
+            31,
+            164
+          ],
+          "max": [
+            68,
+            125,
+            176
+          ]
+        },
+        {
+          "min": [
+            12,
+            41,
+            144
+          ],
+          "max": [
+            68,
+            135,
+            156
+          ]
+        },
+        {
+          "min": [
+            12,
+            51,
+            124
+          ],
+          "max": [
+            68,
+            145,
+            136
+          ]
+        },
+        {
+          "min": [
+            12,
+            61,
+            104
+          ],
+          "max": [
+            68,
+            155,
+            116
+          ]
+        },
+        {
+          "min": [
+            12,
+            71,
+            84
+          ],
+          "max": [
+            68,
+            165,
+            96
+          ]
+        },
+        {
+          "min": [
+            12,
+            81,
+            64
+          ],
+          "max": [
+            68,
+            175,
+            76
+          ]
+        },
+        {
+          "min": [
+            12,
+            91,
+            44
+          ],
+          "max": [
+            68,
+            185,
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landing",
+      "name": "共享楼梯半转平台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.6
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "outbound",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "return",
+          "kind": "walkway-1600",
+          "position": [
+            2.8,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              180,
+              142,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "U 形实际承板、石面与梯井缺口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              80,
+              0
+            ],
+            "max": [
+              180,
+              90,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四根承柱、石足与平台下承梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              178,
+              80,
+              78
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "后边、侧边护栏及梯井护边",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              80,
+              1
+            ],
+            "max": [
+              179,
+              142,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "半转平台：双 1.6m 接口、中央梯井缺口、石铺面、木柱与侧后扶手",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              180,
+              142,
+              80
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            81,
+            10,
+            0
+          ],
+          "max": [
+            99,
+            140,
+            29
+          ]
+        },
+        {
+          "min": [
+            15,
+            91,
+            34
+          ],
+          "max": [
+            165,
+            135,
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return-support",
+      "name": "回行承柱 · 拼装辅件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "support-a",
+      "assetId": "return-support",
+      "name": "回行承柱 · 拼装辅件",
+      "position": [
+        2.44,
+        0,
+        1.28
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "support-b",
+      "assetId": "return-support",
+      "name": "回行承柱 · 拼装辅件",
+      "position": [
+        3.76,
+        0,
+        1.28
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "wing-1",
+      "assetId": "wing",
+      "name": "固定梯井服务翼结构",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "outbound-1",
+      "assetId": "outbound",
+      "name": "共享双跑上行踏步",
+      "position": [
+        0.3999999999999999,
+        0,
+        1.2
+      ],
+      "rotation": 0,
+      "parent": "wing-1"
+    },
+    {
+      "id": "landing-1",
+      "assetId": "landing",
+      "name": "共享楼梯半转平台",
+      "position": [
+        0.3999999999999999,
+        0,
+        5.6000000000000005
+      ],
+      "rotation": 0,
+      "parent": "outbound-1"
+    },
+    {
+      "id": "return-1",
+      "assetId": "return",
+      "name": "共享双跑回行踏步",
+      "position": [
+        2.3999999999999995,
+        1.6,
+        1.2000000000000002
+      ],
+      "rotation": 0,
+      "parent": "landing-1"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107
+    }
+  },
+  "assets": [
+    {
+      "id": "life-179",
+      "name": "香炉及烛灯",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.01,
+            0,
+            0.04
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.1300000000000001,
+            0,
+            0.33
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              1,
+              0,
+              4
+            ],
+            "max": [
+              114,
+              108,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四足炉座、空心炉壁、耳环与纹样嵌板",
+          "parent": "root",
+          "region": {
+            "min": [
+              34,
+              0,
+              4
+            ],
+            "max": [
+              85,
+              41,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "退层炉盖、孔阵和三枝独立香材",
+          "parent": "root",
+          "region": {
+            "min": [
+              42,
+              14,
+              10
+            ],
+            "max": [
+              75,
+              74,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "独立悬灯 1：石座、木柱、悬臂和铜框灯芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              16
+            ],
+            "max": [
+              31,
+              108,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立悬灯 2：石座、木柱、悬臂和铜框灯芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              80,
+              0,
+              16
+            ],
+            "max": [
+              114,
+              108,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "香炉及灯组：空心四足铜炉、阶梯透气盖、独立植物香枝及两座悬灯木架",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              4
+            ],
+            "max": [
+              114,
+              108,
+              37
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            46,
+            20,
+            14
+          ],
+          "max": [
+            48,
+            30,
+            17
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

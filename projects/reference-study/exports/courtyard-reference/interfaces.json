@@ -1,0 +1,1885 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "assets": [
+    {
+      "id": "ref-roof",
+      "name": "A01 屋顶中段",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.55,
+            2.2
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            4,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.55,
+            2.2
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            2.2
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            1.5,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            2.2
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              2,
+              4
+            ],
+            "max": [
+              158,
+              60,
+              86
+            ]
+          }
+        },
+        {
+          "id": "tiles",
+          "name": "搭接瓦面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              62,
+              88
+            ]
+          }
+        },
+        {
+          "id": "ridge",
+          "name": "脊檩与线槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              38,
+              72
+            ],
+            "max": [
+              160,
+              62,
+              88
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "ref-gable",
+      "name": "A02 山墙端段",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.7000000000000002,
+            2.4000000000000004
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3.6,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.7000000000000002,
+            2.4000000000000004
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            2.4000000000000004
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            1.7000000000000002,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            2.4000000000000004
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              6,
+              0,
+              0
+            ],
+            "max": [
+              138,
+              68,
+              96
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "ref-eave",
+      "name": "A03 直线檐口",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.25,
+            1.6
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            4,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.25,
+            1.6
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            1.6
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            1.1,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            1.6
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              2,
+              4
+            ],
+            "max": [
+              160,
+              44,
+              64
+            ]
+          }
+        },
+        {
+          "id": "tiles",
+          "name": "搭接瓦面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              50,
+              64
+            ]
+          }
+        },
+        {
+          "id": "ridge",
+          "name": "脊檩与线槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              26,
+              48
+            ],
+            "max": [
+              160,
+              50,
+              64
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "ref-eave-corner",
+      "name": "A04 飞檐转角",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.55,
+            2.6
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            2.6,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.55,
+            2.6
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.6,
+            0,
+            2.6
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            1.55,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.6,
+            0,
+            2.6
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              2,
+              0
+            ],
+            "max": [
+              104,
+              62,
+              104
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "ref-bay",
+      "name": "A05 首层开间",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            1.1
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3.6,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            1.1
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.1
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            3.2,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.1
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              145,
+              128,
+              44
+            ]
+          }
+        },
+        {
+          "id": "posts",
+          "name": "柱脚 / 石帽 / 灯具",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              27
+            ],
+            "max": [
+              144,
+              128,
+              47
+            ]
+          }
+        },
+        {
+          "id": "infill",
+          "name": "墙面与玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              10,
+              28
+            ],
+            "max": [
+              126,
+              110,
+              42
+            ]
+          }
+        },
+        {
+          "id": "lintel",
+          "name": "承重过梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              110,
+              28
+            ],
+            "max": [
+              126,
+              124,
+              42
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            44,
+            10,
+            0
+          ],
+          "max": [
+            100,
+            100,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ref-balcony",
+      "name": "A06 上层开间",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            1.2000000000000002
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3.6,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            1.2000000000000002
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.2000000000000002
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            3.2,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.2000000000000002
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              145,
+              128,
+              48
+            ]
+          }
+        },
+        {
+          "id": "posts",
+          "name": "柱脚 / 石帽 / 灯具",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              31
+            ],
+            "max": [
+              144,
+              128,
+              51
+            ]
+          }
+        },
+        {
+          "id": "infill",
+          "name": "墙面与玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              10,
+              32
+            ],
+            "max": [
+              126,
+              110,
+              46
+            ]
+          }
+        },
+        {
+          "id": "lintel",
+          "name": "承重过梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              110,
+              32
+            ],
+            "max": [
+              126,
+              124,
+              46
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "ref-bay-corner",
+      "name": "A07 转角开间",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            3
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            3
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            3
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            3.2,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            3
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              121,
+              128,
+              121
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            32,
+            10,
+            94
+          ],
+          "max": [
+            88,
+            100,
+            120
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ref-solid-bay",
+      "name": "A08 实墙开间",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            0.6000000000000001
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3.6,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.2,
+            0.6000000000000001
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            0.6000000000000001
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            3.2,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            0.6000000000000001
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              145,
+              128,
+              24
+            ]
+          }
+        },
+        {
+          "id": "posts",
+          "name": "柱脚 / 石帽 / 灯具",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              7
+            ],
+            "max": [
+              144,
+              128,
+              27
+            ]
+          }
+        },
+        {
+          "id": "infill",
+          "name": "墙面与玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              10,
+              8
+            ],
+            "max": [
+              126,
+              110,
+              22
+            ]
+          }
+        },
+        {
+          "id": "lintel",
+          "name": "承重过梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              110,
+              8
+            ],
+            "max": [
+              126,
+              124,
+              22
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            52,
+            40,
+            16
+          ],
+          "max": [
+            92,
+            92,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ref-gateway",
+      "name": "A09 门楼框架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.4000000000000004,
+            0.7000000000000001
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3.6,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            3.4000000000000004,
+            0.7000000000000001
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            0.7000000000000001
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            3.4000000000000004,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            0.7000000000000001
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              145,
+              136,
+              27
+            ]
+          }
+        },
+        {
+          "id": "lintel",
+          "name": "门额过梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              22,
+              108,
+              0
+            ],
+            "max": [
+              122,
+              136,
+              28
+            ]
+          }
+        },
+        {
+          "id": "pillars",
+          "name": "双柱与灯匣",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              144,
+              136,
+              28
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            22,
+            0,
+            0
+          ],
+          "max": [
+            122,
+            108,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ref-bridge",
+      "name": "A10 连桥直段",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.4000000000000001,
+            1.7000000000000002
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            4,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.4000000000000001,
+            1.7000000000000002
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            1.7000000000000002
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            1.4000000000000001,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            1.7000000000000002
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              56,
+              68
+            ]
+          }
+        },
+        {
+          "id": "deck",
+          "name": "承重桥面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              16,
+              68
+            ]
+          }
+        },
+        {
+          "id": "rails",
+          "name": "玻璃护栏",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              16,
+              0
+            ],
+            "max": [
+              160,
+              56,
+              68
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "ref-bridge-corner",
+      "name": "A11 连廊转角",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.4000000000000001,
+            3.2
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            3.2,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.4000000000000001,
+            3.2
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.2,
+            0,
+            3.2
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            1.4000000000000001,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.2,
+            0,
+            3.2
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              128,
+              56,
+              128
+            ]
+          }
+        },
+        {
+          "id": "deck",
+          "name": "承重桥面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              128,
+              16,
+              128
+            ]
+          }
+        },
+        {
+          "id": "rails",
+          "name": "玻璃护栏",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              16,
+              0
+            ],
+            "max": [
+              128,
+              56,
+              128
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "ref-plinth",
+      "name": "A12 台基模块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "left",
+          "kind": "edge",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.45,
+            1.8
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "right",
+          "kind": "edge",
+          "position": [
+            4,
+            0,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.45,
+            1.8
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            1.8
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "top",
+          "kind": "support",
+          "position": [
+            0,
+            0.45,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            4,
+            0,
+            1.8
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "图鉴结构整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              160,
+              18,
+              72
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "display-ref-roof",
+      "assetId": "ref-roof",
+      "name": "A01 屋顶中段",
+      "position": [
+        15,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-gable",
+      "assetId": "ref-gable",
+      "name": "A02 山墙端段",
+      "position": [
+        10,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-eave",
+      "assetId": "ref-eave",
+      "name": "A03 直线檐口",
+      "position": [
+        5,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-eave-corner",
+      "assetId": "ref-eave-corner",
+      "name": "A04 飞檐转角",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-bay",
+      "assetId": "ref-bay",
+      "name": "A05 首层开间",
+      "position": [
+        15,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-balcony",
+      "assetId": "ref-balcony",
+      "name": "A06 上层开间",
+      "position": [
+        10,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-bay-corner",
+      "assetId": "ref-bay-corner",
+      "name": "A07 转角开间",
+      "position": [
+        5,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-solid-bay",
+      "assetId": "ref-solid-bay",
+      "name": "A08 实墙开间",
+      "position": [
+        0,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-gateway",
+      "assetId": "ref-gateway",
+      "name": "A09 门楼框架",
+      "position": [
+        15,
+        0,
+        10
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-bridge",
+      "assetId": "ref-bridge",
+      "name": "A10 连桥直段",
+      "position": [
+        10,
+        0,
+        10
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-bridge-corner",
+      "assetId": "ref-bridge-corner",
+      "name": "A11 连廊转角",
+      "position": [
+        5,
+        0,
+        10
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "display-ref-plinth",
+      "assetId": "ref-plinth",
+      "name": "A12 台基模块",
+      "position": [
+        0,
+        0,
+        10
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+✔ M012 native masters preserve the source, real voids, supported details and distinct catalog domains (8088.559958ms)
+✖ actual tea, pet food, nylon, coated metal, glass, mirror and wrapping cells are classified independently (0.832458ms)
+✔ washer cylinder, gift interiors, teapot spout, floor layering and 0.2m stair risers are actual voxel geometry (0.281791ms)
+✔ M012 material packs retain voxel identities and physical flags; GLB and native export preserve new roles (3466.165292ms)
+✔ mixed LIFE and BUILT creation uses one previewed transaction with collision-safe IDs, rollback and one undo (3140.364291ms)
+✖ dependent domestic arrangements keep master scope, real support and free access (449.391291ms)
+✔ library counts newly modelled BUILT IDs once while retaining existing LIFE upgrade counts (4.824792ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 5
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15581.70625
+
+✖ failing tests:
+
+test at tests/atlas-domestic.test.ts:34:1
+✖ actual tea, pet food, nylon, coated metal, glass, mirror and wrapping cells are classified independently (0.832458ms)
+  AssertionError [ERR_ASSERTION]: LIFE-200 giftBoard 0.055,0.15,0.3
+  
+  0 !== 141
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-domestic.test.ts:36:43)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 141,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-domestic.test.ts:58:1
+✖ dependent domestic arrangements keep master scope, real support and free access (449.391291ms)
+  Error: 未知生活组合配方
+      at makeLifeAssembly (/Users/stars/Downloads/云山/voxel-studio/src/production/layouts.ts:76:105)
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-domestic.test.ts:59:258)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

@@ -1,0 +1,286 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-155",
+      "name": "讯问记录台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.3,
+            0,
+            0.7300000000000001
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "desktop-support",
+          "kind": "desktop",
+          "position": [
+            0,
+            0.78,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.3,
+            0,
+            0.7
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              130,
+              114,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              128,
+              73,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              73,
+              0
+            ],
+            "max": [
+              130,
+              78,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "右三抽与左竖向围板、桌后横撑",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              12,
+              -3
+            ],
+            "max": [
+              125,
+              71,
+              66
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "低短屏与固定信息底座、双键槽和记录盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              42,
+              78,
+              10
+            ],
+            "max": [
+              104,
+              114,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "真实纸件凹槽、纸张与桌面摄像支架",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              75,
+              7
+            ],
+            "max": [
+              40,
+              109,
+              56
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "后端走线孔和固定脚板",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              0,
+              3
+            ],
+            "max": [
+              128,
+              3,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "记录台：左围板右抽屉、凹入纸件托盘、短屏、记录盒、桌上小摄像头和走线孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              130,
+              114,
+              70
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            20,
+            20,
+            12
+          ],
+          "max": [
+            79,
+            61,
+            58
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

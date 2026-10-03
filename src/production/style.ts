@@ -1,0 +1,129 @@
+import {newProject} from '../core/materials';
+import type {Project,Material,Command} from '../core/types';
+
+/** Structural material slots, shared by native files, the UI and MCP rebuilds.
+ * Flat previews keep these colours but deliberately ignore optical properties. */
+export const productionReference='参考/云山巨城·未来家居资产图鉴.png';
+export const productionStyleRevision=11;
+export function productionStyleCommands():Command[]{
+ const base=newProject(),colors=['#626664','#d5cebd','#604737','#303c40','#3e474e','#80bfc5','#a38b68','#739092','#64833b','#52949f','#89dfe2','#f1c66f','#50402f','#31565f'];
+ const materials:Material[]=Object.values(base.materials).map((m,i)=>({...m,color:colors[i],surface:'none',intensity:0,emissive:'#000000',metalness:0,roughness:1,opacity:1}));
+ const extra:[number,string,string,string,boolean?][]=[
+  [41,'黄铜连接件','metal','#c49a53'],[42,'木构收边','wood','#846442'],
+  [43,'石墨框架边','metal','#46545a'],[44,'嵌板阴槽','stone','#a5a398'],
+  [45,'书页与棉布','fabric','#e6dfce'],[46,'嫩叶','plant','#91a94d'],
+  [47,'软垫包边','fabric','#59787d'],
+  [48,'根茎食品','food','#be733d',false],[49,'红色果实','food','#ad5145',false],
+  [50,'浅金谷粒','food','#d9bd78',false],[51,'食材银灰表皮','food','#aeb9b3',true],[52,'食材灰青背部','food','#536d72',true],
+  [53,'光学发光面','emissive','#28a8c7'],[54,'高亮光芯','emissive','#b9eaf2'],
+  [55,'仪器涂装金属','metal','#cecbbf'],[56,'红色控制键','plastic','#b0443b'],
+  [57,'显示图形','emissive','#6bd6de'],[58,'浅灰硬塑料','plastic','#cfccc2'],
+  [59,'白釉陶瓷','ceramic','#d9d5c9'],[60,'印刷刻度','ink','#dbdfd6'],[61,'纸页','paper','#e6dfce'],
+  [62,'橡胶轮胎与密封件','rubber','#293337'],[63,'橙色担架织物','fabric','#d08041'],
+  [64,'深色固定织带','fabric','#3c4547'],[65,'透明柔性塑料','plastic','#b8d3d3'],
+  [66,'蓝色示意液体','water','#659fae'],[67,'琥珀示意液体','water','#c5a569'],
+  [68,'青灰纸质封皮','paper','#5d7980'],[69,'档案纸板','paper','#b6ac92'],
+  [70,'浅色显示图形','emissive','#d3e7e4'],[71,'深色印刷文字','ink','#526067'],
+  [72,'仪仗旗布','fabric','#516f7c'],[73,'旗面织入纹样','fabric','#dac9a0'],
+  [74,'米白棉织物','fabric','#e1dfd3'],[75,'红色印刷标记','ink','#b44b42'],
+  [76,'透明硬塑料','plastic','#bed5d6'],
+  [77,'青釉陶瓷','ceramic','#59787d'],
+  [78,'深灰硬塑料','plastic','#46545a'],
+  [79,'亮灰钢质表面','metal','#a5a9a6'],
+  [80,'米白织边与织入纹样','fabric','#e6dfce'],
+  [81,'玻璃蚀刻纹样','glass','#cedbd8'],
+  [82,'编织绳网','fabric','#59787d'],
+  [83,'含铜矿脉','stone','#ac8a4d'],
+  [84,'矿石深色基质','stone','#46545a'],
+  [85,'浅色谷粒','food','#e6dfce'],
+  [86,'白色菜梗','food','#dfe0c5'],
+  [87,'鱼腹与眼圈','food','#d4dcd5'],
+  [88,'鱼眼与口缘','food','#40483f'],
+  [89,'琥珀玻璃瓶壁','glass','#896642'],
+  [90,'青色油墨','ink','#59787d'],
+  [91,'纸页边缘','paper','#b5b2a5'],
+  [92,'书脊装帧织物','fabric','#59787d'],
+  [93,'青色涂装金属','metal','#59787d'],
+  [94,'黄色警示涂印','ink','#d1ae62'],
+  [95,'朱红消防器材涂装金属','metal','#ab3d38'],
+  [96,'朱红髹漆木胎','wood','#963e37'],
+  [97,'绘画绷布','fabric','#e2dac7'],
+  [98,'深色绘画颜料','ink','#4e6460'],
+  [99,'浅色绘画颜料','ink','#9aaba0'],
+  [100,'合成聚合物鼓膜','plastic','#dbcfac'],
+  [101,'金属琴弦','metal','#c1b39a'],
+  [102,'笔尖合成纤维','fabric','#41494a'],
+  [103,'红色橡胶消防软管','rubber','#a6423d'],
+  [104,'压制植物香材','plant','#8f6743',false],
+  [105,'香头余烬','emissive','#d99547',false],
+  [106,'红色硬塑料箱体','plastic','#ad4b46'],
+  [107,'扬声器聚合物振膜','plastic','#343d42'],
+  [108,'朱红礼仪织物','fabric','#a3453b'],
+  [109,'翠绿游艺台呢','fabric','#3f7960'],
+  [110,'白釉棋子','ceramic','#ddd9cc'],
+  [111,'黑釉棋子','ceramic','#30383c'],
+  [112,'橙色合成球皮','plastic','#c97542'],
+  [113,'白色合成球皮','plastic','#e3e0d3'],
+  [114,'蓝色合成球皮','plastic','#41719e'],
+  [115,'黄色合成球皮','plastic','#d8ae4c'],
+  [116,'深色合成球皮','plastic','#363e42'],
+  [117,'红色合成球皮','plastic','#984237'],
+  [118,'尼龙球拍弦网','fabric','#d6d2bf'],
+  [119,'羽球尼龙裙片','plastic','#dcd9c9'],
+  [120,'羽球软木球头','plant','#bcaa80',true],
+  [121,'礼盒包装纸','paper','#e3d6b8'],
+  [122,'朱红礼盒缎带','fabric','#af4b3c'],
+  [123,'烘焙糕体','food','#cf9c5a',true],
+  [124,'奶油裱花','food','#eee4ce',true],
+  [125,'朱红糖饰','food','#b6503e',true],
+  [126,'蜡烛蜡体','wax','#e3b86f'],
+  [127,'棉质烛芯','fabric','#514536',false],
+  [128,'静态示意烛焰','emissive','#f3d892',false],
+  [129,'朱红釉陶器','ceramic','#a94c3e'],
+  [130,'白色花瓣','plant','#e9e6d5',false],
+  [131,'橙金花瓣','plant','#ca793f',false],
+  [132,'干茶叶','food','#68733e',false],
+  [133,'茶汤','water','#b88537',false],
+  [134,'颗粒宠物食品','food','#b66f35',false],
+  [135,'尼龙清洁刷纤维','fabric','#d8d8ca'],
+  [136,'清洁剂示意液体','water','#78a9b5',false],
+  [137,'背镀镜玻璃','glass','#9faeb0'],
+  [138,'朱红礼包织物','fabric','#a44337'],
+  [139,'灰蓝礼包织物','fabric','#536f7f'],
+  [140,'米白礼包缎带','fabric','#dacdaf'],
+  [141,'礼盒硬纸内芯','paper','#b29a75'],
+  [142,'草本植物茎与花托','plant','#637647',false],
+  [143,'结构混凝土','concrete','#96958b'],
+  [144,'砌筑砂浆','concrete','#b2afa3'],
+  [145,'弹性橡胶防水膜','rubber','#354442'],
+  [146,'剖面土层','soil','#6b5943'],
+  [147,'灯笼纸罩','paper','#ead6a8'],
+  [148,'灯笼纤维流苏','fabric','#994b3c',false],
+  [149,'灯箱丙烯酸透光板','plastic','#e5c995'],
+  [150,'非碰撞能量区示意','emissive','#8be9ef',false],
+  [151,'烟道耐火陶内衬','ceramic','#9a7356'],
+ ];
+ for(const[id,name,category,color,solid]of extra)materials.push({id,name,category,color,surface:'none',roughness:1,metalness:0,opacity:1,emissive:'#000000',intensity:0,solid:solid??!['plant','emissive','water'].includes(category)});
+ return[{op:'materialBatch',entries:materials.map(({id,...properties})=>({id,properties}))},{op:'style',id:'yunshan',roles:{...base.styles.yunshan,bronze:41,woodEdge:42,trim:43,recess:44,paper:45,leafAlt:46,fabricEdge:47,foodRoot:48,fruitRed:49,grain:50,fish:51,fishBack:52,opticsGlow:53,lightCore:54,enamel:55,signalRed:56,displayGlyph:57,polymer:58,ceramicWhite:59,printedMark:60,paperSheet:61,rubber:62,safetyFabric:63,webbing:64,flexibleClear:65,fluidBlue:66,fluidAmber:67,bookCover:68,archiveBoard:69,displayWhite:70,printedDark:71,bannerCloth:72,bannerPattern:73,cottonWhite:74,printedRed:75,rigidClear:76,ceramicTeal:77,polymerDark:78,metalBright:79,wovenLight:80,glassEtch:81,rope:82,oreVein:83,oreMatrix:84,grainPale:85,vegetableStalk:86,fishPale:87,fishEye:88,bottleAmber:89,inkTeal:90,paperEdge:91,bookCloth:92,metalTeal:93,printedWarning:94,safetyMetal:95,lacquerWood:96,canvas:97,pigmentInk:98,pigmentMist:99,drumSkin:100,instrumentWire:101,brushFibre:102,redHose:103,incense:104,ember:105,polymerRed:106,speakerCone:107,festivalRed:108,gameFelt:109,gameWhite:110,gameBlack:111,ballOrange:112,ballWhite:113,ballBlue:114,ballYellow:115,ballDark:116,ballRed:117,racketString:118,shuttleVanes:119,shuttleCork:120,giftPaper:121,giftRibbon:122,cakeCrumb:123,cakeCream:124,cakeGlaze:125,candleWax:126,candleWick:127,candleFlame:128,ceramicRed:129,flowerWhite:130,flowerAmber:131,teaLeaf:132,teaLiquid:133,petKibble:134,cleanerFibre:135,cleanerLiquid:136,mirrorGlass:137,giftWrapRed:138,giftWrapBlue:139,giftWrapBand:140,giftBoard:141,plantStem:142,structuralConcrete:143,mortar:144,waterproofMembrane:145,earthCutaway:146,lanternPaper:147,lanternTassel:148,signDiffuser:149,energyField:150,flueLiner:151}}];
+}
+
+/** Only creates a new document; never changes the palette of an open project. */
+export function productionProject(name:string):Project{
+ const p=newProject();p.name=name;
+ for(const c of productionStyleCommands())if(c.op==='materialBatch')for(const {id,properties}of c.entries)p.materials[id]={id,...properties};else p.styles[c.id]=c.roles;
+ return p;
+}
+
+/** Add missing semantic slots without recolouring the user's existing palette.
+ * Preferred IDs are stable in new documents; occupied foreign IDs are preserved. */
+export function ensureProductionRoles(p:Project,styleId:string){
+ const style=p.styles[styleId];if(!style)throw new Error('风格不存在');
+ const defaults=productionProject('material role defaults'),added:string[]=[];
+ for(const [role,preferred]of Object.entries(defaults.styles.yunshan)){
+  if(style[role]!==undefined)continue;
+  let id=preferred;if(p.materials[id]){id=41;while(p.materials[id])id++;}
+  if(id>65535)throw new Error('没有可用的材质 ID');
+  p.materials[id]={...defaults.materials[preferred],id,source:`yunshan.role.${role}`};style[role]=id;added.push(role);
+ }
+ return added;
+}

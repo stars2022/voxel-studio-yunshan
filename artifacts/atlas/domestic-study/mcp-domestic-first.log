@@ -1,0 +1,30 @@
+{"tool":"check_geometry","ms":5690.456292000001,"error":false}
+{"tool":"query_voxels","ms":26.889749999998457,"error":false}
+{"tool":"query_voxels","ms":21.276583000002574,"error":false}
+{"tool":"query_voxels","ms":19.853790999997727,"error":false}
+{"tool":"query_voxels","ms":20.630292000001646,"error":false}
+{"tool":"query_voxels","ms":20.326833999999508,"error":false}
+{"tool":"edit_transaction","ms":577.0421249999999,"error":false}
+{"tool":"edit_transaction","ms":1168.1311249999999,"error":false}
+{"tool":"edit_transaction","ms":11.699208000001818,"error":false}
+{"tool":"edit_transaction","ms":5.9806250000001455,"error":true}
+{"tool":"edit_transaction","ms":287.5332910000034,"error":true}
+{"tool":"edit_transaction","ms":1087.9514999999992,"error":false}
+{"tool":"load_project","ms":5.454999999998108,"error":true}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"无效清单条目：LIFE-192","code":"OPERATION_FAILED","isError":true}
+    at call (/Users/stars/Downloads/云山/voxel-studio/scripts/verify-domestic-mcp.ts:39:82)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/Users/stars/Downloads/云山/voxel-studio/scripts/verify-domestic-mcp.ts:63:15) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

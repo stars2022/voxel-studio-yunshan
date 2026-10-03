@@ -1,0 +1,50 @@
+✔ M012 native masters preserve the source, real voids, supported details and distinct catalog domains (9018.990083ms)
+✔ actual tea, pet food, nylon, coated metal, glass, mirror and wrapping cells are classified independently (328.113125ms)
+✔ washer cylinder, gift interiors, teapot spout, floor layering and 0.2m stair risers are actual voxel geometry (0.279584ms)
+✔ M012 material packs retain voxel identities and physical flags; GLB and native export preserve new roles (3561.117459ms)
+✔ mixed LIFE and BUILT creation uses one previewed transaction with collision-safe IDs, rollback and one undo (3286.671ms)
+✖ dependent domestic arrangements keep master scope, real support and free access (12219.829333ms)
+✔ library counts newly modelled BUILT IDs once while retaining existing LIFE upgrade counts (16.470167ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 28848.075875
+
+✖ failing tests:
+
+test at tests/atlas-domestic.test.ts:58:1
+✖ dependent domestic arrangements keep master scope, real support and free access (12219.829333ms)
+  AssertionError [ERR_ASSERTION]: 213 collisions
+  + actual - expected
+  
+  + [
+  +   {
+  +     cells: 32,
+  +     instances: [
+  +       'room-0',
+  +       'room-4'
+  +     ],
+  +     pitchM: 0.01,
+  +     volumeM3: 0.000032000000000000005
+  +   }
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (/Users/stars/Downloads/云山/voxel-studio/tests/atlas-domestic.test.ts:59:436)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ { instances: [Array], cells: 32, volumeM3: 0.000032000000000000005, pitchM: 0.01 } ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

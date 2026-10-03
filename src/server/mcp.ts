@@ -1,0 +1,10 @@
+import {Server} from '@modelcontextprotocol/sdk/server/index.js';
+import {StdioServerTransport} from '@modelcontextprotocol/sdk/server/stdio.js';
+import {ListToolsRequestSchema,CallToolRequestSchema} from '@modelcontextprotocol/sdk/types.js';
+import {toolDefinitions} from '../core/schema';
+const endpoint=new URL(process.env.VOXEL_URL??'http://127.0.0.1:4317');
+if(!['127.0.0.1','localhost'].includes(endpoint.hostname)||endpoint.protocol!=='http:')throw new Error('MCP 仅连接回环 HTTP 服务');
+const server=new Server({name:'yunshan-voxel-studio',version:'0.1.0'},{capabilities:{tools:{}}});
+server.setRequestHandler(ListToolsRequestSchema,async()=>({tools:toolDefinitions as any}));
+server.setRequestHandler(CallToolRequestSchema,async req=>{try{const response=await fetch(new URL('/api/tool',endpoint),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:req.params.name,arguments:req.params.arguments??{}}),signal:AbortSignal.timeout(180000)});const result=await response.json(),text=JSON.stringify(result),bytes=Buffer.byteLength(text);if(bytes>8*1024*1024)return{isError:true,content:[{type:'text',text:JSON.stringify({error:'结果超过 stdio 单条响应预算；使用 read_project 默认摘要与 query_voxels 分页查询，或保存原生项目。',code:'RESULT_TOO_LARGE',bytes,maxBytes:8*1024*1024,version:result.version})}]};return{isError:!response.ok,content:[{type:'text',text}]};}catch(e:any){return{isError:true,content:[{type:'text',text:JSON.stringify({code:'CONNECTION_FAILED',error:`本地编辑服务连接失败：${e.message}。先运行 npm start。`})}]};}});
+await server.connect(new StdioServerTransport());

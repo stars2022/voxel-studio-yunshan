@@ -1,0 +1,218 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-126",
+      "name": "康复扶手",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.16,
+            0,
+            1.16
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "walking-space",
+          "kind": "clear-walkway",
+          "position": [
+            0,
+            0,
+            0.62
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            1.1,
+            0.74
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              1,
+              0,
+              1
+            ],
+            "max": [
+              109,
+              55,
+              59
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "前扶手独立构造",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              1
+            ],
+            "max": [
+              109,
+              55,
+              11
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "后扶手独立构造",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              49
+            ],
+            "max": [
+              109,
+              55,
+              59
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "康复扶手：独立平行双栏、木质扶手、三个柱榫、透明板压边与开放通行空间",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              1
+            ],
+            "max": [
+              109,
+              55,
+              59
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            0,
+            0,
+            12
+          ],
+          "max": [
+            110,
+            56,
+            49
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

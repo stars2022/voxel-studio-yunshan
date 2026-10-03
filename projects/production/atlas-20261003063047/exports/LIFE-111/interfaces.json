@@ -1,0 +1,266 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-111",
+      "name": "教室桌椅排布接口",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.18,
+            0,
+            0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.94,
+            0,
+            1.09
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -18,
+              0,
+              1
+            ],
+            "max": [
+              76,
+              87,
+              110
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              57
+            ],
+            "max": [
+              74,
+              71,
+              108
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              71,
+              55
+            ],
+            "max": [
+              76,
+              76,
+              110
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "桌架、石脚、木质攒边桌面和笔槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              55
+            ],
+            "max": [
+              76,
+              77,
+              110
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "内收书兜、层板、薄书册与挂钩",
+          "parent": "root",
+          "region": {
+            "min": [
+              -5,
+              54,
+              61
+            ],
+            "max": [
+              70,
+              70,
+              101
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "挂包、双肩带、袋口翻盖与提环",
+          "parent": "root",
+          "region": {
+            "min": [
+              -18,
+              26,
+              69
+            ],
+            "max": [
+              -3,
+              66,
+              91
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "独立座椅：四足、空背架、横枨和木坐面",
+          "parent": "root",
+          "region": {
+            "min": [
+              17,
+              0,
+              1
+            ],
+            "max": [
+              61,
+              87,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "学生工位：独立桌椅、内收书兜、笔槽、背包挂架、椅背横枨与膝部净空",
+          "parent": "root",
+          "region": {
+            "min": [
+              -18,
+              0,
+              1
+            ],
+            "max": [
+              76,
+              87,
+              110
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            13,
+            10,
+            62
+          ],
+          "max": [
+            63,
+            52,
+            97
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

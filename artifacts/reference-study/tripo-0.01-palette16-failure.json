@@ -1,0 +1,63 @@
+{
+  "status": "failed",
+  "verifiedAt": "2026-10-02T10:00:16.495Z",
+  "options": {
+    "name": "Tripo 16 级颜色失败案例",
+    "assetId": "tripo-palette-budget",
+    "cellSize": 0.01,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1,
+    "upAxis": "Y",
+    "mode": "surface",
+    "colorMode": "sample",
+    "colorLevels": 16,
+    "thinPolicy": "conservative",
+    "material": 2,
+    "materialStart": 1000
+  },
+  "error": "采样调色板超过 512 色，请降低每通道采样级数或改用统一材质",
+  "diagnostics": {
+    "estimatedWorkingMemoryMB": 33.439232,
+    "sourceSignedVolumeM3": null,
+    "triangles": 8089,
+    "boundaryEdges": 2653,
+    "nonManifoldEdges": 77,
+    "duplicateFaces": 0,
+    "degenerateTriangles": 1,
+    "transparentTriangles": 0,
+    "subVoxelEdgeTriangles": 7257,
+    "thinComponents": 163,
+    "possibleComponentAABBOverlaps": 602,
+    "connectedComponents": 307,
+    "watertight": false,
+    "boundsM": {
+      "min": [
+        -0.499755859375,
+        0,
+        -0.328369140625
+      ],
+      "max": [
+        0.499755859375,
+        0.4145507514476776,
+        0.328369140625
+      ]
+    },
+    "cellSizeM": 0.01,
+    "estimatedGridCells": 305184,
+    "estimatedDenseMemoryMB": 2.441472,
+    "estimatedTriangleCellTests": 574701,
+    "risk": "normal",
+    "warnings": [
+      "存在开放边界/孔洞；实体填充会被拒绝。",
+      "存在重复或非流形/粘连面；表面体素化合并占用格，但不能恢复被粘连结构。",
+      "发现厚度小于格距的连通片，可能膨胀或丢失。",
+      "独立连通片包围盒有重叠，需对照源模型检查真实相交。",
+      "存在多个独立连通片；未自动删除漂浮碎片。",
+      "采样只转移源颜色/贴图，不推断石材、木材、金属等语义。"
+    ]
+  }
+}

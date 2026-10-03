@@ -1,0 +1,232 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-079",
+      "name": "装卸平台/升降托板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.37,
+            0,
+            0.9600000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -2
+            ],
+            "max": [
+              136,
+              71,
+              94
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底框、石脚和侧向控制立柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -2
+            ],
+            "max": [
+              136,
+              71,
+              94
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "导向槽、止挡与两组交叉剪架",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              10,
+              17
+            ],
+            "max": [
+              109,
+              62,
+              78
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "分层承台、耐磨嵌芯和退层防撞角",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              59,
+              0
+            ],
+            "max": [
+              116,
+              69,
+              92
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立侧控制盒、按钮与检修压条",
+          "parent": "root",
+          "region": {
+            "min": [
+              125,
+              15,
+              67
+            ],
+            "max": [
+              134,
+              60,
+              76
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "升降托板：透空底框、双剪架、导向槽、枢轴、机械止挡、嵌芯平台和侧控制柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -2
+            ],
+            "max": [
+              136,
+              71,
+              94
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            16,
+            17,
+            7
+          ],
+          "max": [
+            100,
+            54,
+            13
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

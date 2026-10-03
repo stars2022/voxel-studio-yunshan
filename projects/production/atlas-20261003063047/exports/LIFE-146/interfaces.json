@@ -1,0 +1,266 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94
+    }
+  },
+  "assets": [
+    {
+      "id": "life-146",
+      "name": "档案卷宗柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.46
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.19,
+            0,
+            0.94
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -46
+            ],
+            "max": [
+              118,
+              182,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              116,
+              182,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              118,
+              182,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "石脚木立柱、薄侧背板、分层托板与顶沿",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -2
+            ],
+            "max": [
+              118,
+              182,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "下层高卷宗盒、中层账簿、上层横放档案",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              14,
+              8
+            ],
+            "max": [
+              105,
+              157,
+              39
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "左扇静态开门、内外嵌芯和铰链",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              15,
+              -46
+            ],
+            "max": [
+              12,
+              174,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "右扇静态开门、内外嵌芯和铰链",
+          "parent": "root",
+          "region": {
+            "min": [
+              105,
+              15,
+              -46
+            ],
+            "max": [
+              113,
+              174,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "档案柜：两扇90度静态开门、连续铰座、三层书档、空心柜体和带标签纸板盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -46
+            ],
+            "max": [
+              118,
+              182,
+              48
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            16,
+            -30
+          ],
+          "max": [
+            101,
+            170,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": []
+}
