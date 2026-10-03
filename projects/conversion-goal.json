@@ -15,53 +15,50 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 216,
-    "remainingReferenceEntries": 577,
-    "completedReferenceSheets": 18,
+    "referenceCandidates": 228,
+    "remainingReferenceEntries": 565,
+    "completedReferenceSheets": 19,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 235,
+      "baseModels": 247,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 778,
-      "generatedEntries": 290
+      "notProduced": 766,
+      "generatedEntries": 302,
+      "referenceDesigns": 28,
+      "materialStudies": 40,
+      "atlasReferenceCandidates": 228
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M018",
+    "sheet": "M019",
     "state": "validated",
-    "run": "atlas-20261003171312",
+    "run": "atlas-20261003180004",
     "ids": [
-      "BUILT-116",
-      "BUILT-117",
-      "BUILT-131",
-      "BUILT-132",
-      "BUILT-133",
-      "BUILT-134",
-      "BUILT-135",
-      "BUILT-136",
-      "BUILT-137",
-      "BUILT-138",
-      "BUILT-139",
+      "BUILT-141",
+      "BUILT-142",
+      "BUILT-143",
+      "BUILT-144",
+      "BUILT-145",
+      "BUILT-146",
+      "BUILT-147",
+      "BUILT-148",
+      "BUILT-149",
+      "BUILT-150",
+      "BUILT-151",
+      "BUILT-152"
+    ],
+    "revisedDependencies": [
       "BUILT-140"
     ],
-    "technicalValidation": {
-      "tests": 195,
-      "mcpChecks": 9,
-      "materialCandidatesReviewed": 216,
-      "nativeVoxels": 1200894,
-      "run": "atlas-20261003171312",
-      "report": "artifacts/atlas/atlas-20261003171312/validation.json"
-    },
-    "evidence": "artifacts/atlas/atlas-20261003171312",
-    "screenshots": 36,
-    "package": "artifacts/atlas/atlas-20261003171312/云山-M018-12件体素资产包.zip"
+    "evidence": "artifacts/atlas/atlas-20261003180004",
+    "validation": "artifacts/atlas/atlas-20261003180004/validation.json"
   },
-  "nextBatch": "M019",
+  "nextBatch": "M020",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作真实体素、独立材质角色、部件、安装接口及开口",
@@ -73,15 +70,15 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "当前仅M001–M018；剩余577条参考尚未完成"
+    "M001–M019共228件技术转化候选；尚余565条参考未完成，人工美术验收为0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "M019为BUILT-141–152，均为基础组件。",
-    "141/142为导轨和侧缘保护条，需与M018的140路床独立安装，注意线路基准高于路床顶面0.2m。",
-    "147为桥栏立柱，需与M018的135横杆独立安装；148/149分别主悬索和竖吊杆，不得烘为一个母版。",
-    "141清单导轨轴偏±1.8m；当前140作者安装座为±1.4m。M019拼装前须调整140座或明确安装过渡件，保留旧文件，不得直接宣称匹配。",
-    "140的100mm体素与142精细截面拼装可能触及共同细网格3M碰撞上限；需精确验证，不得跳过告警称通过。",
-    "本批还包括缆车承载索、崖壁升降机开放四柱井架及侧导轨光线、9m桥面、桥塔基础、塔柱和横梁冠盖；先逐项核对尺寸/阈值。"
+    "M020共12件：BUILT-153–160、177–179、183。桥头块、站台、雨棚、站名牌、路口牌、跑道、标线、侧灯、车辆主体/玻璃/底灯、机位标识。",
+    "153桥头块按桥面和实际地形高差制作；154站台22×18m、厚1m；155雨棚立柱6m，屋面23×11m。",
+    "158清单跑道长960m、宽44m；选择可追溯格距，保留物理尺度和独立159标线/160侧灯。新相机深度适配有960m回归测试，但仍需实图核对。",
+    "177–179必须按运输模式核对车体参数，并保持实体机壳、玻璃和底部灯带独立母版与材质角色。",
+    "源清单的世界坐标和地形高程应转为明确的安装基准，不用未知地形臆造已验证高度。",
+    "M019已解决140导轨座偏移及细网格拼装预算；保持原生体素、独立角色与精准碰撞验证。"
   ]
 }

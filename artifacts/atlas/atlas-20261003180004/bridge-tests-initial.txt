@@ -1,0 +1,56 @@
+✔ M019 has twelve distinct connected native masters, exact reference provenance and genuinely empty declared openings (8625.589328ms)
+✔ actual cable, road, glass, lamp, masonry and roofing cells have independent physical roles (1.018807ms)
+✔ catalogue spans, offsets, post widths and openings remain measurable geometry (63.583747ms)
+✔ coarse rail bed and fine guard strips assemble without expanding three hundred million individual cells (13324.189213ms)
+✔ shaft keeps the car path empty and the side guide on supported external brackets; cable fixture realizes 9m/8.5m centres (1753.121379ms)
+✔ four independent bridge posts receive four reused horizontal rails with clear travel space (821.311514ms)
+✔ 160m main cables, correctly located towers and three central hanger stations have true faces and no intersections (4915.406911ms)
+✖ only verified hanger heights rebuild atomically; occupied preferred cable IDs survive with one undo (116.060095ms)
+✔ material pack changes only appearance and exports intact native IDs, with one undo and transaction rollback (3542.864609ms)
+✔ row intervals agree with enumerated cells for mixed pitch, negative origins, all rotations, three-way overlaps and transparent material (116.447878ms)
+✔ coarse solids keep their exact volume above the old cubic budget, with supported fine detail and detectable one-cell collisions (140.057917ms)
+✔ opening queries preserve empty/native solid/non-solid counts and find external blockers after rotation (0.635519ms)
+✔ unbounded empty clearances allocate no voxels, while excessive row expansion is rejected before allocation (0.545002ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 12
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 33743.268073
+
+✖ failing tests:
+
+test at tests/atlas-bridges.test.ts:79:1
+✖ only verified hanger heights rebuild atomically; occupied preferred cable IDs survive with one undo (116.060095ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      hanger: {
+        category: 'base',
+        cellSize: 0.1,
+        chunks: {
+  ...
+        },
+  +     version: 3
+  -     version: 1
+      }
+    }
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-bridges.test.ts:82:349)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { hanger: { id: 'hanger', name: '既有长桥竖吊杆', version: 3, category: 'base', cellSize: 0.1, origin: [Array], chunks: [Object], parts: [Array], openings: [], ports: [Array], source: [Object] } },
+    expected: { hanger: { id: 'hanger', name: '既有长桥竖吊杆', version: 1, category: 'base', cellSize: 0.1, origin: [Array], chunks: [Object], parts: [Array], openings: [], ports: [Array], source: [Object] } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

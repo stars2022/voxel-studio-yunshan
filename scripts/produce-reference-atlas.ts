@@ -15,6 +15,7 @@ import {referenceFinishCommands} from '../src/production/reference-finish';
 import {layoutAtlasGallery} from '../src/production/gallery-layout';
 import {meshAsset} from '../src/core/mesh';
 import {exportProject} from '../src/export/exporter';
+import {readProductionLibrary} from '../src/production/library';
 import {checkFloat32Bounds} from '../src/export/precision';
 import {NodeIO} from '@gltf-transform/core';
 import {KHRMaterialsEmissiveStrength} from '@gltf-transform/extensions';
@@ -22,7 +23,10 @@ import {eachCell,type Project,type Command} from '../src/core/types';
 
 const started=performance.now(),run='atlas-'+new Date().toISOString().replace(/\D/g,'').slice(0,14),root=path.resolve('projects'),out=path.join(root,'production',run),evidence=path.resolve('artifacts/atlas',run),hash=(s:unknown)=>createHash('sha256').update(typeof s==='string'?s:JSON.stringify(s)).digest('hex');
 const atlas=(await readAtlasIndex(root))!,catalog=new Map(parseCatalogCSV(await readFile(path.join(root,'catalog/city-assets.csv'),'utf8')).map(e=>[e.id,e]));assert.ok(atlas,'Run atlas:index first');
-const requested=process.argv.find(a=>a.startsWith('--sheets='))?.slice(9).split(',');if(requested?.some(s=>!/^M[0-9]{3}$/.test(s)))throw new Error('Invalid sheet ID');const rows=atlas.entries.filter(e=>!!atlasRecipe(e.id)&&(!requested||requested.includes(e.sheet)));assert.ok(rows.length>0,'No implemented recipes in selected sheets');const activeSheets=[...new Set(rows.map(e=>e.sheet))];const old=await readAtlasProduction(root),index:AtlasProduction={format:'yunshan.atlas-production',version:1,run,createdAt:new Date().toISOString(),entries:(old?.entries??[]).filter(e=>!rows.some(r=>r.id===e.id)),studies:(old?.studies??[]).filter(e=>!activeSheets.some(s=>e.id.startsWith(s)))};
+const requestedIds=process.argv.find(a=>a.startsWith('--ids='))?.slice(6).split(',');if(requestedIds?.some(id=>!/^(LIFE|BUILT)-[0-9]{3}$/.test(id)))throw new Error('Invalid asset ID');
+const requested=process.argv.find(a=>a.startsWith('--sheets='))?.slice(9).split(',');if(requested?.some(s=>!/^M[0-9]{3}$/.test(s)))throw new Error('Invalid sheet ID');const rows=atlas.entries.filter(e=>!!atlasRecipe(e.id)&&(!requested||requested.includes(e.sheet))&&(!requestedIds||requestedIds.includes(e.id)));assert.ok(rows.length>0,'No implemented recipes in selected sheets');const activeSheets=[...new Set(rows.map(e=>e.sheet))];const old=await readAtlasProduction(root),index:AtlasProduction={format:'yunshan.atlas-production',version:1,run,createdAt:new Date().toISOString(),entries:(old?.entries??[]).filter(e=>!rows.some(r=>r.id===e.id)),studies:(old?.studies??[]).filter(e=>!activeSheets.some(s=>e.id.startsWith(s)))};
+const beforeLibrary=await readProductionLibrary(root,{limit:5000}),newCatalogIds=rows.filter(row=>beforeLibrary.entries.find(e=>e.id===row.id)?.stage==='not-produced').length;
+if(requestedIds)assert.equal(rows.length,new Set(requestedIds).size,'Some requested assets are absent or not implemented');
 await mkdir(out,{recursive:true});await mkdir(evidence,{recursive:true});
 function blank(name:string,entries:AtlasEntry[]){const p=productionProject(name);p.catalog={sourceName:'city-assets.csv',importedAt:index.createdAt,entries:Object.fromEntries(entries.map(r=>[r.id,structuredClone(catalog.get(r.id)!)]))};return p;}
 function commit(e:Engine,commands:Command[],label:string){const req={expectedVersion:e.project.version,requestId:crypto.randomUUID(),commands,label},dry=e.execute({...req,dryRun:true});return e.execute({...req,previewToken:dry.previewToken});}
@@ -47,6 +51,14 @@ for(const row of rows){
  console.log(`${row.sheet}/${row.slot} ${row.id}: ${g.count} cells, ${a.parts.length} parts, ${components.length} components, ${Math.round(performance.now()-t)} ms`);
 }
 for(const[sheet,p]of galleries){
+ // Rebuild a complete sheet gallery even when only one dependency was revised.
+ for(const row of index.entries.filter(r=>r.sheet===sheet&&!p.assets[r.assetId])){
+  const prior=JSON.parse(await readFile(path.join(root,row.file),'utf8')) as Project,a=prior.assets[row.assetId];assert.ok(a,'Missing gallery dependency '+row.id);
+  for(const[,m]of new Grid(a.chunks).cells()){assert.ok(p.materials[m]);assert.equal(p.materials[m].category,prior.materials[m].category);assert.equal(p.materials[m].solid,prior.materials[m].solid);}
+  p.assets[a.id]=structuredClone(a);p.catalog!.entries[row.id]=structuredClone(prior.catalog!.entries[row.id]);p.instances[a.id+'-display']={id:a.id+'-display',assetId:a.id,name:a.name,position:[0,0,0],rotation:0,parent:null};
+ }
+ p.assets=Object.fromEntries(Object.entries(p.assets).sort(([a],[b])=>a.localeCompare(b)));p.instances=Object.fromEntries(Object.entries(p.instances).sort(([a],[b])=>a.localeCompare(b)));
+
  // Independent masters are laid out by measured bounds, including open doors
  // and chair sets extending past the model origin. Keep all pitches aligned.
  layoutAtlasGallery(p);
@@ -54,7 +66,7 @@ for(const[sheet,p]of galleries){
 index.entries.sort((a,b)=>a.sheet.localeCompare(b.sheet)||a.slot-b.slot);
 try{await copyFile(path.join(root,'atlas-production-index.json'),path.join(out,'previous-index.json'));}catch(e:any){if(e.code!=='ENOENT')throw e;}
 await writeFile(path.join(out,'index.json'),JSON.stringify(index,null,2));await writeFile(path.join(root,'atlas-production-index.json.tmp'),JSON.stringify(index));await rename(path.join(root,'atlas-production-index.json.tmp'),path.join(root,'atlas-production-index.json'));
-const report={run,createdAt:index.createdAt,environment:{cpu:os.cpus()[0].model,memoryBytes:os.totalmem(),os:os.release(),node:process.version},counts:{references:793,rebuiltThisRun:rows.length,newCatalogIds:0,referenceCandidates:index.entries.length,pendingReference:793-index.entries.length,accepted:0,nativeDocuments:files.length},elapsedMs:performance.now()-started,nativeVoxels:metrics.reduce((s,m)=>s+m.voxels,0),triangles:metrics.reduce((s,m)=>s+m.triangles,0),glbBoundsMaxErrorM:maxError,files,models:metrics,out,evidence};
+const report={run,createdAt:index.createdAt,environment:{cpu:os.cpus()[0].model,memoryBytes:os.totalmem(),os:os.release(),node:process.version},counts:{references:793,rebuiltThisRun:rows.length,newCatalogIds,referenceCandidates:index.entries.length,pendingReference:793-index.entries.length,accepted:0,nativeDocuments:files.length},elapsedMs:performance.now()-started,nativeVoxels:metrics.reduce((s,m)=>s+m.voxels,0),triangles:metrics.reduce((s,m)=>s+m.triangles,0),glbBoundsMaxErrorM:maxError,files,models:metrics,out,evidence};
 // Keep active report paths relocatable; environment facts remain historical.
 report.out=path.relative(process.cwd(),out);report.evidence=path.relative(process.cwd(),evidence);
 await writeFile(path.join(evidence,'production.json'),JSON.stringify(report,null,2));await writeFile(path.join(out,'production.json'),JSON.stringify(report,null,2));await writeFile('artifacts/atlas/latest.json',JSON.stringify(report,null,2));console.log(JSON.stringify({...report,models:undefined,files:undefined},null,2));

@@ -3,7 +3,7 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=10;
+export const referenceFinishVersion=11;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
@@ -127,6 +127,7 @@ export const referenceFinishes:Record<string,Finish>={
  earthCutaway:{name:'剖面土层',color:'#6b5943',roughness:1,metalness:0,...surface('stone',.5,.2,846)},
  signDiffuser:{name:'灯箱丙烯酸透光板',color:'#e5c995',roughness:.65,metalness:0,opacity:.86,...surface('none',.1,0,0)},
  energyField:{name:'非碰撞能量区示意',color:'#60bdce',roughness:.9,metalness:0,emissive:'#78e9f1',intensity:1.8,...surface('none',.1,0,0)},
+ suspensionCable:{name:'承载钢缆与竖吊杆',color:'#727e80',roughness:.42,metalness:.8,...surface('metal',.18,.1,756)},
  pavementConcrete:{name:'道路混凝土磨耗面',color:'#555f61',roughness:.95,metalness:0,...surface('stone',.3,.15,752)},
  roadInlay:{name:'浅色陶瓷道路标线嵌条',color:'#d9d6bc',roughness:.7,metalness:0,...surface('ceramic',.12,.06,753)},
  bridgeBearing:{name:'桥梁橡胶支座',color:'#344345',roughness:.9,metalness:0,...surface('none',.1,0,0)},

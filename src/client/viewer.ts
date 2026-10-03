@@ -144,6 +144,10 @@ export class Viewer {
   const aspect=this.el.clientWidth/this.el.clientHeight,half=Math.max(h,w/aspect,.05)*1.26;this.controls.target.copy(center);
   if(this.camera instanceof THREE.OrthographicCamera){this.camera.left=-half*aspect;this.camera.right=half*aspect;this.camera.top=half;this.camera.bottom=-half;this.camera.zoom=1;}
   else{const distance=half/Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2))+depth;this.camera.position.copy(center).addScaledVector(dir,distance);}
+  // Long bridges can place the fitted camera beyond the old 500m far plane.
+  // Cover the complete bounding sphere, including subsequent orbit rotations.
+  const radius=b.getSize(new THREE.Vector3()).length()/2;
+  this.camera.far=Math.max(500,this.camera.position.distanceTo(center)+radius*1.5+.1);
   this.camera.updateProjectionMatrix();this.controls.update();this.fitLight();
  }
  focusRegion(region:Bounds){

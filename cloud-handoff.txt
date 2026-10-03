@@ -1,11 +1,13 @@
 当前接续目标：完成3d资产转化，按图册批次验证并推送远程origin/main。用户已明确授权每批推送现有远程分支，不需重新确认。
 有效进度源：projects/conversion-goal.json 与 projects/atlas-production-index.json。
-M018已制作并验证，下一批M019；推送状态以Git远程为准。M001–M018累计216个参考候选、235个基础母版（含19个旧候选），原清单已生成290项/未生成778项；参考尚余577条。人工美术验收仍为0。
-M018检查：195项全套回归通过；光条保护罩和路床线路基准复核后8项本批专项再测通过；9项真实MCP、36张新截图、216件材质审查。证据：artifacts/atlas/atlas-20261003171312。
-M018源码：src/production/atlas-transport.ts；拼装：transport-assembly.ts。本批使用10/20/100mm原生格距，129个材质用途角色，新增pavementConcrete/roadInlay/bridgeBearing/jointSeal。117和134各有两个有意分离部件，其余单连通。
-道路4母版/4实例、高架4母版/4实例、高墩拉结3母版/5实例、标识及护栏辅助安装夹具均已实测；夹具不计基础资产。BUILT-140的中心偏-0.9m按Y向解释：路床顶面在轨道基准下0.2m。下一批141/142轨道件与147护栏柱保持独立。
-分批预览：npm run preview:atlas -- --sheets=M019（先实现和produce本批）。浏览器缓存为PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。真实软件WebGL渲染，不能声称硬件GPU。material预览关闭AO；两类截图均需保存。
-scripts/package-atlas-batch.py用于本批打包。完整提交前确认测试、MCP、原生/GLB、材质和截图记录。不要把参考组合/变体改算基础母版；同母版重复实例不增加资产数量。完整目标仍未完成。
+M019已制作并验证，下一批M020；推送状态以Git远程为准。M001–M019累计228个参考候选、247个基础母版（含19个旧候选），原清单已生成302项/未生成766项；参考尚余565条。人工美术验收仍为0。
+M019检查：209项全套回归通过；相机修订后2项专项通过，共211个不同测试；10项真实MCP、39张资产实图（36张新母版+3张修订依赖）、10张拼装视图、228件材质审查。证据：artifacts/atlas/atlas-20261003180004。首次撤销版本断言失败、重测及首轮相机误拍均保留记录。
+M019源码：src/production/atlas-bridges.ts；拼装：bridge-assembly.ts。130个材质用途角色，新增suspensionCable承载钢缆。142两根护条、148左右双索有意分离，其余单连通。140路床座已调整至轨道中心±1.8m并保留M018旧文件。
+混合精度碰撞检查改为精确X行区间，仍统计真实共享格，轨道场景303,516,624格；5项算法检查和5个保存场景最终复核通过。不能以预算异常代替通过。相机远裁面随完整包围球适配，160m悬索和拼装重拍完整，旧裁切图保留camera-framing-before。
+5个拼装为轨道、四柱井架和侧导轨、桥面和独立栏柱横杆、160m双索桥接口、9m承载索和8.5m能量线。桥场景含37实例和三处中心吊杆站，不是全桥力学/车辆模拟；测试托架不计清单母版。
+M020范围BUILT-153–160、177–179、183，先核对参考图和清单米制尺寸；960m跑道、地形高差、交通模式车辆参数见conversion-goal.json的nextBatchNotes。
+分批预览可使用--sheets=M020，修订旧依赖可使用--ids；制作脚本会重新汇总受影响的完整图册。浏览器缓存为PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。先完成npm run build，再拍摄，静态服务会使用dist；不可把构建与新截图并行。当前为真实软件WebGL渲染，不能声称硬件GPU。material预览关闭AO。
+scripts/package-atlas-batch.py用于本批打包，M019含--include=BUILT-140。完整提交前确认测试、MCP、原生/GLB、材质和截图记录。完整目标仍未完成。
 
 以下是迁移时历史快照，测试数字、目录及原机事实保留原值：
 

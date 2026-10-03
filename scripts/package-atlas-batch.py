@@ -12,6 +12,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--sheet', required=True)
+parser.add_argument('--include', default='', help='Comma-separated revised dependency IDs, not new batch masters')
 parser.add_argument('--verification', required=True, help='MCP report filename in this run')
 parser.add_argument('--output', required=True, type=Path)
 args = parser.parse_args()
@@ -25,6 +26,8 @@ latest = read(root / 'artifacts/atlas/latest.json')
 out = (root / latest['evidence']).resolve()
 assert out.is_relative_to(root / 'artifacts/atlas')
 entries = [r for r in index['entries'] if r['sheet'] == args.sheet]
+dependencies = [r for r in index['entries'] if r['id'] in args.include.split(',') and r['sheet'] != args.sheet]
+assert {r['id'] for r in dependencies} == set(filter(None, args.include.split(',')))
 expected = [r for r in atlas['entries'] if r['sheet'] == args.sheet]
 assert {r['id'] for r in entries} == {r['id'] for r in expected}
 assert len(entries) == len(expected)
@@ -33,6 +36,9 @@ previews = read(out / 'previews.json')
 assert previews['run'] == index['run'] and not previews['errors']
 shots = [r for r in previews['items'] if r['sheet'] == args.sheet]
 assert {r['id'] for r in shots} == {r['id'] for r in entries}
+for d in dependencies:
+    dependency_shot = next(r for r in previews['items'] if r['id'] == d['id'])
+    assert {'isometric', 'front', 'material'} <= dependency_shot['files'].keys()
 for r in shots:
     assert {'isometric', 'front', 'material'} <= r['files'].keys()
 verification = read(out / args.verification)
@@ -50,7 +56,7 @@ assert all(not r['ownSolidCells'] and not r['blockedBy'] for r in gallery_check[
 
 files = {root / 'projects/atlas-production-index.json', root / 'projects/reference-atlas/index.json',
          root / 'projects' / gallery['file'], root / 'projects/reference-atlas/images' / (args.sheet + '.png')}
-for row in entries:
+for row in entries + dependencies:
     native = root / 'projects' / row['file']
     doc = read(native)
     asset = doc['assets'][row['assetId']]
@@ -61,7 +67,7 @@ for row in entries:
     run = re.match(r'atlas-\d{14}', row['file']).group()
     for name in ['visual.glb', 'voxels.ysvox.json', 'collision.json', 'interfaces.json', 'atlas.png', 'atlas.json']:
         files.add(root / 'projects/production' / run / 'exports' / row['id'] / name)
-for r in shots:
+for r in shots + [r for r in previews['items'] if r['id'] in {d['id'] for d in dependencies}]:
     files.update(out / 'screenshots' / name for name in r['files'].values())
 for name in [args.sheet + '.png', args.sheet + '.html', 'materials.html', 'materials.png', 'previews.json',
              'production.json', 'material-audit.json', 'gallery-support-audit.json', 'validation.json', args.verification]:
@@ -74,9 +80,17 @@ for scenario in verification.get('assemblies', []):
 files.update(out.glob('*-tests*.txt'))
 files.update(out.glob('*-mcp-client.txt'))
 files.update(out.glob('mcp-*.png'))
+for name in ['final-geometry-recheck.json', 'camera-framing-verification.json']:
+    if (out / name).exists():
+        assert read(out / name)['status'] == 'passed'
+        files.add(out / name)
+for name in ['camera-framing-first-attempt.json', 'catalog-counts.json', 'typecheck-final.txt']:
+    if (out / name).exists():
+        files.add(out / name)
+files.update(p for p in (out / 'camera-framing-before').rglob('*') if p.is_file())
 files.add(out / 'build.txt')
 manifest = {'format': 'yunshan.atlas-batch', 'version': 1, 'sheet': args.sheet, 'run': index['run'],
-            'candidateMasters': len(entries), 'humanArtAccepted': 0, 'assets': entries,
+            'candidateMasters': len(entries), 'humanArtAccepted': 0, 'assets': entries, 'revisedDependencies': dependencies,
             'files': [{'path': str(p.relative_to(root)), 'bytes': p.stat().st_size,
                        'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(files)]}
 args.output.parent.mkdir(parents=True, exist_ok=True)

@@ -1,3 +1,4 @@
+import {bridgeRecipes,bridgeMaterialRules,configureBridgeAsset} from './atlas-bridges';
 import {transportRecipes,transportMaterialRules,configureTransportAsset} from './atlas-transport';
 import {waterfrontRecipes,waterfrontMaterialRules,configureWaterfrontAsset} from './atlas-waterfront';
 import {exteriorRecipes,exteriorMaterialRules,configureExteriorAsset} from './atlas-exterior';
@@ -26,9 +27,10 @@ export const atlasBuiltRecipes:Record<string,AtlasRecipe>={
  }},
 };
 
-Object.assign(atlasBuiltRecipes,structureRecipes,legacyBuildingRecipes,joineryRecipes,exteriorRecipes,waterfrontRecipes,transportRecipes);
+Object.assign(atlasBuiltRecipes,structureRecipes,legacyBuildingRecipes,joineryRecipes,exteriorRecipes,waterfrontRecipes,transportRecipes,bridgeRecipes);
 
 export function builtWidthParameter(id:string){
+ if(id==='BUILT-149')return{height:{minimum:12.4,maximum:12.8,default:12.4,enum:[12.4,12.8],unit:'metres'}};
  if(id==='BUILT-007')return{width:{minimum:1.2,maximum:1.6,default:1.2,enum:[1.2,1.6],unit:'metres'}};
  if(id==='BUILT-017')return{width:{minimum:7.2,maximum:14.4,default:12.8,step:.2,unit:'metres'}};
  return{};
@@ -37,7 +39,7 @@ export function builtWidthParameter(id:string){
 export function inspectBuiltMaterialAssignments(id:string,a:Asset,roles:Record<string,number>){
  if(!atlasBuiltRecipes[id])return null;
  const used=new Set([...new Grid(a.chunks).cells()].map(([,m])=>m));
- const rule=structureMaterialRules[id]??legacyBuildingMaterialRules[id]??joineryMaterialRules[id]??exteriorMaterialRules[id]??waterfrontMaterialRules[id]??transportMaterialRules[id];
+ const rule=structureMaterialRules[id]??legacyBuildingMaterialRules[id]??joineryMaterialRules[id]??exteriorMaterialRules[id]??waterfrontMaterialRules[id]??transportMaterialRules[id]??bridgeMaterialRules[id];
  for(const role of rule?.required??['stone','wall','metal','bronze','energy'])if(!used.has(roles[role]))throw new Error(id+' 缺少实际材质 '+role);
  const permitted=new Set((rule?.allowed??['stone','wall','metal','trim','wood','bronze','energy']).map(r=>roles[r]));
  for(const m of used)if(!permitted.has(m))throw new Error(id+' 非建筑材质 '+m);
@@ -47,8 +49,9 @@ export function inspectBuiltMaterialAssignments(id:string,a:Asset,roles:Record<s
 export function makeAtlasBuiltAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number>={}):Asset{
  const recipe=atlasBuiltRecipes[catalogId];if(!recipe)throw new Error('此建筑清单条目尚无已实现的原生体素配方');
  const dimensions=[...recipe.size] as V3;
- if(Object.keys(params).some(k=>k!=='width'))throw new Error('本建筑参数尚未验证');
+ if(Object.keys(params).some(k=>k!=='width'&&k!=='height'))throw new Error('本建筑参数尚未验证');
  if(params.width!==undefined){const width=params.width;if(catalogId==='BUILT-007'&&[1.2,1.6].includes(width))dimensions[0]=width;else if(catalogId==='BUILT-017'&&Number.isFinite(width)&&width>=7.2&&width<=14.4&&Math.abs(width/.2-Math.round(width/.2))<1e-8)dimensions[0]=width;else throw new Error('本建筑配方的尺寸变化尚未验证；上行跑仅 1.2/1.6m，窗墙仅 7.2–14.4m 的 0.2m 增量');}
+ if(params.height!==undefined){if(catalogId!=='BUILT-149'||![12.4,12.8].includes(params.height))throw new Error('吊杆仅验证12.4/12.8m高度');dimensions[1]=params.height;}
  const s=new Proxy(style,{get(target,role){if(typeof role==='symbol')return Reflect.get(target,role);const value=target[role];if(!Number.isInteger(value)||value<1||value>65535)throw new Error('配方缺少材质角色 '+role+'；禁止按近似颜色回退');return value;}}),b=new Shapes(recipe.pitch,s);
  b.part(recipe.features,()=>recipe.draw(b,...dimensions));
  if(b.g.count>1_000_000)throw new Error('建筑母版超过 1,000,000 个占用格；拆分组件');
@@ -63,6 +66,6 @@ export function makeAtlasBuiltAsset(catalogId:string,name:string,id:string,style
   a.openings=[box([.28,.20,2.40],[width-.28,.90,3.30])];
   for(let i=0;i<8;i++)a.openings.push(box([.22,.42+i*.20,.48+i*.40],[width-.22,2.30+i*.20,.72+i*.40]));
   a.ports.push({id:'bottom-walkway',kind,position:[width/2,.20,0],normal:[0,0,-1],size:[width,.20,0],pitch:.02},{id:'top-walkway',kind,position:[width/2,1.80,4.40],normal:[0,0,1],size:[width,.20,0],pitch:.02});
- }else{configureStructureAsset(a,catalogId);configureLegacyBuildingAsset(a,catalogId);configureJoineryAsset(a,catalogId);configureExteriorAsset(a,catalogId);configureWaterfrontAsset(a,catalogId);configureTransportAsset(a,catalogId);}
+ }else{configureStructureAsset(a,catalogId);configureLegacyBuildingAsset(a,catalogId);configureJoineryAsset(a,catalogId);configureExteriorAsset(a,catalogId);configureWaterfrontAsset(a,catalogId);configureTransportAsset(a,catalogId);configureBridgeAsset(a,catalogId);}
  a.source!.materialAssignmentReview=inspectBuiltMaterialAssignments(catalogId,a,style);return a;
 }

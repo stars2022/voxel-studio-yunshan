@@ -1,0 +1,77 @@
+{
+  "run": "atlas-20261003180004",
+  "status": "passed",
+  "method": "209 full regression tests plus two camera-framing tests after the long-subject far-plane fix; five final collision tests and five saved-scene rechecks cover the last boundary correction.",
+  "distinctTestsPassed": 211,
+  "fullSuite": {
+    "tests": 209,
+    "pass": 209,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "finalCamera": {
+    "tests": 2,
+    "pass": 2,
+    "fail": 0,
+    "casesPerTest": 27,
+    "clipPlanesCheckedPerCorner": 6
+  },
+  "finalCollision": {
+    "tests": 5,
+    "pass": 5,
+    "fail": 0,
+    "alreadyIncludedInFullSuite": true
+  },
+  "initialTargeted": {
+    "tests": 13,
+    "pass": 12,
+    "fail": 1,
+    "resolution": "Test assumed undo restores the old asset version. Engine deliberately increases version. Corrected test compares all payload and verifies monotonic version; targeted rerun and full regression pass."
+  },
+  "build": "passed",
+  "finalScriptTypecheck": "passed",
+  "mcpChecks": 10,
+  "newMasterScreenshots": 36,
+  "revisedDependencyScreenshots": 3,
+  "finalAssetScreenshots": 39,
+  "assemblyScreenshots": 10,
+  "candidateMaterialAudit": 228,
+  "reviewedGalleries": [
+    "M018",
+    "M019"
+  ],
+  "unresolvedFailures": [],
+  "reviewChanges": [
+    "BUILT-140 guide seats moved to +/-1.8m from track centre, preserving the prior native file and existing datum.",
+    "Exact X row intervals retain collision volume and fine-grid counts: the track assembly checks 303,516,624 occupied 5mm cells without allocating one object per cell.",
+    "Load-bearing cables and hangers use independent metal role suspensionCable. Old wood rendering labels do not determine physical material categories.",
+    "160m scene verifies four towers, foundations, two caps and six central hangers at three 8m stations. It is a static interface study, not a complete structural or vehicle simulation.",
+    "Viewer far plane now includes full fitted subject depth. Final full cable and bridge images inspected; original clipped screenshots retained in camera-framing-before.",
+    "First framing attempt mixed a pre-build single-asset page with a rebuilt scene page. Superseded report records this; final attempt checks the loaded bundle and captures after build completion."
+  ],
+  "visualReview": {
+    "status": "passed-for-technical-candidate",
+    "views": [
+      "all 12 base-colour asset previews",
+      "all 13 material comparisons including revised dependency",
+      "all five assembled isometric views",
+      "repaired main-cable and bridge orthographic views"
+    ],
+    "humanArtAccepted": false
+  },
+  "logs": [
+    "cloud-tests.txt",
+    "bridge-tests-initial.txt",
+    "hanger-tests-rerun.txt",
+    "collision-tests-compatibility.txt",
+    "collision-tests-final.txt",
+    "camera-tests.txt",
+    "build.txt",
+    "typecheck-final.txt",
+    "bridge-mcp-client.txt",
+    "final-geometry-recheck.json",
+    "camera-framing-verification.json",
+    "camera-framing-first-attempt.json"
+  ]
+}

@@ -75,7 +75,7 @@ export const transportRecipes:Record<string,AtlasRecipe>={
   b.part('混凝土底板及三道腹板',()=>{b.b(0,0,0,6,.2,8,b.s.structuralConcrete);for(const x of[0,2.8,5.6])b.b(x,.2,0,.4,.8,8,b.s.structuralConcrete);});
   b.part('连续上承板',()=>b.b(0,1,0,6,.3,8,b.s.structuralConcrete));
   b.part('石质顶铺与明缝',()=>{b.b(0,1.3,0,6,.1,8,b.s.mortar);for(let z=0;z<8;z+=1)for(const x of[0,3])b.b(x,1.3,z,2.9,.1,.9,b.s.wall);});
-  b.part('双线导轨钢安装座',()=>{for(const x of[1.4,4.2])for(let z=.4;z<8;z+=.8){b.b(x,1.3,z,.4,.1,.2,b.s.metal);b.b(x+.1,1.3,z,.2,.1,.1,b.s.bronze);}});
+  b.part('双线导轨钢安装座',()=>{for(const x of[1,4.6])for(let z=.4;z<8;z+=.8){b.b(x,1.3,z,.4,.1,.2,b.s.metal);b.b(x+.1,1.3,z,.2,.1,.1,b.s.bronze);}});
  }},
 };
 

@@ -1,0 +1,1690 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156
+    }
+  },
+  "assets": [
+    {
+      "id": "main",
+      "name": "既有长桥主悬索",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.2,
+            0,
+            -0.8
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            12.600000000000001,
+            0,
+            161.60000000000002
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              -8
+            ],
+            "max": [
+              128,
+              303,
+              1608
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "双侧连续分段钢缆",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              9,
+              -2
+            ],
+            "max": [
+              122,
+              302,
+              1602
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四端石锚座和金属压鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              -8
+            ],
+            "max": [
+              128,
+              13,
+              1608
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "锚座铜锁和真实紧固孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              6,
+              -7
+            ],
+            "max": [
+              125,
+              8,
+              1605
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两处塔顶独立金属抱箍",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              297,
+              254
+            ],
+            "max": [
+              124,
+              303,
+              1346
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "160m双侧主悬索：0.4m钢缆、0.16/0.84跨长塔位、30m高点与四端实体锚座",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              -8
+            ],
+            "max": [
+              128,
+              303,
+              1608
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "hanger",
+      "name": "既有长桥竖吊杆",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            0.8
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              124,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "桥侧承托脚和连接悬臂",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立钢质竖吊杆及中间锁节",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              11,
+              2
+            ],
+            "max": [
+              6,
+              116,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶端夹箍和沿主缆方向实孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              116,
+              0
+            ],
+            "max": [
+              8,
+              124,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "铜锁销和脚部石垫",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              118,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "竖吊杆：1.1m起杆位置、独立钢缆、顶夹箍真孔和桥边承托悬臂",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              124,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "foundation",
+      "name": "既有桥塔石基础显示件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            9
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "tower",
+          "kind": "bridge-tower",
+          "position": [
+            4.5,
+            1.6,
+            4.5
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            2
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              16,
+              90
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底部混凝土和分缝石砌体",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              12,
+              90
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "退层石台及中央承面",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              12,
+              2
+            ],
+            "max": [
+              88,
+              16,
+              88
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承座外金属定位件与铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              31,
+              12,
+              31
+            ],
+            "max": [
+              59,
+              15,
+              59
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "9×1.6×9m桥塔基础：分层砌石基座、混凝土芯、中央2m承面与四角铜定位",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              16,
+              90
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "tower",
+      "name": "既有悬桥塔柱显示件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.1
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            2.1
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "foot",
+          "kind": "bridge-tower",
+          "position": [
+            1,
+            0,
+            1
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            2
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "cap",
+          "kind": "bridge-tower",
+          "position": [
+            1,
+            33,
+            1
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            2
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              20,
+              330,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "钢木柱芯与石包边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              330,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "逐段锁肩与铜扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              1,
+              -1
+            ],
+            "max": [
+              19,
+              329,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "主索真实通槽和两侧钢夹接面",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              294,
+              2
+            ],
+            "max": [
+              15,
+              314,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "中段独立青色状态灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              198,
+              0
+            ],
+            "max": [
+              14,
+              240,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "2m桥塔柱：33m作者高度、钢木骨架、石嵌面、主索通道与顶承面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              20,
+              330,
+              20
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "cap",
+      "name": "既有悬桥塔横梁与冠盖",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            13,
+            0,
+            2.4000000000000004
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "left",
+          "kind": "bridge-tower",
+          "position": [
+            1,
+            0,
+            1.2
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            2
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "right",
+          "kind": "bridge-tower",
+          "position": [
+            12,
+            0,
+            1.2
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            2
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              130,
+              26,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "1.6m梁体的钢边和木芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              130,
+              16,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两端冠盖木座与独立防水层",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              16,
+              2
+            ],
+            "max": [
+              130,
+              19,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实双坡瓦冠与瓦脊",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              18,
+              0
+            ],
+            "max": [
+              130,
+              25,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四角铜锁脊和暖色柱头灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              4,
+              0
+            ],
+            "max": [
+              130,
+              26,
+              13
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "塔间1.6m横梁与双小冠盖：13m梁跨、钢木叠梁、双端真实瓦坡及铜脊饰",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              130,
+              26,
+              24
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "deck",
+      "name": "既有9m桥面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9,
+            0,
+            8
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "front",
+          "kind": "bridge-9000",
+          "position": [
+            4.5,
+            0.5,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            9,
+            0.5,
+            0
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "back",
+          "kind": "bridge-9000",
+          "position": [
+            4.5,
+            0.5,
+            8
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            9,
+            0.5,
+            0
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              5,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续承板与下层空腹肋",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              4,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立道路磨耗面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              4,
+              0
+            ],
+            "max": [
+              90,
+              5,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双侧金属边梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              1,
+              0
+            ],
+            "max": [
+              90,
+              3,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两端钢连接和铜锁销",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              1,
+              0
+            ],
+            "max": [
+              86,
+              3,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "9m桥面板：0.5m厚梁板、空腹纵肋、道路磨耗面、边梁和端部钢连接",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              90,
+              5,
+              80
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            2,
+            0,
+            2
+          ],
+          "max": [
+            22,
+            3,
+            78
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hanger-tall",
+      "name": "既有长桥竖吊杆",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            0.8
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              128,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "桥侧承托脚和连接悬臂",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立钢质竖吊杆及中间锁节",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              11,
+              2
+            ],
+            "max": [
+              6,
+              120,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶端夹箍和沿主缆方向实孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              120,
+              0
+            ],
+            "max": [
+              8,
+              128,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "铜锁销和脚部石垫",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              122,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "竖吊杆：1.1m起杆位置、独立钢缆、顶夹箍真孔和桥边承托悬臂",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              20,
+              128,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "main-1",
+      "assetId": "main",
+      "name": "既有长桥主悬索",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "foundation-0-0",
+      "assetId": "foundation",
+      "name": "既有桥塔石基础显示件",
+      "position": [
+        -3.5,
+        -2.6,
+        21.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tower-0-0",
+      "assetId": "tower",
+      "name": "既有悬桥塔柱显示件",
+      "position": [
+        0,
+        -1,
+        24.6
+      ],
+      "rotation": 0,
+      "parent": "foundation-0-0"
+    },
+    {
+      "id": "foundation-0-1",
+      "assetId": "foundation",
+      "name": "既有桥塔石基础显示件",
+      "position": [
+        7.5,
+        -2.6,
+        21.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tower-0-1",
+      "assetId": "tower",
+      "name": "既有悬桥塔柱显示件",
+      "position": [
+        11,
+        -1,
+        24.6
+      ],
+      "rotation": 0,
+      "parent": "foundation-0-1"
+    },
+    {
+      "id": "cap-0",
+      "assetId": "cap",
+      "name": "既有悬桥塔横梁与冠盖",
+      "position": [
+        0,
+        32,
+        24.400000000000002
+      ],
+      "rotation": 0,
+      "parent": "tower-0-0"
+    },
+    {
+      "id": "foundation-1-0",
+      "assetId": "foundation",
+      "name": "既有桥塔石基础显示件",
+      "position": [
+        -3.5,
+        -2.6,
+        129.9
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tower-1-0",
+      "assetId": "tower",
+      "name": "既有悬桥塔柱显示件",
+      "position": [
+        0,
+        -1,
+        133.4
+      ],
+      "rotation": 0,
+      "parent": "foundation-1-0"
+    },
+    {
+      "id": "foundation-1-1",
+      "assetId": "foundation",
+      "name": "既有桥塔石基础显示件",
+      "position": [
+        7.5,
+        -2.6,
+        129.9
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tower-1-1",
+      "assetId": "tower",
+      "name": "既有悬桥塔柱显示件",
+      "position": [
+        11,
+        -1,
+        133.4
+      ],
+      "rotation": 0,
+      "parent": "foundation-1-1"
+    },
+    {
+      "id": "cap-1",
+      "assetId": "cap",
+      "name": "既有悬桥塔横梁与冠盖",
+      "position": [
+        0,
+        32,
+        133.20000000000002
+      ],
+      "rotation": 0,
+      "parent": "tower-1-0"
+    },
+    {
+      "id": "deck-0",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-1",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-2",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        16
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-3",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-4",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        32
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-5",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        40
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-6",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        48
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-7",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        56
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-8",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        64
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-9",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        72
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-10",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        80
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-11",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        88
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-12",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-13",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        104
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-14",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        112
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-15",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        120
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-16",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        128
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-17",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        136
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-18",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        144
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "deck-19",
+      "assetId": "deck",
+      "name": "既有9m桥面",
+      "position": [
+        2,
+        -0.5,
+        152
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "hanger-0-left",
+      "assetId": "hanger-tall",
+      "name": "既有长桥竖吊杆",
+      "position": [
+        0.6,
+        0,
+        71.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "hanger-0-right",
+      "assetId": "hanger-tall",
+      "name": "既有长桥竖吊杆",
+      "position": [
+        12.4,
+        0,
+        72.4
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "hanger-1-left",
+      "assetId": "hanger",
+      "name": "既有长桥竖吊杆",
+      "position": [
+        0.6,
+        0,
+        79.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "hanger-1-right",
+      "assetId": "hanger",
+      "name": "既有长桥竖吊杆",
+      "position": [
+        12.4,
+        0,
+        80.4
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "hanger-2-left",
+      "assetId": "hanger-tall",
+      "name": "既有长桥竖吊杆",
+      "position": [
+        0.6,
+        0,
+        87.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "hanger-2-right",
+      "assetId": "hanger-tall",
+      "name": "既有长桥竖吊杆",
+      "position": [
+        12.4,
+        0,
+        88.4
+      ],
+      "rotation": 2,
+      "parent": null
+    }
+  ]
+}
