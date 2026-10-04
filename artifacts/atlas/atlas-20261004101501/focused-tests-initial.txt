@@ -1,0 +1,60 @@
+✔ M034 twelve masters and twenty-four shapes retain closed oriented meshes, attached voxels, source provenance and independent materials (553.875963ms)
+✔ all headwear shapes clear actual heads, ears, face features, under-hair and crown topknot (7138.890721ms)
+✖ bounded thirty-degree turns clear full author standing and seated body geometry (1053.65957ms)
+✖ pin channels, bald crown and mouth gaps are actual openings (256.205881ms)
+✔ brow replacement removes old cells only on retained-head derivatives and author scenes keep provenance (799.599077ms)
+✔ turned headwear exports actual single-head skins and independently evaluated near/far bounds without revoxelization (2326.155694ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12770.513849
+
+✖ failing tests:
+
+test at tests/atlas-headwear.test.ts:7:1
+✖ bounded thirty-degree turns clear full author standing and seated body geometry (1053.65957ms)
+  AssertionError [ERR_ASSERTION]: {"id":"CHAR-089","fit":"adult","yaw":-30,"mode":"seated","pairs":34,"contained":71,"crossing":110,"details":[{"a":"披肩前分束-1","b":"坐姿身体用途-245","contained":60,"crossing":40},{"a":"披肩前分束-1","b":"坐姿身体用途-248","contained":11,"crossing":70}]}
+  
+  181 !== 0
+  
+      at headwearTurnAudit (/workspace/voxel-studio-yunshan/scripts/lib/headwear-audit.ts:5:884)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-headwear.test.ts:7:106)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 181,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-headwear.test.ts:8:1
+✖ pin channels, bald crown and mouth gaps are actual openings (256.205881ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at headwearOpeningAudit (/workspace/voxel-studio-yunshan/scripts/lib/headwear-audit.ts:7:713)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-headwear.test.ts:8:73)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

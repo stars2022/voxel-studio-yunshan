@@ -1,0 +1,85 @@
+{
+  "run": "atlas-20261004101501",
+  "status": "passed",
+  "scope": [
+    "CHAR-089",
+    "CHAR-090",
+    "CHAR-091",
+    "CHAR-092",
+    "CHAR-093",
+    "CHAR-094",
+    "CHAR-095",
+    "CHAR-096",
+    "CHAR-097",
+    "CHAR-098",
+    "CHAR-099",
+    "CHAR-100"
+  ],
+  "modelingDirection": "Minimum detail components remain native voxels; hair bundles, braids, buns, cloth folds and crown surfaces use continuous meshes. Single-head rigid binding transforms voxel vertices without resampling.",
+  "tests": {
+    "fullRegression": 367,
+    "finalFocused": 6,
+    "fullLog": "full-tests.txt",
+    "finalFocusedLog": "focused-tests.txt"
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 13,
+  "catalogMasters": 12,
+  "newCatalogIdsSincePriorCommit": 12,
+  "componentShapes": 24,
+  "authorInstallationStudies": 7,
+  "nativeVoxels": 2150,
+  "triangles": 16022,
+  "farTriangles": 15628,
+  "defaultGLBBoundsMaxErrorM": 1.3584213254258515e-08,
+  "assetScreenshots": 36,
+  "installationScreenshots": 26,
+  "rearDetailScreenshots": 6,
+  "removedPinDetailScreenshots": 1,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 427,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 586,
+    "generatedEntries": 482,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 408
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Inspected all twelve isometric, front and material asset views; six rear details and the removed-pin close-up.",
+      "Inspected all twenty-six views across seven saved author installations. Faces remain visible, the soft wrap fits its short-hair layer, and inserted/removed crown geometry is visibly distinct.",
+      "Long hair, braid, ponytail, bun, child buns and sparse crown have distinct continuous silhouettes; native accents remain visible.",
+      "Standing and static seated head-turn studies show the bounded author placement and keep the original source components.",
+      "Front/rear views of depth-arranged comparison scenes overlap some rows; isometric views show all placements, and the complete native/GLB scenes are included for independent viewing.",
+      "Screenshots are real WebGL output; no generated image substitutes for geometry. Styling, likeness and costume finish remain subject to human art review."
+    ]
+  },
+  "developmentCorrections": [
+    "Moved ponytail and bun roots outside actual scalp surfaces; sparse side fibres clear the ears.",
+    "Short beard roots avoid native mouth details; facial accessories remain independent.",
+    "Front long locks move inward to clear actual raised sleeves at bounded seated head turns.",
+    "Crown posts and front plaque clear the topknot; a real cloth bearing flange contacts the base ring at its seat plane.",
+    "Removed pin variant deletes native bar/end stops and continuous strings/tassels; actual channels are tested independently.",
+    "Eyebrow derivative removes the original two brow parts while retaining the complete original head master."
+  ],
+  "limitations": [
+    "Technical candidates; human art acceptance zero.",
+    "Original actor source, dimensions, protected clearance, face atlas and original skeleton/controllers are unavailable.",
+    "Single-head rigid skin binding is implemented; soft deformation, hair dynamics, IK, motion clips and runtime integration are not.",
+    "All headwear and character surfaces are noncollision; separate triangle tests establish the named fits.",
+    "Long hair and adult long beard checks cover yaw -30/0/+30 against named standing bodies and an actual static adult seated component frame, not all possible motion or garments.",
+    "Crown only targets the adult CHAR093 author socket; the soft wrap targets CHAR085 under-hair.",
+    "Software WebGL evidence is not hardware frame-rate acceptance."
+  ]
+}

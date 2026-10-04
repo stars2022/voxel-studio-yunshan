@@ -123,6 +123,8 @@ files.update(out.glob('landscape-*.png'))
 files.update(out.glob('character-*.png'))
 files.update(out.glob('figure-*.png'))
 files.update(out.glob('avatar-*.png'))
+files.update(out.glob('headwear-*.png'))
+files.update(out.glob(args.sheet + '-wear.*'))
 if (out / 'component-variants.json').exists():
     for variant in read(out / 'component-variants.json')['variants']:
         if 'variantDirectory' in variant:
@@ -133,7 +135,7 @@ if (out / 'component-variants.json').exists():
 if (out / 'figure-installation-verification.json').exists():
     assert read(out / 'figure-installation-verification.json')['status'] == 'passed'
     files.add(out / 'figure-installation-verification.json')
-for name in ['figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
+for name in ['headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)

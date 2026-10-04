@@ -3,10 +3,18 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=25;
+export const referenceFinishVersion=26;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ hairOrnament:{name:'头发饰件金属',color:'#bd954b',roughness:.4,metalness:.65,...surface('none',.05,0,946)},
+ hairGem:{name:'发饰装饰玻璃',color:'#64abb6',roughness:.25,metalness:0,opacity:1,intensity:0,emissive:'#000000',...surface('none',.05,0,947)},
+ headWrap:{name:'布巾软帽主体',color:'#455464',roughness:.85,metalness:0,...surface('fabric',.065,.12,948)},
+ headWrapBand:{name:'布巾帽带',color:'#d4cbb9',roughness:.85,metalness:0,...surface('fabric',.065,.10,949)},
+ beardHair:{name:'胡须纤维',color:'#4c3a30',roughness:.9,metalness:0,...surface('none',.05,0,950)},
+ browHair:{name:'可替换眉毛纤维',color:'#49382e',roughness:.9,metalness:0,...surface('none',.05,0,951)},
+ sparseHair:{name:'稀疏头发纤维',color:'#aaa5a0',roughness:.9,metalness:0,...surface('none',.05,0,952)},
+ sparseHairRidge:{name:'稀疏头发表束',color:'#c8c3bd',roughness:.9,metalness:0,...surface('none',.05,0,953)},
  rigGuide:{name:'绑定导杆可视代理',color:'#c2c1b6',roughness:.6,metalness:0,...surface('none',.075,0,942)},
  rigJointMarker:{name:'关节可视标记',color:'#bb9652',roughness:.55,metalness:0,...surface('none',.075,0,943)},
  rigSocketMarker:{name:'挂点可视标记',color:'#547b89',roughness:.55,metalness:0,...surface('none',.075,0,944)},
