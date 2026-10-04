@@ -3,10 +3,18 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=16;
+export const referenceFinishVersion=17;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ marineHull:{name:'船体水上金属蒙皮',color:'#415967',roughness:.55,metalness:.4,...surface('none',.1,0,0)},
+ marineAntifouling:{name:'船底防污涂层金属板',color:'#854f43',roughness:.82,metalness:.2,...surface('none',.1,0,0)},
+ dockFender:{name:'码头独立橡胶护舷',color:'#344244',roughness:.94,metalness:0,...surface('none',.1,0,0)},
+ mooringLine:{name:'系船编织缆绳',color:'#b2a58a',roughness:.92,metalness:0,...surface('none',.1,0,0)},
+ railWheel:{name:'轨道钢轮踏面与轮缘',color:'#7f8b8d',roughness:.32,metalness:.8,...surface('none',.1,0,0)},
+ maglevCoil:{name:'磁浮导向绕组',color:'#a2734b',roughness:.45,metalness:.7,...surface('none',.1,0,0)},
+ navPortLamp:{name:'左翼导航灯芯未绑定',color:'#aa4239',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
+ navStarboardLamp:{name:'右翼导航灯芯未绑定',color:'#40835c',roughness:.3,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
  airfieldYellow:{name:'机场黄色标线涂料',color:'#d7b748',roughness:.8,metalness:0,...surface('none',.1,0,0)},
  airfieldRed:{name:'机场红色边界涂料',color:'#b15b50',roughness:.8,metalness:0,...surface('none',.1,0,0)},
  airfieldWhite:{name:'机场白色标线涂料',color:'#e4dfd0',roughness:.8,metalness:0,...surface('none',.1,0,0)},

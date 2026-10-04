@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "run": "atlas-20261004022209",
+  "sheet": "M025",
+  "scope": [
+    "BUILT-289",
+    "BUILT-290",
+    "BUILT-291",
+    "BUILT-292",
+    "BUILT-293",
+    "BUILT-294",
+    "BUILT-295",
+    "BUILT-296",
+    "BUILT-297",
+    "BUILT-300",
+    "BUILT-307",
+    "BUILT-308"
+  ],
+  "tests": {
+    "fullRegression": 271,
+    "targeted": 10,
+    "fullLog": "full-tests.txt",
+    "targetedLog": "targeted-tests.txt",
+    "developmentCorrections": [
+      "Initial implementation called a non-existent line helper; changed to the existing native connected beam helper before targeted tests, exports or screenshots.",
+      "All eighteen shapes then passed exact bounds, connectedness, native material and opening checks; all eight installation scenarios passed their first geometry check."
+    ]
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 13,
+  "mcpStatus": "passed",
+  "materialCandidates": 300,
+  "nativeTotalsScope": "Twelve default master shapes; eighteen component shapes are inventoried separately in assembly exports.",
+  "nativeVoxels": 229204,
+  "triangles": 15046,
+  "glbBoundsMaxErrorM": 1.9073486257070726e-07,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 16,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "All twelve actual isometric/front/material views inspected.",
+      "Eight actual installations inspected in both isometric and front views.",
+      "Native voxel geometry, actual GLB and material bindings remain authoritative.",
+      "Front bay/shore views show exterior panels; corresponding isometric views reveal the installed components and native checks verify hidden contacts."
+    ]
+  },
+  "components": {
+    "families": 12,
+    "shapes": 18,
+    "inventory": "component-variants.json"
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 319,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 694,
+    "generatedEntries": 374,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 300
+  },
+  "limitations": [
+    "Original Vehicle/AerialVehicle/SimState, NetworkEdge, original modes and specifications, stopped/boarding/access/flight/steering state, controllers, original terrain and original game integration were not provided or validated.",
+    "Rail fixture uses explicitly authored rail-head centres 2.8m apart and top Y0.25m; bogie tread bottoms are local Y0.05m, installed at Y0.2m. This is not an original-mode or standard-gauge claim.",
+    "Maglev U-guides retain actual 0.1m gaps but are held by explicit mechanical inspection stops; no magnetic levitation or propulsion is implemented.",
+    "Two actual cable lines carry the clamp and authored cabin roof via native contact. No original cable controller, route movement or structural certification is claimed.",
+    "Ferry closed native hull excludes exterior flood fill from an internal void. The visible waterline is Y1.2m, deck Y2.2m and explicit keel inspection pads support the hull; no buoyancy simulation is implemented. Gangway is a fixed landing with no stop/permission state bound.",
+    "Author airliner fixture is 4m wide plus two 7m half-wings for 18m span; the old 17m proxy is not used. It is a mounting beam frame, not a complete plane or verified fleet. Both navigation cores remain zero-emission without bound state.",
+    "Gear poses are static. Compression reduces height by 0.4m while tires stay unchanged; retraction is an exact native rigid quarter-turn of deployed cells. Inspection bay has a real cradle, not in-flight deployment or animation.",
+    "Engine fan has eight actual static blades and open inlet/outlet cavities. Upper cap rests on the wing surface around its true through-slot. No thrust, smoke or runtime fan motion is included.",
+    "Shore abutment contacts three explicit terrain bands, separate bearing pads support the beam/deck, and the pedestrian path remains clear. Original giant-block/ray mismatch, lower-pier conflicts, original terrain and shared controller remain unvalidated.",
+    "155 material roles are use-specific. Mooring rope is noncollision and not attached to the ship. Auxiliary structures, pose variants and placements do not increase catalogue counts.",
+    "SwiftShader software WebGL is not hardware-GPU evidence; all 300 reference candidates still await human art acceptance."
+  ]
+}

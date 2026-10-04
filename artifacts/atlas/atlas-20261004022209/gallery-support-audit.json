@@ -1,0 +1,180 @@
+{
+  "run": "atlas-20261004022209",
+  "note": "Display galleries are not complete installation scenes. Missing wall supports remain reported; this audit does not suppress them.",
+  "records": [
+    {
+      "id": "M025-gallery",
+      "file": "atlas-20261004022209-m025-gallery.ysvox.json",
+      "elapsedMs": 1317.337441,
+      "check": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 226501,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "built-289-display"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 24736
+          },
+          {
+            "instanceIds": [
+              "built-290-display"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 20864
+          },
+          {
+            "instanceIds": [
+              "built-291-display"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 37820
+          },
+          {
+            "instanceIds": [
+              "built-292-display"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 1572
+          },
+          {
+            "instanceIds": [
+              "built-293-display"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 20544
+          },
+          {
+            "instanceIds": [
+              "built-294-display"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 12598
+          },
+          {
+            "instanceIds": [
+              "built-295-display"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 4695
+          },
+          {
+            "instanceIds": [
+              "built-296-display"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 28492
+          },
+          {
+            "instanceIds": [
+              "built-297-display"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 3912
+          },
+          {
+            "instanceIds": [
+              "built-300-display"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 5536
+          },
+          {
+            "instanceIds": [
+              "built-307-display"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 56000
+          },
+          {
+            "instanceIds": [
+              "built-308-display"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 9732
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "built-289-display": [],
+          "built-290-display": [],
+          "built-291-display": [],
+          "built-292-display": [],
+          "built-293-display": [],
+          "built-294-display": [],
+          "built-295-display": [],
+          "built-296-display": [],
+          "built-297-display": [],
+          "built-300-display": [],
+          "built-307-display": [],
+          "built-308-display": []
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "built-292-display",
+            "index": 0,
+            "widthM": 0.2,
+            "heightM": 1.7000000000000002,
+            "emptyCells": 680,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "built-292-display",
+            "index": 1,
+            "widthM": 5.4,
+            "heightM": 1.7000000000000002,
+            "emptyCells": 68850,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "built-293-display",
+            "index": 0,
+            "widthM": 2,
+            "heightM": 1.7000000000000002,
+            "emptyCells": 108800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "built-296-display",
+            "index": 0,
+            "widthM": 0.6000000000000001,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 1440,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "built-296-display",
+            "index": 1,
+            "widthM": 0.4,
+            "heightM": 0.4,
+            "emptyCells": 768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ]
+      },
+      "priorDiagnostics": null
+    }
+  ]
+}

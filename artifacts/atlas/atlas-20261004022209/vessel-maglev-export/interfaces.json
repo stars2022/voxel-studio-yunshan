@@ -1,0 +1,623 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181
+    }
+  },
+  "assets": [
+    {
+      "id": "base",
+      "name": "轻轨轮架和磁浮导向底座组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            3.2
+          ],
+          "pitch": 0.05
+        },
+        {
+          "id": "body",
+          "kind": "rail-body",
+          "position": [
+            1.5,
+            1.4,
+            1.6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            0.8
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              28,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两侧导鞋和实际下包唇",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              0,
+              4
+            ],
+            "max": [
+              46,
+              18,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "实绕组块与独立导向钢面",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              5,
+              8
+            ],
+            "max": [
+              42,
+              15,
+              54
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "检修承脚和连续上钢架",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              6,
+              0
+            ],
+            "max": [
+              60,
+              24,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "上承鞍和独立涂装盖",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              22,
+              4
+            ],
+            "max": [
+              56,
+              28,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "铜锚与实体警示涂料",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              22,
+              1
+            ],
+            "max": [
+              59,
+              28,
+              63
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "磁浮导向U形底座：真实下包唇和导向间隙、分段绕组、钢上架和车体上承鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              28,
+              64
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            20,
+            6,
+            0
+          ],
+          "max": [
+            22,
+            18,
+            64
+          ]
+        },
+        {
+          "min": [
+            38,
+            6,
+            0
+          ],
+          "max": [
+            40,
+            18,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car",
+      "name": "既有公共载具体壳盒",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            10
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              68,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "钢质底盘及木地板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              5,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "下部涂装金属裙板与端面骨架",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              3,
+              0
+            ],
+            "max": [
+              60,
+              24,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "连续窗间钢柱、上边梁及敞开侧门",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              24,
+              0
+            ],
+            "max": [
+              60,
+              64,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "屋顶板、檐沿与金属检修脊",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              64,
+              0
+            ],
+            "max": [
+              60,
+              68,
+              200
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "窗楣木收边、铜锁及检修开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              61,
+              4
+            ],
+            "max": [
+              60,
+              68,
+              196
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "3×10m轨道舱体壳：承载底盘、独立木地板、金属立框、檐口与真实侧门通道",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              68,
+              200
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            3,
+            5,
+            4
+          ],
+          "max": [
+            57,
+            60,
+            196
+          ]
+        },
+        {
+          "min": [
+            57,
+            5,
+            80
+          ],
+          "max": [
+            60,
+            60,
+            116
+          ]
+        },
+        {
+          "min": [
+            10,
+            8,
+            0
+          ],
+          "max": [
+            22,
+            16,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guide",
+      "name": "明确0.8m导梁、检修止挡，非磁悬浮模拟（辅助）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "guide-1",
+      "assetId": "guide",
+      "name": "明确0.8m导梁、检修止挡，非磁悬浮模拟（辅助）",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "base-front",
+      "assetId": "base",
+      "name": "轻轨轮架和磁浮导向底座组件",
+      "position": [
+        0,
+        0.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "base-back",
+      "assetId": "base",
+      "name": "轻轨轮架和磁浮导向底座组件",
+      "position": [
+        0,
+        0.4,
+        6.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "car-1",
+      "assetId": "car",
+      "name": "既有公共载具体壳盒",
+      "position": [
+        0,
+        1.8,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

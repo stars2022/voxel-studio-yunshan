@@ -1,17 +1,17 @@
 当前接续目标：完成3d资产转化，按图册批次验证并推送远程origin/main。用户已明确授权每批推送现有远程分支，不需重新确认。
 有效进度源：projects/conversion-goal.json 与 projects/atlas-production-index.json。
-M024已制作并验证，下一批M025；推送状态以Git远程为准。M001–M024累计288个参考候选、307个基础母版（含19个旧候选），原清单已生成362项/未生成706项；参考尚余505条。人工美术验收为0。
-M024检查：261项全套回归、10项专项及11项真实MCP通过；36张资产图、12张拼装图、288件材质审查。有效证据：artifacts/atlas/atlas-20261004014608。
-本批12清单家族含14组件形状：268 taxiStraight/taxiCorner、270 boardingBridge/boardingStairs分开可编辑，component-variants.json指向默认与场景内变体。重复机位、轮组、车厢和辅助试架不增加清单母版数。
-147个用途角色：airfieldYellow170/airfieldRed171/airfieldWhite173为ink，couplerHose172为rubber；原车胎与车窗封独立。实际导入通过styles保留自定义数字ID，外观替换和一次撤销不改变体素或碰撞。
-248斗拱实际承柱与梁；249木/纸/芯/非碰撞穗独立，实挂环由无重叠的钢钩承托，展示总览保留灯笼悬挂提示。249实际GLB532三角≤1800，251实际244三角≤2500。
-250有限石基破边，不生成散落通路障碍；251明确按尺寸新作替代候选，外3.6×3×.3m、净洞3.2×2.8m、局部.05m格距，原外部GLB/task仍未收件和验收。
-268原生闭合滑行道直段/转角共享route与实涂线，8m宽、转弯半径8m、.2m格距；269作者两空机位有独立ID/位置/相反鼻向和8.4×10m包络，A接试验道、B独立对照，不冒称完整机场。
-270接桥净宽2m净高2.2m、步行面2.4m，与12级.2m踢高/.4m踏深外梯及明确辅助接收地板相接；273真钢网和2m开敞边界，控制屏无假权限图形。276六级阶梯接1.2m实体泊台与真实接收平台，无装饰Torus替代泊位。
-286两个轮毂通过真方孔承托前轴与1m离地车体样件；287固定90度打开叶与原177车厢洞口同位且不改body；288连接10m车厢端面与下一节Z11.4m端面，固定钢板由明确辅助端托支承。车序记录仅作者样件，无运行/驾驶/权限/动画声明。
-制作期修复接桥5cm断层、门铰侵入洞口、挂钩4格相交与车钩缺托；材质探针修正到量化后实际内部格。最终精确检查无跳过。
-原Vehicle/AviationPad/SimState、NetworkEdge、原stand id、Flight/steering、供电/门状态均未提供；保留所有原游戏集成和人工美术验收边界。先npm run build再拍图，PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright，SwiftShader软件WebGL。
-M025完整范围和关键边界见conversion-goal.json。原生体素和语义ID权威，完整目标仍未完成。
+M025已制作并验证，下一批M026；推送状态以Git远程为准。M001–M025累计300个参考候选、319个基础母版（含19个旧候选），原清单已生成374项/未生成694项；参考尚余493条。人工美术验收为0。
+M025检查：271项全套回归、10项专项及13项真实MCP通过；36张资产图、16张拼装图、300件材质审查。有效证据：artifacts/atlas/atlas-20261004022209。
+本批12清单家族含18组件形状：289 railBogie/maglevBase；294 gearDeployed/gearCompressed/gearRetracted；295 portWing/starboardWing；297 horizontalTail/verticalTail；300 bollard/fender。component-variants.json指向默认文件及场景内原生变体。复用、姿态和辅助试架不增加清单数。
+155个用途角色：marineHull174、marineAntifouling175、dockFender176、mooringLine177（非碰撞fabric）、railWheel178、maglevCoil179、navPortLamp180与navStarboardLamp181（非碰撞emissive、intensity=0）。通过styles保留自定义ID；换外观/撤销不变占用和碰撞。
+289作者轨头中心距2.8m、轨顶.25m，钢轮架装Y.2m使踏面localY.05m实接轨；磁浮导鞋两侧.1m真空隙但用明确检修止挡承托，不称磁力悬浮。两型上承鞍分别托住旧177车体且不改原body。
+290两条+Z钢索穿真0.2m夹孔，孔顶localY2.75m；实际钢索托吊架，吊架下承板托辅助轿厢顶板，身体通道保持开放。未接原运行route或缆车控制器。
+291船底厚.3m，闭合船壳内部空格不与外部连通；本地水线1m/甲板2m、安装后水面1.2m/甲板2.2m，龙骨检修垫明确，不模拟浮力。292右侧Z4–6m缺口与293四米固定接板同位，码头截槽接成连续地坪；300护舷抵真船侧并有下托，系船柱避通路，绳卷不冒称已绑船。
+294放下高2.4m、压缩高2m且轮胎不变；收起由同一放下格子刚体转90度，体素数与材质逐格一致，在明确检修舱实托，非飞行动画。295左右各7m+4m机身梁框=18m作者翼展，不用17m旧代理；296上承帽穿真机翼槽坐在其顶面，八片静态风扇与进排气腔真实；297六米平尾托三米垂尾，原yaw/pitch/flight与导航状态未绑。
+307三段底高0/.4/.8m贴合显式terrain，桥板座localY2m、步面2.4m；308墩帽/双桥垫/钢板/上梁/缝封层级实接，场景桥面2.6m贯通两岸并保留0.35/1.72净空。原巨块/ray和lowerpier失败不在此冒称解决。
+M026含首批ENV，目录/制作/schema/UI可用路由需如实支持ENV；0.2m权威地形和真洞、近远/昼夜证据等边界见conversion-goal.json。316源安装0且共享规格未批准，不在旧recipe凭图新增可走面。
+原Vehicle/AerialVehicle/SimState、NetworkEdge、权限、动画、地形和控制器缺失均保留，不声明游戏集成/受力/美术验收。先npm run build再拍图，PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright，SwiftShader软件WebGL。
+原生体素和语义ID权威，完整目标仍未完成。
 
 以下是迁移时历史快照，测试数字、目录及原机事实保留原值：
 

@@ -1,0 +1,1093 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181
+    }
+  },
+  "assets": [
+    {
+      "id": "hull",
+      "name": "渡船船艏/船底体素组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            6,
+            0,
+            10
+          ],
+          "pitch": 0.1
+        },
+        {
+          "id": "boarding",
+          "kind": "ferry-walk",
+          "position": [
+            6,
+            2,
+            5
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0,
+            2
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              20,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "闭合阶梯船底与侧壳",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              18,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三道真实内部隔板与连续封闭甲板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              3,
+              0
+            ],
+            "max": [
+              60,
+              20,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "实际水线涂印与甲板周边包钢",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              10,
+              0
+            ],
+            "max": [
+              60,
+              20,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "有限系固铜点和甲板方向警示",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              19,
+              23
+            ],
+            "max": [
+              59,
+              20,
+              89
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "六米宽渡船封闭船艏与厚底：阶梯收艏、0.3m底、侧壳、舱内隔板、可读水线和连续甲板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              20,
+              100
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "rail",
+      "name": "渡船甲板舷栏和登离缺口组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            6,
+            0,
+            10
+          ],
+          "pitch": 0.1
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              12,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "跟随收艏的阶梯侧栏与真实登离缺口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              12,
+              98
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "首尾横栏和封闭角连接",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              12,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "八对实际承柱与口边短柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              1,
+              0
+            ],
+            "max": [
+              60,
+              11,
+              100
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "铜柱帽与入口实体涂印",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              3,
+              20
+            ],
+            "max": [
+              60,
+              12,
+              81
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "同6×10m甲板的完整舷栏：后掠船艏跟随栏、钢上下杆、薄玻璃和右侧真实2m登离缺口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              60,
+              12,
+              100
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            58,
+            0,
+            40
+          ],
+          "max": [
+            60,
+            17,
+            60
+          ]
+        },
+        {
+          "min": [
+            3,
+            0,
+            22
+          ],
+          "max": [
+            57,
+            17,
+            97
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gangway",
+      "name": "码头至渡船真实登离接板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.4000000000000004,
+            0,
+            4
+          ],
+          "pitch": 0.05
+        },
+        {
+          "id": "ship",
+          "kind": "ferry-walk",
+          "position": [
+            1.2,
+            0.2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            2,
+            0,
+            0
+          ],
+          "pitch": 0.05
+        },
+        {
+          "id": "shore",
+          "kind": "ferry-walk",
+          "position": [
+            1.2,
+            0.2,
+            4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            2,
+            0,
+            0
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              48,
+              24,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续封闭承板与独立金属防滑踏面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              48,
+              4,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双侧上下护边及六对承柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              3,
+              0
+            ],
+            "max": [
+              48,
+              24,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "实际横向防滑嵌条与边侧警示涂料",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              3,
+              0
+            ],
+            "max": [
+              44,
+              4,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "端部钢锁、铜销与侧板凹槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              22,
+              1
+            ],
+            "max": [
+              46,
+              23,
+              78
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "四米固定登离接板：封闭钢底、2m净宽防滑实面、钢护栏和真实端部支承接口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              48,
+              24,
+              80
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            4,
+            4,
+            0
+          ],
+          "max": [
+            44,
+            38,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bollard",
+      "name": "码头系船柱与护舷道具",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.2000000000000002,
+            0,
+            1.2000000000000002
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              24,
+              24,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石质底鞋、钢板与真实柱身",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              24,
+              20,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "宽钢柱帽与顶面",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              20,
+              3
+            ],
+            "max": [
+              21,
+              24,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "三层编织缆绳卷",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              9,
+              5
+            ],
+            "max": [
+              19,
+              19,
+              19
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四铜锚与涂印",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              5,
+              3
+            ],
+            "max": [
+              21,
+              23,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "码头系船柱：石基、钢底板、粗钢柱、宽帽、四铜锚和独立非承载展示缆绳卷",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              24,
+              24,
+              24
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "fender",
+      "name": "码头系船柱与护舷道具",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            0.6000000000000001
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              16,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "实际钢背板和有限厚橡胶垫",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              16,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两端实际钢夹带",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              0,
+              2
+            ],
+            "max": [
+              37,
+              16,
+              10
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "背板四角铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              1,
+              10
+            ],
+            "max": [
+              39,
+              15,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "夹带维护涂印",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              7,
+              2
+            ],
+            "max": [
+              37,
+              9,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立码头橡胶护舷：有限圆角厚垫、钢背板、两道实夹与四铜紧固",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              16,
+              12
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "dock",
+      "name": "码头地坪、固定接板承梁、护舷下托与检修龙骨垫（辅助）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    },
+    {
+      "id": "water",
+      "name": "明确水线Y1.2m，仅非碰撞显示水面（辅助）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "dock-1",
+      "assetId": "dock",
+      "name": "码头地坪、固定接板承梁、护舷下托与检修龙骨垫（辅助）",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "water-1",
+      "assetId": "water",
+      "name": "明确水线Y1.2m，仅非碰撞显示水面（辅助）",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "hull-1",
+      "assetId": "hull",
+      "name": "渡船船艏/船底体素组件",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "rail-1",
+      "assetId": "rail",
+      "name": "渡船甲板舷栏和登离缺口组件",
+      "position": [
+        0,
+        2.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "gangway-1",
+      "assetId": "gangway",
+      "name": "码头至渡船真实登离接板",
+      "position": [
+        6,
+        2,
+        6.2
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "bollard-a",
+      "assetId": "bollard",
+      "name": "码头系船柱与护舷道具",
+      "position": [
+        6.8,
+        2.2,
+        0.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "bollard-b",
+      "assetId": "bollard",
+      "name": "码头系船柱与护舷道具",
+      "position": [
+        6.8,
+        2.2,
+        8.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "fender-a",
+      "assetId": "fender",
+      "name": "码头系船柱与护舷道具",
+      "position": [
+        6,
+        1.2,
+        3
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "fender-b",
+      "assetId": "fender",
+      "name": "码头系船柱与护舷道具",
+      "position": [
+        6,
+        1.2,
+        9
+      ],
+      "rotation": 1,
+      "parent": null
+    }
+  ]
+}

@@ -1,0 +1,1165 @@
+{
+  "run": "atlas-20261004022209",
+  "startedAt": "2026-10-04T02:22:55.632Z",
+  "status": "passed",
+  "checks": [
+    "Twelve M025 families queried at native coordinates: steel wheels, rubber tires, separate marine coatings, rope, inactive navigation, bearing pads and joint seals",
+    "Four independent hull/fender/wheel/navigation appearance roles, canonical UI hashes, metal filtering, dry run, version conflicts, idempotency, failure rollback and one undo all verified",
+    "MCP advertises verified guide, gear, wing, tail and dock components without inflating twelve catalogue families",
+    "Real rail installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "Real maglev installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "Real cable installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "Real ferry installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "Real airliner installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "Real compressed installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "Real retracted installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "Real bridge installation has exact native collisions, support, openings and body clearances; original runtime is unbound",
+    "All eight scenarios save real stdio MCP multiview previews plus GLB/native/collision/interface/material-atlas exports",
+    "Native save and server restart restore the exact canonical document"
+  ],
+  "errors": [],
+  "uiSync": [
+    {
+      "version": 1,
+      "ms": 1043.7192910000012
+    },
+    {
+      "version": 2,
+      "ms": 556.6252670000013
+    },
+    {
+      "version": 3,
+      "ms": 589.2759149999983
+    },
+    {
+      "version": 4,
+      "ms": 1097.2971120000002
+    },
+    {
+      "version": 5,
+      "ms": 886.5709609999976
+    },
+    {
+      "version": 6,
+      "ms": 4057.983469000006
+    },
+    {
+      "version": 7,
+      "ms": 987.0362730000052
+    },
+    {
+      "version": 8,
+      "ms": 2218.5223979999864
+    },
+    {
+      "version": 9,
+      "ms": 543.9949059999926
+    },
+    {
+      "version": 10,
+      "ms": 3768.8559890000033
+    },
+    {
+      "version": 11,
+      "ms": 1185.2705300000089
+    },
+    {
+      "version": 12,
+      "ms": 1951.81022699998
+    },
+    {
+      "version": 13,
+      "ms": 2046.063220000011
+    },
+    {
+      "version": 14,
+      "ms": 517.4949900000065
+    },
+    {
+      "version": 15,
+      "ms": 719.1648519999871
+    },
+    {
+      "version": 16,
+      "ms": 819.1092179999978
+    },
+    {
+      "version": 17,
+      "ms": 842.4554859999917
+    },
+    {
+      "version": 18,
+      "ms": 2110.944933999999
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "vessel-rail",
+      "masters": 3,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 219704,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "track-1",
+              "bogie-front",
+              "bogie-back",
+              "car-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 219704
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "track-1": [],
+          "bogie-front": [
+            "track-1"
+          ],
+          "bogie-back": [
+            "track-1"
+          ],
+          "car-1": [
+            "bogie-back",
+            "bogie-front"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "car-1",
+            "index": 0,
+            "widthM": 2.7,
+            "heightM": 2.75,
+            "emptyCells": 570240,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "car-1",
+            "index": 1,
+            "widthM": 0.15000000000000002,
+            "heightM": 2.75,
+            "emptyCells": 5940,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "car-1",
+            "index": 2,
+            "widthM": 0.6000000000000001,
+            "heightM": 0.4,
+            "emptyCells": 384,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "车厢正常内通路",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-rail",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 469432,
+        "isError": false
+      },
+      "previews": {
+        "version": 4,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/234cb2df-6a0d-49df-a4ff-f1a8c806f627/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/234cb2df-6a0d-49df-a4ff-f1a8c806f627/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "vessel-maglev",
+      "masters": 3,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 290680,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "guide-1",
+              "base-front",
+              "base-back",
+              "car-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 290680
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "guide-1": [],
+          "base-front": [
+            "guide-1"
+          ],
+          "base-back": [
+            "guide-1"
+          ],
+          "car-1": [
+            "base-back",
+            "base-front"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "base-front",
+            "index": 0,
+            "widthM": 0.1,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 1536,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "base-front",
+            "index": 1,
+            "widthM": 0.1,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 1536,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "base-back",
+            "index": 0,
+            "widthM": 0.1,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 1536,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "base-back",
+            "index": 1,
+            "widthM": 0.1,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 1536,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "car-1",
+            "index": 0,
+            "widthM": 2.7,
+            "heightM": 2.75,
+            "emptyCells": 570240,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "car-1",
+            "index": 1,
+            "widthM": 0.15000000000000002,
+            "heightM": 2.75,
+            "emptyCells": 5940,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "car-1",
+            "index": 2,
+            "widthM": 0.6000000000000001,
+            "heightM": 0.4,
+            "emptyCells": 384,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "车厢正常内通路",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-maglev",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 304672,
+        "isError": false
+      },
+      "previews": {
+        "version": 6,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/cb89322b-1414-4ad1-9730-25f5b2ed99e4/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/cb89322b-1414-4ad1-9730-25f5b2ed99e4/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "vessel-cable",
+      "masters": 3,
+      "placements": 3,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 83968,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "rig-1",
+              "hanger-1",
+              "cabin-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 83968
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "rig-1": [
+            "hanger-1"
+          ],
+          "hanger-1": [
+            "cabin-1",
+            "rig-1"
+          ],
+          "cabin-1": [
+            "hanger-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [
+          {
+            "name": "吊臂及穿顶槽不占轿厢身体通路",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-cable",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 155496,
+        "isError": false
+      },
+      "previews": {
+        "version": 8,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/be4c2a80-a932-4e95-a3d1-48071dba027c/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/be4c2a80-a932-4e95-a3d1-48071dba027c/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "vessel-ferry",
+      "masters": 7,
+      "placements": 9,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 529136,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "dock-1",
+              "water-1",
+              "hull-1",
+              "rail-1",
+              "gangway-1",
+              "bollard-a",
+              "bollard-b",
+              "fender-a",
+              "fender-b"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 529136
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "dock-1": [],
+          "water-1": [],
+          "hull-1": [
+            "dock-1"
+          ],
+          "rail-1": [
+            "hull-1"
+          ],
+          "gangway-1": [
+            "dock-1"
+          ],
+          "bollard-a": [
+            "dock-1"
+          ],
+          "bollard-b": [
+            "dock-1"
+          ],
+          "fender-a": [
+            "dock-1"
+          ],
+          "fender-b": [
+            "dock-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "rail-1",
+            "index": 0,
+            "widthM": 0.2,
+            "heightM": 1.7000000000000002,
+            "emptyCells": 680,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "rail-1",
+            "index": 1,
+            "widthM": 5.4,
+            "heightM": 1.7000000000000002,
+            "emptyCells": 68850,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "gangway-1",
+            "index": 0,
+            "widthM": 2,
+            "heightM": 1.7000000000000002,
+            "emptyCells": 108800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "甲板缺口与岸船固定接板连续通行",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "甲板内侧公共路线",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-ferry",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 601476,
+        "isError": false
+      },
+      "previews": {
+        "version": 10,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/a0a76412-7d17-4168-90c6-96c7f6f874c2/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/a0a76412-7d17-4168-90c6-96c7f6f874c2/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "vessel-airliner",
+      "masters": 7,
+      "placements": 9,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 304820,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "frame-1",
+              "gear-front",
+              "gear-back",
+              "wing-left",
+              "wing-right",
+              "engine-left",
+              "engine-right",
+              "tail-1",
+              "fin-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 304820
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "frame-1": [
+            "gear-back",
+            "gear-front"
+          ],
+          "gear-front": [],
+          "gear-back": [],
+          "wing-left": [
+            "frame-1"
+          ],
+          "wing-right": [
+            "frame-1"
+          ],
+          "engine-left": [
+            "wing-left"
+          ],
+          "engine-right": [
+            "wing-right"
+          ],
+          "tail-1": [
+            "frame-1"
+          ],
+          "fin-1": [
+            "tail-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "engine-left",
+            "index": 0,
+            "widthM": 0.6000000000000001,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 1440,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "engine-left",
+            "index": 1,
+            "widthM": 0.4,
+            "heightM": 0.4,
+            "emptyCells": 768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "engine-right",
+            "index": 0,
+            "widthM": 0.6000000000000001,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 1440,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "engine-right",
+            "index": 1,
+            "widthM": 0.4,
+            "heightM": 0.4,
+            "emptyCells": 768,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "两吊舱与地面之间0.5m空间",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "右翼吊舱下间隙",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-airliner",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 623076,
+        "isError": false
+      },
+      "previews": {
+        "version": 12,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/ac8becd0-2a4d-4749-bb94-ff86f914872c/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/ac8becd0-2a4d-4749-bb94-ff86f914872c/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "vessel-compressed",
+      "masters": 2,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 15378,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "gear-1",
+              "load-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 15378
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "gear-1": [],
+          "load-1": [
+            "gear-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [
+          {
+            "name": "轮组前方检查空隙",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-compressed",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 152084,
+        "isError": false
+      },
+      "previews": {
+        "version": 14,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/39c65c20-6a9f-4eae-ba0e-38edf4ee24d9/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/39c65c20-6a9f-4eae-ba0e-38edf4ee24d9/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "vessel-retracted",
+      "masters": 2,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 39030,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "bay-1",
+              "gear-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 39030
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "bay-1": [],
+          "gear-1": [
+            "bay-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [
+          {
+            "name": "收起形状上方0.2m检修空间",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-retracted",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 171884,
+        "isError": false
+      },
+      "previews": {
+        "version": 16,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/36f95977-c9ed-4925-be6c-8a9271733ccf/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/36f95977-c9ed-4925-be6c-8a9271733ccf/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "vessel-bridge",
+      "masters": 4,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.1,
+        "occupiedCollisionCells": 166212,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "terrain-1",
+              "abutment-1",
+              "bearing-1",
+              "span-1"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 166212
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "terrain-1": [],
+          "abutment-1": [
+            "terrain-1"
+          ],
+          "bearing-1": [
+            "span-1"
+          ],
+          "span-1": [
+            "abutment-1",
+            "bearing-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [
+          {
+            "name": "岸路桥台桥板至对岸0.35m半径/1.72m身体净空",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/exports/vessel-bridge",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 146168,
+        "isError": false
+      },
+      "previews": {
+        "version": 18,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/4b134e69-51f1-4de0-9db4-247780faacb0/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004022209/vessel-mcp-1791080575185-runtime/previews/4b134e69-51f1-4de0-9db4-247780faacb0/front.png"
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "gallery": {
+    "pitchM": 0.05,
+    "occupiedCollisionCells": 226501,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "built-289-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 24736
+      },
+      {
+        "instanceIds": [
+          "built-290-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 20864
+      },
+      {
+        "instanceIds": [
+          "built-291-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 37820
+      },
+      {
+        "instanceIds": [
+          "built-292-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 1572
+      },
+      {
+        "instanceIds": [
+          "built-293-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 20544
+      },
+      {
+        "instanceIds": [
+          "built-294-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 12598
+      },
+      {
+        "instanceIds": [
+          "built-295-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 4695
+      },
+      {
+        "instanceIds": [
+          "built-296-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 28492
+      },
+      {
+        "instanceIds": [
+          "built-297-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 3912
+      },
+      {
+        "instanceIds": [
+          "built-300-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 5536
+      },
+      {
+        "instanceIds": [
+          "built-307-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 56000
+      },
+      {
+        "instanceIds": [
+          "built-308-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 9732
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [],
+    "contacts": {
+      "built-289-display": [],
+      "built-290-display": [],
+      "built-291-display": [],
+      "built-292-display": [],
+      "built-293-display": [],
+      "built-294-display": [],
+      "built-295-display": [],
+      "built-296-display": [],
+      "built-297-display": [],
+      "built-300-display": [],
+      "built-307-display": [],
+      "built-308-display": []
+    },
+    "gaps": [],
+    "openings": [
+      {
+        "instanceId": "built-292-display",
+        "index": 0,
+        "widthM": 0.2,
+        "heightM": 1.7000000000000002,
+        "emptyCells": 680,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-292-display",
+        "index": 1,
+        "widthM": 5.4,
+        "heightM": 1.7000000000000002,
+        "emptyCells": 68850,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-293-display",
+        "index": 0,
+        "widthM": 2,
+        "heightM": 1.7000000000000002,
+        "emptyCells": 108800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-296-display",
+        "index": 0,
+        "widthM": 0.6000000000000001,
+        "heightM": 0.6000000000000001,
+        "emptyCells": 1440,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-296-display",
+        "index": 1,
+        "widthM": 0.4,
+        "heightM": 0.4,
+        "emptyCells": 768,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+    ],
+    "isError": false
+  },
+  "authorCableRoute": {
+    "direction": [
+      0,
+      0,
+      1
+    ],
+    "centerlinesM": [
+      [
+        [
+          0.4,
+          5.85,
+          -1.8
+        ],
+        [
+          0.4,
+          5.85,
+          3.2
+        ]
+      ],
+      [
+        [
+          2,
+          5.85,
+          -1.8
+        ],
+        [
+          2,
+          5.85,
+          3.2
+        ]
+      ]
+    ],
+    "originalRouteBound": false
+  },
+  "authorAirliner": {
+    "heading": [
+      0,
+      0,
+      -1
+    ],
+    "fuselageFixtureWidthM": 4,
+    "halfWingM": 7,
+    "wingSpanM": 18,
+    "legacy17mProxyUsed": false,
+    "flightStateBound": false
+  },
+  "originalRuntimeBound": false,
+  "completedAt": "2026-10-04T02:26:43.494Z"
+}
