@@ -1,0 +1,4644 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480
+    }
+  },
+  "assets": [
+    {
+      "id": "char-308",
+      "name": "兔精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -18,
+              2,
+              -44
+            ],
+            "max": [
+              18,
+              77,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "兔最小趾爪-1-0.17",
+          "parent": "root",
+          "region": {
+            "min": [
+              -11,
+              2,
+              -35
+            ],
+            "max": [
+              -9,
+              4,
+              -33
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "兔最小趾爪-1-0.082",
+          "parent": "root",
+          "region": {
+            "min": [
+              -18,
+              2,
+              -17
+            ],
+            "max": [
+              -16,
+              4,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "兔最小趾爪1-0.17",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              2,
+              -35
+            ],
+            "max": [
+              11,
+              4,
+              -33
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "兔最小趾爪1-0.082",
+          "parent": "root",
+          "region": {
+            "min": [
+              16,
+              2,
+              -17
+            ],
+            "max": [
+              18,
+              4,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -18,
+              76,
+              -29
+            ],
+            "max": [
+              -17,
+              77,
+              -28
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              17,
+              76,
+              -29
+            ],
+            "max": [
+              18,
+              77,
+              -28
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "兔最小鼻端",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              71,
+              -44
+            ],
+            "max": [
+              1,
+              73,
+              -42
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "兔梨形后躯": "root",
+          "兔白胸": "root",
+          "兔后腿大腿-1": "root",
+          "兔长后足-1": "root",
+          "兔独立前臂-1": "root",
+          "兔前足-1": "root",
+          "兔后腿大腿1": "root",
+          "兔长后足1": "root",
+          "兔独立前臂1": "root",
+          "兔前足1": "root",
+          "兔头颅": "root",
+          "兔白颊-1": "root",
+          "兔长外耳-1": "root",
+          "兔长耳内皮-1": "root",
+          "兔白颊1": "root",
+          "兔长外耳1": "root",
+          "兔长耳内皮1": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "兔圆短尾": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -18,
+                2,
+                -44
+              ],
+              "max": [
+                18,
+                77,
+                -15
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "兔梨形后躯",
+          "material": 458,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔白胸",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔后腿大腿-1",
+          "material": 458,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔长后足-1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔独立前臂-1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔前足-1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔后腿大腿1",
+          "material": 458,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔长后足1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔独立前臂1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔前足1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔头颅",
+          "material": 458,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔白颊-1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔长外耳-1",
+          "material": 458,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "兔长耳内皮-1",
+          "material": 452,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "兔白颊1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔长外耳1",
+          "material": 458,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "兔长耳内皮1",
+          "material": 452,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "兔圆短尾",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        }
+      ]
+    },
+    {
+      "id": "char-309",
+      "name": "观赏鱼精细体素视觉母版",
+      "version": 3,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "waterline-study",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.155,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.13,
+            0.01,
+            0.4
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -10,
+              26,
+              -32
+            ],
+            "max": [
+              10,
+              34,
+              -13
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -10,
+              33,
+              -21
+            ],
+            "max": [
+              -9,
+              34,
+              -20
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              33,
+              -21
+            ],
+            "max": [
+              10,
+              34,
+              -20
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "鱼最小口缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              28,
+              -32
+            ],
+            "max": [
+              1,
+              29,
+              -31
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "鱼最小鳃盖端-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -10,
+              26,
+              -14
+            ],
+            "max": [
+              -9,
+              27,
+              -13
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "鱼最小鳃盖端1",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              26,
+              -14
+            ],
+            "max": [
+              10,
+              27,
+              -13
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "观赏鱼独立纺锤身": "root",
+          "观赏鱼白色鳞区": "root",
+          "鱼收窄尾柄": "root",
+          "尾鳍分叉叶-1": "root",
+          "成对胸鳍-1": "root",
+          "成对腹鳍-1": "root",
+          "弧形鳃缘-1": "root",
+          "尾鳍分叉叶1": "root",
+          "成对胸鳍1": "root",
+          "成对腹鳍1": "root",
+          "弧形鳃缘1": "root",
+          "真正背鳍": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "鱼口唇": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -10,
+                26,
+                -32
+              ],
+              "max": [
+                10,
+                34,
+                -13
+              ]
+            }
+          }
+        ],
+        "sockets": {
+          "waterline-study": "root"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "waterline-study",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.155,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.13,
+            0.01,
+            0.4
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "观赏鱼独立纺锤身",
+          "material": 468,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "观赏鱼白色鳞区",
+          "material": 469,
+          "collision": false,
+          "triangles": 1040
+        },
+        {
+          "name": "鱼收窄尾柄",
+          "material": 468,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "尾鳍分叉叶-1",
+          "material": 470,
+          "collision": false,
+          "triangles": 16
+        },
+        {
+          "name": "成对胸鳍-1",
+          "material": 470,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "成对腹鳍-1",
+          "material": 470,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "弧形鳃缘-1",
+          "material": 471,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "尾鳍分叉叶1",
+          "material": 470,
+          "collision": false,
+          "triangles": 16
+        },
+        {
+          "name": "成对胸鳍1",
+          "material": 470,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "成对腹鳍1",
+          "material": 470,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "弧形鳃缘1",
+          "material": 471,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "真正背鳍",
+          "material": 470,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鱼口唇",
+          "material": 480,
+          "collision": false,
+          "triangles": 224
+        }
+      ]
+    },
+    {
+      "id": "char-310",
+      "name": "鸡精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -20,
+              1,
+              -48
+            ],
+            "max": [
+              20,
+              110,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小趾爪-1-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              1,
+              -17
+            ],
+            "max": [
+              -18,
+              3,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小趾爪-10",
+          "parent": "root",
+          "region": {
+            "min": [
+              -13,
+              1,
+              -19
+            ],
+            "max": [
+              -11,
+              3,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "最小趾爪-11",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              1,
+              -17
+            ],
+            "max": [
+              -5,
+              3,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "最小趾爪1-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              1,
+              -17
+            ],
+            "max": [
+              7,
+              3,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "最小趾爪10",
+          "parent": "root",
+          "region": {
+            "min": [
+              11,
+              1,
+              -19
+            ],
+            "max": [
+              13,
+              3,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "最小趾爪11",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              1,
+              -17
+            ],
+            "max": [
+              20,
+              3,
+              -15
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "鸡最小喙鼻孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              108,
+              -48
+            ],
+            "max": [
+              4,
+              110,
+              -46
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -13,
+              109,
+              -37
+            ],
+            "max": [
+              -12,
+              110,
+              -36
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              109,
+              -37
+            ],
+            "max": [
+              13,
+              110,
+              -36
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "鸡胸腹": "root",
+          "鸡直立颈羽": "root",
+          "鸡头羽": "root",
+          "鸡腿覆羽-1": "root",
+          "鸡腿覆羽1": "root",
+          "鸡尖喙": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "鸡赭色披羽翼组": "root",
+          "鸡深色尾与覆羽": "root",
+          "鸡真实足趾": "root",
+          "鸡冠及肉垂组": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -20,
+                1,
+                -48
+              ],
+              "max": [
+                20,
+                110,
+                -15
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "鸡胸腹",
+          "material": 459,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鸡直立颈羽",
+          "material": 459,
+          "collision": false,
+          "triangles": 216
+        },
+        {
+          "name": "鸡头羽",
+          "material": 459,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鸡腿覆羽-1",
+          "material": 459,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鸡腿覆羽1",
+          "material": 459,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鸡尖喙",
+          "material": 465,
+          "collision": false,
+          "triangles": 100
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鸡赭色披羽翼组",
+          "material": 460,
+          "collision": false,
+          "triangles": 1472
+        },
+        {
+          "name": "鸡深色尾与覆羽",
+          "material": 461,
+          "collision": false,
+          "triangles": 1360
+        },
+        {
+          "name": "鸡真实足趾",
+          "material": 466,
+          "collision": false,
+          "triangles": 672
+        },
+        {
+          "name": "鸡冠及肉垂组",
+          "material": 467,
+          "collision": false,
+          "triangles": 1568
+        }
+      ]
+    },
+    {
+      "id": "char-311",
+      "name": "鸭精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -20,
+              1,
+              -53
+            ],
+            "max": [
+              20,
+              94,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "蹼足最小趾尖-1-0.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              1,
+              -18
+            ],
+            "max": [
+              -18,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "蹼足最小趾尖-10",
+          "parent": "root",
+          "region": {
+            "min": [
+              -14,
+              1,
+              -18
+            ],
+            "max": [
+              -12,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "蹼足最小趾尖-10.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              1,
+              -18
+            ],
+            "max": [
+              -5,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "蹼足最小趾尖1-0.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              1,
+              -18
+            ],
+            "max": [
+              7,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "蹼足最小趾尖10",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              1,
+              -18
+            ],
+            "max": [
+              14,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "蹼足最小趾尖10.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              1,
+              -18
+            ],
+            "max": [
+              20,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "最小喙鼻孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              88,
+              -53
+            ],
+            "max": [
+              -4,
+              90,
+              -51
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "最小喙鼻孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              88,
+              -53
+            ],
+            "max": [
+              6,
+              90,
+              -51
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -14,
+              93,
+              -39
+            ],
+            "max": [
+              -13,
+              94,
+              -38
+            ]
+          }
+        },
+        {
+          "id": "part-9",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              93,
+              -39
+            ],
+            "max": [
+              14,
+              94,
+              -38
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "鸭绿羽头": "root",
+          "上喙": "root",
+          "下喙": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "鸭蓝翼镜-1": "root",
+          "鸭蓝翼镜1": "root",
+          "水鸟尾羽-1": "root",
+          "水鸟尾羽0": "root",
+          "水鸟尾羽1": "root",
+          "鸭白色羽组": "root",
+          "鸭褐色覆羽组": "root",
+          "水鸟足胫与蹼足": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -20,
+                1,
+                -53
+              ],
+              "max": [
+                20,
+                94,
+                -16
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "鸭绿羽头",
+          "material": 462,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "上喙",
+          "material": 465,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "下喙",
+          "material": 465,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鸭蓝翼镜-1",
+          "material": 463,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "鸭蓝翼镜1",
+          "material": 463,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "水鸟尾羽-1",
+          "material": 461,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "水鸟尾羽0",
+          "material": 461,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "水鸟尾羽1",
+          "material": 461,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "鸭白色羽组",
+          "material": 459,
+          "collision": false,
+          "triangles": 384
+        },
+        {
+          "name": "鸭褐色覆羽组",
+          "material": 460,
+          "collision": false,
+          "triangles": 1656
+        },
+        {
+          "name": "水鸟足胫与蹼足",
+          "material": 466,
+          "collision": false,
+          "triangles": 200
+        }
+      ]
+    },
+    {
+      "id": "char-312",
+      "name": "鹅精细体素视觉母版",
+      "version": 3,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -22,
+              1,
+              -59
+            ],
+            "max": [
+              22,
+              164,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "蹼足最小趾尖-1-0.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              -22,
+              1,
+              -18
+            ],
+            "max": [
+              -20,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "蹼足最小趾尖-10",
+          "parent": "root",
+          "region": {
+            "min": [
+              -15,
+              1,
+              -18
+            ],
+            "max": [
+              -13,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "蹼足最小趾尖-10.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              1,
+              -18
+            ],
+            "max": [
+              -7,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "蹼足最小趾尖1-0.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              1,
+              -18
+            ],
+            "max": [
+              9,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "蹼足最小趾尖10",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              1,
+              -18
+            ],
+            "max": [
+              15,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "蹼足最小趾尖10.032",
+          "parent": "root",
+          "region": {
+            "min": [
+              20,
+              1,
+              -18
+            ],
+            "max": [
+              22,
+              3,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "最小喙鼻孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              157,
+              -59
+            ],
+            "max": [
+              -4,
+              159,
+              -57
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "最小喙鼻孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              157,
+              -59
+            ],
+            "max": [
+              6,
+              159,
+              -57
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -14,
+              163,
+              -42
+            ],
+            "max": [
+              -13,
+              164,
+              -41
+            ]
+          }
+        },
+        {
+          "id": "part-9",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              163,
+              -42
+            ],
+            "max": [
+              14,
+              164,
+              -41
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "上喙": "root",
+          "下喙": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "鹅白色羽组": "root",
+          "水鸟足胫与蹼足": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -22,
+                1,
+                -59
+              ],
+              "max": [
+                22,
+                164,
+                -16
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "上喙",
+          "material": 465,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "下喙",
+          "material": 465,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鹅白色羽组",
+          "material": 459,
+          "collision": false,
+          "triangles": 2344
+        },
+        {
+          "name": "水鸟足胫与蹼足",
+          "material": 466,
+          "collision": false,
+          "triangles": 200
+        }
+      ]
+    },
+    {
+      "id": "char-313",
+      "name": "猪精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -22,
+              64,
+              -83
+            ],
+            "max": [
+              22,
+              75,
+              -63
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小鼻孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              64,
+              -83
+            ],
+            "max": [
+              -5,
+              66,
+              -81
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小鼻孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              64,
+              -83
+            ],
+            "max": [
+              7,
+              66,
+              -81
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -22,
+              74,
+              -64
+            ],
+            "max": [
+              -21,
+              75,
+              -63
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              21,
+              74,
+              -64
+            ],
+            "max": [
+              22,
+              75,
+              -63
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "猪宽厚躯干": "root",
+          "独立四腿-1false": "root",
+          "独立分蹄-1false分趾-1": "root",
+          "独立分蹄-1false分趾1": "root",
+          "独立四腿-1true": "root",
+          "独立分蹄-1true分趾-1": "root",
+          "独立分蹄-1true分趾1": "root",
+          "独立四腿1false": "root",
+          "独立分蹄1false分趾-1": "root",
+          "独立分蹄1false分趾1": "root",
+          "独立四腿1true": "root",
+          "独立分蹄1true分趾-1": "root",
+          "独立分蹄1true分趾1": "root",
+          "独立头颅": "root",
+          "凸出口鼻": "root",
+          "鼻盘": "root",
+          "耳外面-1": "root",
+          "耳内皮-1": "root",
+          "耳外面1": "root",
+          "耳内皮1": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "猪卷尾": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -22,
+                64,
+                -83
+              ],
+              "max": [
+                22,
+                75,
+                -63
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "猪宽厚躯干",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立四腿-1false",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄-1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄-1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立四腿-1true",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄-1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄-1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立四腿1false",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立四腿1true",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立头颅",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "凸出口鼻",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鼻盘",
+          "material": 473,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "耳外面-1",
+          "material": 472,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "耳内皮-1",
+          "material": 472,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "耳外面1",
+          "material": 472,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "耳内皮1",
+          "material": 472,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "猪卷尾",
+          "material": 472,
+          "collision": false,
+          "triangles": 420
+        }
+      ]
+    },
+    {
+      "id": "char-314",
+      "name": "山羊精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -18,
+              121,
+              -110
+            ],
+            "max": [
+              18,
+              140,
+              -86
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小鼻孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              121,
+              -110
+            ],
+            "max": [
+              -4,
+              123,
+              -108
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小鼻孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              121,
+              -110
+            ],
+            "max": [
+              6,
+              123,
+              -108
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -18,
+              139,
+              -87
+            ],
+            "max": [
+              -17,
+              140,
+              -86
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              17,
+              139,
+              -87
+            ],
+            "max": [
+              18,
+              140,
+              -86
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "goat独立躯干": "root",
+          "goat四腿-1false": "root",
+          "goat分蹄-1false分趾-1": "root",
+          "goat分蹄-1false分趾1": "root",
+          "goat四腿-1true": "root",
+          "goat分蹄-1true分趾-1": "root",
+          "goat分蹄-1true分趾1": "root",
+          "goat四腿1false": "root",
+          "goat分蹄1false分趾-1": "root",
+          "goat分蹄1false分趾1": "root",
+          "goat四腿1true": "root",
+          "goat分蹄1true分趾-1": "root",
+          "goat分蹄1true分趾1": "root",
+          "goat独立斜颈": "root",
+          "goat头颅": "root",
+          "goat口鼻": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "goat横向耳-1": "root",
+          "goat耳内皮-1": "root",
+          "goat横向耳1": "root",
+          "goat耳内皮1": "root",
+          "山羊后弯不分枝角-1": "root",
+          "山羊后弯不分枝角1": "root",
+          "山羊下颌长须": "root",
+          "goat短尾": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -18,
+                121,
+                -110
+              ],
+              "max": [
+                18,
+                140,
+                -86
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "goat独立躯干",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "goat四腿-1false",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "goat分蹄-1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat分蹄-1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat四腿-1true",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "goat分蹄-1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat分蹄-1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat四腿1false",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "goat分蹄1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat分蹄1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat四腿1true",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "goat分蹄1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat分蹄1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "goat独立斜颈",
+          "material": 448,
+          "collision": false,
+          "triangles": 264
+        },
+        {
+          "name": "goat头颅",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "goat口鼻",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "goat横向耳-1",
+          "material": 448,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "goat耳内皮-1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "goat横向耳1",
+          "material": 448,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "goat耳内皮1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "山羊后弯不分枝角-1",
+          "material": 475,
+          "collision": false,
+          "triangles": 340
+        },
+        {
+          "name": "山羊后弯不分枝角1",
+          "material": 475,
+          "collision": false,
+          "triangles": 340
+        },
+        {
+          "name": "山羊下颌长须",
+          "material": 448,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "goat短尾",
+          "material": 448,
+          "collision": false,
+          "triangles": 80
+        }
+      ]
+    },
+    {
+      "id": "char-315",
+      "name": "牛精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -31,
+              203,
+              -162
+            ],
+            "max": [
+              31,
+              230,
+              -126
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小鼻孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              203,
+              -162
+            ],
+            "max": [
+              -10,
+              205,
+              -160
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小鼻孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              203,
+              -162
+            ],
+            "max": [
+              12,
+              205,
+              -160
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -31,
+              228,
+              -128
+            ],
+            "max": [
+              -29,
+              230,
+              -126
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              29,
+              228,
+              -128
+            ],
+            "max": [
+              31,
+              230,
+              -126
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "cow独立躯干": "root",
+          "牛天然被毛斑块": "root",
+          "cow四腿-1false": "root",
+          "cow分蹄-1false分趾-1": "root",
+          "cow分蹄-1false分趾1": "root",
+          "cow四腿-1true": "root",
+          "cow分蹄-1true分趾-1": "root",
+          "cow分蹄-1true分趾1": "root",
+          "cow四腿1false": "root",
+          "cow分蹄1false分趾-1": "root",
+          "cow分蹄1false分趾1": "root",
+          "cow四腿1true": "root",
+          "cow分蹄1true分趾-1": "root",
+          "cow分蹄1true分趾1": "root",
+          "cow独立斜颈": "root",
+          "cow头颅": "root",
+          "cow口鼻": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "cow横向耳-1": "root",
+          "cow耳内皮-1": "root",
+          "cow横向耳1": "root",
+          "cow耳内皮1": "root",
+          "牛侧生角-1": "root",
+          "牛侧生角1": "root",
+          "牛乳房皮肤": "root",
+          "牛乳头-1-0.04": "root",
+          "牛乳头-10.04": "root",
+          "牛乳头1-0.04": "root",
+          "牛乳头10.04": "root",
+          "牛垂尾": "root",
+          "牛尾端深毛": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -31,
+                203,
+                -162
+              ],
+              "max": [
+                31,
+                230,
+                -126
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "cow独立躯干",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "牛天然被毛斑块",
+          "material": 450,
+          "collision": false,
+          "triangles": 752
+        },
+        {
+          "name": "cow四腿-1false",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "cow分蹄-1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow分蹄-1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow四腿-1true",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "cow分蹄-1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow分蹄-1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow四腿1false",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "cow分蹄1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow分蹄1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow四腿1true",
+          "material": 448,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "cow分蹄1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow分蹄1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "cow独立斜颈",
+          "material": 448,
+          "collision": false,
+          "triangles": 264
+        },
+        {
+          "name": "cow头颅",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "cow口鼻",
+          "material": 473,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "cow横向耳-1",
+          "material": 450,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "cow耳内皮-1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "cow横向耳1",
+          "material": 450,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "cow耳内皮1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "牛侧生角-1",
+          "material": 475,
+          "collision": false,
+          "triangles": 300
+        },
+        {
+          "name": "牛侧生角1",
+          "material": 475,
+          "collision": false,
+          "triangles": 300
+        },
+        {
+          "name": "牛乳房皮肤",
+          "material": 472,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "牛乳头-1-0.04",
+          "material": 472,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "牛乳头-10.04",
+          "material": 472,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "牛乳头1-0.04",
+          "material": 472,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "牛乳头10.04",
+          "material": 472,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "牛垂尾",
+          "material": 448,
+          "collision": false,
+          "triangles": 300
+        },
+        {
+          "name": "牛尾端深毛",
+          "material": 451,
+          "collision": false,
+          "triangles": 224
+        }
+      ]
+    },
+    {
+      "id": "char-316",
+      "name": "山林鹿精细体素视觉母版",
+      "version": 3,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -19,
+              224,
+              -134
+            ],
+            "max": [
+              19,
+              241,
+              -107
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小鼻孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              224,
+              -134
+            ],
+            "max": [
+              -4,
+              226,
+              -132
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小鼻孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              224,
+              -134
+            ],
+            "max": [
+              6,
+              226,
+              -132
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -19,
+              240,
+              -108
+            ],
+            "max": [
+              -18,
+              241,
+              -107
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              240,
+              -108
+            ],
+            "max": [
+              19,
+              241,
+              -107
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "deer独立躯干": "root",
+          "鹿细白毛斑": "root",
+          "deer四腿-1false": "root",
+          "deer分蹄-1false分趾-1": "root",
+          "deer分蹄-1false分趾1": "root",
+          "deer四腿-1true": "root",
+          "deer分蹄-1true分趾-1": "root",
+          "deer分蹄-1true分趾1": "root",
+          "deer四腿1false": "root",
+          "deer分蹄1false分趾-1": "root",
+          "deer分蹄1false分趾1": "root",
+          "deer四腿1true": "root",
+          "deer分蹄1true分趾-1": "root",
+          "deer分蹄1true分趾1": "root",
+          "deer独立斜颈": "root",
+          "deer头颅": "root",
+          "deer口鼻": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "deer横向耳-1": "root",
+          "deer耳内皮-1": "root",
+          "deer横向耳1": "root",
+          "deer耳内皮1": "root",
+          "deer短尾": "root",
+          "鹿骨质分枝角组": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -19,
+                224,
+                -134
+              ],
+              "max": [
+                19,
+                241,
+                -107
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "deer独立躯干",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鹿细白毛斑",
+          "material": 448,
+          "collision": false,
+          "triangles": 200
+        },
+        {
+          "name": "deer四腿-1false",
+          "material": 449,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "deer分蹄-1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer分蹄-1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer四腿-1true",
+          "material": 449,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "deer分蹄-1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer分蹄-1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer四腿1false",
+          "material": 449,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "deer分蹄1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer分蹄1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer四腿1true",
+          "material": 449,
+          "collision": false,
+          "triangles": 140
+        },
+        {
+          "name": "deer分蹄1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer分蹄1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "deer独立斜颈",
+          "material": 449,
+          "collision": false,
+          "triangles": 264
+        },
+        {
+          "name": "deer头颅",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "deer口鼻",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "deer横向耳-1",
+          "material": 449,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "deer耳内皮-1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "deer横向耳1",
+          "material": 449,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "deer耳内皮1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "deer短尾",
+          "material": 449,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "鹿骨质分枝角组",
+          "material": 476,
+          "collision": false,
+          "triangles": 1464
+        }
+      ]
+    },
+    {
+      "id": "char-317",
+      "name": "野猪精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              76,
+              -111
+            ],
+            "max": [
+              28,
+              87,
+              -71
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小鼻孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              76,
+              -111
+            ],
+            "max": [
+              -5,
+              78,
+              -109
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小鼻孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              76,
+              -111
+            ],
+            "max": [
+              7,
+              78,
+              -109
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              86,
+              -72
+            ],
+            "max": [
+              -27,
+              87,
+              -71
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              27,
+              86,
+              -72
+            ],
+            "max": [
+              28,
+              87,
+              -71
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "野猪厚肩躯干": "root",
+          "独立四腿-1false": "root",
+          "独立分蹄-1false分趾-1": "root",
+          "独立分蹄-1false分趾1": "root",
+          "独立四腿-1true": "root",
+          "独立分蹄-1true分趾-1": "root",
+          "独立分蹄-1true分趾1": "root",
+          "独立四腿1false": "root",
+          "独立分蹄1false分趾-1": "root",
+          "独立分蹄1false分趾1": "root",
+          "独立四腿1true": "root",
+          "独立分蹄1true分趾-1": "root",
+          "独立分蹄1true分趾1": "root",
+          "独立头颅": "root",
+          "凸出口鼻": "root",
+          "鼻盘": "root",
+          "耳外面-1": "root",
+          "耳内皮-1": "root",
+          "耳外面1": "root",
+          "耳内皮1": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "野猪弯曲獠牙-1": "root",
+          "野猪弯曲獠牙1": "root",
+          "野猪深色鬃与尾": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -28,
+                76,
+                -111
+              ],
+              "max": [
+                28,
+                87,
+                -71
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "野猪厚肩躯干",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立四腿-1false",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄-1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄-1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立四腿-1true",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄-1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄-1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立四腿1false",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄1false分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄1false分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立四腿1true",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "独立分蹄1true分趾-1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立分蹄1true分趾1",
+          "material": 474,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立头颅",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "凸出口鼻",
+          "material": 450,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "鼻盘",
+          "material": 473,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "耳外面-1",
+          "material": 450,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "耳内皮-1",
+          "material": 472,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "耳外面1",
+          "material": 450,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "耳内皮1",
+          "material": 472,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "野猪弯曲獠牙-1",
+          "material": 477,
+          "collision": false,
+          "triangles": 220
+        },
+        {
+          "name": "野猪弯曲獠牙1",
+          "material": 477,
+          "collision": false,
+          "triangles": 220
+        },
+        {
+          "name": "野猪深色鬃与尾",
+          "material": 451,
+          "collision": false,
+          "triangles": 860
+        }
+      ]
+    },
+    {
+      "id": "char-318",
+      "name": "松鼠精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -16,
+              2,
+              -41
+            ],
+            "max": [
+              15,
+              70,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "松鼠最小后爪-1-0.012",
+          "parent": "root",
+          "region": {
+            "min": [
+              -16,
+              2,
+              -19
+            ],
+            "max": [
+              -14,
+              4,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "松鼠最小后爪-10.01",
+          "parent": "root",
+          "region": {
+            "min": [
+              -11,
+              2,
+              -19
+            ],
+            "max": [
+              -9,
+              4,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "松鼠最小前爪-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              46,
+              -41
+            ],
+            "max": [
+              -4,
+              48,
+              -39
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "松鼠最小后爪1-0.012",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              2,
+              -19
+            ],
+            "max": [
+              11,
+              4,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "松鼠最小后爪10.01",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              2,
+              -19
+            ],
+            "max": [
+              15,
+              4,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "松鼠最小前爪1",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              46,
+              -41
+            ],
+            "max": [
+              6,
+              48,
+              -39
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -13,
+              69,
+              -19
+            ],
+            "max": [
+              -12,
+              70,
+              -18
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              69,
+              -19
+            ],
+            "max": [
+              13,
+              70,
+              -18
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "松鼠最小鼻尖",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              64,
+              -33
+            ],
+            "max": [
+              1,
+              66,
+              -31
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "松鼠坐立躯干": "root",
+          "松鼠白胸腹": "root",
+          "松鼠大后腿-1": "root",
+          "松鼠后足-1": "root",
+          "松鼠屈前臂-1": "root",
+          "松鼠小前掌-1": "root",
+          "松鼠大后腿1": "root",
+          "松鼠后足1": "root",
+          "松鼠屈前臂1": "root",
+          "松鼠小前掌1": "root",
+          "松鼠头颅": "root",
+          "松鼠白颊-1": "root",
+          "松鼠尖耳-1": "root",
+          "松鼠耳内皮-1": "root",
+          "松鼠白颊1": "root",
+          "松鼠尖耳1": "root",
+          "松鼠耳内皮1": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "松鼠短口鼻": "root",
+          "松鼠静态坚果壳": "root",
+          "松鼠蓬松大尾": "root",
+          "松鼠尾端浅毛": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -16,
+                2,
+                -41
+              ],
+              "max": [
+                15,
+                70,
+                -17
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "松鼠坐立躯干",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠白胸腹",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠大后腿-1",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠后足-1",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠屈前臂-1",
+          "material": 449,
+          "collision": false,
+          "triangles": 300
+        },
+        {
+          "name": "松鼠小前掌-1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠大后腿1",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠后足1",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠屈前臂1",
+          "material": 449,
+          "collision": false,
+          "triangles": 300
+        },
+        {
+          "name": "松鼠小前掌1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠头颅",
+          "material": 449,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠白颊-1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠尖耳-1",
+          "material": 449,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "松鼠耳内皮-1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "松鼠白颊1",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠尖耳1",
+          "material": 449,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "松鼠耳内皮1",
+          "material": 452,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠短口鼻",
+          "material": 448,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠静态坚果壳",
+          "material": 478,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "松鼠蓬松大尾",
+          "material": 449,
+          "collision": false,
+          "triangles": 588
+        },
+        {
+          "name": "松鼠尾端浅毛",
+          "material": 448,
+          "collision": false,
+          "triangles": 168
+        }
+      ]
+    },
+    {
+      "id": "char-319",
+      "name": "山林小鸟精细体素视觉母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小瞳孔/鼻孔/趾爪",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              1,
+              -11
+            ],
+            "max": [
+              9,
+              43,
+              -7
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "最小趾爪-1-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              1,
+              -9
+            ],
+            "max": [
+              -7,
+              3,
+              -7
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "最小趾爪-10",
+          "parent": "root",
+          "region": {
+            "min": [
+              -5,
+              1,
+              -11
+            ],
+            "max": [
+              -3,
+              3,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "最小趾爪-11",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              1,
+              -9
+            ],
+            "max": [
+              1,
+              3,
+              -7
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "最小趾爪10",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              1,
+              -11
+            ],
+            "max": [
+              5,
+              3,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "最小趾爪11",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              1,
+              -9
+            ],
+            "max": [
+              9,
+              3,
+              -7
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "最小瞳孔-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              42,
+              -10
+            ],
+            "max": [
+              -7,
+              43,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "最小瞳孔1",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              42,
+              -10
+            ],
+            "max": [
+              8,
+              43,
+              -9
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "小鸟梨形胸腹": "root",
+          "小鸟黄胸": "root",
+          "小鸟白颊-1": "root",
+          "小鸟白颊1": "root",
+          "小鸟尖喙": "root",
+          "眼白-1": "root",
+          "侧向虹膜-1": "root",
+          "眼白1": "root",
+          "侧向虹膜1": "root",
+          "小鸟真实趾与足": "root",
+          "小鸟蓝色头翼尾": "root",
+          "小鸟深色羽组": "root"
+        },
+        "voxelJoints": [
+          {
+            "joint": "root",
+            "region": {
+              "min": [
+                -9,
+                1,
+                -11
+              ],
+              "max": [
+                9,
+                43,
+                -7
+              ]
+            }
+          }
+        ],
+        "sockets": {},
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "小鸟梨形胸腹",
+          "material": 459,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "小鸟黄胸",
+          "material": 464,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "小鸟白颊-1",
+          "material": 459,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "小鸟白颊1",
+          "material": 459,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "小鸟尖喙",
+          "material": 479,
+          "collision": false,
+          "triangles": 80
+        },
+        {
+          "name": "眼白-1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜-1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "眼白1",
+          "material": 240,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "侧向虹膜1",
+          "material": 454,
+          "collision": false,
+          "triangles": 224
+        },
+        {
+          "name": "小鸟真实趾与足",
+          "material": 466,
+          "collision": false,
+          "triangles": 672
+        },
+        {
+          "name": "小鸟蓝色头翼尾",
+          "material": 463,
+          "collision": false,
+          "triangles": 848
+        },
+        {
+          "name": "小鸟深色羽组",
+          "material": 461,
+          "collision": false,
+          "triangles": 704
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "char-308-display",
+      "assetId": "char-308",
+      "name": "兔精细体素视觉母版",
+      "position": [
+        0.144,
+        0,
+        0.223
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-309-display",
+      "assetId": "char-309",
+      "name": "观赏鱼精细体素视觉母版",
+      "position": [
+        1.32563845,
+        -0.047,
+        0.16
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-310-display",
+      "assetId": "char-310",
+      "name": "鸡精细体素视觉母版",
+      "position": [
+        2.56867762,
+        -0.00307132,
+        0.28133695
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-311-display",
+      "assetId": "char-311",
+      "name": "鸭精细体素视觉母版",
+      "position": [
+        3.78541846,
+        -0.005,
+        0.318
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-312-display",
+      "assetId": "char-312",
+      "name": "鹅精细体素视觉母版",
+      "position": [
+        0.177,
+        -0.005,
+        2.475
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-313-display",
+      "assetId": "char-313",
+      "name": "猪精细体素视觉母版",
+      "position": [
+        1.38,
+        0,
+        2.535
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-314-display",
+      "assetId": "char-314",
+      "name": "山羊精细体素视觉母版",
+      "position": [
+        2.58688388,
+        0,
+        2.67
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-315-display",
+      "assetId": "char-315",
+      "name": "牛精细体素视觉母版",
+      "position": [
+        3.915,
+        0,
+        2.9304
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-316-display",
+      "assetId": "char-316",
+      "name": "山林鹿精细体素视觉母版",
+      "position": [
+        0.35078404,
+        0,
+        4.9104
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-317-display",
+      "assetId": "char-317",
+      "name": "野猪精细体素视觉母版",
+      "position": [
+        1.41,
+        0,
+        4.795
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-318-display",
+      "assetId": "char-318",
+      "name": "松鼠精细体素视觉母版",
+      "position": [
+        2.524,
+        0,
+        4.456
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-319-display",
+      "assetId": "char-319",
+      "name": "山林小鸟精细体素视觉母版",
+      "position": [
+        3.67284172,
+        -0.005,
+        4.33645808
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

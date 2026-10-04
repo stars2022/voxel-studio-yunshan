@@ -1,0 +1,46 @@
+import {AvatarModel} from './avatar-model';import {ROOT,pin} from './held-shapes';import {oval} from './care-goods';import {faunaTube,feather,sideEyes,splitHoof,surfacePatch,compactRole} from './fauna-shapes';import type {V3} from '../core/types';
+
+export function rabbit(m:AvatarModel,form:string){
+ oval(m,'兔梨形后躯','faunaFurGray',[0,.205,.075],[.105,.175,.190]);oval(m,'兔白胸','animalFurWhite',[0,.205,-.065],[.075,.145,.095]);
+ for(const s of[-1,1]){oval(m,'兔后腿大腿'+s,'faunaFurGray',[s*.079,.13,.105],[.065,.12,.105]);oval(m,'兔长后足'+s,'animalFurWhite',[s*.085,.030,.005],[.048,.030,.106]);oval(m,'兔独立前臂'+s,'animalFurWhite',[s*.05,.112,-.10],[.025,.094,.030]);oval(m,'兔前足'+s,'animalFurWhite',[s*.05,.023,-.135],[.027,.023,.040]);for(const z of[-.17,-.082])pin(m,'兔最小趾爪'+s+z,[s*(z===-.17?.05:.085),.013,z],'animalClaw');}
+ oval(m,'兔头颅','faunaFurGray',[0,.369,-.117],[.088,.083,.086]);for(const s of[-1,1]){oval(m,'兔白颊'+s,'animalFurWhite',[s*.027,.348,-.179],[.043,.037,.044]);const low=.414,tip=form==='upright'?.682:.592,z=form==='upright'?-.090:.020;m.add('兔长外耳'+s,'faunaFurGray',[{x:s*.040,y:low,z:-.10,rx:.021,rz:.020},{x:s*.07,y:(low+tip)/2,z:(-.1+z)/2,rx:.031,rz:.017},{x:s*.093,y:tip-.018,z,rx:.022,rz:.013},{x:s*.091,y:tip,z,rx:.008,rz:.007}],ROOT);m.add('兔长耳内皮'+s,'animalSkin',[{x:s*.043,y:low+.025,z:-.12,rx:.008,rz:.005},{x:s*.07,y:(low+tip)/2,z:(-.1+z)/2-.014,rx:.020,rz:.005},{x:s*.091,y:tip-.023,z:z-.010,rx:.007,rz:.004}],ROOT);}
+ sideEyes(m,[0,.383,-.141],.076,.015);pin(m,'兔最小鼻端',[0,.358,-.217],'animalSkin',.010);oval(m,'兔圆短尾','animalFurWhite',[0,.194,.263],[.045,.046,.045]);m.detail.anatomy='Seated lagomorph: long independent ears, enlarged hind hocks, long rear feet and short round tail. Ear forms are authored static shapes.';
+}
+
+export function squirrel(m:AvatarModel,form:string){
+ oval(m,'松鼠坐立躯干','animalFurGinger',[0,.174,.026],[.071,.143,.105]);oval(m,'松鼠白胸腹','animalFurWhite',[0,.187,-.058],[.054,.106,.036]);
+ for(const s of[-1,1]){oval(m,'松鼠大后腿'+s,'animalFurGinger',[s*.062,.079,.032],[.052,.075,.071]);oval(m,'松鼠后足'+s,'animalFurGinger',[s*.062,.022,-.038],[.030,.022,.059]);for(const dx of[-.012,.010])pin(m,'松鼠最小后爪'+s+dx,[s*.062+dx,.013,-.091],'animalClaw');faunaTube(m,'松鼠屈前臂'+s,'animalFurGinger',[[s*.049,.257,-.034],[s*.064,.216,-.114],[s*.028,.240,-.164]],.020,.015);oval(m,'松鼠小前掌'+s,'animalFurWhite',[s*.029,.238,-.171],[.023,.018,.032]);pin(m,'松鼠最小前爪'+s,[s*.027,.236,-.198],'animalClaw');}
+ oval(m,'松鼠头颅','animalFurGinger',[0,.337,-.065],[.064,.065,.077]);for(const s of[-1,1]){oval(m,'松鼠白颊'+s,'animalFurWhite',[s*.023,.316,-.125],[.030,.027,.033]);feather(m,'松鼠尖耳'+s,'animalFurGinger',[s*.042,.380,-.044],[s*.055,.466,-.02],.019,.014);feather(m,'松鼠耳内皮'+s,'animalSkin',[s*.043,.389,-.057],[s*.052,.446,-.038],.010,.0035);}
+ sideEyes(m,[0,.349,-.092],.054,.012);oval(m,'松鼠短口鼻','animalFurWhite',[0,.323,-.141],[.028,.021,.023]);pin(m,'松鼠最小鼻尖',[0,.325,-.162],'animalNose',.010);oval(m,'松鼠静态坚果壳','seedNutShell',[0,.235,-.185],[.034,.042,.031]);
+ const lean=form==='arched'?.29:.19;faunaTube(m,'松鼠蓬松大尾','animalFurGinger',[[0,.13,.105],[0,.16,.245],[0,.35,.32],[0,.50,lean],[0,.49,lean-.08]],.038,.060,1.45,20,14);faunaTube(m,'松鼠尾端浅毛','animalFurWhite',[[0,.48,lean-.05],[0,.50,lean-.095]],.057,.028,1.25,6,12);m.detail.anatomy='Independent upright squirrel with folded forearms, enlarged bushy curved tail and a separate static nut visual; no inventory or resource creation.';
+}
+
+export function pig(m:AvatarModel,form:string,boar=false){
+ const h=boar?.65:.49,z=boar?.15:.105,role=boar?'animalFurBrown':'livestockSkin',front=boar?-.25:-.135,back=boar?.29:.23;
+ oval(m,boar?'野猪厚肩躯干':'猪宽厚躯干',role,[0,h*.63,z],[boar?.205:.175,h*.30,boar?.40:.325]);
+ for(const s of[-1,1])for(const fore of[false,true]){const x=s*(boar?.131:.114),zz=fore?front:back;oval(m,'独立四腿'+s+fore,role,[x,h*.31,zz],[boar?.063:.055,h*.25,boar?.068:.055]);splitHoof(m,'独立分蹄'+s+fore,x,zz,boar?.082:.072,.10,.068);}
+ const hy=boar?.40:.34,hz=boar?-.274:-.234;oval(m,'独立头颅',role,[0,hy,hz],[boar?.150:.133,boar?.145:.115,boar?.19:.134]);
+ oval(m,'凸出口鼻',role,[0,hy-.020,hz-(boar?.145:.099)],[boar?.099:.082,.064,boar?.128:.071]);const nose=hz-(boar?.250:.153);oval(m,'鼻盘','livestockSnout',[0,hy-.019,nose],[boar?.075:.068,.048,.024]);for(const s of[-1,1]){pin(m,'最小鼻孔'+s,[s*.030,hy-.013,nose-.024],'animalNose',.010);const base:V3=[s*(boar?.106:.088),hy+(boar?.084:.070),hz+.015],tip:V3=[s*.171,hy+(boar?.193:form==='ears-alert'?.19:.094),hz-(boar?.022:.045)];feather(m,'耳外面'+s,role,base,tip,.045,.020);feather(m,'耳内皮'+s,'livestockSkin',[base[0],base[1]+.012,base[2]-.017],[tip[0],tip[1]-.010,tip[2]-.010],.029,.006);}
+ sideEyes(m,[0,hy+.030,hz-.082],boar?.128:.098,.016);
+ if(boar){const open=form==='long-tusks'?.125:.085;for(const s of[-1,1])faunaTube(m,'野猪弯曲獠牙'+s,'animalTusk',[[s*.078,hy-.038,nose+.055],[s*.105,hy-.007,nose+.032],[s*.107,hy+open,nose+.018]],.026,.003,1,10,10);for(let j=0;j<7;j++)feather(m,'野猪背鬃'+j,'animalFurDark',[0,h*.83,-.10+j*.073],[0,h*1.02,-.018+j*.073],.044,.015);faunaTube(m,'野猪短尾','animalFurDark',[[0,.48,.45],[0,.43,.60],[0,.32,.61]],.016,.009);compactRole(m,'animalFurDark','野猪深色鬃与尾');}
+ else faunaTube(m,'猪卷尾','livestockSkin',[[0,.37,.37],[0,.42,.43],[.042,.46,.43],[.05,.46,.38],[.026,.438,.372]],.012,.007,1,20,10);
+ m.detail.anatomy=boar?'Wild boar has thick shoulders, bristle mane, long tapered muzzle and curved tusks; distinct from the domestic pig.':'Domestic pig has bare skin, broad barrel, short snout disk, independently folded ears, split hooves and a curled tail.';
+}
+
+export function ungulate(m:AvatarModel,form:string,kind:'goat'|'cow'|'deer'){
+ const cow=kind==='cow',deer=kind==='deer',h=cow?1.12:deer?1.0:.67,L=cow?.63:deer?.43:.35,w=cow?.30:deer?.17:.16,front=-L*.58,back=L*.62,fur=deer?'animalFurGinger':'animalFurWhite';
+ oval(m,kind+'独立躯干',fur,[0,h*.73,.05],[w,h*(cow?.25:deer?.17:.22),L]);const body=m.meshes.at(-1)!;
+ if(cow)surfacePatch(m,'牛天然被毛斑块','animalFurBrown',body,p=>Math.sin(p[2]*10+p[1]*3)+Math.cos(p[0]*9)>.6&&p[1]>.52);
+ if(deer)surfacePatch(m,'鹿细白毛斑','animalFurWhite',body,p=>p[1]>.70&&Math.cos(p[2]*36+p[0]*21)>.68&&Math.sin(p[1]*45)>.0);
+ for(const s of[-1,1])for(const fore of[false,true]){const x=s*w*.68,z=fore?front:back,knee=h*.33,rz=deer?.031:cow?.060:.035;faunaTube(m,kind+'四腿'+s+fore,fur,[[x,h*.73,z],[x,knee,z+(fore?.015:-.05)],[x,.065,z]],cow?.070:deer?.035:.037,cow?.044:.022,1,6,10);splitHoof(m,kind+'分蹄'+s+fore,x,z,cow?.107:deer?.067:.068,cow?.15:.096,cow?.10:.066);}
+ const neckTop:V3=[0,h*(deer?1.18:1.00),front-(deer?.18:cow?.16:.12)];faunaTube(m,kind+'独立斜颈',fur,[[0,h*.74,front+.045],[0,h*.96,front-.09],neckTop],w*.64,w*.46,1.07,10,12);
+ const hy=neckTop[1],hz=neckTop[2]-.045,headFur=cow?'animalFurBrown':fur;oval(m,kind+'头颅',headFur,[0,hy,hz],[cow?.15:deer?.090:.083,cow?.18:deer?.135:.11,cow?.19:deer?.16:.14]);
+ const nz=hz-(cow?.14:deer?.126:.112),ny=hy-(cow?.10:deer?.057:.061);oval(m,kind+'口鼻',cow?'livestockSnout':'animalFurWhite',[0,ny,nz],[cow?.125:deer?.063:.059,cow?.067:.046,cow?.10:.070]);for(const s of[-1,1])pin(m,'最小鼻孔'+s,[s*(cow?.053:.025),ny,nz-(cow?.095:.063)],'animalNose',.010);
+ sideEyes(m,[0,hy+.025,hz-.065],cow?.134:deer?.083:.075,cow?.025:.018);
+ for(const s of[-1,1]){feather(m,kind+'横向耳'+s,headFur,[s*(cow?.113:.072),hy+.063,hz+.004],[s*(cow?.273:deer?.20:.176),hy+(deer?.158:.13),hz+.040],cow?.055:.038,cow?.020:.013);feather(m,kind+'耳内皮'+s,'animalSkin',[s*(cow?.139:.09),hy+.074,hz-.005],[s*(cow?.247:deer?.183:.16),hy+(deer?.146:.12),hz+.017],cow?.034:.021,.006);}
+ if(kind==='goat'){for(const s of[-1,1])faunaTube(m,'山羊后弯不分枝角'+s,'animalHorn',[[s*.052,hy+.077,hz+.026],[s*.081,hy+.23,hz+.04],[s*.092,hy+(form==='horn-high'?.40:.31),hz+.15],[s*.097,hy+.28,hz+.25]],.030,.003,1,16,10);feather(m,'山羊下颌长须','animalFurWhite',[0,ny-.025,nz+.014],[0,ny-.17,nz+.04],.025,.023);}
+ else if(cow){for(const s of[-1,1])faunaTube(m,'牛侧生角'+s,'animalHorn',[[s*.098,hy+.116,hz+.047],[s*.20,hy+.195,hz+.077],[s*.22,hy+(form==='horn-up'?.34:.27),hz+.07]],.040,.004);oval(m,'牛乳房皮肤','livestockSkin',[0,h*.47,back-.05],[.115,.080,.12]);for(const s of[-1,1])for(const z of[-.04,.04])faunaTube(m,'牛乳头'+s+z,'livestockSkin',[[s*.064,h*.44,back-.05+z],[s*.068,h*.35,back-.05+z]],.016,.013,1,3,8);}
+ else for(const s of[-1,1]){const k=form==='wide-antlers'?1.2:1;faunaTube(m,'鹿主角枝'+s,'deerAntler',[[s*.055,hy+.096,hz+.04],[s*.095*k,hy+.24,hz+.015],[s*.17*k,hy+.43,hz+.05],[s*.23*k,hy+.56,hz+.09]],.028,.004,1,14,10);for(let j=0;j<3;j++)faunaTube(m,'鹿分枝角'+s+j,'deerAntler',[[s*(.085+.04*j)*k,hy+.22+j*.105,hz+.025+j*.012],[s*(.145+.061*j)*k,hy+.32+j*.112,hz-.08],[s*(.16+.065*j)*k,hy+.40+j*.107,hz-.085]],.016-j*.003,.003,1,8,8);}
+ if(cow){faunaTube(m,'牛垂尾','animalFurWhite',[[0,h*.86,L-.04],[.05,h*.65,L+.15],[.055,h*.29,L+.12]],.018,.014);oval(m,'牛尾端深毛','animalFurDark',[.055,h*.29,L+.12],[.035,.085,.035]);}else feather(m,kind+'短尾',fur,[0,h*.82,L-.014],[0,h*.92,L+.14],.036,.027);
+ compactRole(m,'deerAntler','鹿骨质分枝角组');m.detail.anatomy=kind==='goat'?'Slender goat, swept unbranched horns, beard and cloven feet.':cow?'Broad dairy bovine, real split hooves, lateral horns, distinct muzzle/udder and hanging tail.':'Long-legged forest deer with narrow neck and true branched antler solids; no scaled cattle proxy.';
+}

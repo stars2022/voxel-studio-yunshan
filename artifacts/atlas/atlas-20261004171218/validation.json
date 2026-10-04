@@ -1,0 +1,96 @@
+{
+  "run": "atlas-20261004171218",
+  "status": "passed",
+  "scope": [
+    "CHAR-308",
+    "CHAR-309",
+    "CHAR-310",
+    "CHAR-311",
+    "CHAR-312",
+    "CHAR-313",
+    "CHAR-314",
+    "CHAR-315",
+    "CHAR-316",
+    "CHAR-317",
+    "CHAR-318",
+    "CHAR-319"
+  ],
+  "tests": {
+    "fullRegression": 432,
+    "focused": 5,
+    "foreignMaterialAllocation": 1,
+    "scope": "Full suite after final production geometry/material source changes. Subsequent validation-harness correction only adds the required palette dry-run, with a complete real MCP rerun."
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 10,
+  "referenceEntries": 12,
+  "catalogMasters": 12,
+  "sharedMasterReferences": [],
+  "componentShapes": 24,
+  "nativeVoxels": 441,
+  "triangles": 55328,
+  "farTriangles": 55244,
+  "defaultGLBIndependentBoundsMaxErrorM": 5.740307607027262e-08,
+  "scaleStudy": {
+    "name": "fauna-scale-study",
+    "instances": 12,
+    "GLBIndependentPoseBoundsMaxErrorM": 5.740307607027262e-08,
+    "skinCount": 12,
+    "noncollision": true
+  },
+  "anatomyChecks": 54,
+  "materialSurfaceRoleSamples": 23,
+  "materialInteriorCoordinateChecks": 12,
+  "assetScreenshots": 36,
+  "undersideDetailScreenshots": 12,
+  "scaleStudyScreenshots": 4,
+  "parameterRebuildScreenshots": 3,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 520,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 490,
+    "generatedEntries": 578,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 504,
+    "atlasSharedMasterReferences": 3,
+    "atlasUniqueMasters": 501
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "referenceImage": "projects/reference-atlas/images/M042.png",
+    "reviewed": [
+      "All 12 front and material images through saved contact sheets, with rabbit, ornamental fish and pig inspected individually.",
+      "All 12 final MCP underside images through a newly regenerated contact sheet.",
+      "All four fauna-scale-study views, including isometric, front, back and material overview.",
+      "Actual rebuilt fish-folded, goose-relaxed and deer-narrow parameter screenshots."
+    ],
+    "findings": [
+      "Species silhouettes remain distinct, with continuous faceted surfaces, curved necks, horns, tails, fins and feather shapes, plus small native voxel details.",
+      "No obvious floating eyes, ear interiors, legs or squirrel nose remain in the inspected views; actual triangle contact checks supply the separate geometric evidence.",
+      "Underside views show separated feet, split hooves, webbed feet and connected fin roots. Thin clefts are verified by coordinate checks in addition to screenshots.",
+      "The metre-scale isometric scene shows relative author sizes. Front and back views overlap rows in projection; individual screenshots provide unobstructed per-asset inspection.",
+      "Geometric coat patterns, small projecting eyes and block-like smallest claws remain stylized and require human art review."
+    ],
+    "humanArtAccepted": 0,
+    "scope": "Assistant visual inspection only; no claim of original runtime dimensions, biological motion, habitat placement, physical support or human art acceptance."
+  },
+  "limitations": [
+    "All technical candidates; human art acceptance zero.",
+    "Original species dimensions, runtime animal contracts and source skeletons unavailable.",
+    "One prop root per animal; no quadruped/bird/fish rig, gait, flight, swimming, soft skin or fur.",
+    "All visual meshes noncollision. Triangle/contact checks do not establish physical support or biomechanical correctness.",
+    "Finite static forms only, including held nut with no resource or inventory generation.",
+    "Independent viewport fitting is not a common metre scale; saved scene provides metre-scale display only.",
+    "Faceted eyes, beaks, hoof/toe details and geometric coat patterns remain for human art review.",
+    "Software WebGL does not certify hardware frame rates."
+  ]
+}

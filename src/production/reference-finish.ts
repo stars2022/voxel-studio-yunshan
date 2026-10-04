@@ -3,10 +3,33 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=33;
+export const referenceFinishVersion=34;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ birdBeakDark:{name:'鸟类深色喙角质',color:'#434744',roughness:.65,metalness:0},
+ liveMouth:{name:'活鱼口唇及口缝',color:'#7e4c48',roughness:.65,metalness:0},
+ faunaFurGray:{name:'动物灰色被毛',color:'#8b867d',roughness:0.86,metalness:0,...surface('none',.035,0,1300)},
+ featherCream:{name:'鸟类乳白羽片',color:'#ddd8bc',roughness:0.86,metalness:0,...surface('none',.035,0,1301)},
+ featherOchre:{name:'鸟类赭黄羽片',color:'#b17a35',roughness:0.86,metalness:0,...surface('none',.035,0,1302)},
+ featherDark:{name:'鸟类深色羽片',color:'#29373a',roughness:0.86,metalness:0,...surface('none',.035,0,1303)},
+ featherGreen:{name:'鸭头绿羽',color:'#376450',roughness:0.86,metalness:0,...surface('none',.035,0,1304)},
+ featherBlue:{name:'鸟类蓝羽',color:'#547991',roughness:0.86,metalness:0,...surface('none',.035,0,1305)},
+ featherYellow:{name:'鸟胸黄羽',color:'#d5b84c',roughness:0.86,metalness:0,...surface('none',.035,0,1306)},
+ birdBeak:{name:'鸟喙角质',color:'#d3943a',roughness:0.86,metalness:0,...surface('none',.035,0,1307)},
+ birdFoot:{name:'鸟足鳞皮',color:'#b57a38',roughness:0.86,metalness:0,...surface('none',.035,0,1308)},
+ birdComb:{name:'鸡冠及肉垂',color:'#b74c41',roughness:0.86,metalness:0,...surface('none',.035,0,1309)},
+ liveScaleOrange:{name:'活鱼橙色鳞皮',color:'#d77243',roughness:0.5,metalness:0,...surface('none',.035,0,1310)},
+ liveScaleWhite:{name:'活鱼白色鳞皮',color:'#e1e2d6',roughness:0.5,metalness:0,...surface('none',.035,0,1311)},
+ liveFin:{name:'活鱼鳍膜',color:'#bdd5d7',roughness:0.5,metalness:0,...surface('none',.035,0,1312)},
+ liveGill:{name:'活鱼鳃缘',color:'#a64f40',roughness:0.5,metalness:0,...surface('none',.035,0,1313)},
+ livestockSkin:{name:'家畜裸露皮肤',color:'#d7a097',roughness:0.5,metalness:0,...surface('none',.035,0,1314)},
+ livestockSnout:{name:'家畜鼻盘皮肤',color:'#b87778',roughness:0.5,metalness:0,...surface('none',.035,0,1315)},
+ animalHoof:{name:'动物蹄角质',color:'#443e39',roughness:0.86,metalness:0,...surface('none',.035,0,1316)},
+ animalHorn:{name:'山羊牛角质角',color:'#88714f',roughness:0.86,metalness:0,...surface('none',.035,0,1317)},
+ deerAntler:{name:'鹿骨质角',color:'#8c6742',roughness:0.86,metalness:0,...surface('none',.035,0,1318)},
+ animalTusk:{name:'野猪牙质獠牙',color:'#dfd4b8',roughness:0.86,metalness:0,...surface('none',.035,0,1319)},
+ seedNutShell:{name:'松鼠持物坚果壳',color:'#7a5734',roughness:0.86,metalness:0,...surface('none',.035,0,1320)},
  toolSteel:{name:'手持工具钢',color:'#7a858b',roughness:0.38,metalness:0.7,...surface('none',.035,0,1200)},
  toolGrip:{name:'工具握胶',color:'#384449',roughness:0.84,metalness:0,...surface('none',.035,0,1201)},
  toolWood:{name:'手持工具木柄',color:'#87603c',roughness:0.84,metalness:0,...surface('wood',.035,0.05,1202)},

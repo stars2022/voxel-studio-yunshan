@@ -1,0 +1,43 @@
+check_geometry OK
+read_production_library OK
+query_voxels OK
+list_production_recipes OK
+list_production_recipes OK
+query_materials_interfaces OK
+edit_transaction ERROR
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+save_project OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+save_project OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+save_project OK
+edit_transaction OK
+edit_transaction ERROR
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"大范围修改请先 dry-run，检查数量、包围盒及实例后提交 previewToken","code":"PREVIEW_REQUIRED","details":{"version":8,"modifiedVoxels":0,"affectedAssets":["char-308","char-309","char-310","char-311","char-312","char-313","char-314","char-315","char-316","char-317","char-318","char-319"],"affectedInstances":["char-308-display","char-309-display","char-310-display","char-311-display","char-312-display","char-313-display","char-314-display","char-315-display","char-316-display","char-317-display","char-318-display","char-319-display"],"bounds":{},"warnings":[],"dryRun":false,"dirtyChunks":{"char-308":["-1,0,-3","-2,0,-2","-2,0,-1","0,0,-3","1,0,-2","1,0,-1","-2,4,-2","1,4,-2","-1,4,-3","0,4,-3"],"char-309":["-1,2,-2","0,2,-2","0,1,-2","-1,1,-1","0,1,-1"],"char-310":["-2,0,-2","-2,0,-1","-1,0,-2","-1,0,-1","0,0,-2","0,0,-1","1,0,-2","1,0,-1","0,6,-3","-1,6,-3"],"char-311":["-2,0,-2","-1,0,-2","0,0,-2","1,0,-2","-1,5,-4","0,5,-4","-1,5,-3","0,5,-3"],"char-312":["-2,0,-2","-1,0,-2","0,0,-2","1,0,-2","-1,9,-4","0,9,-4","-1,10,-3","0,10,-3"],"char-313":["-1,4,-6","0,4,-6","-2,4,-4","1,4,-4"],"char-314":["-1,7,-7","0,7,-7","-2,8,-6","1,8,-6"],"char-315":["-1,12,-11","0,12,-11","-2,14,-8","1,14,-8"],"char-316":["-1,14,-9","0,14,-9","-2,15,-7","1,15,-7"],"char-317":["-1,4,-7","0,4,-7","-2,5,-5","1,5,-5"],"char-318":["-1,0,-2","-1,2,-3","0,0,-2","0,2,-3","-1,4,-2","0,4,-2","-1,4,-3","0,4,-3"],"char-319":["-1,0,-1","0,0,-1","-1,2,-1","0,2,-1"]},"label":"编辑事务","durationMs":939.7351170000038},"isError":true}
+    at call (/workspace/voxel-studio-yunshan/scripts/verify-fauna-mcp.ts:6:595)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-fauna-mcp.ts:14:41) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

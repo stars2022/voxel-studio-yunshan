@@ -133,6 +133,9 @@ files.update(out.glob('garment-*.png'))
 files.update(out.glob('costume-*.png'))
 files.update(out.glob('costume-initial-fit-failures.json'))
 files.update(out.glob('costume-development-checks.json'))
+files.update(out.glob('fauna-*.png'))
+files.update(out.glob('fauna-development-checks.json'))
+files.update(out.glob('fauna-material-points.json'))
 files.update(out.glob('care-*.png'))
 files.update(out.glob('care-development-checks.json'))
 files.update(out.glob('care-material-points.json'))
@@ -173,7 +176,7 @@ if (out / 'component-variants.json').exists():
 if (out / 'figure-installation-verification.json').exists():
     assert read(out / 'figure-installation-verification.json')['status'] == 'passed'
     files.add(out / 'figure-installation-verification.json')
-for name in ['care-installation-verification.json', 'care-variant-export-verification.json', 'service-installation-verification.json', 'service-variant-export-verification.json', 'held-installation-verification.json', 'held-variant-export-verification.json', 'attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
+for name in ['fauna-study-verification.json', 'fauna-variant-export-verification.json', 'care-installation-verification.json', 'care-variant-export-verification.json', 'service-installation-verification.json', 'service-variant-export-verification.json', 'held-installation-verification.json', 'held-variant-export-verification.json', 'attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)
@@ -182,6 +185,9 @@ for name in ['character-installation-verification.json', 'character-presentation
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)
 files.update(p for p in (out / 'head-presentation-before').glob('*') if p.is_file())
+fauna_doc = root / 'docs' / (args.sheet + '-ANIMAL-SPECIES.md')
+if fauna_doc.exists():
+    files.add(fauna_doc)
 care_doc = root / 'docs' / (args.sheet + '-CARE-AND-ANIMALS.md')
 if care_doc.exists():
     files.add(care_doc)
