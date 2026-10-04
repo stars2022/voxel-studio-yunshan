@@ -1,0 +1,110 @@
+{
+  "run": "atlas-20261004130221",
+  "status": "passed",
+  "scope": [
+    "CHAR-125",
+    "CHAR-126",
+    "CHAR-127",
+    "CHAR-128",
+    "CHAR-129",
+    "CHAR-130",
+    "CHAR-131",
+    "CHAR-132",
+    "CHAR-133",
+    "CHAR-134",
+    "CHAR-135",
+    "CHAR-136"
+  ],
+  "modelingDirection": "Minimum details remain native voxels; costume surfaces, diagonal collars, pockets and armor use continuous meshes. Rigid joints transform voxel vertices without resampling.",
+  "tests": {
+    "fullRegression": 392,
+    "focused": 8,
+    "fullLog": "full-tests.txt",
+    "focusedLog": "focused-tests.txt",
+    "fullRegressionScope": "392 tests on the final M037 modelling source, with no subsequent geometry changes."
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 13,
+  "catalogMasters": 12,
+  "newCatalogIdsSincePriorCommit": 12,
+  "componentShapes": 23,
+  "authorInstallationStudies": 7,
+  "nativeVoxels": 1524,
+  "triangles": 28436,
+  "farTriangles": 28106,
+  "defaultGLBIndependentBoundsMaxErrorM": 4.942004405705802e-08,
+  "sceneGLBIndependentBoundsMaxErrorM": 7.871435547812666e-08,
+  "scenePairFitChecks": 275,
+  "allVariantPairFitChecks": 375,
+  "apertureChecks": 101,
+  "assetScreenshots": 36,
+  "installationScreenshots": 28,
+  "undersideDetailScreenshots": 12,
+  "bodyFitRebuildScreenshots": 1,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 463,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 550,
+    "generatedEntries": 518,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 444
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "run": "atlas-20261004130221",
+    "reviewedOverviews": [
+      "M037.png",
+      "materials.png",
+      "M037-wear.png"
+    ],
+    "reviewedDetailSets": {
+      "all12DefaultFrontViews": true,
+      "all12DefaultIsometricAndMaterialViewsInOverview": true,
+      "all12UndersideViews": true,
+      "schoolToTeenRebuildView": true,
+      "allSevenSceneFrontMaterialAndBackViews": true,
+      "additionalSceneIsometricViews": [
+        "work-field",
+        "poses",
+        "labcoat-fits"
+      ]
+    },
+    "observations": [
+      "12 independent cuts are visible; infant and school proportions differ from adult bodies.",
+      "Police chest pockets, guard plate/pads, driver diagonal harness, labor elbow patches and short-sleeve fieldwear remain distinguishable.",
+      "Medical narrow pockets, nursing belt, open laboratory coat and independent apron are visible; pockets and rings have actual geometry.",
+      "Source head, hair and limbs remain separate. Neutral infant/teen endcaps and absent teen hair are visible and documented.",
+      "Raised-arm shoulder interfaces and other sleeve/armhole seams remain visibly rigid and sometimes gapped; no soft-cloth or art acceptance claim.",
+      "Apron panel and experimental coat remain angular author studies; original source dimensions and protected runtime clearances are unavailable."
+    ],
+    "scope": "Assistant inspection of actual WebGL captures and assembled contact views. This is technical review, not user or professional art sign-off."
+  },
+  "developmentCorrections": [
+    "Tailored lower torso cross-sections around actual two-leg geometry; moved the hip profile above retained source trouser tops.",
+    "Infant default shoulder abduction 18 degrees clears the short-limb broad-body suit; all 23 M036 geometry hashes remain unchanged.",
+    "Open laboratory coat retains its source shirt but uses a separate visible-front underlayer, without covered sleeves, back panels or orphan native fasteners.",
+    "Apron neck and waist loops follow the actual CHAR113 underlayer and avoid sleeves, hands and head.",
+    "CHAR128 automated caption describes a railing; actual image and catalogue specify protective clothing. Discrepancy recorded without changing reference source."
+  ],
+  "limitations": [
+    "Technical candidates; human art acceptance zero.",
+    "Original actor source, dimension matrix, protected clearance, original skeleton/controllers are unavailable.",
+    "Rigid single-joint components only; no soft cloth, soft weights, IK, animation clips or runtime binding.",
+    "All 23 variants standing; additional poses only CHAR127 adultA raised arms and CHAR130 adultA limited walking. No seated acceptance.",
+    "Infant and teen retain neutral covered hand/foot ends, not fine limb assets. Exposed fieldwear forearms are author profiles.",
+    "Triangle sampling and edge tests are not a formal all-motion certificate.",
+    "Visible rigid shoulder and sleeve seams remain for art review.",
+    "Body slots and laboratory underlayer preserve original masters and are not new catalog entries.",
+    "Software WebGL is not hardware frame-rate acceptance."
+  ]
+}

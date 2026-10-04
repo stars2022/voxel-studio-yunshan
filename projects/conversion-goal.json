@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 432,
-    "remainingReferenceEntries": 361,
-    "completedReferenceSheets": 36,
+    "referenceCandidates": 444,
+    "remainingReferenceEntries": 349,
+    "completedReferenceSheets": 37,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 451,
+      "baseModels": 463,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 562,
-      "generatedEntries": 506,
+      "notProduced": 550,
+      "generatedEntries": 518,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 432
+      "atlasReferenceCandidates": 444
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M036",
+    "sheet": "M037",
     "state": "validated-for-batch-push",
     "ids": [
-      "CHAR-113",
-      "CHAR-114",
-      "CHAR-115",
-      "CHAR-116",
-      "CHAR-117",
-      "CHAR-118",
-      "CHAR-119",
-      "CHAR-120",
-      "CHAR-121",
-      "CHAR-122",
-      "CHAR-123",
-      "CHAR-124"
+      "CHAR-125",
+      "CHAR-126",
+      "CHAR-127",
+      "CHAR-128",
+      "CHAR-129",
+      "CHAR-130",
+      "CHAR-131",
+      "CHAR-132",
+      "CHAR-133",
+      "CHAR-134",
+      "CHAR-135",
+      "CHAR-136"
     ],
-    "run": "atlas-20261004115622",
-    "evidence": "artifacts/atlas/atlas-20261004115622"
+    "run": "atlas-20261004130221",
+    "evidence": "artifacts/atlas/atlas-20261004130221"
   },
-  "nextBatch": "M037",
+  "nextBatch": "M038",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -66,20 +66,21 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M036共432件技术转化候选；参考余361条，人工美术验收0。"
+    "M001–M037共444件技术转化候选；参考余349条，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续有效：最小组件体素，斜面/曲面连续网格，天空/星空贴图；不得强制整件栅格化。",
-    "M037为CHAR125婴儿包衣、126学堂童装、127警务制服、128守卫防护衣、129驾驶调度服、130工坊劳动衣、131田作服、132医生诊疗衣、133护理工作衣、134科研实验外套、135店员服务衣、136工作围裙。参考图已看，原清单存work/m037/source.json（scratch，不提交）；下一轮须重新读取真实来源。独立剪裁母版，不夹带图中头/帽/背包/工具，不靠换色复制职业。",
-    "M036共12母版23形态：113–122、124各adultA/B；123仅学龄儿童，不算颜色/左右/姿态新母版。",
-    "garment-assembly.ts七作者场景；身体实际移除被新衣覆盖旧衣面。garmentCoatUnderlayer保存113原件，派生件移除隐藏袖面/肩背/腰边及袖扣/腰扣；不得把原生小件删成浮件或回写原母版。",
-    "默认肩外展8度，衣装16关节单分件刚性绑定；手部挂接增加hand-basis朝向关节。原生和连续绑定态不重栅格化，GLB skin/IBM/JOINTS_0/WEIGHTS_0独立求值。",
-    "完整坐姿上衣存在穿插，未通过。失败保存在garment-initial-fit-failures.json；最终坐姿仅裤/鞋/实际脚组件，没有上身、头手。长裙/袍摆仅站姿，行走/抬臂也仅命名范围，不冒称软布或完整动作验收。",
-    "285用途角色，新增298–311十四项，全非碰撞零发光；材质按256+29同事务创建，foreign ID/失败回滚/一次撤销验证保留。",
-    "432/793参考候选，余361，451基础候选，506已生成/562未生成，36图册；人工美术验收0。M036证据artifacts/atlas/atlas-20261004115622；383完整回归（最后移除内搭旧腰扣前），修正后6专项，15真实MCP检查。",
-    "23形态封闭面/原生附件/回读检查，335场景配对、10鞋/脚和34开口检查。尺寸误差核实际导出skin，不直接拿绑定POSITION包络比较默认姿态。",
-    "每批提交推送origin/main授权持续有效，单批完成不调用stop_goal。先构建再拍实图；Chromium/SwiftShader软件WebGL；截图任务串行运行。MCP场景命令从一开始按<9MiB拆分，保持顺序，不扩大10MiB stdio限制。"
+    "M038为CHAR137官署礼常服、138婚礼礼服、139丧礼素服、140雨披、141围巾披肩、142防护手套、143水上救生穿戴、144飞行员护具、145身体绷带、146肢体支具、147旅行背包、148细体素挎包。下一轮须重新读取实际图与CSV，不把参考人偶/实例/换色算新母版。",
+    "M037共12母版23形态：125婴儿；126学龄/青少年；127–136成人A/B。源保留、身体衣面替换、实验衣可见内搭派生均不新增母版。",
+    "costume-frame采用下腰圆角截面，给真实裤腿留空；costumeLabUnderlayer仅同源前面/衬/领圈，隐藏扣件一起移除，原113保留。围裙实际配113/118。",
+    "默认肩外展成人/学龄/青少年8度，婴儿18度；16关节单分件刚性绑定。手部挂接有hand-basis朝向关节。绑定态原生/网格不重新栅格化，导出skin/IBM/JOINTS_0/WEIGHTS_0独立求值。",
+    "M037全部23形态仅站姿；额外仅127adultA抬臂45度、130adultA有限行走。无坐姿或软布验收。M036完整坐姿上衣失败记录继续保留。",
+    "婴儿/青少年沿用原中性衣套手足端，不冒认精细手足；田作露前臂为作者轮廓。CHAR128自动参考描述误写护栏，已记录实际图/清单矛盾，不修改源索引。",
+    "300用途角色，新增312–326十五项，全非碰撞零发光；按256+44同事务创建，foreign ID/失败回滚/一次撤销验证保留。",
+    "444/793参考候选，余349；463基础候选，518已生成/550未生成，37图册，人工美术验收0。M037证据artifacts/atlas/atlas-20261004130221；392完整回归、8专项、13真实MCP检查。",
+    "23形态封闭面/附件/原生GLB回读；375形态配对、275场景配对、101开口。默认28436近/28106远三角面；1524原生细格。",
+    "每批提交推送origin/main授权持续有效，单批完成不调用stop_goal。先构建再拍实图；Chromium/SwiftShader；截图任务串行。MCP场景命令按<9MiB拆分保持顺序，不扩大10MiB stdio限制。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",

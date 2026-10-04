@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import type {Asset,Project,V3} from '../../src/core/types';
+import {costumeScene,costumeScenes,costumeWearers} from '../../src/production/costume-assembly';
+import {makeCostumeAsset,costumeRecipes,costumeVariants} from '../../src/production/atlas-costumes';
+import {garmentFrame} from '../../src/production/garment-shapes';
+import {productionProject} from '../../src/production/style';
+import {posedRigPorts} from '../../src/core/rig';
+import {garmentShapes} from './garment-audit';
+import {auditShape,penetration} from './mesh-audit';
+import {rayHits} from './headwear-audit';
+const base=productionProject('M037 actual triangle audit');
+function auditInstallation(q:Project,kind:string){const rows=[],shapes=new Map(Object.values(q.assets).map(a=>[a.id,garmentShapes(a)])),instances=Object.values(q.instances),clothing=(a:Asset)=>/^CHAR-1(1[3-9]|2[0-9]|3[0-6])$/.test(String(a.source?.catalogId??''));for(let i=0;i<instances.length;i++)for(let j=i+1;j<instances.length;j++){const a=instances[i],b=instances[j];if(JSON.stringify(a.position)!==JSON.stringify(b.position)||!clothing(q.assets[a.assetId])&&!clothing(q.assets[b.assetId]))continue;const r={kind,a:a.id,b:b.id,...penetration(shapes.get(a.assetId)!,shapes.get(b.assetId)!)};assert.equal(r.contained+r.crossing,0,JSON.stringify(r));rows.push(r);}return rows;}
+export function costumeSceneFitAudit(){return costumeScenes.flatMap(kind=>auditInstallation(costumeScene(base,kind),kind));}
+export function costumeVariantFitAudit(){return Object.keys(costumeRecipes).flatMap(id=>costumeVariants(id).flatMap(params=>{const fit=id==='CHAR-125'?'infant':String(params.costumeFit);return auditInstallation(costumeWearers(base,[{key:'wear',catalogId:id,fit}]),id+'/'+fit);}));}
+export function costumeApertureAudit(){const rows=[];for(const id of Object.keys(costumeRecipes))for(const params of costumeVariants(id)){const fit=id==='CHAR-125'?'infant':String(params.costumeFit),f=garmentFrame(fit),a=makeCostumeAsset(id,id,id,base.styles.yunshan,params),meshes=garmentShapes(a);assert.equal(rayHits(meshes,[0,f.hip+.10*f.h/1.7,0],[0,1,0]).length,0,id+' neck');rows.push({id,params,opening:'neck-axis',open:true});for(const port of posedRigPorts(a).filter(p=>p.id.startsWith('wrist')||p.id.startsWith('sleeve-end'))){assert.equal(rayHits(meshes,port.position,port.normal).length,0,id+' '+port.id);rows.push({id,params,opening:port.id,open:true});}for(const m of a.meshes!.filter(m=>/书签袋$|胸袋-?1$|侧袋-?1$|工具袋--?1$|侧边种袋$|器械袋-?1$|护理前袋-?1$|大袋-?1$/.test(m.name))){const shape=auditShape(m.name,m.positions,m.indices),top=shape.box.max.y,pts=shape.vs.filter(v=>Math.abs(v.y-top)<1e-8),point:V3=[(Math.min(...pts.map(v=>v.x))+Math.max(...pts.map(v=>v.x)))/2,top-.0001,(Math.min(...pts.map(v=>v.z))+Math.max(...pts.map(v=>v.z)))/2];assert.equal(rayHits([shape],point,[0,1,0]).length,0,id+' '+m.name);assert.ok(rayHits([shape],point,[0,-1,0]).length>0,id+' actual pocket floor');rows.push({id,params,opening:m.name,open:true,realFloor:true});}}return rows;}

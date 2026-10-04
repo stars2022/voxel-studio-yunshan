@@ -1,0 +1,5795 @@
+{
+  "run": "atlas-20261004130221",
+  "status": "passed",
+  "startedAt": "2026-10-04T13:02:53.022Z",
+  "checks": [
+    "Twelve gallery masters have disjoint actual bounds; all costume native cells and authored meshes are noncollision",
+    "MCP exposes eighty-three CHAR recipes and real body-fit rig interfaces; native material query and unimplemented recipe rejection are atomic",
+    "Independent uniform/armor/medical appearance pack dry-run, canonical UI sync, idempotency, stale-version rejection, atomic failure and single undo preserve geometry and categories",
+    "All twelve real WebGL asset caches switch near/far/back without changing canonical data; twelve underside screenshots expose costume neck, sleeve and waist openings",
+    "Body-fit rebuild changes native details and actual continuous clothing profiles; retained sockets, UI cache and one undo verified",
+    "children author installation: exact native/export roundtrip, real multiview screenshots and explicit original-runtime-unbound provenance",
+    "uniforms author installation: exact native/export roundtrip, real multiview screenshots and explicit original-runtime-unbound provenance",
+    "work-field author installation: exact native/export roundtrip, real multiview screenshots and explicit original-runtime-unbound provenance",
+    "medical author installation: exact native/export roundtrip, real multiview screenshots and explicit original-runtime-unbound provenance",
+    "service author installation: exact native/export roundtrip, real multiview screenshots and explicit original-runtime-unbound provenance",
+    "poses author installation: exact native/export roundtrip, real multiview screenshots and explicit original-runtime-unbound provenance",
+    "labcoat-fits author installation: exact native/export roundtrip, real multiview screenshots and explicit original-runtime-unbound provenance",
+    "Canonical save and server restart preserve source masters, author joint bindings and derivative placements"
+  ],
+  "errors": [],
+  "assemblies": [
+    {
+      "name": "costume-children",
+      "geometry": {
+        "pitchM": 0.005,
+        "occupiedCollisionCells": 0,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "char-125-infant-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-125-infant-standing-CHAR-125"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-125-infant-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-CHAR-126"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-CHAR-123"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-child-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-teen-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-teen-standing-CHAR-126"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-126-teen-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "char-125-infant-standing-body": [],
+          "char-125-infant-standing-CHAR-125": [],
+          "char-125-infant-standing-head": [],
+          "char-126-child-standing-body": [],
+          "char-126-child-standing-CHAR-126": [],
+          "char-126-child-standing-CHAR-123": [],
+          "char-126-child-standing-head": [],
+          "char-126-child-standing-hair": [],
+          "char-126-child-standing-hand-1": [],
+          "char-126-child-standing-foot-1": [],
+          "char-126-child-standing-hand1": [],
+          "char-126-child-standing-foot1": [],
+          "char-126-teen-standing-body": [],
+          "char-126-teen-standing-CHAR-126": [],
+          "char-126-teen-standing-head": []
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "retainedMasters": 13,
+      "placements": 15,
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/exports/costume-children",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 6042028,
+        "isError": false
+      },
+      "previews": {
+        "version": 7,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "meshMode": "near",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/d205a3fc-0c8e-4ddf-b094-b434456ac936/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/d205a3fc-0c8e-4ddf-b094-b434456ac936/front.png"
+        ],
+        "isError": false
+      },
+      "material": {
+        "method": "Existing live editor viewport with actual reference palette, studio/reference lights, clay/AO/bloom disabled; no additional preview browser",
+        "files": [
+          "artifacts/atlas/atlas-20261004130221/costume-children-view-2.png"
+        ]
+      }
+    },
+    {
+      "name": "costume-uniforms",
+      "geometry": {
+        "pitchM": 0.005,
+        "occupiedCollisionCells": 0,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-CHAR-127"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-CHAR-128"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-128-adultB-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-CHAR-129"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-129-adultA-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "char-127-adultA-standing-body": [],
+          "char-127-adultA-standing-CHAR-127": [],
+          "char-127-adultA-standing-CHAR-122": [],
+          "char-127-adultA-standing-head": [],
+          "char-127-adultA-standing-hair": [],
+          "char-127-adultA-standing-hand-1": [],
+          "char-127-adultA-standing-foot-1": [],
+          "char-127-adultA-standing-hand1": [],
+          "char-127-adultA-standing-foot1": [],
+          "char-128-adultB-standing-body": [],
+          "char-128-adultB-standing-CHAR-128": [],
+          "char-128-adultB-standing-CHAR-122": [],
+          "char-128-adultB-standing-head": [],
+          "char-128-adultB-standing-hair": [],
+          "char-128-adultB-standing-hand-1": [],
+          "char-128-adultB-standing-foot-1": [],
+          "char-128-adultB-standing-hand1": [],
+          "char-128-adultB-standing-foot1": [],
+          "char-129-adultA-standing-body": [],
+          "char-129-adultA-standing-CHAR-129": [],
+          "char-129-adultA-standing-CHAR-122": [],
+          "char-129-adultA-standing-head": [],
+          "char-129-adultA-standing-hair": [],
+          "char-129-adultA-standing-hand-1": [],
+          "char-129-adultA-standing-foot-1": [],
+          "char-129-adultA-standing-hand1": [],
+          "char-129-adultA-standing-foot1": []
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "retainedMasters": 15,
+      "placements": 27,
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/exports/costume-uniforms",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 7209200,
+        "isError": false
+      },
+      "previews": {
+        "version": 10,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "meshMode": "near",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/eb2ae9c9-90a9-4f2f-9f80-7bb415a21a8c/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/eb2ae9c9-90a9-4f2f-9f80-7bb415a21a8c/front.png"
+        ],
+        "isError": false
+      },
+      "material": {
+        "method": "Existing live editor viewport with actual reference palette, studio/reference lights, clay/AO/bloom disabled; no additional preview browser",
+        "files": [
+          "artifacts/atlas/atlas-20261004130221/costume-uniforms-view-2.png"
+        ]
+      }
+    },
+    {
+      "name": "costume-work-field",
+      "geometry": {
+        "pitchM": 0.005,
+        "occupiedCollisionCells": 0,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-CHAR-130"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-CHAR-131"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-131-adultB-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "char-130-adultA-standing-body": [],
+          "char-130-adultA-standing-CHAR-130": [],
+          "char-130-adultA-standing-CHAR-122": [],
+          "char-130-adultA-standing-head": [],
+          "char-130-adultA-standing-hair": [],
+          "char-130-adultA-standing-hand-1": [],
+          "char-130-adultA-standing-foot-1": [],
+          "char-130-adultA-standing-hand1": [],
+          "char-130-adultA-standing-foot1": [],
+          "char-131-adultB-standing-body": [],
+          "char-131-adultB-standing-CHAR-131": [],
+          "char-131-adultB-standing-CHAR-122": [],
+          "char-131-adultB-standing-head": [],
+          "char-131-adultB-standing-hair": [],
+          "char-131-adultB-standing-hand-1": [],
+          "char-131-adultB-standing-foot-1": [],
+          "char-131-adultB-standing-hand1": [],
+          "char-131-adultB-standing-foot1": []
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "retainedMasters": 14,
+      "placements": 18,
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/exports/costume-work-field",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 6602324,
+        "isError": false
+      },
+      "previews": {
+        "version": 13,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "meshMode": "near",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/ffc64665-9dfa-4ea3-8c1c-e1133f01f1ca/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/ffc64665-9dfa-4ea3-8c1c-e1133f01f1ca/front.png"
+        ],
+        "isError": false
+      },
+      "material": {
+        "method": "Existing live editor viewport with actual reference palette, studio/reference lights, clay/AO/bloom disabled; no additional preview browser",
+        "files": [
+          "artifacts/atlas/atlas-20261004130221/costume-work-field-view-2.png"
+        ]
+      }
+    },
+    {
+      "name": "costume-medical",
+      "geometry": {
+        "pitchM": 0.005,
+        "occupiedCollisionCells": 0,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-CHAR-132"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-132-adultA-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-CHAR-133"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-133-adultB-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-CHAR-134"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-CHAR-113"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "char-132-adultA-standing-body": [],
+          "char-132-adultA-standing-CHAR-132": [],
+          "char-132-adultA-standing-CHAR-122": [],
+          "char-132-adultA-standing-head": [],
+          "char-132-adultA-standing-hair": [],
+          "char-132-adultA-standing-hand-1": [],
+          "char-132-adultA-standing-foot-1": [],
+          "char-132-adultA-standing-hand1": [],
+          "char-132-adultA-standing-foot1": [],
+          "char-133-adultB-standing-body": [],
+          "char-133-adultB-standing-CHAR-133": [],
+          "char-133-adultB-standing-CHAR-122": [],
+          "char-133-adultB-standing-head": [],
+          "char-133-adultB-standing-hair": [],
+          "char-133-adultB-standing-hand-1": [],
+          "char-133-adultB-standing-foot-1": [],
+          "char-133-adultB-standing-hand1": [],
+          "char-133-adultB-standing-foot1": [],
+          "char-134-adultA-standing-body": [],
+          "char-134-adultA-standing-CHAR-134": [],
+          "char-134-adultA-standing-CHAR-113": [],
+          "char-134-adultA-standing-CHAR-122": [],
+          "char-134-adultA-standing-head": [],
+          "char-134-adultA-standing-hair": [],
+          "char-134-adultA-standing-hand-1": [],
+          "char-134-adultA-standing-foot-1": [],
+          "char-134-adultA-standing-hand1": [],
+          "char-134-adultA-standing-foot1": []
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "retainedMasters": 16,
+      "placements": 28,
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/exports/costume-medical",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 7286168,
+        "isError": false
+      },
+      "previews": {
+        "version": 16,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "meshMode": "near",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/4716afd3-6505-4174-ae3b-0d8b8c1ede8d/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/4716afd3-6505-4174-ae3b-0d8b8c1ede8d/front.png"
+        ],
+        "isError": false
+      },
+      "material": {
+        "method": "Existing live editor viewport with actual reference palette, studio/reference lights, clay/AO/bloom disabled; no additional preview browser",
+        "files": [
+          "artifacts/atlas/atlas-20261004130221/costume-medical-view-2.png"
+        ]
+      }
+    },
+    {
+      "name": "costume-service",
+      "geometry": {
+        "pitchM": 0.005,
+        "occupiedCollisionCells": 0,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-CHAR-135"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-135-adultA-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-CHAR-136",
+              "char-136-adultB-standing-CHAR-113",
+              "char-136-adultB-standing-CHAR-118"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-136-adultB-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "char-135-adultA-standing-body": [],
+          "char-135-adultA-standing-CHAR-135": [],
+          "char-135-adultA-standing-CHAR-122": [],
+          "char-135-adultA-standing-head": [],
+          "char-135-adultA-standing-hair": [],
+          "char-135-adultA-standing-hand-1": [],
+          "char-135-adultA-standing-foot-1": [],
+          "char-135-adultA-standing-hand1": [],
+          "char-135-adultA-standing-foot1": [],
+          "char-136-adultB-standing-body": [],
+          "char-136-adultB-standing-CHAR-136": [],
+          "char-136-adultB-standing-CHAR-113": [],
+          "char-136-adultB-standing-CHAR-118": [],
+          "char-136-adultB-standing-CHAR-122": [],
+          "char-136-adultB-standing-head": [],
+          "char-136-adultB-standing-hair": [],
+          "char-136-adultB-standing-hand-1": [],
+          "char-136-adultB-standing-foot-1": [],
+          "char-136-adultB-standing-hand1": [],
+          "char-136-adultB-standing-foot1": []
+        },
+        "gaps": [
+          {
+            "instances": [
+              "char-136-adultB-standing-CHAR-136",
+              "char-136-adultB-standing-CHAR-118"
+            ],
+            "distanceM": 0.004999999999999977
+          }
+        ],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "retainedMasters": 16,
+      "placements": 20,
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/exports/costume-service",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 6879588,
+        "isError": false
+      },
+      "previews": {
+        "version": 19,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "meshMode": "near",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/3dfcbc4a-2e01-4a20-93f3-1cbe9848d4a1/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/3dfcbc4a-2e01-4a20-93f3-1cbe9848d4a1/front.png"
+        ],
+        "isError": false
+      },
+      "material": {
+        "method": "Existing live editor viewport with actual reference palette, studio/reference lights, clay/AO/bloom disabled; no additional preview browser",
+        "files": [
+          "artifacts/atlas/atlas-20261004130221/costume-service-view-2.png"
+        ]
+      }
+    },
+    {
+      "name": "costume-poses",
+      "geometry": {
+        "pitchM": 0.005,
+        "occupiedCollisionCells": 0,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-CHAR-127"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-127-adultA-raisedArms-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-CHAR-130"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-130-adultA-walking-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "char-127-adultA-raisedArms-body": [],
+          "char-127-adultA-raisedArms-CHAR-127": [],
+          "char-127-adultA-raisedArms-CHAR-122": [],
+          "char-127-adultA-raisedArms-head": [],
+          "char-127-adultA-raisedArms-hair": [],
+          "char-127-adultA-raisedArms-hand-1": [],
+          "char-127-adultA-raisedArms-foot-1": [],
+          "char-127-adultA-raisedArms-hand1": [],
+          "char-127-adultA-raisedArms-foot1": [],
+          "char-130-adultA-walking-body": [],
+          "char-130-adultA-walking-CHAR-130": [],
+          "char-130-adultA-walking-CHAR-122": [],
+          "char-130-adultA-walking-head": [],
+          "char-130-adultA-walking-hair": [],
+          "char-130-adultA-walking-hand-1": [],
+          "char-130-adultA-walking-foot-1": [],
+          "char-130-adultA-walking-hand1": [],
+          "char-130-adultA-walking-foot1": []
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "retainedMasters": 8,
+      "placements": 18,
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/exports/costume-poses",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 6575724,
+        "isError": false
+      },
+      "previews": {
+        "version": 22,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "meshMode": "near",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/ccd5e3f8-3359-40b9-9751-deda02e0c8f9/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/ccd5e3f8-3359-40b9-9751-deda02e0c8f9/front.png"
+        ],
+        "isError": false
+      },
+      "material": {
+        "method": "Existing live editor viewport with actual reference palette, studio/reference lights, clay/AO/bloom disabled; no additional preview browser",
+        "files": [
+          "artifacts/atlas/atlas-20261004130221/costume-poses-view-2.png"
+        ]
+      }
+    },
+    {
+      "name": "costume-labcoat-fits",
+      "geometry": {
+        "pitchM": 0.005,
+        "occupiedCollisionCells": 0,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-CHAR-134"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-CHAR-113"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultA-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-body"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-CHAR-134"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-CHAR-113"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-CHAR-122"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-head"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-hair"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-hand-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-foot-1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-hand1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "char-134-adultB-standing-foot1"
+            ],
+            "pitchM": 0.005,
+            "occupiedCells": 0
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "char-134-adultA-standing-body": [],
+          "char-134-adultA-standing-CHAR-134": [],
+          "char-134-adultA-standing-CHAR-113": [],
+          "char-134-adultA-standing-CHAR-122": [],
+          "char-134-adultA-standing-head": [],
+          "char-134-adultA-standing-hair": [],
+          "char-134-adultA-standing-hand-1": [],
+          "char-134-adultA-standing-foot-1": [],
+          "char-134-adultA-standing-hand1": [],
+          "char-134-adultA-standing-foot1": [],
+          "char-134-adultB-standing-body": [],
+          "char-134-adultB-standing-CHAR-134": [],
+          "char-134-adultB-standing-CHAR-113": [],
+          "char-134-adultB-standing-CHAR-122": [],
+          "char-134-adultB-standing-head": [],
+          "char-134-adultB-standing-hair": [],
+          "char-134-adultB-standing-hand-1": [],
+          "char-134-adultB-standing-foot-1": [],
+          "char-134-adultB-standing-hand1": [],
+          "char-134-adultB-standing-foot1": []
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "retainedMasters": 16,
+      "placements": 20,
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/exports/costume-labcoat-fits",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 6877224,
+        "isError": false
+      },
+      "previews": {
+        "version": 25,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "meshMode": "near",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/41f0e00d-52d6-4c1e-a320-e60cf14549bd/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004130221/costume-mcp-1791118973022-runtime/previews/41f0e00d-52d6-4c1e-a320-e60cf14549bd/front.png"
+        ],
+        "isError": false
+      },
+      "material": {
+        "method": "Existing live editor viewport with actual reference palette, studio/reference lights, clay/AO/bloom disabled; no additional preview browser",
+        "files": [
+          "artifacts/atlas/atlas-20261004130221/costume-labcoat-fits-view-2.png"
+        ]
+      }
+    }
+  ],
+  "assetViews": [
+    {
+      "assetId": "char-125",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-125"
+        ],
+        "frameIntervalsMs": [
+          56.099999994039536,
+          38.70000000298023,
+          54.70000000298023,
+          39.8999999910593,
+          57.6000000089407,
+          54.29999999701977,
+          61.70000000298023,
+          41.70000000298023,
+          57.29999999701977,
+          47.8999999910593,
+          63.80000001192093,
+          45.19999998807907,
+          60.1000000089407,
+          40.29999999701977,
+          58.599999994039536,
+          58.6000000089407,
+          49.3999999910593,
+          71.70000000298023,
+          51.29999999701977,
+          53.1000000089407,
+          37.3999999910593,
+          56.20000000298023,
+          36,
+          55.5,
+          43.5,
+          375.5,
+          50.20000000298023,
+          94.09999999403954,
+          73.20000000298023,
+          65.1000000089407,
+          40.599999994039536,
+          60.29999999701977,
+          50.400000005960464,
+          63.79999999701977,
+          51.099999994039536,
+          132.1000000089407,
+          64.20000000298023,
+          44.79999999701977,
+          49,
+          63.3999999910593,
+          68.70000000298023,
+          40.1000000089407,
+          72.09999999403954,
+          97.79999999701977,
+          126.5,
+          108.40000000596046,
+          80,
+          49.599999994039536,
+          89.5,
+          91.6000000089407,
+          95.69999998807907,
+          81.80000001192093,
+          73.29999999701977,
+          56.3999999910593,
+          77.70000000298023,
+          76.20000000298023,
+          52.5,
+          75.70000000298023,
+          72.59999999403954,
+          48.79999999701977,
+          74.90000000596046,
+          59.79999999701977,
+          43.1000000089407,
+          58.099999994039536,
+          42.099999994039536,
+          67.6000000089407,
+          45.70000000298023,
+          63.29999999701977,
+          41.29999999701977,
+          55,
+          35.400000005960464,
+          51.099999994039536,
+          42.400000005960464,
+          64.79999999701977,
+          45.29999999701977,
+          68.20000000298023,
+          38.70000000298023,
+          52.19999998807907,
+          39.1000000089407,
+          70.20000000298023,
+          41.79999999701977,
+          47.79999999701977,
+          32.5,
+          33.20000000298023,
+          45.79999999701977,
+          39.70000000298023,
+          61,
+          39.3999999910593,
+          50.1000000089407,
+          32.5,
+          55.599999994039536,
+          38.1000000089407,
+          53.599999994039536,
+          43.70000000298023,
+          59.20000000298023,
+          40.79999999701977,
+          71.09999999403954,
+          34.400000005960464,
+          55,
+          30.200000002980232,
+          29.099999994039536,
+          359.59999999403954,
+          44.6000000089407,
+          60.599999994039536,
+          45.400000005960464,
+          68.09999999403954,
+          57.900000005960464,
+          42.8999999910593,
+          33.1000000089407,
+          56,
+          47.79999999701977,
+          65,
+          4.5999999940395355,
+          10.300000011920929,
+          16.69999998807907,
+          28.900000005960464,
+          4.299999997019768,
+          52.20000000298023,
+          58.099999994039536,
+          35.6000000089407
+        ],
+        "drawCalls": 5,
+        "triangles": 2304,
+        "objects": 5,
+        "lastWorkerMeshMs": 76.79999999701977,
+        "meshedAssetIds": [],
+        "meshJobs": 2,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125"
+        ],
+        "geometryBytes": 976208,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-125"
+        ],
+        "frameIntervalsMs": [
+          60.1000000089407,
+          40.29999999701977,
+          58.599999994039536,
+          58.6000000089407,
+          49.3999999910593,
+          71.70000000298023,
+          51.29999999701977,
+          53.1000000089407,
+          37.3999999910593,
+          56.20000000298023,
+          36,
+          55.5,
+          43.5,
+          375.5,
+          50.20000000298023,
+          94.09999999403954,
+          73.20000000298023,
+          65.1000000089407,
+          40.599999994039536,
+          60.29999999701977,
+          50.400000005960464,
+          63.79999999701977,
+          51.099999994039536,
+          132.1000000089407,
+          64.20000000298023,
+          44.79999999701977,
+          49,
+          63.3999999910593,
+          68.70000000298023,
+          40.1000000089407,
+          72.09999999403954,
+          97.79999999701977,
+          126.5,
+          108.40000000596046,
+          80,
+          49.599999994039536,
+          89.5,
+          91.6000000089407,
+          95.69999998807907,
+          81.80000001192093,
+          73.29999999701977,
+          56.3999999910593,
+          77.70000000298023,
+          76.20000000298023,
+          52.5,
+          75.70000000298023,
+          72.59999999403954,
+          48.79999999701977,
+          74.90000000596046,
+          59.79999999701977,
+          43.1000000089407,
+          58.099999994039536,
+          42.099999994039536,
+          67.6000000089407,
+          45.70000000298023,
+          63.29999999701977,
+          41.29999999701977,
+          55,
+          35.400000005960464,
+          51.099999994039536,
+          42.400000005960464,
+          64.79999999701977,
+          45.29999999701977,
+          68.20000000298023,
+          38.70000000298023,
+          52.19999998807907,
+          39.1000000089407,
+          70.20000000298023,
+          41.79999999701977,
+          47.79999999701977,
+          32.5,
+          33.20000000298023,
+          45.79999999701977,
+          39.70000000298023,
+          61,
+          39.3999999910593,
+          50.1000000089407,
+          32.5,
+          55.599999994039536,
+          38.1000000089407,
+          53.599999994039536,
+          43.70000000298023,
+          59.20000000298023,
+          40.79999999701977,
+          71.09999999403954,
+          34.400000005960464,
+          55,
+          30.200000002980232,
+          29.099999994039536,
+          359.59999999403954,
+          44.6000000089407,
+          60.599999994039536,
+          45.400000005960464,
+          68.09999999403954,
+          57.900000005960464,
+          42.8999999910593,
+          33.1000000089407,
+          56,
+          47.79999999701977,
+          65,
+          4.5999999940395355,
+          10.300000011920929,
+          16.69999998807907,
+          28.900000005960464,
+          4.299999997019768,
+          52.20000000298023,
+          58.099999994039536,
+          35.6000000089407,
+          57.20000000298023,
+          38.3999999910593,
+          10.400000005960464,
+          19.5,
+          21.899999991059303,
+          10.600000008940697,
+          20,
+          9.599999994039536,
+          16.799999997019768,
+          18.200000002980232,
+          64.5,
+          57.6000000089407
+        ],
+        "drawCalls": 5,
+        "triangles": 2264,
+        "objects": 5,
+        "lastWorkerMeshMs": 112.29999999701977,
+        "meshedAssetIds": [
+          "char-125"
+        ],
+        "meshJobs": 3,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125"
+        ],
+        "geometryBytes": 970608,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-125-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-126",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-126"
+        ],
+        "frameIntervalsMs": [
+          81.80000001192093,
+          73.29999999701977,
+          56.3999999910593,
+          77.70000000298023,
+          76.20000000298023,
+          52.5,
+          75.70000000298023,
+          72.59999999403954,
+          48.79999999701977,
+          74.90000000596046,
+          59.79999999701977,
+          43.1000000089407,
+          58.099999994039536,
+          42.099999994039536,
+          67.6000000089407,
+          45.70000000298023,
+          63.29999999701977,
+          41.29999999701977,
+          55,
+          35.400000005960464,
+          51.099999994039536,
+          42.400000005960464,
+          64.79999999701977,
+          45.29999999701977,
+          68.20000000298023,
+          38.70000000298023,
+          52.19999998807907,
+          39.1000000089407,
+          70.20000000298023,
+          41.79999999701977,
+          47.79999999701977,
+          32.5,
+          33.20000000298023,
+          45.79999999701977,
+          39.70000000298023,
+          61,
+          39.3999999910593,
+          50.1000000089407,
+          32.5,
+          55.599999994039536,
+          38.1000000089407,
+          53.599999994039536,
+          43.70000000298023,
+          59.20000000298023,
+          40.79999999701977,
+          71.09999999403954,
+          34.400000005960464,
+          55,
+          30.200000002980232,
+          29.099999994039536,
+          359.59999999403954,
+          44.6000000089407,
+          60.599999994039536,
+          45.400000005960464,
+          68.09999999403954,
+          57.900000005960464,
+          42.8999999910593,
+          33.1000000089407,
+          56,
+          47.79999999701977,
+          65,
+          4.5999999940395355,
+          10.300000011920929,
+          16.69999998807907,
+          28.900000005960464,
+          4.299999997019768,
+          52.20000000298023,
+          58.099999994039536,
+          35.6000000089407,
+          57.20000000298023,
+          38.3999999910593,
+          10.400000005960464,
+          19.5,
+          21.899999991059303,
+          10.600000008940697,
+          20,
+          9.599999994039536,
+          16.799999997019768,
+          18.200000002980232,
+          64.5,
+          57.6000000089407,
+          66.19999998807907,
+          59.1000000089407,
+          12.099999994039536,
+          5.5,
+          16.700000002980232,
+          16.700000002980232,
+          26.700000002980232,
+          8.799999997019768,
+          14.399999991059303,
+          16.900000005960464,
+          63.20000000298023,
+          37,
+          61.70000000298023,
+          34.79999999701977,
+          34,
+          63.599999994039536,
+          42.400000005960464,
+          64.09999999403954,
+          60.1000000089407,
+          41.8999999910593,
+          36.20000000298023,
+          47.20000000298023,
+          45.20000000298023,
+          47.19999998807907,
+          34.400000005960464,
+          54.79999999701977,
+          31.100000008940697,
+          32.099999994039536,
+          54.400000005960464,
+          37.599999994039536,
+          57.599999994039536,
+          84.70000000298023,
+          57.900000005960464,
+          68.70000000298023,
+          68.3999999910593,
+          57.900000005960464,
+          93.79999999701977,
+          63,
+          53.099999994039536
+        ],
+        "drawCalls": 6,
+        "triangles": 2524,
+        "objects": 6,
+        "lastWorkerMeshMs": 108.6000000089407,
+        "meshedAssetIds": [],
+        "meshJobs": 4,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125"
+        ],
+        "geometryBytes": 976208,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-126"
+        ],
+        "frameIntervalsMs": [
+          59.79999999701977,
+          43.1000000089407,
+          58.099999994039536,
+          42.099999994039536,
+          67.6000000089407,
+          45.70000000298023,
+          63.29999999701977,
+          41.29999999701977,
+          55,
+          35.400000005960464,
+          51.099999994039536,
+          42.400000005960464,
+          64.79999999701977,
+          45.29999999701977,
+          68.20000000298023,
+          38.70000000298023,
+          52.19999998807907,
+          39.1000000089407,
+          70.20000000298023,
+          41.79999999701977,
+          47.79999999701977,
+          32.5,
+          33.20000000298023,
+          45.79999999701977,
+          39.70000000298023,
+          61,
+          39.3999999910593,
+          50.1000000089407,
+          32.5,
+          55.599999994039536,
+          38.1000000089407,
+          53.599999994039536,
+          43.70000000298023,
+          59.20000000298023,
+          40.79999999701977,
+          71.09999999403954,
+          34.400000005960464,
+          55,
+          30.200000002980232,
+          29.099999994039536,
+          359.59999999403954,
+          44.6000000089407,
+          60.599999994039536,
+          45.400000005960464,
+          68.09999999403954,
+          57.900000005960464,
+          42.8999999910593,
+          33.1000000089407,
+          56,
+          47.79999999701977,
+          65,
+          4.5999999940395355,
+          10.300000011920929,
+          16.69999998807907,
+          28.900000005960464,
+          4.299999997019768,
+          52.20000000298023,
+          58.099999994039536,
+          35.6000000089407,
+          57.20000000298023,
+          38.3999999910593,
+          10.400000005960464,
+          19.5,
+          21.899999991059303,
+          10.600000008940697,
+          20,
+          9.599999994039536,
+          16.799999997019768,
+          18.200000002980232,
+          64.5,
+          57.6000000089407,
+          66.19999998807907,
+          59.1000000089407,
+          12.099999994039536,
+          5.5,
+          16.700000002980232,
+          16.700000002980232,
+          26.700000002980232,
+          8.799999997019768,
+          14.399999991059303,
+          16.900000005960464,
+          63.20000000298023,
+          37,
+          61.70000000298023,
+          34.79999999701977,
+          34,
+          63.599999994039536,
+          42.400000005960464,
+          64.09999999403954,
+          60.1000000089407,
+          41.8999999910593,
+          36.20000000298023,
+          47.20000000298023,
+          45.20000000298023,
+          47.19999998807907,
+          34.400000005960464,
+          54.79999999701977,
+          31.100000008940697,
+          32.099999994039536,
+          54.400000005960464,
+          37.599999994039536,
+          57.599999994039536,
+          84.70000000298023,
+          57.900000005960464,
+          68.70000000298023,
+          68.3999999910593,
+          57.900000005960464,
+          93.79999999701977,
+          63,
+          53.099999994039536,
+          72.1000000089407,
+          65.20000000298023,
+          4.899999991059303,
+          16,
+          13.5,
+          16.600000008940697,
+          16.599999994039536,
+          34.599999994039536,
+          89.40000000596046,
+          68.5
+        ],
+        "drawCalls": 6,
+        "triangles": 2500,
+        "objects": 6,
+        "lastWorkerMeshMs": 56.5,
+        "meshedAssetIds": [
+          "char-126"
+        ],
+        "meshJobs": 5,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125"
+        ],
+        "geometryBytes": 972848,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-126-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-127",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-127"
+        ],
+        "frameIntervalsMs": [
+          60.599999994039536,
+          45.400000005960464,
+          68.09999999403954,
+          57.900000005960464,
+          42.8999999910593,
+          33.1000000089407,
+          56,
+          47.79999999701977,
+          65,
+          4.5999999940395355,
+          10.300000011920929,
+          16.69999998807907,
+          28.900000005960464,
+          4.299999997019768,
+          52.20000000298023,
+          58.099999994039536,
+          35.6000000089407,
+          57.20000000298023,
+          38.3999999910593,
+          10.400000005960464,
+          19.5,
+          21.899999991059303,
+          10.600000008940697,
+          20,
+          9.599999994039536,
+          16.799999997019768,
+          18.200000002980232,
+          64.5,
+          57.6000000089407,
+          66.19999998807907,
+          59.1000000089407,
+          12.099999994039536,
+          5.5,
+          16.700000002980232,
+          16.700000002980232,
+          26.700000002980232,
+          8.799999997019768,
+          14.399999991059303,
+          16.900000005960464,
+          63.20000000298023,
+          37,
+          61.70000000298023,
+          34.79999999701977,
+          34,
+          63.599999994039536,
+          42.400000005960464,
+          64.09999999403954,
+          60.1000000089407,
+          41.8999999910593,
+          36.20000000298023,
+          47.20000000298023,
+          45.20000000298023,
+          47.19999998807907,
+          34.400000005960464,
+          54.79999999701977,
+          31.100000008940697,
+          32.099999994039536,
+          54.400000005960464,
+          37.599999994039536,
+          57.599999994039536,
+          84.70000000298023,
+          57.900000005960464,
+          68.70000000298023,
+          68.3999999910593,
+          57.900000005960464,
+          93.79999999701977,
+          63,
+          53.099999994039536,
+          72.1000000089407,
+          65.20000000298023,
+          4.899999991059303,
+          16,
+          13.5,
+          16.600000008940697,
+          16.599999994039536,
+          34.599999994039536,
+          89.40000000596046,
+          68.5,
+          78.09999999403954,
+          60.5,
+          2.2000000029802322,
+          16.900000005960464,
+          16.5,
+          18.599999994039536,
+          15.5,
+          16.200000002980232,
+          32,
+          39.599999994039536,
+          58.5,
+          46.30000001192093,
+          59.099999994039536,
+          42.900000005960464,
+          57.8999999910593,
+          78.70000000298023,
+          41.70000000298023,
+          67.8999999910593,
+          40.400000005960464,
+          50.400000005960464,
+          36.29999999701977,
+          37.8999999910593,
+          57.20000000298023,
+          37.5,
+          53.1000000089407,
+          33.29999999701977,
+          53.3999999910593,
+          36.70000000298023,
+          55.6000000089407,
+          35.099999994039536,
+          37.599999994039536,
+          53.900000005960464,
+          50.20000000298023,
+          65,
+          67.20000000298023,
+          7.5,
+          18.799999997019768,
+          16.799999997019768,
+          14.599999994039536,
+          45.1000000089407,
+          54.8999999910593,
+          56.5
+        ],
+        "drawCalls": 7,
+        "triangles": 2446,
+        "objects": 7,
+        "lastWorkerMeshMs": 62,
+        "meshedAssetIds": [],
+        "meshJobs": 7,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127"
+        ],
+        "geometryBytes": 1467640,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-127"
+        ],
+        "frameIntervalsMs": [
+          4.5999999940395355,
+          10.300000011920929,
+          16.69999998807907,
+          28.900000005960464,
+          4.299999997019768,
+          52.20000000298023,
+          58.099999994039536,
+          35.6000000089407,
+          57.20000000298023,
+          38.3999999910593,
+          10.400000005960464,
+          19.5,
+          21.899999991059303,
+          10.600000008940697,
+          20,
+          9.599999994039536,
+          16.799999997019768,
+          18.200000002980232,
+          64.5,
+          57.6000000089407,
+          66.19999998807907,
+          59.1000000089407,
+          12.099999994039536,
+          5.5,
+          16.700000002980232,
+          16.700000002980232,
+          26.700000002980232,
+          8.799999997019768,
+          14.399999991059303,
+          16.900000005960464,
+          63.20000000298023,
+          37,
+          61.70000000298023,
+          34.79999999701977,
+          34,
+          63.599999994039536,
+          42.400000005960464,
+          64.09999999403954,
+          60.1000000089407,
+          41.8999999910593,
+          36.20000000298023,
+          47.20000000298023,
+          45.20000000298023,
+          47.19999998807907,
+          34.400000005960464,
+          54.79999999701977,
+          31.100000008940697,
+          32.099999994039536,
+          54.400000005960464,
+          37.599999994039536,
+          57.599999994039536,
+          84.70000000298023,
+          57.900000005960464,
+          68.70000000298023,
+          68.3999999910593,
+          57.900000005960464,
+          93.79999999701977,
+          63,
+          53.099999994039536,
+          72.1000000089407,
+          65.20000000298023,
+          4.899999991059303,
+          16,
+          13.5,
+          16.600000008940697,
+          16.599999994039536,
+          34.599999994039536,
+          89.40000000596046,
+          68.5,
+          78.09999999403954,
+          60.5,
+          2.2000000029802322,
+          16.900000005960464,
+          16.5,
+          18.599999994039536,
+          15.5,
+          16.200000002980232,
+          32,
+          39.599999994039536,
+          58.5,
+          46.30000001192093,
+          59.099999994039536,
+          42.900000005960464,
+          57.8999999910593,
+          78.70000000298023,
+          41.70000000298023,
+          67.8999999910593,
+          40.400000005960464,
+          50.400000005960464,
+          36.29999999701977,
+          37.8999999910593,
+          57.20000000298023,
+          37.5,
+          53.1000000089407,
+          33.29999999701977,
+          53.3999999910593,
+          36.70000000298023,
+          55.6000000089407,
+          35.099999994039536,
+          37.599999994039536,
+          53.900000005960464,
+          50.20000000298023,
+          65,
+          67.20000000298023,
+          7.5,
+          18.799999997019768,
+          16.799999997019768,
+          14.599999994039536,
+          45.1000000089407,
+          54.8999999910593,
+          56.5,
+          73.40000000596046,
+          59.099999994039536,
+          10.900000005960464,
+          23.700000002980232,
+          10.700000002980232,
+          26.299999997019768,
+          17,
+          59.70000000298023,
+          50.19999998807907
+        ],
+        "drawCalls": 7,
+        "triangles": 2412,
+        "objects": 7,
+        "lastWorkerMeshMs": 74.3999999910593,
+        "meshedAssetIds": [
+          "char-127"
+        ],
+        "meshJobs": 8,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127"
+        ],
+        "geometryBytes": 1462880,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-127-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-128",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-128"
+        ],
+        "frameIntervalsMs": [
+          45.20000000298023,
+          47.19999998807907,
+          34.400000005960464,
+          54.79999999701977,
+          31.100000008940697,
+          32.099999994039536,
+          54.400000005960464,
+          37.599999994039536,
+          57.599999994039536,
+          84.70000000298023,
+          57.900000005960464,
+          68.70000000298023,
+          68.3999999910593,
+          57.900000005960464,
+          93.79999999701977,
+          63,
+          53.099999994039536,
+          72.1000000089407,
+          65.20000000298023,
+          4.899999991059303,
+          16,
+          13.5,
+          16.600000008940697,
+          16.599999994039536,
+          34.599999994039536,
+          89.40000000596046,
+          68.5,
+          78.09999999403954,
+          60.5,
+          2.2000000029802322,
+          16.900000005960464,
+          16.5,
+          18.599999994039536,
+          15.5,
+          16.200000002980232,
+          32,
+          39.599999994039536,
+          58.5,
+          46.30000001192093,
+          59.099999994039536,
+          42.900000005960464,
+          57.8999999910593,
+          78.70000000298023,
+          41.70000000298023,
+          67.8999999910593,
+          40.400000005960464,
+          50.400000005960464,
+          36.29999999701977,
+          37.8999999910593,
+          57.20000000298023,
+          37.5,
+          53.1000000089407,
+          33.29999999701977,
+          53.3999999910593,
+          36.70000000298023,
+          55.6000000089407,
+          35.099999994039536,
+          37.599999994039536,
+          53.900000005960464,
+          50.20000000298023,
+          65,
+          67.20000000298023,
+          7.5,
+          18.799999997019768,
+          16.799999997019768,
+          14.599999994039536,
+          45.1000000089407,
+          54.8999999910593,
+          56.5,
+          73.40000000596046,
+          59.099999994039536,
+          10.900000005960464,
+          23.700000002980232,
+          10.700000002980232,
+          26.299999997019768,
+          17,
+          59.70000000298023,
+          50.19999998807907,
+          81.6000000089407,
+          67.09999999403954,
+          1.6000000089406967,
+          12,
+          16.799999997019768,
+          16.5,
+          21.899999991059303,
+          20.100000008940697,
+          52.29999999701977,
+          73,
+          53.900000005960464,
+          66.29999999701977,
+          58.20000000298023,
+          44.69999998807907,
+          52.70000000298023,
+          38.6000000089407,
+          42.79999999701977,
+          53.3999999910593,
+          40.5,
+          64,
+          35.900000005960464,
+          59.099999994039536,
+          37.30000001192093,
+          55.599999994039536,
+          40.79999999701977,
+          70.29999999701977,
+          60.900000005960464,
+          43.79999999701977,
+          67.20000000298023,
+          48.29999999701977,
+          60.1000000089407,
+          41.3999999910593,
+          73,
+          45.1000000089407,
+          19.899999991059303,
+          9.5,
+          16.299999997019768,
+          16.400000005960464,
+          17.900000005960464,
+          27.099999994039536,
+          44.70000000298023,
+          48.70000000298023
+        ],
+        "drawCalls": 7,
+        "triangles": 2700,
+        "objects": 7,
+        "lastWorkerMeshMs": 78.40000000596046,
+        "meshedAssetIds": [],
+        "meshJobs": 10,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128"
+        ],
+        "geometryBytes": 2013064,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-128"
+        ],
+        "frameIntervalsMs": [
+          57.900000005960464,
+          68.70000000298023,
+          68.3999999910593,
+          57.900000005960464,
+          93.79999999701977,
+          63,
+          53.099999994039536,
+          72.1000000089407,
+          65.20000000298023,
+          4.899999991059303,
+          16,
+          13.5,
+          16.600000008940697,
+          16.599999994039536,
+          34.599999994039536,
+          89.40000000596046,
+          68.5,
+          78.09999999403954,
+          60.5,
+          2.2000000029802322,
+          16.900000005960464,
+          16.5,
+          18.599999994039536,
+          15.5,
+          16.200000002980232,
+          32,
+          39.599999994039536,
+          58.5,
+          46.30000001192093,
+          59.099999994039536,
+          42.900000005960464,
+          57.8999999910593,
+          78.70000000298023,
+          41.70000000298023,
+          67.8999999910593,
+          40.400000005960464,
+          50.400000005960464,
+          36.29999999701977,
+          37.8999999910593,
+          57.20000000298023,
+          37.5,
+          53.1000000089407,
+          33.29999999701977,
+          53.3999999910593,
+          36.70000000298023,
+          55.6000000089407,
+          35.099999994039536,
+          37.599999994039536,
+          53.900000005960464,
+          50.20000000298023,
+          65,
+          67.20000000298023,
+          7.5,
+          18.799999997019768,
+          16.799999997019768,
+          14.599999994039536,
+          45.1000000089407,
+          54.8999999910593,
+          56.5,
+          73.40000000596046,
+          59.099999994039536,
+          10.900000005960464,
+          23.700000002980232,
+          10.700000002980232,
+          26.299999997019768,
+          17,
+          59.70000000298023,
+          50.19999998807907,
+          81.6000000089407,
+          67.09999999403954,
+          1.6000000089406967,
+          12,
+          16.799999997019768,
+          16.5,
+          21.899999991059303,
+          20.100000008940697,
+          52.29999999701977,
+          73,
+          53.900000005960464,
+          66.29999999701977,
+          58.20000000298023,
+          44.69999998807907,
+          52.70000000298023,
+          38.6000000089407,
+          42.79999999701977,
+          53.3999999910593,
+          40.5,
+          64,
+          35.900000005960464,
+          59.099999994039536,
+          37.30000001192093,
+          55.599999994039536,
+          40.79999999701977,
+          70.29999999701977,
+          60.900000005960464,
+          43.79999999701977,
+          67.20000000298023,
+          48.29999999701977,
+          60.1000000089407,
+          41.3999999910593,
+          73,
+          45.1000000089407,
+          19.899999991059303,
+          9.5,
+          16.299999997019768,
+          16.400000005960464,
+          17.900000005960464,
+          27.099999994039536,
+          44.70000000298023,
+          48.70000000298023,
+          69,
+          64.3999999910593,
+          15.299999997019768,
+          15.5,
+          14.200000002980232,
+          16.600000008940697,
+          16.69999998807907,
+          16.600000008940697,
+          56.29999999701977,
+          62
+        ],
+        "drawCalls": 7,
+        "triangles": 2676,
+        "objects": 7,
+        "lastWorkerMeshMs": 80.40000000596046,
+        "meshedAssetIds": [
+          "char-128"
+        ],
+        "meshJobs": 11,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128"
+        ],
+        "geometryBytes": 2009704,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-128-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-129",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-129"
+        ],
+        "frameIntervalsMs": [
+          36.70000000298023,
+          55.6000000089407,
+          35.099999994039536,
+          37.599999994039536,
+          53.900000005960464,
+          50.20000000298023,
+          65,
+          67.20000000298023,
+          7.5,
+          18.799999997019768,
+          16.799999997019768,
+          14.599999994039536,
+          45.1000000089407,
+          54.8999999910593,
+          56.5,
+          73.40000000596046,
+          59.099999994039536,
+          10.900000005960464,
+          23.700000002980232,
+          10.700000002980232,
+          26.299999997019768,
+          17,
+          59.70000000298023,
+          50.19999998807907,
+          81.6000000089407,
+          67.09999999403954,
+          1.6000000089406967,
+          12,
+          16.799999997019768,
+          16.5,
+          21.899999991059303,
+          20.100000008940697,
+          52.29999999701977,
+          73,
+          53.900000005960464,
+          66.29999999701977,
+          58.20000000298023,
+          44.69999998807907,
+          52.70000000298023,
+          38.6000000089407,
+          42.79999999701977,
+          53.3999999910593,
+          40.5,
+          64,
+          35.900000005960464,
+          59.099999994039536,
+          37.30000001192093,
+          55.599999994039536,
+          40.79999999701977,
+          70.29999999701977,
+          60.900000005960464,
+          43.79999999701977,
+          67.20000000298023,
+          48.29999999701977,
+          60.1000000089407,
+          41.3999999910593,
+          73,
+          45.1000000089407,
+          19.899999991059303,
+          9.5,
+          16.299999997019768,
+          16.400000005960464,
+          17.900000005960464,
+          27.099999994039536,
+          44.70000000298023,
+          48.70000000298023,
+          69,
+          64.3999999910593,
+          15.299999997019768,
+          15.5,
+          14.200000002980232,
+          16.600000008940697,
+          16.69999998807907,
+          16.600000008940697,
+          56.29999999701977,
+          62,
+          52.099999994039536,
+          92.90000000596046,
+          4.700000002980232,
+          22.599999994039536,
+          9.400000005960464,
+          16.700000002980232,
+          16.69999998807907,
+          16.700000002980232,
+          16.799999997019768,
+          16.5,
+          18.900000005960464,
+          90.5,
+          66,
+          73.20000000298023,
+          81,
+          51.099999994039536,
+          60.1000000089407,
+          50.599999994039536,
+          64.09999999403954,
+          59.20000000298023,
+          48.1000000089407,
+          64,
+          56,
+          85.59999999403954,
+          67.20000000298023,
+          42.099999994039536,
+          64.5,
+          41.70000000298023,
+          58.5,
+          44.400000005960464,
+          67.3999999910593,
+          58.1000000089407,
+          49.19999998807907,
+          58.30000001192093,
+          46.29999999701977,
+          74.20000000298023,
+          76.19999998807907,
+          0.800000011920929,
+          16.599999994039536,
+          16,
+          16.599999994039536,
+          42.5,
+          49.30000001192093,
+          67.5
+        ],
+        "drawCalls": 8,
+        "triangles": 2530,
+        "objects": 8,
+        "lastWorkerMeshMs": 65.40000000596046,
+        "meshedAssetIds": [],
+        "meshJobs": 13,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129"
+        ],
+        "geometryBytes": 2521632,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-129"
+        ],
+        "frameIntervalsMs": [
+          45.1000000089407,
+          54.8999999910593,
+          56.5,
+          73.40000000596046,
+          59.099999994039536,
+          10.900000005960464,
+          23.700000002980232,
+          10.700000002980232,
+          26.299999997019768,
+          17,
+          59.70000000298023,
+          50.19999998807907,
+          81.6000000089407,
+          67.09999999403954,
+          1.6000000089406967,
+          12,
+          16.799999997019768,
+          16.5,
+          21.899999991059303,
+          20.100000008940697,
+          52.29999999701977,
+          73,
+          53.900000005960464,
+          66.29999999701977,
+          58.20000000298023,
+          44.69999998807907,
+          52.70000000298023,
+          38.6000000089407,
+          42.79999999701977,
+          53.3999999910593,
+          40.5,
+          64,
+          35.900000005960464,
+          59.099999994039536,
+          37.30000001192093,
+          55.599999994039536,
+          40.79999999701977,
+          70.29999999701977,
+          60.900000005960464,
+          43.79999999701977,
+          67.20000000298023,
+          48.29999999701977,
+          60.1000000089407,
+          41.3999999910593,
+          73,
+          45.1000000089407,
+          19.899999991059303,
+          9.5,
+          16.299999997019768,
+          16.400000005960464,
+          17.900000005960464,
+          27.099999994039536,
+          44.70000000298023,
+          48.70000000298023,
+          69,
+          64.3999999910593,
+          15.299999997019768,
+          15.5,
+          14.200000002980232,
+          16.600000008940697,
+          16.69999998807907,
+          16.600000008940697,
+          56.29999999701977,
+          62,
+          52.099999994039536,
+          92.90000000596046,
+          4.700000002980232,
+          22.599999994039536,
+          9.400000005960464,
+          16.700000002980232,
+          16.69999998807907,
+          16.700000002980232,
+          16.799999997019768,
+          16.5,
+          18.900000005960464,
+          90.5,
+          66,
+          73.20000000298023,
+          81,
+          51.099999994039536,
+          60.1000000089407,
+          50.599999994039536,
+          64.09999999403954,
+          59.20000000298023,
+          48.1000000089407,
+          64,
+          56,
+          85.59999999403954,
+          67.20000000298023,
+          42.099999994039536,
+          64.5,
+          41.70000000298023,
+          58.5,
+          44.400000005960464,
+          67.3999999910593,
+          58.1000000089407,
+          49.19999998807907,
+          58.30000001192093,
+          46.29999999701977,
+          74.20000000298023,
+          76.19999998807907,
+          0.800000011920929,
+          16.599999994039536,
+          16,
+          16.599999994039536,
+          42.5,
+          49.30000001192093,
+          67.5,
+          48,
+          68,
+          9,
+          15.799999997019768,
+          16.700000002980232,
+          23.799999997019768,
+          11.399999991059303,
+          14.800000011920929,
+          17.5,
+          16.69999998807907,
+          54.1000000089407,
+          51.20000000298023
+        ],
+        "drawCalls": 8,
+        "triangles": 2496,
+        "objects": 8,
+        "lastWorkerMeshMs": 107.40000000596046,
+        "meshedAssetIds": [
+          "char-129"
+        ],
+        "meshJobs": 14,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129"
+        ],
+        "geometryBytes": 2516872,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-129-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-130",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-130"
+        ],
+        "frameIntervalsMs": [
+          60.1000000089407,
+          41.3999999910593,
+          73,
+          45.1000000089407,
+          19.899999991059303,
+          9.5,
+          16.299999997019768,
+          16.400000005960464,
+          17.900000005960464,
+          27.099999994039536,
+          44.70000000298023,
+          48.70000000298023,
+          69,
+          64.3999999910593,
+          15.299999997019768,
+          15.5,
+          14.200000002980232,
+          16.600000008940697,
+          16.69999998807907,
+          16.600000008940697,
+          56.29999999701977,
+          62,
+          52.099999994039536,
+          92.90000000596046,
+          4.700000002980232,
+          22.599999994039536,
+          9.400000005960464,
+          16.700000002980232,
+          16.69999998807907,
+          16.700000002980232,
+          16.799999997019768,
+          16.5,
+          18.900000005960464,
+          90.5,
+          66,
+          73.20000000298023,
+          81,
+          51.099999994039536,
+          60.1000000089407,
+          50.599999994039536,
+          64.09999999403954,
+          59.20000000298023,
+          48.1000000089407,
+          64,
+          56,
+          85.59999999403954,
+          67.20000000298023,
+          42.099999994039536,
+          64.5,
+          41.70000000298023,
+          58.5,
+          44.400000005960464,
+          67.3999999910593,
+          58.1000000089407,
+          49.19999998807907,
+          58.30000001192093,
+          46.29999999701977,
+          74.20000000298023,
+          76.19999998807907,
+          0.800000011920929,
+          16.599999994039536,
+          16,
+          16.599999994039536,
+          42.5,
+          49.30000001192093,
+          67.5,
+          48,
+          68,
+          9,
+          15.799999997019768,
+          16.700000002980232,
+          23.799999997019768,
+          11.399999991059303,
+          14.800000011920929,
+          17.5,
+          16.69999998807907,
+          54.1000000089407,
+          51.20000000298023,
+          62.8999999910593,
+          46.29999999701977,
+          10.600000008940697,
+          16.299999997019768,
+          7.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          29.400000005960464,
+          57.599999994039536,
+          39,
+          59.099999994039536,
+          38,
+          60.30000001192093,
+          41.3999999910593,
+          60.1000000089407,
+          40.099999994039536,
+          63.70000000298023,
+          39.8999999910593,
+          57.6000000089407,
+          40.5,
+          48.3999999910593,
+          38.30000001192093,
+          53.29999999701977,
+          35.3999999910593,
+          57.30000001192093,
+          39.3999999910593,
+          35.70000000298023,
+          55.70000000298023,
+          46.29999999701977,
+          53.599999994039536,
+          38.400000005960464,
+          57.20000000298023,
+          50.70000000298023,
+          50.69999998807907,
+          15.700000002980232,
+          13.799999997019768,
+          16.700000002980232,
+          23.900000005960464,
+          10.099999994039536,
+          32.5,
+          37.20000000298023,
+          45.599999994039536
+        ],
+        "drawCalls": 8,
+        "triangles": 2752,
+        "objects": 8,
+        "lastWorkerMeshMs": 85.29999999701977,
+        "meshedAssetIds": [],
+        "meshJobs": 16,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130"
+        ],
+        "geometryBytes": 3077664,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-130"
+        ],
+        "frameIntervalsMs": [
+          64.3999999910593,
+          15.299999997019768,
+          15.5,
+          14.200000002980232,
+          16.600000008940697,
+          16.69999998807907,
+          16.600000008940697,
+          56.29999999701977,
+          62,
+          52.099999994039536,
+          92.90000000596046,
+          4.700000002980232,
+          22.599999994039536,
+          9.400000005960464,
+          16.700000002980232,
+          16.69999998807907,
+          16.700000002980232,
+          16.799999997019768,
+          16.5,
+          18.900000005960464,
+          90.5,
+          66,
+          73.20000000298023,
+          81,
+          51.099999994039536,
+          60.1000000089407,
+          50.599999994039536,
+          64.09999999403954,
+          59.20000000298023,
+          48.1000000089407,
+          64,
+          56,
+          85.59999999403954,
+          67.20000000298023,
+          42.099999994039536,
+          64.5,
+          41.70000000298023,
+          58.5,
+          44.400000005960464,
+          67.3999999910593,
+          58.1000000089407,
+          49.19999998807907,
+          58.30000001192093,
+          46.29999999701977,
+          74.20000000298023,
+          76.19999998807907,
+          0.800000011920929,
+          16.599999994039536,
+          16,
+          16.599999994039536,
+          42.5,
+          49.30000001192093,
+          67.5,
+          48,
+          68,
+          9,
+          15.799999997019768,
+          16.700000002980232,
+          23.799999997019768,
+          11.399999991059303,
+          14.800000011920929,
+          17.5,
+          16.69999998807907,
+          54.1000000089407,
+          51.20000000298023,
+          62.8999999910593,
+          46.29999999701977,
+          10.600000008940697,
+          16.299999997019768,
+          7.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          29.400000005960464,
+          57.599999994039536,
+          39,
+          59.099999994039536,
+          38,
+          60.30000001192093,
+          41.3999999910593,
+          60.1000000089407,
+          40.099999994039536,
+          63.70000000298023,
+          39.8999999910593,
+          57.6000000089407,
+          40.5,
+          48.3999999910593,
+          38.30000001192093,
+          53.29999999701977,
+          35.3999999910593,
+          57.30000001192093,
+          39.3999999910593,
+          35.70000000298023,
+          55.70000000298023,
+          46.29999999701977,
+          53.599999994039536,
+          38.400000005960464,
+          57.20000000298023,
+          50.70000000298023,
+          50.69999998807907,
+          15.700000002980232,
+          13.799999997019768,
+          16.700000002980232,
+          23.900000005960464,
+          10.099999994039536,
+          32.5,
+          37.20000000298023,
+          45.599999994039536,
+          54.20000000298023,
+          121.90000000596046,
+          0.5999999940395355,
+          11.5,
+          12.5,
+          16.600000008940697,
+          22.399999991059303,
+          11.200000002980232,
+          29.799999997019768,
+          3.2000000029802322,
+          21.799999997019768,
+          108,
+          79.40000000596046
+        ],
+        "drawCalls": 8,
+        "triangles": 2728,
+        "objects": 8,
+        "lastWorkerMeshMs": 110.8999999910593,
+        "meshedAssetIds": [
+          "char-130"
+        ],
+        "meshJobs": 17,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130"
+        ],
+        "geometryBytes": 3074304,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-130-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-131",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-131"
+        ],
+        "frameIntervalsMs": [
+          49.19999998807907,
+          58.30000001192093,
+          46.29999999701977,
+          74.20000000298023,
+          76.19999998807907,
+          0.800000011920929,
+          16.599999994039536,
+          16,
+          16.599999994039536,
+          42.5,
+          49.30000001192093,
+          67.5,
+          48,
+          68,
+          9,
+          15.799999997019768,
+          16.700000002980232,
+          23.799999997019768,
+          11.399999991059303,
+          14.800000011920929,
+          17.5,
+          16.69999998807907,
+          54.1000000089407,
+          51.20000000298023,
+          62.8999999910593,
+          46.29999999701977,
+          10.600000008940697,
+          16.299999997019768,
+          7.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          29.400000005960464,
+          57.599999994039536,
+          39,
+          59.099999994039536,
+          38,
+          60.30000001192093,
+          41.3999999910593,
+          60.1000000089407,
+          40.099999994039536,
+          63.70000000298023,
+          39.8999999910593,
+          57.6000000089407,
+          40.5,
+          48.3999999910593,
+          38.30000001192093,
+          53.29999999701977,
+          35.3999999910593,
+          57.30000001192093,
+          39.3999999910593,
+          35.70000000298023,
+          55.70000000298023,
+          46.29999999701977,
+          53.599999994039536,
+          38.400000005960464,
+          57.20000000298023,
+          50.70000000298023,
+          50.69999998807907,
+          15.700000002980232,
+          13.799999997019768,
+          16.700000002980232,
+          23.900000005960464,
+          10.099999994039536,
+          32.5,
+          37.20000000298023,
+          45.599999994039536,
+          54.20000000298023,
+          121.90000000596046,
+          0.5999999940395355,
+          11.5,
+          12.5,
+          16.600000008940697,
+          22.399999991059303,
+          11.200000002980232,
+          29.799999997019768,
+          3.2000000029802322,
+          21.799999997019768,
+          108,
+          79.40000000596046,
+          63.70000000298023,
+          67,
+          10.399999991059303,
+          16.5,
+          23.900000005960464,
+          13.099999994039536,
+          16.5,
+          15.900000005960464,
+          13.700000002980232,
+          59.3999999910593,
+          41.900000005960464,
+          56,
+          45.099999994039536,
+          60,
+          49.79999999701977,
+          54,
+          40.1000000089407,
+          52.5,
+          43.29999999701977,
+          74.29999999701977,
+          67.70000000298023,
+          45.70000000298023,
+          63.79999999701977,
+          49.099999994039536,
+          65.6000000089407,
+          46.099999994039536,
+          59.5,
+          38.5,
+          61.900000005960464,
+          41.79999999701977,
+          55.5,
+          47.400000005960464,
+          65.5,
+          64.59999999403954,
+          40.20000000298023,
+          13.200000002980232,
+          14.199999988079071,
+          16.700000002980232,
+          38.6000000089407,
+          32.099999994039536,
+          44.5
+        ],
+        "drawCalls": 6,
+        "triangles": 2152,
+        "objects": 6,
+        "lastWorkerMeshMs": 40.19999998807907,
+        "meshedAssetIds": [],
+        "meshJobs": 19,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131"
+        ],
+        "geometryBytes": 3514112,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-131"
+        ],
+        "frameIntervalsMs": [
+          16.599999994039536,
+          42.5,
+          49.30000001192093,
+          67.5,
+          48,
+          68,
+          9,
+          15.799999997019768,
+          16.700000002980232,
+          23.799999997019768,
+          11.399999991059303,
+          14.800000011920929,
+          17.5,
+          16.69999998807907,
+          54.1000000089407,
+          51.20000000298023,
+          62.8999999910593,
+          46.29999999701977,
+          10.600000008940697,
+          16.299999997019768,
+          7.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          29.400000005960464,
+          57.599999994039536,
+          39,
+          59.099999994039536,
+          38,
+          60.30000001192093,
+          41.3999999910593,
+          60.1000000089407,
+          40.099999994039536,
+          63.70000000298023,
+          39.8999999910593,
+          57.6000000089407,
+          40.5,
+          48.3999999910593,
+          38.30000001192093,
+          53.29999999701977,
+          35.3999999910593,
+          57.30000001192093,
+          39.3999999910593,
+          35.70000000298023,
+          55.70000000298023,
+          46.29999999701977,
+          53.599999994039536,
+          38.400000005960464,
+          57.20000000298023,
+          50.70000000298023,
+          50.69999998807907,
+          15.700000002980232,
+          13.799999997019768,
+          16.700000002980232,
+          23.900000005960464,
+          10.099999994039536,
+          32.5,
+          37.20000000298023,
+          45.599999994039536,
+          54.20000000298023,
+          121.90000000596046,
+          0.5999999940395355,
+          11.5,
+          12.5,
+          16.600000008940697,
+          22.399999991059303,
+          11.200000002980232,
+          29.799999997019768,
+          3.2000000029802322,
+          21.799999997019768,
+          108,
+          79.40000000596046,
+          63.70000000298023,
+          67,
+          10.399999991059303,
+          16.5,
+          23.900000005960464,
+          13.099999994039536,
+          16.5,
+          15.900000005960464,
+          13.700000002980232,
+          59.3999999910593,
+          41.900000005960464,
+          56,
+          45.099999994039536,
+          60,
+          49.79999999701977,
+          54,
+          40.1000000089407,
+          52.5,
+          43.29999999701977,
+          74.29999999701977,
+          67.70000000298023,
+          45.70000000298023,
+          63.79999999701977,
+          49.099999994039536,
+          65.6000000089407,
+          46.099999994039536,
+          59.5,
+          38.5,
+          61.900000005960464,
+          41.79999999701977,
+          55.5,
+          47.400000005960464,
+          65.5,
+          64.59999999403954,
+          40.20000000298023,
+          13.200000002980232,
+          14.199999988079071,
+          16.700000002980232,
+          38.6000000089407,
+          32.099999994039536,
+          44.5,
+          43.20000000298023,
+          51.20000000298023,
+          10.899999991059303,
+          12.799999997019768,
+          18.200000002980232,
+          18.299999997019768,
+          44.5,
+          36.1000000089407
+        ],
+        "drawCalls": 6,
+        "triangles": 2136,
+        "objects": 6,
+        "lastWorkerMeshMs": 51.8999999910593,
+        "meshedAssetIds": [
+          "char-131"
+        ],
+        "meshJobs": 20,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131"
+        ],
+        "geometryBytes": 3511872,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-131-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-132",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-132"
+        ],
+        "frameIntervalsMs": [
+          57.30000001192093,
+          39.3999999910593,
+          35.70000000298023,
+          55.70000000298023,
+          46.29999999701977,
+          53.599999994039536,
+          38.400000005960464,
+          57.20000000298023,
+          50.70000000298023,
+          50.69999998807907,
+          15.700000002980232,
+          13.799999997019768,
+          16.700000002980232,
+          23.900000005960464,
+          10.099999994039536,
+          32.5,
+          37.20000000298023,
+          45.599999994039536,
+          54.20000000298023,
+          121.90000000596046,
+          0.5999999940395355,
+          11.5,
+          12.5,
+          16.600000008940697,
+          22.399999991059303,
+          11.200000002980232,
+          29.799999997019768,
+          3.2000000029802322,
+          21.799999997019768,
+          108,
+          79.40000000596046,
+          63.70000000298023,
+          67,
+          10.399999991059303,
+          16.5,
+          23.900000005960464,
+          13.099999994039536,
+          16.5,
+          15.900000005960464,
+          13.700000002980232,
+          59.3999999910593,
+          41.900000005960464,
+          56,
+          45.099999994039536,
+          60,
+          49.79999999701977,
+          54,
+          40.1000000089407,
+          52.5,
+          43.29999999701977,
+          74.29999999701977,
+          67.70000000298023,
+          45.70000000298023,
+          63.79999999701977,
+          49.099999994039536,
+          65.6000000089407,
+          46.099999994039536,
+          59.5,
+          38.5,
+          61.900000005960464,
+          41.79999999701977,
+          55.5,
+          47.400000005960464,
+          65.5,
+          64.59999999403954,
+          40.20000000298023,
+          13.200000002980232,
+          14.199999988079071,
+          16.700000002980232,
+          38.6000000089407,
+          32.099999994039536,
+          44.5,
+          43.20000000298023,
+          51.20000000298023,
+          10.899999991059303,
+          12.799999997019768,
+          18.200000002980232,
+          18.299999997019768,
+          44.5,
+          36.1000000089407,
+          35.29999999701977,
+          48.79999999701977,
+          1.6000000089406967,
+          14.5,
+          17.099999994039536,
+          15.5,
+          45.099999994039536,
+          49.400000005960464,
+          70.59999999403954,
+          66.6000000089407,
+          43.099999994039536,
+          70.90000000596046,
+          43.70000000298023,
+          62.3999999910593,
+          76.20000000298023,
+          53.400000005960464,
+          73.69999998807907,
+          69.70000000298023,
+          45.5,
+          67.6000000089407,
+          60.19999998807907,
+          63.6000000089407,
+          41.70000000298023,
+          58.29999999701977,
+          43.29999999701977,
+          64.59999999403954,
+          64.30000001192093,
+          55,
+          70.5,
+          78.29999999701977,
+          41.099999994039536,
+          4.700000002980232,
+          22.099999994039536,
+          18.600000008940697,
+          9.200000002980232,
+          16.69999998807907,
+          16.600000008940697,
+          35.70000000298023,
+          40.69999998807907,
+          47.5
+        ],
+        "drawCalls": 6,
+        "triangles": 2368,
+        "objects": 6,
+        "lastWorkerMeshMs": 93.3999999910593,
+        "meshedAssetIds": [],
+        "meshJobs": 22,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132"
+        ],
+        "geometryBytes": 3989248,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-132"
+        ],
+        "frameIntervalsMs": [
+          13.799999997019768,
+          16.700000002980232,
+          23.900000005960464,
+          10.099999994039536,
+          32.5,
+          37.20000000298023,
+          45.599999994039536,
+          54.20000000298023,
+          121.90000000596046,
+          0.5999999940395355,
+          11.5,
+          12.5,
+          16.600000008940697,
+          22.399999991059303,
+          11.200000002980232,
+          29.799999997019768,
+          3.2000000029802322,
+          21.799999997019768,
+          108,
+          79.40000000596046,
+          63.70000000298023,
+          67,
+          10.399999991059303,
+          16.5,
+          23.900000005960464,
+          13.099999994039536,
+          16.5,
+          15.900000005960464,
+          13.700000002980232,
+          59.3999999910593,
+          41.900000005960464,
+          56,
+          45.099999994039536,
+          60,
+          49.79999999701977,
+          54,
+          40.1000000089407,
+          52.5,
+          43.29999999701977,
+          74.29999999701977,
+          67.70000000298023,
+          45.70000000298023,
+          63.79999999701977,
+          49.099999994039536,
+          65.6000000089407,
+          46.099999994039536,
+          59.5,
+          38.5,
+          61.900000005960464,
+          41.79999999701977,
+          55.5,
+          47.400000005960464,
+          65.5,
+          64.59999999403954,
+          40.20000000298023,
+          13.200000002980232,
+          14.199999988079071,
+          16.700000002980232,
+          38.6000000089407,
+          32.099999994039536,
+          44.5,
+          43.20000000298023,
+          51.20000000298023,
+          10.899999991059303,
+          12.799999997019768,
+          18.200000002980232,
+          18.299999997019768,
+          44.5,
+          36.1000000089407,
+          35.29999999701977,
+          48.79999999701977,
+          1.6000000089406967,
+          14.5,
+          17.099999994039536,
+          15.5,
+          45.099999994039536,
+          49.400000005960464,
+          70.59999999403954,
+          66.6000000089407,
+          43.099999994039536,
+          70.90000000596046,
+          43.70000000298023,
+          62.3999999910593,
+          76.20000000298023,
+          53.400000005960464,
+          73.69999998807907,
+          69.70000000298023,
+          45.5,
+          67.6000000089407,
+          60.19999998807907,
+          63.6000000089407,
+          41.70000000298023,
+          58.29999999701977,
+          43.29999999701977,
+          64.59999999403954,
+          64.30000001192093,
+          55,
+          70.5,
+          78.29999999701977,
+          41.099999994039536,
+          4.700000002980232,
+          22.099999994039536,
+          18.600000008940697,
+          9.200000002980232,
+          16.69999998807907,
+          16.600000008940697,
+          35.70000000298023,
+          40.69999998807907,
+          47.5,
+          57.900000005960464,
+          42.5,
+          9.200000002980232,
+          24.200000002980232,
+          9.399999991059303,
+          16.299999997019768,
+          16.700000002980232,
+          16.600000008940697,
+          24.19999998807907,
+          45.1000000089407,
+          33.70000000298023
+        ],
+        "drawCalls": 6,
+        "triangles": 2352,
+        "objects": 6,
+        "lastWorkerMeshMs": 100.30000001192093,
+        "meshedAssetIds": [
+          "char-132"
+        ],
+        "meshJobs": 23,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132"
+        ],
+        "geometryBytes": 3987008,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-132-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-133",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-133"
+        ],
+        "frameIntervalsMs": [
+          59.5,
+          38.5,
+          61.900000005960464,
+          41.79999999701977,
+          55.5,
+          47.400000005960464,
+          65.5,
+          64.59999999403954,
+          40.20000000298023,
+          13.200000002980232,
+          14.199999988079071,
+          16.700000002980232,
+          38.6000000089407,
+          32.099999994039536,
+          44.5,
+          43.20000000298023,
+          51.20000000298023,
+          10.899999991059303,
+          12.799999997019768,
+          18.200000002980232,
+          18.299999997019768,
+          44.5,
+          36.1000000089407,
+          35.29999999701977,
+          48.79999999701977,
+          1.6000000089406967,
+          14.5,
+          17.099999994039536,
+          15.5,
+          45.099999994039536,
+          49.400000005960464,
+          70.59999999403954,
+          66.6000000089407,
+          43.099999994039536,
+          70.90000000596046,
+          43.70000000298023,
+          62.3999999910593,
+          76.20000000298023,
+          53.400000005960464,
+          73.69999998807907,
+          69.70000000298023,
+          45.5,
+          67.6000000089407,
+          60.19999998807907,
+          63.6000000089407,
+          41.70000000298023,
+          58.29999999701977,
+          43.29999999701977,
+          64.59999999403954,
+          64.30000001192093,
+          55,
+          70.5,
+          78.29999999701977,
+          41.099999994039536,
+          4.700000002980232,
+          22.099999994039536,
+          18.600000008940697,
+          9.200000002980232,
+          16.69999998807907,
+          16.600000008940697,
+          35.70000000298023,
+          40.69999998807907,
+          47.5,
+          57.900000005960464,
+          42.5,
+          9.200000002980232,
+          24.200000002980232,
+          9.399999991059303,
+          16.299999997019768,
+          16.700000002980232,
+          16.600000008940697,
+          24.19999998807907,
+          45.1000000089407,
+          33.70000000298023,
+          55.79999999701977,
+          33.79999999701977,
+          7.5999999940395355,
+          16.5,
+          24.80000001192093,
+          8.5,
+          18.899999991059303,
+          14.299999997019768,
+          32,
+          48.30000001192093,
+          33.5,
+          56.29999999701977,
+          32.3999999910593,
+          34.30000001192093,
+          49.69999998807907,
+          39.6000000089407,
+          60.79999999701977,
+          42,
+          52.599999994039536,
+          41.5,
+          47.1000000089407,
+          34,
+          33,
+          48.5,
+          39.599999994039536,
+          56.1000000089407,
+          32.099999994039536,
+          56.599999994039536,
+          42.900000005960464,
+          64.09999999403954,
+          45.20000000298023,
+          74.5,
+          67.40000000596046,
+          52.20000000298023,
+          7.699999988079071,
+          9.400000005960464,
+          24.299999997019768,
+          9.100000008940697,
+          16.599999994039536,
+          19.599999994039536,
+          15.700000002980232,
+          14.900000005960464,
+          16.5,
+          81.20000000298023,
+          54.69999998807907,
+          51.400000005960464
+        ],
+        "drawCalls": 7,
+        "triangles": 2472,
+        "objects": 7,
+        "lastWorkerMeshMs": 145.70000000298023,
+        "meshedAssetIds": [],
+        "meshJobs": 25,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133"
+        ],
+        "geometryBytes": 4484320,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-133"
+        ],
+        "frameIntervalsMs": [
+          16.700000002980232,
+          38.6000000089407,
+          32.099999994039536,
+          44.5,
+          43.20000000298023,
+          51.20000000298023,
+          10.899999991059303,
+          12.799999997019768,
+          18.200000002980232,
+          18.299999997019768,
+          44.5,
+          36.1000000089407,
+          35.29999999701977,
+          48.79999999701977,
+          1.6000000089406967,
+          14.5,
+          17.099999994039536,
+          15.5,
+          45.099999994039536,
+          49.400000005960464,
+          70.59999999403954,
+          66.6000000089407,
+          43.099999994039536,
+          70.90000000596046,
+          43.70000000298023,
+          62.3999999910593,
+          76.20000000298023,
+          53.400000005960464,
+          73.69999998807907,
+          69.70000000298023,
+          45.5,
+          67.6000000089407,
+          60.19999998807907,
+          63.6000000089407,
+          41.70000000298023,
+          58.29999999701977,
+          43.29999999701977,
+          64.59999999403954,
+          64.30000001192093,
+          55,
+          70.5,
+          78.29999999701977,
+          41.099999994039536,
+          4.700000002980232,
+          22.099999994039536,
+          18.600000008940697,
+          9.200000002980232,
+          16.69999998807907,
+          16.600000008940697,
+          35.70000000298023,
+          40.69999998807907,
+          47.5,
+          57.900000005960464,
+          42.5,
+          9.200000002980232,
+          24.200000002980232,
+          9.399999991059303,
+          16.299999997019768,
+          16.700000002980232,
+          16.600000008940697,
+          24.19999998807907,
+          45.1000000089407,
+          33.70000000298023,
+          55.79999999701977,
+          33.79999999701977,
+          7.5999999940395355,
+          16.5,
+          24.80000001192093,
+          8.5,
+          18.899999991059303,
+          14.299999997019768,
+          32,
+          48.30000001192093,
+          33.5,
+          56.29999999701977,
+          32.3999999910593,
+          34.30000001192093,
+          49.69999998807907,
+          39.6000000089407,
+          60.79999999701977,
+          42,
+          52.599999994039536,
+          41.5,
+          47.1000000089407,
+          34,
+          33,
+          48.5,
+          39.599999994039536,
+          56.1000000089407,
+          32.099999994039536,
+          56.599999994039536,
+          42.900000005960464,
+          64.09999999403954,
+          45.20000000298023,
+          74.5,
+          67.40000000596046,
+          52.20000000298023,
+          7.699999988079071,
+          9.400000005960464,
+          24.299999997019768,
+          9.100000008940697,
+          16.599999994039536,
+          19.599999994039536,
+          15.700000002980232,
+          14.900000005960464,
+          16.5,
+          81.20000000298023,
+          54.69999998807907,
+          51.400000005960464,
+          65.90000000596046,
+          65.09999999403954,
+          3,
+          11.900000005960464,
+          16.799999997019768,
+          17,
+          16.299999997019768,
+          16.799999997019768,
+          21.900000005960464,
+          42.099999994039536,
+          67.40000000596046
+        ],
+        "drawCalls": 7,
+        "triangles": 2448,
+        "objects": 7,
+        "lastWorkerMeshMs": 91.59999999403954,
+        "meshedAssetIds": [
+          "char-133"
+        ],
+        "meshJobs": 26,
+        "cachedAssetIds": [
+          "char-126",
+          "char-125",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133"
+        ],
+        "geometryBytes": 4480960,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-133-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-134",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-134"
+        ],
+        "frameIntervalsMs": [
+          78.29999999701977,
+          41.099999994039536,
+          4.700000002980232,
+          22.099999994039536,
+          18.600000008940697,
+          9.200000002980232,
+          16.69999998807907,
+          16.600000008940697,
+          35.70000000298023,
+          40.69999998807907,
+          47.5,
+          57.900000005960464,
+          42.5,
+          9.200000002980232,
+          24.200000002980232,
+          9.399999991059303,
+          16.299999997019768,
+          16.700000002980232,
+          16.600000008940697,
+          24.19999998807907,
+          45.1000000089407,
+          33.70000000298023,
+          55.79999999701977,
+          33.79999999701977,
+          7.5999999940395355,
+          16.5,
+          24.80000001192093,
+          8.5,
+          18.899999991059303,
+          14.299999997019768,
+          32,
+          48.30000001192093,
+          33.5,
+          56.29999999701977,
+          32.3999999910593,
+          34.30000001192093,
+          49.69999998807907,
+          39.6000000089407,
+          60.79999999701977,
+          42,
+          52.599999994039536,
+          41.5,
+          47.1000000089407,
+          34,
+          33,
+          48.5,
+          39.599999994039536,
+          56.1000000089407,
+          32.099999994039536,
+          56.599999994039536,
+          42.900000005960464,
+          64.09999999403954,
+          45.20000000298023,
+          74.5,
+          67.40000000596046,
+          52.20000000298023,
+          7.699999988079071,
+          9.400000005960464,
+          24.299999997019768,
+          9.100000008940697,
+          16.599999994039536,
+          19.599999994039536,
+          15.700000002980232,
+          14.900000005960464,
+          16.5,
+          81.20000000298023,
+          54.69999998807907,
+          51.400000005960464,
+          65.90000000596046,
+          65.09999999403954,
+          3,
+          11.900000005960464,
+          16.799999997019768,
+          17,
+          16.299999997019768,
+          16.799999997019768,
+          21.900000005960464,
+          42.099999994039536,
+          67.40000000596046,
+          49.20000000298023,
+          68.09999999403954,
+          1,
+          17.900000005960464,
+          15.5,
+          24.19999998807907,
+          9.200000002980232,
+          20.400000005960464,
+          17.5,
+          33.20000000298023,
+          50.79999999701977,
+          42.8999999910593,
+          61.6000000089407,
+          42.3999999910593,
+          67.70000000298023,
+          68.90000000596046,
+          56.099999994039536,
+          65.40000000596046,
+          68.20000000298023,
+          43.69999998807907,
+          57.70000000298023,
+          32,
+          36.1000000089407,
+          58,
+          33.79999999701977,
+          55,
+          40.29999999701977,
+          58.599999994039536,
+          42.1000000089407,
+          56.099999994039536,
+          36.70000000298023,
+          60.29999999701977,
+          57.5,
+          62.5,
+          9,
+          15.400000005960464,
+          16.799999997019768,
+          16.5,
+          34,
+          53,
+          57.400000005960464
+        ],
+        "drawCalls": 4,
+        "triangles": 2776,
+        "objects": 4,
+        "lastWorkerMeshMs": 66.20000000298023,
+        "meshedAssetIds": [],
+        "meshJobs": 28,
+        "cachedAssetIds": [
+          "char-126",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133",
+          "char-134"
+        ],
+        "geometryBytes": 4579584,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-134"
+        ],
+        "frameIntervalsMs": [
+          47.5,
+          57.900000005960464,
+          42.5,
+          9.200000002980232,
+          24.200000002980232,
+          9.399999991059303,
+          16.299999997019768,
+          16.700000002980232,
+          16.600000008940697,
+          24.19999998807907,
+          45.1000000089407,
+          33.70000000298023,
+          55.79999999701977,
+          33.79999999701977,
+          7.5999999940395355,
+          16.5,
+          24.80000001192093,
+          8.5,
+          18.899999991059303,
+          14.299999997019768,
+          32,
+          48.30000001192093,
+          33.5,
+          56.29999999701977,
+          32.3999999910593,
+          34.30000001192093,
+          49.69999998807907,
+          39.6000000089407,
+          60.79999999701977,
+          42,
+          52.599999994039536,
+          41.5,
+          47.1000000089407,
+          34,
+          33,
+          48.5,
+          39.599999994039536,
+          56.1000000089407,
+          32.099999994039536,
+          56.599999994039536,
+          42.900000005960464,
+          64.09999999403954,
+          45.20000000298023,
+          74.5,
+          67.40000000596046,
+          52.20000000298023,
+          7.699999988079071,
+          9.400000005960464,
+          24.299999997019768,
+          9.100000008940697,
+          16.599999994039536,
+          19.599999994039536,
+          15.700000002980232,
+          14.900000005960464,
+          16.5,
+          81.20000000298023,
+          54.69999998807907,
+          51.400000005960464,
+          65.90000000596046,
+          65.09999999403954,
+          3,
+          11.900000005960464,
+          16.799999997019768,
+          17,
+          16.299999997019768,
+          16.799999997019768,
+          21.900000005960464,
+          42.099999994039536,
+          67.40000000596046,
+          49.20000000298023,
+          68.09999999403954,
+          1,
+          17.900000005960464,
+          15.5,
+          24.19999998807907,
+          9.200000002980232,
+          20.400000005960464,
+          17.5,
+          33.20000000298023,
+          50.79999999701977,
+          42.8999999910593,
+          61.6000000089407,
+          42.3999999910593,
+          67.70000000298023,
+          68.90000000596046,
+          56.099999994039536,
+          65.40000000596046,
+          68.20000000298023,
+          43.69999998807907,
+          57.70000000298023,
+          32,
+          36.1000000089407,
+          58,
+          33.79999999701977,
+          55,
+          40.29999999701977,
+          58.599999994039536,
+          42.1000000089407,
+          56.099999994039536,
+          36.70000000298023,
+          60.29999999701977,
+          57.5,
+          62.5,
+          9,
+          15.400000005960464,
+          16.799999997019768,
+          16.5,
+          34,
+          53,
+          57.400000005960464,
+          75.09999999403954,
+          93.79999999701977,
+          9.5,
+          15.299999997019768,
+          11.900000005960464,
+          16.799999997019768,
+          16.600000008940697,
+          16.69999998807907,
+          48.20000000298023,
+          71.20000000298023
+        ],
+        "drawCalls": 4,
+        "triangles": 2744,
+        "objects": 4,
+        "lastWorkerMeshMs": 82.19999998807907,
+        "meshedAssetIds": [
+          "char-134"
+        ],
+        "meshJobs": 29,
+        "cachedAssetIds": [
+          "char-126",
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133",
+          "char-134"
+        ],
+        "geometryBytes": 4575104,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-134-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-135",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-135"
+        ],
+        "frameIntervalsMs": [
+          9.400000005960464,
+          24.299999997019768,
+          9.100000008940697,
+          16.599999994039536,
+          19.599999994039536,
+          15.700000002980232,
+          14.900000005960464,
+          16.5,
+          81.20000000298023,
+          54.69999998807907,
+          51.400000005960464,
+          65.90000000596046,
+          65.09999999403954,
+          3,
+          11.900000005960464,
+          16.799999997019768,
+          17,
+          16.299999997019768,
+          16.799999997019768,
+          21.900000005960464,
+          42.099999994039536,
+          67.40000000596046,
+          49.20000000298023,
+          68.09999999403954,
+          1,
+          17.900000005960464,
+          15.5,
+          24.19999998807907,
+          9.200000002980232,
+          20.400000005960464,
+          17.5,
+          33.20000000298023,
+          50.79999999701977,
+          42.8999999910593,
+          61.6000000089407,
+          42.3999999910593,
+          67.70000000298023,
+          68.90000000596046,
+          56.099999994039536,
+          65.40000000596046,
+          68.20000000298023,
+          43.69999998807907,
+          57.70000000298023,
+          32,
+          36.1000000089407,
+          58,
+          33.79999999701977,
+          55,
+          40.29999999701977,
+          58.599999994039536,
+          42.1000000089407,
+          56.099999994039536,
+          36.70000000298023,
+          60.29999999701977,
+          57.5,
+          62.5,
+          9,
+          15.400000005960464,
+          16.799999997019768,
+          16.5,
+          34,
+          53,
+          57.400000005960464,
+          75.09999999403954,
+          93.79999999701977,
+          9.5,
+          15.299999997019768,
+          11.900000005960464,
+          16.799999997019768,
+          16.600000008940697,
+          16.69999998807907,
+          48.20000000298023,
+          71.20000000298023,
+          91.29999999701977,
+          45.70000000298023,
+          10.200000002980232,
+          17,
+          16.399999991059303,
+          16.700000002980232,
+          16.5,
+          16.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          28.100000008940697,
+          49.69999998807907,
+          48.900000005960464,
+          34.599999994039536,
+          84.40000000596046,
+          48.20000000298023,
+          51.29999999701977,
+          47.29999999701977,
+          49.20000000298023,
+          32.79999999701977,
+          54.79999999701977,
+          39.1000000089407,
+          39.5,
+          54.3999999910593,
+          43.30000001192093,
+          51.29999999701977,
+          39,
+          58.79999999701977,
+          43.400000005960464,
+          58,
+          45,
+          62.5,
+          67.5,
+          40.599999994039536,
+          58.400000005960464,
+          45.69999998807907,
+          54.80000001192093,
+          6.799999997019768,
+          12.599999994039536,
+          16.799999997019768,
+          19,
+          14.200000002980232,
+          16.900000005960464,
+          17.099999994039536,
+          22.200000002980232,
+          39.900000005960464,
+          35.099999994039536
+        ],
+        "drawCalls": 9,
+        "triangles": 2592,
+        "objects": 9,
+        "lastWorkerMeshMs": 96.09999999403954,
+        "meshedAssetIds": [],
+        "meshJobs": 31,
+        "cachedAssetIds": [
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133",
+          "char-134",
+          "char-135"
+        ],
+        "geometryBytes": 4589616,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-135"
+        ],
+        "frameIntervalsMs": [
+          51.400000005960464,
+          65.90000000596046,
+          65.09999999403954,
+          3,
+          11.900000005960464,
+          16.799999997019768,
+          17,
+          16.299999997019768,
+          16.799999997019768,
+          21.900000005960464,
+          42.099999994039536,
+          67.40000000596046,
+          49.20000000298023,
+          68.09999999403954,
+          1,
+          17.900000005960464,
+          15.5,
+          24.19999998807907,
+          9.200000002980232,
+          20.400000005960464,
+          17.5,
+          33.20000000298023,
+          50.79999999701977,
+          42.8999999910593,
+          61.6000000089407,
+          42.3999999910593,
+          67.70000000298023,
+          68.90000000596046,
+          56.099999994039536,
+          65.40000000596046,
+          68.20000000298023,
+          43.69999998807907,
+          57.70000000298023,
+          32,
+          36.1000000089407,
+          58,
+          33.79999999701977,
+          55,
+          40.29999999701977,
+          58.599999994039536,
+          42.1000000089407,
+          56.099999994039536,
+          36.70000000298023,
+          60.29999999701977,
+          57.5,
+          62.5,
+          9,
+          15.400000005960464,
+          16.799999997019768,
+          16.5,
+          34,
+          53,
+          57.400000005960464,
+          75.09999999403954,
+          93.79999999701977,
+          9.5,
+          15.299999997019768,
+          11.900000005960464,
+          16.799999997019768,
+          16.600000008940697,
+          16.69999998807907,
+          48.20000000298023,
+          71.20000000298023,
+          91.29999999701977,
+          45.70000000298023,
+          10.200000002980232,
+          17,
+          16.399999991059303,
+          16.700000002980232,
+          16.5,
+          16.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          28.100000008940697,
+          49.69999998807907,
+          48.900000005960464,
+          34.599999994039536,
+          84.40000000596046,
+          48.20000000298023,
+          51.29999999701977,
+          47.29999999701977,
+          49.20000000298023,
+          32.79999999701977,
+          54.79999999701977,
+          39.1000000089407,
+          39.5,
+          54.3999999910593,
+          43.30000001192093,
+          51.29999999701977,
+          39,
+          58.79999999701977,
+          43.400000005960464,
+          58,
+          45,
+          62.5,
+          67.5,
+          40.599999994039536,
+          58.400000005960464,
+          45.69999998807907,
+          54.80000001192093,
+          6.799999997019768,
+          12.599999994039536,
+          16.799999997019768,
+          19,
+          14.200000002980232,
+          16.900000005960464,
+          17.099999994039536,
+          22.200000002980232,
+          39.900000005960464,
+          35.099999994039536,
+          32.599999994039536,
+          34.20000000298023,
+          1.9000000059604645,
+          29.899999991059303,
+          3.4000000059604645,
+          17.200000002980232,
+          16.299999997019768,
+          16.700000002980232,
+          16.5,
+          52.8999999910593
+        ],
+        "drawCalls": 9,
+        "triangles": 2546,
+        "objects": 9,
+        "lastWorkerMeshMs": 87.5,
+        "meshedAssetIds": [
+          "char-135"
+        ],
+        "meshJobs": 32,
+        "cachedAssetIds": [
+          "char-127",
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133",
+          "char-134",
+          "char-135"
+        ],
+        "geometryBytes": 4583176,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-135-bottom.png"
+      ]
+    },
+    {
+      "assetId": "char-136",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-136"
+        ],
+        "frameIntervalsMs": [
+          57.5,
+          62.5,
+          9,
+          15.400000005960464,
+          16.799999997019768,
+          16.5,
+          34,
+          53,
+          57.400000005960464,
+          75.09999999403954,
+          93.79999999701977,
+          9.5,
+          15.299999997019768,
+          11.900000005960464,
+          16.799999997019768,
+          16.600000008940697,
+          16.69999998807907,
+          48.20000000298023,
+          71.20000000298023,
+          91.29999999701977,
+          45.70000000298023,
+          10.200000002980232,
+          17,
+          16.399999991059303,
+          16.700000002980232,
+          16.5,
+          16.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          28.100000008940697,
+          49.69999998807907,
+          48.900000005960464,
+          34.599999994039536,
+          84.40000000596046,
+          48.20000000298023,
+          51.29999999701977,
+          47.29999999701977,
+          49.20000000298023,
+          32.79999999701977,
+          54.79999999701977,
+          39.1000000089407,
+          39.5,
+          54.3999999910593,
+          43.30000001192093,
+          51.29999999701977,
+          39,
+          58.79999999701977,
+          43.400000005960464,
+          58,
+          45,
+          62.5,
+          67.5,
+          40.599999994039536,
+          58.400000005960464,
+          45.69999998807907,
+          54.80000001192093,
+          6.799999997019768,
+          12.599999994039536,
+          16.799999997019768,
+          19,
+          14.200000002980232,
+          16.900000005960464,
+          17.099999994039536,
+          22.200000002980232,
+          39.900000005960464,
+          35.099999994039536,
+          32.599999994039536,
+          34.20000000298023,
+          1.9000000059604645,
+          29.899999991059303,
+          3.4000000059604645,
+          17.200000002980232,
+          16.299999997019768,
+          16.700000002980232,
+          16.5,
+          52.8999999910593,
+          52.6000000089407,
+          64.20000000298023,
+          4.299999997019768,
+          9.299999997019768,
+          18.700000002980232,
+          22.399999991059303,
+          13.5,
+          12.100000008940697,
+          17.099999994039536,
+          18,
+          45,
+          39.900000005960464,
+          32.099999994039536,
+          51.29999999701977,
+          36.1000000089407,
+          55.29999999701977,
+          39.79999999701977,
+          56.1000000089407,
+          42.8999999910593,
+          55.900000005960464,
+          61.599999994039536,
+          59.20000000298023,
+          40.400000005960464,
+          64.3999999910593,
+          59.6000000089407,
+          44.19999998807907,
+          56,
+          38.30000001192093,
+          39.29999999701977,
+          59.79999999701977,
+          41.29999999701977,
+          59.70000000298023,
+          68.09999999403954,
+          48.30000001192093,
+          94.29999999701977,
+          72.3999999910593,
+          45,
+          8.700000002980232,
+          26,
+          7.200000002980232,
+          16.799999997019768,
+          27.400000005960464,
+          18.700000002980232,
+          19.099999994039536
+        ],
+        "drawCalls": 4,
+        "triangles": 820,
+        "objects": 4,
+        "lastWorkerMeshMs": 66.19999998807907,
+        "meshedAssetIds": [],
+        "meshJobs": 34,
+        "cachedAssetIds": [
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133",
+          "char-134",
+          "char-135",
+          "char-136"
+        ],
+        "geometryBytes": 4260600,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 2,
+        "assetIds": [
+          "char-136"
+        ],
+        "frameIntervalsMs": [
+          57.400000005960464,
+          75.09999999403954,
+          93.79999999701977,
+          9.5,
+          15.299999997019768,
+          11.900000005960464,
+          16.799999997019768,
+          16.600000008940697,
+          16.69999998807907,
+          48.20000000298023,
+          71.20000000298023,
+          91.29999999701977,
+          45.70000000298023,
+          10.200000002980232,
+          17,
+          16.399999991059303,
+          16.700000002980232,
+          16.5,
+          16.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          28.100000008940697,
+          49.69999998807907,
+          48.900000005960464,
+          34.599999994039536,
+          84.40000000596046,
+          48.20000000298023,
+          51.29999999701977,
+          47.29999999701977,
+          49.20000000298023,
+          32.79999999701977,
+          54.79999999701977,
+          39.1000000089407,
+          39.5,
+          54.3999999910593,
+          43.30000001192093,
+          51.29999999701977,
+          39,
+          58.79999999701977,
+          43.400000005960464,
+          58,
+          45,
+          62.5,
+          67.5,
+          40.599999994039536,
+          58.400000005960464,
+          45.69999998807907,
+          54.80000001192093,
+          6.799999997019768,
+          12.599999994039536,
+          16.799999997019768,
+          19,
+          14.200000002980232,
+          16.900000005960464,
+          17.099999994039536,
+          22.200000002980232,
+          39.900000005960464,
+          35.099999994039536,
+          32.599999994039536,
+          34.20000000298023,
+          1.9000000059604645,
+          29.899999991059303,
+          3.4000000059604645,
+          17.200000002980232,
+          16.299999997019768,
+          16.700000002980232,
+          16.5,
+          52.8999999910593,
+          52.6000000089407,
+          64.20000000298023,
+          4.299999997019768,
+          9.299999997019768,
+          18.700000002980232,
+          22.399999991059303,
+          13.5,
+          12.100000008940697,
+          17.099999994039536,
+          18,
+          45,
+          39.900000005960464,
+          32.099999994039536,
+          51.29999999701977,
+          36.1000000089407,
+          55.29999999701977,
+          39.79999999701977,
+          56.1000000089407,
+          42.8999999910593,
+          55.900000005960464,
+          61.599999994039536,
+          59.20000000298023,
+          40.400000005960464,
+          64.3999999910593,
+          59.6000000089407,
+          44.19999998807907,
+          56,
+          38.30000001192093,
+          39.29999999701977,
+          59.79999999701977,
+          41.29999999701977,
+          59.70000000298023,
+          68.09999999403954,
+          48.30000001192093,
+          94.29999999701977,
+          72.3999999910593,
+          45,
+          8.700000002980232,
+          26,
+          7.200000002980232,
+          16.799999997019768,
+          27.400000005960464,
+          18.700000002980232,
+          19.099999994039536,
+          31.900000005960464,
+          15.199999988079071,
+          8.200000002980232,
+          12.700000002980232,
+          16.700000002980232,
+          16.700000002980232,
+          16.599999994039536,
+          19.400000005960464
+        ],
+        "drawCalls": 4,
+        "triangles": 804,
+        "objects": 4,
+        "lastWorkerMeshMs": 61.099999994039536,
+        "meshedAssetIds": [
+          "char-136"
+        ],
+        "meshJobs": 35,
+        "cachedAssetIds": [
+          "char-128",
+          "char-129",
+          "char-130",
+          "char-131",
+          "char-132",
+          "char-133",
+          "char-134",
+          "char-135",
+          "char-136"
+        ],
+        "geometryBytes": 4258360,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "files": [
+        "costume-char-136-bottom.png"
+      ]
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "gallery": {
+    "pitchM": 0.005,
+    "occupiedCollisionCells": 0,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "char-125-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-126-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-127-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-128-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-129-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-130-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-131-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-132-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-133-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-134-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-135-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      },
+      {
+        "instanceIds": [
+          "char-136-display"
+        ],
+        "pitchM": 0.005,
+        "occupiedCells": 0
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [],
+    "contacts": {
+      "char-125-display": [],
+      "char-126-display": [],
+      "char-127-display": [],
+      "char-128-display": [],
+      "char-129-display": [],
+      "char-130-display": [],
+      "char-131-display": [],
+      "char-132-display": [],
+      "char-133-display": [],
+      "char-134-display": [],
+      "char-135-display": [],
+      "char-136-display": []
+    },
+    "gaps": [],
+    "openings": [],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+    ],
+    "isError": false
+  },
+  "installationTransactions": {
+    "children": [
+      {
+        "commands": 21,
+        "requestBytes": 9254261,
+        "version": 6
+      },
+      {
+        "commands": 24,
+        "requestBytes": 2291052,
+        "version": 7
+      }
+    ],
+    "uniforms": [
+      {
+        "commands": 23,
+        "requestBytes": 9131762,
+        "version": 9
+      },
+      {
+        "commands": 42,
+        "requestBytes": 4659044,
+        "version": 10
+      }
+    ],
+    "work-field": [
+      {
+        "commands": 23,
+        "requestBytes": 9187759,
+        "version": 12
+      },
+      {
+        "commands": 31,
+        "requestBytes": 3785138,
+        "version": 13
+      }
+    ],
+    "medical": [
+      {
+        "commands": 23,
+        "requestBytes": 9032936,
+        "version": 15
+      },
+      {
+        "commands": 45,
+        "requestBytes": 5705233,
+        "version": 16
+      }
+    ],
+    "service": [
+      {
+        "commands": 24,
+        "requestBytes": 8890389,
+        "version": 18
+      },
+      {
+        "commands": 34,
+        "requestBytes": 4456191,
+        "version": 19
+      }
+    ],
+    "poses": [
+      {
+        "commands": 23,
+        "requestBytes": 9171970,
+        "version": 21
+      },
+      {
+        "commands": 35,
+        "requestBytes": 5337818,
+        "version": 22
+      }
+    ],
+    "labcoat-fits": [
+      {
+        "commands": 21,
+        "requestBytes": 8787386,
+        "version": 24
+      },
+      {
+        "commands": 39,
+        "requestBytes": 6193549,
+        "version": 25
+      }
+    ]
+  },
+  "completedAt": "2026-10-04T13:13:16.289Z"
+}

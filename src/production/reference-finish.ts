@@ -3,10 +3,25 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=28;
+export const referenceFinishVersion=29;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ infantWrap:{name:'婴儿包衣软布',color:'#e7e0ce',roughness:.86,metalness:0,...surface('fabric',.045,.09,1000)},
+ schoolCloth:{name:'学堂童装布',color:'#475d68',roughness:.86,metalness:0,...surface('fabric',.045,.09,1001)},
+ uniformCloth:{name:'执勤制服布',color:'#3c505e',roughness:.86,metalness:0,...surface('fabric',.045,.09,1002)},
+ workReinforcement:{name:'劳动衣耐磨织片',color:'#656259',roughness:.86,metalness:0,...surface('fabric',.045,.09,1003)},
+ fieldCloth:{name:'田作服布',color:'#666f52',roughness:.86,metalness:0,...surface('fabric',.045,.09,1004)},
+ medicalCloth:{name:'医护衣面布',color:'#e2e4dc',roughness:.86,metalness:0,...surface('fabric',.045,.09,1005)},
+ medicalTrim:{name:'医护衣缘织带',color:'#4c787b',roughness:.86,metalness:0,...surface('fabric',.045,.09,1006)},
+ labCoat:{name:'实验外套布',color:'#ecebdd',roughness:.86,metalness:0,...surface('fabric',.045,.09,1007)},
+ serviceCloth:{name:'服务衣布',color:'#536974',roughness:.86,metalness:0,...surface('fabric',.045,.09,1008)},
+ apronCloth:{name:'工作围裙布',color:'#705b46',roughness:.86,metalness:0,...surface('fabric',.045,.09,1009)},
+ armorPlate:{name:'防护衣金属板',color:'#939b99',roughness:.38,metalness:.65,...surface('none',.045,0,1010)},
+ armorPad:{name:'防护衣软垫',color:'#414a4c',roughness:.86,metalness:0,...surface('fabric',.045,.09,1011)},
+ uniformInsignia:{name:'制服织入徽标',color:'#b5a064',roughness:.86,metalness:0,...surface('fabric',.045,.09,1012)},
+ uniformIdBack:{name:'身份扣塑料底板',color:'#525d60',roughness:.65,metalness:0,...surface('none',.045,0,1013)},
+ uniformIdPrint:{name:'身份扣印刷图形',color:'#64a0a4',roughness:.65,metalness:0,...surface('none',.045,0,1014)},
  garmentOuter:{name:'服装外层蓝布',color:'#53646b',roughness:.85,metalness:0,...surface('fabric',.045,.09,980)},
  garmentLight:{name:'交领浅布',color:'#dedcd2',roughness:.85,metalness:0,...surface('fabric',.045,.09,981)},
  garmentLining:{name:'服装内衬布',color:'#b8b7ae',roughness:.85,metalness:0,...surface('fabric',.045,.09,982)},
