@@ -13,6 +13,7 @@ import {generateTemplate} from './templates';
 import {transactionSchema} from './schema';
 import {makeCatalogAsset} from '../production/catalog-assets';
 import {makeLifeAssembly} from '../production/layouts';
+import {makeArchitectureAssembly} from '../production/atlas-architecture-assemblies';
 import {ensureProductionRoles} from '../production/style';
 import {appearanceKeys,materialAppearance} from './material-appearance';
 const ajv=new Ajv({strict:false,allErrors:true}),validate=ajv.compile(transactionSchema);
@@ -89,9 +90,12 @@ export class Engine{
   }
   if(c.op==='produceCatalogAssembly'){
    const e=p.catalog?.entries[c.catalogId];if(!e||e.source['条目类型']!=='组合模板')throw new Error('先导入对应组合清单');
-   p.assemblies??={};if(p.assemblies[c.id])throw new Error('组合 ID 重复');const a=makeLifeAssembly(p,c.catalogId,c.id,e.source['中文名称']);p.assemblies[c.id]=a;
+   p.assemblies??={};if(p.assemblies[c.id])throw new Error('组合 ID 重复');
+   if(c.catalogId.startsWith('BUILT-'))ensureProductionRoles(p,'yunshan');
+   else if(Object.keys(c.params??{}).length)throw new Error('生活组合不支持建筑参数');
+   const a=c.catalogId.startsWith('BUILT-')?makeArchitectureAssembly(p,c.catalogId,c.id,e.source['中文名称'],c.params??{}):makeLifeAssembly(p,c.catalogId,c.id,e.source['中文名称']);p.assemblies[c.id]=a;
    if(c.place)for(const i of a.instances){if(p.instances[i.id])throw new Error('实例 ID 重复');p.instances[i.id]=i;}
-   updateCatalogEntry(p,{id:c.catalogId,stage:'modeling',assetIds:[...new Set(a.instances.map(i=>i.assetId))],note:'已生成组合 '+c.id+'；复用母版的相对陈设研究。未接入真实房间 FloorPlan、功能点、供电、库存或行为系统，不能作为游戏集成验收。'});return;
+   updateCatalogEntry(p,{id:c.catalogId,stage:'modeling',assetIds:[...new Set(a.instances.map(i=>i.assetId))],note:'已生成组合 '+c.id+'；保存真实依赖及实例关系，派生组件不新增基础母版。未接入原 FloorPlan、功能点、供电、库存或行为系统，不能作为游戏集成验收。'});return;
   }
   if(c.op==='importCatalog'){const r=mergeCatalog(p,c.csv,c.sourceName);warnings.push(`清单新增 ${r.added} 项、更新 ${r.updated} 项、保留未出现的 ${r.retained} 项；原表状态仅作来源记录，不代表模型验收。`);return;}
   if(c.op==='catalogEntry'){updateCatalogEntry(p,c as any);return;}

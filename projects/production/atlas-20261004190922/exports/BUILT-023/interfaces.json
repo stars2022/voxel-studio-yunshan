@@ -1,0 +1,4726 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517
+    }
+  },
+  "assemblies": {
+    "built-023": {
+      "id": "built-023",
+      "name": "金融医疗大厅与服务塔模板",
+      "version": 1,
+      "instances": [
+        {
+          "id": "built-023-0",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-1",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            0,
+            0,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-2",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            0,
+            0,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-3",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            0,
+            0,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-4",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            3.2,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-5",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            3.2,
+            0,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-6",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            3.2,
+            0,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-7",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            3.2,
+            0,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-8",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            6.4,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-9",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            6.4,
+            0,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-10",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            6.4,
+            0,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-11",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            6.4,
+            0,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-12",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            9.6,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-13",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            9.6,
+            0,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-14",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            9.6,
+            0,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-15",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            9.6,
+            0,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-16",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-17",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            0,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-18",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            0,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-19",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            0,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-20",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-21",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            0,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-22",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            0,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-23",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            0,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-24",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            0,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-25",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            0,
+            0.2,
+            0
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-26",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            3.2,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-27",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            6.4,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-28",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            9.6,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-29",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            12.8,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-30",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            16,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-31",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            0,
+            0.2,
+            3.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-32",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            0.2,
+            6.4
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "built-023-33",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            0,
+            0.2,
+            6.4
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-34",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            0.2,
+            9.6
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "built-023-35",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            3.2,
+            0.2,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-36",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            0,
+            0.2,
+            9.6
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-37",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            6.4,
+            0.2,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-38",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            9.6,
+            0.2,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-39",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            12.8,
+            0.2,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-40",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            16,
+            0.2,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-41",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            0.2,
+            12.8
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "built-023-42",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            0.2,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-43",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            3.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-44",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            3.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-45",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            3.2,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-46",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            3.2,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-47",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            3.2,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-48",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            3.2,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-49",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            12.8,
+            3.2,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-50",
+          "assetId": "architecture-floor-3p2-3p2",
+          "name": "石铺面与混凝土楼板",
+          "position": [
+            16,
+            3.2,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-51",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            12.8,
+            3.4,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-52",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            12.8,
+            3.4,
+            0
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-53",
+          "assetId": "architecture-wall-door",
+          "name": "真实门洞墙",
+          "position": [
+            16,
+            3.4,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-54",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            12.8,
+            3.4,
+            3.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-55",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            3.4,
+            6.4
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "built-023-56",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            12.8,
+            3.4,
+            6.4
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-57",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            3.4,
+            9.6
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "built-023-58",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            16,
+            3.4,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-59",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            12.8,
+            3.4,
+            9.6
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-023-60",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            3.4,
+            12.8
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "built-023-61",
+          "assetId": "architecture-wall-window",
+          "name": "真实窗洞与玻璃",
+          "position": [
+            19.2,
+            3.4,
+            12.8
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-023-62",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            12.8,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-63",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            16,
+            0.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-64",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            12.8,
+            0.2,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-65",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            16,
+            0.2,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-66",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            19.2,
+            0.2,
+            3.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-67",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            12.8,
+            0.2,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-68",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            16,
+            0.2,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-69",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            19.2,
+            0.2,
+            6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-70",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            12.8,
+            0.2,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-71",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            16,
+            0.2,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-72",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            19.2,
+            0.2,
+            9.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-73",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            12.8,
+            0.2,
+            12.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-74",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            16,
+            0.2,
+            12.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-75",
+          "assetId": "architecture-column-3p2",
+          "name": "木柱、石础与金属抱箍",
+          "position": [
+            19.2,
+            0.2,
+            12.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-76",
+          "assetId": "architecture-roof-flat-12p8-12p8",
+          "name": "连续屋面 · flat",
+          "position": [
+            0,
+            3.4,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-77",
+          "assetId": "architecture-roof-flat-6p4-12p8",
+          "name": "连续屋面 · flat",
+          "position": [
+            12.8,
+            6.6,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-78",
+          "assetId": "architecture-rail-3p2",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            12.8,
+            3.4,
+            -0.18
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-79",
+          "assetId": "architecture-stair-shell-side-exit",
+          "name": "服务翼侧出口派生 · 原母版另存",
+          "position": [
+            19.2,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-80",
+          "assetId": "source-built-007-width-1p6",
+          "name": "共享双跑上行踏步",
+          "position": [
+            19.6,
+            0,
+            1.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-81",
+          "assetId": "source-built-009",
+          "name": "共享楼梯半转平台",
+          "position": [
+            19.6,
+            0,
+            5.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-82",
+          "assetId": "source-built-008",
+          "name": "共享双跑回行踏步",
+          "position": [
+            21.6,
+            1.6,
+            1.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-83",
+          "assetId": "architecture-stair-support",
+          "name": "回行楼梯实际承柱",
+          "position": [
+            21.64,
+            0,
+            1.28
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-84",
+          "assetId": "architecture-stair-support",
+          "name": "回行楼梯实际承柱",
+          "position": [
+            22.96,
+            0,
+            1.28
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-85",
+          "assetId": "architecture-roof-flat-4p4-7p6",
+          "name": "连续屋面 · flat",
+          "position": [
+            19.2,
+            6.34,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-86",
+          "assetId": "source-life-151",
+          "name": "finance-medical purpose 1",
+          "position": [
+            2.6,
+            0.2,
+            3.85
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-023-87",
+          "assetId": "source-life-151",
+          "name": "finance-medical purpose 2",
+          "position": [
+            9,
+            0.2,
+            7.05
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "BUILT-023",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M044",
+          "slot": 5,
+          "imageSHA256": "24cf77da633f9b670b54f365c781c24da875527a5c67dde29a5db612560270d5"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-003",
+          "BUILT-007",
+          "BUILT-008",
+          "BUILT-009",
+          "BUILT-011",
+          "BUILT-012",
+          "BUILT-013",
+          "BUILT-014",
+          "BUILT-015",
+          "BUILT-017",
+          "BUILT-059",
+          "BUILT-097",
+          "LIFE-151"
+        ],
+        "instanceGroups": {
+          "built-023-0": "structure",
+          "built-023-1": "structure",
+          "built-023-2": "structure",
+          "built-023-3": "structure",
+          "built-023-4": "structure",
+          "built-023-5": "structure",
+          "built-023-6": "structure",
+          "built-023-7": "structure",
+          "built-023-8": "structure",
+          "built-023-9": "structure",
+          "built-023-10": "structure",
+          "built-023-11": "structure",
+          "built-023-12": "structure",
+          "built-023-13": "structure",
+          "built-023-14": "structure",
+          "built-023-15": "structure",
+          "built-023-16": "structure",
+          "built-023-17": "structure",
+          "built-023-18": "structure",
+          "built-023-19": "structure",
+          "built-023-20": "structure",
+          "built-023-21": "structure",
+          "built-023-22": "structure",
+          "built-023-23": "structure",
+          "built-023-24": "facade",
+          "built-023-25": "facade",
+          "built-023-26": "facade",
+          "built-023-27": "facade",
+          "built-023-28": "facade",
+          "built-023-29": "facade",
+          "built-023-30": "facade",
+          "built-023-31": "facade",
+          "built-023-32": "facade",
+          "built-023-33": "facade",
+          "built-023-34": "facade",
+          "built-023-35": "facade",
+          "built-023-36": "facade",
+          "built-023-37": "facade",
+          "built-023-38": "facade",
+          "built-023-39": "facade",
+          "built-023-40": "facade",
+          "built-023-41": "facade",
+          "built-023-42": "facade",
+          "built-023-43": "structure",
+          "built-023-44": "structure",
+          "built-023-45": "structure",
+          "built-023-46": "structure",
+          "built-023-47": "structure",
+          "built-023-48": "structure",
+          "built-023-49": "structure",
+          "built-023-50": "structure",
+          "built-023-51": "facade",
+          "built-023-52": "facade",
+          "built-023-53": "facade",
+          "built-023-54": "facade",
+          "built-023-55": "facade",
+          "built-023-56": "facade",
+          "built-023-57": "facade",
+          "built-023-58": "facade",
+          "built-023-59": "facade",
+          "built-023-60": "facade",
+          "built-023-61": "facade",
+          "built-023-62": "structure",
+          "built-023-63": "structure",
+          "built-023-64": "structure",
+          "built-023-65": "structure",
+          "built-023-66": "structure",
+          "built-023-67": "structure",
+          "built-023-68": "structure",
+          "built-023-69": "structure",
+          "built-023-70": "structure",
+          "built-023-71": "structure",
+          "built-023-72": "structure",
+          "built-023-73": "structure",
+          "built-023-74": "structure",
+          "built-023-75": "structure",
+          "built-023-76": "roof",
+          "built-023-77": "roof",
+          "built-023-78": "guard",
+          "built-023-79": "stair",
+          "built-023-80": "stair",
+          "built-023-81": "stair",
+          "built-023-82": "stair",
+          "built-023-83": "stair",
+          "built-023-84": "stair",
+          "built-023-85": "roof",
+          "built-023-86": "fixture",
+          "built-023-87": "fixture"
+        },
+        "variant": "bank",
+        "parameters": {
+          "program": "bank"
+        },
+        "floorPlan": {
+          "family": "finance-medical",
+          "variant": "bank",
+          "nx": 6,
+          "nz": 4,
+          "lower": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "upper": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "roofs": [
+            {
+              "form": "flat",
+              "x": 0,
+              "z": 0,
+              "w": 12.8,
+              "d": 12.8,
+              "y": 3.4000000000000004
+            },
+            {
+              "form": "flat",
+              "x": 12.8,
+              "z": 0,
+              "w": 6.4,
+              "d": 12.8,
+              "y": 6.6000000000000005
+            }
+          ],
+          "fixture": "LIFE-151",
+          "purposePoints": [
+            [
+              3.2,
+              0.2,
+              3.2
+            ],
+            [
+              9.6,
+              0.2,
+              6.4
+            ]
+          ]
+        },
+        "entrance": [
+          1.6,
+          0.2,
+          -0.4
+        ],
+        "stairEntry": [
+          20.1,
+          0.2,
+          0.6
+        ],
+        "levelHeights": [
+          0.2,
+          3.4
+        ],
+        "purposePoints": [
+          [
+            3.2,
+            0.2,
+            3.2
+          ],
+          [
+            9.6,
+            0.2,
+            6.4
+          ]
+        ],
+        "stairOrigin": [
+          19.200000000000003,
+          0,
+          0
+        ],
+        "courtOpenings": [],
+        "scope": "Author floor layout and finite route geometry. Original Building/FloorPlan, permissions, route/controller and terrain not supplied. Three stair-flight/landing masters retain exact geometry. Original service shell retained; explicit side-exit derivative removes only its upper left curb. No source runtime integration or human art acceptance."
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "architecture-floor",
+          "position": [
+            1.6,
+            0.2,
+            1.6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            3.2,
+            0,
+            3.2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 192
+        }
+      ]
+    },
+    {
+      "id": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 240
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 60
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 48
+        }
+      ]
+    },
+    {
+      "id": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 48
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 312
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 84
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 48
+        }
+      ]
+    },
+    {
+      "id": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-roof-flat-12p8-12p8",
+      "name": "连续屋面 · flat",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-5",
+          "material": 5,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-145",
+          "material": 145,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 344
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "id": "architecture-roof-flat-6p4-12p8",
+      "name": "连续屋面 · flat",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-5",
+          "material": 5,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-145",
+          "material": 145,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 344
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "id": "architecture-rail-3p2",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 132
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-built-014",
+      "name": "固定梯井服务翼结构",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4.4,
+            0,
+            7.6000000000000005
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "lower-flight",
+          "kind": "walkway-1600",
+          "position": [
+            1.2,
+            0.2,
+            1.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "upper-flight",
+          "kind": "walkway-1600",
+          "position": [
+            3.2,
+            3.4,
+            1.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "周边基础、前厅铺面和上层前接台",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              170,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四根贯层石柱、连接圈梁与剖面封顶",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              10,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "背部砌体与局部保留侧壁",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              10,
+              301
+            ],
+            "max": [
+              206,
+              304,
+              379
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "入口门楣、上接台侧护边与可见柱脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              10,
+              4
+            ],
+            "max": [
+              206,
+              176,
+              59
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "两层服务翼剖面：真实梯井空洞、前接台、后墙、石柱、木梁与入口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            101,
+            11,
+            61
+          ],
+          "max": [
+            119,
+            300,
+            279
+          ]
+        },
+        {
+          "min": [
+            30,
+            11,
+            0
+          ],
+          "max": [
+            190,
+            130,
+            59
+          ]
+        },
+        {
+          "min": [
+            30,
+            181,
+            0
+          ],
+          "max": [
+            190,
+            295,
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-stair-shell-side-exit",
+      "name": "服务翼侧出口派生 · 原母版另存",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4.4,
+            0,
+            7.6000000000000005
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "lower-flight",
+          "kind": "walkway-1600",
+          "position": [
+            1.2,
+            0.2,
+            1.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "upper-flight",
+          "kind": "walkway-1600",
+          "position": [
+            3.2,
+            3.4,
+            1.2
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "周边基础、前厅铺面和上层前接台",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              170,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四根贯层石柱、连接圈梁与剖面封顶",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              10,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "背部砌体与局部保留侧壁",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              10,
+              301
+            ],
+            "max": [
+              206,
+              304,
+              379
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "入口门楣、上接台侧护边与可见柱脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              10,
+              4
+            ],
+            "max": [
+              206,
+              176,
+              59
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "两层服务翼剖面：真实梯井空洞、前接台、后墙、石柱、木梁与入口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              220,
+              317,
+              380
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            101,
+            11,
+            61
+          ],
+          "max": [
+            119,
+            300,
+            279
+          ]
+        },
+        {
+          "min": [
+            30,
+            11,
+            0
+          ],
+          "max": [
+            190,
+            130,
+            59
+          ]
+        },
+        {
+          "min": [
+            30,
+            181,
+            0
+          ],
+          "max": [
+            190,
+            295,
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-built-007-width-1p6",
+      "name": "共享双跑上行踏步",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            4.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            0.2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "top-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            4.4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底平台、顶接台与浅石铺面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八块独立踏面、踢面和两侧实木梯梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              7
+            ],
+            "max": [
+              80,
+              90,
+              180
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶台双柱、石足、金属套肩与横枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              0,
+              205
+            ],
+            "max": [
+              77,
+              80,
+              214
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两端嵌入状态窗与踏步防滑条",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              3,
+              0
+            ],
+            "max": [
+              78,
+              90,
+              212
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "共享上行一跑：八级 0.2m 踢高 / 0.4m 进深、底顶平台、双侧木梁与真实梯下空间",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            14,
+            10,
+            120
+          ],
+          "max": [
+            66,
+            45,
+            165
+          ]
+        },
+        {
+          "min": [
+            11,
+            21,
+            24
+          ],
+          "max": [
+            69,
+            115,
+            36
+          ]
+        },
+        {
+          "min": [
+            11,
+            31,
+            44
+          ],
+          "max": [
+            69,
+            125,
+            56
+          ]
+        },
+        {
+          "min": [
+            11,
+            41,
+            64
+          ],
+          "max": [
+            69,
+            135,
+            76
+          ]
+        },
+        {
+          "min": [
+            11,
+            51,
+            84
+          ],
+          "max": [
+            69,
+            145,
+            96
+          ]
+        },
+        {
+          "min": [
+            11,
+            61,
+            104
+          ],
+          "max": [
+            69,
+            155,
+            116
+          ]
+        },
+        {
+          "min": [
+            11,
+            71,
+            124
+          ],
+          "max": [
+            69,
+            165,
+            136
+          ]
+        },
+        {
+          "min": [
+            11,
+            81,
+            144
+          ],
+          "max": [
+            69,
+            175,
+            156
+          ]
+        },
+        {
+          "min": [
+            11,
+            91,
+            164
+          ],
+          "max": [
+            69,
+            185,
+            176
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-built-009",
+      "name": "共享楼梯半转平台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.6
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "outbound",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "return",
+          "kind": "walkway-1600",
+          "position": [
+            2.8,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              180,
+              142,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "U 形实际承板、石面与梯井缺口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              80,
+              0
+            ],
+            "max": [
+              180,
+              90,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四根承柱、石足与平台下承梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              178,
+              80,
+              78
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "后边、侧边护栏及梯井护边",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              80,
+              1
+            ],
+            "max": [
+              179,
+              142,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "半转平台：双 1.6m 接口、中央梯井缺口、石铺面、木柱与侧后扶手",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              180,
+              142,
+              80
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            81,
+            10,
+            0
+          ],
+          "max": [
+            99,
+            140,
+            29
+          ]
+        },
+        {
+          "min": [
+            15,
+            91,
+            34
+          ],
+          "max": [
+            165,
+            135,
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-built-008",
+      "name": "共享双跑回行踏步",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            4.4
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "bottom-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            0.2,
+            4.4
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "top-walkway",
+          "kind": "walkway-1600",
+          "position": [
+            0.8,
+            1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.6,
+            0.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              142,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石质底顶平台和金属端鞍",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              90,
+              220
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八级石踏面、真实踢面与两侧木梯梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              35
+            ],
+            "max": [
+              80,
+              90,
+              215
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶台承柱和横枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              4
+            ],
+            "max": [
+              78,
+              80,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双侧连续扶手、竖梃与独立暖光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              9,
+              1
+            ],
+            "max": [
+              79,
+              142,
+              218
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "回行单跑：1.6m 跑道、八级 0.2/0.4m 石踏步、连续扶手与反向出口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              142,
+              220
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            10,
+            55
+          ],
+          "max": [
+            65,
+            45,
+            100
+          ]
+        },
+        {
+          "min": [
+            12,
+            21,
+            184
+          ],
+          "max": [
+            68,
+            115,
+            196
+          ]
+        },
+        {
+          "min": [
+            12,
+            31,
+            164
+          ],
+          "max": [
+            68,
+            125,
+            176
+          ]
+        },
+        {
+          "min": [
+            12,
+            41,
+            144
+          ],
+          "max": [
+            68,
+            135,
+            156
+          ]
+        },
+        {
+          "min": [
+            12,
+            51,
+            124
+          ],
+          "max": [
+            68,
+            145,
+            136
+          ]
+        },
+        {
+          "min": [
+            12,
+            61,
+            104
+          ],
+          "max": [
+            68,
+            155,
+            116
+          ]
+        },
+        {
+          "min": [
+            12,
+            71,
+            84
+          ],
+          "max": [
+            68,
+            165,
+            96
+          ]
+        },
+        {
+          "min": [
+            12,
+            81,
+            64
+          ],
+          "max": [
+            68,
+            175,
+            76
+          ]
+        },
+        {
+          "min": [
+            12,
+            91,
+            44
+          ],
+          "max": [
+            68,
+            185,
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-stair-support",
+      "name": "回行楼梯实际承柱",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-roof-flat-4p4-7p6",
+      "name": "连续屋面 · flat",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-5",
+          "material": 5,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-145",
+          "material": 145,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 344
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "id": "source-life-151",
+      "name": "警务值班桌",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            0.79
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "desktop-support",
+          "kind": "desktop",
+          "position": [
+            0,
+            0.8,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            0.76
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              160,
+              85,
+              76
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              158,
+              75,
+              74
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              75,
+              0
+            ],
+            "max": [
+              160,
+              80,
+              76
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "单侧抽屉柜和另一侧加固围板",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              12,
+              -3
+            ],
+            "max": [
+              155,
+              73,
+              72
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "两组走线槽、后沿线夹和桌下机盒托盘",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              14,
+              24
+            ],
+            "max": [
+              113,
+              81,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "固定近端通讯接口座、插孔和状态键",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              73,
+              0
+            ],
+            "max": [
+              145,
+              85,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "值班桌本体：左侧检修围板、右三只空心抽屉、石芯写字面、后走线孔、柜内支承与接口托座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              160,
+              85,
+              76
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            30,
+            24,
+            11
+          ],
+          "max": [
+            100,
+            64,
+            60
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "built-023-0",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-1",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        0,
+        0,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-2",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        0,
+        0,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-3",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        0,
+        0,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-4",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        3.2,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-5",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        3.2,
+        0,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-6",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        3.2,
+        0,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-7",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        3.2,
+        0,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-8",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        6.4,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-9",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        6.4,
+        0,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-10",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        6.4,
+        0,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-11",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        6.4,
+        0,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-12",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        9.6,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-13",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        9.6,
+        0,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-14",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        9.6,
+        0,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-15",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        9.6,
+        0,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-16",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-17",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        0,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-18",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        0,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-19",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        0,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-20",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-21",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        0,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-22",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        0,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-23",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        0,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-24",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-25",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-26",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        3.2,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-27",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        6.4,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-28",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        9.6,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-29",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        12.8,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-30",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        16,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-31",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        0,
+        0.2,
+        3.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-32",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        0.2,
+        6.4
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "built-023-33",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        0,
+        0.2,
+        6.4
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-34",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        0.2,
+        9.6
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "built-023-35",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        3.2,
+        0.2,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-36",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        0,
+        0.2,
+        9.6
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-37",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        6.4,
+        0.2,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-38",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        9.6,
+        0.2,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-39",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        12.8,
+        0.2,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-40",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        16,
+        0.2,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-41",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        0.2,
+        12.8
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "built-023-42",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        0.2,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-43",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        3.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-44",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        3.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-45",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        3.2,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-46",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        3.2,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-47",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        3.2,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-48",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        3.2,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-49",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        12.8,
+        3.2,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-50",
+      "assetId": "architecture-floor-3p2-3p2",
+      "name": "石铺面与混凝土楼板",
+      "position": [
+        16,
+        3.2,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-51",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        12.8,
+        3.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-52",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        12.8,
+        3.4,
+        0
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-53",
+      "assetId": "architecture-wall-door",
+      "name": "真实门洞墙",
+      "position": [
+        16,
+        3.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-54",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        12.8,
+        3.4,
+        3.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-55",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        3.4,
+        6.4
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "built-023-56",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        12.8,
+        3.4,
+        6.4
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-57",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        3.4,
+        9.6
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "built-023-58",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        16,
+        3.4,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-59",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        12.8,
+        3.4,
+        9.6
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-023-60",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        3.4,
+        12.8
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "built-023-61",
+      "assetId": "architecture-wall-window",
+      "name": "真实窗洞与玻璃",
+      "position": [
+        19.2,
+        3.4,
+        12.8
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-023-62",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        12.8,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-63",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        16,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-64",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        12.8,
+        0.2,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-65",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        16,
+        0.2,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-66",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        19.2,
+        0.2,
+        3.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-67",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        12.8,
+        0.2,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-68",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        16,
+        0.2,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-69",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        19.2,
+        0.2,
+        6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-70",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        12.8,
+        0.2,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-71",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        16,
+        0.2,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-72",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        19.2,
+        0.2,
+        9.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-73",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        12.8,
+        0.2,
+        12.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-74",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        16,
+        0.2,
+        12.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-75",
+      "assetId": "architecture-column-3p2",
+      "name": "木柱、石础与金属抱箍",
+      "position": [
+        19.2,
+        0.2,
+        12.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-76",
+      "assetId": "architecture-roof-flat-12p8-12p8",
+      "name": "连续屋面 · flat",
+      "position": [
+        0,
+        3.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-77",
+      "assetId": "architecture-roof-flat-6p4-12p8",
+      "name": "连续屋面 · flat",
+      "position": [
+        12.8,
+        6.6,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-78",
+      "assetId": "architecture-rail-3p2",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        12.8,
+        3.4,
+        -0.18
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-79",
+      "assetId": "architecture-stair-shell-side-exit",
+      "name": "服务翼侧出口派生 · 原母版另存",
+      "position": [
+        19.2,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-80",
+      "assetId": "source-built-007-width-1p6",
+      "name": "共享双跑上行踏步",
+      "position": [
+        19.6,
+        0,
+        1.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-81",
+      "assetId": "source-built-009",
+      "name": "共享楼梯半转平台",
+      "position": [
+        19.6,
+        0,
+        5.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-82",
+      "assetId": "source-built-008",
+      "name": "共享双跑回行踏步",
+      "position": [
+        21.6,
+        1.6,
+        1.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-83",
+      "assetId": "architecture-stair-support",
+      "name": "回行楼梯实际承柱",
+      "position": [
+        21.64,
+        0,
+        1.28
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-84",
+      "assetId": "architecture-stair-support",
+      "name": "回行楼梯实际承柱",
+      "position": [
+        22.96,
+        0,
+        1.28
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-85",
+      "assetId": "architecture-roof-flat-4p4-7p6",
+      "name": "连续屋面 · flat",
+      "position": [
+        19.2,
+        6.34,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-86",
+      "assetId": "source-life-151",
+      "name": "finance-medical purpose 1",
+      "position": [
+        2.6,
+        0.2,
+        3.85
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-023-87",
+      "assetId": "source-life-151",
+      "name": "finance-medical purpose 2",
+      "position": [
+        9,
+        0.2,
+        7.05
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

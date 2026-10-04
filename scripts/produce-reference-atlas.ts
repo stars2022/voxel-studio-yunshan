@@ -12,7 +12,7 @@ import {parseCatalogCSV} from '../src/core/catalog';
 import {productionProject} from '../src/production/style';
 import {atlasSource} from '../src/production/atlas-life';
 import {atlasRecipe} from '../src/production/catalog-assets';
-import {readAtlasIndex,readAtlasProduction,type AtlasProduction,type AtlasEntry} from '../src/production/atlas';
+import {readAtlasIndex,readAtlasProduction,type AtlasProduction,type AtlasEntry,type AtlasBaseBuild} from '../src/production/atlas';
 import {referenceFinishCommands} from '../src/production/reference-finish';
 import {layoutAtlasGallery} from '../src/production/gallery-layout';
 import {displayMesh} from '../src/core/mesh';
@@ -26,7 +26,7 @@ import {eachCell,type Project,type Command} from '../src/core/types';
 const started=performance.now(),run='atlas-'+new Date().toISOString().replace(/\D/g,'').slice(0,14),root=path.resolve('projects'),out=path.join(root,'production',run),evidence=path.resolve('artifacts/atlas',run),hash=(s:unknown)=>createHash('sha256').update(typeof s==='string'?s:JSON.stringify(s)).digest('hex');
 const atlas=(await readAtlasIndex(root))!,catalog=new Map(parseCatalogCSV(await readFile(path.join(root,'catalog/city-assets.csv'),'utf8')).map(e=>[e.id,e]));assert.ok(atlas,'Run atlas:index first');
 const requestedIds=process.argv.find(a=>a.startsWith('--ids='))?.slice(6).split(',');if(requestedIds?.some(id=>!/^(LIFE|BUILT|ENV|CHAR)-[0-9]{3}$/.test(id)))throw new Error('Invalid asset ID');
-const requested=process.argv.find(a=>a.startsWith('--sheets='))?.slice(9).split(',');if(requested?.some(s=>!/^M[0-9]{3}$/.test(s)))throw new Error('Invalid sheet ID');const rows=atlas.entries.filter(e=>!!atlasRecipe(e.id)&&(!requested||requested.includes(e.sheet))&&(!requestedIds||requestedIds.includes(e.id)));assert.ok(rows.length>0,'No implemented recipes in selected sheets');const activeSheets=[...new Set(rows.map(e=>e.sheet))];const old=await readAtlasProduction(root),index:AtlasProduction={format:'yunshan.atlas-production',version:1,run,createdAt:new Date().toISOString(),entries:(old?.entries??[]).filter(e=>!rows.some(r=>r.id===e.id)),studies:(old?.studies??[]).filter(e=>!activeSheets.some(s=>e.id.startsWith(s)))};
+const requested=process.argv.find(a=>a.startsWith('--sheets='))?.slice(9).split(',');if(requested?.some(s=>!/^M[0-9]{3}$/.test(s)))throw new Error('Invalid sheet ID');if(requested||requestedIds){const selection=atlas.entries.filter(e=>(!requested||requested.includes(e.sheet))&&(!requestedIds||requestedIds.includes(e.id)));if(selection.length&&selection.every(e=>e.type==='组合模板')){await import('./produce-reference-assemblies');process.exit(0);}if(selection.some(e=>e.type==='组合模板'))throw new Error('基础与组合须分别选择生产批次');}const rows=atlas.entries.filter(e=>!!atlasRecipe(e.id)&&(!requested||requested.includes(e.sheet))&&(!requestedIds||requestedIds.includes(e.id)));assert.ok(rows.length>0,'No implemented recipes in selected sheets');const activeSheets=[...new Set(rows.map(e=>e.sheet))];const old=await readAtlasProduction(root),index:AtlasProduction={format:'yunshan.atlas-production',version:1,run,createdAt:new Date().toISOString(),entries:(old?.entries??[]).filter(e=>!rows.some(r=>r.id===e.id)),studies:(old?.studies??[]).filter(e=>!activeSheets.some(s=>e.id.startsWith(s)))};
 const beforeLibrary=await readProductionLibrary(root,{limit:5000}),newCatalogIds=rows.filter(row=>beforeLibrary.entries.find(e=>e.id===row.id)?.stage==='not-produced').length;
 if(requestedIds)assert.equal(rows.length,new Set(requestedIds).size,'Some requested assets are absent or not implemented');
 await mkdir(out,{recursive:true});await mkdir(evidence,{recursive:true});
@@ -55,7 +55,7 @@ for(const row of rows){
 }
 for(const[sheet,p]of galleries){
  // Rebuild a complete sheet gallery even when only one dependency was revised.
- for(const row of index.entries.filter(r=>r.sheet===sheet&&!p.assets[r.assetId])){
+ for(const row of index.entries.filter((r):r is AtlasBaseBuild=>r.kind!=='assembly'&&r.sheet===sheet&&!p.assets[r.assetId])){
   const prior=JSON.parse(await readFile(path.join(root,row.file),'utf8')) as Project,a=prior.assets[row.assetId];assert.ok(a,'Missing gallery dependency '+row.id);
   for(const[,m]of new Grid(a.chunks).cells()){assert.ok(p.materials[m]);assert.equal(p.materials[m].category,prior.materials[m].category);assert.equal(p.materials[m].solid,prior.materials[m].solid);}
   p.assets[a.id]=structuredClone(a);p.catalog!.entries[row.id]=structuredClone(prior.catalog!.entries[row.id]);p.instances[a.id+'-display']={id:a.id+'-display',assetId:a.id,name:a.name,position:[0,0,0],rotation:0,parent:null};

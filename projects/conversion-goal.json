@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 516,
-    "remainingReferenceEntries": 277,
-    "completedReferenceSheets": 43,
+    "referenceCandidates": 528,
+    "remainingReferenceEntries": 265,
+    "completedReferenceSheets": 44,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
       "auxiliaryMasters": 1,
-      "assemblies": 51,
+      "assemblies": 63,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 478,
-      "generatedEntries": 590,
+      "notProduced": 466,
+      "generatedEntries": 602,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 516,
+      "atlasReferenceCandidates": 528,
       "atlasSharedMasterReferences": 3,
-      "atlasUniqueMasters": 513
+      "atlasUniqueMasters": 513,
+      "atlasAssemblyCandidates": 12
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M043",
-    "state": "validated-for-batch-push",
+    "sheet": "M045",
+    "state": "queued",
     "ids": [
-      "CHAR-320",
-      "CHAR-321",
-      "CHAR-322",
-      "CHAR-323",
-      "CHAR-324",
-      "CHAR-325",
-      "CHAR-326",
-      "CHAR-327",
-      "CHAR-328",
-      "CHAR-329",
-      "CHAR-330",
-      "CHAR-331"
+      "BUILT-079",
+      "BUILT-080",
+      "BUILT-081",
+      "BUILT-086",
+      "BUILT-087",
+      "BUILT-092",
+      "BUILT-093",
+      "BUILT-161",
+      "BUILT-162",
+      "BUILT-163",
+      "BUILT-164",
+      "BUILT-165"
     ],
-    "run": "atlas-20261004180151",
-    "evidence": "artifacts/atlas/atlas-20261004180151"
+    "scope": "12个建筑/地标/交通组合；连续屋顶与真实组件放置，明确原世界、FloorPlan及控制器未绑定。"
   },
-  "nextBatch": "M044",
+  "nextBatch": "M045",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,21 +68,18 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M043共516条技术参考候选，余277；513独立图册母版和3共用引用，人工美术验收0。"
+    "M001–M044共528条技术参考候选，余265；513独立图册母版、3共用引用、12图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户明确修正持续优先：最小细件体素、连续斜面曲面，天空/星空可用实际贴图，不强制整件卡网格。",
-    "M001–M043的516条参考全部为基础组件；剩余277条是186个组合模板和91个配色尺寸变体。后续严格按类型制作，不将实例、组合或参数形态冒计为基础母版。",
-    "M044整图及12条CSV已查看，源行在work/m044/source.json：BUILT019–024六族建筑轮廓、040共享远景组合、042四驿六点散楼语法、075–078四类连续屋顶。当前没有M044生产代码和计数修改。",
-    "M044先扩展真正的组合模板生产/索引/库计数/预览/打包路径。produceCatalogAsset仍只接受基础组件；组合保存实际依赖母版及实例变换，不把大型合并网格伪装新增基础资产。",
-    "原floorPlan、楼层矩阵、世界地形和生成器未收件，建筑尺寸和布局只能标作者研究；四驿六点的88+64m来源起值不等于原世界可放置。",
-    "M043新增12独立母版24有限形态；1mm昆虫细件和5mm其他细件。476角色按256+220同事务，新增481–502共22用途；style37/finish35。",
-    "四足25、鸟21、鱼10、昆虫局部20关节；蝶蜂各5。实际刚性归属和四元数姿态，原生格不重采样；三类骨架为导架，没有替旧动物外皮完成绑定。",
-    "犬/猫项圈加名牌、犬/猫胸背带、牛佩牌共5实际穿戴场景，原306/307/315母版独立保留。54孔隙点、8有限穿戴拟合，不能推广所有动作或承载。",
-    "M043默认156原生格，44460近档/44452远档三角面；440完整回归、7专项（含1mm核心）+1外来ID专项、18真实MCP检查通过。22实际表面角色样本及14独立内部坐标通过。",
-    "36新单件图、12底面、20穿戴场景、6参数重建图；初始穿插/断件/蜂尺度修复证据保留。证据 artifacts/atlas/atlas-20261004180151。",
-    "516/793参考候选，余277；43图册、513独立图册母版、3共用引用、532基础，590生成/478未生成。人工美术验收0。",
+    "用户修正持续优先：最小细件体素、连续斜面曲面；天空/星空可用实际贴图，不强制整件卡网格。",
+    "M044验证通过，12组合18有限形态；532基础候选不变。剩余265参考为174组合和91变体，不将实例或参数形态计为基础母版。",
+    "M044屋面/坡梁/墙楼板连续，20mm铜销原生；15新用途503–517，全库491角色256+235同事务；style38/finish36。",
+    "六近景建筑族+六远景建筑族及四组六点作者布置，007/008/009楼梯原件保留，014侧出口派生逐格记录移除护边；不能冒称原FloorPlan/权限/地形或运行时通过。",
+    "447完整回归、7专项及最终UV/柱头/原生往返补查、9组真实MCP检查通过。18形态142有限净空/98柱头承接点；15实际新增用途及5独立内部点。证据 artifacts/atlas/atlas-20261004190922。",
+    "M045整图及12条原始清单已查看，work/m045/source.json和preflight.json保存研究；尚未开始制作。",
+    "M045地标086给定144×112m至72×56m五级各6层、234m及B1/B2；087原civicPlan位置未收件；092给定96×84m前院。保留原始量与来源缺口，不能缩成参考缩略图便声称复原。",
+    "M045交通164上下点(140,103.6,35)/(140,254.6,35)高差151m；161–165原NetworkEdge/地形/控制器缺失，有限作者接口与静态放置不能冒称实际交通运行。",
     "每批提交并推送origin/main已授权，不重复确认。完成单批不调用stop_goal；浏览器串行，MCP命令保持<9MiB。"
   ],
   "modelingDirection": {
@@ -90,5 +87,11 @@
     "representation": "voxel-components + authored-mesh + textures",
     "effectiveBatch": "M030",
     "physicalProxyMustBeLabeled": true
+  },
+  "lastCompletedBatch": {
+    "sheet": "M044",
+    "run": "atlas-20261004190922",
+    "state": "validated",
+    "evidence": "artifacts/atlas/atlas-20261004190922"
   }
 }

@@ -3,10 +3,26 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=35;
+export const referenceFinishVersion=36;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ distantMasonry:{name:"远景砌石表面",color:"#c5bdab",roughness:.8,metalness:0},
+ distantStone:{name:"远景石基与铺石",color:"#767c72",roughness:.8,metalness:0},
+ distantTimber:{name:"远景木构",color:"#765a3f",roughness:.8,metalness:0},
+ distantTimberEdge:{name:"远景木收边",color:"#96794c",roughness:.8,metalness:0},
+ distantRoofTile:{name:"远景瓦面",color:"#414c51",roughness:.8,metalness:0},
+ distantFrame:{name:"远景结构金属",color:"#34454a",roughness:.8,metalness:.5},
+ distantBronze:{name:"远景铜饰",color:"#bb9756",roughness:.8,metalness:.5},
+ distantGlazing:{name:"远景建筑玻璃",color:"#77b9c3",roughness:.8,metalness:0,opacity:.3},
+ distantConcrete:{name:"远景混凝土",color:"#96968b",roughness:.8,metalness:0},
+ distantMortar:{name:"远景砂浆",color:"#8f9389",roughness:.8,metalness:0},
+ distantMembrane:{name:"远景防水膜",color:"#344248",roughness:.8,metalness:0},
+ distantLamp:{name:"远景未绑定光学面",color:"#d8be82",roughness:.8,metalness:0},
+
+ architecturePin:{name:'建筑非承载铜锁销',color:'#bc8b44',roughness:.32,metalness:.83},
+ distantGlazingFrame:{name:'远景玻璃压框',color:'#56777d',roughness:.5,metalness:.6},
+ distantFastener:{name:'远景非承载铜锁销',color:'#bc8b44',roughness:.32,metalness:.83},
  featherGray:{name:'鸟类浅灰羽片',color:'#aeb8ba',roughness:0.78,metalness:0},
  featherSlate:{name:'鸟类蓝灰羽片',color:'#617989',roughness:0.78,metalness:0},
  insectCuticle:{name:'昆虫深色外骨骼',color:'#393a32',roughness:0.78,metalness:0},
