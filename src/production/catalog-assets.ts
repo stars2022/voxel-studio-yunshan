@@ -1,3 +1,4 @@
+import {avatarRecipes,makeAvatarAsset} from './atlas-avatar';
 import {figureRecipes,makeFigureAsset} from './atlas-figure';
 import {characterRecipes,makeCharacterAsset} from './atlas-character';
 import {landscapeRecipes,makeLandscapeAsset} from './atlas-landscape';
@@ -11,6 +12,7 @@ import {atlasBuiltRecipes,makeAtlasBuiltAsset} from './atlas-built';
 
 /** Dispatch by complete catalog ID; BUILT-003 must never alias LIFE-003. */
 export function atlasRecipe(catalogId:string){
+ if(avatarRecipes[catalogId])return avatarRecipes[catalogId];
  if(figureRecipes[catalogId])return figureRecipes[catalogId];
  if(characterRecipes[catalogId])return characterRecipes[catalogId];
  if(/^LIFE-\d{3}$/.test(catalogId))return atlasLifeRecipes[Number(catalogId.slice(5))];
@@ -18,6 +20,7 @@ export function atlasRecipe(catalogId:string){
  return atlasBuiltRecipes[catalogId];
 }
 export function makeCatalogAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number|string>={}){
+ if(avatarRecipes[catalogId])return makeAvatarAsset(catalogId,name,id,style,params);
  if(figureRecipes[catalogId])return makeFigureAsset(catalogId,name,id,style,params);
  if(characterRecipes[catalogId])return makeCharacterAsset(catalogId,name,id,style,params);
  if(/^LIFE-\d{3}$/.test(catalogId)){if(Object.values(params).some(v=>typeof v!=='number'))throw new Error('生活资产仅支持已验证的数值参数');return makeLifeAsset(catalogId,name,id,style,params as Record<string,number>);}

@@ -1,3 +1,4 @@
+import {validateRig,posedRigPorts} from './rig';
 import {validateAuthoredMeshes} from './authored-mesh';
 import {needsNativeGrid} from './grid-policy';
 import {validateSky} from './sky';
@@ -23,7 +24,7 @@ export function validateProject(p:Project){
  for(const roles of Object.values(p.styles))for(const id of Object.values(roles))if(!Number.isInteger(id)||!p.materials[id])throw new Error('风格引用缺失材质');
  for(const[id,a]of Object.entries(p.assets)){
   if(id!==a.id||!/^[a-zA-Z0-9_-]{1,80}$/.test(id)||!Number.isFinite(a.cellSize)||a.cellSize<.005||a.cellSize>1||a.origin.length!==3||!a.origin.every(Number.isFinite))throw new Error('无效资产坐标系');
-  validateSky(a,p.materials);validateAuthoredMeshes(a,p.materials);const g=new Grid(a.chunks);for(const[,m]of g.cells())if(!p.materials[m])throw new Error(`材质 ${m} 不存在`);
+  validateSky(a,p.materials);validateAuthoredMeshes(a,p.materials);validateRig(a,p.materials);const g=new Grid(a.chunks);for(const[,m]of g.cells())if(!p.materials[m])throw new Error(`材质 ${m} 不存在`);
   // Sparse L-shaped assets can have large empty bounding volumes. Metadata does
   // not enumerate that volume; actual region edits retain validRegion's 2M cap.
   const parts=new Set(a.parts.map(x=>x.id));for(const part of a.parts){validRegion(part.region,64_000_000);if(part.parent&&!parts.has(part.parent))throw new Error('部件父级缺失');let curr=part;const seen=new Set<string>();while(curr.parent){if(seen.has(curr.id))throw new Error('部件层级存在环');seen.add(curr.id);curr=a.parts.find(x=>x.id===curr.parent)!;}}
@@ -106,7 +107,7 @@ export class Engine{
   }
   if(c.op==='regenerate'){const a=asset();if(!a.template)throw new Error('该资产没有参数模板');assertParameters(a.template.type,c.params);p.assets[a.id]=generateTemplate(a.id,a.name,a.template.type,filterParameters(a.template.type,{...a.template.params,...c.params}),a.cellSize,p.styles[a.template.style],a.template.style);p.assets[a.id].origin=a.origin;warnings.push('参数重建替换该母版的手工体素编辑；所有引用实例同步。');return;}
   if(['voxels','assignMaterial','transform','extrude'].includes(c.op)){
-   const a=asset();if(a.sky)throw new Error('天空是程序视觉组件，请修改配方参数；不能写入体素');const g=new Grid(a.chunks);let region=c.region as Bounds|undefined;if(c.partId){const part=a.parts.find(x=>x.id===c.partId);if(!part)throw new Error('部件不存在');region=part.region;}if(region)validRegion(region);
+   const a=asset();if(a.rig&&c.op==='transform')throw new Error('绑定组件请重建配方或编辑关节，不能仅变换原生格而遗留骨架');if(a.sky)throw new Error('天空是程序视觉组件，请修改配方参数；不能写入体素');const g=new Grid(a.chunks);let region=c.region as Bounds|undefined;if(c.partId){const part=a.parts.find(x=>x.id===c.partId);if(!part)throw new Error('部件不存在');region=part.region;}if(region)validRegion(region);
    if(c.op==='voxels'){
     if(!region&&!c.cells?.length)throw new Error('提供 region 或 cells');if(c.mode!=='remove')material();
     const targets:V3[]=c.cells?[...c.cells]:[];if(region)eachCell(region,v=>targets.push(v));if(targets.length>2_000_000)throw new Error('操作过大');
@@ -157,7 +158,7 @@ export class Engine{
    p.instances[c.id]={id:c.id,assetId:a.id,name:c.name??a.name,position:c.position,rotation:c.rotation??0,parent:c.parent??null};return;
   }
   if(c.op==='connect'){
-   if(p.instances[c.id])throw new Error('实例 ID 重复');const a=asset(),target=p.instances[c.targetInstanceId];if(!target)throw new Error('目标实例不存在');const b=p.assets[target.assetId],port=a.ports.find(x=>x.id===c.portId),other=b.ports.find(x=>x.id===c.targetPortId);if(!port||!other)throw new Error('接口不存在');
+   if(p.instances[c.id])throw new Error('实例 ID 重复');const a=asset(),target=p.instances[c.targetInstanceId];if(!target)throw new Error('目标实例不存在');const b=p.assets[target.assetId],ports=(v:Asset)=>v.rig?posedRigPorts(v).map(p=>({...p,position:p.position.map((n,i)=>n-v.origin[i]) as V3})):v.ports,port=ports(a).find(x=>x.id===c.portId),other=ports(b).find(x=>x.id===c.targetPortId);if(!port||!other)throw new Error('接口不存在');
    if(Math.abs(a.cellSize-b.cellSize)>1e-8||Math.abs(port.pitch-other.pitch)>1e-8||port.kind!==other.kind)throw new Error('格距或接口类型不兼容');
    const n=rotateY(port.normal,c.rotation),m=rotateY(other.normal,target.rotation);if(n.some((v,i)=>v!==-m[i]))throw new Error('接口法线必须相对');
    const x=rotateY(port.size,c.rotation).map(Math.abs),y=rotateY(other.size,target.rotation).map(Math.abs);if(x.some((v,i)=>Math.abs(v-y[i])>1e-5))throw new Error('接口截面不匹配');

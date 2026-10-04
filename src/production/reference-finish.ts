@@ -3,10 +3,14 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=24;
+export const referenceFinishVersion=25;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ rigGuide:{name:'绑定导杆可视代理',color:'#c2c1b6',roughness:.6,metalness:0,...surface('none',.075,0,942)},
+ rigJointMarker:{name:'关节可视标记',color:'#bb9652',roughness:.55,metalness:0,...surface('none',.075,0,943)},
+ rigSocketMarker:{name:'挂点可视标记',color:'#547b89',roughness:.55,metalness:0,...surface('none',.075,0,944)},
+ handWrap:{name:'半掌手套皮层',color:'#35424a',roughness:.78,metalness:0,...surface('fabric',.05,.08,945)},
  modelSuit:{name:'中性建模服主体',color:'#879199',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,931)},
  modelSuitTrim:{name:'建模服收口与接缝',color:'#c3c7c5',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,932)},
  hatCloth:{name:'帽冠织物',color:'#334149',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,933)},

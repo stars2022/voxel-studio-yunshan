@@ -1,3 +1,4 @@
+import {rigBounds} from './rig';
 import {authoredBuckets} from './authored-mesh';
 import type {Asset,Bounds,Material,V3} from './types';
 import {skyPixels} from './sky-texture';
@@ -15,7 +16,7 @@ export function validateSky(a:Asset,materials?:Record<string,Material>){const s=
  if(new Set(Object.values(s.materials)).size!==keys.length)throw new Error('天空用途材质不能合并');
  if(materials)for(const id of Object.values(s.materials)){const m=materials[id];if(!m||m.solid||m.category!=='emissive')throw new Error('天空须使用独立非碰撞视觉光学材质');}
 }
-export const geometryData=(a:Asset)=>a.sky??(a.meshes?{chunks:a.chunks,meshes:a.meshes}:a.chunks);
+export const geometryData=(a:Asset)=>a.sky??(a.rig?{chunks:a.chunks,meshes:a.meshes,rig:a.rig}:a.meshes?{chunks:a.chunks,meshes:a.meshes}:a.chunks);
 export const geometryKind=(a:Asset)=>a.sky?'textured-sky':a.meshes?'voxel-and-mesh':'native-voxels';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n)),smooth=(a:number,b:number,x:number)=>{const t=clamp((x-a)/(b-a));return t*t*(3-2*t);};
 export function skyState(clock:SkyClock){if(!finite(clock.hour,0,24)||!['clear','overcast'].includes(clock.weather)||!finite(clock.visibility,0,1))throw new Error('无效天空预览状态');const t=(clock.hour%24-6)/24*Math.PI*2,v:V3=[Math.cos(t),Math.sin(t),.14*Math.cos(t)],n=Math.hypot(...v),sun=v.map(x=>x/n) as V3,daylight=smooth(-.12,.18,sun[1]),twilight=Math.exp(-((sun[1]/.18)**2)),weather=clock.weather==='overcast'?.28:1;
@@ -41,4 +42,4 @@ export function meshBounds(buckets:MeshBucket[]):Bounds|null{const min:V3=[Infin
 /** Sky bounds are visual only. Never use them as collision or voxel bounds. */
 export function skyBoundsM(a:Asset):Bounds|null{const s=a.sky;if(!s)return null;validateSky(a);const st=skyState(s),d=s.kind==='sun'?st.sun:s.kind==='moon'?st.moon:[0,0,0];return{min:d.map((v,i)=>a.origin[i]+v*s.distanceM-s.radiusM) as V3,max:d.map((v,i)=>a.origin[i]+v*s.distanceM+s.radiusM) as V3};}
 
-export function assetBoundsM(a:Asset):Bounds|null{if(a.sky)return skyBoundsM(a);const b=new Grid(a.chunks).bounds(),m=meshBounds(authoredBuckets(a)),v=b?{min:b.min.map((n,i)=>a.origin[i]+n*a.cellSize) as V3,max:b.max.map((n,i)=>a.origin[i]+n*a.cellSize) as V3}:null;if(!v)return m;if(!m)return v;return{min:v.min.map((n,i)=>Math.min(n,m.min[i])) as V3,max:v.max.map((n,i)=>Math.max(n,m.max[i])) as V3};}
+export function assetBoundsM(a:Asset):Bounds|null{if(a.sky)return skyBoundsM(a);if(a.rig)return rigBounds(a);const b=new Grid(a.chunks).bounds(),m=meshBounds(authoredBuckets(a)),v=b?{min:b.min.map((n,i)=>a.origin[i]+n*a.cellSize) as V3,max:b.max.map((n,i)=>a.origin[i]+n*a.cellSize) as V3}:null;if(!v)return m;if(!m)return v;return{min:v.min.map((n,i)=>Math.min(n,m.min[i])) as V3,max:v.max.map((n,i)=>Math.max(n,m.max[i])) as V3};}

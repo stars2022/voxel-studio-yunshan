@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import re
+import subprocess
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 
@@ -64,8 +65,15 @@ for row in entries + dependencies:
     native = root / 'projects' / row['file']
     doc = read(native)
     asset = doc['assets'][row['assetId']]
-    # Match the canonical JS serialization used by the producer (UTF-8, compact).
-    digest = hashlib.sha256(json.dumps(asset.get('sky', {'chunks':asset['chunks'],'meshes':asset['meshes']} if 'meshes' in asset else asset['chunks']), ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+    # Canonical geometry hashes are produced by JavaScript. Python's exponent
+    # formatting (for example e-09 versus e-9) differs for valid small rig values.
+    # Hash the exact same parsed numeric data with the producer's serializer.
+    digest = subprocess.check_output(['node', '--input-type=module', '-e',
+        "import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';"
+        "const a=JSON.parse(readFileSync(process.argv[1],'utf8')).assets[process.argv[2]];"
+        "const data=a.sky??(a.rig?{chunks:a.chunks,meshes:a.meshes,rig:a.rig}:a.meshes?{chunks:a.chunks,meshes:a.meshes}:a.chunks);"
+        "process.stdout.write(createHash('sha256').update(JSON.stringify(data)).digest('hex'));",
+        str(native), row['assetId']], text=True).strip()
     assert digest == row['sha256'], row['id']
     files.add(native)
     run = re.match(r'atlas-\d{14}', row['file']).group()
@@ -84,6 +92,7 @@ for scenario in verification.get('assemblies', []):
     files.update(out.glob(name + '-view-*.png'))
 files.update(out.glob('*-tests*.txt'))
 files.update(out.glob('*-mcp-client.txt'))
+files.update(out.glob('*-mcp-initial-client.txt'))
 files.update(out.glob('*-mcp-initial.json'))
 files.update(out.glob('mcp-*.png'))
 files.update(out.glob('high-bridge-*.png'))
@@ -113,6 +122,7 @@ files.update(out.glob('sky-*.png'))
 files.update(out.glob('landscape-*.png'))
 files.update(out.glob('character-*.png'))
 files.update(out.glob('figure-*.png'))
+files.update(out.glob('avatar-*.png'))
 if (out / 'component-variants.json').exists():
     for variant in read(out / 'component-variants.json')['variants']:
         if 'variantDirectory' in variant:
@@ -123,9 +133,10 @@ if (out / 'component-variants.json').exists():
 if (out / 'figure-installation-verification.json').exists():
     assert read(out / 'figure-installation-verification.json')['status'] == 'passed'
     files.add(out / 'figure-installation-verification.json')
-if (out / 'figure-variant-export-verification.json').exists():
-    assert read(out / 'figure-variant-export-verification.json')['status'] == 'passed'
-    files.add(out / 'figure-variant-export-verification.json')
+for name in ['figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
+    if (out / name).exists():
+        assert read(out / name)['status'] == 'passed'
+        files.add(out / name)
 for name in ['character-installation-verification.json', 'character-presentation-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'

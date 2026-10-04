@@ -1,0 +1,93 @@
+{
+  "run": "atlas-20261004093013",
+  "status": "passed",
+  "scope": [
+    "CHAR-068",
+    "CHAR-069",
+    "CHAR-070",
+    "CHAR-071",
+    "CHAR-072",
+    "CHAR-073",
+    "CHAR-074",
+    "CHAR-075",
+    "CHAR-085",
+    "CHAR-086",
+    "CHAR-087",
+    "CHAR-088"
+  ],
+  "modelingDirection": "Minimum detail components remain native voxels; slopes, heads, hair, limbs, abdomen and inclined rig guides use continuous meshes. Posed voxel component vertices are rigidly transformed, never resampled.",
+  "tests": {
+    "fullRegression": 360,
+    "finalFocused": 12,
+    "fullLog": "full-tests.txt",
+    "finalFocusedLog": "focused-tests.txt"
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 13,
+  "mcpResumedScenarios": [
+    "hair",
+    "hands-feet",
+    "rigs",
+    "first-person",
+    "abdomen",
+    "dressed"
+  ],
+  "initialScreenshotTimeoutRecorded": true,
+  "catalogMasters": 12,
+  "componentShapes": 26,
+  "authorInstallationStudies": 7,
+  "nativeVoxels": 10625,
+  "triangles": 20056,
+  "farTriangles": 18940,
+  "defaultGLBBoundsMaxErrorM": 5.7220459037665705e-08,
+  "assetScreenshots": 36,
+  "installationScreenshots": 23,
+  "rearDetailScreenshots": 6,
+  "gripDetailScreenshots": 1,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 415,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 598,
+    "generatedEntries": 470,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 396
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Inspected twelve isometric/front/material views, seven author installations, rear hair/hand/foot views and grip detail.",
+      "Hair shape, unclipped face, finger curl, reflected limbs, actual arch, continuous clothed abdomen and joint guide motion reviewed.",
+      "No generated image is substituted for mesh evidence.",
+      "Resemblance, expression, hair styling and costume finish remain subject to human art review."
+    ]
+  },
+  "developmentCorrections": [
+    "Package geometry checksums use the same canonical JavaScript numeric serialization as the producer; Python exponent formatting differed for small rig values.",
+    "Split native mesh generation by joint ownership so touching blocks retain separate moving boundaries and far mode never merges across joints.",
+    "Child hair keeps independent head-width clearance instead of scaling the adult shell uniformly; swept side strands moved clear of the scalp.",
+    "Foot nail blocks lowered into their toe surfaces to remove submillimetre gaps from grid quantization.",
+    "Finger and thumb nails placed on the dorsal surfaces; grip socket moved to the tested fifteen-millimetre author gauge clearance.",
+    "Pregnancy slot removes original continuous torso middle and both native markers inside that interval; original body remains separately retained. The final abdomen scene was generated through real MCP after this correction; unfinished screenshot scenes were resumed serially after one documented software WebGL timeout."
+  ],
+  "limitations": [
+    "Technical candidates; human art acceptance zero.",
+    "Original actor source, dimensions, protected clearance, face atlas and original skeleton/controllers are unavailable.",
+    "Real manual rigid skin binding is implemented; soft deformation weights, IK, motion clips and game integration are not.",
+    "All character surfaces are noncollision, including metal and guide components.",
+    "Head/ear/eye hair tests cover adult066 and school068, yaw -60/0/+60 and bounded standing/lowered shoulder frames, not all poses or clothes.",
+    "Lowered collar frame is a seated head/shoulder envelope only, not a full animated seated body.",
+    "Grip gauge clearance is not automatic grasp or force/contact certification.",
+    "Clothed pregnancy replacement does not infer trimester or implement growth.",
+    "Software WebGL evidence is not hardware frame-rate acceptance."
+  ]
+}

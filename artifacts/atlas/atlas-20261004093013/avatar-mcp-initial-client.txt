@@ -1,0 +1,60 @@
+check_geometry OK
+query_voxels OK
+list_production_recipes OK
+query_materials_interfaces OK
+edit_transaction ERROR
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction OK
+near/far char-068
+near/far char-069
+near/far char-070
+near/far char-071
+near/far char-072
+near/far char-073
+near/far char-074
+near/far char-075
+near/far char-085
+near/far char-086
+near/far char-087
+near/far char-088
+edit_transaction OK
+edit_transaction OK
+query_materials_interfaces OK
+edit_transaction OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+check_geometry OK
+save_project OK
+export_project OK
+generate_previews OK
+generate_previews OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+check_geometry OK
+save_project OK
+export_project OK
+generate_previews OK
+generate_previews ERROR
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"locator.screenshot: Timeout 17490.771999999997ms exceeded.\nCall log:\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n","code":"OPERATION_FAILED","isError":true}
+    at call (/workspace/voxel-studio-yunshan/scripts/verify-avatar-mcp.ts:6:596)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-avatar-mcp.ts:16:531) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

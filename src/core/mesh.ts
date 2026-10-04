@@ -1,9 +1,10 @@
+import {rigBuckets} from './rig';
 import {authoredBuckets} from './authored-mesh';
 import {skyMesh} from './sky';
 import {applyWaterFlow} from './water-flow';
 import {Grid,CHUNK} from './grid';
 import type {V3,Material,Asset} from './types';
-export type MeshBucket={material:number;positions:number[];normals:number[];indices:number[];uvs:number[];texture?:{width:number;height:number;data:Uint8Array;transparent:boolean};colors?:number[];unlit?:boolean;doubleSided?:boolean;opacity?:number;quads:number};
+export type MeshBucket={bindingJoint?:string;meshName?:string;joints?:number[];weights?:number[];material:number;positions:number[];normals:number[];indices:number[];uvs:number[];texture?:{width:number;height:number;data:Uint8Array;transparent:boolean};colors?:number[];unlit?:boolean;doubleSided?:boolean;opacity?:number;quads:number};
 // Axis-aligned greedy meshing, scoped to a dirty chunk; neighbours are queried across chunk boundaries.
 export function meshChunk(grid:Grid,key:string,materials:Record<string,Material>,size=1,origin:V3=[0,0,0]):MeshBucket[]{
  const buckets=new Map<number,MeshBucket>(),base=key.split(',').map(n=>Number(n)*CHUNK),N=CHUNK;
@@ -48,4 +49,13 @@ export function mergeCoplanarMesh(a:Asset,buckets:MeshBucket[]):MeshBucket[]{
 }
 
 /** The raw greedy rectangles above remain available for exact face audits. */
-export function displayMesh(a:Asset,materials:Record<string,Material>,mode:'near'|'far'='near'):MeshBucket[]{if(a.sky)return skyMesh(a,materials);if(a.meshes)return[...displayMesh({...a,meshes:undefined},materials,mode),...authoredBuckets(a)];const raw=meshAsset(a,materials),near=applyWaterFlow(a,raw);if(mode==='near')return near;const far=applyWaterFlow(a,mergeCoplanarMesh(a,raw));return far.reduce((n,b)=>n+b.indices.length,0)>near.reduce((n,b)=>n+b.indices.length,0)?near:far;}
+export function displayMesh(a:Asset,materials:Record<string,Material>,mode:'near'|'far'='near',bindPose=false):MeshBucket[]{
+ if(a.sky)return skyMesh(a,materials);
+ const native=(source:Asset)=>{const raw=meshAsset(source,materials),near=applyWaterFlow(source,raw),far=mode==='far'?applyWaterFlow(source,mergeCoplanarMesh(source,raw)):near;return far.reduce((n,b)=>n+b.indices.length,0)>near.reduce((n,b)=>n+b.indices.length,0)?near:far;};
+ if(!a.rig)return [...native(a),...(a.meshes?authoredBuckets(a):[])];
+ // Each joint has its own occupied grid, including faces that become exposed after posing.
+ // Greedy and far coplanar merges must never cross a joint boundary.
+ const groups=new Map<string,Grid>();for(const[v,material]of new Grid(a.chunks).cells()){const owner=a.rig.voxelJoints.find(b=>v.every((n,i)=>n>=b.region.min[i]&&n<b.region.max[i]));if(!owner)throw new Error('原生块缺绑定');let g=groups.get(owner.joint);if(!g){g=new Grid();groups.set(owner.joint,g);}g.set(v,material);}
+ const blocks=[...groups].flatMap(([bindingJoint,g])=>native({...a,chunks:g.serialize()}).map(b=>({...b,bindingJoint})));
+ return rigBuckets(a,[...blocks,...authoredBuckets(a)],bindPose);
+}
