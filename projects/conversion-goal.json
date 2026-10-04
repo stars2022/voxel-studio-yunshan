@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 420,
-    "remainingReferenceEntries": 373,
-    "completedReferenceSheets": 35,
+    "referenceCandidates": 432,
+    "remainingReferenceEntries": 361,
+    "completedReferenceSheets": 36,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 439,
+      "baseModels": 451,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 574,
-      "generatedEntries": 494,
+      "notProduced": 562,
+      "generatedEntries": 506,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 420
+      "atlasReferenceCandidates": 432
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M035",
+    "sheet": "M036",
     "state": "validated-for-batch-push",
     "ids": [
-      "CHAR-101",
-      "CHAR-102",
-      "CHAR-103",
-      "CHAR-104",
-      "CHAR-105",
-      "CHAR-106",
-      "CHAR-107",
-      "CHAR-108",
-      "CHAR-109",
-      "CHAR-110",
-      "CHAR-111",
-      "CHAR-112"
+      "CHAR-113",
+      "CHAR-114",
+      "CHAR-115",
+      "CHAR-116",
+      "CHAR-117",
+      "CHAR-118",
+      "CHAR-119",
+      "CHAR-120",
+      "CHAR-121",
+      "CHAR-122",
+      "CHAR-123",
+      "CHAR-124"
     ],
-    "run": "atlas-20261004105313",
-    "evidence": "artifacts/atlas/atlas-20261004105313"
+    "run": "atlas-20261004115622",
+    "evidence": "artifacts/atlas/atlas-20261004115622"
   },
-  "nextBatch": "M036",
+  "nextBatch": "M037",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -66,22 +66,20 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M035共420件技术转化候选；参考余373条，人工美术验收0。"
+    "M001–M036共432件技术转化候选；参考余361条，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续有效：最小组件体素，斜面/曲面连续网格，天空/星空贴图；不得强制整件栅格化。",
-    "M036为CHAR113短夹衣、114长袍上身、115长袍精细下摆、116外搭长衫、117无袖马甲、118日常长裤、119长裙、120织带腰封、121行走短靴、122布鞋、123儿童鞋、124居家寝衣。先读真实参考及原清单，衣服分件需真正替换身体的原衣面，避免套重叠壳；颜色/镜像/姿态不计新母版。",
-    "M035共12母版29形态：101–106各adult/child，107长短簪，108–109三年龄眼镜，110三年龄耳饰，111–112三年龄面罩。",
-    "wearable-assembly.ts七场景，四组全身搭配保留源头/发/身体/穿戴件。转头沿用M034 turnHead，实际head关节变换，不重新栅格化。",
-    "M035全部实际单head刚性绑定；沿用M033 skin/IBM/JOINTS_0/WEIGHTS_0，不冒称软形变、饰品摆动、防护性能或原骨骼。",
-    "六帽配实际头和CHAR085短发，帽底真开。107独立花簪配CHAR100 removed的pin-axis，再装在成人CHAR093承冠口；两长度共轴，不冒称任意发型穿簪。",
-    "58项头/发/簪槽检查，81项站姿±30/0度身体检查，4组穿搭件互查，24项帽底/眼部/口罩覆盖射线。镜腿、耳夹、耳挂、侧扣和下颌带已按实际头发/耳部净空调整。",
-    "271用途角色，新增278–297二十项，全非碰撞零发光。materialBatch按256+15条拆分、同事务；完整style角色上限512，单批材质上限仍256。保留foreign ID/失败回滚/一次撤销。",
-    "参考材质将spectaclesLens玻璃片和gogglesLens塑料片opacity=.22；GLB实际alpha位于材质图集，测试须采导出PNG对应UV后乘基色alpha。respiratorFilter布料保持不透明不发光。",
-    "420/793参考候选，余373，439基础候选，494已生成/574未生成，35图册；人工美术验收0。M035证据artifacts/atlas/atlas-20261004105313；完整回归376项，最终专项7项，真实MCP13项。",
-    "M035组合36个源/派生资产，原请求13.6MB超过SDK stdio 10MiB；verify-wearable-mcp.ts按小于9MiB拆有序事务，保留初次断连和重试证据。不能称整场景一次撤销；各用途换材质仍一次事务。",
-    "每批提交推送origin/main授权持续有效，单批完成不调用stop_goal。先构建再拍实图；Chromium/SwiftShader软件WebGL；浏览器截图任务串行运行。"
+    "M037为CHAR125婴儿包衣、126学堂童装、127警务制服、128守卫防护衣、129驾驶调度服、130工坊劳动衣、131田作服、132医生诊疗衣、133护理工作衣、134科研实验外套、135店员服务衣、136工作围裙。参考图已看，原清单存work/m037/source.json（scratch，不提交）；下一轮须重新读取真实来源。独立剪裁母版，不夹带图中头/帽/背包/工具，不靠换色复制职业。",
+    "M036共12母版23形态：113–122、124各adultA/B；123仅学龄儿童，不算颜色/左右/姿态新母版。",
+    "garment-assembly.ts七作者场景；身体实际移除被新衣覆盖旧衣面。garmentCoatUnderlayer保存113原件，派生件移除隐藏袖面/肩背/腰边及袖扣/腰扣；不得把原生小件删成浮件或回写原母版。",
+    "默认肩外展8度，衣装16关节单分件刚性绑定；手部挂接增加hand-basis朝向关节。原生和连续绑定态不重栅格化，GLB skin/IBM/JOINTS_0/WEIGHTS_0独立求值。",
+    "完整坐姿上衣存在穿插，未通过。失败保存在garment-initial-fit-failures.json；最终坐姿仅裤/鞋/实际脚组件，没有上身、头手。长裙/袍摆仅站姿，行走/抬臂也仅命名范围，不冒称软布或完整动作验收。",
+    "285用途角色，新增298–311十四项，全非碰撞零发光；材质按256+29同事务创建，foreign ID/失败回滚/一次撤销验证保留。",
+    "432/793参考候选，余361，451基础候选，506已生成/562未生成，36图册；人工美术验收0。M036证据artifacts/atlas/atlas-20261004115622；383完整回归（最后移除内搭旧腰扣前），修正后6专项，15真实MCP检查。",
+    "23形态封闭面/原生附件/回读检查，335场景配对、10鞋/脚和34开口检查。尺寸误差核实际导出skin，不直接拿绑定POSITION包络比较默认姿态。",
+    "每批提交推送origin/main授权持续有效，单批完成不调用stop_goal。先构建再拍实图；Chromium/SwiftShader软件WebGL；截图任务串行运行。MCP场景命令从一开始按<9MiB拆分，保持顺序，不扩大10MiB stdio限制。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",

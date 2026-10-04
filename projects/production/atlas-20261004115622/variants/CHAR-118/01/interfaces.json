@@ -1,0 +1,844 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311
+    }
+  },
+  "assets": [
+    {
+      "id": "char-118",
+      "name": "CHAR-118",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "ankle-1",
+          "kind": "character-socket",
+          "position": [
+            -0.1,
+            0.1003,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.12143999999999999,
+            0.01,
+            0.13523999999999997
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "ankle1",
+          "kind": "character-socket",
+          "position": [
+            0.1,
+            0.1003,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.12143999999999999,
+            0.01,
+            0.13523999999999997
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "waist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.88,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.328,
+            0.01,
+            0.23452000000000006
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "原生最小扣件与织标；连续衣面另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -22,
+              26,
+              -25
+            ],
+            "max": [
+              22,
+              180,
+              -12
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "裤袋最小袋扣--1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -21,
+              152,
+              -18
+            ],
+            "max": [
+              -18,
+              157,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "裤脚最小织标--1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -22,
+              26,
+              -14
+            ],
+            "max": [
+              -18,
+              28,
+              -12
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "裤袋最小袋扣-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              19,
+              152,
+              -18
+            ],
+            "max": [
+              22,
+              157,
+              -16
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "裤脚最小织标-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              18,
+              26,
+              -14
+            ],
+            "max": [
+              22,
+              28,
+              -12
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "裤腰最小扣",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              176,
+              -25
+            ],
+            "max": [
+              3,
+              180,
+              -23
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "humanoid",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "pelvis",
+            "parent": "root",
+            "translation": [
+              0,
+              0.86,
+              0
+            ]
+          },
+          {
+            "id": "chest",
+            "parent": "pelvis",
+            "translation": [
+              0,
+              0.51,
+              0
+            ]
+          },
+          {
+            "id": "head",
+            "parent": "chest",
+            "translation": [
+              0,
+              0.09,
+              0
+            ]
+          },
+          {
+            "id": "shoulder-1",
+            "parent": "chest",
+            "translation": [
+              -0.205,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "elbow-1",
+            "parent": "shoulder-1",
+            "translation": [
+              -0.031008,
+              -0.2448,
+              0
+            ]
+          },
+          {
+            "id": "wrist-1",
+            "parent": "elbow-1",
+            "translation": [
+              -0.012274,
+              -0.2282,
+              0
+            ]
+          },
+          {
+            "id": "hip-1",
+            "parent": "pelvis",
+            "translation": [
+              -0.1,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "knee-1",
+            "parent": "hip-1",
+            "translation": [
+              0,
+              -0.4,
+              -0.005
+            ]
+          },
+          {
+            "id": "ankle-1",
+            "parent": "knee-1",
+            "translation": [
+              0,
+              -0.3597,
+              0.005
+            ]
+          },
+          {
+            "id": "shoulder1",
+            "parent": "chest",
+            "translation": [
+              0.205,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "elbow1",
+            "parent": "shoulder1",
+            "translation": [
+              0.031008,
+              -0.2448,
+              0
+            ]
+          },
+          {
+            "id": "wrist1",
+            "parent": "elbow1",
+            "translation": [
+              0.012274,
+              -0.2282,
+              0
+            ]
+          },
+          {
+            "id": "hip1",
+            "parent": "pelvis",
+            "translation": [
+              0.1,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "knee1",
+            "parent": "hip1",
+            "translation": [
+              0,
+              -0.4,
+              -0.005
+            ]
+          },
+          {
+            "id": "ankle1",
+            "parent": "knee1",
+            "translation": [
+              0,
+              -0.3597,
+              0.005
+            ]
+          }
+        ],
+        "meshJoints": {
+          "长裤独立开放腰口": "pelvis",
+          "裤上腿真腔--1": "hip-1",
+          "裤下腿真腔--1": "knee-1",
+          "裤脚织缘--1": "knee-1",
+          "裤上腿真腔-1": "hip1",
+          "裤下腿真腔-1": "knee1",
+          "裤脚织缘-1": "knee1"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -21,
+                152,
+                -18
+              ],
+              "max": [
+                -18,
+                157,
+                -16
+              ]
+            },
+            "joint": "hip-1"
+          },
+          {
+            "region": {
+              "min": [
+                -22,
+                26,
+                -14
+              ],
+              "max": [
+                -18,
+                28,
+                -12
+              ]
+            },
+            "joint": "knee-1"
+          },
+          {
+            "region": {
+              "min": [
+                19,
+                152,
+                -18
+              ],
+              "max": [
+                22,
+                157,
+                -16
+              ]
+            },
+            "joint": "hip1"
+          },
+          {
+            "region": {
+              "min": [
+                18,
+                26,
+                -14
+              ],
+              "max": [
+                22,
+                28,
+                -12
+              ]
+            },
+            "joint": "knee1"
+          },
+          {
+            "region": {
+              "min": [
+                -2,
+                176,
+                -25
+              ],
+              "max": [
+                3,
+                180,
+                -23
+              ]
+            },
+            "joint": "pelvis"
+          }
+        ],
+        "sockets": {
+          "ankle-1": "knee-1",
+          "ankle1": "knee1",
+          "waist": "pelvis"
+        },
+        "pose": {
+          "shoulder-1": [
+            0,
+            0,
+            -0.0697564737441253,
+            0.9975640502598242
+          ],
+          "shoulder1": [
+            0,
+            0,
+            0.0697564737441253,
+            0.9975640502598242
+          ]
+        },
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "ankle-1",
+          "kind": "character-socket",
+          "position": [
+            -0.1,
+            0.1003,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.12143999999999999,
+            0.01,
+            0.13523999999999997
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "ankle1",
+          "kind": "character-socket",
+          "position": [
+            0.1,
+            0.1003,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.12143999999999999,
+            0.01,
+            0.13523999999999997
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "waist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.88,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.328,
+            0.01,
+            0.23452000000000006
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "长裤独立开放腰口",
+          "material": 305,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "裤上腿真腔--1",
+          "material": 305,
+          "collision": false,
+          "triangles": 192
+        },
+        {
+          "name": "裤下腿真腔--1",
+          "material": 305,
+          "collision": false,
+          "triangles": 192
+        },
+        {
+          "name": "裤脚织缘--1",
+          "material": 301,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "裤上腿真腔-1",
+          "material": 305,
+          "collision": false,
+          "triangles": 192
+        },
+        {
+          "name": "裤下腿真腔-1",
+          "material": 305,
+          "collision": false,
+          "triangles": 192
+        },
+        {
+          "name": "裤脚织缘-1",
+          "material": 301,
+          "collision": false,
+          "triangles": 128
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

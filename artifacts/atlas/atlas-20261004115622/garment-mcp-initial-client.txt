@@ -1,0 +1,52 @@
+check_geometry OK
+query_voxels OK
+list_production_recipes OK
+query_materials_interfaces OK
+edit_transaction ERROR
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction OK
+near/far char-113
+near/far char-114
+near/far char-115
+near/far char-116
+near/far char-117
+near/far char-118
+near/far char-119
+near/far char-120
+near/far char-121
+near/far char-122
+near/far char-123
+near/far char-124
+edit_transaction OK
+edit_transaction OK
+query_materials_interfaces OK
+edit_transaction OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+check_geometry OK
+save_project OK
+export_project OK
+generate_previews OK
+generate_previews ERROR
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"locator.screenshot: Timeout 16888.046000000002ms exceeded.\nCall log:\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n","code":"OPERATION_FAILED","isError":true}
+    at call (/workspace/voxel-studio-yunshan/scripts/verify-garment-mcp.ts:9:597)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-garment-mcp.ts:21:532) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

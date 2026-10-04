@@ -1,3 +1,4 @@
+import {gltfPoints,pointBounds} from './lib/skin-audit';
 import {assetBoundsM,geometryData,geometryKind} from '../src/core/sky';
 import {readFile,writeFile,mkdir,copyFile,rename} from 'node:fs/promises';
 import path from 'node:path';
@@ -43,10 +44,11 @@ for(const row of rows){
  const meshStart=performance.now(),meshes=displayMesh(a,p.materials),triangles=meshes.reduce((s,m)=>s+m.indices.length/3,0),meshingMs=performance.now()-meshStart,file=run+'-'+row.id.toLowerCase()+'.ysvox.json',boundsM=assetBoundsM(a)!;
  files.push(await save(p,file));const exportStart=performance.now(),exported=await exportProject(p,path.join(out,'exports',row.id),assetId),glb=await io.read(path.join(exported.directory,'visual.glb')),positions=glb.getRoot().listMeshes().flatMap(m=>m.listPrimitives().map(p=>p.getAttribute('POSITION')!)),min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];
  for(const acc of positions){const arr=acc.getArray()!;for(let k=0;k<arr.length;k++){const j=k%3;min[j]=Math.min(min[j],arr[k]);max[j]=Math.max(max[j],arr[k]);}}
- const error=Math.max(...min.map((n,i)=>Math.abs(n-boundsM.min[i])),...max.map((n,i)=>Math.abs(n-boundsM.max[i])));const precision=checkFloat32Bounds(boundsM,{min,max});assert.ok(precision.matchesFloat32Rounding&&(a.sky?error<.002:error<a.cellSize*.001),'GLB bounds changed beyond exact float32 encoding');maxError=Math.max(maxError,error);
+ if(a.rig){const posed=pointBounds(gltfPoints(glb.getRoot().listScenes()[0].listChildren()[0]));min.splice(0,3,...posed.min);max.splice(0,3,...posed.max);}
+ const error=Math.max(...min.map((n,i)=>Math.abs(n-boundsM.min[i])),...max.map((n,i)=>Math.abs(n-boundsM.max[i])));const precision=checkFloat32Bounds(boundsM,{min,max});assert.ok(a.rig?error<3e-7:precision.matchesFloat32Rounding&&(a.sky?error<.002:error<a.cellSize*.001),'GLB bounds changed beyond exact float32 encoding');maxError=Math.max(maxError,error);
  const round=JSON.parse(await readFile(path.join(exported.directory,'voxels.ysvox.json'),'utf8'));validateProject(round);assert.equal(hash(round.assets),hash(p.assets));
  const record={id:row.id,sheet:row.sheet,slot:row.slot,file,assetId,revision:3,...(a.sky||a.meshes?{representation:geometryKind(a)}:{}),referenceSHA256:row.imageSHA256,voxels:g.count,triangles,cellSizeM:a.cellSize,sha256:geometrySHA,boundsM,note:String(a.source!.limitations)+' 已按图重建候选，待人工美术验收。'};index.entries.push(record);
- metrics.push({...record,cellSizeM:a.cellSize,parts:a.parts.length,components,meshingMs,exportAndRoundTripMs:performance.now()-exportStart,totalMs:performance.now()-t,glbBytes:exported.glbBytes,glbBoundsMaxErrorM:error,glbFloat32Rounding:precision});
+ metrics.push({...record,cellSizeM:a.cellSize,parts:a.parts.length,components,meshingMs,exportAndRoundTripMs:performance.now()-exportStart,totalMs:performance.now()-t,glbBytes:exported.glbBytes,glbBoundsMaxErrorM:error,glbFloat32Rounding:a.rig?{method:'independent exported skin evaluation',maxErrorM:error,toleranceM:3e-7}:precision});
  let gallery=galleries.get(row.sheet);if(!gallery){gallery=blank('云山 · '+row.sheet+' 十二件 · 原生体素',rows.filter(r=>r.sheet===row.sheet));gallery.palettes=structuredClone(p.palettes);galleries.set(row.sheet,gallery);}
  gallery.assets[assetId]=structuredClone(a);gallery.catalog!.entries[row.id]=structuredClone(p.catalog!.entries[row.id]);gallery.instances[assetId+'-display']={id:assetId+'-display',assetId,name:a.name,position:[(row.slot-1)%4*2.3,-boundsM.min[1],Math.floor((row.slot-1)/4)*2.3],rotation:0,parent:null};
  console.log(`${row.sheet}/${row.slot} ${row.id}: ${g.count} cells, ${a.parts.length} parts, ${components.length} components, ${Math.round(performance.now()-t)} ms`);

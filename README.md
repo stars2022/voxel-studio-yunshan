@@ -4,7 +4,7 @@
 
 本项目位于独立的 `voxel-studio/` 目录，未改动上级项目文件。
 
-67 张完整图册已接入「图册」页，793 条参考逐 ID 对齐。M001–M035 的 **420 个基础 ID**已制作为候选，其余 373 条待制作或复核，人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [M035 帽盔与面部穿戴说明](docs/M035-CHARACTER-COMPONENTS.md) · [最新总览](artifacts/atlas/atlas-20261004105313/M035.png)。合并旧库后有 439 个基础候选；实例与参数形态不增加基础资产数。
+67 张完整图册已接入「图册」页，793 条参考逐 ID 对齐。M001–M036 的 **432 个基础 ID**已制作为候选，其余 361 条待制作或复核，人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [M036 衣装与鞋履说明](docs/M036-CHARACTER-COMPONENTS.md) · [最新总览](artifacts/atlas/atlas-20261004115622/M036.png)。合并旧库后有 451 个基础候选；实例与参数形态不增加基础资产数。
 
 材质按用途与物理类别分配独立 ID，后期统一更换外观。新配方禁止按颜色借用类别；外观包不能改变类别或碰撞设置。[分类约定与当前复核范围](docs/MATERIAL-ROLES.md) · [显微镜真实前后对照](artifacts/microscope-study/comparison.png)。
 

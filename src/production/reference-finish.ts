@@ -3,10 +3,24 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=27;
+export const referenceFinishVersion=28;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ garmentOuter:{name:'服装外层蓝布',color:'#53646b',roughness:.85,metalness:0,...surface('fabric',.045,.09,980)},
+ garmentLight:{name:'交领浅布',color:'#dedcd2',roughness:.85,metalness:0,...surface('fabric',.045,.09,981)},
+ garmentLining:{name:'服装内衬布',color:'#b8b7ae',roughness:.85,metalness:0,...surface('fabric',.045,.09,982)},
+ garmentTrim:{name:'衣缘织边',color:'#344950',roughness:.85,metalness:0,...surface('fabric',.045,.09,983)},
+ garmentPattern:{name:'服装织入纹样',color:'#b8c0b9',roughness:.85,metalness:0,...surface('fabric',.045,.09,984)},
+ garmentStrap:{name:'服装固定织带',color:'#373d3d',roughness:.85,metalness:0,...surface('fabric',.045,.09,985)},
+ garmentBuckle:{name:'服装扣件金属',color:'#bd9957',roughness:.37,metalness:.67,...surface('none',.045,0,986)},
+ trouserCloth:{name:'日常裤布',color:'#44484a',roughness:.85,metalness:0,...surface('fabric',.045,.09,987)},
+ bootUpper:{name:'短靴皮面',color:'#665445',roughness:.7,metalness:0,...surface('none',.045,0,988)},
+ shoeCloth:{name:'布鞋织物鞋面',color:'#5b737a',roughness:.85,metalness:0,...surface('fabric',.045,.09,989)},
+ shoeLining:{name:'鞋内织物衬里',color:'#d8d2c0',roughness:.85,metalness:0,...surface('fabric',.045,.09,990)},
+ footwearSole:{name:'鞋底橡胶',color:'#363939',roughness:.85,metalness:0,...surface('none',.045,0,991)},
+ footwearEdge:{name:'鞋沿橡胶',color:'#bdb8a8',roughness:.85,metalness:0,...surface('none',.045,0,992)},
+ sleepCloth:{name:'寝衣轻布',color:'#dddccf',roughness:.85,metalness:0,...surface('fabric',.045,.09,993)},
  guardHelmet:{name:'守卫盔金属壳',color:'#373c40',roughness:.38,metalness:.65,...surface('none',.05,0,960)},
  helmetPad:{name:'帽盔内衬软垫',color:'#41464a',roughness:.8,metalness:0,...surface('fabric',.05,.10,961)},
  helmetStrap:{name:'帽盔下颌固定带',color:'#343c40',roughness:.8,metalness:0,...surface('fabric',.05,.10,962)},

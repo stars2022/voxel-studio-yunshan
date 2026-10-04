@@ -1,0 +1,15 @@
+node:internal/fs/promises:697
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open 'projects/atlas-20261003001012-m001-gallery.ysvox.json'
+    at async open (node:internal/fs/promises:697:25)
+    at async readFile (node:internal/fs/promises:1348:14)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/audit-atlas-galleries.ts:10:99) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'projects/atlas-20261003001012-m001-gallery.ysvox.json'
+}
+
+Node.js v24.19.0
