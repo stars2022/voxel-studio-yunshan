@@ -93,6 +93,7 @@ for scenario in verification.get('assemblies', []):
     files.update((out / (name + '-export')).glob('*'))
     files.update(out.glob(name + '-view-*.png'))
 files.update(out.glob('*-tests*.txt'))
+files.update(out.glob('document-sync-test.txt'))
 files.update(out.glob('*-mcp-client.txt'))
 files.update(out.glob('*-mcp-refresh-client.txt'))
 files.update(out.glob('*-mcp-initial-client.txt'))
@@ -132,6 +133,17 @@ files.update(out.glob('garment-*.png'))
 files.update(out.glob('costume-*.png'))
 files.update(out.glob('costume-initial-fit-failures.json'))
 files.update(out.glob('costume-development-checks.json'))
+files.update(out.glob('care-*.png'))
+files.update(out.glob('care-development-checks.json'))
+files.update(out.glob('care-material-points.json'))
+files.update(out.glob('care-capture-provenance.json'))
+files.update(out.glob('care-sync-recovery.json'))
+files.update(out.glob('care-eye-material-correction.json'))
+files.update(out.glob('care-pre-eye-*.ysvox.json'))
+files.update(out.glob('care-mcp-second-initial.json'))
+files.update(out.glob('care-mcp-second-initial-client.txt'))
+files.update(out.glob('care-initial-fit-failures.json'))
+files.update(out.glob('care-initial-*.ysvox.json'))
 files.update(out.glob('service-*.png'))
 files.update(out.glob('service-development-checks.json'))
 files.update(out.glob('service-initial-fit-failures.json'))
@@ -161,7 +173,7 @@ if (out / 'component-variants.json').exists():
 if (out / 'figure-installation-verification.json').exists():
     assert read(out / 'figure-installation-verification.json')['status'] == 'passed'
     files.add(out / 'figure-installation-verification.json')
-for name in ['service-installation-verification.json', 'service-variant-export-verification.json', 'held-installation-verification.json', 'held-variant-export-verification.json', 'attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
+for name in ['care-installation-verification.json', 'care-variant-export-verification.json', 'service-installation-verification.json', 'service-variant-export-verification.json', 'held-installation-verification.json', 'held-variant-export-verification.json', 'attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)
@@ -170,6 +182,9 @@ for name in ['character-installation-verification.json', 'character-presentation
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)
 files.update(p for p in (out / 'head-presentation-before').glob('*') if p.is_file())
+care_doc = root / 'docs' / (args.sheet + '-CARE-AND-ANIMALS.md')
+if care_doc.exists():
+    files.add(care_doc)
 character_doc = root / 'docs' / (args.sheet + '-CHARACTER-COMPONENTS.md')
 if character_doc.exists():
     files.add(character_doc)

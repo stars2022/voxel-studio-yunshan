@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 480,
-    "remainingReferenceEntries": 313,
-    "completedReferenceSheets": 40,
+    "referenceCandidates": 492,
+    "remainingReferenceEntries": 301,
+    "completedReferenceSheets": 41,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 497,
+      "baseModels": 508,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 514,
-      "generatedEntries": 554,
+      "notProduced": 502,
+      "generatedEntries": 566,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 480,
-      "atlasSharedMasterReferences": 2,
-      "atlasUniqueMasters": 478
+      "atlasReferenceCandidates": 492,
+      "atlasSharedMasterReferences": 3,
+      "atlasUniqueMasters": 489
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M040",
+    "sheet": "M041",
     "state": "validated-for-batch-push",
     "ids": [
-      "CHAR-187",
-      "CHAR-188",
-      "CHAR-189",
-      "CHAR-190",
-      "CHAR-191",
-      "CHAR-192",
-      "CHAR-193",
-      "CHAR-194",
-      "CHAR-195",
-      "CHAR-196",
-      "CHAR-197",
-      "CHAR-198"
+      "CHAR-199",
+      "CHAR-200",
+      "CHAR-201",
+      "CHAR-202",
+      "CHAR-203",
+      "CHAR-204",
+      "CHAR-205",
+      "CHAR-206",
+      "CHAR-207",
+      "CHAR-208",
+      "CHAR-306",
+      "CHAR-307"
     ],
-    "run": "atlas-20261004153834",
-    "evidence": "artifacts/atlas/atlas-20261004153834"
+    "run": "atlas-20261004165102",
+    "evidence": "artifacts/atlas/atlas-20261004165102"
   },
-  "nextBatch": "M041",
+  "nextBatch": "M042",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,23 +68,25 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M040共480条技术转化参考候选，余313；478独立图册母版与2共用引用，人工美术验收0。"
+    "M001–M041共492条技术转化参考候选，余301；489独立图册母版与3共用引用，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续有效：最小组件体素，斜面/曲面连续网格，天空/星空可用真实贴图，不能强制整件栅格化。",
-    "M041已看实图并保存12条CSV：CHAR199–208、CHAR306–307，十种持物及猫犬两种动物；不是CHAR199–210。work/m041/source.json与modeling-notes.txt为准备记录，无M041制作或计数。",
-    "M041扳手、锤、锄、采收篮、包裹、婚礼与悼念花、婴儿背带、牵引绳、宠物粮包及猫犬；先查实际固定/陈列主件，特别LIFE069/086篮与既有工具花束、食品包，不能重复造主件。",
-    "动物为本游戏视觉候选，不是ChatGPT Work Pets，不调用Work Pets技能；原动物运行/生态契约缺失，保留作者造型范围，不虚构物权/经济/生态。",
-    "M040共12参考条目、11新增独立母版+1共用书引用、24静态形态；CHAR189复用LIFE106原24718格，闭态仅语义重映射。原主件及导出随包，索引行哈希不变。",
-    "M040展开书上页块绕作者Z轴180度，无重采样；初轴相交已保存失败证据，最终转轴与装帧内桥修正，root/upper真实实体不交。中央固定书脊较高仍待美术。",
-    "M040八种默认有限握姿、两种背带内承托、两种掌根承托；三场景均保留原070和书主件。变体离手，无全身/动态通过声明。",
-    "M040原生材质桶按真实刚体归属合并后查实心；单材质桶可能开放，不能独立作为闭壳。serviceShapes可复用。",
-    "392角色，新增383–418三十六用途，256+136同事务，外来ID保留、失败回滚、资源包一次撤销已验；玻璃罩alpha0.24、清水0.60实读纹理且零发光。",
-    "480/793参考候选，余313，40图册；478独立图册母版、2共用引用、497基础、554已生成/514未生成。人工美术验收0。",
-    "418完整回归、6专项+1外来材质专项，10主MCP检查+1库索引补全读取；24形态原生/GLB/接口回读，12手部配合、62孔腔点检。",
-    "M040默认26467原生格（其中书24718旧格）、9660近/8780远三角面；36单件+12场景+12底面+2重建截图。证据 artifacts/atlas/atlas-20261004153834。",
-    "已授权每批提交并推送origin/main，不重复确认。完成一批不调用stop_goal。浏览器截图串行、MCP命令维持既有<9MiB拆分。"
+    "M042参考图已看并保存12条CSV于work/m042/source.json，CHAR308–319：兔、观赏鱼、鸡、鸭、鹅、猪、山羊、牛、鹿、野猪、松鼠、小鸟；无M042源或计数修改。",
+    "M042应分别制作物种比例与耳/喙/趾/鳍/角/蹄/尾；不能只缩放猫犬或鸭。先查实际旧陈列鱼/水族设备，不能按名称盲目别名。",
+    "游戏动物不是ChatGPT Work Pets，不调用宠物插件，不编造生态/物权/库存契约。原图审批措辞是来源说明，不新增用户确认门槛。",
+    "M041 12参考、11新增独立母版+1共用LIFE069篮引用、24形态、7有限握姿、3研究场景；第三场景为离身陈列，不冒称全员穿戴安装。",
+    "LIFE069全部原格与原格距、原文件及导出保留，新增提梁转销不覆盖原格；篮内容物不新增目录主件。",
+    "背带为空载结构候选，adultA/B仅肩带宽度；未完成真实成人/婴儿配合。猫犬独立比例、单prop根，无四足绑定或动画。",
+    "初猫毛色凸块视觉不佳，改为沿真实三角面的薄闭片；犬尾根加深。care-shapes.ts固定环绕序，不改变旧service sweep。实际连通图不能代替实图复核。",
+    "431角色，新增419–457共39用途，256+175同事务；保留foreign ID/失败回滚/一次撤销。完整style上限512尚余81。style35/finish33。",
+    "492/793参考候选，余301，41图册；489独立图册母版、3共用引用，508基础、566生成/502未生成；人工美术验收0。",
+    "425完整回归基线、后续同步21项定向、最终眼白修正后6专项+27材质坐标、1外来材质专项，11真实MCP检查；24形态原生/GLB/接口回读，7握姿、72孔腔点、27材质坐标。",
+    "猫犬每件2个原生眼白格改由同用途eyeWhite角色表示，形体/连续网格/绑定/接口不变；保留修正前原生与逐格对照。",
+    "M041默认9798原生格、54116近/53506远三角面；36单件（30同内容经哈希复用、6动物新图）+12底面+12场景+2参数重建。证据 artifacts/atlas/atlas-20261004165102。",
+    "初MCP大图册约16MB整文档推送后浏览器未收到后续状态；编辑器改协商小型失效通知并从HTTP读取权威文档，旧客户端保留整文档协议。21项定向回归通过，完整MCP重跑含重建/撤销/保存/重启通过；失败证据保留。",
+    "已授权每批提交并推送origin/main，不重复确认。完成一批不调用stop_goal；截图串行，MCP命令继续<9MiB。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",

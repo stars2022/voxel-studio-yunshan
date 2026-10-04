@@ -1,0 +1,29 @@
+✔ sparse chunks round-trip negative coordinates and seam dirty neighbours (3.339758ms)
+✔ greedy solid block is six quads; cross-chunk internal faces are culled (67.276199ms)
+✔ opacity material batches preserve visible opaque surface behind glass (9.18784ms)
+✔ batch atomic rollback on missing material / no version advance (2.808377ms)
+✔ dry-run does not mutate and large modification requires exact preview (146.222412ms)
+✔ version conflict and idempotency replay / payload conflict (1.947208ms)
+✔ transaction undo redo restores all voxel/material/instance edits in one step (211.508028ms)
+✔ voxel replace, mirrored brush, bounded connected fill and surface rules (3.625579ms)
+✔ integer rotation, mirror, move, copy array and collision rollback (4.419097ms)
+✔ extrude adds exposed face columns and is undoable (4.008046ms)
+✔ all general templates generate legal structures and unknown parameters reject (5568.494561ms)
+✔ assembly template instantiation shares masters and preserves relative placement (108.429019ms)
+✔ mixed-resolution opening obstruction detects subcell blocking geometry (194.38062ms)
+✔ interfaces require common pitch, normal and footprint; detach preserves master (34.883162ms)
+✔ metadata transforms preserve port/part spatial relationship; cyclic parents rejected (27.303619ms)
+✔ schema rejects pathological selection, decimals, unknown fields and invalid materials (1.820556ms)
+✔ demo has enterable door, window and stairs clearances without collisions (97.068121ms)
+✔ editor invalidation protocol keeps notifications small, reads committed state and preserves legacy websocket documents (1345.249392ms)
+✔ perspective framing keeps small assets, 160m bridges and 960m runways inside all six clip planes (12.28288ms)
+✔ orthographic framing keeps small assets, 160m bridges and 960m runways inside all six clip planes (2.675586ms)
+✔ clip toggles synchronise native, clay, AO and lights, and reject invalid heights atomically (1.399081ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7269.798345

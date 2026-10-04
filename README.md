@@ -4,7 +4,7 @@
 
 本项目位于独立的 `voxel-studio/` 目录，未改动上级项目文件。
 
-67 张完整图册已接入「图册」页，793 条参考逐 ID 对齐。M001–M040 的 **480 个参考 ID（478 个独立图册母版）**已制作为候选，其余 313 条待制作或复核，人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [M040 日用诊疗与执勤持物说明](docs/M040-CHARACTER-COMPONENTS.md) · [最新总览](artifacts/atlas/atlas-20261004153834/M040.png)。合并旧库后有 497 个基础候选；实例与参数形态不增加基础资产数。
+67 张完整图册已接入「图册」页，793 条参考逐 ID 对齐。M001–M041 的 **492 个参考 ID（489 个独立图册母版）**已制作为候选，其余 301 条待制作或复核，人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [M041 农作照护与猫犬说明](docs/M041-CARE-AND-ANIMALS.md) · [最新总览](artifacts/atlas/atlas-20261004165102/M041.png)。合并旧库后有 508 个基础候选；实例与参数形态不增加基础资产数。
 
 材质按用途与物理类别分配独立 ID，后期统一更换外观。新配方禁止按颜色借用类别；外观包不能改变类别或碰撞设置。[分类约定与当前复核范围](docs/MATERIAL-ROLES.md) · [显微镜真实前后对照](artifacts/microscope-study/comparison.png)。
 

@@ -172,4 +172,10 @@ await safe(async()=>{const params=new URLSearchParams(location.search),initial=a
  if(params.get('look')==='reference')appState.referenceLighting(true);
  if(params.get('bloom')==='1')appState.bloom(true);if(params.get('ao')==='1')appState.ao(true);
 });
-let retry:any;function connect(){const ws=new WebSocket(`ws://${location.host}/ws`);ws.onopen=()=>{$('sync').textContent='本地文档已同步';$('connection').innerHTML='<i class="status-dot"></i>MCP · 本地共享文档';};ws.onmessage=e=>void safe(()=>applyState(JSON.parse(e.data)));ws.onclose=()=>{$('sync').textContent='连接中断 · 正在重连';retry=setTimeout(async()=>{await safe(async()=>applyState(await request('/api/state')));connect();},1500);};}connect();
+let retry:any,latestNotice:any=null,refreshing=false;
+async function refreshCanonicalState(notice:any){
+ latestNotice=notice;if(refreshing)return;refreshing=true;
+ try{while(latestNotice){const current=latestNotice;latestNotice=null;const data=await request('/api/state');if(data.project.version>=project.version)await applyState({...data,...(current.result?{result:current.result}:{})});}}
+ finally{refreshing=false;}
+}
+function connect(){const ws=new WebSocket(`ws://${location.host}/ws`,'yunshan.state-invalidation.v1');ws.onopen=()=>{$('sync').textContent='本地文档已同步';$('connection').innerHTML='<i class="status-dot"></i>MCP · 本地共享文档';void safe(()=>refreshCanonicalState({}));};ws.onmessage=e=>void safe(()=>{const data=JSON.parse(e.data);return data.event==='state-invalidated'?refreshCanonicalState(data):applyState(data);});ws.onclose=()=>{$('sync').textContent='连接中断 · 正在重连';retry=setTimeout(connect,1500);};}connect();

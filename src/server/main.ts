@@ -19,7 +19,12 @@ process.on('exit',()=>{try{unlinkSync(lockPath);}catch{}});
 const app=express(),http=createServer(app),wss=new WebSocketServer({noServer:true}),worker=new Worker(new URL('./document-worker.mjs',import.meta.url),{workerData:{root}}),pending=new Map<string,{resolve:Function,reject:Function}>();
 let readyResolve:()=>void;const ready=new Promise<void>(r=>readyResolve=r);
 const rpc=(method:string,args:any={})=>new Promise<any>((resolve,reject)=>{const id=randomUUID();pending.set(id,{resolve,reject});worker.postMessage({id,method,args});});
-worker.on('message',msg=>{if(msg.event==='ready')readyResolve();else if(msg.event==='changed'){for(const client of wss.clients)if(client.readyState===1)client.send(JSON.stringify(msg.data));}else{const p=pending.get(msg.id);if(p){pending.delete(msg.id);msg.error?p.reject(Object.assign(new Error(msg.error.message),msg.error)):p.resolve(msg.result);}}});
+worker.on('message',msg=>{if(msg.event==='ready')readyResolve();else if(msg.event==='changed'){for(const client of wss.clients)if(client.readyState===1){
+ // The editor fetches canonical state over HTTP after a small invalidation.
+ // Legacy subscribers still receive the existing complete-document contract.
+ const data=client.protocol==='yunshan.state-invalidation.v1'?{event:'state-invalidated',version:msg.data.project.version,result:msg.data.result,history:msg.data.history}:msg.data;
+ client.send(JSON.stringify(data));
+ }}else{const p=pending.get(msg.id);if(p){pending.delete(msg.id);msg.error?p.reject(Object.assign(new Error(msg.error.message),msg.error)):p.resolve(msg.result);}}});
 worker.on('error',e=>{for(const p of pending.values())p.reject(e);pending.clear();console.error('Document worker failed:',e);});
 const trusted=(host?:string,origin?:string)=>!!host&&[`127.0.0.1:${port}`,`localhost:${port}`].includes(host)&&(!origin||[`http://127.0.0.1:${port}`,`http://localhost:${port}`].includes(origin));
 app.use((req,res,next)=>{if(!trusted(req.headers.host,req.headers.origin))return res.status(403).json({error:'仅允许本地同源访问'});next();});
