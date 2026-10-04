@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 372,
-    "remainingReferenceEntries": 421,
-    "completedReferenceSheets": 31,
+    "referenceCandidates": 384,
+    "remainingReferenceEntries": 409,
+    "completedReferenceSheets": 32,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 391,
+      "baseModels": 403,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 622,
-      "generatedEntries": 446,
+      "notProduced": 610,
+      "generatedEntries": 458,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 372
+      "atlasReferenceCandidates": 384
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M031",
+    "sheet": "M032",
     "state": "validated-for-batch-push",
     "ids": [
-      "ENV-134",
-      "CHAR-002",
-      "CHAR-003",
-      "CHAR-004",
-      "CHAR-005",
-      "CHAR-006",
-      "CHAR-007",
-      "CHAR-008",
-      "CHAR-009",
-      "CHAR-010",
-      "CHAR-011",
-      "CHAR-012"
+      "CHAR-013",
+      "CHAR-014",
+      "CHAR-015",
+      "CHAR-059",
+      "CHAR-060",
+      "CHAR-061",
+      "CHAR-062",
+      "CHAR-063",
+      "CHAR-064",
+      "CHAR-065",
+      "CHAR-066",
+      "CHAR-067"
     ],
-    "run": "atlas-20261004074226",
-    "evidence": "artifacts/atlas/atlas-20261004074226"
+    "run": "atlas-20261004084218",
+    "evidence": "artifacts/atlas/atlas-20261004084218"
   },
-  "nextBatch": "M032",
+  "nextBatch": "M033",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -66,18 +66,20 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M031共372件技术转化候选；参考余421条，人工美术验收0。"
+    "M001–M032共384件技术转化候选；参考余409条，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正持续有效：最小块件体素，斜面/曲面使用连续网格，天空星空使用贴图。不得因旧历史格距把全形体强制栅格化。",
-    "M032：CHAR013帽子、014挎包、015婴幼儿合并脚块、059/060成人体A/B、061婴儿、062学龄前、063学龄儿童、064青少年、065老年身体、066成年头、067婴幼儿头。先读原清单，区分现有粗轮廓组件与新增精细人体母版。",
-    "M031已接CHAR域；身体收腰、锥度、发片/衣摆使用Asset.meshes，细扣与眼眉/指甲用0.005m体素，盆景叶/土塞0.04m。源码atlas-character.ts、mesh-shapes.ts、character-assembly.ts可复用，不缩放成人母版冒认各年龄体型。",
-    "原角色源码/骨架/矩阵/面部atlas未收件；0.2m头部原数只作作者头宽解释，1.7m成人比例为作者设定。角色材质含金属/橡胶也全非碰撞，光学饰面供电未绑定零发光。",
-    "228用途角色，新增237–254：皮肤/唇/指甲/褶线、眼白/虹膜/瞳孔、发干/外层发束、服装/衬/织纹/金属/扣/皮革/鞋底/光学饰面/发带。褶线skinCrease不能借唇色；自定义ID、回滚及一次撤销验证通过。",
-    "372/793参考候选，余421；391基础候选、446已生成清单项/622未生成。M031验证333完整回归+47最终专项+11真实MCP，13组件形态和五静态样件。证据artifacts/atlas/atlas-20261004074226，人工美术验收0。",
-    "ENV097新增vesselForm=bonsai依赖形态1.36×0.32×0.88m，原square/jar保留；盆景根土以盆底中心为原点，432底接触、752实体枝干三角面未穿盆且排水孔未堵。不是物理重心或承载验收。",
-    "后发片不是完整发型；CHAR085起才有精细发型条目。静态姿态按真实米制刚体变换派生，不把斜肢体重新栅格化。近远整腿替代而非叠加。"
+    "用户修正持续有效：最小块件体素，斜面/曲面使用连续网格，天空/星空使用贴图；旧格距约定不强迫全形体栅格化。",
+    "M033：CHAR068儿童头、069老年头、070可握持手、071裸足、072孕期腹部、073通用骨骼、074儿童骨骼、075第一人称手臂、085–088四种短/中短发。先核原清单，骨骼需实结构/导出验证，不能用静态摆姿冒称完成绑定。",
+    "M032为12母版24形态，帽adult/teen；包hand/shoulder×closed/open；七身体covered/sockets；婴幼头infant/toddler。每形态原生/GLB/碰撞/接口/图集均已保存与回读。源码atlas-figure.ts、figure-assembly.ts、mesh-shapes.ts。",
+    "figureProportions保存独立年龄比例、body.ports保存肩肘腕髋膝踝和颈挂点。总高包括独立头；covered四端是衣套形，接新精细手足应用sockets移除以免重绘。成人A/B不推断性别身份。",
+    "现有灰色头包络是author-proportion-envelope辅助占位，尤其儿童/青少年/老年头并未计数；后续由真实068/069替换。头发独立，085以后不能把M031短后发片冒称完整发型。",
+    "原源码、尺寸矩阵、保护净空、骨骼/图集未收件；所有角色非碰撞，未绑定Citizen年龄/种子/职业条件，不写模拟。15的height<=0.6提前返回是粗轮廓来源，61精细婴儿不是它的参数实例。",
+    "239用途角色，新增255–265为衣套/织边、帽布/皮圈/五金/玻璃徽、包布/皮边/五金/内衬/标签油墨；玻璃徽不透明、零发光。原皮肤/褶线/唇/眼/毛发角色继续独立。外来数字ID保护与一次撤销通过。",
+    "纯视觉实例/挂接允许米制离格，实体原生层和声明开口依然要求共格；共享grid-policy.ts。普通碰撞为空不证明穿戴无穿插，另核真实网格。M032帽/头与包/体双向检查零穿入，肩顶接触点[0.683,1.4109,0]。",
+    "384/793参考候选，余409；403基础候选，458已生成清单项/610未生成，32图册，人工美术验收0。M032 347完整回归、28最终专项、10真实MCP，36单件+13装配+6后背/腔体截图；证据artifacts/atlas/atlas-20261004084218。",
+    "每批提交并推送origin/main的用户授权持续有效；单批完成不调用stop_goal。先构建再拍实图，环境为SwiftShader软件WebGL。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",

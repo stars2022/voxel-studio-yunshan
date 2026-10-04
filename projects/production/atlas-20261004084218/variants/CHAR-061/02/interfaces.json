@@ -1,0 +1,674 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265
+    }
+  },
+  "assets": [
+    {
+      "id": "char-061",
+      "name": "CHAR-061",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "neck",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.41,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "bag-shoulder",
+          "kind": "character-socket",
+          "position": [
+            0.091,
+            0.3762,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "shoulder--1",
+          "kind": "character-socket",
+          "position": [
+            -0.096,
+            0.36,
+            0
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "elbow--1",
+          "kind": "character-socket",
+          "position": [
+            -0.115008,
+            0.2928,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist--1",
+          "kind": "character-socket",
+          "position": [
+            -0.122532,
+            0.242,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.050688000000000004,
+            0.01,
+            0.05385600000000001
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "hip--1",
+          "kind": "character-socket",
+          "position": [
+            -0.055,
+            0.22,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "knee--1",
+          "kind": "character-socket",
+          "position": [
+            -0.055,
+            0.125,
+            -0.005
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "ankle--1",
+          "kind": "character-socket",
+          "position": [
+            -0.055,
+            0.0552,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.053724,
+            0.01,
+            0.06105
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "shoulder-1",
+          "kind": "character-socket",
+          "position": [
+            0.096,
+            0.36,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "elbow-1",
+          "kind": "character-socket",
+          "position": [
+            0.115008,
+            0.2928,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist-1",
+          "kind": "character-socket",
+          "position": [
+            0.122532,
+            0.242,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.050688000000000004,
+            0.01,
+            0.05385600000000001
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "hip-1",
+          "kind": "character-socket",
+          "position": [
+            0.055,
+            0.22,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "knee-1",
+          "kind": "character-socket",
+          "position": [
+            0.055,
+            0.125,
+            -0.005
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.1,
+            0.01,
+            0.1
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "ankle-1",
+          "kind": "character-socket",
+          "position": [
+            0.055,
+            0.0552,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.053724,
+            0.01,
+            0.06105
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生细块；连续曲面另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -2,
+              55,
+              -13
+            ],
+            "max": [
+              3,
+              63,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "胸前最小织标",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              58,
+              -13
+            ],
+            "max": [
+              3,
+              63,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "腹部拉链止挡",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              55,
+              -12
+            ],
+            "max": [
+              2,
+              58,
+              -9
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "髋腹胸肩连续衣身",
+          "material": 255,
+          "collision": false,
+          "triangles": 192
+        },
+        {
+          "name": "衣领承接颈部",
+          "material": 256,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "裤腿膝踝连续收束--1",
+          "material": 255,
+          "collision": false,
+          "triangles": 160
+        },
+        {
+          "name": "膝前衣褶--1",
+          "material": 256,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "肩肘腕连续袖身--1",
+          "material": 255,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "袖口织边--1",
+          "material": 256,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "裤脚织边--1",
+          "material": 256,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "裤腿膝踝连续收束-1",
+          "material": 255,
+          "collision": false,
+          "triangles": 160
+        },
+        {
+          "name": "膝前衣褶-1",
+          "material": 256,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "肩肘腕连续袖身-1",
+          "material": 255,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "袖口织边-1",
+          "material": 256,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "裤脚织边-1",
+          "material": 256,
+          "collision": false,
+          "triangles": 64
+        }
+      ]
+    }
+  ],
+  "instances": []
+}

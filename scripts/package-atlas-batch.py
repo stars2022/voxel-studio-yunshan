@@ -112,6 +112,20 @@ if (out / 'material-export.json').exists():
 files.update(out.glob('sky-*.png'))
 files.update(out.glob('landscape-*.png'))
 files.update(out.glob('character-*.png'))
+files.update(out.glob('figure-*.png'))
+if (out / 'component-variants.json').exists():
+    for variant in read(out / 'component-variants.json')['variants']:
+        if 'variantDirectory' in variant:
+            variant_dir = (root / variant['variantDirectory']).resolve()
+            assert variant_dir.is_relative_to(root / 'projects/production' / index['run'] / 'variants')
+            for name in ['voxels.ysvox.json', 'visual.glb', 'collision.json', 'interfaces.json', 'atlas.json', 'atlas.png']:
+                files.add(variant_dir / name)
+if (out / 'figure-installation-verification.json').exists():
+    assert read(out / 'figure-installation-verification.json')['status'] == 'passed'
+    files.add(out / 'figure-installation-verification.json')
+if (out / 'figure-variant-export-verification.json').exists():
+    assert read(out / 'figure-variant-export-verification.json')['status'] == 'passed'
+    files.add(out / 'figure-variant-export-verification.json')
 for name in ['character-installation-verification.json', 'character-presentation-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'

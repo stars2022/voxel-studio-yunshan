@@ -1,3 +1,4 @@
+import {figureRecipes,inspectFigureMaterials} from '../src/production/atlas-figure';
 import {inspectCharacterMaterials,characterRecipes} from '../src/production/atlas-character';
 import {geometryData} from '../src/core/sky';
 import {inspectLandscapeMaterials} from '../src/production/atlas-landscape';
@@ -31,7 +32,7 @@ for(const row of index.entries){
   assert.ok(roles.length,`${row.id}: material ${id} has no semantic binding`);
   return{id,roles,category:material.category,name:material.name,solid:material.solid,occupiedCells,...(asset.meshes?.some(m=>m.material===id)?{meshTriangles:asset.meshes.filter(m=>m.material===id).reduce((n,m)=>n+m.indices.length/3,0)}:{}),...(asset.sky?{usage:'procedural-colour-input',physical:false}:{})};
  });
- const authoredReview=characterRecipes[row.id]?inspectCharacterMaterials(row.id,asset,project.styles.yunshan):row.id.startsWith('BUILT-')?inspectBuiltMaterialAssignments(row.id,asset,project.styles.yunshan):row.id.startsWith('ENV-')?(inspectLandscapeMaterials(row.id,asset,project.styles.yunshan)??inspectGroundscapeMaterials(row.id,asset,project.styles.yunshan)??inspectEcologyMaterials(row.id,asset,project.styles.yunshan)??inspectHydrologyMaterials(row.id,asset,project.styles.yunshan)??inspectEnvironmentMaterials(row.id,asset,project.styles.yunshan)):inspectAtlasMaterialAssignments(Number(row.id.slice(5)),asset,project.styles.yunshan);
+ const authoredReview=figureRecipes[row.id]?inspectFigureMaterials(row.id,asset,project.styles.yunshan):characterRecipes[row.id]?inspectCharacterMaterials(row.id,asset,project.styles.yunshan):row.id.startsWith('BUILT-')?inspectBuiltMaterialAssignments(row.id,asset,project.styles.yunshan):row.id.startsWith('ENV-')?(inspectLandscapeMaterials(row.id,asset,project.styles.yunshan)??inspectGroundscapeMaterials(row.id,asset,project.styles.yunshan)??inspectEcologyMaterials(row.id,asset,project.styles.yunshan)??inspectHydrologyMaterials(row.id,asset,project.styles.yunshan)??inspectEnvironmentMaterials(row.id,asset,project.styles.yunshan)):inspectAtlasMaterialAssignments(Number(row.id.slice(5)),asset,project.styles.yunshan);
  if(authoredReview)assert.deepEqual(asset.source?.materialAssignmentReview,authoredReview,`${row.id}: saved asset predates the material repair`);
  const reviewed=['M007','M008','M009'].includes(row.sheet)||!!authoredReview,legacy=project.styles.yunshan.paper;
  if(reviewed)assert.ok(!counts.has(legacy),`${row.id}: ambiguous legacy paper/cotton material remains`);

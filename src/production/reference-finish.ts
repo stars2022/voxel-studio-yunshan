@@ -3,10 +3,21 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=23;
+export const referenceFinishVersion=24;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ modelSuit:{name:'中性建模服主体',color:'#879199',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,931)},
+ modelSuitTrim:{name:'建模服收口与接缝',color:'#c3c7c5',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,932)},
+ hatCloth:{name:'帽冠织物',color:'#334149',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,933)},
+ hatBand:{name:'帽围皮带',color:'#6c5038',roughness:0.76,metalness:0,...surface('none',.075,0,934)},
+ hatHardware:{name:'帽件金属扣',color:'#b79554',roughness:0.35,metalness:0.7,...surface('none',.075,0,935)},
+ bagCloth:{name:'挎包外层帆布',color:'#546974',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,936)},
+ bagLeather:{name:'挎包皮革包边肩带',color:'#543e2d',roughness:0.76,metalness:0,...surface('none',.075,0,937)},
+ bagHardware:{name:'挎包金属连接件',color:'#ae8749',roughness:0.35,metalness:0.7,...surface('none',.075,0,938)},
+ bagLining:{name:'挎包内衬织物',color:'#3d413d',roughness:0.76,metalness:0,...surface('fabric',.075,0.14,939)},
+ bagLabel:{name:'挎包实体标签涂印',color:'#568f9d',roughness:0.76,metalness:0,...surface('none',.075,0,940)},
+ hatBadgeGlass:{name:'帽章玻璃饰片',color:'#78b6be',roughness:0.35,metalness:0,...surface('none',.075,0,941)},
  skinCrease:{name:'皮肤褶线与耳内层',color:'#b17d66',roughness:.8,metalness:0,...surface('none',.08,0,918)},
  skinSurface:{name:'角色皮肤',color:'#d6aa88',roughness:0.8,metalness:0,...surface('none',.08,0,901)},
  skinLip:{name:'角色唇部',color:'#a76e58',roughness:0.8,metalness:0,...surface('none',.08,0,902)},

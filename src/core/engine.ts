@@ -1,4 +1,5 @@
 import {validateAuthoredMeshes} from './authored-mesh';
+import {needsNativeGrid} from './grid-policy';
 import {validateSky} from './sky';
 import {surfaceKinds} from './surface';
 import {mergeCatalog,updateCatalogEntry,validateCatalog} from './catalog';
@@ -152,7 +153,7 @@ export class Engine{
   if(c.op==='palette'){const palette=p.palettes[c.name];if(!palette)throw new Error('配色方案不存在');let legacy=false;for(const[id,props]of Object.entries(palette)){if(!p.materials[id])throw new Error('配色引用缺失材质');if(Object.keys(props).some(k=>!(appearanceKeys as readonly string[]).includes(k)))legacy=true;Object.assign(p.materials[id],materialAppearance(props));}if(legacy)warnings.push('旧配色中的非外观字段已忽略；保留当前材质 ID、分类与碰撞属性。');return;}
   if(c.op==='style'){for(const m of Object.values(c.roles))if(!p.materials[m as number])throw new Error('风格引用缺失材质');p.styles[c.id]=c.roles;return;}
   if(c.op==='instance'){
-   const a=asset();for(let d=0;d<3;d++)if(Math.abs(c.position[d]/a.cellSize-Math.round(c.position[d]/a.cellSize))>1e-5)throw new Error('实例位置必须吸附到母版格距');
+   const a=asset();if(needsNativeGrid(a,p.materials))for(let d=0;d<3;d++)if(Math.abs(c.position[d]/a.cellSize-Math.round(c.position[d]/a.cellSize))>1e-5)throw new Error('实例位置必须吸附到母版格距');
    p.instances[c.id]={id:c.id,assetId:a.id,name:c.name??a.name,position:c.position,rotation:c.rotation??0,parent:c.parent??null};return;
   }
   if(c.op==='connect'){
@@ -161,7 +162,7 @@ export class Engine{
    const n=rotateY(port.normal,c.rotation),m=rotateY(other.normal,target.rotation);if(n.some((v,i)=>v!==-m[i]))throw new Error('接口法线必须相对');
    const x=rotateY(port.size,c.rotation).map(Math.abs),y=rotateY(other.size,target.rotation).map(Math.abs);if(x.some((v,i)=>Math.abs(v-y[i])>1e-5))throw new Error('接口截面不匹配');
    const pa=rotateY(port.position.map((v,i)=>v+a.origin[i]) as V3,c.rotation),pb=rotateY(other.position.map((v,i)=>v+b.origin[i]) as V3,target.rotation);
-   const position=pb.map((v,i)=>v+target.position[i]-pa[i]) as V3,oa=rotateY(a.origin,c.rotation),ob=rotateY(b.origin,target.rotation);if(oa.some((v,i)=>Math.abs((v+position[i]-ob[i]-target.position[i])/a.cellSize-Math.round((v+position[i]-ob[i]-target.position[i])/a.cellSize))>1e-5))throw new Error('端口重合但两组件网格原点不共格');
+   const position=pb.map((v,i)=>v+target.position[i]-pa[i]) as V3,oa=rotateY(a.origin,c.rotation),ob=rotateY(b.origin,target.rotation);if((needsNativeGrid(a,p.materials)||needsNativeGrid(b,p.materials))&&oa.some((v,i)=>Math.abs((v+position[i]-ob[i]-target.position[i])/a.cellSize-Math.round((v+position[i]-ob[i]-target.position[i])/a.cellSize))>1e-5))throw new Error('端口重合但两组件网格原点不共格');
    p.instances[c.id]={id:c.id,assetId:a.id,name:a.name,position,rotation:c.rotation,parent:target.id};return;
   }
   if(c.op==='replaceInstance'){const i=p.instances[c.instanceId];if(!i)throw new Error('实例不存在');const a=asset(),old=p.assets[i.assetId];if(a.cellSize!==old.cellSize||JSON.stringify(a.ports)!==JSON.stringify(old.ports)||JSON.stringify(a.origin)!==JSON.stringify(old.origin))throw new Error('替换组件格距、原点或接口不一致');i.assetId=a.id;return;}
