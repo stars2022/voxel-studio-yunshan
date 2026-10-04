@@ -3,10 +3,32 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=29;
+export const referenceFinishVersion=30;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ courtCloth:{name:'官署礼常服布',color:'#244f5b',roughness:.86,metalness:0,...surface('fabric',.045,.09,1030)},
+ ceremonyTrim:{name:'礼服织入饰边',color:'#b69958',roughness:.86,metalness:0,...surface('fabric',.045,.09,1031)},
+ weddingCloth:{name:'婚礼礼服布',color:'#a64236',roughness:.86,metalness:0,...surface('fabric',.045,.09,1032)},
+ mourningCloth:{name:'丧礼素服布',color:'#d5d1c6',roughness:.86,metalness:0,...surface('fabric',.045,.09,1033)},
+ rainMembrane:{name:'雨披柔性涂膜',color:'#91afb9',roughness:.35,metalness:0,opacity:.48,...surface('none',.045,0,1034)},
+ rainSeam:{name:'雨披焊缝包边',color:'#cedbd8',roughness:.50,metalness:0,opacity:.88,...surface('none',.045,0,1035)},
+ scarfCloth:{name:'围巾披肩布',color:'#9c5543',roughness:.86,metalness:0,...surface('fabric',.045,.09,1036)},
+ scarfFringe:{name:'围巾织穗',color:'#a77453',roughness:.86,metalness:0,...surface('fabric',.045,.09,1037)},
+ gloveLeather:{name:'防护手套皮面',color:'#39464b',roughness:.70,metalness:0,...surface('none',.045,0,1038)},
+ glovePad:{name:'手套橡胶护垫',color:'#303639',roughness:.70,metalness:0,...surface('none',.045,0,1039)},
+ rescueShell:{name:'救生穿戴布壳',color:'#d4792d',roughness:.86,metalness:0,...surface('fabric',.045,.09,1040)},
+ rescueFoam:{name:'救生穿戴泡沫芯',color:'#e7d3a4',roughness:.70,metalness:0,...surface('none',.045,0,1041)},
+ rescueReflective:{name:'救生穿戴反光织片',color:'#e3e4ce',roughness:.86,metalness:0,...surface('fabric',.045,.09,1042)},
+ pilotLeather:{name:'飞行护具皮革',color:'#554c3f',roughness:.70,metalness:0,...surface('none',.045,0,1043)},
+ pilotFleece:{name:'飞行护具绒边',color:'#d7cdbc',roughness:.86,metalness:0,...surface('fabric',.045,.09,1044)},
+ bandageCloth:{name:'身体绷带布',color:'#e1d7bf',roughness:.86,metalness:0,...surface('fabric',.045,.09,1045)},
+ braceMetal:{name:'肢体支具金属',color:'#667276',roughness:.36,metalness:.70,...surface('none',.045,0,1046)},
+ bracePad:{name:'肢体支具软垫',color:'#505655',roughness:.86,metalness:0,...surface('fabric',.045,.09,1047)},
+ travelCanvas:{name:'旅行包帆布',color:'#537983',roughness:.86,metalness:0,...surface('fabric',.045,.09,1048)},
+ travelLeather:{name:'旅行包皮边与带',color:'#605041',roughness:.70,metalness:0,...surface('none',.045,0,1049)},
+ equipmentIndicator:{name:'穿戴装备指示透镜',color:'#56aab3',roughness:.70,metalness:0,...surface('none',.045,0,1050)},
+ equipmentCase:{name:'穿戴装备塑料盒',color:'#414b50',roughness:.70,metalness:0,...surface('none',.045,0,1051)},
  infantWrap:{name:'婴儿包衣软布',color:'#e7e0ce',roughness:.86,metalness:0,...surface('fabric',.045,.09,1000)},
  schoolCloth:{name:'学堂童装布',color:'#475d68',roughness:.86,metalness:0,...surface('fabric',.045,.09,1001)},
  uniformCloth:{name:'执勤制服布',color:'#3c505e',roughness:.86,metalness:0,...surface('fabric',.045,.09,1002)},
