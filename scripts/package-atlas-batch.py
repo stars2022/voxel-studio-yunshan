@@ -132,6 +132,13 @@ files.update(out.glob('garment-*.png'))
 files.update(out.glob('costume-*.png'))
 files.update(out.glob('costume-initial-fit-failures.json'))
 files.update(out.glob('costume-development-checks.json'))
+files.update(out.glob('service-*.png'))
+files.update(out.glob('service-development-checks.json'))
+files.update(out.glob('service-initial-fit-failures.json'))
+files.update(out.glob('parameter-*.ysvox.json'))
+files.update(out.glob('service-water-material.glb'))
+files.update(out.glob('service-water-alpha.json'))
+files.update(out.glob('service-library-counts.json'))
 files.update(out.glob('held-*.png'))
 files.update(out.glob('held-development-checks.json'))
 files.update(out.glob('held-interface-correction.json'))
@@ -154,7 +161,7 @@ if (out / 'component-variants.json').exists():
 if (out / 'figure-installation-verification.json').exists():
     assert read(out / 'figure-installation-verification.json')['status'] == 'passed'
     files.add(out / 'figure-installation-verification.json')
-for name in ['held-installation-verification.json', 'held-variant-export-verification.json', 'attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
+for name in ['service-installation-verification.json', 'service-variant-export-verification.json', 'held-installation-verification.json', 'held-variant-export-verification.json', 'attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)

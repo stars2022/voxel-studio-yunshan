@@ -1,0 +1,111 @@
+{
+  "run": "atlas-20261004153834",
+  "status": "passed",
+  "scope": [
+    "CHAR-187",
+    "CHAR-188",
+    "CHAR-189",
+    "CHAR-190",
+    "CHAR-191",
+    "CHAR-192",
+    "CHAR-193",
+    "CHAR-194",
+    "CHAR-195",
+    "CHAR-196",
+    "CHAR-197",
+    "CHAR-198"
+  ],
+  "tests": {
+    "fullRegression": 418,
+    "focused": 6,
+    "foreignMaterialAllocation": 1,
+    "fullLog": "full-tests.txt",
+    "focusedLog": "focused-tests.txt",
+    "scope": "Full suite includes final M040 factory and hinge geometry. Final focused run independently checks all 24 forms, source reuse, actual openings and twelve hand studies."
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 10,
+  "supplementaryLibraryMCPChecks": 1,
+  "referenceEntries": 12,
+  "catalogMasters": 11,
+  "sharedMasterReferences": [
+    {
+      "id": "CHAR-189",
+      "primaryMasterId": "LIFE-106"
+    }
+  ],
+  "componentShapes": 24,
+  "authorInstallationStudies": 3,
+  "nativeVoxels": 26467,
+  "triangles": 9660,
+  "farTriangles": 8780,
+  "defaultGLBIndependentBoundsMaxErrorM": 1.4624557509446134e-08,
+  "sceneGLBIndependentBoundsMaxErrorM": 2.2172927827135425e-08,
+  "sceneFitRecords": 12,
+  "apertureChecks": 62,
+  "assetScreenshots": 36,
+  "installationScreenshots": 12,
+  "undersideDetailScreenshots": 12,
+  "parameterRebuildScreenshots": 2,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 497,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 514,
+    "generatedEntries": 554,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 480,
+    "atlasSharedMasterReferences": 2,
+    "atlasUniqueMasters": 478
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "files": [
+      "M040.png",
+      "screenshots/CHAR-187-isometric.png through CHAR-198-isometric.png",
+      "36 default views: front, isometric, material"
+    ],
+    "findings": [
+      "Final bucket rim follows the actual bevelled rectangular vessel, correcting the first ellipse mismatch.",
+      "Cloth has one continuous fold, thick closed fabric and woven colour bands. It remains a rigid simplified fold rather than soft fabric.",
+      "Original closed LIFE106 book has paper-edge steps and rigid covers; kept as a shared legacy master.",
+      "Brush white bristles and ink tip, stethoscope tubes and optical head, probe optics and equipment display panels remain distinct physical materials.",
+      "Case now has a continuous metal lower and upper surround; original native corner fasteners contact actual surfaces.",
+      "Lamp material view visibly reveals a separate physical core through the glazing with no glow; base-colour inspection keeps glazing opaque.",
+      "Screens are blank/inactive and labels use abstract lines, with no fabricated identity, patient or business data.",
+      "Bottom views show genuine container floors, continuous loops and open rear straps rather than painted holes.",
+      "Default hand studies are separated prop displays, not complete actors. Skin fingers visibly align with the eight intended grip zones; rear views expose terminal/clipboard hand placement inside their actual straps.",
+      "Cloth and book use open palm-root support, with the supported hand partly hidden in front views.",
+      "Opened book now separates its rigid half-page blocks, with a visibly raised stationary central spine inherited from the old book; this remains a deliberate art-review limitation.",
+      "Removed case lid is an isolated exploded study at the original lid height, not a gravity-supported ground placement."
+    ],
+    "additionalInspectedFiles": [
+      "12 service-char-*-bottom.png",
+      "service-book-open.png",
+      "service-case-open.png",
+      "service-daily/care/patrol-view-2.png",
+      "service-daily/care/patrol-view-3.png",
+      "M040-wear.png"
+    ],
+    "humanArtAccepted": 0
+  },
+  "sharedMasterAccounting": "Twelve reference candidates, eleven new masters; exact LIFE106 cells, explicit role remap, canonical dependency and prior index unchanged. Opened form rotates original cells and adds inner cloth web, no resampling or new master.",
+  "limitations": [
+    "Technical candidates; human art acceptance zero.",
+    "Original actor source, dimensions matrix, skeleton, protected clearance and controllers unavailable.",
+    "Eight default finite grips, two rear-strap supports, two palm-root supports; variants off-hand. No whole-body or all-motion clearance claim.",
+    "Book opening, case lid removal, cloth folds, hose and handle states are finite author studies; no page, linkage, cloth or hose animation.",
+    "Raised stationary book spine, rigid cloth fold, simplified brush bristles and rigid fingers remain for art review.",
+    "No original diagnosis, communication, ownership, inventory, power or light-supply state. Optical cores zero emission.",
+    "Single-joint rigid components; no soft skin, IK, fluid, refraction, load or medical certification.",
+    "Software WebGL does not certify hardware frame rate."
+  ]
+}

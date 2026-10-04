@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 468,
-    "remainingReferenceEntries": 325,
-    "completedReferenceSheets": 39,
+    "referenceCandidates": 480,
+    "remainingReferenceEntries": 313,
+    "completedReferenceSheets": 40,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 486,
+      "baseModels": 497,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 526,
-      "generatedEntries": 542,
+      "notProduced": 514,
+      "generatedEntries": 554,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 468,
-      "atlasSharedMasterReferences": 1,
-      "atlasUniqueMasters": 467
+      "atlasReferenceCandidates": 480,
+      "atlasSharedMasterReferences": 2,
+      "atlasUniqueMasters": 478
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M039",
+    "sheet": "M040",
     "state": "validated-for-batch-push",
     "ids": [
-      "CHAR-149",
-      "CHAR-150",
-      "CHAR-177",
-      "CHAR-178",
-      "CHAR-179",
-      "CHAR-180",
-      "CHAR-181",
-      "CHAR-182",
-      "CHAR-183",
-      "CHAR-184",
-      "CHAR-185",
-      "CHAR-186"
+      "CHAR-187",
+      "CHAR-188",
+      "CHAR-189",
+      "CHAR-190",
+      "CHAR-191",
+      "CHAR-192",
+      "CHAR-193",
+      "CHAR-194",
+      "CHAR-195",
+      "CHAR-196",
+      "CHAR-197",
+      "CHAR-198"
     ],
-    "run": "atlas-20261004145623",
-    "evidence": "artifacts/atlas/atlas-20261004145623"
+    "run": "atlas-20261004153834",
+    "evidence": "artifacts/atlas/atlas-20261004153834"
   },
-  "nextBatch": "M040",
+  "nextBatch": "M041",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,22 +68,23 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M039共468条技术转化参考候选，余325；467独立图册母版含1共用引用，人工美术验收0。"
+    "M001–M040共480条技术转化参考候选，余313；478独立图册母版与2共用引用，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正持续有效：最小组件体素，斜面/曲面连续网格，天空/星空可用真实贴图。不得强制整件栅格化。",
-    "M040清单CHAR187–198：抹布、提桶、书册、毛笔、终端、记录板、诊察器、急救包、诊脉/扫描探头、照明器、通信器、勤务棍。须先查看实图与CSV、核已有固定/陈列主件，避免同物件重复新增母版。",
-    "M039共12参考条目、11新增独立母版+1共用引用、24静态形态。CHAR182严格复用LIFE046原10mm占用，陶釉显式映射为视觉非碰撞；不是新连续曲面碗，原主件保留且随包。",
-    "共用引用primaryMasterId已贯穿配方、库计数、原生、GLB、interfaces与包；完成引用条目不增加基础母版，拒绝未知/链式引用。",
-    "M039七种有限握姿、三种张手掌根承托、两套20度肩外展腰带穿戴、两种3mm夹持试片。CHAR070原母版保留，裸手去旧皮套/腕扣；筷子只验证平行束握。",
-    "M039真实实体连通图包含所有连续分件与原生方格岛。双筷和移盖杯为预期两个物件，其余每形态一组；指定孔腔/底面另有实际点检。",
-    "M039接口握柄包络按实际轴投影尺寸；斜轴另存grip元数据，核心法线仍轴向。不扩大格式。",
-    "356用途角色，新增349–382三十四项；256+100同事务，外来ID不覆盖，失败回滚、资源包一次撤销已验。",
-    "468/793参考候选，余325，39图册；467独立图册母版、486基础候选、542已生成/526未生成。人工美术验收0。M039证据artifacts/atlas/atlas-20261004145623。",
-    "411完整回归、9专项+1外来材质专项，12真实MCP检查；24形态GLB/原生/接口；默认1861细格、12204近/11940远三角面。",
-    "原碗阶梯外形、简化叶菜、固定提带和刚性指节仍待美术。无原游戏控制器、IK、布料/连杆/流体、库存或医疗承载认证。",
-    "已授权每批提交推送origin/main，不重复询问；单批完成不调用stop_goal。浏览器截图任务串行，MCP请求按既有<9MiB拆分。"
+    "用户修正持续有效：最小组件体素，斜面/曲面连续网格，天空/星空可用真实贴图，不能强制整件栅格化。",
+    "M041已看实图并保存12条CSV：CHAR199–208、CHAR306–307，十种持物及猫犬两种动物；不是CHAR199–210。work/m041/source.json与modeling-notes.txt为准备记录，无M041制作或计数。",
+    "M041扳手、锤、锄、采收篮、包裹、婚礼与悼念花、婴儿背带、牵引绳、宠物粮包及猫犬；先查实际固定/陈列主件，特别LIFE069/086篮与既有工具花束、食品包，不能重复造主件。",
+    "动物为本游戏视觉候选，不是ChatGPT Work Pets，不调用Work Pets技能；原动物运行/生态契约缺失，保留作者造型范围，不虚构物权/经济/生态。",
+    "M040共12参考条目、11新增独立母版+1共用书引用、24静态形态；CHAR189复用LIFE106原24718格，闭态仅语义重映射。原主件及导出随包，索引行哈希不变。",
+    "M040展开书上页块绕作者Z轴180度，无重采样；初轴相交已保存失败证据，最终转轴与装帧内桥修正，root/upper真实实体不交。中央固定书脊较高仍待美术。",
+    "M040八种默认有限握姿、两种背带内承托、两种掌根承托；三场景均保留原070和书主件。变体离手，无全身/动态通过声明。",
+    "M040原生材质桶按真实刚体归属合并后查实心；单材质桶可能开放，不能独立作为闭壳。serviceShapes可复用。",
+    "392角色，新增383–418三十六用途，256+136同事务，外来ID保留、失败回滚、资源包一次撤销已验；玻璃罩alpha0.24、清水0.60实读纹理且零发光。",
+    "480/793参考候选，余313，40图册；478独立图册母版、2共用引用、497基础、554已生成/514未生成。人工美术验收0。",
+    "418完整回归、6专项+1外来材质专项，10主MCP检查+1库索引补全读取；24形态原生/GLB/接口回读，12手部配合、62孔腔点检。",
+    "M040默认26467原生格（其中书24718旧格）、9660近/8780远三角面；36单件+12场景+12底面+2重建截图。证据 artifacts/atlas/atlas-20261004153834。",
+    "已授权每批提交并推送origin/main，不重复确认。完成一批不调用stop_goal。浏览器截图串行、MCP命令维持既有<9MiB拆分。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",

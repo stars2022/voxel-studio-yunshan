@@ -1,0 +1,820 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418
+    }
+  },
+  "assets": [
+    {
+      "id": "char-194",
+      "name": "CHAR-194",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0.43,
+            0.314,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0.13,
+            0.028,
+            0.028
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生销/扣/织标",
+          "parent": null,
+          "region": {
+            "min": [
+              -35,
+              1,
+              -20
+            ],
+            "max": [
+              103,
+              51,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "箱体金属包角-0.165,0.015,-0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              -35,
+              1,
+              -18
+            ],
+            "max": [
+              -31,
+              5,
+              -14
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "箱体金属包角-0.165,0.015,0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              -35,
+              1,
+              14
+            ],
+            "max": [
+              -31,
+              5,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "箱体金属包角-0.165,0.20500000000000002,-0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              -35,
+              39,
+              -18
+            ],
+            "max": [
+              -31,
+              43,
+              -14
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "箱体金属包角-0.165,0.20500000000000002,0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              -35,
+              39,
+              14
+            ],
+            "max": [
+              -31,
+              43,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "箱体金属包角0.165,0.015,-0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              31,
+              1,
+              -18
+            ],
+            "max": [
+              35,
+              5,
+              -14
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "箱体金属包角0.165,0.015,0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              31,
+              1,
+              14
+            ],
+            "max": [
+              35,
+              5,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "箱体金属包角0.165,0.20500000000000002,-0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              31,
+              39,
+              -18
+            ],
+            "max": [
+              35,
+              43,
+              -14
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "箱体金属包角0.165,0.20500000000000002,0.08",
+          "parent": "root",
+          "region": {
+            "min": [
+              31,
+              39,
+              14
+            ],
+            "max": [
+              35,
+              43,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "急救箱提把铰销-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              69,
+              49,
+              -4
+            ],
+            "max": [
+              71,
+              51,
+              -2
+            ]
+          }
+        },
+        {
+          "id": "part-9",
+          "name": "急救箱提把铰销1",
+          "parent": "root",
+          "region": {
+            "min": [
+              101,
+              49,
+              -4
+            ],
+            "max": [
+              103,
+              51,
+              -2
+            ]
+          }
+        },
+        {
+          "id": "part-10",
+          "name": "锁扣最小铜销-0.105",
+          "parent": "root",
+          "region": {
+            "min": [
+              -22,
+              39,
+              -20
+            ],
+            "max": [
+              -20,
+              41,
+              -18
+            ]
+          }
+        },
+        {
+          "id": "part-11",
+          "name": "锁扣最小铜销0.105",
+          "parent": "root",
+          "region": {
+            "min": [
+              20,
+              39,
+              -20
+            ],
+            "max": [
+              22,
+              41,
+              -18
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "急救箱硬壳真实空腔": "root",
+          "急救箱独立软内衬": "root",
+          "急救箱真实金属周框0.001": "root",
+          "急救箱真实金属周框0.198": "root",
+          "急救箱独立盖": "root",
+          "急救箱盖内衬": "root",
+          "急救箱提把侧柱-1": "root",
+          "急救箱提把侧柱1": "root",
+          "急救箱提把横握柄": "root",
+          "实体前锁扣-0.105": "root",
+          "实体前锁扣0.105": "root",
+          "红色十字竖墨": "root",
+          "红色十字横墨": "root"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -35,
+                1,
+                -20
+              ],
+              "max": [
+                103,
+                51,
+                18
+              ]
+            },
+            "joint": "root"
+          }
+        ],
+        "sockets": {
+          "grip": "root"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0.43,
+            0.314,
+            0
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0.13,
+            0.028,
+            0.028
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "急救箱硬壳真实空腔",
+          "material": 409,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "急救箱独立软内衬",
+          "material": 410,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "急救箱真实金属周框0.001",
+          "material": 382,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "急救箱真实金属周框0.198",
+          "material": 382,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "急救箱独立盖",
+          "material": 409,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "急救箱盖内衬",
+          "material": 410,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "急救箱提把侧柱-1",
+          "material": 382,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "急救箱提把侧柱1",
+          "material": 382,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "急救箱提把横握柄",
+          "material": 382,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "实体前锁扣-0.105",
+          "material": 382,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "实体前锁扣0.105",
+          "material": 382,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "红色十字竖墨",
+          "material": 411,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "红色十字横墨",
+          "material": 411,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    }
+  ],
+  "instances": []
+}
