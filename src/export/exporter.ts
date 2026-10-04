@@ -1,9 +1,10 @@
+import {waterFlow} from '../core/water-flow';
 import {Document,NodeIO} from '@gltf-transform/core';
 import {KHRMaterialsEmissiveStrength} from '@gltf-transform/extensions';
 import sharp from 'sharp';
 import {mkdir,writeFile} from 'node:fs/promises';
 import path from 'node:path';
-import {meshAsset,mergeCoplanarMesh} from '../core/mesh';
+import {displayMesh} from '../core/mesh';
 import {Grid} from '../core/grid';
 import {surfacePixels} from '../core/surface';
 import type {Project,Asset,Material} from '../core/types';
@@ -12,6 +13,7 @@ const materialRoles=(p:Project,id:number)=>Object.entries(p.styles).flatMap(([st
 export async function buildGLB(p:Project,assetId?:string,meshMode:'near'|'far'='near'){
  const doc=new Document(),buffer=doc.createBuffer(),scene=doc.createScene(p.name),materials=new Map<number,any>();
  scene.setExtras({meshMode,meshSource:'native occupancy',simplification:meshMode==='far'?'same-material coplanar merges only':'chunk greedy rectangles'});
+ const flowIds=new Set(Object.values(assetId?{[assetId]:p.assets[assetId]}:p.assets).flatMap(a=>waterFlow(a)?.materialIds??[]));
  const emission=doc.createExtension(KHRMaterialsEmissiveStrength);
  const sorted=Object.values(p.materials).sort((a,b)=>a.id-b.id),cols=Math.min(16,sorted.length),rows=Math.ceil(sorted.length/cols),tile=16,width=cols*tile,height=rows*tile,raw=Buffer.alloc(width*height*4);
  sorted.forEach((m,index)=>{const c=rgb(m.color).map(n=>Math.round(n*255));for(let y=0;y<tile;y++)for(let x=0;x<tile;x++){const offset=((Math.floor(index/cols)*tile+y)*width+(index%cols*tile+x))*4;raw.set([...c,Math.round(m.opacity*255)],offset);}});
@@ -28,11 +30,13 @@ export async function buildGLB(p:Project,assetId?:string,meshMode:'near'|'far'='
   const linear=rgb(m.color).map(n=>n<=.04045?n/12.92:((n+.055)/1.055)**2.4);
   materials.get(m.id).setBaseColorFactor([...linear,m.opacity]).setBaseColorTexture(maps[0]).setNormalTexture(maps[1]).setMetallicRoughnessTexture(maps[2]).setExtras({voxelMaterialId:m.id,materialCategory:m.category,materialRoles:materialRoles(p,m.id),collisionSolid:m.solid,emissiveIntensity:m.intensity,surface:m.surface,surfaceScaleM:m.surfaceScale??.5,surfaceStrength:m.surfaceStrength??.35,surfaceSeed:m.surfaceSeed??0,surfaceRotation:m.surfaceRotation??0});
  }
+ for(const id of flowIds){const m=p.materials[id];if(!m)throw new Error('Water flow material missing');const linear=rgb(m.color).map(n=>n<=.04045?n/12.92:((n+.055)/1.055)**2.4);materials.get(id).setBaseColorFactor([...linear,m.opacity]).setBaseColorTexture(null).setNormalTexture(null).setMetallicRoughnessTexture(null).setExtras({...materials.get(id).getExtras(),flowUV:'U downstream arc length / V signed lateral distance, metres',flowAnimated:false});}
  const assetMeshes=new Map<string,any>();
  const getMesh=(a:Asset)=>{if(assetMeshes.has(a.id))return assetMeshes.get(a.id);const mesh=doc.createMesh(a.name);const groups=new Map<number,{positions:number[],normals:number[],indices:number[],uvs:number[]}>();
-  for(const b of (meshMode==='far'?mergeCoplanarMesh(a,meshAsset(a,p.materials)):meshAsset(a,p.materials))){let group=groups.get(b.material);if(!group){group={positions:[],normals:[],indices:[],uvs:[]};groups.set(b.material,group);}const offset=group.positions.length/3;for(const x of b.positions)group.positions.push(x);for(const x of b.normals)group.normals.push(x);for(const x of b.uvs)group.uvs.push(x);for(const x of b.indices)group.indices.push(x+offset);}
+  for(const b of displayMesh(a,p.materials,meshMode)){let group=groups.get(b.material);if(!group){group={positions:[],normals:[],indices:[],uvs:[]};groups.set(b.material,group);}const offset=group.positions.length/3;for(const x of b.positions)group.positions.push(x);for(const x of b.normals)group.normals.push(x);for(const x of b.uvs)group.uvs.push(x);for(const x of b.indices)group.indices.push(x+offset);}
   for(const[id,g]of groups){const i=sorted.findIndex(m=>m.id===id),u=(i%cols+.5)/cols,v=(Math.floor(i/cols)+.5)/rows;const uv=new Float32Array(g.positions.length/3*2);for(let k=0;k<uv.length;k+=2){uv[k]=u;uv[k+1]=v;}
    const mat=p.materials[id];if(mat.surface&&mat.surface!=='none'){const angle=(mat.surfaceRotation??0)*Math.PI/180,c=Math.cos(angle),sn=Math.sin(angle),scale=mat.surfaceScale??.5;for(let k=0;k<uv.length;k+=2){uv[k]=(c*g.uvs[k]+sn*g.uvs[k+1])/scale;uv[k+1]=(-sn*g.uvs[k]+c*g.uvs[k+1])/scale;}}
+   if(flowIds.has(id))for(let k=0;k<uv.length;k++)uv[k]=g.uvs[k];
    const attr=(name:string,type:any,array:any)=>doc.createAccessor(name).setType(type).setArray(array).setBuffer(buffer);
    mesh.addPrimitive(doc.createPrimitive().setAttribute('POSITION',attr('positions','VEC3',new Float32Array(g.positions))).setAttribute('NORMAL',attr('normals','VEC3',new Float32Array(g.normals))).setAttribute('TEXCOORD_0',attr('atlasUV','VEC2',uv)).setIndices(attr('indices','SCALAR',new Uint32Array(g.indices))).setMaterial(materials.get(id)));
   }assetMeshes.set(a.id,mesh);return mesh;};

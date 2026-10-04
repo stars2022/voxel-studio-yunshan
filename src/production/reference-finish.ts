@@ -3,10 +3,18 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=18;
+export const referenceFinishVersion=19;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ treeBark:{name:'树皮及木质根外层',color:'#795333',roughness:.98,metalness:0,...surface('wood',.65,.25,641)},
+ soilSubstrate:{name:'自然深层土壤',color:'#594737',roughness:1,metalness:0,...surface('stone',.35,.18,643)},
+ waterWornRock:{name:'灰白水蚀岩',color:'#b9bdb0',roughness:.8,metalness:0,...surface('stone',.7,.18,645)},
+ flowWater:{name:'流动水体静态体积',color:'#4b9aab',roughness:.14,metalness:.02,opacity:.55,...surface('none',.1,0,0)},
+ fallWater:{name:'落水帘静态体积',color:'#91c6d7',roughness:.28,metalness:0,opacity:.72,...surface('none',.1,0,0)},
+ waterFoam:{name:'水体泡沫静态体积',color:'#e0efea',roughness:.78,metalness:0,opacity:.94,...surface('none',.1,0,0)},
+ distantRock:{name:'远景岩脊非碰撞代理',color:'#788d80',roughness:.96,metalness:0,...surface('stone',.8,.15,647)},
+ rootHeartwood:{name:'根干木质心材',color:'#b1905d',roughness:.92,metalness:0,...surface('wood',.6,.2,649)},
  cableSheave:{name:'缆车钢导轮槽面',color:'#7f8b8d',roughness:.32,metalness:.8,...surface('none',.1,0,0)},
  bedrock:{name:'地质完整基岩',color:'#74766b',roughness:.96,metalness:0,...surface('stone',.8,.2,621)},
  weatheredRock:{name:'风化浅色岩层',color:'#b0aa95',roughness:.95,metalness:0,...surface('stone',.6,.22,623)},

@@ -98,6 +98,12 @@ if (out / 'terrain-lod.json').exists():
     files.add(out / 'terrain-lod.json')
     files.update(root / r['farGLB'] for r in lod['records'])
     files.update(out.glob('terrain-*.png'))
+if (out / 'material-export.json').exists():
+    material_export = read(out / 'material-export.json')
+    assert material_export['status'] == 'passed' and material_export['run'] == index['run']
+    assert {r['id'] for r in material_export['records']} == {r['id'] for r in entries}
+    files.add(out / 'material-export.json')
+    files.update(root / r['file'] for r in material_export['records'])
 files.add(out / 'build.txt')
 manifest = {'format': 'yunshan.atlas-batch', 'version': 1, 'sheet': args.sheet, 'run': index['run'],
             'candidateMasters': len(entries), 'humanArtAccepted': 0, 'assets': entries, 'revisedDependencies': dependencies,
@@ -112,7 +118,7 @@ with ZipFile(args.output, 'w', ZIP_DEFLATED, compresslevel=6) as archive:
     archive.writestr('使用说明.txt', f'''云山体素资产 · {args.sheet} · {len(entries)} 件候选
 原生权威数据：projects 下的 .ysvox.json，单位米，Y 轴向上。
 把包内 projects 的单件/总览文件复制到编辑器项目目录后打开。
-通用三维查看器可直接打开各 exports 子目录下的 visual.glb。
+通用三维查看器可直接打开各 exports 子目录下的 visual.glb。若附有 visual-material.glb，可直接查看参考材质和透明水层。
 碰撞、接口、材质 ID 与图集分别存储，不以 GLB 代替原生体素。
 制作源码及启动方式：https://github.com/stars2022/voxel-studio-yunshan
 artifacts 内是本批真实截图与验证。仍属待美术验收候选，没有动画或游戏集成。

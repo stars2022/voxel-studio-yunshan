@@ -38,3 +38,5 @@
 - 轨道钢轮 railWheel、磁浮绕组 maglevCoil、船体水上/防污金属板 marineHull/marineAntifouling、码头护舷 dockFender、非碰撞系船绳 mooringLine、左右导航芯 navPortLamp/navStarboardLamp 独立归类。导航状态未绑定时零发光。磁浮几何试架有明确检修止挡，不能称磁悬浮通过；船体真闭壳可做外部空格连通检查，显示水面和龙骨检修垫不等于浮力。起落架收起形状须为实际刚体占用变换，机翼孔与吊舱承帽、缆索孔与轿厢顶托应真实接触，不能用悬空件冒称承接。
 
 - 自然完整基岩 bedrock、风化岩层 weatheredRock、soil 类表土 surfaceSoil、非碰撞苔层 moss/灌木 shrubFoliage 和浸水木桩 wetPileWood、缆车钢导轮 cableSheave 独立赋值；钢导轮与轮轨踏面 railWheel 分开。ENV 保留完整0.2m权威占用；远景只能按已验证方法派生，不能把共面合并称为自动距离LOD或粗采样物理格。真穿洞用三维占用和同步碰撞，不用单值高度场冒充。住宅悬挑梁原安装0、共享尺寸未批准时，新作仅为作者研究；梁端承托中心原点、实际墙支承和身体净空需明确，不凭图为旧住宅增加可走面。夜景是编辑器光照预览，不等于原游戏时钟/运行集成。
+
+- 自然树皮及木质根 treeBark、截面心材 rootHeartwood、深土 soilSubstrate、水蚀岩 waterWornRock、非碰撞远景岩 distantRock 分别赋值。流水 flowWater、水帘 fallWater、泡沫 waterFoam 独立 water 角色，均非碰撞且零发光；静态泡沫不能借灯芯。水系完整0.2m占用为权威，近远网格共享共面水顶点、处理T接点并保留累积米制流向UV；这不是流体、流速或纹理动画。接续样件先查实际格无重叠再合成原生并集，保存源母版/参数/变换与显式重建限制，不把独立实例端面的重合称无缝。153m落差/24m帘宽、50m半径/24边潭保留原给定量；缺原九点河线、世界高程、23峰参数时只能标作者候选。

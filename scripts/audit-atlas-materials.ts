@@ -1,3 +1,4 @@
+import {inspectHydrologyMaterials} from '../src/production/atlas-hydrology';
 import {inspectEnvironmentMaterials} from '../src/production/atlas-terrain';
 import {readFile,writeFile} from 'node:fs/promises';
 import path from 'node:path';
@@ -23,7 +24,7 @@ for(const row of index.entries){
   assert.ok(roles.length,`${row.id}: material ${id} has no semantic binding`);
   return{id,roles,category:material.category,name:material.name,solid:material.solid,occupiedCells};
  });
- const authoredReview=row.id.startsWith('BUILT-')?inspectBuiltMaterialAssignments(row.id,asset,project.styles.yunshan):row.id.startsWith('ENV-')?inspectEnvironmentMaterials(row.id,asset,project.styles.yunshan):inspectAtlasMaterialAssignments(Number(row.id.slice(5)),asset,project.styles.yunshan);
+ const authoredReview=row.id.startsWith('BUILT-')?inspectBuiltMaterialAssignments(row.id,asset,project.styles.yunshan):row.id.startsWith('ENV-')?(inspectHydrologyMaterials(row.id,asset,project.styles.yunshan)??inspectEnvironmentMaterials(row.id,asset,project.styles.yunshan)):inspectAtlasMaterialAssignments(Number(row.id.slice(5)),asset,project.styles.yunshan);
  if(authoredReview)assert.deepEqual(asset.source?.materialAssignmentReview,authoredReview,`${row.id}: saved asset predates the material repair`);
  const reviewed=['M007','M008','M009'].includes(row.sheet)||!!authoredReview,legacy=project.styles.yunshan.paper;
  if(reviewed)assert.ok(!counts.has(legacy),`${row.id}: ambiguous legacy paper/cotton material remains`);

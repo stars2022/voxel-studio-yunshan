@@ -13,7 +13,7 @@ import {atlasRecipe} from '../src/production/catalog-assets';
 import {readAtlasIndex,readAtlasProduction,type AtlasProduction,type AtlasEntry} from '../src/production/atlas';
 import {referenceFinishCommands} from '../src/production/reference-finish';
 import {layoutAtlasGallery} from '../src/production/gallery-layout';
-import {meshAsset} from '../src/core/mesh';
+import {displayMesh} from '../src/core/mesh';
 import {exportProject} from '../src/export/exporter';
 import {readProductionLibrary} from '../src/production/library';
 import {checkFloat32Bounds} from '../src/export/precision';
@@ -39,7 +39,7 @@ for(const row of rows){
  commit(e,[...referenceFinishCommands(e.project),{op:'palette',name:'原始素色'}],'保存可替换材质方案');
  const p=e.project,a=p.assets[assetId],g=new Grid(a.chunks),bounds=g.bounds()!,geometrySHA=hash(a.chunks),components=gridComponents(g);assert.equal(components.length,atlasRecipe(row.id).expectedComponents??1,'Unintended floating geometry: '+row.id);assert.ok(!hashes.has(geometrySHA),'Duplicate authored geometry');hashes.add(geometrySHA);
  for(const opening of a.openings)eachCell(opening,v=>assert.equal(g.get(v),0,`${row.id}: declared opening blocked at ${v}`));
- const meshStart=performance.now(),meshes=meshAsset(a,p.materials),triangles=meshes.reduce((s,m)=>s+m.indices.length/3,0),meshingMs=performance.now()-meshStart,file=run+'-'+row.id.toLowerCase()+'.ysvox.json',boundsM={min:bounds.min.map((n,i)=>a.origin[i]+n*a.cellSize),max:bounds.max.map((n,i)=>a.origin[i]+n*a.cellSize)};
+ const meshStart=performance.now(),meshes=displayMesh(a,p.materials),triangles=meshes.reduce((s,m)=>s+m.indices.length/3,0),meshingMs=performance.now()-meshStart,file=run+'-'+row.id.toLowerCase()+'.ysvox.json',boundsM={min:bounds.min.map((n,i)=>a.origin[i]+n*a.cellSize),max:bounds.max.map((n,i)=>a.origin[i]+n*a.cellSize)};
  files.push(await save(p,file));const exportStart=performance.now(),exported=await exportProject(p,path.join(out,'exports',row.id),assetId),glb=await io.read(path.join(exported.directory,'visual.glb')),positions=glb.getRoot().listMeshes().flatMap(m=>m.listPrimitives().map(p=>p.getAttribute('POSITION')!)),min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];
  for(const acc of positions){const arr=acc.getArray()!;for(let k=0;k<arr.length;k++){const j=k%3;min[j]=Math.min(min[j],arr[k]);max[j]=Math.max(max[j],arr[k]);}}
  const error=Math.max(...min.map((n,i)=>Math.abs(n-boundsM.min[i])),...max.map((n,i)=>Math.abs(n-boundsM.max[i])));const precision=checkFloat32Bounds(boundsM,{min,max});assert.ok(precision.matchesFloat32Rounding&&error<a.cellSize*.001,'GLB bounds changed beyond exact float32 encoding');maxError=Math.max(maxError,error);

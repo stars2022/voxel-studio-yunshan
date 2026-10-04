@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "run": "atlas-20261004035714",
+  "sheet": "M027",
+  "scope": [
+    "ENV-014",
+    "ENV-015",
+    "ENV-016",
+    "ENV-017",
+    "ENV-019",
+    "ENV-026",
+    "ENV-027",
+    "ENV-028",
+    "ENV-029",
+    "ENV-032",
+    "ENV-034",
+    "ENV-035"
+  ],
+  "tests": {
+    "fullRegression": 292,
+    "targeted": 11,
+    "alphaExportFollowup": 1,
+    "fullLog": "full-tests.txt",
+    "targetedLog": "targeted-tests.txt",
+    "developmentCorrections": [
+      "Expanded the pool outlet bank width to meet its downstream bed with no exposed side step.",
+      "Replaced independent touching water instances with overlap-rejecting native unions, preserving source masters.",
+      "Kept the 153m author cliff outside the pool floor and used bounded component parts rather than an oversized empty selection box.",
+      "Moved a bark test probe off the intentionally exposed heartwood strip.",
+      "Verified reference-palette alpha and decoded UV/index arrays in both near/far GLB.",
+      "Replaced the initial common near-detail camera cube with per-asset windows after visually detecting smaller framing; old images remain in camera-framing-before."
+    ]
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 15,
+  "mcpStatus": "passed",
+  "referenceMaterialGLBs": 12,
+  "materialCandidates": 324,
+  "componentShapes": 22,
+  "nativeVoxels": 1185018,
+  "triangles": 129502,
+  "farTriangles": 116943,
+  "glbBoundsMaxErrorM": 3.814697286941282e-07,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 25,
+  "terrainScreenshots": 63,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Twelve isometric/front/material sets inspected.",
+      "Seven installations inspected in isometric/front flat geometry and isometric material views; downstream cascade and high-fall scene views additionally reveal water faces occluded by the upstream rock.",
+      "Twelve near/far/day/night/close sets plus MCP night/far capture inspected.",
+      "Default raw oriented-face coverage and actual water indexed UV/GLB metrics verified in terrain-lod.json.",
+      "Full-grid unions retain dependency masters as unplaced assets; no overlapping native water or rock cells are hidden."
+    ]
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 343,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 670,
+    "generatedEntries": 398,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 324
+  },
+  "limitations": [
+    "Original WorldDefinition, terrainHeight, original nine-point river route, original fall top/bottom world elevations, 96m streaming/LOD and body controllers remain unprovided. No original runtime or human art acceptance is claimed.",
+    "All masters and author fixtures retain full 0.2m native occupancy and use-specific material IDs. Static far meshes merge coplanar faces only. Water additionally conforms coplanar T junctions and shares indexed vertices per material and normal; hard edges/material boundaries remain separate.",
+    "Flow UV U is downstream cumulative metre station, V signed lateral distance. Shared graph junctions have matched stations; this is static UV data without animation, current velocity, fluid physics, buoyancy or particle lifetimes.",
+    "Connected network and fall-pool fixtures are exact native unions, rejecting every overlapping occupied cell before merging. Original source masters and their transforms remain in the native document. They require an explicit rebuild after editing dependencies; no live scene dependency graph is implemented.",
+    "ENV-028 keeps literal 153m drop and 24m width. Author installation joins a top channel, a clearly authored cantilever rock ledge, a 50m-radius 24-gon pool and downstream river. The rock support check is geometric, not a stress calculation; original world cliff/elevator locations are unbound.",
+    "ENV-029 retains the original 50m radius and 24-side base, with a new author impact zone and 4m-wide outlet. The polygonal cutaway pool is a technical candidate, not a claim of natural-shore artistic acceptance.",
+    "ENV-026 has four nodes and three segments for one 6m fall. ENV-027 has nine explicit author points, not the original missing centreline. ENV-032 has two/three steps at one/two metre drops. ENV-034 has 1.2/2.4m widths, and ENV-035 Y/T/left/right forms stay within one family.",
+    "ENV-014 has actual 1/2m deep soil, bark roots and cut heartwood. Stone bases and roots remain connected. Gravel grain dimensions are quantized at 0.2m; grains are not separate catalogue masters. Water-worn stone has measured bottom-centre anchoring.",
+    "ENV-019 is one 48m-wide authored five-peak proxy with noncollision rock. Original 23-peak parameters/48m legacy sampling remain unreceived; the candidate is not an explorable terrain or 23 new models.",
+    "170 semantic roles keep bark, root heartwood, deep soil, waterworn rock, flow, fall, foam and distant proxy rock independent. Water/foam are noncollision and zero-emission. The reference material palette supplies alpha; flat inspection deliberately renders opaque colour.",
+    "Near/far/day/night/close images are real editor captures in SwiftShader software WebGL. Day/night captures use the original flat-colour palette under editor lighting; separate per-asset and per-scene material previews inspect PBR and transparent water. No hardware GPU or game-clock integration is claimed.",
+    "Rock cut faces, repeated root branches and gravel spacing remain visibly regular author studies; reference-level natural composition and detail are not claimed. All 324 reference candidates remain pending human artistic acceptance. Component variants, source/surface pieces, individual stones, and auxiliary union assets do not add catalogue masters."
+  ]
+}

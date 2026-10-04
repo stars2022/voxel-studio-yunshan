@@ -1,3 +1,4 @@
+import {applyWaterFlow} from './water-flow';
 import {Grid,CHUNK} from './grid';
 import type {V3,Material,Asset} from './types';
 export type MeshBucket={material:number;positions:number[];normals:number[];indices:number[];uvs:number[];quads:number};
@@ -43,3 +44,6 @@ export function mergeCoplanarMesh(a:Asset,buckets:MeshBucket[]):MeshBucket[]{
  }
  return[...result.values()];
 }
+
+/** The raw greedy rectangles above remain available for exact face audits. */
+export function displayMesh(a:Asset,materials:Record<string,Material>,mode:'near'|'far'='near'){const raw=meshAsset(a,materials),near=applyWaterFlow(a,raw);if(mode==='near')return near;const far=applyWaterFlow(a,mergeCoplanarMesh(a,raw));return far.reduce((n,b)=>n+b.indices.length,0)>near.reduce((n,b)=>n+b.indices.length,0)?near:far;}
