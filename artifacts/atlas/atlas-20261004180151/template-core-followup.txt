@@ -1,0 +1,26 @@
+✔ sparse chunks round-trip negative coordinates and seam dirty neighbours (3.22855ms)
+✔ greedy solid block is six quads; cross-chunk internal faces are culled (82.123098ms)
+✔ opacity material batches preserve visible opaque surface behind glass (27.65975ms)
+✔ batch atomic rollback on missing material / no version advance (1.969931ms)
+✔ dry-run does not mutate and large modification requires exact preview (167.611282ms)
+✔ version conflict and idempotency replay / payload conflict (2.016772ms)
+✔ transaction undo redo restores all voxel/material/instance edits in one step (423.797559ms)
+✔ voxel replace, mirrored brush, bounded connected fill and surface rules (7.470408ms)
+✔ integer rotation, mirror, move, copy array and collision rollback (7.714396ms)
+✔ extrude adds exposed face columns and is undoable (10.677064ms)
+✔ all general templates generate legal structures and unknown parameters reject (9053.102853ms)
+✔ assembly template instantiation shares masters and preserves relative placement (140.747643ms)
+✔ mixed-resolution opening obstruction detects subcell blocking geometry (403.885564ms)
+✔ interfaces require common pitch, normal and footprint; detach preserves master (151.777874ms)
+✔ metadata transforms preserve port/part spatial relationship; cyclic parents rejected (102.700937ms)
+✔ schema rejects pathological selection, decimals, unknown fields and invalid materials (5.403016ms)
+✔ demo has enterable door, window and stairs clearances without collisions (314.889723ms)
+✔ 1mm native details retain metre coordinates through transactions, collision queries, native and GLB export, undo and invalid-pitch rollback (518.888217ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13806.261677

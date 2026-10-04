@@ -18,7 +18,7 @@ test('5 mm native grids use the shared transaction path, survive serialization a
  commit(e,[create('fine',.005),create('coarse',.01),{op:'instance',id:'a',assetId:'fine',position:[0,0,0]}]);
  const fine=e.project.assets.fine;assert.equal(fine.cellSize,.005);assert.deepEqual(new Grid(fine.chunks).bounds(),{min:[0,0,0],max:[20,4,20]});validateProject(JSON.parse(JSON.stringify(e.project)));
  const before=JSON.stringify(e.project);assert.throws(()=>commit(e,[{op:'connect',id:'bad',assetId:'coarse',portId:'base',targetInstanceId:'a',targetPortId:'top',rotation:0}]),/格距/);assert.equal(JSON.stringify(e.project),before);
- assert.throws(()=>commit(e,[create('too-fine',.001)]),/minimum|>=/);assert.equal(JSON.stringify(e.project),before);
+ assert.throws(()=>commit(e,[create('too-fine',.0009)]),/minimum|>=/);assert.equal(JSON.stringify(e.project),before);
  commit(e,[{op:'connect',id:'b',assetId:'fine',portId:'base',targetInstanceId:'a',targetPortId:'top',rotation:0}]);assert.deepEqual(e.project.instances.b.position,[0,.02,0]);assert.deepEqual(checkGeometry(e.project).collisions,[]);
  commit(e,[{op:'undo'}]);assert.equal(e.project.instances.b,undefined);
 });

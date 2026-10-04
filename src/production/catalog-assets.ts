@@ -1,3 +1,4 @@
+import {wildlifeRecipes,makeWildlifeAsset} from './atlas-wildlife';
 import {faunaRecipes,makeFaunaAsset} from './atlas-fauna';
 import {careRecipes,makeCareAsset} from './atlas-care';
 import {serviceRecipes,makeServiceAsset} from './atlas-service';
@@ -21,6 +22,7 @@ import {atlasBuiltRecipes,makeAtlasBuiltAsset} from './atlas-built';
 
 /** Dispatch by complete catalog ID; BUILT-003 must never alias LIFE-003. */
 export function atlasRecipe(catalogId:string){
+ if(wildlifeRecipes[catalogId])return wildlifeRecipes[catalogId];
  if(faunaRecipes[catalogId])return faunaRecipes[catalogId];
  if(careRecipes[catalogId])return careRecipes[catalogId];
  if(serviceRecipes[catalogId])return serviceRecipes[catalogId];
@@ -38,6 +40,7 @@ export function atlasRecipe(catalogId:string){
  return atlasBuiltRecipes[catalogId];
 }
 export function makeCatalogAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number|string>={}){
+ if(wildlifeRecipes[catalogId])return makeWildlifeAsset(catalogId,name,id,style,params);
  if(faunaRecipes[catalogId])return makeFaunaAsset(catalogId,name,id,style,params);
  if(careRecipes[catalogId])return makeCareAsset(catalogId,name,id,style,params);
  if(serviceRecipes[catalogId])return makeServiceAsset(catalogId,name,id,style,params);

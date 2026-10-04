@@ -1,0 +1,974 @@
+{
+  "run": "atlas-20261004180151",
+  "status": "passed",
+  "masters": [
+    {
+      "id": "CHAR-320",
+      "geometrySHA256": "3b4e5a802c13fa407c04b659085a084718257458b53a7d6b2249546a8fde7b98",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-321",
+      "geometrySHA256": "bb2d8e3ebffc1774386e6a74b52248f9eca5041e1e9124077e97e1f935f13410",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-322",
+      "geometrySHA256": "1f0939f18f3b54e9b2729139e6fc8a8eb5fb6af4db24717456c824272b43016e",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-323",
+      "geometrySHA256": "d1faa84b54f40651520d60683820822faa9d72b773f40f4d124c82fa9a73925e",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-324",
+      "geometrySHA256": "3f31a4ffe469a73265fa3511ad6a47e7604a9c03ab93a178fbd332e08e6c0179",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-325",
+      "geometrySHA256": "167f9566f29b1b4022a09b5f7f728b6ef8c42e64bf00fed0a54c0b5e8352a884",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-326",
+      "geometrySHA256": "d7ce05ba2f79922b7a22b05f64825f081da1a1532dc52e0af441b221c867d611",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-327",
+      "geometrySHA256": "25efc4d87124bd967d987b52f9104029ac6669e49d17affd1145bebad9efb793",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-328",
+      "geometrySHA256": "bbcbdd4c0a2c2d1bb65084cc7a87dbebcf311ad30dd23100a98e70bc84e6c660",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-329",
+      "geometrySHA256": "062ae0dd47274f71851d98de5dc3e0e8735295652999a6949f57764f3b997ce7",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-330",
+      "geometrySHA256": "8f7a170ce40b6508c309794f428e8cdadfe7fb703648a1ec1ebf099d51e4fa44",
+      "nativeSceneAndRecipeMatch": true
+    },
+    {
+      "id": "CHAR-331",
+      "geometrySHA256": "8598b6b03520c7a4d0e698fcfce14092170b1f0a2c0232f433a367a9a6b21fab",
+      "nativeSceneAndRecipeMatch": true
+    }
+  ],
+  "scenes": [
+    {
+      "name": "wildlife-dog-collar-tag",
+      "instances": 3,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.604257204856907e-8,
+      "skinCount": 3,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-cat-collar-tag",
+      "instances": 3,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.4543533322086688e-8,
+      "skinCount": 3,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-dog-harness",
+      "instances": 2,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.604257204856907e-8,
+      "skinCount": 2,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-cat-harness",
+      "instances": 2,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.4543533322086688e-8,
+      "skinCount": 2,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-cow-tag",
+      "instances": 2,
+      "GLBIndependentPoseBoundsMaxErrorM": 5.740307607027262e-8,
+      "skinCount": 2,
+      "noncollision": true
+    }
+  ],
+  "apertures": [
+    {
+      "id": "CHAR-320",
+      "params": {
+        "heronNeck": "watchful"
+      },
+      "name": "long legs remain separate",
+      "point": [
+        0,
+        0.025,
+        -0.05
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-320",
+      "params": {
+        "heronNeck": "watchful"
+      },
+      "name": "solid heron torso",
+      "point": [
+        0,
+        0.67,
+        0.065
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-320",
+      "params": {
+        "heronNeck": "lowered"
+      },
+      "name": "long legs remain separate",
+      "point": [
+        0,
+        0.025,
+        -0.05
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-320",
+      "params": {
+        "heronNeck": "lowered"
+      },
+      "name": "solid heron torso",
+      "point": [
+        0,
+        0.67,
+        0.065
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-321",
+      "params": {
+        "streamTail": "broad-tail"
+      },
+      "name": "actual bifurcated tail centre",
+      "point": [
+        0,
+        0.14,
+        0.345
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-321",
+      "params": {
+        "streamTail": "broad-tail"
+      },
+      "name": "solid elongate fish body",
+      "point": [
+        0,
+        0.14,
+        0
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-321",
+      "params": {
+        "streamTail": "narrow-tail"
+      },
+      "name": "actual bifurcated tail centre",
+      "point": [
+        0,
+        0.14,
+        0.345
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-321",
+      "params": {
+        "streamTail": "narrow-tail"
+      },
+      "name": "solid elongate fish body",
+      "point": [
+        0,
+        0.14,
+        0
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-322",
+      "params": {
+        "butterflyWings": "spread-wings"
+      },
+      "name": "space beyond butterfly head",
+      "point": [
+        0,
+        0.032,
+        -0.052
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-322",
+      "params": {
+        "butterflyWings": "spread-wings"
+      },
+      "name": "solid narrow butterfly abdomen",
+      "point": [
+        0,
+        0.025,
+        0.023
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-322",
+      "params": {
+        "butterflyWings": "folded-wings"
+      },
+      "name": "space beyond butterfly head",
+      "point": [
+        0,
+        0.032,
+        -0.052
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-322",
+      "params": {
+        "butterflyWings": "folded-wings"
+      },
+      "name": "solid narrow butterfly abdomen",
+      "point": [
+        0,
+        0.025,
+        0.023
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-323",
+      "params": {
+        "beeWings": "wings-up"
+      },
+      "name": "space below insect body",
+      "point": [
+        0,
+        0.005,
+        0
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-323",
+      "params": {
+        "beeWings": "wings-up"
+      },
+      "name": "solid bee head",
+      "point": [
+        0,
+        0.0145,
+        -0.009
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-323",
+      "params": {
+        "beeWings": "wings-down"
+      },
+      "name": "space below insect body",
+      "point": [
+        0,
+        0.005,
+        0
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-323",
+      "params": {
+        "beeWings": "wings-down"
+      },
+      "name": "solid bee head",
+      "point": [
+        0,
+        0.0145,
+        -0.009
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "neutral"
+      },
+      "name": "open rib cage",
+      "point": [
+        0,
+        0.31,
+        0.05
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "neutral"
+      },
+      "name": "real central guide joint",
+      "point": [
+        0,
+        0.37,
+        0.06
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "neutral"
+      },
+      "name": "open eye guide -1",
+      "point": [
+        -0.045,
+        0.54,
+        -0.315
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "neutral"
+      },
+      "name": "open eye guide 1",
+      "point": [
+        0.045,
+        0.54,
+        -0.315
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "stride-study"
+      },
+      "name": "open rib cage",
+      "point": [
+        0,
+        0.31,
+        0.05
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "stride-study"
+      },
+      "name": "real central guide joint",
+      "point": [
+        0,
+        0.37,
+        0.06
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "stride-study"
+      },
+      "name": "open eye guide -1",
+      "point": [
+        -0.069011792,
+        0.54,
+        -0.302407874
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-324",
+      "params": {
+        "quadrupedPose": "stride-study"
+      },
+      "name": "open eye guide 1",
+      "point": [
+        0.018818979,
+        0.54,
+        -0.32204854
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-325",
+      "params": {
+        "birdRigPose": "neutral"
+      },
+      "name": "open bird rib cage",
+      "point": [
+        0,
+        0.47,
+        0.017
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-325",
+      "params": {
+        "birdRigPose": "neutral"
+      },
+      "name": "real bird guide root",
+      "point": [
+        0,
+        0.5,
+        0.045
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-325",
+      "params": {
+        "birdRigPose": "wing-study"
+      },
+      "name": "open bird rib cage",
+      "point": [
+        0,
+        0.47,
+        0.017
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-325",
+      "params": {
+        "birdRigPose": "wing-study"
+      },
+      "name": "real bird guide root",
+      "point": [
+        0,
+        0.5,
+        0.045
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-326",
+      "params": {
+        "fishRigPose": "neutral"
+      },
+      "name": "space between fish ribs",
+      "point": [
+        0,
+        0.104,
+        -0.06
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-326",
+      "params": {
+        "fishRigPose": "neutral"
+      },
+      "name": "real fish guide root",
+      "point": [
+        0,
+        0.14,
+        -0.025
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-326",
+      "params": {
+        "fishRigPose": "tail-bend"
+      },
+      "name": "space between fish ribs",
+      "point": [
+        0,
+        0.104,
+        -0.06
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-326",
+      "params": {
+        "fishRigPose": "tail-bend"
+      },
+      "name": "real fish guide root",
+      "point": [
+        0,
+        0.14,
+        -0.025
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-327",
+      "params": {
+        "insectPose": "rest"
+      },
+      "name": "space between insect feet",
+      "point": [
+        0,
+        0.005,
+        0
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-327",
+      "params": {
+        "insectPose": "rest"
+      },
+      "name": "actual thorax solid",
+      "point": [
+        0,
+        0.04185,
+        0
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-327",
+      "params": {
+        "insectPose": "flexed"
+      },
+      "name": "space between insect feet",
+      "point": [
+        0,
+        0.005,
+        0
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-327",
+      "params": {
+        "insectPose": "flexed"
+      },
+      "name": "actual thorax solid",
+      "point": [
+        0,
+        0.04185,
+        0
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-328",
+      "params": {
+        "collarFit": "dog"
+      },
+      "name": "neck opening through centre",
+      "point": [
+        0,
+        0.489,
+        -0.208
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-328",
+      "params": {
+        "collarFit": "dog"
+      },
+      "name": "actual woven band",
+      "point": [
+        0.127,
+        0.489,
+        -0.208
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-328",
+      "params": {
+        "collarFit": "cat"
+      },
+      "name": "neck opening through centre",
+      "point": [
+        0,
+        0.294,
+        -0.146
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-328",
+      "params": {
+        "collarFit": "cat"
+      },
+      "name": "actual woven band",
+      "point": [
+        0.093,
+        0.294,
+        -0.146
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-329",
+      "params": {
+        "tagFace": "paw"
+      },
+      "name": "true tag eyelet",
+      "point": [
+        0,
+        0.055,
+        0
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-329",
+      "params": {
+        "tagFace": "paw"
+      },
+      "name": "true hanging ring",
+      "point": [
+        0,
+        0.064,
+        -0.001
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-329",
+      "params": {
+        "tagFace": "paw"
+      },
+      "name": "solid metal tag",
+      "point": [
+        0,
+        0.025,
+        0
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-329",
+      "params": {
+        "tagFace": "blank"
+      },
+      "name": "true tag eyelet",
+      "point": [
+        0,
+        0.055,
+        0
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-329",
+      "params": {
+        "tagFace": "blank"
+      },
+      "name": "true hanging ring",
+      "point": [
+        0,
+        0.064,
+        -0.001
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-329",
+      "params": {
+        "tagFace": "blank"
+      },
+      "name": "solid metal tag",
+      "point": [
+        0,
+        0.025,
+        0
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-330",
+      "params": {
+        "harnessFit": "dog"
+      },
+      "name": "actual empty thorax aperture",
+      "point": [
+        0,
+        0.3773,
+        -0.075
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-330",
+      "params": {
+        "harnessFit": "dog"
+      },
+      "name": "solid outer harness band",
+      "point": [
+        0.1475,
+        0.3773,
+        -0.075
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-330",
+      "params": {
+        "harnessFit": "cat"
+      },
+      "name": "actual empty thorax aperture",
+      "point": [
+        0,
+        0.2233,
+        -0.064
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-330",
+      "params": {
+        "harnessFit": "cat"
+      },
+      "name": "solid outer harness band",
+      "point": [
+        0.10149999999999999,
+        0.2233,
+        -0.064
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-331",
+      "params": {
+        "livestockFit": "cow"
+      },
+      "name": "neck opening through centre",
+      "point": [
+        0,
+        1.055,
+        -0.425
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-331",
+      "params": {
+        "livestockFit": "cow"
+      },
+      "name": "actual woven band",
+      "point": [
+        0.185,
+        1.055,
+        -0.425
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    },
+    {
+      "id": "CHAR-331",
+      "params": {
+        "livestockFit": "cow-wide"
+      },
+      "name": "neck opening through centre",
+      "point": [
+        0,
+        1.055,
+        -0.425
+      ],
+      "expectedSolid": false,
+      "actualSolid": false
+    },
+    {
+      "id": "CHAR-331",
+      "params": {
+        "livestockFit": "cow-wide"
+      },
+      "name": "actual woven band",
+      "point": [
+        0.196,
+        1.055,
+        -0.425
+      ],
+      "expectedSolid": true,
+      "actualSolid": true
+    }
+  ],
+  "wearFits": [
+    {
+      "id": "CHAR-328",
+      "params": {
+        "collarFit": "dog"
+      },
+      "target": "CHAR-307",
+      "pairs": 36,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "minimumDistanceM": 0.002315771984406307,
+      "scope": "Specified static source body only; clearance/proximity, no load or all-pose certification"
+    },
+    {
+      "id": "CHAR-328",
+      "params": {
+        "collarFit": "cat"
+      },
+      "target": "CHAR-306",
+      "pairs": 39,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "minimumDistanceM": 0.0075444251722799295,
+      "scope": "Specified static source body only; clearance/proximity, no load or all-pose certification"
+    },
+    {
+      "id": "CHAR-330",
+      "params": {
+        "harnessFit": "dog"
+      },
+      "target": "CHAR-307",
+      "pairs": 4,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "minimumDistanceM": 0.0010000000000000009,
+      "scope": "Specified static source body only; clearance/proximity, no load or all-pose certification"
+    },
+    {
+      "id": "CHAR-330",
+      "params": {
+        "harnessFit": "cat"
+      },
+      "target": "CHAR-306",
+      "pairs": 8,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "minimumDistanceM": 0.006278562706810149,
+      "scope": "Specified static source body only; clearance/proximity, no load or all-pose certification"
+    },
+    {
+      "id": "CHAR-331",
+      "params": {
+        "livestockFit": "cow"
+      },
+      "target": "CHAR-315",
+      "pairs": 28,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "minimumDistanceM": 0.007468879114657694,
+      "scope": "Specified static source body only; clearance/proximity, no load or all-pose certification"
+    },
+    {
+      "id": "CHAR-331",
+      "params": {
+        "livestockFit": "cow-wide"
+      },
+      "target": "CHAR-315",
+      "pairs": 22,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "minimumDistanceM": 0.01711899468607469,
+      "scope": "Specified static source body only; clearance/proximity, no load or all-pose certification"
+    },
+    {
+      "scene": "dog-collar-tag",
+      "id": "CHAR-329",
+      "target": "CHAR-307",
+      "pairs": 0,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "ringSurfaceDistanceM": 0.000027024966432630084,
+      "actualPosition": [
+        0.032,
+        0.292727983,
+        -0.318034159
+      ],
+      "scope": "Actual tag translated between named hanger and collar mount; no fake identity"
+    },
+    {
+      "scene": "cat-collar-tag",
+      "id": "CHAR-329",
+      "target": "CHAR-306",
+      "pairs": 0,
+      "contained": 0,
+      "crossing": 0,
+      "details": [],
+      "ringSurfaceDistanceM": 0.00002702458051143285,
+      "actualPosition": [
+        0.032,
+        0.118629823,
+        -0.227960807
+      ],
+      "scope": "Actual tag translated between named hanger and collar mount; no fake identity"
+    }
+  ],
+  "scope": "Saved original species retained separately, finite skin clearance and tag mount checks, independent glTF skin evaluation. No physical load, all-pose, soft-skin, animation-clip or original-runtime certification."
+}

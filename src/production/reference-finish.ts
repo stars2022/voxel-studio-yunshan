@@ -3,10 +3,32 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=34;
+export const referenceFinishVersion=35;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ featherGray:{name:'鸟类浅灰羽片',color:'#aeb8ba',roughness:0.78,metalness:0},
+ featherSlate:{name:'鸟类蓝灰羽片',color:'#617989',roughness:0.78,metalness:0},
+ insectCuticle:{name:'昆虫深色外骨骼',color:'#393a32',roughness:0.78,metalness:0},
+ butterflyScaleBlue:{name:'蝶翼蓝色鳞片',color:'#399ac0',roughness:0.78,metalness:0},
+ insectWingMembrane:{name:'昆虫透明翅膜',color:'#e6e3c7',roughness:0.78,metalness:0,opacity:.42},
+ butterflyScaleDark:{name:'蝶翼深色鳞片',color:'#273c47',roughness:0.78,metalness:0},
+ butterflyScalePale:{name:'蝶翼浅色鳞斑',color:'#eadfae',roughness:0.78,metalness:0},
+ insectWingVein:{name:'昆虫翅脉',color:'#bcb48e',roughness:0.78,metalness:0},
+ beePile:{name:'蜂金色刚毛',color:'#c9a83f',roughness:0.78,metalness:0},
+ insectEye:{name:'昆虫复眼',color:'#263f48',roughness:0.78,metalness:0},
+ insectCuticleGreen:{name:'昆虫绿色外骨骼',color:'#728a4c',roughness:0.78,metalness:0},
+ petWebbing:{name:'宠物固定织带',color:'#326e85',roughness:0.78,metalness:0},
+ petHardware:{name:'宠物扣环五金',color:'#b69149',roughness:0.4,metalness:0.55},
+ petBuckle:{name:'宠物扣壳硬塑',color:'#344449',roughness:0.78,metalness:0},
+ petOptic:{name:'未绑定宠物光学片',color:'#63b8c1',roughness:0.4,metalness:0,opacity:.72},
+ petTagMetal:{name:'宠物名牌金属边底',color:'#b29559',roughness:0.4,metalness:0.55},
+ petTagEnamel:{name:'宠物名牌实体珐琅面',color:'#406471',roughness:0.78,metalness:0},
+ petTagInk:{name:'宠物牌面印墨',color:'#e5dab2',roughness:0.78,metalness:0},
+ harnessLiner:{name:'宠物胸背带软衬',color:'#454d49',roughness:0.78,metalness:0},
+ livestockWebbing:{name:'家畜登记佩带',color:'#5c5141',roughness:0.78,metalness:0},
+ livestockTagEnamel:{name:'家畜登记空白牌面',color:'#c49a42',roughness:0.78,metalness:0},
+ birdFootDark:{name:'鸟足深色鳞皮',color:'#454b47',roughness:0.78,metalness:0},
  birdBeakDark:{name:'鸟类深色喙角质',color:'#434744',roughness:.65,metalness:0},
  liveMouth:{name:'活鱼口唇及口缝',color:'#7e4c48',roughness:.65,metalness:0},
  faunaFurGray:{name:'动物灰色被毛',color:'#8b867d',roughness:0.86,metalness:0,...surface('none',.035,0,1300)},

@@ -12,7 +12,7 @@ export const templateCatalog = {
  wall:'墙段',corner:'转角墙',door:'门框',window:'窗框',column:'柱梁',slab:'楼板',steps:'台阶',stairs:'楼梯',railing:'栏杆',roof:'坡屋顶',eaves:'阶梯飞檐',ridge:'屋脊',corridor:'连廊',planter:'种植槽',bed:'床',table:'桌',cabinet:'柜',sofa:'沙发',monitor:'显示器',plant:'植物'
 };
 export function generateTemplate(id:string,name:string,type:string,p:Record<string,number>,cellSize:number,style:Record<string,number>,styleName='yunshan'):Asset{
- if(!(type in templateCatalog))throw new Error('未知模板');if(!Number.isFinite(cellSize)||cellSize<.005||cellSize>1)throw new Error('格距范围 0.005–1m');
+ if(!(type in templateCatalog))throw new Error('未知模板');if(!Number.isFinite(cellSize)||cellSize<.001||cellSize>1)throw new Error('格距范围 0.001–1m');
  assertParameters(type,p);
  if(type in architectureCatalog)return generateArchitecture(id,name,type,p,cellSize,style,styleName);
  if(type==='atelier-bay')return generateAtelier(id,name,p,cellSize,style,styleName);

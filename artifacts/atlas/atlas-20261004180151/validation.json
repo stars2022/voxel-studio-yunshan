@@ -1,0 +1,135 @@
+{
+  "run": "atlas-20261004180151",
+  "status": "passed",
+  "scope": [
+    "CHAR-320",
+    "CHAR-321",
+    "CHAR-322",
+    "CHAR-323",
+    "CHAR-324",
+    "CHAR-325",
+    "CHAR-326",
+    "CHAR-327",
+    "CHAR-328",
+    "CHAR-329",
+    "CHAR-330",
+    "CHAR-331"
+  ],
+  "tests": {
+    "fullRegression": 440,
+    "focused": 7,
+    "focusedScope": "Six wildlife tests and one 1mm core-grid integration test.",
+    "foreignMaterialAllocation": 1,
+    "templateCoreFollowup": 18,
+    "scope": "Full suite started after final wildlife geometry/material/core schema changes. During the run one remaining legacy template pitch guard was aligned from 5mm to 1mm; the final template/core path and expanded 1mm test were additionally rerun after this change."
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 18,
+  "referenceEntries": 12,
+  "catalogMasters": 12,
+  "sharedMasterReferences": [],
+  "componentShapes": 24,
+  "nativeVoxels": 156,
+  "triangles": 44460,
+  "farTriangles": 44452,
+  "defaultGLBIndependentBoundsMaxErrorM": 7.858941653005047e-08,
+  "wearScenes": [
+    {
+      "name": "wildlife-dog-collar-tag",
+      "instances": 3,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.604257204856907e-08,
+      "skinCount": 3,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-cat-collar-tag",
+      "instances": 3,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.4543533322086688e-08,
+      "skinCount": 3,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-dog-harness",
+      "instances": 2,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.604257204856907e-08,
+      "skinCount": 2,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-cat-harness",
+      "instances": 2,
+      "GLBIndependentPoseBoundsMaxErrorM": 1.4543533322086688e-08,
+      "skinCount": 2,
+      "noncollision": true
+    },
+    {
+      "name": "wildlife-cow-tag",
+      "instances": 2,
+      "GLBIndependentPoseBoundsMaxErrorM": 5.740307607027262e-08,
+      "skinCount": 2,
+      "noncollision": true
+    }
+  ],
+  "apertureChecks": 54,
+  "finiteWearFits": 8,
+  "materialSurfaceRoleSamples": 22,
+  "materialInteriorCoordinateChecks": 14,
+  "assetScreenshots": 36,
+  "undersideDetailScreenshots": 12,
+  "wearStudyScreenshots": 20,
+  "parameterRebuildScreenshots": 6,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 532,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 478,
+    "generatedEntries": 590,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 516,
+    "atlasSharedMasterReferences": 3,
+    "atlasUniqueMasters": 513
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "referenceImage": "projects/reference-atlas/images/M043.png",
+    "reviewed": [
+      "All twelve final front and material images through contact sheets; final bee and fish-rig material views inspected individually.",
+      "All twelve final MCP underside images through a contact sheet.",
+      "Six actual parameter-rebuild views: folded butterfly, quadruped stride, raised bird wing, fish tail bend, flexed insect and cat collar.",
+      "All twenty saved wearable-scene views through a contact sheet, and each of five material views inspected individually."
+    ],
+    "findings": [
+      "Heron, stream fish, butterfly and bee have distinct silhouettes with continuous curved neck, fins and thin polygonal wings; smallest native details remain visible where scale permits.",
+      "Bee final overall length is roughly four centimetres. Continuous alternating abdominal bands replace the first jagged patch treatment; historical image and native file retained.",
+      "Skeletons are visibly tooling guides with separate rods, joint markers and sockets. Their displayed finite poses change joint matrices without revoxelising the bound details.",
+      "Collar interiors, adjustment holes, tag eyelets and harness loops remain open; independent triangle and aperture probes provide the geometric evidence beyond screenshots.",
+      "Cat/dog harnesses sit around the specified torso, collars around the specified neck and blank cattle tag hangs vertically. Back and front views show separate straps and retained original animals.",
+      "Polygonal wing borders, angular strap loops, projecting eyes and the retained source animals’ geometric coat patches remain stylised and require human art review. Some source coat patches show fine near-coplanar patterns in close views; no original animal geometry was changed in this batch."
+    ],
+    "humanArtAccepted": 0,
+    "scope": "Assistant visual inspection only. Finite author poses and specific static fits; no claim of human art acceptance, original runtime dimensions, biological motion or load certification."
+  },
+  "sourceCorrections": [
+    "Initial strap intersections, hind toes/leg roots and guide-frame gaps corrected in actual geometry; historical checks retained.",
+    "Bee reduced from roughly 8cm to 4cm full length, retaining 1mm native details. All other eleven default geometry hashes unchanged.",
+    "Initial export verifier encountered an unused global palette role without a mesh primitive. Harness now samples alpha only on actually used primitives and asserts the role is unused when skipping; exporter unchanged."
+  ],
+  "limitations": [
+    "All technical candidates; human art acceptance zero.",
+    "Original species dimensions, animal controllers and source skeleton contracts unavailable.",
+    "Skeleton entries are author tooling guides; old animal skins have not been bound to these skeletons.",
+    "Each component has one rigid joint; no soft weights, gait/flight/swim clips, IK, retargeting or original runtime integration.",
+    "Finite static wearable studies only on CHAR306, CHAR307 and CHAR315. No load, escape-prevention or all-motion certification.",
+    "All visual meshes noncollision; separate skin triangle and aperture checks do not establish physical support.",
+    "Independent viewport fitting does not show comparative metre scale.",
+    "Software WebGL does not certify hardware frame rates."
+  ]
+}

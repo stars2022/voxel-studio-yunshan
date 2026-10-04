@@ -1,0 +1,29 @@
+✔ M043 all 24 authored forms preserve reference provenance, closed oriented primitives, attached native details and actual measured bounds (2876.835002ms)
+✔ M043 checks each original component despite material merging, with connected bind/posed structures and actual open apertures (15709.76393ms)
+✔ M043 six articulated masters retain identical bind geometry and exact rigid owners while real local joints and sockets move (612.319657ms)
+✔ M043 six cat/dog/cow sizes and two actual tag installations clear skin triangles with measured ring contacts (7513.039689ms)
+✔ M043 purpose roles, zero emission, appearance replacement, rollback and one undo preserve bind geometry and 1mm native cells (6603.848729ms)
+✔ M043 preserves all M042 forms and original cat/dog shapes while rejecting unsupported parameters or missing material purposes (4777.9051ms)
+✖ 1mm native details retain metre coordinates through transactions, collision queries, native and GLB export, undo and invalid-pitch rollback (542.596547ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 42692.067819
+
+✖ failing tests:
+
+test at tests/millimetre-grid.test.ts:14:1
+✖ 1mm native details retain metre coordinates through transactions, collision queries, native and GLB export, undo and invalid-pitch rollback (542.596547ms)
+  Error: 未知或不适用的模板参数 thickness（column）；支持 width, height, depth。
+      at assertParameters (/workspace/voxel-studio-yunshan/src/core/template-parameters.ts:12:162)
+      at generateTemplate (/workspace/voxel-studio-yunshan/src/core/templates.ts:16:2)
+      at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:106:163)
+      at Engine.execute (/workspace/voxel-studio-yunshan/src/core/engine.ts:52:39)
+      at commit (/workspace/voxel-studio-yunshan/tests/millimetre-grid.test.ts:15:178)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/millimetre-grid.test.ts:22:2)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
