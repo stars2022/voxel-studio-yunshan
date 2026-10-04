@@ -1,3 +1,5 @@
+import {geometryData} from '../src/core/sky';
+import {inspectLandscapeMaterials} from '../src/production/atlas-landscape';
 import {inspectGroundscapeMaterials} from '../src/production/atlas-groundscape';
 import {inspectEcologyMaterials} from '../src/production/atlas-ecology';
 import {inspectHydrologyMaterials} from '../src/production/atlas-hydrology';
@@ -18,15 +20,17 @@ const records=[];
 for(const row of index.entries){
  const project:Project=JSON.parse(await readFile(path.join('projects',row.file),'utf8'));
  const asset=project.assets[row.assetId],counts=new Map<number,number>();
- assert.equal(createHash('sha256').update(JSON.stringify(asset.chunks)).digest('hex'),row.sha256);
+ assert.equal(createHash('sha256').update(JSON.stringify(geometryData(asset))).digest('hex'),row.sha256);
  for(const[,id]of new Grid(asset.chunks).cells())counts.set(id,(counts.get(id)??0)+1);
+ for(const m of asset.meshes??[])counts.set(m.material,counts.get(m.material)??0);
+ if(asset.sky)for(const id of Object.values(asset.sky.materials))counts.set(id,0);
  const assignments=[...counts].sort(([a],[b])=>a-b).map(([id,occupiedCells])=>{
   const material=project.materials[id];assert.ok(material,`${row.id}: missing material ${id}`);
   const roles=Object.entries(project.styles).flatMap(([style,bindings])=>Object.entries(bindings).filter(([,value])=>value===id).map(([role])=>style+'.'+role));
   assert.ok(roles.length,`${row.id}: material ${id} has no semantic binding`);
-  return{id,roles,category:material.category,name:material.name,solid:material.solid,occupiedCells};
+  return{id,roles,category:material.category,name:material.name,solid:material.solid,occupiedCells,...(asset.meshes?.some(m=>m.material===id)?{meshTriangles:asset.meshes.filter(m=>m.material===id).reduce((n,m)=>n+m.indices.length/3,0)}:{}),...(asset.sky?{usage:'procedural-colour-input',physical:false}:{})};
  });
- const authoredReview=row.id.startsWith('BUILT-')?inspectBuiltMaterialAssignments(row.id,asset,project.styles.yunshan):row.id.startsWith('ENV-')?(inspectGroundscapeMaterials(row.id,asset,project.styles.yunshan)??inspectEcologyMaterials(row.id,asset,project.styles.yunshan)??inspectHydrologyMaterials(row.id,asset,project.styles.yunshan)??inspectEnvironmentMaterials(row.id,asset,project.styles.yunshan)):inspectAtlasMaterialAssignments(Number(row.id.slice(5)),asset,project.styles.yunshan);
+ const authoredReview=row.id.startsWith('BUILT-')?inspectBuiltMaterialAssignments(row.id,asset,project.styles.yunshan):row.id.startsWith('ENV-')?(inspectLandscapeMaterials(row.id,asset,project.styles.yunshan)??inspectGroundscapeMaterials(row.id,asset,project.styles.yunshan)??inspectEcologyMaterials(row.id,asset,project.styles.yunshan)??inspectHydrologyMaterials(row.id,asset,project.styles.yunshan)??inspectEnvironmentMaterials(row.id,asset,project.styles.yunshan)):inspectAtlasMaterialAssignments(Number(row.id.slice(5)),asset,project.styles.yunshan);
  if(authoredReview)assert.deepEqual(asset.source?.materialAssignmentReview,authoredReview,`${row.id}: saved asset predates the material repair`);
  const reviewed=['M007','M008','M009'].includes(row.sheet)||!!authoredReview,legacy=project.styles.yunshan.paper;
  if(reviewed)assert.ok(!counts.has(legacy),`${row.id}: ambiguous legacy paper/cotton material remains`);

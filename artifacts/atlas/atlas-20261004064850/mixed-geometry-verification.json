@@ -1,0 +1,83 @@
+{
+  "run": "atlas-20261004064850",
+  "status": "passed",
+  "gallery": "M030-gallery",
+  "galleryInstancesDisjointUsingActualBounds": true,
+  "records": [
+    {
+      "id": "ENV-088",
+      "params": {
+        "transition": "fill",
+        "roadWidth": 4
+      },
+      "geometrySHA256": "024c08bb519830129f30a94f3f7139a56ff2d5dabff5f59f1bd262dd43f0aaa9",
+      "meshCount": 4,
+      "triangles": 48,
+      "allPrismsClosed": true,
+      "collisionUsesSameVerticesAndIndices": true
+    },
+    {
+      "id": "ENV-088",
+      "params": {
+        "transition": "fill",
+        "roadWidth": 8
+      },
+      "geometrySHA256": "a1dcadc78666786573073703da6b697c5040f46c87fbef1adfa741da1cfefdb9",
+      "meshCount": 4,
+      "triangles": 48,
+      "allPrismsClosed": true,
+      "collisionUsesSameVerticesAndIndices": true
+    },
+    {
+      "id": "ENV-088",
+      "params": {
+        "transition": "cut",
+        "roadWidth": 4
+      },
+      "geometrySHA256": "3ac1998a782eb726b1bab968e796ce6478a3176938b5d238fde58e2829ee184c",
+      "meshCount": 4,
+      "triangles": 48,
+      "allPrismsClosed": true,
+      "collisionUsesSameVerticesAndIndices": true
+    },
+    {
+      "id": "ENV-088",
+      "params": {
+        "transition": "cut",
+        "roadWidth": 8
+      },
+      "geometrySHA256": "36ad8d5e8c1d812c66ccbd1a3cbd00b37eaf74a87aecdf6fb763de6ef01d9f43",
+      "meshCount": 4,
+      "triangles": 48,
+      "allPrismsClosed": true,
+      "collisionUsesSameVerticesAndIndices": true
+    },
+    {
+      "id": "ENV-088",
+      "params": {
+        "transition": "elevated",
+        "roadWidth": 4
+      },
+      "geometrySHA256": "befbb5694f0c778ee0fcf511316a253616aabc80521b2c78b9a08ce0db6bd631",
+      "meshCount": 8,
+      "triangles": 96,
+      "allPrismsClosed": true,
+      "collisionUsesSameVerticesAndIndices": true
+    },
+    {
+      "id": "ENV-088",
+      "params": {
+        "transition": "elevated",
+        "roadWidth": 8
+      },
+      "geometrySHA256": "1bcbf36948bd8317325c1e8e729dcd4b27948a1b37728ad201b0a06274bb9bdc",
+      "meshCount": 8,
+      "triangles": 96,
+      "allPrismsClosed": true,
+      "collisionUsesSameVerticesAndIndices": true
+    }
+  ],
+  "limitations": [
+    "Generic occupied-cell checker only covers voxel blocks. Separate checks here cover closed continuous prisms, shared render/collision geometry, and gallery separation. Original game collision/runtime remains unbound."
+  ]
+}

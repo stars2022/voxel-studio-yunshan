@@ -1,0 +1,80 @@
+{
+  "run": "atlas-20261004064850",
+  "sheet": "M030",
+  "status": "passed",
+  "scope": [
+    "ENV-086",
+    "ENV-088",
+    "ENV-091",
+    "ENV-094",
+    "ENV-096",
+    "ENV-097",
+    "ENV-098",
+    "ENV-104",
+    "ENV-110",
+    "ENV-112",
+    "ENV-113",
+    "ENV-114"
+  ],
+  "modelingDirection": "User correction: voxel minimum components, continuous slopes/curves and textured skies; do not force all shapes to a grid.",
+  "tests": {
+    "fullRegression": 322,
+    "postPresentationFocused": 11,
+    "fullLog": "full-tests.txt",
+    "focusedLog": "focused-tests.txt"
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 12,
+  "componentShapes": 25,
+  "nativeVoxels": 19994,
+  "triangles": 17644,
+  "farTriangles": 17340,
+  "glbBoundsMaxErrorM": 1.9073486345888568e-07,
+  "assetScreenshots": 36,
+  "installationScreenshots": 15,
+  "physicalNightScreenshots": 8,
+  "skyStateScreenshots": 6,
+  "skyCameraFollowScreenshot": 1,
+  "recapturedSkyScreenshots": 6,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 379,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 634,
+    "generatedEntries": 434,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 360
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "All 36 asset views, five installations in three views, eight physical night views and six sky-state views inspected.",
+      "Night cloud layer reduced after visual review; sky-camera following verified with identical pixels after 10km translation.",
+      "Isolated sky ground-plane artifact removed; six affected sky shots recaptured and preserved originals separately.",
+      "Moon uses irregular coherent texture, with the exact revised image embedded and separately exported."
+    ]
+  },
+  "developmentCorrections": [
+    "Replaced 600 geometric star markers with one RGBA sky texture after the user clarified the intended modeling standard.",
+    "Continuous closed terrain prisms replace staircase slope surfaces; voxel blocks remain separate.",
+    "Trimmed four soil cells to the actual low-jar cavity and scoped container openings to retained drainage/mouth regions.",
+    "Corrected MCP undo assertion to account for monotonically increasing asset versions; original failing report retained.",
+    "Clarified metadata that native terrain occupancy describes only the voxel layer; descriptive metadata change did not alter geometry, materials, instances or screenshots.",
+    "Post-regression presentation fixes are covered by the 11-test focused rerun and six-shot browser supplement."
+  ],
+  "limitations": [
+    "Native data separately stores voxel chunks, authored metre-space triangle meshes, and sky descriptors. Sky GLBs are textured snapshots, not original game time bindings.",
+    "The generic occupied-cell checker does not test continuous mesh collisions. Its warning is preserved; separate verification covers closed prisms, matching render/collision geometry and disjoint gallery bounds.",
+    "Original 14000/68/38 sky-size numeric meanings remain unverified; author radius interpretation is explicit. Stars are 600 seeded texture samples in one component, not 600 models.",
+    "No original terrain, FloorPlan, SimState, seating usePoint, power/controller integration or human art acceptance is claimed. Landscape lamps default to zero emission."
+  ]
+}

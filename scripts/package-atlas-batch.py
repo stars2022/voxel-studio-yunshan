@@ -51,7 +51,11 @@ assert audit['pendingCandidates'] == 0
 gallery = next(r for r in index['studies'] if r['id'] == args.sheet + '-gallery')
 gallery_check = next(r for r in read(out / 'gallery-support-audit.json')['records'] if r['id'] == gallery['id'])
 assert not gallery_check['check']['collisions']
-assert not gallery_check['check']['warnings']
+if gallery_check['check']['warnings']:
+    mixed = read(out / 'mixed-geometry-verification.json')
+    assert mixed['status'] == 'passed' and mixed['run'] == index['run']
+    assert mixed['gallery'] == gallery['id'] and mixed['galleryInstancesDisjointUsingActualBounds']
+    assert all('连续网格另按三角面验证' in w for w in gallery_check['check']['warnings'])
 assert all(not r['ownSolidCells'] and not r['blockedBy'] for r in gallery_check['check']['openings'])
 
 files = {root / 'projects/atlas-production-index.json', root / 'projects/reference-atlas/index.json',
@@ -61,12 +65,13 @@ for row in entries + dependencies:
     doc = read(native)
     asset = doc['assets'][row['assetId']]
     # Match the canonical JS serialization used by the producer (UTF-8, compact).
-    digest = hashlib.sha256(json.dumps(asset['chunks'], ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+    digest = hashlib.sha256(json.dumps(asset.get('sky', {'chunks':asset['chunks'],'meshes':asset['meshes']} if 'meshes' in asset else asset['chunks']), ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
     assert digest == row['sha256'], row['id']
     files.add(native)
     run = re.match(r'atlas-\d{14}', row['file']).group()
     for name in ['visual.glb', 'voxels.ysvox.json', 'collision.json', 'interfaces.json', 'atlas.png', 'atlas.json']:
         files.add(root / 'projects/production' / run / 'exports' / row['id'] / name)
+    files.update((root / 'projects/production' / run / 'exports' / row['id']).glob('*-sky.png'))
 for r in shots + [r for r in previews['items'] if r['id'] in {d['id'] for d in dependencies}]:
     files.update(out / 'screenshots' / name for name in r['files'].values())
 for name in [args.sheet + '.png', args.sheet + '.html', 'materials.html', 'materials.png', 'previews.json',
@@ -104,6 +109,14 @@ if (out / 'material-export.json').exists():
     assert {r['id'] for r in material_export['records']} == {r['id'] for r in entries}
     files.add(out / 'material-export.json')
     files.update(root / r['file'] for r in material_export['records'])
+files.update(out.glob('sky-*.png'))
+files.update(out.glob('landscape-*.png'))
+if (out / 'mixed-geometry-verification.json').exists():
+    files.add(out / 'mixed-geometry-verification.json')
+if (out / 'sky-presentation-verification.json').exists():
+    assert read(out / 'sky-presentation-verification.json')['status'] == 'passed'
+    files.add(out / 'sky-presentation-verification.json')
+    files.update(p for p in (out / 'sky-presentation-before').glob('*') if p.is_file())
 files.add(out / 'build.txt')
 manifest = {'format': 'yunshan.atlas-batch', 'version': 1, 'sheet': args.sheet, 'run': index['run'],
             'candidateMasters': len(entries), 'humanArtAccepted': 0, 'assets': entries, 'revisedDependencies': dependencies,
@@ -119,7 +132,7 @@ with ZipFile(args.output, 'w', ZIP_DEFLATED, compresslevel=6) as archive:
 原生权威数据：projects 下的 .ysvox.json，单位米，Y 轴向上。
 把包内 projects 的单件/总览文件复制到编辑器项目目录后打开。
 通用三维查看器可直接打开各 exports 子目录下的 visual.glb。若附有 visual-material.glb，可直接查看参考材质和透明水层。
-碰撞、接口、材质 ID 与图集分别存储，不以 GLB 代替原生体素。
+体素块件、连续网格和天空贴图分别保留权威数据；碰撞、接口、材质 ID 与贴图随包导出。
 制作源码及启动方式：https://github.com/stars2022/voxel-studio-yunshan
 artifacts 内是本批真实截图与验证。仍属待美术验收候选，没有动画或游戏集成。
 ''')

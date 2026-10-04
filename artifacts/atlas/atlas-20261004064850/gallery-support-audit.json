@@ -1,0 +1,140 @@
+{
+  "run": "atlas-20261004064850",
+  "note": "Display galleries are not complete installation scenes. Missing wall supports remain reported; this audit does not suppress them.",
+  "records": [
+    {
+      "id": "M030-gallery",
+      "file": "atlas-20261004064850-m030-gallery.ysvox.json",
+      "elapsedMs": 122.993156,
+      "check": {
+        "pitchM": 0.2,
+        "occupiedCollisionCells": 19978,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "env-086-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 3624
+          },
+          {
+            "instanceIds": [
+              "env-088-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 8000
+          },
+          {
+            "instanceIds": [
+              "env-091-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 1110
+          },
+          {
+            "instanceIds": [
+              "env-094-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 4800
+          },
+          {
+            "instanceIds": [
+              "env-096-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 1162
+          },
+          {
+            "instanceIds": [
+              "env-097-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 760
+          },
+          {
+            "instanceIds": [
+              "env-098-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 278
+          },
+          {
+            "instanceIds": [
+              "env-104-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 244
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "env-086-display": [],
+          "env-088-display": [],
+          "env-091-display": [],
+          "env-094-display": [],
+          "env-096-display": [],
+          "env-097-display": [],
+          "env-098-display": [],
+          "env-104-display": []
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "env-091-display",
+            "index": 0,
+            "widthM": 6,
+            "heightM": 0.6000000000000001,
+            "emptyCells": 360,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "env-096-display",
+            "index": 0,
+            "widthM": 5.2,
+            "heightM": 0.8,
+            "emptyCells": 624,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "env-097-display",
+            "index": 0,
+            "widthM": 0.4,
+            "heightM": 0.4,
+            "emptyCells": 8,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "env-097-display",
+            "index": 1,
+            "widthM": 0.4,
+            "heightM": 0.4,
+            "emptyCells": 8,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [],
+        "warnings": [
+          "env-088-display: 本检查仅覆盖体素块件；连续网格另按三角面验证，不能据此宣称全资产碰撞通过。"
+        ],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ]
+      },
+      "priorDiagnostics": null
+    }
+  ]
+}

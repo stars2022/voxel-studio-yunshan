@@ -15,7 +15,9 @@ export function displayAsset(a:Asset,layer:number|null,region:Bounds|null):Asset
 // Each cache entry retains the snapshot it actually meshed, including hidden assets.
 // Comparing against the last global document would miss edits made while hidden.
 export function dirtyMeshChunks(old:Asset|undefined,next:Asset,force=false){
- const changed=new Set<string>();const all=force||!old||old.cellSize!==next.cellSize||JSON.stringify(old.origin)!==JSON.stringify(next.origin);
+ if(next.meshes)return force||!old||JSON.stringify(old)!==JSON.stringify(next)?['hybrid']:[];
+ if(next.sky)return force||!old||JSON.stringify(old.sky)!==JSON.stringify(next.sky)||JSON.stringify(old.origin)!==JSON.stringify(next.origin)?['sky']:[];
+ const changed=new Set<string>();const all=force||!!old?.sky||!!old?.meshes||!old||old.cellSize!==next.cellSize||JSON.stringify(old.origin)!==JSON.stringify(next.origin);
  for(const ck of new Set([...Object.keys(next.chunks),...Object.keys(old?.chunks??{})]))if(all||JSON.stringify(old!.chunks[ck])!==JSON.stringify(next.chunks[ck])){
   changed.add(ck);const b=ck.split(',').map(Number);for(let axis=0;axis<3;axis++)for(const sign of[-1,1]){const n=[...b];n[axis]+=sign;changed.add(n.join(','));}
  }

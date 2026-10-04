@@ -10,7 +10,7 @@ function checkConnectedGeometry(p:Project,clearances:{name:string,min:V3,max:V3}
  const worldBox=(a:Project['assets'][string],i:Project['instances'][string],box:Bounds):Bounds=>{const a0=worldPoint(a,i,box.min),a1=worldPoint(a,i,box.max);return{min:a0.map((n,d)=>Math.round(Math.min(n,a1[d])/pitch)) as V3,max:a0.map((n,d)=>Math.round(Math.max(n,a1[d])/pitch)) as V3};};
  const grids=new Map<string,Grid>();
  for(const i of Object.values(p.instances)){
-  const a=p.assets[i.assetId];if(!grids.has(a.id))grids.set(a.id,new Grid(a.chunks));const g=grids.get(a.id)!,scale=Math.round(a.cellSize/pitch),nativeRows=new Map<string,{y:number;z:number;ranges:[number,number][]}>();
+  const a=p.assets[i.assetId];if(a.meshes?.some(m=>m.collision))warnings.push(`${i.id}: 本检查仅覆盖体素块件；连续网格另按三角面验证，不能据此宣称全资产碰撞通过。`);if(!grids.has(a.id))grids.set(a.id,new Grid(a.chunks));const g=grids.get(a.id)!,scale=Math.round(a.cellSize/pitch),nativeRows=new Map<string,{y:number;z:number;ranges:[number,number][]}>();
   const b:Bounds={min:[Infinity,Infinity,Infinity],max:[-Infinity,-Infinity,-Infinity]};bounds[i.id]=b;
   if(Math.abs(a.cellSize/pitch-scale)>1e-6||[...a.origin,...i.position].some(n=>Math.abs(n/pitch-Math.round(n/pitch))>1e-6)){warnings.push(`${i.id}: 不共格，跳过精确碰撞；需重采样或调整原点。`);continue;}
   for(const[v,m]of g.cells()){

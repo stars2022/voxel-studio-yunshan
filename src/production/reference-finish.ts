@@ -3,10 +3,22 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=21;
+export const referenceFinishVersion=22;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ drainGrate:{name:'排水孔篦钢材',color:'#536067',roughness:.45,metalness:.75,...surface('metal',.4,.12,875)},
+ landscapeGlass:{name:'景观灯罩玻璃',color:'#dfcca0',roughness:.7,metalness:0,opacity:.7,...surface('none',.4,0,876)},
+ landscapeEmitter:{name:'景观灯光学芯',color:'#f1ce88',roughness:.7,metalness:0,...surface('none',.4,0,877)},
+ skyZenith:{name:'天空白昼天顶色',color:'#32699b',roughness:.7,metalness:0,...surface('none',.4,0,878)},
+ skyHorizon:{name:'天空白昼地平色',color:'#aecbde',roughness:.7,metalness:0,...surface('none',.4,0,879)},
+ skyDusk:{name:'天空晨昏霞色',color:'#f4aa75',roughness:.7,metalness:0,...surface('none',.4,0,880)},
+ skyNight:{name:'天空夜色',color:'#071125',roughness:.7,metalness:0,...surface('none',.4,0,881)},
+ sunSurface:{name:'太阳视觉表面',color:'#fff2b1',roughness:.7,metalness:0,...surface('none',.4,0,882)},
+ sunEdge:{name:'太阳视觉边缘',color:'#f7bd57',roughness:.7,metalness:0,...surface('none',.4,0,883)},
+ moonSurface:{name:'月亮视觉表面',color:'#dbe4ed',roughness:.7,metalness:0,...surface('none',.4,0,884)},
+ moonMaria:{name:'月亮作者斑区',color:'#7e91a5',roughness:.7,metalness:0,...surface('none',.4,0,885)},
+ starPoint:{name:'天空星点视觉',color:'#daeaff',roughness:.7,metalness:0,...surface('none',.4,0,886)},
  grassBlade:{name:'草叶片',color:'#79913c',roughness:.95,metalness:0,...surface('none',.5,0,860)},
  fernFrond:{name:'蕨类羽片',color:'#578046',roughness:.95,metalness:0,...surface('none',.5,0,861)},
  groundcoverLeaf:{name:'阔叶地被叶片',color:'#3f7553',roughness:.95,metalness:0,...surface('none',.5,0,862)},
