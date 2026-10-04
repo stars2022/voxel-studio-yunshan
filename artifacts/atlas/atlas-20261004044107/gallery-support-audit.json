@@ -1,0 +1,129 @@
+{
+  "run": "atlas-20261004044107",
+  "note": "Display galleries are not complete installation scenes. Missing wall supports remain reported; this audit does not suppress them.",
+  "records": [
+    {
+      "id": "M028-gallery",
+      "file": "atlas-20261004044107-m028-gallery.ysvox.json",
+      "elapsedMs": 685.1360339999999,
+      "check": {
+        "pitchM": 0.2,
+        "occupiedCollisionCells": 90816,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "env-037-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 52076
+          },
+          {
+            "instanceIds": [
+              "env-038-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 20038
+          },
+          {
+            "instanceIds": [
+              "env-043-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 0
+          },
+          {
+            "instanceIds": [
+              "env-050-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 2420
+          },
+          {
+            "instanceIds": [
+              "env-052-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 1656
+          },
+          {
+            "instanceIds": [
+              "env-054-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 2240
+          },
+          {
+            "instanceIds": [
+              "env-055-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 1418
+          },
+          {
+            "instanceIds": [
+              "env-056-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 917
+          },
+          {
+            "instanceIds": [
+              "env-057-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 3585
+          },
+          {
+            "instanceIds": [
+              "env-059-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 6306
+          },
+          {
+            "instanceIds": [
+              "env-060-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 60
+          },
+          {
+            "instanceIds": [
+              "env-061-display"
+            ],
+            "pitchM": 0.2,
+            "occupiedCells": 100
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "env-037-display": [],
+          "env-038-display": [],
+          "env-043-display": [],
+          "env-050-display": [],
+          "env-052-display": [],
+          "env-054-display": [],
+          "env-055-display": [],
+          "env-056-display": [],
+          "env-057-display": [],
+          "env-059-display": [],
+          "env-060-display": [],
+          "env-061-display": []
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ]
+      },
+      "priorDiagnostics": null
+    }
+  ]
+}

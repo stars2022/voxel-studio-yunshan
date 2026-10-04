@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 324,
-    "remainingReferenceEntries": 469,
-    "completedReferenceSheets": 27,
+    "referenceCandidates": 336,
+    "remainingReferenceEntries": 457,
+    "completedReferenceSheets": 28,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 343,
+      "baseModels": 355,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 670,
-      "generatedEntries": 398,
+      "notProduced": 658,
+      "generatedEntries": 410,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 324
+      "atlasReferenceCandidates": 336
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M027",
+    "sheet": "M028",
     "state": "validated-for-batch-push",
     "ids": [
-      "ENV-014",
-      "ENV-015",
-      "ENV-016",
-      "ENV-017",
-      "ENV-019",
-      "ENV-026",
-      "ENV-027",
-      "ENV-028",
-      "ENV-029",
-      "ENV-032",
-      "ENV-034",
-      "ENV-035"
+      "ENV-037",
+      "ENV-038",
+      "ENV-043",
+      "ENV-050",
+      "ENV-052",
+      "ENV-054",
+      "ENV-055",
+      "ENV-056",
+      "ENV-057",
+      "ENV-059",
+      "ENV-060",
+      "ENV-061"
     ],
-    "run": "atlas-20261004035714",
-    "evidence": "artifacts/atlas/atlas-20261004035714"
+    "run": "atlas-20261004044107",
+    "evidence": "artifacts/atlas/atlas-20261004044107"
   },
-  "nextBatch": "M028",
+  "nextBatch": "M029",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作真实体素、独立材质角色、部件、安装接口及开口",
@@ -66,18 +66,17 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M027共324件技术转化候选；尚余469条参考未完成，人工美术验收为0。"
+    "M001–M028共336件技术转化候选；尚余457条参考未完成，人工美术验收为0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "M028十二件：ENV037上游来水/瀑口岩唇、038缓岸/陡岸、043静态泡沫、050错层乔木、052近远林冠代理、054松、055柏、056竹、057阔叶、059附岩根脚、060低灌木、061分枝花灌木。",
-    "继续米制Y-up、完整0.2m原生格、真实接地/支撑/人体净空、语义角色、近远轮廓/昼夜/近景实拍。原terrainHeight/坡度湿度高度分区/道路建筑排除/生态权威状态缺失需明确，不能以group名当物种完成。",
-    "037水源/岩唇/水床应同源；可衔接M027的153m水帘但不要凭空源水，原世界崖高仍未提供。038缓坡/岩岸/砾滩按断面参数，真厚土岩，不重复城市护岸。",
-    "043源描述80块量化实例共母版；不每块计模型，静态泡沫不冒称粒子寿命/冲击动画。M027已有独立waterFoam；非碰撞零发光。",
-    "050原16–31m参数及4层冠可作范围依据，需实际分叉枝架/叶团透空，不用细杆顶大盒。052原近4层/远2层及384m批次说明不是现成运行绑定；远冠不应削失冠量，需实际预算与轮廓证据。",
-    "054松针阶冠、055柏柱冠、056竹节竿/分枝叶、057宽阔叶冠必须轮廓和结构可辨，不能仅给同盒冠换色。竹竿/叶/花材质按实际用途独立，必要时新增角色。",
-    "059板根/浅根/附岩根共接口族，实际多点接地，不用装饰冒称地形支撑。060源2.8×1.8×2.2m低灌木需细化枝叶；061低矮/展开冠及花色不各算清单母版。",
-    "M027170用途角色，189treeBark、190soilSubstrate、191waterWornRock、192flowWater、193fallWater、194waterFoam、195distantRock、196rootHeartwood；按styles映射保留自定义ID。",
-    "水网合成工具hydrology-composition.ts拒绝全占用格重叠，保留原母版但需显式重建；water-flow.ts提供共享顶点/T接点/静态累积米制UV。远景仍仅手动共面合并，非自动距离LOD/原生物理粗化。"
+    "M029十二件：ENV062近景草、064蕨/阔叶地被、065细茎芦苇、066荷叶/湿岸叶簇、067附壁垂藤、069落叶枯枝倒木、077建筑基底/地下开挖、078建筑群肩坡、081多点接地基础、082石挡墙、084压顶/泄水缝、085干砌石/田埂。",
+    "继续完整0.2m格、米制Y-up、占用/显示/碰撞同源、真实接地和人体通路、近远轮廓/昼夜/近景实拍。原地形、footprint/地下层/楼层门位及生态分区缺失，作者安装样件不能称原运行通过。",
+    "062原三株0.2m方茎、0.4/0.6m高度；不把单簇称完整草坡。064蕨/阔叶地被需不同轮廓、真实叶轴和叶片，不糊平面。065原四茎0.2×1.6×0.2m簇应补穗叶且根植实岸床。066依据明确静水深度，不把荷塘放急瀑/深河。",
+    "067实际附壁挂点与通路/落水避让；原每tile最多360块仅是源描述，没有原tile时需明确作者预算。069落叶/枯枝/倒木有限套装，真接地、可读空洞，不堵公共路；不按每叶/每枝/换色计母版。",
+    "077实际footprint找平与地下开挖，保真院孔/地下入口；楼板模型归建筑域。078原54m/.82广肩坡抹平悬崖是已知缺陷，不能照做后声称真挡墙完成，应作明确局部街台研究，保留原参数含义待核。",
+    "081岩/土地基多点承托，防孤立尖锥、悬空/巨墙；082挡墙基础、收分、墙背填土和墙脚真接触，不能贴墙遮坑。084压顶/滴水缘/泄水孔须实通；085矮石埂/农地/通路/水沟同高程，不能漂浮围圈；均不是结构或水力认证。",
+    "M028共183用途角色；197canopyLeaf、198canopyLeafTip、199pineNeedle、200cypressScale、201bambooCulm、202bambooNode、203bambooBlade、204shrubTwig、205shrubLeaf、206shrubBlossom、207wetSoil、208reedBlade、209pollenAnther。竹组织实体plant，枝wood，叶花非碰撞零发光。按实际用途补新角色，保留自定义ID。",
+    "水系原生合并保留源母版与变换，先拒绝任何重叠再合并，须显式重建依赖；foam80仅一个母版并集，非GPU实例。静态流向UV/共面合并不是流体/自动距离LOD。生态默认配方与安装场景见atlas-ecology.ts/ecology-assembly.ts。"
   ]
 }

@@ -1,3 +1,4 @@
+import {ecologyRecipes,ecologyParameters} from './atlas-ecology';
 import {hydrologyRecipes,hydrologyParameters} from './atlas-hydrology';
 import {environmentRecipes,environmentParameters} from './atlas-terrain';
 import {readFile,lstat} from 'node:fs/promises';
@@ -29,7 +30,7 @@ export async function readProductionLibrary(root:string,args:any){
 export function productionRecipes(p:Project,args:any){
  const q=String(args.query??'').toLowerCase(),models:(Record<string,unknown>&{id:string;name:string})[]=Object.entries(lifeRecipes).map(([n,r])=>{const id='LIFE-'+n.padStart(3,'0');return{id,kind:'base',name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,...(atlasLifeRecipes[Number(n)]?{recipeRevision:3,reference:atlasSource(id),limitations:atlasLifeRecipes[Number(n)].limits}:{}),parameters:[1,2,3,4,10,11,14,15,16].includes(Number(n))?{width:{minimum:r.size[0]*.75,maximum:r.size[0]*1.5,default:r.size[0],unit:'metres'}}:{}};});
  for(const[id,r]of Object.entries(atlasBuiltRecipes))models.push({id,kind:'base',name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,recipeRevision:3,reference:atlasSource(id),limitations:r.limits,parameters:builtWidthParameter(id)});
- for(const[id,r]of Object.entries({...environmentRecipes,...hydrologyRecipes}))models.push({id,kind:'base',name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,recipeRevision:3,reference:atlasSource(id),limitations:r.limits,parameters:hydrologyRecipes[id]?hydrologyParameters(id):environmentParameters(id)});
+ for(const[id,r]of Object.entries({...environmentRecipes,...hydrologyRecipes,...ecologyRecipes}))models.push({id,kind:'base',name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,recipeRevision:3,reference:atlasSource(id),limitations:r.limits,parameters:ecologyRecipes[id]?ecologyParameters(id):hydrologyRecipes[id]?hydrologyParameters(id):environmentParameters(id)});
  const layouts=Object.keys(lifeLayouts).map(n=>{const id='LIFE-'+n.padStart(3,'0');return{id,kind:'assembly',name:p.catalog?.entries[id]?.source['中文名称']??id,dependencies:layoutDependencies(Number(n)),instances:lifeLayouts[Number(n)].length};});
  const rows=[...models,...layouts].filter(e=>!q||(e.id+' '+e.name).toLowerCase().includes(q)).sort((a,b)=>a.id.localeCompare(b.id));
  return{units:'metres',upAxis:'Y',geometryStage:'candidate',runtimeIntegration:false,...page(rows,args)};

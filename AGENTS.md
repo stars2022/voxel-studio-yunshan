@@ -40,3 +40,5 @@
 - 自然完整基岩 bedrock、风化岩层 weatheredRock、soil 类表土 surfaceSoil、非碰撞苔层 moss/灌木 shrubFoliage 和浸水木桩 wetPileWood、缆车钢导轮 cableSheave 独立赋值；钢导轮与轮轨踏面 railWheel 分开。ENV 保留完整0.2m权威占用；远景只能按已验证方法派生，不能把共面合并称为自动距离LOD或粗采样物理格。真穿洞用三维占用和同步碰撞，不用单值高度场冒充。住宅悬挑梁原安装0、共享尺寸未批准时，新作仅为作者研究；梁端承托中心原点、实际墙支承和身体净空需明确，不凭图为旧住宅增加可走面。夜景是编辑器光照预览，不等于原游戏时钟/运行集成。
 
 - 自然树皮及木质根 treeBark、截面心材 rootHeartwood、深土 soilSubstrate、水蚀岩 waterWornRock、非碰撞远景岩 distantRock 分别赋值。流水 flowWater、水帘 fallWater、泡沫 waterFoam 独立 water 角色，均非碰撞且零发光；静态泡沫不能借灯芯。水系完整0.2m占用为权威，近远网格共享共面水顶点、处理T接点并保留累积米制流向UV；这不是流体、流速或纹理动画。接续样件先查实际格无重叠再合成原生并集，保存源母版/参数/变换与显式重建限制，不把独立实例端面的重合称无缝。153m落差/24m帘宽、50m半径/24边潭保留原给定量；缺原九点河线、世界高程、23峰参数时只能标作者候选。
+
+- 成熟阔叶 canopyLeaf、松针 pineNeedle、柏鳞叶 cypressScale、竹叶 bambooBlade 与灌木叶 shrubLeaf 按用途独立；新梢 canopyLeafTip 只赋真实嫩梢，不能把同盒冠换色称不同树种。竹竿 bambooCulm、竹节/节隔 bambooNode 为实体 plant，细枝 shrubTwig 为 wood，叶花非碰撞；花瓣 shrubBlossom、花药 pollenAnther 均零发光，不能借灯芯。湿岸土 wetSoil 为 soil，挺水叶 reedBlade 为 plant。完整0.2m竹竿须明确量化外径并保留实际节间空腔。ENV050原16–31m“高程参数”未获原源码时只作作者树高研究；ENV052近4/远2层、384m批次不能冒称现成距离LOD绑定。ENV043的80放置只算一个泡沫母版，原生并集保留源放置，不称GPU实例/粒子动画。根系装饰与明确作者承托岩样分开说明，原地形未收件不声称已贴合。

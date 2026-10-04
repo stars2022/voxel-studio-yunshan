@@ -1,0 +1,622 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209
+    }
+  },
+  "assets": [
+    {
+      "id": "ground",
+      "name": "明确作者承托岩地（辅助；非原terrainHeight）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    },
+    {
+      "id": "tree-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              80,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              72,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -21,
+              25,
+              -22
+            ],
+            "max": [
+              24,
+              74,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              28,
+              -28
+            ],
+            "max": [
+              31,
+              78,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              68,
+              -4
+            ],
+            "max": [
+              5,
+              80,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "tree-24",
+      "name": "既有量化乔木树干与错层冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            18,
+            0,
+            17
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -43,
+              0,
+              -42
+            ],
+            "max": [
+              47,
+              120,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              0,
+              -11
+            ],
+            "max": [
+              13,
+              106,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -31,
+              36,
+              -32
+            ],
+            "max": [
+              36,
+              111,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -43,
+              42,
+              -42
+            ],
+            "max": [
+              47,
+              116,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -11,
+              102,
+              -6
+            ],
+            "max": [
+              7,
+              120,
+              11
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "tree-31",
+      "name": "既有量化乔木树干与错层冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            23,
+            0,
+            22
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -55,
+              0,
+              -55
+            ],
+            "max": [
+              60,
+              155,
+              55
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -15,
+              0,
+              -15
+            ],
+            "max": [
+              16,
+              137,
+              16
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -40,
+              46,
+              -42
+            ],
+            "max": [
+              46,
+              143,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -55,
+              55,
+              -55
+            ],
+            "max": [
+              60,
+              150,
+              55
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -15,
+              132,
+              -8
+            ],
+            "max": [
+              9,
+              155,
+              14
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "ground-1",
+      "assetId": "ground",
+      "name": "明确作者承托岩地（辅助；非原terrainHeight）",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tree-16-1",
+      "assetId": "tree-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tree-24-1",
+      "assetId": "tree-24",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        30,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "tree-31-1",
+      "assetId": "tree-31",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        60,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

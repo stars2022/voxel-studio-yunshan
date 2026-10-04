@@ -3,10 +3,23 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=19;
+export const referenceFinishVersion=20;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ canopyLeaf:{name:'冠层成熟叶片',color:'#537d38',roughness:.95,metalness:0,...surface('none',.5,0,847)},
+ canopyLeafTip:{name:'冠层新梢叶芽',color:'#97ad49',roughness:.95,metalness:0,...surface('none',.5,0,848)},
+ pineNeedle:{name:'松针束',color:'#456b48',roughness:.95,metalness:0,...surface('none',.5,0,849)},
+ cypressScale:{name:'柏树鳞叶枝簇',color:'#3f7047',roughness:.95,metalness:0,...surface('none',.5,0,850)},
+ bambooCulm:{name:'活竹竿组织',color:'#68813c',roughness:.95,metalness:0,...surface('none',.5,0,851)},
+ bambooNode:{name:'竹节及节隔组织',color:'#a5af54',roughness:.95,metalness:0,...surface('none',.5,0,852)},
+ bambooBlade:{name:'竹叶片',color:'#80963a',roughness:.95,metalness:0,...surface('none',.5,0,853)},
+ shrubTwig:{name:'灌木木质细枝',color:'#75553b',roughness:.95,metalness:0,...surface('wood',.5,.2,854)},
+ shrubLeaf:{name:'灌木成熟叶',color:'#54763b',roughness:.95,metalness:0,...surface('none',.5,0,855)},
+ shrubBlossom:{name:'花灌木花簇花瓣',color:'#ce8191',roughness:.95,metalness:0,...surface('none',.5,0,856)},
+ wetSoil:{name:'湿润岸土沉积',color:'#6a6048',roughness:1,metalness:0,...surface('stone',.5,.2,857)},
+ reedBlade:{name:'滨岸挺水草叶',color:'#819448',roughness:.95,metalness:0,...surface('none',.5,0,858)},
+ pollenAnther:{name:'花簇花药组织',color:'#dbc76b',roughness:.95,metalness:0,...surface('none',.5,0,859)},
  treeBark:{name:'树皮及木质根外层',color:'#795333',roughness:.98,metalness:0,...surface('wood',.65,.25,641)},
  soilSubstrate:{name:'自然深层土壤',color:'#594737',roughness:1,metalness:0,...surface('stone',.35,.18,643)},
  waterWornRock:{name:'灰白水蚀岩',color:'#b9bdb0',roughness:.8,metalness:0,...surface('stone',.7,.18,645)},

@@ -2,7 +2,7 @@ import {Grid} from '../core/grid';
 import {eachCell,type Asset,type Command,type V3} from '../core/types';
 import {waterFlow,type WaterFlow} from '../core/water-flow';
 import {Shapes} from './shapes';
-import {makeHydrologyAsset} from './atlas-hydrology';
+import {makeCatalogAsset} from './catalog-assets';
 
 /** Exact native union. Reject overlaps instead of hiding intersecting water or
  * rock behind a render-only merge. Original masters remain in the document. */
@@ -32,7 +32,7 @@ export function composeHydrology(id:string,items:{asset:Asset;position:V3;instan
 export function compileHydrologyScene(commands:Command[],s:Record<string,number>,id:string,flow:WaterFlow):Command[]{
  const assets=new Map<string,Asset>(),items:{asset:Asset;position:V3;instanceId:string}[]=[];
  for(const c of commands){
-  if(c.op==='produceCatalogAsset')assets.set(c.id,makeHydrologyAsset(c.catalogId,c.id,c.id,s,c.params));
+  if(c.op==='produceCatalogAsset')assets.set(c.id,makeCatalogAsset(c.catalogId,c.id,c.id,s,c.params));
   else if(c.op==='createAsset')assets.set(c.id,{id:c.id,name:c.name,version:1,category:'base',cellSize:c.cellSize,origin:[0,0,0],chunks:{},parts:[],ports:[],openings:[]});
   else if(c.op==='voxels'){const a=assets.get(c.assetId)!;const g=new Grid(a.chunks);if(!['fill','remove'].includes(c.mode))throw new Error('Unsupported hydrology fixture edit');eachCell(c.region,p=>g.set(p,c.mode==='remove'?0:c.material));a.chunks=g.serialize();}
   else if(c.op==='instance'){if(c.rotation||c.parent)throw new Error('Hydrology fixture supports unparented translations');items.push({asset:assets.get(c.assetId)!,position:c.position,instanceId:c.id});}
