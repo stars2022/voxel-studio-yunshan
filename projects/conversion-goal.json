@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 276,
-    "remainingReferenceEntries": 517,
-    "completedReferenceSheets": 23,
+    "referenceCandidates": 288,
+    "remainingReferenceEntries": 505,
+    "completedReferenceSheets": 24,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 295,
+      "baseModels": 307,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 718,
-      "generatedEntries": 350,
+      "notProduced": 706,
+      "generatedEntries": 362,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 276
+      "atlasReferenceCandidates": 288
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M023",
+    "sheet": "M024",
     "state": "validated-for-batch-push",
     "ids": [
-      "BUILT-225",
-      "BUILT-232",
-      "BUILT-233",
-      "BUILT-234",
-      "BUILT-235",
-      "BUILT-240",
-      "BUILT-241",
-      "BUILT-242",
-      "BUILT-243",
-      "BUILT-244",
-      "BUILT-245",
-      "BUILT-246"
+      "BUILT-248",
+      "BUILT-249",
+      "BUILT-250",
+      "BUILT-251",
+      "BUILT-268",
+      "BUILT-269",
+      "BUILT-270",
+      "BUILT-273",
+      "BUILT-276",
+      "BUILT-286",
+      "BUILT-287",
+      "BUILT-288"
     ],
-    "run": "atlas-20261004010658",
-    "evidence": "artifacts/atlas/atlas-20261004010658"
+    "run": "atlas-20261004014608",
+    "evidence": "artifacts/atlas/atlas-20261004014608"
   },
-  "nextBatch": "M024",
+  "nextBatch": "M025",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作真实体素、独立材质角色、部件、安装接口及开口",
@@ -66,15 +66,15 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M023共276件技术转化候选；尚余517条参考未完成，人工美术验收为0。"
+    "M001–M024共288件技术转化候选；尚余505条参考未完成，人工美术验收为0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "M024共12件：BUILT-248、249、250、251、268、269、270、273、276、286、287、288。斗拱、独立木纸灯笼、石基边角、A1开敞木门框、滑行道/机位/登机接台/合法边界/星港泊位、轮毂、载具门壳和列车端连挂。",
-    "249源规格要求实际三角形≤1800，251要求≤2500；必须按真实GLB/网格计数，不用体素数替代三角数。250破边限定0.2–0.6m并留在真实solid范围，不能侵占通路。",
-    "251为外部原模型待收件条目；原GLB/task像素未提供，不可把新作者版本称为原件已验证。可保留原记录并制作明确标注的替代候选：外3.6×3×0.3m，贯穿洞3.2×2.8m，局部0.05m格距，原件仍待核。",
-    "机场类共享route、stand id、机型翼展、鼻向、登离/租用/权限/保存均缺权威运行时；几何母版和明确作者接口可先转换，不能伪造可驾驶、W上机、自动保存或用装饰Torus冒称真实泊位。禁止复制飞机和复用实例充基础母版数量。",
-    "286轮组与转向轴须有明确车体离地高接口，287门壳不替代真实body/权限，288列车端连接应按明确车厢位置安装；动静态能力分开记录。",
-    "角色库143项，新增projectorLens/projectorEmitter/timberWindowSeal；component只对各家族验证选项开放。检查混合格距可整除与位姿相位；先构建再拍图，MCP使用独立runtime。"
+    "M025共12件：BUILT-289–297、300、307、308。轻轨/磁浮底座、索夹吊架、渡船船体/甲板栏/接板、客机起落架/翼/发动机/尾翼、系船柱护舷、岸桥台与桥板梁墩支座。",
+    "289轮轨与磁浮须为真实不同结构，不只换色；290挂点沿明确cable-line/route，从轿厢顶实际接索，避客舱通路。原车型和运行时缺失继续标作者接口样件。",
+    "291–293/300需显式水线、船体厚底、真实甲板缺口和岸船接板；未提供停稳/权限状态，不以几何测试冒称W登离、浮力或无条件跨水传送。系船柱与护舷不可侵占公共通道。",
+    "294–297须区分起落架压缩/收起、左右主翼、推力吊舱真实进排气孔与水平/垂直尾翼；原flight/yaw/pitch/机位/尺寸表缺失，不使用已有17m代理或14m整块body冒称实际翼母版。",
+    "307真实岸侧terrain采点与桥板岸路，非电梯landing；308桥板/主梁/墩帽支承层级真实接触。保留旧五配方/存档及隔离巨块/ray/lowerpier负例边界。明确试架仅验证原生几何。",
+    "角色库147项；新增airfieldYellow170、airfieldRed171、couplerHose172、airfieldWhite173按用途分类，通过styles读取。component仅开放各家族验证选项，混合格距相位须精确可整除；先构建再拍图。"
   ]
 }

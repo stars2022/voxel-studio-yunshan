@@ -1,0 +1,890 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173
+    }
+  },
+  "assets": [
+    {
+      "id": "bracket",
+      "name": "精细体素梁端斗拱母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            0.8
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "post",
+          "kind": "bracket-post",
+          "position": [
+            0.8,
+            0,
+            0.4
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.4,
+            0,
+            0.4
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "beam",
+          "kind": "bracket-beam",
+          "position": [
+            0.8,
+            0.8,
+            0.4
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            0.8
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              64,
+              32,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柱顶榫块与两级短木托",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              0,
+              4
+            ],
+            "max": [
+              56,
+              24,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "正交上承托和真实退层肩",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              20,
+              0
+            ],
+            "max": [
+              64,
+              32,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两端钢夹与短木外榫",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              24,
+              8
+            ],
+            "max": [
+              62,
+              32,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立铜榫销",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              12,
+              3
+            ],
+            "max": [
+              61,
+              29,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立梁端斗拱：三层交错短木托、实榫肩、钢夹与铜锁，接柱和梁的真实承面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              64,
+              32,
+              32
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "lantern",
+      "name": "精细体素独立木纸灯笼母版A3",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.6000000000000001,
+            0,
+            0.6000000000000001
+          ],
+          "pitch": 0.025
+        },
+        {
+          "id": "hang",
+          "kind": "lantern-hook",
+          "position": [
+            0.3,
+            1.175,
+            0.3
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.1,
+            0,
+            0.05
+          ],
+          "pitch": 0.025
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              24,
+              48,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四根木骨与上下木托",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              12,
+              0
+            ],
+            "max": [
+              24,
+              38,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立四面纸罩与真实内腔",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              14,
+              3
+            ],
+            "max": [
+              21,
+              36,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "内侧实体灯托与独立暖芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              14,
+              10
+            ],
+            "max": [
+              14,
+              36,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "铜帽、贯通挂环和真实挂孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              37,
+              1
+            ],
+            "max": [
+              23,
+              48,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "非碰撞布穗与织物悬结",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              0,
+              10
+            ],
+            "max": [
+              14,
+              12,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "独立木纸灯笼A3：四面真纸罩、木骨架、独立光芯、铜挂环和非碰撞织物穗",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              24,
+              48,
+              24
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            6,
+            16,
+            6
+          ],
+          "max": [
+            9,
+            34,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stone-edge",
+      "name": "石基台边角与破边视觉模块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.8,
+            0,
+            1.8
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              36,
+              12,
+              36
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续有限砂浆承床",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              36,
+              2,
+              36
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两层错缝石块和独立缝隙",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              0
+            ],
+            "max": [
+              35,
+              10,
+              35
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "浅石压面和真实破角",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              10,
+              0
+            ],
+            "max": [
+              35,
+              12,
+              35
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "侧边小钢连接和铜定位销",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              2,
+              0
+            ],
+            "max": [
+              9,
+              6,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "石基边角破边模块：0.2–0.6m真实石块、错缝、有限缺角及独立砂浆承床",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              36,
+              12,
+              36
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "a1-frame",
+      "name": "A1开敞木门框原模型待收件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            0.30000000000000004
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              60,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两根完整木柱和真实开敞净洞",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              60,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "柱脚石套与榫肩钢夹",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              54,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "前侧浅榫和端部铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              48,
+              0
+            ],
+            "max": [
+              72,
+              58,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "柱前独立内嵌暖芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              16,
+              0
+            ],
+            "max": [
+              71,
+              34,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "A1开敞木门框替代候选：外3.6×3×0.3m、真净洞3.2×2.8m、薄木榫与独立钢铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              60,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            4,
+            0,
+            0
+          ],
+          "max": [
+            68,
+            56,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "craft-support",
+      "name": "柱梁与灯环实托钩，辅助安装试架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.025,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "support-1",
+      "assetId": "craft-support",
+      "name": "柱梁与灯环实托钩，辅助安装试架",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "bracket-1",
+      "assetId": "bracket",
+      "name": "精细体素梁端斗拱母版",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "lantern-1",
+      "assetId": "lantern",
+      "name": "精细体素独立木纸灯笼母版A3",
+      "position": [
+        2.4,
+        1.5,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "stone-1",
+      "assetId": "stone-edge",
+      "name": "石基台边角与破边视觉模块",
+      "position": [
+        4,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "frame-1",
+      "assetId": "a1-frame",
+      "name": "A1开敞木门框原模型待收件",
+      "position": [
+        7,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "run": "atlas-20261004014608",
+  "sheet": "M024",
+  "scope": [
+    "BUILT-248",
+    "BUILT-249",
+    "BUILT-250",
+    "BUILT-251",
+    "BUILT-268",
+    "BUILT-269",
+    "BUILT-270",
+    "BUILT-273",
+    "BUILT-276",
+    "BUILT-286",
+    "BUILT-287",
+    "BUILT-288"
+  ],
+  "tests": {
+    "fullRegression": 261,
+    "targeted": 10,
+    "fullLog": "full-tests.txt",
+    "targetedLog": "targeted-tests-final.txt",
+    "initialLog": "targeted-tests-initial.txt",
+    "developmentCorrections": [
+      "Boarding bridge side posts initially had a 0.05m gap above the steel floor; floor thickness repaired before production.",
+      "Fixed-open door hinge ears trimmed to preserve the nominal 1.8m portal without changing the existing car body.",
+      "Hook initially overlapped four ring cells; support stem moved behind the bore, with its lower arm carrying the ring underside.",
+      "Real auxiliary end-sill supports added beneath fixed coupler plates; no unsupported-check suppression.",
+      "Initial material probes landed outside the quantized wire and at the step-paint boundary; corrected to actual occupied interior cells, then all checks passed."
+    ]
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 11,
+  "mcpStatus": "passed",
+  "materialCandidates": 288,
+  "nativeVoxels": 263006,
+  "triangles": 11098,
+  "triangleBudgets": [
+    {
+      "id": "built-249",
+      "triangles": 532,
+      "cap": 1800
+    },
+    {
+      "id": "built-251",
+      "triangles": 244,
+      "cap": 2500
+    }
+  ],
+  "glbBoundsMaxErrorM": 1.9073486257070726e-07,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 12,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "All twelve base-colour, front and material views inspected.",
+      "Six installed scenarios inspected in isometric and front views.",
+      "Actual saved native cells, exported GLB, collision and interfaces agree; screenshots are browser renders of these assets."
+    ]
+  },
+  "components": {
+    "families": 12,
+    "shapes": 14,
+    "inventory": "component-variants.json"
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 307,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 706,
+    "generatedEntries": 362,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 288
+  },
+  "limitations": [
+    "BUILT-251 original external GLB/task is unreceived and unvalidated; this is an explicitly authored dimensional replacement candidate with 3.6x3x0.3m outer size and 3.2x2.8m true opening.",
+    "Original Vehicle/AviationPad/SimState, route controllers, original stand IDs, permission, driving, W boarding, power, steering, animation and original game integration were not provided or validated.",
+    "Lantern tassel remains noncollision. Unsupported bare gallery placement is retained; an explicit real hook supports the installed ring. Paper transmission and dynamic local light are not implemented.",
+    "Airfield turn uses a sampled authored 8m-radius route and 0.2m voxel pavement. Empty stand A joins the authored route; stand B is a separate heading/envelope comparison, not a complete airport or verified original fleet.",
+    "Boarding bridge and berth connect to explicit auxiliary receiving floors, not actual aircraft/ship bodies. No decorative Torus is counted as a berth.",
+    "Wheel/axle and fixed open door/coupler verify explicit authored assemblies. The M020 car body and its openings remain unchanged. Auxiliary static chassis/coupler supports are identified, not claimed original vehicle suspension.",
+    "Runtime LODs, structural/vehicle dynamics and building or aviation certification are not implemented. Greedy coplanar merging and GLB triangles are measured.",
+    "SwiftShader software WebGL is not hardware-GPU performance evidence; all 288 reference candidates still await human art acceptance."
+  ]
+}

@@ -1,0 +1,41 @@
+✔ M024 twelve source families and fourteen native shapes have exact dimensions, unique connected geometry, real openings and reference provenance (2190.075083ms)
+✖ actual cells separate paper, noncollision fabric, paint, steel, tire, hose and annular window seal (165.870423ms)
+✔ component enums stay recipe-specific; rebuild preserves origin and one undo restores geometry (429.200249ms)
+✔ bracket supports a real beam and lantern hangs through its bore; finite stone edge and A1 replacement remain clear (683.372718ms)
+✔ straight and curved taxi routes share real closed pavement and matching ports; stand placements have distinct IDs, headings and empty envelopes (504.590046ms)
+✔ twelve real boarding steps and six berth steps connect to supported receiving floors with body clearances and unbound access (2239.849234ms)
+✔ two tire wheels physically carry a bore-fitting axle with one metre chassis clearance and no steering binding (899.75794ms)
+✔ fixed open door respects unchanged car opening, and coupler stays between actual consecutive end faces with supported plates (3079.87384ms)
+✔ independent paint and hose appearances preserve geometry through palette, native/GLB export and one undo (2192.909185ms)
+✔ new roles preserve foreign 170–173 slots, roll back failure and disappear with asset after one undo (147.504615ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13099.427873
+
+✖ failing tests:
+
+test at tests/atlas-portals.test.ts:39:1
+✖ actual cells separate paper, noncollision fabric, paint, steel, tire, hose and annular window seal (165.870423ms)
+  AssertionError [ERR_ASSERTION]: BUILT-273 metalBright 0.32,1,0.18
+
+  0 !== 79
+
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-portals.test.ts:40:36)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 79,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

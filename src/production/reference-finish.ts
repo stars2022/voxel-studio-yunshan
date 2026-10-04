@@ -3,10 +3,14 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=15;
+export const referenceFinishVersion=16;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ airfieldYellow:{name:'机场黄色标线涂料',color:'#d7b748',roughness:.8,metalness:0,...surface('none',.1,0,0)},
+ airfieldRed:{name:'机场红色边界涂料',color:'#b15b50',roughness:.8,metalness:0,...surface('none',.1,0,0)},
+ airfieldWhite:{name:'机场白色标线涂料',color:'#e4dfd0',roughness:.8,metalness:0,...surface('none',.1,0,0)},
+ couplerHose:{name:'车厢制动连接软管',color:'#323e42',roughness:.93,metalness:0,...surface('none',.1,0,0)},
  projectorLens:{name:'发射座独立光学保护玻璃',color:'#77b6bd',opacity:.4,roughness:.1,metalness:0,...surface('none',.1,0,0)},
  projectorEmitter:{name:'发射芯 · 未绑定供电',color:'#237f93',roughness:.25,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
  timberWindowSeal:{name:'木窗独立橡胶窗封',color:'#343e3b',roughness:.9,metalness:0,...surface('none',.1,0,0)},

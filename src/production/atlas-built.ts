@@ -1,3 +1,4 @@
+import {portalRecipes,portalVariants,selectPortalRecipe,portalMaterialRule,configurePortalAsset} from './atlas-portals';
 import {neighborhoodRecipes,neighborhoodVariants,selectNeighborhoodRecipe,neighborhoodMaterialRule,configureNeighborhoodAsset} from './atlas-neighborhood';
 import {civicRecipes,civicVariants,selectCivicRecipe,civicMaterialRule,configureCivicAsset} from './atlas-urban';
 import {aerialRecipes,aerialMaterialRules,configureAerialAsset} from './atlas-aerial';
@@ -31,9 +32,10 @@ export const atlasBuiltRecipes:Record<string,AtlasRecipe>={
  }},
 };
 
-Object.assign(atlasBuiltRecipes,structureRecipes,legacyBuildingRecipes,joineryRecipes,exteriorRecipes,waterfrontRecipes,transportRecipes,bridgeRecipes,stationRecipes,aerialRecipes,civicRecipes,neighborhoodRecipes);
+Object.assign(atlasBuiltRecipes,structureRecipes,legacyBuildingRecipes,joineryRecipes,exteriorRecipes,waterfrontRecipes,transportRecipes,bridgeRecipes,stationRecipes,aerialRecipes,civicRecipes,neighborhoodRecipes,portalRecipes);
 
 export function builtWidthParameter(id:string){
+ if(portalVariants[id])return{component:{type:'string',enum:Object.keys(portalVariants[id]),default:Object.keys(portalVariants[id])[0],description:'同一清单中的直/弯滑行道或接桥/楼梯组件'}};
  if(neighborhoodVariants[id])return{component:{type:'string',enum:Object.keys(neighborhoodVariants[id]),default:Object.keys(neighborhoodVariants[id])[0],description:'同一楼梯防护清单内的梯段、半转及上层井边独立组件'}};
  if(civicVariants[id])return{component:{type:'string',enum:Object.keys(civicVariants[id]),default:Object.keys(civicVariants[id])[0],description:'同一清单ID内的独立结构组件；切换组件不会增加清单母版数量'}};
  if(id==='BUILT-205')return{depth:{minimum:.2,maximum:8,default:8,enum:[.2,8],unit:'metres'}};
@@ -46,7 +48,7 @@ export function builtWidthParameter(id:string){
 export function inspectBuiltMaterialAssignments(id:string,a:Asset,roles:Record<string,number>){
  if(!atlasBuiltRecipes[id])return null;
  const used=new Set([...new Grid(a.chunks).cells()].map(([,m])=>m));
- const rule=structureMaterialRules[id]??legacyBuildingMaterialRules[id]??joineryMaterialRules[id]??exteriorMaterialRules[id]??waterfrontMaterialRules[id]??transportMaterialRules[id]??bridgeMaterialRules[id]??stationMaterialRules[id]??aerialMaterialRules[id]??civicMaterialRule(id,a)??neighborhoodMaterialRule(id);
+ const rule=structureMaterialRules[id]??legacyBuildingMaterialRules[id]??joineryMaterialRules[id]??exteriorMaterialRules[id]??waterfrontMaterialRules[id]??transportMaterialRules[id]??bridgeMaterialRules[id]??stationMaterialRules[id]??aerialMaterialRules[id]??civicMaterialRule(id,a)??neighborhoodMaterialRule(id)??portalMaterialRule(id,a);
  for(const role of rule?.required??['stone','wall','metal','bronze','energy'])if(!used.has(roles[role]))throw new Error(id+' 缺少实际材质 '+role);
  const permitted=new Set((rule?.allowed??['stone','wall','metal','trim','wood','bronze','energy']).map(r=>roles[r]));
  for(const m of used)if(!permitted.has(m))throw new Error(id+' 非建筑材质 '+m);
@@ -54,7 +56,7 @@ export function inspectBuiltMaterialAssignments(id:string,a:Asset,roles:Record<s
 }
 
 export function makeAtlasBuiltAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number|string>={}):Asset{
- const recipe=neighborhoodRecipes[catalogId]?selectNeighborhoodRecipe(catalogId,params.component):(selectCivicRecipe(catalogId,params.component)??atlasBuiltRecipes[catalogId]);if(!recipe)throw new Error('此建筑清单条目尚无已实现的原生体素配方');
+ const recipe=portalRecipes[catalogId]?selectPortalRecipe(catalogId,params.component):neighborhoodRecipes[catalogId]?selectNeighborhoodRecipe(catalogId,params.component):(selectCivicRecipe(catalogId,params.component)??atlasBuiltRecipes[catalogId]);if(!recipe)throw new Error('此建筑清单条目尚无已实现的原生体素配方');
  const dimensions=[...recipe.size] as V3;
  if(Object.keys(params).some(k=>k!=='width'&&k!=='height'&&k!=='depth'&&k!=='component'))throw new Error('本建筑参数尚未验证');
  if(params.width!==undefined){const width=params.width;if(typeof width!=='number')throw new Error('宽度必须为数值');if(catalogId==='BUILT-007'&&[1.2,1.6].includes(width))dimensions[0]=width;else if(catalogId==='BUILT-017'&&Number.isFinite(width)&&width>=7.2&&width<=14.4&&Math.abs(width/.2-Math.round(width/.2))<1e-8)dimensions[0]=width;else throw new Error('本建筑配方的尺寸变化尚未验证；上行跑仅 1.2/1.6m，窗墙仅 7.2–14.4m 的 0.2m 增量');}
@@ -74,6 +76,6 @@ export function makeAtlasBuiltAsset(catalogId:string,name:string,id:string,style
   a.openings=[box([.28,.20,2.40],[width-.28,.90,3.30])];
   for(let i=0;i<8;i++)a.openings.push(box([.22,.42+i*.20,.48+i*.40],[width-.22,2.30+i*.20,.72+i*.40]));
   a.ports.push({id:'bottom-walkway',kind,position:[width/2,.20,0],normal:[0,0,-1],size:[width,.20,0],pitch:.02},{id:'top-walkway',kind,position:[width/2,1.80,4.40],normal:[0,0,1],size:[width,.20,0],pitch:.02});
- }else{configureStructureAsset(a,catalogId);configureLegacyBuildingAsset(a,catalogId);configureJoineryAsset(a,catalogId);configureExteriorAsset(a,catalogId);configureWaterfrontAsset(a,catalogId);configureTransportAsset(a,catalogId);configureBridgeAsset(a,catalogId);configureStationAsset(a,catalogId);configureAerialAsset(a,catalogId);configureCivicAsset(a,catalogId);configureNeighborhoodAsset(a,catalogId);}
+ }else{configureStructureAsset(a,catalogId);configureLegacyBuildingAsset(a,catalogId);configureJoineryAsset(a,catalogId);configureExteriorAsset(a,catalogId);configureWaterfrontAsset(a,catalogId);configureTransportAsset(a,catalogId);configureBridgeAsset(a,catalogId);configureStationAsset(a,catalogId);configureAerialAsset(a,catalogId);configureCivicAsset(a,catalogId);configureNeighborhoodAsset(a,catalogId);configurePortalAsset(a,catalogId);}
  a.source!.materialAssignmentReview=inspectBuiltMaterialAssignments(catalogId,a,style);return a;
 }
