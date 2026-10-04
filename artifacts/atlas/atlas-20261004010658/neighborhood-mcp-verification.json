@@ -1,0 +1,1282 @@
+{
+  "run": "atlas-20261004010658",
+  "startedAt": "2026-10-04T01:09:01.823Z",
+  "status": "passed",
+  "checks": [
+    "Twelve M023 families verified from native coordinates: bearing, stone, wood grain, waterproof liner, independent projector lens and inactive emitter, timber window seal and roof tiles",
+    "Four independent architectural appearance roles, canonical UI hashes, glass filtering, dry run, version conflicts, idempotency, failure rollback and one undo all verified",
+    "MCP advertises recipe-specific flight, half-turn and upper-well guard components without inflating catalogue master counts",
+    "The same solid end support contacts both floor levels and connected skywalks; actual 1.72m routes stay clear",
+    "Finite L-shaped platform contacts four explicit terrain height bands; eight real 0.2m rises and a solid voxel ramp connect to the common platform without original-terrain or controller claims",
+    "Open courtyard portal, empty planter shells and through-drains preserve body routes; physical emitter has no hologram or bound power",
+    "Four flight rails, a half-turn rail and an upper-well rail attach to actual stair surfaces; upper opening, normal exit and separate roof public exit remain clear",
+    "Identical door leaf explicitly closes or clears the authored opening around one real hinge axis, while window and thin 4.8m eave retain true supports; no runtime door-state claim",
+    "All six scenarios save real stdio MCP multiview previews plus GLB/native/collision/interface/material-atlas exports",
+    "Native save and server restart restore the exact canonical document"
+  ],
+  "errors": [],
+  "uiSync": [
+    {
+      "version": 1,
+      "ms": 4256.154297000001
+    },
+    {
+      "version": 2,
+      "ms": 3840.6465519999983
+    },
+    {
+      "version": 3,
+      "ms": 402.8593729999993
+    },
+    {
+      "version": 4,
+      "ms": 373.0527430000002
+    },
+    {
+      "version": 5,
+      "ms": 656.3133669999952
+    },
+    {
+      "version": 6,
+      "ms": 4943.748668
+    },
+    {
+      "version": 7,
+      "ms": 1432.7489500000083
+    },
+    {
+      "version": 8,
+      "ms": 1293.3183789999894
+    },
+    {
+      "version": 9,
+      "ms": 623.5647630000021
+    },
+    {
+      "version": 10,
+      "ms": 2370.0845000000118
+    },
+    {
+      "version": 11,
+      "ms": 1014.0383960000181
+    },
+    {
+      "version": 12,
+      "ms": 10777.94630000001
+    },
+    {
+      "version": 13,
+      "ms": 756.0508989999944
+    },
+    {
+      "version": 14,
+      "ms": 8857.151956999995
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "neighborhood-skywalk",
+      "masters": 2,
+      "placements": 2,
+      "geometry": {
+        "pitchM": 0.1,
+        "occupiedCollisionCells": 31636,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "bearing-1",
+              "floors-1"
+            ],
+            "pitchM": 0.1,
+            "occupiedCells": 31636
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "bearing-1": [],
+          "floors-1": [
+            "bearing-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [
+          {
+            "name": "两层连廊至楼层人体净空-3.4",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "两层连廊至楼层人体净空-6.6",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/exports/neighborhood-skywalk",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 151252,
+        "isError": false
+      },
+      "previews": {
+        "version": 4,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/34982cfb-4147-458c-ad8f-213d09ed9d6f/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/34982cfb-4147-458c-ad8f-213d09ed9d6f/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "neighborhood-terrain",
+      "masters": 4,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 1208608,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "terrain-1",
+              "platform-1",
+              "steps-1",
+              "ramp-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 1208608
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "terrain-1": [],
+          "platform-1": [
+            "terrain-1"
+          ],
+          "steps-1": [
+            "terrain-1"
+          ],
+          "ramp-1": [
+            "terrain-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "platform-1",
+            "index": 0,
+            "widthM": 2,
+            "heightM": 1.6,
+            "emptyCells": 6400,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 0,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 1,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 2,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 3,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 4,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 5,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 6,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 7,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 16800,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "steps-1",
+            "index": 8,
+            "widthM": 3,
+            "heightM": 1.75,
+            "emptyCells": 50400,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "台地两个入口向内转接",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "L形缺角保持原生空缺",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-0",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-1",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-2",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-3",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-4",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-5",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-6",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "外阶梯净空-7",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/exports/neighborhood-terrain",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 595748,
+        "isError": false
+      },
+      "previews": {
+        "version": 6,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/7d11181d-e2f2-469d-a2fa-bf4605c48194/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/7d11181d-e2f2-469d-a2fa-bf4605c48194/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "neighborhood-garden",
+      "masters": 4,
+      "placements": 4,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 187436,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "garden-1",
+              "gate-1",
+              "planter-1",
+              "emitter-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 187436
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "garden-1": [],
+          "gate-1": [
+            "garden-1"
+          ],
+          "planter-1": [
+            "garden-1"
+          ],
+          "emitter-1": [
+            "garden-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [
+          {
+            "instanceId": "gate-1",
+            "index": 0,
+            "widthM": 2.4000000000000004,
+            "heightM": 2.6,
+            "emptyCells": 29952,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "planter-1",
+            "index": 0,
+            "widthM": 1.8,
+            "heightM": 0.30000000000000004,
+            "emptyCells": 1944,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "planter-1",
+            "index": 1,
+            "widthM": 0.1,
+            "heightM": 0.1,
+            "emptyCells": 8,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "planter-1",
+            "index": 2,
+            "widthM": 1.8,
+            "heightM": 0.30000000000000004,
+            "emptyCells": 1944,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "planter-1",
+            "index": 3,
+            "widthM": 0.1,
+            "heightM": 0.1,
+            "emptyCells": 8,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "planter-1",
+            "index": 4,
+            "widthM": 1.8,
+            "heightM": 0.30000000000000004,
+            "emptyCells": 1944,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "planter-1",
+            "index": 5,
+            "widthM": 0.1,
+            "heightM": 0.1,
+            "emptyCells": 8,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          },
+          {
+            "instanceId": "emitter-1",
+            "index": 0,
+            "widthM": 0.1,
+            "heightM": 0.1,
+            "emptyCells": 8,
+            "ownSolidCells": 0,
+            "nonCollisionCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "clearances": [
+          {
+            "name": "院门0.35m半径与1.72m身体通道",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "墙边绿架侧向通道",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/exports/neighborhood-garden",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 238152,
+        "isError": false
+      },
+      "previews": {
+        "version": 8,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/425061aa-db70-4a37-9f22-0e747c34cce3/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/425061aa-db70-4a37-9f22-0e747c34cce3/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "neighborhood-stairs",
+      "masters": 6,
+      "placements": 11,
+      "geometry": {
+        "pitchM": 0.05,
+        "occupiedCollisionCells": 365692,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "stairs-1",
+              "lower-out",
+              "lower-in",
+              "upper-out",
+              "upper-in",
+              "turn-1",
+              "well-1"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 281208
+          },
+          {
+            "instanceIds": [
+              "roof-1",
+              "roof-back",
+              "roof-left",
+              "roof-right"
+            ],
+            "pitchM": 0.05,
+            "occupiedCells": 84484
+          }
+        ],
+        "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "stairs-1": [],
+          "lower-out": [
+            "stairs-1"
+          ],
+          "lower-in": [
+            "stairs-1"
+          ],
+          "upper-out": [
+            "stairs-1"
+          ],
+          "upper-in": [
+            "stairs-1"
+          ],
+          "turn-1": [
+            "stairs-1"
+          ],
+          "well-1": [
+            "stairs-1"
+          ],
+          "roof-1": [],
+          "roof-back": [
+            "roof-1"
+          ],
+          "roof-left": [
+            "roof-1"
+          ],
+          "roof-right": [
+            "roof-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [
+          {
+            "name": "下跑净空-0",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "下跑净空-1",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "下跑净空-2",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "下跑净空-3",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "下跑净空-4",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "下跑净空-5",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "下跑净空-6",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "下跑净空-7",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-0",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-1",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-2",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-3",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-4",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-5",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-6",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上跑净空-7",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "半转内侧横向转身带",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上层楼梯正常出口",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "上层楼板井口没有填板",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          },
+          {
+            "name": "屋面公共出口",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+          "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/exports/neighborhood-stairs",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 282928,
+        "isError": false
+      },
+      "previews": {
+        "version": 10,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/719da4bb-363a-4217-a4f1-cc31cfeec26c/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/719da4bb-363a-4217-a4f1-cc31cfeec26c/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "neighborhood-joinery-closed",
+      "masters": 5,
+      "placements": 5,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 1453664,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "floor-1",
+              "wall-1",
+              "door-1",
+              "window-1",
+              "eave-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 1453664
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "floor-1": [],
+          "wall-1": [
+            "door-1",
+            "floor-1"
+          ],
+          "door-1": [
+            "floor-1",
+            "wall-1"
+          ],
+          "window-1": [
+            "wall-1"
+          ],
+          "eave-1": [
+            "wall-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/exports/neighborhood-joinery-closed",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 835516,
+        "isError": false
+      },
+      "previews": {
+        "version": 12,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/51d97d51-7984-4cc5-88b6-fba0847c1c9f/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/51d97d51-7984-4cc5-88b6-fba0847c1c9f/front.png"
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "neighborhood-joinery-open",
+      "masters": 5,
+      "placements": 5,
+      "geometry": {
+        "pitchM": 0.02,
+        "occupiedCollisionCells": 1453664,
+        "collisionGrids": [
+          {
+            "instanceIds": [
+              "floor-1",
+              "wall-1",
+              "door-1",
+              "window-1",
+              "eave-1"
+            ],
+            "pitchM": 0.02,
+            "occupiedCells": 1453664
+          }
+        ],
+        "cellCountUnits": "one shared grid",
+        "collisions": [],
+        "unsupported": [],
+        "contacts": {
+          "floor-1": [],
+          "wall-1": [
+            "door-1",
+            "floor-1"
+          ],
+          "door-1": [
+            "floor-1",
+            "wall-1"
+          ],
+          "window-1": [
+            "wall-1"
+          ],
+          "eave-1": [
+            "wall-1"
+          ]
+        },
+        "gaps": [],
+        "openings": [],
+        "clearances": [
+          {
+            "name": "门外与室内不受瓦檐影响",
+            "clear": true,
+            "occupiedCells": 0,
+            "blockedBy": []
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "支撑检查为垂直接触检测，不作结构受力分析。",
+          "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+          "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+        ],
+        "isError": false
+      },
+      "expectedUnsupported": [],
+      "expectedNearPairs": [],
+      "exported": {
+        "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/exports/neighborhood-joinery-open",
+        "files": [
+          "visual.glb",
+          "voxels.ysvox.json",
+          "collision.json",
+          "interfaces.json",
+          "atlas.png",
+          "atlas.json"
+        ],
+        "glbBytes": 835572,
+        "isError": false
+      },
+      "previews": {
+        "version": 14,
+        "assetId": null,
+        "appearance": "baseColor",
+        "lighting": "standard",
+        "effects": false,
+        "files": [
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/28a44b40-4d3f-4acb-82a5-d64bf26cfc04/isometric.png",
+          "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261004010658/neighborhood-mcp-1791076141210-runtime/previews/28a44b40-4d3f-4acb-82a5-d64bf26cfc04/front.png"
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "gallery": {
+    "pitchM": 0.02,
+    "occupiedCollisionCells": 875128,
+    "collisionGrids": [
+      {
+        "instanceIds": [
+          "built-225-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 15412
+      },
+      {
+        "instanceIds": [
+          "built-232-display"
+        ],
+        "pitchM": 0.1,
+        "occupiedCells": 61600
+      },
+      {
+        "instanceIds": [
+          "built-233-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 114784
+      },
+      {
+        "instanceIds": [
+          "built-234-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 225984
+      },
+      {
+        "instanceIds": [
+          "built-235-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 33088
+      },
+      {
+        "instanceIds": [
+          "built-240-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 12720
+      },
+      {
+        "instanceIds": [
+          "built-241-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 11196
+      },
+      {
+        "instanceIds": [
+          "built-242-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 2256
+      },
+      {
+        "instanceIds": [
+          "built-243-display"
+        ],
+        "pitchM": 0.05,
+        "occupiedCells": 6316
+      },
+      {
+        "instanceIds": [
+          "built-244-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 27364
+      },
+      {
+        "instanceIds": [
+          "built-245-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 44848
+      },
+      {
+        "instanceIds": [
+          "built-246-display"
+        ],
+        "pitchM": 0.02,
+        "occupiedCells": 319560
+      }
+    ],
+    "cellCountUnits": "sum of independent grids; use each collisionGrid pitch, not global minimum pitch",
+    "collisions": [],
+    "unsupported": [],
+    "contacts": {
+      "built-225-display": [],
+      "built-232-display": [],
+      "built-233-display": [],
+      "built-234-display": [],
+      "built-235-display": [],
+      "built-240-display": [],
+      "built-241-display": [],
+      "built-242-display": [],
+      "built-243-display": [],
+      "built-244-display": [],
+      "built-245-display": [],
+      "built-246-display": []
+    },
+    "gaps": [],
+    "openings": [
+      {
+        "instanceId": "built-232-display",
+        "index": 0,
+        "widthM": 2,
+        "heightM": 1.6,
+        "emptyCells": 6400,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 0,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 1,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 2,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 3,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 4,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 5,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 6,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 7,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 16800,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-233-display",
+        "index": 8,
+        "widthM": 3,
+        "heightM": 1.75,
+        "emptyCells": 50400,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-235-display",
+        "index": 0,
+        "widthM": 2.4000000000000004,
+        "heightM": 2.6,
+        "emptyCells": 29952,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-240-display",
+        "index": 0,
+        "widthM": 1.8,
+        "heightM": 0.30000000000000004,
+        "emptyCells": 1944,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-240-display",
+        "index": 1,
+        "widthM": 0.1,
+        "heightM": 0.1,
+        "emptyCells": 8,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-240-display",
+        "index": 2,
+        "widthM": 1.8,
+        "heightM": 0.30000000000000004,
+        "emptyCells": 1944,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-240-display",
+        "index": 3,
+        "widthM": 0.1,
+        "heightM": 0.1,
+        "emptyCells": 8,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-240-display",
+        "index": 4,
+        "widthM": 1.8,
+        "heightM": 0.30000000000000004,
+        "emptyCells": 1944,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-240-display",
+        "index": 5,
+        "widthM": 0.1,
+        "heightM": 0.1,
+        "emptyCells": 8,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      },
+      {
+        "instanceId": "built-241-display",
+        "index": 0,
+        "widthM": 0.1,
+        "heightM": 0.1,
+        "emptyCells": 8,
+        "ownSolidCells": 0,
+        "nonCollisionCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "clearances": [],
+    "warnings": [],
+    "limitations": [
+      "支撑检查为垂直接触检测，不作结构受力分析。",
+      "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+      "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。",
+      "相互独立的空间组分别使用格距；碰撞与净空数量按各组格子累计。每个相邻组保留3,000,000个行区间展开项的检查预算。"
+    ],
+    "isError": false
+  },
+  "doorStateProbes": {
+    "closed": [
+      {
+        "name": "显式关闭门扇必须阻挡通道",
+        "clear": false,
+        "occupiedCells": 9315,
+        "blockedBy": [
+          "door-1"
+        ]
+      }
+    ],
+    "open": [
+      {
+        "name": "显式关闭门扇必须阻挡通道",
+        "clear": true,
+        "occupiedCells": 0,
+        "blockedBy": []
+      }
+    ],
+    "sameNativeLeaf": true,
+    "sharedRuntimeBound": false
+  },
+  "eaveGLB": {
+    "translation": [
+      0.8,
+      3.2,
+      -0.2
+    ],
+    "worldTopYM": 4.000000011920929
+  },
+  "completedAt": "2026-10-04T01:14:29.351Z"
+}

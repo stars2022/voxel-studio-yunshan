@@ -1,0 +1,869 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169
+    }
+  },
+  "assets": [
+    {
+      "id": "flight",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.2,
+            0,
+            3.2
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              4,
+              50,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "沿八个真实踏面安装的钢足与立柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              4,
+              50,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "阶梯连续顶杆和薄玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              2
+            ],
+            "max": [
+              4,
+              50,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "首尾灯柱的石肩和光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              5,
+              0
+            ],
+            "max": [
+              4,
+              48,
+              58
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "八组独立铜锚",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              1,
+              1
+            ],
+            "max": [
+              2,
+              30,
+              58
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "八级0.2m梯段配套单侧扶栏：逐级钢足、连续阶梯顶杆、实际玻璃和端部灯柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              4,
+              50,
+              64
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "turn",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            0.2
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              22,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续钢底轨和三根立柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              22,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "连续顶杆和真实薄玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              4,
+              0
+            ],
+            "max": [
+              68,
+              22,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "石柱肩与独立光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              6,
+              0
+            ],
+            "max": [
+              72,
+              20,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "实际铜顶锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              21,
+              1
+            ],
+            "max": [
+              70,
+              22,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "3.6m半转平台背边扶栏：开放内侧、玻璃防护和三柱连接",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              72,
+              22,
+              4
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "well",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.2,
+            0,
+            0.2
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              64,
+              22,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续钢底轨和三根立柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              64,
+              22,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "连续顶杆和真实薄玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              4,
+              0
+            ],
+            "max": [
+              60,
+              22,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "石柱肩与独立光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              6,
+              0
+            ],
+            "max": [
+              64,
+              20,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "实际铜顶锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              21,
+              1
+            ],
+            "max": [
+              62,
+              22,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "3.2m上层井边扶栏：真实玻璃和连续钢顶杆，留出上行出口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              64,
+              22,
+              4
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "roof-rail",
+      "name": "可用屋面边缘共享安全栏组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            4.800000000000001,
+            0,
+            0.4
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              96,
+              24,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续低石座与四根钢立柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              96,
+              24,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "两道横杆和实心钢栏条",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              6,
+              3
+            ],
+            "max": [
+              90,
+              23,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "柱肩石块和光芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              8,
+              1
+            ],
+            "max": [
+              96,
+              21,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "四柱铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              23,
+              3
+            ],
+            "max": [
+              93,
+              24,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立屋面边缘安全栏：石脚、四钢柱、连续顶杆和真实竖向栏条",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              96,
+              24,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "stair-fixture",
+      "name": "八级双跑梯与真正开放上层井孔（辅助）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    },
+    {
+      "id": "roof-fixture",
+      "name": "独立平屋面和承柱试架，前侧为开放出口（辅助）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "stairs-1",
+      "assetId": "stair-fixture",
+      "name": "八级双跑梯与真正开放上层井孔（辅助）",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "lower-out",
+      "assetId": "flight",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "position": [
+        0,
+        0.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "lower-in",
+      "assetId": "flight",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "position": [
+        1.6,
+        0.4,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "upper-out",
+      "assetId": "flight",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "position": [
+        3.6,
+        2,
+        3.2
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "upper-in",
+      "assetId": "flight",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "position": [
+        2,
+        2,
+        3.2
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "turn-1",
+      "assetId": "turn",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "position": [
+        0,
+        1.8,
+        4.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "well-1",
+      "assetId": "well",
+      "name": "共享双跑楼梯扶手与井边防护",
+      "position": [
+        0,
+        3.4,
+        0
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "roof-1",
+      "assetId": "roof-fixture",
+      "name": "独立平屋面和承柱试架，前侧为开放出口（辅助）",
+      "position": [
+        7,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "roof-back",
+      "assetId": "roof-rail",
+      "name": "可用屋面边缘共享安全栏组件",
+      "position": [
+        7.4,
+        3.2,
+        5.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "roof-left",
+      "assetId": "roof-rail",
+      "name": "可用屋面边缘共享安全栏组件",
+      "position": [
+        7.4,
+        3.2,
+        0.4
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "roof-right",
+      "assetId": "roof-rail",
+      "name": "可用屋面边缘共享安全栏组件",
+      "position": [
+        12.6,
+        3.2,
+        0.4
+      ],
+      "rotation": 3,
+      "parent": null
+    }
+  ]
+}

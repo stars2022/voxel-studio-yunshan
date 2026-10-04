@@ -1,0 +1,732 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169
+    }
+  },
+  "assets": [
+    {
+      "id": "gate",
+      "name": "庭院低墙与院门共享结构",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            6,
+            0,
+            0.6000000000000001
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              64,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两侧低墙芯与真灰缝石面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              24,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "门柱承芯和石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              28,
+              0,
+              0
+            ],
+            "max": [
+              92,
+              58,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实木过梁与薄瓦檐",
+          "parent": "root",
+          "region": {
+            "min": [
+              28,
+              52,
+              0
+            ],
+            "max": [
+              92,
+              64,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "门柱金属肩、木榫和铜销",
+          "parent": "root",
+          "region": {
+            "min": [
+              28,
+              49,
+              0
+            ],
+            "max": [
+              92,
+              56,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "庭院低墙与开敞门框：两侧石砌围界、木过梁、薄瓦帽和2.4×2.6m真实门洞",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              64,
+              12
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            36,
+            0,
+            0
+          ],
+          "max": [
+            84,
+            52,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "planter",
+      "name": "建筑垂直绿化安装架与花池壳",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.4000000000000004,
+            0,
+            0.8
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              48,
+              64,
+              16
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "连续钢背架与墙面锚脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              12
+            ],
+            "max": [
+              48,
+              64,
+              16
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三层独立混凝土花池壳和石外皮",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              8,
+              0
+            ],
+            "max": [
+              44,
+              56,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "真实防水内衬与贯通排水孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              9,
+              1
+            ],
+            "max": [
+              43,
+              56,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "六组承托角钢和铜锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              3,
+              2
+            ],
+            "max": [
+              47,
+              63,
+              14
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "垂直绿化安装架与三层空花池：真实钢背架、混凝土壳、石外皮和独立防水内衬",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              48,
+              64,
+              16
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            6,
+            10,
+            2
+          ],
+          "max": [
+            42,
+            16,
+            11
+          ]
+        },
+        {
+          "min": [
+            23,
+            8,
+            6
+          ],
+          "max": [
+            25,
+            10,
+            8
+          ]
+        },
+        {
+          "min": [
+            6,
+            30,
+            2
+          ],
+          "max": [
+            42,
+            36,
+            11
+          ]
+        },
+        {
+          "min": [
+            23,
+            28,
+            6
+          ],
+          "max": [
+            25,
+            30,
+            8
+          ]
+        },
+        {
+          "min": [
+            6,
+            50,
+            2
+          ],
+          "max": [
+            42,
+            56,
+            11
+          ]
+        },
+        {
+          "min": [
+            23,
+            48,
+            6
+          ],
+          "max": [
+            25,
+            50,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emitter",
+      "name": "未来全息标识实体发射座",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            1.6
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              32,
+              24,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "实体底座和薄壁钢机壳",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              32,
+              20,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "前部石检修盖、铜包角和真实散热缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              5,
+              1
+            ],
+            "max": [
+              30,
+              20,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶面镜片座、独立非激活发射芯和玻璃保护面",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              20,
+              4
+            ],
+            "max": [
+              28,
+              24,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "后电源口与四个铜定位锚",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              3,
+              3
+            ],
+            "max": [
+              29,
+              13,
+              30
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "实体全息发射座：钢壳石脚、独立光学镜片与未绑定灯芯、真实散热缝和后部电源孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              32,
+              24,
+              32
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            9,
+            28
+          ],
+          "max": [
+            17,
+            11,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garden-fixture",
+      "name": "院门地坪与明确无洞安装墙段（辅助）",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.1,
+      "ports": [],
+      "parts": [],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "garden-1",
+      "assetId": "garden-fixture",
+      "name": "院门地坪与明确无洞安装墙段（辅助）",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "gate-1",
+      "assetId": "gate",
+      "name": "庭院低墙与院门共享结构",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "planter-1",
+      "assetId": "planter",
+      "name": "建筑垂直绿化安装架与花池壳",
+      "position": [
+        8,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "emitter-1",
+      "assetId": "emitter",
+      "name": "未来全息标识实体发射座",
+      "position": [
+        12,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

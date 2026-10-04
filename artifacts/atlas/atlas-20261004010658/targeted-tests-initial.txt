@@ -1,0 +1,46 @@
+✔ M023 twelve source families and fourteen native shapes have exact dimensions, unique connected geometry, real openings and reference provenance (2740.201159ms)
+✔ actual cells keep roof tile, waterproofing, timber grain, window seals, projector lens and inactive emitter distinct (7.1303ms)
+✔ stair guard component enums reject unrelated choices and rebuild preserves origin and single undo geometry (174.139885ms)
+✔ skywalk support physically carries both connected floor levels with clear 1.72m routes and no detached decoration (324.519896ms)
+✔ contour platform contacts each explicit terrain band, stairs rise exactly 0.2m and 1:10 voxel ramp has flat ends and solid bottom (3768.654878ms)
+✔ courtyard gateway supports a 0.35m-radius disk and 1.72m body; planter cavities and drains stay open with no plants or fake hologram (716.01881ms)
+✔ double-flight, half-turn and well rails attach to actual surfaces while upper well and roof public exit stay clear (2384.041455ms)
+✖ same native door leaf closes or clears an authored opening with invariant hinge axis; true window opening and supported thin eave remain intact (6442.392178ms)
+✔ lens, inactive emitter and timber seal appearance remain independent across palette, native GLB export and one undo (2466.484538ms)
+✔ new roles preserve foreign 167–169 slots, roll back failed transactions and disappear together after one undo (217.909724ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19776.132512
+
+✖ failing tests:
+
+test at tests/atlas-neighborhood.test.ts:66:1
+✖ same native door leaf closes or clears an authored opening with invariant hinge axis; true window opening and supported thin eave remain intact (6442.392178ms)
+  AssertionError [ERR_ASSERTION]: warnings
+  + actual - expected
+
+  + [
+  +   'eave-1: 不共格，跳过精确碰撞；需重采样或调整原点。'
+  + ]
+  - []
+
+      at clean (/workspace/voxel-studio-yunshan/tests/atlas-neighborhood.test.ts:28:128)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-neighborhood.test.ts:67:232)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'eave-1: 不共格，跳过精确碰撞；需重采样或调整原点。' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

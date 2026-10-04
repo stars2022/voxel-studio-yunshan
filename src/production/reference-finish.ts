@@ -3,10 +3,13 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=14;
+export const referenceFinishVersion=15;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ projectorLens:{name:'发射座独立光学保护玻璃',color:'#77b6bd',opacity:.4,roughness:.1,metalness:0,...surface('none',.1,0,0)},
+ projectorEmitter:{name:'发射芯 · 未绑定供电',color:'#237f93',roughness:.25,metalness:0,emissive:'#000000',intensity:0,...surface('none',.1,0,0)},
+ timberWindowSeal:{name:'木窗独立橡胶窗封',color:'#343e3b',roughness:.9,metalness:0,...surface('none',.1,0,0)},
  facadeSeal:{name:'幕墙独立窗封',color:'#27373a',roughness:.94,metalness:0,...surface('none',.1,0,0)},
  facadeFrame:{name:'幕墙铝框 · 石墨涂装',color:'#3a4950',roughness:.36,metalness:.64,...surface('metal',.24,.17,541)},
  sunshadeMetal:{name:'竖向铝叶 · 金色阳极氧化',color:'#bd9450',roughness:.35,metalness:.68,...surface('metal',.2,.16,543)},

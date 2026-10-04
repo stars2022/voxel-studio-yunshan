@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "run": "atlas-20261004010658",
+  "sheet": "M023",
+  "scope": [
+    "BUILT-225",
+    "BUILT-232",
+    "BUILT-233",
+    "BUILT-234",
+    "BUILT-235",
+    "BUILT-240",
+    "BUILT-241",
+    "BUILT-242",
+    "BUILT-243",
+    "BUILT-244",
+    "BUILT-245",
+    "BUILT-246"
+  ],
+  "tests": {
+    "fullRegression": 251,
+    "targeted": 10,
+    "fullLog": "full-tests.txt",
+    "targetedLog": "targeted-tests-final.txt",
+    "initialLog": "targeted-tests-initial.txt",
+    "developmentCorrections": [
+      "Initial bearing cap exceeded its height by 0.1m and detached pins were identified and repaired before production.",
+      "Roof tile role corrected to the existing ceramic roof role instead of an undefined tile alias.",
+      "Initial 50mm eave could not share the 20mm window/door collision grid; eave was authored on 20mm native grid, then all exact collision checks passed.",
+      "Door hinge offset and actual axial holes were aligned to the unchanged authored opening; quarter-turn placement has no wall collision.",
+      "Auxiliary floor and wall were separated to stay within the per-asset voxel limit; no geometry-check budget was skipped."
+    ]
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 10,
+  "mcpStatus": "passed",
+  "materialCandidates": 276,
+  "nativeVoxels": 890824,
+  "triangles": 20008,
+  "glbBoundsMaxErrorM": 1.9073486345888568e-07,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 12,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "All twelve base-colour, front and material views inspected.",
+      "Six real installation scenarios inspected, including identical door leaf in explicit closed and open placements.",
+      "Initial diagnostic text is retained; terminal-only trailing whitespace is stripped from archived logs."
+    ]
+  },
+  "components": {
+    "families": 12,
+    "shapes": 14,
+    "inventory": "component-variants.json"
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 295,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 718,
+    "generatedEntries": 350,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 276
+  },
+  "limitations": [
+    "Original Building/FloorPlan, terrain, RoofRegion, shared door state, power state and controllers were not supplied; these are explicit authored installations, not original-game integration.",
+    "Low ramp has 50mm native terracing, 1m flat ends and a nominal 1:10 grade; it is not an analytical continuous slope or accessibility certification.",
+    "Guard placement and 0.35m/1.72m clearances are geometry tests, not structural or building-code certification.",
+    "Physical projector has no bound power, hologram or UI signage; optical emitter intensity remains zero. Planter shells contain no plants or soil.",
+    "Open/closed door placements validate one native leaf and invariant hinge axis; no runtime animation, permissions or state machine are claimed.",
+    "Auxiliary fixtures, component variants and repeated placements do not add catalogue masters.",
+    "SwiftShader software WebGL, not hardware-GPU performance evidence; all 276 references await human art acceptance."
+  ]
+}
