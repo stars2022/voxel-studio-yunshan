@@ -287,7 +287,7 @@
                   },
                   "catalogId": {
                     "type": "string",
-                    "pattern": "^(LIFE|BUILT)-[0-9]{3}$"
+                    "pattern": "^(LIFE|BUILT|ENV)-[0-9]{3}$"
                   },
                   "id": {
                     "type": "string",
@@ -314,6 +314,11 @@
                         "type": "number",
                         "exclusiveMinimum": 0,
                         "maximum": 50
+                      },
+                      "tileX": {
+                        "type": "integer",
+                        "minimum": -8,
+                        "maximum": 8
                       },
                       "component": {
                         "type": "string",
@@ -387,6 +392,11 @@
                         "type": "number",
                         "exclusiveMinimum": 0,
                         "maximum": 50
+                      },
+                      "tileX": {
+                        "type": "integer",
+                        "minimum": -8,
+                        "maximum": 8
                       },
                       "component": {
                         "type": "string",
@@ -2151,7 +2161,14 @@
         "lighting": {
           "enum": [
             "standard",
-            "soft"
+            "soft",
+            "night"
+          ]
+        },
+        "meshMode": {
+          "enum": [
+            "near",
+            "far"
           ]
         },
         "effects": {

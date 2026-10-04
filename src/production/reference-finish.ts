@@ -3,10 +3,17 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=17;
+export const referenceFinishVersion=18;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ cableSheave:{name:'缆车钢导轮槽面',color:'#7f8b8d',roughness:.32,metalness:.8,...surface('none',.1,0,0)},
+ bedrock:{name:'地质完整基岩',color:'#74766b',roughness:.96,metalness:0,...surface('stone',.8,.2,621)},
+ weatheredRock:{name:'风化浅色岩层',color:'#b0aa95',roughness:.95,metalness:0,...surface('stone',.6,.22,623)},
+ surfaceSoil:{name:'自然表土',color:'#82684a',roughness:1,metalness:0,...surface('stone',.3,.2,625)},
+ moss:{name:'贴生苔藓',color:'#687d3d',roughness:1,metalness:0,...surface('none',.1,0,0)},
+ shrubFoliage:{name:'地形灌木叶',color:'#6b8c39',roughness:.97,metalness:0,...surface('none',.1,0,0)},
+ wetPileWood:{name:'栈台浸水木桩',color:'#625947',roughness:.78,metalness:0,...surface('wood',.8,.3,627)},
  marineHull:{name:'船体水上金属蒙皮',color:'#415967',roughness:.55,metalness:.4,...surface('none',.1,0,0)},
  marineAntifouling:{name:'船底防污涂层金属板',color:'#854f43',roughness:.82,metalness:.2,...surface('none',.1,0,0)},
  dockFender:{name:'码头独立橡胶护舷',color:'#344244',roughness:.94,metalness:0,...surface('none',.1,0,0)},

@@ -27,3 +27,19 @@ export function meshChunk(grid:Grid,key:string,materials:Record<string,Material>
  return[...buckets.values()];
 }
 export function meshAsset(a:Asset,materials:Record<string,Material>){const g=new Grid(a.chunks);return[...g.chunks.keys()].flatMap(k=>meshChunk(g,k,materials,a.cellSize,a.origin));}
+
+/** Static overview mesh: merge rectangles only on identical material/plane/normal.
+ * No voxel resampling, decimation, interpolation, collision or silhouette change. */
+export function mergeCoplanarMesh(a:Asset,buckets:MeshBucket[]):MeshBucket[]{
+ type Rect={u0:number;u1:number;v0:number;v1:number};
+ const planes=new Map<string,{material:number;axis:number;sign:number;plane:number;rects:Rect[]}>();
+ for(const b of buckets)for(let k=0;k<b.positions.length;k+=12){const normal=b.normals.slice(k,k+3),axis=normal.findIndex(n=>n!==0),sign=normal[axis],u=(axis+1)%3,v=(axis+2)%3,coords=[0,1,2,3].map(j=>b.positions.slice(k+j*3,k+j*3+3).map((n,d)=>Math.round((n-a.origin[d])/a.cellSize))),plane=coords[0][axis],key=[b.material,axis,sign,plane].join(',');let group=planes.get(key);if(!group){group={material:b.material,axis,sign,plane,rects:[]};planes.set(key,group);}group.rects.push({u0:Math.min(...coords.map(c=>c[u])),u1:Math.max(...coords.map(c=>c[u])),v0:Math.min(...coords.map(c=>c[v])),v1:Math.max(...coords.map(c=>c[v]))});}
+ const result=new Map<number,MeshBucket>();
+ for(const group of planes.values()){
+  let rects=group.rects,previous=Infinity;
+  while(rects.length<previous){previous=rects.length;for(const direction of[0,1]){const lo=direction?'v0':'u0',hi=direction?'v1':'u1',ac=direction?'u0':'v0',bc=direction?'u1':'v1';rects.sort((a,b)=>a[ac]-b[ac]||a[bc]-b[bc]||a[lo]-b[lo]);const merged:Rect[]=[];for(const r of rects){const last=merged.at(-1);if(last&&last[ac]===r[ac]&&last[bc]===r[bc]&&last[hi]===r[lo])last[hi]=r[hi];else merged.push({...r});}rects=merged;}}
+  const {material,axis,sign,plane}=group,u=(axis+1)%3,v=(axis+2)%3;let b=result.get(material);if(!b){b={material,positions:[],normals:[],indices:[],uvs:[],quads:0};result.set(material,b);}
+  for(const r of rects){const start=b.positions.length/3;for(const[uu,vv]of[[r.u0,r.v0],[r.u1,r.v0],[r.u1,r.v1],[r.u0,r.v1]]){const q=[0,0,0],n=[0,0,0];q[axis]=plane;q[u]=uu;q[v]=vv;n[axis]=sign;const world=q.map((c,d)=>a.origin[d]+c*a.cellSize);b.positions.push(...world);b.normals.push(...n);b.uvs.push(world[axis===0?2:0],world[axis===1?2:1]);}b.indices.push(...(sign>0?[0,1,2,0,2,3]:[0,2,1,0,3,2]).map(n=>start+n));b.quads++;}
+ }
+ return[...result.values()];
+}

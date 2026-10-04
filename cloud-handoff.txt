@@ -1,16 +1,13 @@
 当前接续目标：完成3d资产转化，按图册批次验证并推送远程origin/main。用户已明确授权每批推送现有远程分支，不需重新确认。
 有效进度源：projects/conversion-goal.json 与 projects/atlas-production-index.json。
-M025已制作并验证，下一批M026；推送状态以Git远程为准。M001–M025累计300个参考候选、319个基础母版（含19个旧候选），原清单已生成374项/未生成694项；参考尚余493条。人工美术验收为0。
-M025检查：271项全套回归、10项专项及13项真实MCP通过；36张资产图、16张拼装图、300件材质审查。有效证据：artifacts/atlas/atlas-20261004022209。
-本批12清单家族含18组件形状：289 railBogie/maglevBase；294 gearDeployed/gearCompressed/gearRetracted；295 portWing/starboardWing；297 horizontalTail/verticalTail；300 bollard/fender。component-variants.json指向默认文件及场景内原生变体。复用、姿态和辅助试架不增加清单数。
-155个用途角色：marineHull174、marineAntifouling175、dockFender176、mooringLine177（非碰撞fabric）、railWheel178、maglevCoil179、navPortLamp180与navStarboardLamp181（非碰撞emissive、intensity=0）。通过styles保留自定义ID；换外观/撤销不变占用和碰撞。
-289作者轨头中心距2.8m、轨顶.25m，钢轮架装Y.2m使踏面localY.05m实接轨；磁浮导鞋两侧.1m真空隙但用明确检修止挡承托，不称磁力悬浮。两型上承鞍分别托住旧177车体且不改原body。
-290两条+Z钢索穿真0.2m夹孔，孔顶localY2.75m；实际钢索托吊架，吊架下承板托辅助轿厢顶板，身体通道保持开放。未接原运行route或缆车控制器。
-291船底厚.3m，闭合船壳内部空格不与外部连通；本地水线1m/甲板2m、安装后水面1.2m/甲板2.2m，龙骨检修垫明确，不模拟浮力。292右侧Z4–6m缺口与293四米固定接板同位，码头截槽接成连续地坪；300护舷抵真船侧并有下托，系船柱避通路，绳卷不冒称已绑船。
-294放下高2.4m、压缩高2m且轮胎不变；收起由同一放下格子刚体转90度，体素数与材质逐格一致，在明确检修舱实托，非飞行动画。295左右各7m+4m机身梁框=18m作者翼展，不用17m旧代理；296上承帽穿真机翼槽坐在其顶面，八片静态风扇与进排气腔真实；297六米平尾托三米垂尾，原yaw/pitch/flight与导航状态未绑。
-307三段底高0/.4/.8m贴合显式terrain，桥板座localY2m、步面2.4m；308墩帽/双桥垫/钢板/上梁/缝封层级实接，场景桥面2.6m贯通两岸并保留0.35/1.72净空。原巨块/ray和lowerpier失败不在此冒称解决。
-M026含首批ENV，目录/制作/schema/UI可用路由需如实支持ENV；0.2m权威地形和真洞、近远/昼夜证据等边界见conversion-goal.json。316源安装0且共享规格未批准，不在旧recipe凭图新增可走面。
-原Vehicle/AerialVehicle/SimState、NetworkEdge、权限、动画、地形和控制器缺失均保留，不声明游戏集成/受力/美术验收。先npm run build再拍图，PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright，SwiftShader软件WebGL。
+M026已制作并验证，下一批M027；推送状态以Git远程为准。M001–M026累计312参考候选、331基础母版（含19旧候选），原清单已生成386项/未生成682项；参考尚余481条。人工美术验收0。
+M026：281项全套回归、10项专项及13项真实MCP通过，36张资产图、10张安装图、41张地形近远/昼夜/近景图。1900684体素，常规79024三角；静态远壳共71010三角且逐个有向材质面完全一致。证据artifacts/atlas/atlas-20261004030820；12件均附visual-far.glb。
+首批ENV路由已接清单制作、MCP schema、library、材质审查和预览。原生完整0.2m占用为编辑/显示/碰撞同源，远壳只合并共面面片；编辑器手动near/far、day/night可切换，并已验证远壳下编辑、换回及撤销，不等于原自动LOD/96m流送或游戏昼夜。
+ENV001作者24m块用全局X采样，tileX有界整数并同步原点/接口；ENV005实际24m域和8m级差，ENV006连续竖崖、ENV008不等宽台阶、ENV010连脊低鞍、ENV011逐柱接地大小角砾。ENV012作者4m宽槽、水面1.2m/床.6m、中心X=10+1.2sin(.4Z)，原单河中心线/潭形未取得。ENV013三维真洞，X3.6–8.4/Y0–4.6/Z0–8保守空腔，实岩顶/双腿，辅助洞底真通行。
+309主缆真实入索孔与内板，锚块和远端试架落明确岸基，保路/河域。310双直承索与导轮真槽同高，辅助轿厢真挂夹孔，身体净空1.72m/离地3.4m；不称原转点路线验证。312四木桩贯到甲板，岸接板/平台/双2m入口同高，水面为非碰撞显示。316独立作者5m梁研究，梁端承托中心原点[-.6,-4,-4.8]，真实墙和下托，源安装0/共享截面未批准/未加住宅可走面。
+162用途角色：bedrock182、weatheredRock183、surfaceSoil184(soil)、moss185/shrubFoliage186(plant,false)、wetPileWood187(wood)、cableSheave188(metal)；按styles保留自定义ID。缆车导轮独立于railWheel，不因同色借用。风化岩层/土层/苔层/灌木几何与碰撞不随换外观改变。
+M027任务参数与源限制见conversion-goal.json：153m落差/24m宽水帘、50m半径/24边潭、23峰/48m远壳、九点河线/四段单瀑路径等不能在未取得原数据时冒称运行复原。继续完整0.2m、实际水床/接地/接缝证据，复用/石粒/辅助件不增加母版数。
+原WorldDefinition、terrainHeight、共享FloorPlan、NetworkEdge、身体权限与控制器缺失仍保留。原巨块/ray及lowerpier负例也未在本批解决。先build再拍图；PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright，SwiftShader软件WebGL。M025及更早批次证据按Git历史和对应artifact保留。
 原生体素和语义ID权威，完整目标仍未完成。
 
 以下是迁移时历史快照，测试数字、目录及原机事实保留原值：

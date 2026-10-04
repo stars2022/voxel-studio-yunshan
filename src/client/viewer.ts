@@ -82,15 +82,18 @@ export class Viewer {
  setTool(tool:string){this.tool=tool;this.controls.mouseButtons.LEFT=tool==='orbit'?THREE.MOUSE.ROTATE:-1 as any;this.renderer.domElement.style.cursor=tool==='orbit'?'grab':'crosshair';}
  makeMaterials(p:Project){this.materialLibrary.sync(p.materials,this.clipY,Math.min(8,this.renderer.capabilities.getMaxAnisotropy()));}
 
+ meshMode:'near'|'far'='near';timeOfDay:'day'|'night'='day';
+ setMeshMode(mode:'near'|'far'){if(mode!=='near'&&mode!=='far')throw new Error('Invalid mesh mode');this.meshMode=mode;return this.update(this.project);}
+ setTimeOfDay(time:'day'|'night'){if(time!=='day'&&time!=='night')throw new Error('Invalid time of day');this.timeOfDay=time;this.setStudio(this.studio);}
  update(project:Project){
-  const rev=++this.revision;this.project=project;this.ready=false;this.el.classList.add('meshing');
+  const rev=++this.revision,meshMode=this.meshMode;this.project=project;this.ready=false;this.el.classList.add('meshing');
   // A hash means completed geometry. Serialise cache writes and skip superseded queued
   // snapshots so undo/redo cannot publish an empty or partially populated asset cache.
-  this.updateQueue=this.updateQueue.catch(()=>{}).then(async()=>{if(rev===this.revision)await this.buildSnapshot(project,rev);});
+  this.updateQueue=this.updateQueue.catch(()=>{}).then(async()=>{if(rev===this.revision)await this.buildSnapshot(project,rev,meshMode);});
   return this.updateQueue;
  }
- private async buildSnapshot(project:Project,rev:number){
-  const signature=meshMaterialSignature(project),materialSignature=JSON.stringify(project.materials);
+ private async buildSnapshot(project:Project,rev:number,meshMode:'near'|'far'){
+  const signature=meshMode+meshMaterialSignature(project),materialSignature=JSON.stringify(project.materials);
   if(materialSignature!==this.materialSignature){this.makeMaterials(project);this.materialSignature=materialSignature;}
   const visible=visibleAssetIds(project,this.mode,this.assetId);this.lastMeshedAssets=[];this.lastMeshError=null;
   const tasks:Promise<void>[]=[];
@@ -107,10 +110,10 @@ export class Viewer {
      try{for(const chunk of data.chunks){const list=chunk.buckets.map((b:MeshBucket)=>{const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.Float32BufferAttribute(b.positions,3));geometry.setAttribute('normal',new THREE.Float32BufferAttribute(b.normals,3));geometry.setAttribute('uv',new THREE.Float32BufferAttribute(b.uvs,2));geometry.setIndex(b.indices);geometry.computeBoundingSphere();return{geometry,material:b.material};});next.set(chunk.key,list);}}
      catch(e){for(const list of next.values())list.forEach(b=>b.geometry.dispose());reject(e);return;}
      let cached=this.cache.get(key);if(!cached){cached=new Map;this.cache.set(key,cached);}
-     this.dropMerged(key);for(const [ck,list]of next){cached.get(ck)?.forEach(b=>b.geometry.dispose());if(list.length)cached.set(ck,list);else cached.delete(ck);}
+     this.dropMerged(key);if(data.replaceAll){for(const list of cached.values())list.forEach(b=>b.geometry.dispose());cached.clear();}for(const [ck,list]of next){cached.get(ck)?.forEach(b=>b.geometry.dispose());if(list.length)cached.set(ck,list);else cached.delete(ck);}
      this.cacheSources.set(key,{asset:gridAsset,signature});this.emitterCache.set(key,data.emitters??[]);this.lastMeshMs=data.durationMs;resolve();
     });
-    this.worker.postMessage({id,asset:gridAsset,materials:project.materials,keys:changed});
+    this.worker.postMessage({id,asset:gridAsset,materials:project.materials,keys:changed,far:meshMode==='far',replaceAll:old?.signature!==signature});
    }));
   }
   // Await every job before the next snapshot can write the cache, including failures.
@@ -186,6 +189,7 @@ export class Viewer {
    // the opaque canvas blend with the white page and washed out every material.
    this.aoPass.copyMaterial.blendSrcAlpha=THREE.ZeroFactor;this.aoPass.copyMaterial.blendDstAlpha=THREE.OneFactor;
   }
+  if(enabled&&this.timeOfDay==='night'){this.renderer.setClearColor(0x18252e);(this.ground.material as THREE.MeshStandardMaterial).color.setHex(0x52616a);this.ambient.intensity=.25;this.sun.intensity=.5;this.sun.color.setHex(0x9bc0e1);this.fill.intensity=.16;this.scene.environmentIntensity=.035;this.renderer.toneMappingExposure=.9;}
   this.fitLight();if(this.clayEnabled)this.setClay(true);
  }
  setReferenceLighting(enabled:boolean){this.referenceLighting=enabled;this.setStudio(this.studio);}

@@ -36,3 +36,5 @@
 - 机场黄/红/白实涂标记使用独立 airfieldYellow/airfieldRed/airfieldWhite（ink），车钩制动软管用 couplerHose（rubber），与轮胎和车窗密封分开。A1 外部原门框未收件时保留原件待核，按给定尺寸的新作只标替代候选；灯笼与门框的三角预算查实际导出。滑行道 route 与实涂线同源，机位 ID/鼻向/包络记录为作者配置，不复制飞机充数。开门壳保持原车体洞口，车钩按实际车序与端面安装；辅助承架不能冒称原车辆或原控制器已集成。
 
 - 轨道钢轮 railWheel、磁浮绕组 maglevCoil、船体水上/防污金属板 marineHull/marineAntifouling、码头护舷 dockFender、非碰撞系船绳 mooringLine、左右导航芯 navPortLamp/navStarboardLamp 独立归类。导航状态未绑定时零发光。磁浮几何试架有明确检修止挡，不能称磁悬浮通过；船体真闭壳可做外部空格连通检查，显示水面和龙骨检修垫不等于浮力。起落架收起形状须为实际刚体占用变换，机翼孔与吊舱承帽、缆索孔与轿厢顶托应真实接触，不能用悬空件冒称承接。
+
+- 自然完整基岩 bedrock、风化岩层 weatheredRock、soil 类表土 surfaceSoil、非碰撞苔层 moss/灌木 shrubFoliage 和浸水木桩 wetPileWood、缆车钢导轮 cableSheave 独立赋值；钢导轮与轮轨踏面 railWheel 分开。ENV 保留完整0.2m权威占用；远景只能按已验证方法派生，不能把共面合并称为自动距离LOD或粗采样物理格。真穿洞用三维占用和同步碰撞，不用单值高度场冒充。住宅悬挑梁原安装0、共享尺寸未批准时，新作仅为作者研究；梁端承托中心原点、实际墙支承和身体净空需明确，不凭图为旧住宅增加可走面。夜景是编辑器光照预览，不等于原游戏时钟/运行集成。

@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "run": "atlas-20261004030820",
+  "sheet": "M026",
+  "scope": [
+    "BUILT-309",
+    "BUILT-310",
+    "BUILT-312",
+    "BUILT-316",
+    "ENV-001",
+    "ENV-005",
+    "ENV-006",
+    "ENV-008",
+    "ENV-010",
+    "ENV-011",
+    "ENV-012",
+    "ENV-013"
+  ],
+  "tests": {
+    "fullRegression": 281,
+    "targeted": 10,
+    "fullLog": "full-tests.txt",
+    "targetedLog": "targeted-tests.txt",
+    "developmentCorrections": [
+      "Removed a 0.2m overlap between the auxiliary anchor lead support and shore foundation before final checks.",
+      "Fixed strict floating-point bound assertions and moved a steel-wheel probe away from its copper axle cap.",
+      "Added bounded ENV tileX schema and origin/port-aware rebuild support; verified one undo.",
+      "Separated cableSheave from railWheel and regenerated all final native/export/preview evidence. Superseded development output is not included."
+    ]
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 13,
+  "mcpStatus": "passed",
+  "materialCandidates": 312,
+  "nativeVoxels": 1900684,
+  "triangles": 79024,
+  "farTriangles": 71010,
+  "glbBoundsMaxErrorM": 7.629394538355427e-07,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 10,
+  "terrainScreenshots": 41,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Twelve isometric/front/material sets inspected.",
+      "Five real installations inspected in isometric and front views; end-on residential wall and shore views occlude mounted parts, while isometric and native contact checks establish their interfaces.",
+      "Eight terrain sets inspected in near/far/day/night/close views, plus MCP night/far cave capture.",
+      "Near/far exact surface coverage is independently verified in terrain-lod.json.",
+      "Native voxel geometry and material IDs remain authoritative; the night preset and manual far-mesh view do not imply original game integration."
+    ]
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 331,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 682,
+    "generatedEntries": 386,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 312
+  },
+  "limitations": [
+    "Original WorldDefinition, terrainHeight, 96m streaming/LOD, NetworkEdge, body permissions/controllers and trusted residential FloorPlan have not been supplied or integrated. No original runtime or human art acceptance is claimed.",
+    "All ENV geology uses actual 0.2m native occupied cells for edits, display and solid collision export. Static far meshes merge coplanar rectangles only, preserve every oriented material face, and are manually selectable; no automatic distance LOD or physical coarsening is implemented.",
+    "Day/night is an editor lighting preset and captured in actual SwiftShader software WebGL, not a game clock, hardware-GPU benchmark or global-illumination claim.",
+    "ENV-001 authored 24m tiles use global X sampling with origin-aware rebuilding. ENV-005 actually retains a 24m domain and 8m step parameter; the heightfield families do not establish overhang capability.",
+    "ENV-013 is explicitly volumetric, with two connected legs and a through-void conservatively X3.6–8.4/Y0–4.6/Z0–8m. A separate authored ground supplies the walking floor.",
+    "ENV-012 uses authored X=10+1.2sin(0.4Z), 4m channel, bed Y0.6 and display water Y1.2. Original river centreline, pool shape and water level remain unreceived; no fluid simulation or buried road is included.",
+    "Anchor lead enters a real steel throat, touches an internal plate and shares grounded shore support. The author road and river reservations remain clear; original body permissions remain unbound.",
+    "Cable tower is an authored straight-span candidate, not original route-turn validation. Actual sheave grooves carry twin cables and bored clamps carry an auxiliary cabin; floor clearance is 3.4m. cableSheave is independent from railWheel.",
+    "Wharf has four continuous piles, real deck/shore landing, waterline and 2m entry/berth gaps. Original boat, stopped state and boarding permissions remain unbound.",
+    "Residential beam is an author 5m study with end-bearing-centre origin, explicit wall and lower bracket. Original installed count remains zero, shared dimensions unapproved, and no walk surface is added to old recipes.",
+    "162 use-specific roles preserve rock, weathered rock, soil, noncollision moss/shrubs, wet wood and guide wheels separately. Placements, terrain tiles, individual stones and auxiliary fixtures do not add catalogue masters.",
+    "All 312 reference candidates remain pending human art acceptance. Natural geological composition and the authored material style remain candidates, not a claim of image-perfect matching."
+  ]
+}

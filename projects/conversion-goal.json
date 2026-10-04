@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 300,
-    "remainingReferenceEntries": 493,
-    "completedReferenceSheets": 25,
+    "referenceCandidates": 312,
+    "remainingReferenceEntries": 481,
+    "completedReferenceSheets": 26,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 319,
+      "baseModels": 331,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 694,
-      "generatedEntries": 374,
+      "notProduced": 682,
+      "generatedEntries": 386,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 300
+      "atlasReferenceCandidates": 312
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M025",
+    "sheet": "M026",
     "state": "validated-for-batch-push",
     "ids": [
-      "BUILT-289",
-      "BUILT-290",
-      "BUILT-291",
-      "BUILT-292",
-      "BUILT-293",
-      "BUILT-294",
-      "BUILT-295",
-      "BUILT-296",
-      "BUILT-297",
-      "BUILT-300",
-      "BUILT-307",
-      "BUILT-308"
+      "BUILT-309",
+      "BUILT-310",
+      "BUILT-312",
+      "BUILT-316",
+      "ENV-001",
+      "ENV-005",
+      "ENV-006",
+      "ENV-008",
+      "ENV-010",
+      "ENV-011",
+      "ENV-012",
+      "ENV-013"
     ],
-    "run": "atlas-20261004022209",
-    "evidence": "artifacts/atlas/atlas-20261004022209"
+    "run": "atlas-20261004030820",
+    "evidence": "artifacts/atlas/atlas-20261004030820"
   },
-  "nextBatch": "M026",
+  "nextBatch": "M027",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作真实体素、独立材质角色、部件、安装接口及开口",
@@ -66,16 +66,17 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M025共300件技术转化候选；尚余493条参考未完成，人工美术验收为0。"
+    "M001–M026共312件技术转化候选；尚余481条参考未完成，人工美术验收为0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "M026共12件：BUILT-309、310、312；ENV-001、005、006、008、010、011、012、013；BUILT-316。岸锚块、索车支柱导轮、滨水栈台桩基、自然地貌和住宅悬挑通廊梁。",
-    "这是首批ENV条目。当前制作/MCP schema与若干预览选择器只接LIFE/BUILT，须按目录合法ID扩展ENV路由与验证；不要重命名清单条目或把其塞成BUILT来绕过限制。",
-    "ENV要求0.2m权威物理/编辑格，显示、支承、碰撞由同一明确地形描述生成。1–2m采样不能冒称全表面0.2m；近远LOD轮廓、近景/总览/昼夜需实际证据，未实现能力须明列。",
-    "ENV-013天然穿洞与悬挑不能靠单值高度场，必须真实原生洞口和同步碰撞净空。ENV-005保留24m节理域/8m台阶原参数边界；ENV-012源单河中心线/水位未提供时不可伪称复原当前河床。石粒和地形实例不增加母版数。",
-    "309主缆末端要进入真正岸锚，310导轮与明确route/舱挂点同向，312桩、平台、水位与实际泊位相接。仍保留原controller、W、身体授权和原terrain缺失边界。",
-    "316具体梁截面/跨长/数量未有可信共享方案，源安装0；可制作明确作者独立候选，但不能把图册图像或旧高桥配方当作已批准住宅共享结构、既有安装或新增可走面。",
-    "角色库155项，新增marineHull174/marineAntifouling175/dockFender176/mooringLine177/railWheel178/maglevCoil179/navPortLamp180/navStarboardLamp181；实际导入按styles。导航未绑定保持零发光，系船绳非碰撞。"
+    "M027全12件ENV：014土层根际、015破岩独石、016细格碎石、017水蚀岸石、019远山代理、026单瀑四段路径、027连续河面、028水帘、029潭面、032多级跌水、034支流、035汇口河弯。",
+    "ENV已具合法清单/制作/MCP/审查/预览路由。M026采用完整0.2m原生占用，远景为跨chunk共面合并静态网格，有浏览器near/far和day/night切换；不是自动距离LOD。继续提供逐面覆盖、近远/昼夜/近景证据。",
+    "014浅/深土与坡切同族，根部实接基岩/土层；015底锚/实体接地不能遮权威裂缝；016粒径0.4–0.8m，不按石粒增加模型数；017水蚀岸石从1.2m起，须真支承。",
+    "019原23峰为实例、48m采样为远壳，不得称可探索峰地形或23独立模型。新作者代理与原地形未绑定需明示，近远边界须实核。",
+    "026保留top/bottom派生的四段同一落水路径，不冒称多瀑；027原九点中心线未取得不能伪造恢复，水面/岸线接合须同源。",
+    "028原水帘落差153m/宽24m；029原潭半径50m/24边是现有参数。保留米制尺寸与0.2m网格并控制原生占用预算；透明水非碰撞，显示存在不代表流体/浮力。",
+    "032级差/落点应顺坡真接续，不穿岩，泡沫/飞沫若无权威来源则标静态样件；034上游来源与下游河连接清楚；035 Y/T与内外弯属于同族，避免水面叠闪/接缝及反向UV假流。",
+    "当前162角色。182bedrock、183weatheredRock、184surfaceSoil(soil)、185moss(false)、186shrubFoliage(false)、187wetPileWood、188cableSheave；实际ID按styles映射，guide wheel不得再借railWheel。水系缺角色时按实际介质建角色，不借灯光伪造泡沫。"
   ]
 }

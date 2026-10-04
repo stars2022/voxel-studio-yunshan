@@ -53,14 +53,14 @@ async function callTool(name:string,args:any){
  if(name==='generate_previews'){
   const captured=(await rpc('state')).project;if(args.assetId&&!captured.assets[String(args.assetId)])throw new Error('预览资产不存在');
   const {chromium}=await import('playwright');const browser=await chromium.launch({headless:true}),directory=path.join(root,'previews',randomUUID());await mkdir(directory);
-  const version=captured.version,appearance=args.appearance??'baseColor',lighting=args.lighting??'standard',effects=!!args.effects;
-  try{const page=await browser.newPage({viewport:{width:1440,height:1000}}),query=new URLSearchParams({preview:'1',flat:appearance==='material'?'0':'1',look:lighting==='soft'?'reference':'standard',ao:effects?'1':'0',bloom:effects?'1':'0'});if(args.assetId)query.set('asset',String(args.assetId));
+  const version=captured.version,appearance=args.appearance??'baseColor',lighting=args.lighting??'standard',meshMode=String(args.meshMode??'near'),effects=!!args.effects;
+  try{const page=await browser.newPage({viewport:{width:1440,height:1000}}),query=new URLSearchParams({preview:'1',flat:appearance==='material'?'0':'1',look:lighting==='soft'?'reference':'standard',ao:effects?'1':'0',bloom:effects?'1':'0',time:lighting==='night'?'night':'day',mesh:meshMode});if(args.assetId)query.set('asset',String(args.assetId));
    await page.goto(`http://127.0.0.1:${port}/?${query}`);await page.waitForFunction(()=>!!(window as any).voxelStudio?.ready,{},{timeout:60000});
    const files=[];for(const view of (args.views as string[]|undefined)??['perspective','front','back','left','right','top','bottom']){
     if((await rpc('state')).project.version!==version)throw new Error('预览期间文档变化，请重试');
     await page.evaluate(v=>(window as any).voxelStudio.view(v),view);await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));const file=path.join(directory,view+'.png');await page.locator('#viewport').screenshot({path:file});files.push(file);
    }
-   if((await rpc('state')).project.version!==version)throw new Error('预览期间文档变化，请重试');return{version,assetId:args.assetId??null,appearance,lighting,effects,files};
+   if((await rpc('state')).project.version!==version)throw new Error('预览期间文档变化，请重试');return{version,assetId:args.assetId??null,appearance,lighting,meshMode,effects,files};
   }finally{await browser.close();}
  }
  return rpc(name,args);

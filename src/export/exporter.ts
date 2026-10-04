@@ -3,14 +3,15 @@ import {KHRMaterialsEmissiveStrength} from '@gltf-transform/extensions';
 import sharp from 'sharp';
 import {mkdir,writeFile} from 'node:fs/promises';
 import path from 'node:path';
-import {meshAsset} from '../core/mesh';
+import {meshAsset,mergeCoplanarMesh} from '../core/mesh';
 import {Grid} from '../core/grid';
 import {surfacePixels} from '../core/surface';
 import type {Project,Asset,Material} from '../core/types';
 const rgb=(s:string)=>[1,3,5].map(i=>parseInt(s.slice(i,i+2),16)/255);
 const materialRoles=(p:Project,id:number)=>Object.entries(p.styles).flatMap(([style,roles])=>Object.entries(roles).filter(([,m])=>m===id).map(([role])=>`${style}.${role}`)).sort();
-export async function buildGLB(p:Project,assetId?:string){
+export async function buildGLB(p:Project,assetId?:string,meshMode:'near'|'far'='near'){
  const doc=new Document(),buffer=doc.createBuffer(),scene=doc.createScene(p.name),materials=new Map<number,any>();
+ scene.setExtras({meshMode,meshSource:'native occupancy',simplification:meshMode==='far'?'same-material coplanar merges only':'chunk greedy rectangles'});
  const emission=doc.createExtension(KHRMaterialsEmissiveStrength);
  const sorted=Object.values(p.materials).sort((a,b)=>a.id-b.id),cols=Math.min(16,sorted.length),rows=Math.ceil(sorted.length/cols),tile=16,width=cols*tile,height=rows*tile,raw=Buffer.alloc(width*height*4);
  sorted.forEach((m,index)=>{const c=rgb(m.color).map(n=>Math.round(n*255));for(let y=0;y<tile;y++)for(let x=0;x<tile;x++){const offset=((Math.floor(index/cols)*tile+y)*width+(index%cols*tile+x))*4;raw.set([...c,Math.round(m.opacity*255)],offset);}});
@@ -29,7 +30,7 @@ export async function buildGLB(p:Project,assetId?:string){
  }
  const assetMeshes=new Map<string,any>();
  const getMesh=(a:Asset)=>{if(assetMeshes.has(a.id))return assetMeshes.get(a.id);const mesh=doc.createMesh(a.name);const groups=new Map<number,{positions:number[],normals:number[],indices:number[],uvs:number[]}>();
-  for(const b of meshAsset(a,p.materials)){let group=groups.get(b.material);if(!group){group={positions:[],normals:[],indices:[],uvs:[]};groups.set(b.material,group);}const offset=group.positions.length/3;for(const x of b.positions)group.positions.push(x);for(const x of b.normals)group.normals.push(x);for(const x of b.uvs)group.uvs.push(x);for(const x of b.indices)group.indices.push(x+offset);}
+  for(const b of (meshMode==='far'?mergeCoplanarMesh(a,meshAsset(a,p.materials)):meshAsset(a,p.materials))){let group=groups.get(b.material);if(!group){group={positions:[],normals:[],indices:[],uvs:[]};groups.set(b.material,group);}const offset=group.positions.length/3;for(const x of b.positions)group.positions.push(x);for(const x of b.normals)group.normals.push(x);for(const x of b.uvs)group.uvs.push(x);for(const x of b.indices)group.indices.push(x+offset);}
   for(const[id,g]of groups){const i=sorted.findIndex(m=>m.id===id),u=(i%cols+.5)/cols,v=(Math.floor(i/cols)+.5)/rows;const uv=new Float32Array(g.positions.length/3*2);for(let k=0;k<uv.length;k+=2){uv[k]=u;uv[k+1]=v;}
    const mat=p.materials[id];if(mat.surface&&mat.surface!=='none'){const angle=(mat.surfaceRotation??0)*Math.PI/180,c=Math.cos(angle),sn=Math.sin(angle),scale=mat.surfaceScale??.5;for(let k=0;k<uv.length;k+=2){uv[k]=(c*g.uvs[k]+sn*g.uvs[k+1])/scale;uv[k+1]=(-sn*g.uvs[k]+c*g.uvs[k+1])/scale;}}
    const attr=(name:string,type:any,array:any)=>doc.createAccessor(name).setType(type).setArray(array).setBuffer(buffer);

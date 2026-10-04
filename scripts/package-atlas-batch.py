@@ -91,6 +91,13 @@ for name in ['camera-framing-first-attempt.json', 'catalog-counts.json', 'compon
     if (out / name).exists():
         files.add(out / name)
 files.update(p for p in (out / 'camera-framing-before').rglob('*') if p.is_file())
+if (out / 'terrain-lod.json').exists():
+    lod = read(out / 'terrain-lod.json')
+    assert lod['status'] == 'passed' and lod['run'] == index['run']
+    assert {r['id'] for r in lod['records']} == {r['id'] for r in entries}
+    files.add(out / 'terrain-lod.json')
+    files.update(root / r['farGLB'] for r in lod['records'])
+    files.update(out.glob('terrain-*.png'))
 files.add(out / 'build.txt')
 manifest = {'format': 'yunshan.atlas-batch', 'version': 1, 'sheet': args.sheet, 'run': index['run'],
             'candidateMasters': len(entries), 'humanArtAccepted': 0, 'assets': entries, 'revisedDependencies': dependencies,
