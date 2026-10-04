@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "run": "atlas-20261004053531",
+  "sheet": "M029",
+  "scope": [
+    "ENV-062",
+    "ENV-064",
+    "ENV-065",
+    "ENV-066",
+    "ENV-067",
+    "ENV-069",
+    "ENV-077",
+    "ENV-078",
+    "ENV-081",
+    "ENV-082",
+    "ENV-084",
+    "ENV-085"
+  ],
+  "tests": {
+    "fullRegression": 310,
+    "focused": 16,
+    "fullLog": "full-tests.txt",
+    "focusedLog": "focused-tests.txt",
+    "developmentCorrections": [
+      "Clamped below-ground leaf cells onto the leaf-litter bed plane so the solid deadwood twig and leaves both meet the actual ground.",
+      "Removed the single backfill cell left behind each weep bore; all wall, sleeve and rear-soil passages now stay open.",
+      "Replaced the generic plant support slab with surface soil and a dedicated wet-soil reed strip. The initial MCP attempt was intentionally stopped before installation scenes; the complete final MCP run and focused tests use the corrected fixture.",
+      "Compared the exact integer grass height in cells to avoid strict floating-point equality for 0.6m."
+    ]
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 17,
+  "mcpStatus": "passed",
+  "referenceMaterialGLBs": 12,
+  "materialCandidates": 348,
+  "componentShapes": 23,
+  "nativeVoxels": 149584,
+  "triangles": 10346,
+  "farTriangles": 9380,
+  "glbBoundsMaxErrorM": 1.9073486345888568e-07,
+  "assetScreenshots": 36,
+  "sceneScreenshots": 31,
+  "terrainScreenshots": 61,
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Twelve isometric/front/material sets inspected.",
+      "Nine author installations inspected in isometric/front flat geometry and isometric material views, plus four pond/drip-groove/weep-bore/hollow-log detail views.",
+      "Twelve near/far/day/night/close sets and the actual MCP night/far image inspected.",
+      "Default oriented material unit-face coverage and actual indexed GLB bounds/triangles/water UVs verified in terrain-lod.json.",
+      "Grass fans, leaves, cut terraces, thick native stone joints and masonry edges remain visibly quantized studies; these are not reference-level human art approvals."
+    ]
+  },
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 367,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 646,
+    "generatedEntries": 422,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 348
+  },
+  "limitations": [
+    "Twelve catalogue families and twenty-three bounded shapes use full 0.2m native occupancy, metres/Y-up and use-specific material IDs. Default recipe sizes match native bounding dimensions; each variant saves its own exact dimensions. Original terrainHeight, footprints, basement plans, FloorPlan, ecology zones, road/building exclusions and controllers remain unprovided. No original-runtime or human-art acceptance is claimed.",
+    "ENV-062 preserves three 0.2m square stems and literal 0.4/0.6m heights. The two- or three-cell height makes the grass leaves visibly coarse and partly merged in front projection; this is a bounded clump, not an entire grass slope or approved naturalistic art.",
+    "ENV-064 fern and broadleaf shapes have distinct real skeletons and native leaf gaps. ENV-065 retains four 0.2 by 1.6 by 0.2m culms, adding 0.6m panicles above them. Its installation has actual wet-soil root contacts, while other groundcover contacts surface soil and avoids the stone path. Noncollision plants receive explicit native contact checks.",
+    "ENV-066 uses authored shallow still-water depths of 0.4/0.8m with correspondingly generated petioles and native discs/petals/receptacles. Pond water cells are explicitly displaced by plants before a no-overlap native union; real wet soil supports the roots. No placement in rapids or deep rivers, buoyancy, fluid or growth simulation is claimed.",
+    "ENV-067 hangs from its top anchor toward negative Y and all authored holdfasts contact a real auxiliary wall. Leaf placements are bounded and recorded separately from occupied voxel count. The legacy limit of 360 blocks per tile is a source description, not a bound original tile or an assertion that 496 native cells equal 360 legacy blocks.",
+    "ENV-069 provides ground-contacting leaves, forked branches and a hollow six-metre log in one family. Corrupt/dead wood, bark, cut heartwood and dead leaves remain distinct actual material roles. A conservative through-bore stays truly empty. Individual leaves, branches and palette changes do not add catalogue masters.",
+    "ENV-077 courtyard/basement variants use an explicitly authored 12 by 10m footprint, actual excavation, exposed cut soil, rock floor and a soil-roof entrance. They do not replace missing original building footprints, doors or basement plans. Building slabs remain outside the terrain family.",
+    "ENV-078 is a local 12m shoulder study retaining actual 2m cliff terraces beside 0.2m-rise/0.4m-tread rock inspection steps. It does not reproduce or claim to fix the original 54m/0.82 broad-shoulder cliff-erasure defect in the original game. The inspection path is an author fixture, not newly granted original-road permission.",
+    "ENV-081 rock/soil terrain variants include four integral bearing surfaces. A separately labelled auxiliary building frame demonstrates four actual column contacts. Posts and slabs are not part of the ENV master and this is not geotechnical or structural capacity certification.",
+    "ENV-082 authored 2.4/3.6m walls have a thick foot, inward batter, separate stone and mortar, real backfill contacts and drainage aggregate. ENV-084 cap/weep components retain physical drip grooves and 0.2m bores. The rear soil contains explicit inspection/drainage slots aligned with the bores; these open author-fixture slots are not a designed hydraulic network. Quantized 0.2m joints are visual/native divisions, not construction mortar thicknesses.",
+    "ENV-085 dry-stone terraces have no mortar, keep path and field surfaces at a common 0.8/1.2m level, and retain actual ditch water below crossing stones. Front access steps belong to the installation fixture. Original farms, irrigation, route permissions and water states remain unbound.",
+    "198 semantic roles keep all new plant tissues, deadwood and drainage aggregate independently replaceable. Plant leaves, petals, rhizomes and stems in this batch are noncollision and zero emission. Deadwood and drainage stones retain their solid wood/stone categories. Imported custom IDs, palette-only edits, failure rollback, native saving, export and one undo are verified.",
+    "Near/far/day/night/close images are actual SwiftShader software WebGL captures. Far means exact same-material coplanar face merging with existing static water UV/index handling, not automatic distance streaming or coarser physics. Day/night is editor lighting, not the original game clock. Separate material views and visual-material.glb retain the stored PBR/alpha palette.",
+    "Union documents retain source masters, parameters and transforms but require explicit rebuild after source edits. Auxiliary soil, walls, ponds, frames and repeated placements add no catalogue masters. All 348 reference candidates remain pending human art acceptance."
+  ]
+}

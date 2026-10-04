@@ -3,10 +3,25 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=20;
+export const referenceFinishVersion=21;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ grassBlade:{name:'草叶片',color:'#79913c',roughness:.95,metalness:0,...surface('none',.5,0,860)},
+ fernFrond:{name:'蕨类羽片',color:'#578046',roughness:.95,metalness:0,...surface('none',.5,0,861)},
+ groundcoverLeaf:{name:'阔叶地被叶片',color:'#3f7553',roughness:.95,metalness:0,...surface('none',.5,0,862)},
+ reedCulm:{name:'芦苇细茎',color:'#8b9751',roughness:.95,metalness:0,...surface('none',.5,0,863)},
+ reedPanicle:{name:'芦苇花序穗',color:'#d4c695',roughness:.95,metalness:0,...surface('none',.5,0,864)},
+ lotusLeaf:{name:'水生荷叶叶片',color:'#4f9364',roughness:.95,metalness:0,...surface('none',.5,0,865)},
+ aquaticPetiole:{name:'水生植物叶柄',color:'#647e3c',roughness:.95,metalness:0,...surface('none',.5,0,866)},
+ vineStem:{name:'附壁藤本茎',color:'#677444',roughness:.95,metalness:0,...surface('none',.5,0,867)},
+ vineLeaf:{name:'附壁藤叶',color:'#679249',roughness:.95,metalness:0,...surface('none',.5,0,868)},
+ deadLeaf:{name:'林地枯落叶',color:'#ad8549',roughness:.95,metalness:0,...surface('none',.5,0,869)},
+ deadWood:{name:'枯枝腐木组织',color:'#786044',roughness:.95,metalness:0,...surface('wood',.5,.2,870)},
+ rootRhizome:{name:'草本根茎组织',color:'#8b7648',roughness:.95,metalness:0,...surface('none',.5,0,871)},
+ drainAggregate:{name:'排水级配石料',color:'#858b7d',roughness:.95,metalness:0,...surface('stone',.5,.2,872)},
+ lotusPetal:{name:'荷花花瓣',color:'#d890a3',roughness:.95,metalness:0,...surface('none',.5,0,873)},
+ lotusReceptacle:{name:'荷花花托组织',color:'#d3b55b',roughness:.95,metalness:0,...surface('none',.5,0,874)},
  canopyLeaf:{name:'冠层成熟叶片',color:'#537d38',roughness:.95,metalness:0,...surface('none',.5,0,847)},
  canopyLeafTip:{name:'冠层新梢叶芽',color:'#97ad49',roughness:.95,metalness:0,...surface('none',.5,0,848)},
  pineNeedle:{name:'松针束',color:'#456b48',roughness:.95,metalness:0,...surface('none',.5,0,849)},

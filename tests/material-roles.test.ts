@@ -84,3 +84,9 @@ test('large classified material libraries keep atomic upserts, bounded schema, d
  assert.throws(()=>commit(e,[{op:'materialBatch',entries:Array.from({length:257},(_,i)=>({id:i+1,properties:{color:'#123456'}}))}]),/256/);assert.deepEqual(e.project,current);
  commit(e,[{op:'undo'}]);for(const k of['assets','materials','styles','palettes']as const)assert.deepEqual(e.project[k],before[k]);
 });
+
+test('M029 plant tissue and drainage roles preserve all fifteen foreign IDs, failed parameters roll back, and one undo removes newly allocated roles',async()=>{
+ const p=newProject();p.catalog={sourceName:'catalog',importedAt:'test',entries:Object.fromEntries(parseCatalogCSV(await readFile('projects/catalog/city-assets.csv','utf8')).map(r=>[r.id,r]))};for(let id=210;id<=224;id++)p.materials[id]={...p.materials[1],id,name:'foreign '+id};const e=new Engine(p),before=structuredClone(e.project);
+ assert.throws(()=>commit(e,[{op:'produceCatalogAsset',catalogId:'ENV-066',id:'lotus'},{op:'produceCatalogAsset',catalogId:'ENV-082',id:'bad',params:{height:3}}]));assert.deepEqual(e.project,before);
+ commit(e,[{op:'produceCatalogAsset',catalogId:'ENV-066',id:'lotus'}]);for(let id=210;id<=224;id++)assert.deepEqual(e.project.materials[id],before.materials[id]);for(const role of['lotusLeaf','aquaticPetiole','lotusPetal','lotusReceptacle','rootRhizome']){const id=e.project.styles.yunshan[role];assert.ok(id>224);assert.ok([...new Grid(e.project.assets.lotus.chunks).cells()].some(([,m])=>m===id));}validateProject(e.project);commit(e,[{op:'undo'}]);for(const k of['assets','styles','materials']as const)assert.deepEqual(e.project[k],before[k]);
+});

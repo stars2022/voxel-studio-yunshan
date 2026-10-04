@@ -15,46 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 336,
-    "remainingReferenceEntries": 457,
-    "completedReferenceSheets": 28,
+    "referenceCandidates": 348,
+    "remainingReferenceEntries": 445,
+    "completedReferenceSheets": 29,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 355,
+      "baseModels": 367,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 658,
-      "generatedEntries": 410,
+      "notProduced": 646,
+      "generatedEntries": 422,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 336
+      "atlasReferenceCandidates": 348
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M028",
+    "sheet": "M029",
     "state": "validated-for-batch-push",
     "ids": [
-      "ENV-037",
-      "ENV-038",
-      "ENV-043",
-      "ENV-050",
-      "ENV-052",
-      "ENV-054",
-      "ENV-055",
-      "ENV-056",
-      "ENV-057",
-      "ENV-059",
-      "ENV-060",
-      "ENV-061"
+      "ENV-062",
+      "ENV-064",
+      "ENV-065",
+      "ENV-066",
+      "ENV-067",
+      "ENV-069",
+      "ENV-077",
+      "ENV-078",
+      "ENV-081",
+      "ENV-082",
+      "ENV-084",
+      "ENV-085"
     ],
-    "run": "atlas-20261004044107",
-    "evidence": "artifacts/atlas/atlas-20261004044107"
+    "run": "atlas-20261004053531",
+    "evidence": "artifacts/atlas/atlas-20261004053531"
   },
-  "nextBatch": "M029",
+  "nextBatch": "M030",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作真实体素、独立材质角色、部件、安装接口及开口",
@@ -66,17 +66,17 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M028共336件技术转化候选；尚余457条参考未完成，人工美术验收为0。"
+    "M001–M029共348件技术转化候选；尚余445条参考未完成，人工美术验收为0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "M029十二件：ENV062近景草、064蕨/阔叶地被、065细茎芦苇、066荷叶/湿岸叶簇、067附壁垂藤、069落叶枯枝倒木、077建筑基底/地下开挖、078建筑群肩坡、081多点接地基础、082石挡墙、084压顶/泄水缝、085干砌石/田埂。",
-    "继续完整0.2m格、米制Y-up、占用/显示/碰撞同源、真实接地和人体通路、近远轮廓/昼夜/近景实拍。原地形、footprint/地下层/楼层门位及生态分区缺失，作者安装样件不能称原运行通过。",
-    "062原三株0.2m方茎、0.4/0.6m高度；不把单簇称完整草坡。064蕨/阔叶地被需不同轮廓、真实叶轴和叶片，不糊平面。065原四茎0.2×1.6×0.2m簇应补穗叶且根植实岸床。066依据明确静水深度，不把荷塘放急瀑/深河。",
-    "067实际附壁挂点与通路/落水避让；原每tile最多360块仅是源描述，没有原tile时需明确作者预算。069落叶/枯枝/倒木有限套装，真接地、可读空洞，不堵公共路；不按每叶/每枝/换色计母版。",
-    "077实际footprint找平与地下开挖，保真院孔/地下入口；楼板模型归建筑域。078原54m/.82广肩坡抹平悬崖是已知缺陷，不能照做后声称真挡墙完成，应作明确局部街台研究，保留原参数含义待核。",
-    "081岩/土地基多点承托，防孤立尖锥、悬空/巨墙；082挡墙基础、收分、墙背填土和墙脚真接触，不能贴墙遮坑。084压顶/滴水缘/泄水孔须实通；085矮石埂/农地/通路/水沟同高程，不能漂浮围圈；均不是结构或水力认证。",
-    "M028共183用途角色；197canopyLeaf、198canopyLeafTip、199pineNeedle、200cypressScale、201bambooCulm、202bambooNode、203bambooBlade、204shrubTwig、205shrubLeaf、206shrubBlossom、207wetSoil、208reedBlade、209pollenAnther。竹组织实体plant，枝wood，叶花非碰撞零发光。按实际用途补新角色，保留自定义ID。",
-    "水系原生合并保留源母版与变换，先拒绝任何重叠再合并，须显式重建依赖；foam80仅一个母版并集，非GPU实例。静态流向UV/共面合并不是流体/自动距离LOD。生态默认配方与安装场景见atlas-ecology.ts/ecology-assembly.ts。"
+    "M030十二件：ENV086院廊外缘0.2m地形支撑、088路肩填挖、091边沟集水、094庭院地坪、096花槽树池、097种植容器、098公共长椅石凳、104独立灯杆石灯、110昼夜天空穹顶、112太阳、113月亮、114星点。",
+    "先核原清单和M030参考；086只地面实际院廊+真实0.2m柱联合支撑是特定合同，不能外推全部入口台阶已完成；088高架不能填成巨墙，河下通道留真孔，铺装母版属于交通域。",
+    "091直/转/集水节点接口一致，篦孔真空并核人体支撑，不凭空声称排水模拟；094石板边界和接地可辨，不叠地板堵院孔；095不在本批。",
+    "096长槽/树池与097方盆/矮缸须真口、壁厚、根土接触、排水孔与公共通路；植被另用ENV母版，不重复建筑窗台花槽。098木椅/石座同座面接口；原usePoint/姿势/权限缺失则不冒称可坐互动。104独立杆/石灯不重复挂灯，底座接地，灯芯/扩散层/纸罩按实际用途分开，未接供电时保持未绑定。",
+    "110源14000m穹顶随相机移动、天色由hour连续派生；112源68m视觉太阳球读太阳方向；113源38m视觉月球反向太阳，原无月相周期；114源600种子星点共一个点云组件，不按600模型计数。核实数字是半径/直径等原参数含义，不擅自当真实天文尺寸。",
+    "天空类是程序球壳/shader或点云组件，不可把缩小装饰球冒称原14000m天空，也不应盲目填实巨体素球超预算。选择有界可导出表示，分别保留源描述、作者预览参数、相机/时间/天气/可见度接口与缺原SimState限制；白昼/夜晚/颜色空间/透明排序/卸载预算需真实验证。原天空不是HDRI，不用雾掩盖未完成地形。",
+    "M029共198用途角色，210–224分别grassBlade/fernFrond/groundcoverLeaf/reedCulm/reedPanicle/lotusLeaf/aquaticPetiole/vineStem/vineLeaf/deadLeaf/deadWood/rootRhizome/drainAggregate/lotusPetal/lotusReceptacle。植物非碰撞仍实查接地；deadWood为实体wood，drainAggregate为实体stone，全部零发光。新角色按用途建立并尊重导入自定义ID。",
+    "地形和水体沿用完整0.2m原生占用权威；并集先拒绝任何占用重叠，荷塘先用植物占用排开水格，保源母版与变换、显式重建。默认尺寸已核实际bounds，变体各存dimensionsM。原terrainHeight/FloorPlan/控制器/天气能源权威仍未收件，不称原游戏完成。"
   ]
 }
