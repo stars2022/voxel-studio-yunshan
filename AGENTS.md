@@ -52,3 +52,7 @@
 - 成熟阔叶 canopyLeaf、松针 pineNeedle、柏鳞叶 cypressScale、竹叶 bambooBlade 与灌木叶 shrubLeaf 按用途独立；新梢 canopyLeafTip 只赋真实嫩梢，不能把同盒冠换色称不同树种。竹竿 bambooCulm、竹节/节隔 bambooNode 为实体 plant，细枝 shrubTwig 为 wood，叶花非碰撞；花瓣 shrubBlossom、花药 pollenAnther 均零发光，不能借灯芯。湿岸土 wetSoil 为 soil，挺水叶 reedBlade 为 plant。完整0.2m竹竿须明确量化外径并保留实际节间空腔。ENV050原16–31m“高程参数”未获原源码时只作作者树高研究；ENV052近4/远2层、384m批次不能冒称现成距离LOD绑定。ENV043的80放置只算一个泡沫母版，原生并集保留源放置，不称GPU实例/粒子动画。根系装饰与明确作者承托岩样分开说明，原地形未收件不声称已贴合。
 
 - 草叶 grassBlade、蕨羽片 fernFrond、阔叶地被 groundcoverLeaf、芦苇茎 reedCulm/穗 reedPanicle、荷叶 lotusLeaf/叶柄 aquaticPetiole/花瓣 lotusPetal/花托 lotusReceptacle、藤茎 vineStem/叶 vineLeaf、枯叶 deadLeaf/腐木 deadWood、草本根茎 rootRhizome 与排水石料 drainAggregate 按用途独立；植物非碰撞仍须查实际着生格。062保留原三株0.2m方茎与0.4/0.6m高度，065四茎1.6m上方另加穗高。荷叶安装水深与叶柄同源，先排开水格再精确并集；藤锚实贴壁，原tile360块限制未绑定不得称原预算通过。枯木孔、压顶滴槽和泄水石套须真空；墙背填土不能堵孔。077作者坑/入口不代替原footprint，078原54m/.82肩坡抹崖缺陷继续待核，081楼板与柱留在明确建筑域辅助架，085田路同高且跨沟石下保留水。完整0.2m量化不是施工、承载或水力认证。
+
+- 角色皮肤 skinSurface、唇 skinLip、指甲 skinNail、褶线/耳内层 skinCrease，眼白/虹膜/瞳孔 eyeWhite/eyeIris/eyePupil，毛发 hairMass/hairRidge，鞋面 characterLeather、鞋底 characterSole 与服装/护片/铜扣分别归类。眼睑和耳内层不能借唇部用途；全部角色组件，包括金属和橡胶，均遵守原清单视觉层非碰撞约定。光学饰面未接供电保持零发光。
+- M031 角色 0.2m 头部原数采用明确作者头宽解释，其他比例和静态姿态不冒称原骨骼/尺寸矩阵。保留源母版与米制刚体变换；镜像重排面绕序，不将斜置肢体重新栅格化，不把左右、姿态或居民实例算新母版。近景大小腿与远景整腿互相替代。短发后片不冒称完整发型，原面部图集未收件时写明采用实际作者几何。
+- ENV134 盆景独立，不能缩小自然整树冒认；ENV097 的 bonsai 浅盆为同一容器母版的参数形态。土塞实际贴合盆底、枝干另用真实三角面检查盆壁及排水孔。通用格子检查器不核实体连续网格，纯视觉组件无需碰撞共格；不得删除实体网格范围提示或把几何支承称为重心/承载验收。

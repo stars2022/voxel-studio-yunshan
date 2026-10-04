@@ -1,0 +1,94 @@
+{
+  "run": "atlas-20261004074226",
+  "status": "passed",
+  "scope": [
+    "ENV-134",
+    "CHAR-002",
+    "CHAR-003",
+    "CHAR-004",
+    "CHAR-005",
+    "CHAR-006",
+    "CHAR-007",
+    "CHAR-008",
+    "CHAR-009",
+    "CHAR-010",
+    "CHAR-011",
+    "CHAR-012"
+  ],
+  "revisedDependencies": [
+    "ENV-097"
+  ],
+  "modelingDirection": "Minimum components retain voxels; inclined and curved bodies use actual continuous meshes. No angled revoxelisation.",
+  "tests": {
+    "fullRegression": 333,
+    "postCorrectionFocused": 24,
+    "postCorrectionCoreAndGeometry": 22,
+    "postCorrectionForeignMaterialRoles": 1,
+    "finalFocusedTotal": 47,
+    "fullLog": "full-tests.txt",
+    "focusedLogs": [
+      "focused-tests.txt",
+      "core-tests.txt",
+      "role-tests.txt"
+    ]
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 11,
+  "catalogMasters": 12,
+  "componentShapes": 13,
+  "dependencyNewShapes": 1,
+  "staticInstallationStudies": 5,
+  "nativeVoxels": 7667,
+  "triangles": 10532,
+  "farTriangles": 10108,
+  "glbBoundsMaxErrorM": 3.814697269177714e-08,
+  "assetScreenshots": 36,
+  "dependencyScreenshots": 3,
+  "installationScreenshots": 17,
+  "rearDetailScreenshots": 5,
+  "recapturedHeadScreenshots": 3,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 391,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 622,
+    "generatedEntries": 446,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 372
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "notes": [
+      "Twelve masters in base isometric, front and material views; dependency pot, all five static installations and rear details inspected.",
+      "Short-back hair deliberately leaves the frontal hairstyle absent. These are modular component studies, not complete hairstyles or finished avatars.",
+      "Reference silhouette and fine detail density remain art review items."
+    ]
+  },
+  "developmentCorrections": [
+    "Raised bonsai branch tips and branchlets to real leaf clusters; all five native islands now contact actual mesh triangles.",
+    "Separated eyelid/ear skinCrease from lip material; reshot the three affected head views.",
+    "Moved the boot side clasp onto its actual leather mesh.",
+    "Fixed visual-only off-grid collision warnings; actual solid/native openings retain strict-grid checks, and solid mesh warnings remain. Initial MCP report preserved.",
+    "Normalised negative zero in static pose transforms for exact JSON roundtrip and preserved reflected triangle winding.",
+    "Adjusted shallow pot depth to a common 0.04m phase; 432 exact soil support cells, zero branch/pot penetrations and no mesh-blocked drain.",
+    "Clarified only the shallow-pot limitations text after final screenshots; final saved/export check confirms unchanged geometry and placements.",
+    "Corrected right shoulder socket normal and robe waist socket size; a real editor connect transaction and mirrored left-socket check pass. Refreshed all saved source-master interfaces and repeated MCP verification."
+  ],
+  "limitations": [
+    "Original Citizen state, skeleton, controller and source dimensions/matrices were not supplied; all character geometry is visual-only and noncollision.",
+    "Original head value 0.2m is retained with an explicit author ear-to-ear-width interpretation; adult height 1.7m and other proportions are author settings.",
+    "Static posed meshes retain separate editable source masters and placements; no skinning, animation or automatic runtime LOD is claimed.",
+    "Near face details are real authored mesh/voxel geometry, not the unavailable original face atlas.",
+    "Bonsai centre of mass and structural stability are not certified; component densities and an overlapping-volume union are absent.",
+    "Human art acceptance remains zero; this batch adds technical candidates."
+  ]
+}

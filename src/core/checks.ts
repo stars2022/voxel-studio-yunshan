@@ -12,7 +12,9 @@ function checkConnectedGeometry(p:Project,clearances:{name:string,min:V3,max:V3}
  for(const i of Object.values(p.instances)){
   const a=p.assets[i.assetId];if(a.meshes?.some(m=>m.collision))warnings.push(`${i.id}: 本检查仅覆盖体素块件；连续网格另按三角面验证，不能据此宣称全资产碰撞通过。`);if(!grids.has(a.id))grids.set(a.id,new Grid(a.chunks));const g=grids.get(a.id)!,scale=Math.round(a.cellSize/pitch),nativeRows=new Map<string,{y:number;z:number;ranges:[number,number][]}>();
   const b:Bounds={min:[Infinity,Infinity,Infinity],max:[-Infinity,-Infinity,-Infinity]};bounds[i.id]=b;
-  if(Math.abs(a.cellSize/pitch-scale)>1e-6||[...a.origin,...i.position].some(n=>Math.abs(n/pitch-Math.round(n/pitch))>1e-6)){warnings.push(`${i.id}: 不共格，跳过精确碰撞；需重采样或调整原点。`);continue;}
+  // Visual-only cells need no collision lattice; arbitrary mesh pivots must not trigger a fictitious physical failure.
+  const needsNativeGrid=a.openings.length>0||[...g.cells()].some(([,m])=>p.materials[m].solid);
+  if(needsNativeGrid&&(Math.abs(a.cellSize/pitch-scale)>1e-6||[...a.origin,...i.position].some(n=>Math.abs(n/pitch-Math.round(n/pitch))>1e-6))){warnings.push(`${i.id}: 不共格，跳过精确碰撞；需重采样或调整原点。`);continue;}
   for(const[v,m]of g.cells()){
    const p0=worldPoint(a,i,v),p1=worldPoint(a,i,v.map(n=>n+1) as V3),min=p0.map((n,d)=>Math.min(n,p1[d])),max=p0.map((n,d)=>Math.max(n,p1[d]));
    for(let d=0;d<3;d++){b.min[d]=Math.min(b.min[d],min[d]);b.max[d]=Math.max(b.max[d],max[d]);}if(!p.materials[m].solid)continue;

@@ -15,49 +15,49 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 360,
-    "remainingReferenceEntries": 433,
-    "completedReferenceSheets": 30,
+    "referenceCandidates": 372,
+    "remainingReferenceEntries": 421,
+    "completedReferenceSheets": 31,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 379,
+      "baseModels": 391,
       "auxiliaryMasters": 1,
       "assemblies": 51,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 634,
-      "generatedEntries": 434,
+      "notProduced": 622,
+      "generatedEntries": 446,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 360
+      "atlasReferenceCandidates": 372
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M030",
+    "sheet": "M031",
     "state": "validated-for-batch-push",
     "ids": [
-      "ENV-086",
-      "ENV-088",
-      "ENV-091",
-      "ENV-094",
-      "ENV-096",
-      "ENV-097",
-      "ENV-098",
-      "ENV-104",
-      "ENV-110",
-      "ENV-112",
-      "ENV-113",
-      "ENV-114"
+      "ENV-134",
+      "CHAR-002",
+      "CHAR-003",
+      "CHAR-004",
+      "CHAR-005",
+      "CHAR-006",
+      "CHAR-007",
+      "CHAR-008",
+      "CHAR-009",
+      "CHAR-010",
+      "CHAR-011",
+      "CHAR-012"
     ],
-    "run": "atlas-20261004064850",
-    "evidence": "artifacts/atlas/atlas-20261004064850"
+    "run": "atlas-20261004074226",
+    "evidence": "artifacts/atlas/atlas-20261004074226"
   },
-  "nextBatch": "M031",
+  "nextBatch": "M032",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
-    "制作真实体素、独立材质角色、部件、安装接口及开口",
+    "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
     "验证实际占用材质、连通性、开口、拼装和一次撤销",
     "生成原生文件与GLB并校验重导入",
     "拍摄正面、等轴和材质实图，完成MCP验证",
@@ -66,16 +66,18 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M030共360件技术转化候选；参考余433条，人工美术验收0。"
+    "M001–M031共372件技术转化候选；参考余421条，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户明确修正优先：仅基础最小块件采用体素，斜面/曲面用正常连续网格，天空/星空用贴图；不得再把历史完整0.2m约定强加所有形体。",
-    "M031包含ENV-134盆景及CHAR-002至CHAR-012躯干、头部、大小腿、鞋足、远景整腿、袖臂、手、短发后片、长发延长片和袍衣下摆。先读清单参数及图，不把每种姿态或实例算新母版。",
-    "当前catalog/schema只接LIFE/BUILT/ENV，M031须正确加入CHAR域。身体最小块件可体素，但肢体斜置、倒角和曲面保留正常网格；确认比例、枢轴、左右件与外观材质用途。",
-    "原角色骨骼、动画、服装/身体state及usePoint未收件，不声称已绑定原运行时。支持原生Asset.meshes米制顶点/法线/UV/索引与碰撞导出；用户允许混合建模。",
-    "M030为360/793参考候选，379基础候选（含19旧候选），434生成清单项/634未生成，参考余433条。210用途角色，新增225孔篦、226景观玻璃、227光学芯、228–236天空/太阳/月亮/星点。",
-    "M030测试322完整回归+11最终专项+12真实MCP；12母版25形态，五安装样件；数据与原图在atlas-20261004064850。看validation.json与M030-MIXED-ASSETS.md，不将旧程序星点网格方案当当前实现。"
+    "用户修正持续有效：最小块件体素，斜面/曲面使用连续网格，天空星空使用贴图。不得因旧历史格距把全形体强制栅格化。",
+    "M032：CHAR013帽子、014挎包、015婴幼儿合并脚块、059/060成人体A/B、061婴儿、062学龄前、063学龄儿童、064青少年、065老年身体、066成年头、067婴幼儿头。先读原清单，区分现有粗轮廓组件与新增精细人体母版。",
+    "M031已接CHAR域；身体收腰、锥度、发片/衣摆使用Asset.meshes，细扣与眼眉/指甲用0.005m体素，盆景叶/土塞0.04m。源码atlas-character.ts、mesh-shapes.ts、character-assembly.ts可复用，不缩放成人母版冒认各年龄体型。",
+    "原角色源码/骨架/矩阵/面部atlas未收件；0.2m头部原数只作作者头宽解释，1.7m成人比例为作者设定。角色材质含金属/橡胶也全非碰撞，光学饰面供电未绑定零发光。",
+    "228用途角色，新增237–254：皮肤/唇/指甲/褶线、眼白/虹膜/瞳孔、发干/外层发束、服装/衬/织纹/金属/扣/皮革/鞋底/光学饰面/发带。褶线skinCrease不能借唇色；自定义ID、回滚及一次撤销验证通过。",
+    "372/793参考候选，余421；391基础候选、446已生成清单项/622未生成。M031验证333完整回归+47最终专项+11真实MCP，13组件形态和五静态样件。证据artifacts/atlas/atlas-20261004074226，人工美术验收0。",
+    "ENV097新增vesselForm=bonsai依赖形态1.36×0.32×0.88m，原square/jar保留；盆景根土以盆底中心为原点，432底接触、752实体枝干三角面未穿盆且排水孔未堵。不是物理重心或承载验收。",
+    "后发片不是完整发型；CHAR085起才有精细发型条目。静态姿态按真实米制刚体变换派生，不把斜肢体重新栅格化。近远整腿替代而非叠加。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",

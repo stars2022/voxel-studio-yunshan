@@ -111,6 +111,15 @@ if (out / 'material-export.json').exists():
     files.update(root / r['file'] for r in material_export['records'])
 files.update(out.glob('sky-*.png'))
 files.update(out.glob('landscape-*.png'))
+files.update(out.glob('character-*.png'))
+for name in ['character-installation-verification.json', 'character-presentation-verification.json']:
+    if (out / name).exists():
+        assert read(out / name)['status'] == 'passed'
+        files.add(out / name)
+files.update(p for p in (out / 'head-presentation-before').glob('*') if p.is_file())
+character_doc = root / 'docs' / (args.sheet + '-CHARACTER-COMPONENTS.md')
+if character_doc.exists():
+    files.add(character_doc)
 if (out / 'mixed-geometry-verification.json').exists():
     files.add(out / 'mixed-geometry-verification.json')
 if (out / 'sky-presentation-verification.json').exists():

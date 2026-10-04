@@ -3,10 +3,28 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=22;
+export const referenceFinishVersion=23;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ skinCrease:{name:'皮肤褶线与耳内层',color:'#b17d66',roughness:.8,metalness:0,...surface('none',.08,0,918)},
+ skinSurface:{name:'角色皮肤',color:'#d6aa88',roughness:0.8,metalness:0,...surface('none',.08,0,901)},
+ skinLip:{name:'角色唇部',color:'#a76e58',roughness:0.8,metalness:0,...surface('none',.08,0,902)},
+ skinNail:{name:'角色指甲',color:'#e3c4aa',roughness:0.8,metalness:0,...surface('none',.08,0,903)},
+ eyeWhite:{name:'眼部巩膜',color:'#eee7d9',roughness:0.4,metalness:0,...surface('none',.08,0,904)},
+ eyeIris:{name:'眼部虹膜',color:'#704734',roughness:0.4,metalness:0,...surface('none',.08,0,905)},
+ eyePupil:{name:'眼部瞳孔',color:'#26252a',roughness:0.4,metalness:0,...surface('none',.08,0,906)},
+ hairMass:{name:'头发主层',color:'#382c29',roughness:0.8,metalness:0,...surface('none',.08,0,907)},
+ hairRidge:{name:'头发表层发束',color:'#554137',roughness:0.8,metalness:0,...surface('none',.08,0,908)},
+ characterCloth:{name:'角色外衣织物',color:'#5a6670',roughness:0.8,metalness:0,...surface('fabric',.08,0.12,909)},
+ characterLining:{name:'角色内衬织物',color:'#d7ccba',roughness:0.8,metalness:0,...surface('fabric',.08,0.12,910)},
+ characterWeave:{name:'角色织入纹样',color:'#a99b7e',roughness:0.8,metalness:0,...surface('fabric',.08,0.12,911)},
+ characterArmor:{name:'角色涂装护片',color:'#bec0b8',roughness:0.4,metalness:0.7,...surface('none',.08,0,912)},
+ characterFastener:{name:'角色铜扣连接件',color:'#bd954b',roughness:0.4,metalness:0.7,...surface('none',.08,0,913)},
+ characterLeather:{name:'角色鞋面皮革',color:'#303a40',roughness:0.8,metalness:0,...surface('none',.08,0,914)},
+ characterSole:{name:'角色鞋底橡胶',color:'#242c31',roughness:0.8,metalness:0,...surface('none',.08,0,915)},
+ characterOptic:{name:'角色光学饰面未供电',color:'#6da8b2',roughness:0.8,metalness:0,...surface('none',.08,0,916)},
+ hairRibbon:{name:'束发织带',color:'#456f78',roughness:0.8,metalness:0,...surface('fabric',.08,0.12,917)},
  drainGrate:{name:'排水孔篦钢材',color:'#536067',roughness:.45,metalness:.75,...surface('metal',.4,.12,875)},
  landscapeGlass:{name:'景观灯罩玻璃',color:'#dfcca0',roughness:.7,metalness:0,opacity:.7,...surface('none',.4,0,876)},
  landscapeEmitter:{name:'景观灯光学芯',color:'#f1ce88',roughness:.7,metalness:0,...surface('none',.4,0,877)},

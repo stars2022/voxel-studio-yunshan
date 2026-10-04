@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 
 const report=JSON.parse(await readFile('artifacts/atlas/latest.json','utf8')),index=JSON.parse(await readFile('projects/atlas-production-index.json','utf8')),atlas=JSON.parse(await readFile('projects/reference-atlas/index.json','utf8')),out=report.evidence,runtime=path.join(out,'preview-runtime'),url='http://127.0.0.1:4345',pilots=new Set(['LIFE-024','LIFE-026','LIFE-039','LIFE-049','LIFE-053','LIFE-056']);
 const selectedIds=process.argv.find(a=>a.startsWith('--ids='))?.slice(6).split(',');
-if(selectedIds){assert.ok(selectedIds.every(id=>/^(LIFE|BUILT|ENV)-[0-9]{3}$/.test(id)));index.entries=index.entries.filter((e:any)=>selectedIds.includes(e.id));assert.equal(index.entries.length,new Set(selectedIds).size);index.studies=index.studies.filter((s:any)=>index.entries.some((e:any)=>s.id===e.sheet+'-gallery'));}
+if(selectedIds){assert.ok(selectedIds.every(id=>/^(LIFE|BUILT|ENV|CHAR)-[0-9]{3}$/.test(id)));index.entries=index.entries.filter((e:any)=>selectedIds.includes(e.id));assert.equal(index.entries.length,new Set(selectedIds).size);index.studies=index.studies.filter((s:any)=>index.entries.some((e:any)=>s.id===e.sheet+'-gallery'));}
 const selectedSheets=process.argv.find(a=>a.startsWith('--sheets='))?.slice(9).split(',');
 if(selectedSheets){
  if(selectedSheets.some(s=>!/^M[0-9]{3}$/.test(s)))throw new Error('Invalid sheet ID');

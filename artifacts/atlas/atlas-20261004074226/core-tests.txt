@@ -1,0 +1,30 @@
+✔ sparse chunks round-trip negative coordinates and seam dirty neighbours (2.791882ms)
+✔ greedy solid block is six quads; cross-chunk internal faces are culled (62.245568ms)
+✔ opacity material batches preserve visible opaque surface behind glass (7.644755ms)
+✔ batch atomic rollback on missing material / no version advance (1.997464ms)
+✔ dry-run does not mutate and large modification requires exact preview (86.379813ms)
+✔ version conflict and idempotency replay / payload conflict (2.035151ms)
+✔ transaction undo redo restores all voxel/material/instance edits in one step (215.620311ms)
+✔ voxel replace, mirrored brush, bounded connected fill and surface rules (4.620621ms)
+✔ integer rotation, mirror, move, copy array and collision rollback (4.774685ms)
+✔ extrude adds exposed face columns and is undoable (3.385308ms)
+✔ all general templates generate legal structures and unknown parameters reject (4389.317902ms)
+✔ assembly template instantiation shares masters and preserves relative placement (64.560113ms)
+✔ mixed-resolution opening obstruction detects subcell blocking geometry (134.849759ms)
+✔ interfaces require common pitch, normal and footprint; detach preserves master (31.211359ms)
+✔ metadata transforms preserve port/part spatial relationship; cyclic parents rejected (26.792051ms)
+✔ schema rejects pathological selection, decimals, unknown fields and invalid materials (1.591451ms)
+✔ demo has enterable door, window and stairs clearances without collisions (96.318306ms)
+✔ thin diagonal voxel paths remain face-connected in all octants (3.5194ms)
+✔ planter soil, rim and leaves stay attached at 1, 2 and 2.5cm pitch (1646.616771ms)
+✔ hanging lantern encloses air, has a connected bracket and a grid-aligned wall interface (30.312337ms)
+✔ railing sockets preserve open spans and a continuous supporting frame (88.512802ms)
+✔ bay ornament and handles leave both door variants open; glazing can still be removed (954.32097ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5490.6626
