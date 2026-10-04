@@ -1,0 +1,6026 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382
+    }
+  },
+  "assets": [
+    {
+      "id": "source-hand-CHAR-183",
+      "name": "原精细手070",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生细块；连续形面及关节另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              -30,
+              -7
+            ],
+            "max": [
+              16,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "腕扣最小铜块",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              -3,
+              -7
+            ],
+            "max": [
+              2,
+              0,
+              -5
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "指甲-0",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -27,
+              1
+            ],
+            "max": [
+              -5,
+              -25,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "指甲-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              -30,
+              1
+            ],
+            "max": [
+              -1,
+              -28,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "指甲-2",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              -29,
+              1
+            ],
+            "max": [
+              3,
+              -27,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "指甲-3",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              -26,
+              1
+            ],
+            "max": [
+              7,
+              -24,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "拇指甲",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              -18,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "hand",
+        "joints": [
+          {
+            "id": "wrist",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "palm",
+            "parent": "wrist",
+            "translation": [
+              0,
+              -0.023,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-0",
+            "parent": "palm",
+            "translation": [
+              -0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-1",
+            "parent": "finger-0-0",
+            "translation": [
+              0,
+              -0.0258,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-2",
+            "parent": "finger-0-1",
+            "translation": [
+              0,
+              -0.0204,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-0",
+            "parent": "palm",
+            "translation": [
+              -0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-1",
+            "parent": "finger-1-0",
+            "translation": [
+              0,
+              -0.03225,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-2",
+            "parent": "finger-1-1",
+            "translation": [
+              0,
+              -0.0255,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-0",
+            "parent": "palm",
+            "translation": [
+              0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-1",
+            "parent": "finger-2-0",
+            "translation": [
+              0,
+              -0.03053,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-2",
+            "parent": "finger-2-1",
+            "translation": [
+              0,
+              -0.02414,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-0",
+            "parent": "palm",
+            "translation": [
+              0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-1",
+            "parent": "finger-3-0",
+            "translation": [
+              0,
+              -0.02408,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-2",
+            "parent": "finger-3-1",
+            "translation": [
+              0,
+              -0.01904,
+              0
+            ]
+          },
+          {
+            "id": "thumb-0",
+            "parent": "palm",
+            "translation": [
+              0.036,
+              -0.007,
+              0
+            ]
+          },
+          {
+            "id": "thumb-1",
+            "parent": "thumb-0",
+            "translation": [
+              0.018,
+              -0.022,
+              0
+            ]
+          },
+          {
+            "id": "thumb-2",
+            "parent": "thumb-1",
+            "translation": [
+              0.015,
+              -0.023,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "裸露掌面": "palm",
+          "半掌手套皮背": "palm",
+          "腕部皮圈真孔": "wrist",
+          "独立指节-0-0": "finger-0-0",
+          "独立指节-0-1": "finger-0-1",
+          "独立指节-0-2": "finger-0-2",
+          "独立指节-1-0": "finger-1-0",
+          "独立指节-1-1": "finger-1-1",
+          "独立指节-1-2": "finger-1-2",
+          "独立指节-2-0": "finger-2-0",
+          "独立指节-2-1": "finger-2-1",
+          "独立指节-2-2": "finger-2-2",
+          "独立指节-3-0": "finger-3-0",
+          "独立指节-3-1": "finger-3-1",
+          "独立指节-3-2": "finger-3-2",
+          "拇指指节-0": "thumb-0",
+          "拇指指节-1": "thumb-1",
+          "拇指指节-2": "thumb-2"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -2,
+                -3,
+                -7
+              ],
+              "max": [
+                2,
+                0,
+                -5
+              ]
+            },
+            "joint": "wrist"
+          },
+          {
+            "region": {
+              "min": [
+                -7,
+                -27,
+                1
+              ],
+              "max": [
+                -5,
+                -25,
+                2
+              ]
+            },
+            "joint": "finger-0-2"
+          },
+          {
+            "region": {
+              "min": [
+                -3,
+                -30,
+                1
+              ],
+              "max": [
+                -1,
+                -28,
+                2
+              ]
+            },
+            "joint": "finger-1-2"
+          },
+          {
+            "region": {
+              "min": [
+                1,
+                -29,
+                1
+              ],
+              "max": [
+                3,
+                -27,
+                2
+              ]
+            },
+            "joint": "finger-2-2"
+          },
+          {
+            "region": {
+              "min": [
+                5,
+                -26,
+                1
+              ],
+              "max": [
+                7,
+                -24,
+                2
+              ]
+            },
+            "joint": "finger-3-2"
+          },
+          {
+            "region": {
+              "min": [
+                14,
+                -18,
+                1
+              ],
+              "max": [
+                16,
+                -16,
+                2
+              ]
+            },
+            "joint": "thumb-2"
+          }
+        ],
+        "sockets": {
+          "finger-tip-0": "finger-0-2",
+          "finger-tip-1": "finger-1-2",
+          "finger-tip-2": "finger-2-2",
+          "finger-tip-3": "finger-3-2",
+          "wrist": "wrist",
+          "grip": "palm"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "裸露掌面",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "半掌手套皮背",
+          "material": 269,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "腕部皮圈真孔",
+          "material": 269,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "独立指节-0-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "拇指指节-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    },
+    {
+      "id": "char-183",
+      "name": "CHAR-183",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "two-finger-hold",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.18,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.035,
+            0.04,
+            0.012
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小扣件/箍销/标签原生块",
+          "parent": null,
+          "region": {
+            "min": [
+              -3,
+              48,
+              -1
+            ],
+            "max": [
+              3,
+              50,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "筷尾最小铜方块-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              48,
+              -1
+            ],
+            "max": [
+              -1,
+              50,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "筷尾最小铜方块1",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              48,
+              -1
+            ],
+            "max": [
+              3,
+              50,
+              1
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "独立木筷-1": "root",
+          "筷尾套箍-1": "root",
+          "独立木筷1": "root",
+          "筷尾套箍1": "root"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -3,
+                48,
+                -1
+              ],
+              "max": [
+                3,
+                50,
+                1
+              ]
+            },
+            "joint": "root"
+          }
+        ],
+        "sockets": {
+          "two-finger-hold": "root"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "two-finger-hold",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.18,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.035,
+            0.04,
+            0.012
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "独立木筷-1",
+          "material": 371,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "筷尾套箍-1",
+          "material": 382,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "独立木筷1",
+          "material": 371,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "筷尾套箍1",
+          "material": 382,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    },
+    {
+      "id": "held-hand-CHAR-183",
+      "name": "原精细手070 · 移除旧皮套的原皮肤与指甲",
+      "version": 1,
+      "origin": [
+        -0.08299999999999999,
+        0.19,
+        0.048
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生细块；连续形面及关节另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              -30,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "指甲-0",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -27,
+              1
+            ],
+            "max": [
+              -5,
+              -25,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "指甲-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              -30,
+              1
+            ],
+            "max": [
+              -1,
+              -28,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "指甲-2",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              -29,
+              1
+            ],
+            "max": [
+              3,
+              -27,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "指甲-3",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              -26,
+              1
+            ],
+            "max": [
+              7,
+              -24,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "拇指甲",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              -18,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "hand",
+        "joints": [
+          {
+            "id": "wrist",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "palm",
+            "parent": "wrist",
+            "translation": [
+              0,
+              -0.023,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-0",
+            "parent": "palm",
+            "translation": [
+              -0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-1",
+            "parent": "finger-0-0",
+            "translation": [
+              0,
+              -0.0258,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-2",
+            "parent": "finger-0-1",
+            "translation": [
+              0,
+              -0.0204,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-0",
+            "parent": "palm",
+            "translation": [
+              -0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-1",
+            "parent": "finger-1-0",
+            "translation": [
+              0,
+              -0.03225,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-2",
+            "parent": "finger-1-1",
+            "translation": [
+              0,
+              -0.0255,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-0",
+            "parent": "palm",
+            "translation": [
+              0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-1",
+            "parent": "finger-2-0",
+            "translation": [
+              0,
+              -0.03053,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-2",
+            "parent": "finger-2-1",
+            "translation": [
+              0,
+              -0.02414,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-0",
+            "parent": "palm",
+            "translation": [
+              0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-1",
+            "parent": "finger-3-0",
+            "translation": [
+              0,
+              -0.02408,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-2",
+            "parent": "finger-3-1",
+            "translation": [
+              0,
+              -0.01904,
+              0
+            ]
+          },
+          {
+            "id": "thumb-0",
+            "parent": "palm",
+            "translation": [
+              0.036,
+              -0.007,
+              0
+            ]
+          },
+          {
+            "id": "thumb-1",
+            "parent": "thumb-0",
+            "translation": [
+              0.018,
+              -0.022,
+              0
+            ]
+          },
+          {
+            "id": "thumb-2",
+            "parent": "thumb-1",
+            "translation": [
+              0.015,
+              -0.023,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "裸露掌面": "palm",
+          "独立指节-0-0": "finger-0-0",
+          "独立指节-0-1": "finger-0-1",
+          "独立指节-0-2": "finger-0-2",
+          "独立指节-1-0": "finger-1-0",
+          "独立指节-1-1": "finger-1-1",
+          "独立指节-1-2": "finger-1-2",
+          "独立指节-2-0": "finger-2-0",
+          "独立指节-2-1": "finger-2-1",
+          "独立指节-2-2": "finger-2-2",
+          "独立指节-3-0": "finger-3-0",
+          "独立指节-3-1": "finger-3-1",
+          "独立指节-3-2": "finger-3-2",
+          "拇指指节-0": "thumb-0",
+          "拇指指节-1": "thumb-1",
+          "拇指指节-2": "thumb-2"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -7,
+                -27,
+                1
+              ],
+              "max": [
+                -5,
+                -25,
+                2
+              ]
+            },
+            "joint": "finger-0-2"
+          },
+          {
+            "region": {
+              "min": [
+                -3,
+                -30,
+                1
+              ],
+              "max": [
+                -1,
+                -28,
+                2
+              ]
+            },
+            "joint": "finger-1-2"
+          },
+          {
+            "region": {
+              "min": [
+                1,
+                -29,
+                1
+              ],
+              "max": [
+                3,
+                -27,
+                2
+              ]
+            },
+            "joint": "finger-2-2"
+          },
+          {
+            "region": {
+              "min": [
+                5,
+                -26,
+                1
+              ],
+              "max": [
+                7,
+                -24,
+                2
+              ]
+            },
+            "joint": "finger-3-2"
+          },
+          {
+            "region": {
+              "min": [
+                14,
+                -18,
+                1
+              ],
+              "max": [
+                16,
+                -16,
+                2
+              ]
+            },
+            "joint": "thumb-2"
+          }
+        ],
+        "sockets": {
+          "finger-tip-0": "finger-0-2",
+          "finger-tip-1": "finger-1-2",
+          "finger-tip-2": "finger-2-2",
+          "finger-tip-3": "finger-3-2",
+          "wrist": "wrist",
+          "grip": "palm"
+        },
+        "pose": {
+          "wrist": [
+            0,
+            0,
+            0.7071067811865475,
+            0.7071067811865475
+          ],
+          "finger-0-0": [
+            0.21643961393810288,
+            0,
+            0,
+            0.9762960071199334
+          ],
+          "finger-0-1": [
+            0.3826834323650898,
+            0,
+            0,
+            0.9238795325112867
+          ],
+          "finger-0-2": [
+            0.17364817766693033,
+            0,
+            0,
+            0.984807753012208
+          ],
+          "finger-1-0": [
+            0.21643961393810288,
+            0,
+            0,
+            0.9762960071199334
+          ],
+          "finger-1-1": [
+            0.3826834323650898,
+            0,
+            0,
+            0.9238795325112867
+          ],
+          "finger-1-2": [
+            0.17364817766693033,
+            0,
+            0,
+            0.984807753012208
+          ],
+          "finger-2-0": [
+            0.21643961393810288,
+            0,
+            0,
+            0.9762960071199334
+          ],
+          "finger-2-1": [
+            0.3826834323650898,
+            0,
+            0,
+            0.9238795325112867
+          ],
+          "finger-2-2": [
+            0.17364817766693033,
+            0,
+            0,
+            0.984807753012208
+          ],
+          "finger-3-0": [
+            0.21643961393810288,
+            0,
+            0,
+            0.9762960071199334
+          ],
+          "finger-3-1": [
+            0.3826834323650898,
+            0,
+            0,
+            0.9238795325112867
+          ],
+          "finger-3-2": [
+            0.17364817766693033,
+            0,
+            0,
+            0.984807753012208
+          ],
+          "thumb-0": [
+            0,
+            0.17364817766693033,
+            0,
+            0.984807753012208
+          ],
+          "thumb-1": [
+            0,
+            0.08715574274765817,
+            0,
+            0.9961946980917455
+          ],
+          "thumb-2": [
+            0,
+            0.043619387365336,
+            0,
+            0.9990482215818578
+          ]
+        },
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            0.027359952,
+            0.16,
+            0.004126719
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            0.03494994,
+            0.18,
+            -0.006841601
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.032925943,
+            0.2,
+            -0.003916715
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.025335955,
+            0.22,
+            0.007051605
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            -0.083,
+            0.19,
+            0.048
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            -0.025,
+            0.19,
+            0.006
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "裸露掌面",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "拇指指节-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    },
+    {
+      "id": "source-hand-CHAR-185",
+      "name": "原精细手070",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生细块；连续形面及关节另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              -30,
+              -7
+            ],
+            "max": [
+              16,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "腕扣最小铜块",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              -3,
+              -7
+            ],
+            "max": [
+              2,
+              0,
+              -5
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "指甲-0",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -27,
+              1
+            ],
+            "max": [
+              -5,
+              -25,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "指甲-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              -30,
+              1
+            ],
+            "max": [
+              -1,
+              -28,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "指甲-2",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              -29,
+              1
+            ],
+            "max": [
+              3,
+              -27,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "指甲-3",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              -26,
+              1
+            ],
+            "max": [
+              7,
+              -24,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "拇指甲",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              -18,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "hand",
+        "joints": [
+          {
+            "id": "wrist",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "palm",
+            "parent": "wrist",
+            "translation": [
+              0,
+              -0.023,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-0",
+            "parent": "palm",
+            "translation": [
+              -0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-1",
+            "parent": "finger-0-0",
+            "translation": [
+              0,
+              -0.0258,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-2",
+            "parent": "finger-0-1",
+            "translation": [
+              0,
+              -0.0204,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-0",
+            "parent": "palm",
+            "translation": [
+              -0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-1",
+            "parent": "finger-1-0",
+            "translation": [
+              0,
+              -0.03225,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-2",
+            "parent": "finger-1-1",
+            "translation": [
+              0,
+              -0.0255,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-0",
+            "parent": "palm",
+            "translation": [
+              0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-1",
+            "parent": "finger-2-0",
+            "translation": [
+              0,
+              -0.03053,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-2",
+            "parent": "finger-2-1",
+            "translation": [
+              0,
+              -0.02414,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-0",
+            "parent": "palm",
+            "translation": [
+              0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-1",
+            "parent": "finger-3-0",
+            "translation": [
+              0,
+              -0.02408,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-2",
+            "parent": "finger-3-1",
+            "translation": [
+              0,
+              -0.01904,
+              0
+            ]
+          },
+          {
+            "id": "thumb-0",
+            "parent": "palm",
+            "translation": [
+              0.036,
+              -0.007,
+              0
+            ]
+          },
+          {
+            "id": "thumb-1",
+            "parent": "thumb-0",
+            "translation": [
+              0.018,
+              -0.022,
+              0
+            ]
+          },
+          {
+            "id": "thumb-2",
+            "parent": "thumb-1",
+            "translation": [
+              0.015,
+              -0.023,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "裸露掌面": "palm",
+          "半掌手套皮背": "palm",
+          "腕部皮圈真孔": "wrist",
+          "独立指节-0-0": "finger-0-0",
+          "独立指节-0-1": "finger-0-1",
+          "独立指节-0-2": "finger-0-2",
+          "独立指节-1-0": "finger-1-0",
+          "独立指节-1-1": "finger-1-1",
+          "独立指节-1-2": "finger-1-2",
+          "独立指节-2-0": "finger-2-0",
+          "独立指节-2-1": "finger-2-1",
+          "独立指节-2-2": "finger-2-2",
+          "独立指节-3-0": "finger-3-0",
+          "独立指节-3-1": "finger-3-1",
+          "独立指节-3-2": "finger-3-2",
+          "拇指指节-0": "thumb-0",
+          "拇指指节-1": "thumb-1",
+          "拇指指节-2": "thumb-2"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -2,
+                -3,
+                -7
+              ],
+              "max": [
+                2,
+                0,
+                -5
+              ]
+            },
+            "joint": "wrist"
+          },
+          {
+            "region": {
+              "min": [
+                -7,
+                -27,
+                1
+              ],
+              "max": [
+                -5,
+                -25,
+                2
+              ]
+            },
+            "joint": "finger-0-2"
+          },
+          {
+            "region": {
+              "min": [
+                -3,
+                -30,
+                1
+              ],
+              "max": [
+                -1,
+                -28,
+                2
+              ]
+            },
+            "joint": "finger-1-2"
+          },
+          {
+            "region": {
+              "min": [
+                1,
+                -29,
+                1
+              ],
+              "max": [
+                3,
+                -27,
+                2
+              ]
+            },
+            "joint": "finger-2-2"
+          },
+          {
+            "region": {
+              "min": [
+                5,
+                -26,
+                1
+              ],
+              "max": [
+                7,
+                -24,
+                2
+              ]
+            },
+            "joint": "finger-3-2"
+          },
+          {
+            "region": {
+              "min": [
+                14,
+                -18,
+                1
+              ],
+              "max": [
+                16,
+                -16,
+                2
+              ]
+            },
+            "joint": "thumb-2"
+          }
+        ],
+        "sockets": {
+          "finger-tip-0": "finger-0-2",
+          "finger-tip-1": "finger-1-2",
+          "finger-tip-2": "finger-2-2",
+          "finger-tip-3": "finger-3-2",
+          "wrist": "wrist",
+          "grip": "palm"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "裸露掌面",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "半掌手套皮背",
+          "material": 269,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "腕部皮圈真孔",
+          "material": 269,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "独立指节-0-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "拇指指节-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    },
+    {
+      "id": "char-185",
+      "name": "CHAR-185",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.2844,
+            0.2924
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0.03,
+            0.09192388155425119,
+            0.09192388155425119
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "ladle-mouth",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.056,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.102,
+            0.012,
+            0.102
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小扣件/箍销/标签原生块",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              75,
+              76
+            ],
+            "max": [
+              2,
+              78,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "木柄末端锁销",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              75,
+              76
+            ],
+            "max": [
+              2,
+              78,
+              79
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "烹饪勺真腔与厚底": "root",
+          "勺口加强卷边": "root",
+          "勺头实柄根": "root",
+          "连续倾斜木柄": "root",
+          "勺尾挂带承环": "root",
+          "勺柄悬挂带": "root"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -1,
+                75,
+                76
+              ],
+              "max": [
+                2,
+                78,
+                79
+              ]
+            },
+            "joint": "root"
+          }
+        ],
+        "sockets": {
+          "grip": "root",
+          "ladle-mouth": "root"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.2844,
+            0.2924
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0.03,
+            0.09192388155425119,
+            0.09192388155425119
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "ladle-mouth",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.056,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.102,
+            0.012,
+            0.102
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "烹饪勺真腔与厚底",
+          "material": 372,
+          "collision": false,
+          "triangles": 192
+        },
+        {
+          "name": "勺口加强卷边",
+          "material": 372,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "勺头实柄根",
+          "material": 372,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "连续倾斜木柄",
+          "material": 379,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "勺尾挂带承环",
+          "material": 378,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "勺柄悬挂带",
+          "material": 303,
+          "collision": false,
+          "triangles": 128
+        }
+      ]
+    },
+    {
+      "id": "held-hand-CHAR-185",
+      "name": "原精细手070 · 移除旧皮套的原皮肤与指甲",
+      "version": 1,
+      "origin": [
+        -0.09263098833543772,
+        0.2939,
+        0.2829
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生细块；连续形面及关节另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              -30,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "指甲-0",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -27,
+              1
+            ],
+            "max": [
+              -5,
+              -25,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "指甲-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              -30,
+              1
+            ],
+            "max": [
+              -1,
+              -28,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "指甲-2",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              -29,
+              1
+            ],
+            "max": [
+              3,
+              -27,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "指甲-3",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              -26,
+              1
+            ],
+            "max": [
+              7,
+              -24,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "拇指甲",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              -18,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "hand",
+        "joints": [
+          {
+            "id": "wrist",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "palm",
+            "parent": "wrist",
+            "translation": [
+              0,
+              -0.023,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-0",
+            "parent": "palm",
+            "translation": [
+              -0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-1",
+            "parent": "finger-0-0",
+            "translation": [
+              0,
+              -0.0258,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-2",
+            "parent": "finger-0-1",
+            "translation": [
+              0,
+              -0.0204,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-0",
+            "parent": "palm",
+            "translation": [
+              -0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-1",
+            "parent": "finger-1-0",
+            "translation": [
+              0,
+              -0.03225,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-2",
+            "parent": "finger-1-1",
+            "translation": [
+              0,
+              -0.0255,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-0",
+            "parent": "palm",
+            "translation": [
+              0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-1",
+            "parent": "finger-2-0",
+            "translation": [
+              0,
+              -0.03053,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-2",
+            "parent": "finger-2-1",
+            "translation": [
+              0,
+              -0.02414,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-0",
+            "parent": "palm",
+            "translation": [
+              0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-1",
+            "parent": "finger-3-0",
+            "translation": [
+              0,
+              -0.02408,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-2",
+            "parent": "finger-3-1",
+            "translation": [
+              0,
+              -0.01904,
+              0
+            ]
+          },
+          {
+            "id": "thumb-0",
+            "parent": "palm",
+            "translation": [
+              0.036,
+              -0.007,
+              0
+            ]
+          },
+          {
+            "id": "thumb-1",
+            "parent": "thumb-0",
+            "translation": [
+              0.018,
+              -0.022,
+              0
+            ]
+          },
+          {
+            "id": "thumb-2",
+            "parent": "thumb-1",
+            "translation": [
+              0.015,
+              -0.023,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "裸露掌面": "palm",
+          "独立指节-0-0": "finger-0-0",
+          "独立指节-0-1": "finger-0-1",
+          "独立指节-0-2": "finger-0-2",
+          "独立指节-1-0": "finger-1-0",
+          "独立指节-1-1": "finger-1-1",
+          "独立指节-1-2": "finger-1-2",
+          "独立指节-2-0": "finger-2-0",
+          "独立指节-2-1": "finger-2-1",
+          "独立指节-2-2": "finger-2-2",
+          "独立指节-3-0": "finger-3-0",
+          "独立指节-3-1": "finger-3-1",
+          "独立指节-3-2": "finger-3-2",
+          "拇指指节-0": "thumb-0",
+          "拇指指节-1": "thumb-1",
+          "拇指指节-2": "thumb-2"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -7,
+                -27,
+                1
+              ],
+              "max": [
+                -5,
+                -25,
+                2
+              ]
+            },
+            "joint": "finger-0-2"
+          },
+          {
+            "region": {
+              "min": [
+                -3,
+                -30,
+                1
+              ],
+              "max": [
+                -1,
+                -28,
+                2
+              ]
+            },
+            "joint": "finger-1-2"
+          },
+          {
+            "region": {
+              "min": [
+                1,
+                -29,
+                1
+              ],
+              "max": [
+                3,
+                -27,
+                2
+              ]
+            },
+            "joint": "finger-2-2"
+          },
+          {
+            "region": {
+              "min": [
+                5,
+                -26,
+                1
+              ],
+              "max": [
+                7,
+                -24,
+                2
+              ]
+            },
+            "joint": "finger-3-2"
+          },
+          {
+            "region": {
+              "min": [
+                14,
+                -18,
+                1
+              ],
+              "max": [
+                16,
+                -16,
+                2
+              ]
+            },
+            "joint": "thumb-2"
+          }
+        ],
+        "sockets": {
+          "finger-tip-0": "finger-0-2",
+          "finger-tip-1": "finger-1-2",
+          "finger-tip-2": "finger-2-2",
+          "finger-tip-3": "finger-3-2",
+          "wrist": "wrist",
+          "grip": "palm"
+        },
+        "pose": {
+          "wrist": [
+            0,
+            -0.5,
+            0.5,
+            0.7071067811865475
+          ],
+          "finger-0-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-0-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-0-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "finger-1-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-1-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-1-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "finger-2-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-2-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-2-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "finger-3-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-3-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-3-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "thumb-0": [
+            0,
+            0.17364817766693033,
+            0,
+            0.984807753012208
+          ],
+          "thumb-1": [
+            0,
+            0.08715574274765817,
+            0,
+            0.9961946980917455
+          ],
+          "thumb-2": [
+            0,
+            0.043619387365336,
+            0,
+            0.9990482215818578
+          ]
+        },
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            0.009692779,
+            0.247960658,
+            0.286412935
+          ],
+          "normal": [
+            0.342020143,
+            0.664463024,
+            -0.664463024
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            0.021131585,
+            0.265921259,
+            0.296736605
+          ],
+          "normal": [
+            0.342020143,
+            0.664463024,
+            -0.664463024
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.018081237,
+            0.279045138,
+            0.311896998
+          ],
+          "normal": [
+            0.342020143,
+            0.664463024,
+            -0.664463024
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.00664243,
+            0.289368808,
+            0.329857599
+          ],
+          "normal": [
+            0.342020143,
+            0.664463024,
+            -0.664463024
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            -0.092630988,
+            0.2939,
+            0.2829
+          ],
+          "normal": [
+            -0.707106781,
+            0.5,
+            -0.5
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            -0.02192031,
+            0.2859,
+            0.2909
+          ],
+          "normal": [
+            0.707106781,
+            0.5,
+            -0.5
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "裸露掌面",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "拇指指节-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    },
+    {
+      "id": "source-hand-CHAR-186",
+      "name": "原精细手070",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生细块；连续形面及关节另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              -30,
+              -7
+            ],
+            "max": [
+              16,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "腕扣最小铜块",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              -3,
+              -7
+            ],
+            "max": [
+              2,
+              0,
+              -5
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "指甲-0",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -27,
+              1
+            ],
+            "max": [
+              -5,
+              -25,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "指甲-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              -30,
+              1
+            ],
+            "max": [
+              -1,
+              -28,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "指甲-2",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              -29,
+              1
+            ],
+            "max": [
+              3,
+              -27,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "指甲-3",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              -26,
+              1
+            ],
+            "max": [
+              7,
+              -24,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "拇指甲",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              -18,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "hand",
+        "joints": [
+          {
+            "id": "wrist",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "palm",
+            "parent": "wrist",
+            "translation": [
+              0,
+              -0.023,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-0",
+            "parent": "palm",
+            "translation": [
+              -0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-1",
+            "parent": "finger-0-0",
+            "translation": [
+              0,
+              -0.0258,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-2",
+            "parent": "finger-0-1",
+            "translation": [
+              0,
+              -0.0204,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-0",
+            "parent": "palm",
+            "translation": [
+              -0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-1",
+            "parent": "finger-1-0",
+            "translation": [
+              0,
+              -0.03225,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-2",
+            "parent": "finger-1-1",
+            "translation": [
+              0,
+              -0.0255,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-0",
+            "parent": "palm",
+            "translation": [
+              0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-1",
+            "parent": "finger-2-0",
+            "translation": [
+              0,
+              -0.03053,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-2",
+            "parent": "finger-2-1",
+            "translation": [
+              0,
+              -0.02414,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-0",
+            "parent": "palm",
+            "translation": [
+              0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-1",
+            "parent": "finger-3-0",
+            "translation": [
+              0,
+              -0.02408,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-2",
+            "parent": "finger-3-1",
+            "translation": [
+              0,
+              -0.01904,
+              0
+            ]
+          },
+          {
+            "id": "thumb-0",
+            "parent": "palm",
+            "translation": [
+              0.036,
+              -0.007,
+              0
+            ]
+          },
+          {
+            "id": "thumb-1",
+            "parent": "thumb-0",
+            "translation": [
+              0.018,
+              -0.022,
+              0
+            ]
+          },
+          {
+            "id": "thumb-2",
+            "parent": "thumb-1",
+            "translation": [
+              0.015,
+              -0.023,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "裸露掌面": "palm",
+          "半掌手套皮背": "palm",
+          "腕部皮圈真孔": "wrist",
+          "独立指节-0-0": "finger-0-0",
+          "独立指节-0-1": "finger-0-1",
+          "独立指节-0-2": "finger-0-2",
+          "独立指节-1-0": "finger-1-0",
+          "独立指节-1-1": "finger-1-1",
+          "独立指节-1-2": "finger-1-2",
+          "独立指节-2-0": "finger-2-0",
+          "独立指节-2-1": "finger-2-1",
+          "独立指节-2-2": "finger-2-2",
+          "独立指节-3-0": "finger-3-0",
+          "独立指节-3-1": "finger-3-1",
+          "独立指节-3-2": "finger-3-2",
+          "拇指指节-0": "thumb-0",
+          "拇指指节-1": "thumb-1",
+          "拇指指节-2": "thumb-2"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -2,
+                -3,
+                -7
+              ],
+              "max": [
+                2,
+                0,
+                -5
+              ]
+            },
+            "joint": "wrist"
+          },
+          {
+            "region": {
+              "min": [
+                -7,
+                -27,
+                1
+              ],
+              "max": [
+                -5,
+                -25,
+                2
+              ]
+            },
+            "joint": "finger-0-2"
+          },
+          {
+            "region": {
+              "min": [
+                -3,
+                -30,
+                1
+              ],
+              "max": [
+                -1,
+                -28,
+                2
+              ]
+            },
+            "joint": "finger-1-2"
+          },
+          {
+            "region": {
+              "min": [
+                1,
+                -29,
+                1
+              ],
+              "max": [
+                3,
+                -27,
+                2
+              ]
+            },
+            "joint": "finger-2-2"
+          },
+          {
+            "region": {
+              "min": [
+                5,
+                -26,
+                1
+              ],
+              "max": [
+                7,
+                -24,
+                2
+              ]
+            },
+            "joint": "finger-3-2"
+          },
+          {
+            "region": {
+              "min": [
+                14,
+                -18,
+                1
+              ],
+              "max": [
+                16,
+                -16,
+                2
+              ]
+            },
+            "joint": "thumb-2"
+          }
+        ],
+        "sockets": {
+          "finger-tip-0": "finger-0-2",
+          "finger-tip-1": "finger-1-2",
+          "finger-tip-2": "finger-2-2",
+          "finger-tip-3": "finger-3-2",
+          "wrist": "wrist",
+          "grip": "palm"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "裸露掌面",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "半掌手套皮背",
+          "material": 269,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "腕部皮圈真孔",
+          "material": 269,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "独立指节-0-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "拇指指节-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    },
+    {
+      "id": "char-186",
+      "name": "CHAR-186",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.793,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.028,
+            0.11,
+            0.028
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小扣件/箍销/标签原生块",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              31,
+              -10
+            ],
+            "max": [
+              1,
+              239,
+              -3
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束带锁块0",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              31,
+              -10
+            ],
+            "max": [
+              1,
+              33,
+              -8
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "束带锁块1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              47,
+              -10
+            ],
+            "max": [
+              1,
+              49,
+              -8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "束带锁块2",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              58,
+              -10
+            ],
+            "max": [
+              1,
+              60,
+              -8
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "柄根卡箍方销",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              61,
+              -6
+            ],
+            "max": [
+              1,
+              63,
+              -4
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "上挂环套箍方销",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              237,
+              -5
+            ],
+            "max": [
+              1,
+              239,
+              -3
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "prop",
+        "joints": [
+          {
+            "id": "root",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "扫帚独立木柄": "root",
+          "成束干纤维0": "root",
+          "成束干纤维1": "root",
+          "成束干纤维2": "root",
+          "成束干纤维3": "root",
+          "成束干纤维4": "root",
+          "成束干纤维5": "root",
+          "成束干纤维6": "root",
+          "成束干纤维7": "root",
+          "成束干纤维8": "root",
+          "成束干纤维9": "root",
+          "成束干纤维10": "root",
+          "成束干纤维11": "root",
+          "成束干纤维12": "root",
+          "成束干纤维13": "root",
+          "成束干纤维14": "root",
+          "纤维束带0": "root",
+          "纤维束带1": "root",
+          "纤维束带2": "root",
+          "柄根卡箍": "root",
+          "上挂环套箍": "root",
+          "扫帚柄悬挂带": "root",
+          "扫帚挂带承接销": "root"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -1,
+                31,
+                -10
+              ],
+              "max": [
+                1,
+                239,
+                -3
+              ]
+            },
+            "joint": "root"
+          }
+        ],
+        "sockets": {
+          "grip": "root"
+        },
+        "pose": {},
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0.793,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.028,
+            0.11,
+            0.028
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "扫帚独立木柄",
+          "material": 380,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维0",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维1",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维2",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维3",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维4",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维5",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维6",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维7",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维8",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维9",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维10",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维11",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维12",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维13",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "成束干纤维14",
+          "material": 373,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "纤维束带0",
+          "material": 374,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "纤维束带1",
+          "material": 374,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "纤维束带2",
+          "material": 374,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "柄根卡箍",
+          "material": 378,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "上挂环套箍",
+          "material": 378,
+          "collision": false,
+          "triangles": 64
+        },
+        {
+          "name": "扫帚柄悬挂带",
+          "material": 303,
+          "collision": false,
+          "triangles": 128
+        },
+        {
+          "name": "扫帚挂带承接销",
+          "material": 378,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    },
+    {
+      "id": "held-hand-CHAR-186",
+      "name": "原精细手070 · 移除旧皮套的原皮肤与指甲",
+      "version": 1,
+      "origin": [
+        -0.07499999999999998,
+        0.793,
+        0.048
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            -0.03,
+            -0.14,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            -0.01,
+            -0.155,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.01,
+            -0.151,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.03,
+            -0.136,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            0,
+            -0.058,
+            -0.042
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "最小原生细块；连续形面及关节另列",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              -30,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "指甲-0",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -27,
+              1
+            ],
+            "max": [
+              -5,
+              -25,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "指甲-1",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              -30,
+              1
+            ],
+            "max": [
+              -1,
+              -28,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "指甲-2",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              -29,
+              1
+            ],
+            "max": [
+              3,
+              -27,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "指甲-3",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              -26,
+              1
+            ],
+            "max": [
+              7,
+              -24,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "拇指甲",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              -18,
+              1
+            ],
+            "max": [
+              16,
+              -16,
+              2
+            ]
+          }
+        }
+      ],
+      "openings": [],
+      "rig": {
+        "version": 1,
+        "kind": "hand",
+        "joints": [
+          {
+            "id": "wrist",
+            "parent": null,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "palm",
+            "parent": "wrist",
+            "translation": [
+              0,
+              -0.023,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-0",
+            "parent": "palm",
+            "translation": [
+              -0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-1",
+            "parent": "finger-0-0",
+            "translation": [
+              0,
+              -0.0258,
+              0
+            ]
+          },
+          {
+            "id": "finger-0-2",
+            "parent": "finger-0-1",
+            "translation": [
+              0,
+              -0.0204,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-0",
+            "parent": "palm",
+            "translation": [
+              -0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-1",
+            "parent": "finger-1-0",
+            "translation": [
+              0,
+              -0.03225,
+              0
+            ]
+          },
+          {
+            "id": "finger-1-2",
+            "parent": "finger-1-1",
+            "translation": [
+              0,
+              -0.0255,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-0",
+            "parent": "palm",
+            "translation": [
+              0.01,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-1",
+            "parent": "finger-2-0",
+            "translation": [
+              0,
+              -0.03053,
+              0
+            ]
+          },
+          {
+            "id": "finger-2-2",
+            "parent": "finger-2-1",
+            "translation": [
+              0,
+              -0.02414,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-0",
+            "parent": "palm",
+            "translation": [
+              0.03,
+              -0.057,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-1",
+            "parent": "finger-3-0",
+            "translation": [
+              0,
+              -0.02408,
+              0
+            ]
+          },
+          {
+            "id": "finger-3-2",
+            "parent": "finger-3-1",
+            "translation": [
+              0,
+              -0.01904,
+              0
+            ]
+          },
+          {
+            "id": "thumb-0",
+            "parent": "palm",
+            "translation": [
+              0.036,
+              -0.007,
+              0
+            ]
+          },
+          {
+            "id": "thumb-1",
+            "parent": "thumb-0",
+            "translation": [
+              0.018,
+              -0.022,
+              0
+            ]
+          },
+          {
+            "id": "thumb-2",
+            "parent": "thumb-1",
+            "translation": [
+              0.015,
+              -0.023,
+              0
+            ]
+          }
+        ],
+        "meshJoints": {
+          "裸露掌面": "palm",
+          "独立指节-0-0": "finger-0-0",
+          "独立指节-0-1": "finger-0-1",
+          "独立指节-0-2": "finger-0-2",
+          "独立指节-1-0": "finger-1-0",
+          "独立指节-1-1": "finger-1-1",
+          "独立指节-1-2": "finger-1-2",
+          "独立指节-2-0": "finger-2-0",
+          "独立指节-2-1": "finger-2-1",
+          "独立指节-2-2": "finger-2-2",
+          "独立指节-3-0": "finger-3-0",
+          "独立指节-3-1": "finger-3-1",
+          "独立指节-3-2": "finger-3-2",
+          "拇指指节-0": "thumb-0",
+          "拇指指节-1": "thumb-1",
+          "拇指指节-2": "thumb-2"
+        },
+        "voxelJoints": [
+          {
+            "region": {
+              "min": [
+                -7,
+                -27,
+                1
+              ],
+              "max": [
+                -5,
+                -25,
+                2
+              ]
+            },
+            "joint": "finger-0-2"
+          },
+          {
+            "region": {
+              "min": [
+                -3,
+                -30,
+                1
+              ],
+              "max": [
+                -1,
+                -28,
+                2
+              ]
+            },
+            "joint": "finger-1-2"
+          },
+          {
+            "region": {
+              "min": [
+                1,
+                -29,
+                1
+              ],
+              "max": [
+                3,
+                -27,
+                2
+              ]
+            },
+            "joint": "finger-2-2"
+          },
+          {
+            "region": {
+              "min": [
+                5,
+                -26,
+                1
+              ],
+              "max": [
+                7,
+                -24,
+                2
+              ]
+            },
+            "joint": "finger-3-2"
+          },
+          {
+            "region": {
+              "min": [
+                14,
+                -18,
+                1
+              ],
+              "max": [
+                16,
+                -16,
+                2
+              ]
+            },
+            "joint": "thumb-2"
+          }
+        ],
+        "sockets": {
+          "finger-tip-0": "finger-0-2",
+          "finger-tip-1": "finger-1-2",
+          "finger-tip-2": "finger-2-2",
+          "finger-tip-3": "finger-3-2",
+          "wrist": "wrist",
+          "grip": "palm"
+        },
+        "pose": {
+          "wrist": [
+            0,
+            0,
+            0.7071067811865475,
+            0.7071067811865475
+          ],
+          "finger-0-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-0-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-0-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "finger-1-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-1-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-1-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "finger-2-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-2-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-2-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "finger-3-0": [
+            0.3007057995042731,
+            0,
+            0,
+            0.9537169507482269
+          ],
+          "finger-3-1": [
+            0.42261826174069944,
+            0,
+            0,
+            0.9063077870366499
+          ],
+          "finger-3-2": [
+            0.25881904510252074,
+            0,
+            0,
+            0.9659258262890683
+          ],
+          "thumb-0": [
+            0,
+            0.17364817766693033,
+            0,
+            0.984807753012208
+          ],
+          "thumb-1": [
+            0,
+            0.08715574274765817,
+            0,
+            0.9961946980917455
+          ],
+          "thumb-2": [
+            0,
+            0.043619387365336,
+            0,
+            0.9990482215818578
+          ]
+        },
+        "authority": "author",
+        "originalSkeletonBound": false
+      },
+      "bindPortSpace": "asset metres relative to origin",
+      "posedPorts": [
+        {
+          "id": "finger-tip-0",
+          "kind": "character-socket",
+          "position": [
+            0.022079968,
+            0.763,
+            0.000372309
+          ],
+          "normal": [
+            -0.422618262,
+            0,
+            -0.906307787
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-1",
+          "kind": "character-socket",
+          "position": [
+            0.02634996,
+            0.783,
+            -0.011534614
+          ],
+          "normal": [
+            -0.422618262,
+            0,
+            -0.906307787
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-2",
+          "kind": "character-socket",
+          "position": [
+            0.025211295,
+            0.803,
+            -0.008359435
+          ],
+          "normal": [
+            -0.422618262,
+            0,
+            -0.906307787
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "finger-tip-3",
+          "kind": "character-socket",
+          "position": [
+            0.020941303,
+            0.823,
+            0.003547488
+          ],
+          "normal": [
+            -0.422618262,
+            0,
+            -0.906307787
+          ],
+          "size": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "wrist",
+          "kind": "character-socket",
+          "position": [
+            -0.075,
+            0.793,
+            0.048
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0.08268799999999998,
+            0.01,
+            0.08785599999999999
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        },
+        {
+          "id": "grip",
+          "kind": "character-socket",
+          "position": [
+            -0.017,
+            0.793,
+            0.006
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            0.015,
+            0.015,
+            0.015
+          ],
+          "pitch": 0.005,
+          "space": "posed asset metres including origin"
+        }
+      ],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "裸露掌面",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-0-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-1-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-2-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "独立指节-3-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 96
+        },
+        {
+          "name": "拇指指节-0",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-1",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        },
+        {
+          "name": "拇指指节-2",
+          "material": 237,
+          "collision": false,
+          "triangles": 32
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "char-183",
+      "assetId": "char-183",
+      "name": "CHAR-183",
+      "position": [
+        -0.6,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "held-hand-CHAR-183",
+      "assetId": "held-hand-CHAR-183",
+      "name": "原精细手070 · 移除旧皮套的原皮肤与指甲",
+      "position": [
+        -0.6,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-185",
+      "assetId": "char-185",
+      "name": "CHAR-185",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "held-hand-CHAR-185",
+      "assetId": "held-hand-CHAR-185",
+      "name": "原精细手070 · 移除旧皮套的原皮肤与指甲",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "char-186",
+      "assetId": "char-186",
+      "name": "CHAR-186",
+      "position": [
+        0.6,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "held-hand-CHAR-186",
+      "assetId": "held-hand-CHAR-186",
+      "name": "原精细手070 · 移除旧皮套的原皮肤与指甲",
+      "position": [
+        0.6,
+        0.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

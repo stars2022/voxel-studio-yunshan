@@ -59,9 +59,11 @@ if gallery_check['check']['warnings']:
     assert all('连续网格另按三角面验证' in w for w in gallery_check['check']['warnings'])
 assert all(not r['ownSolidCells'] and not r['blockedBy'] for r in gallery_check['check']['openings'])
 
+shared_dependencies = [r for r in index['entries'] if r['id'] in {e.get('primaryMasterId') for e in entries}]
+assert {r['id'] for r in shared_dependencies} == {e['primaryMasterId'] for e in entries if e.get('primaryMasterId')}
 files = {root / 'projects/atlas-production-index.json', root / 'projects/reference-atlas/index.json',
          root / 'projects' / gallery['file'], root / 'projects/reference-atlas/images' / (args.sheet + '.png')}
-for row in entries + dependencies:
+for row in entries + dependencies + shared_dependencies:
     native = root / 'projects' / row['file']
     doc = read(native)
     asset = doc['assets'][row['assetId']]
@@ -130,6 +132,10 @@ files.update(out.glob('garment-*.png'))
 files.update(out.glob('costume-*.png'))
 files.update(out.glob('costume-initial-fit-failures.json'))
 files.update(out.glob('costume-development-checks.json'))
+files.update(out.glob('held-*.png'))
+files.update(out.glob('held-development-checks.json'))
+files.update(out.glob('held-interface-correction.json'))
+files.update(out.glob('held-initial-fit-failures.json'))
 files.update(out.glob('attire-*.png'))
 files.update(out.glob('attire-initial-fit-failures.json'))
 files.update(out.glob('attire-development-checks.json'))
@@ -148,7 +154,7 @@ if (out / 'component-variants.json').exists():
 if (out / 'figure-installation-verification.json').exists():
     assert read(out / 'figure-installation-verification.json')['status'] == 'passed'
     files.add(out / 'figure-installation-verification.json')
-for name in ['attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
+for name in ['held-installation-verification.json', 'held-variant-export-verification.json', 'attire-installation-verification.json', 'attire-variant-export-verification.json', 'costume-installation-verification.json', 'costume-variant-export-verification.json', 'garment-installation-verification.json', 'garment-variant-export-verification.json', 'wearable-installation-verification.json', 'wearable-variant-export-verification.json', 'headwear-installation-verification.json', 'headwear-variant-export-verification.json', 'figure-variant-export-verification.json', 'avatar-installation-verification.json', 'avatar-variant-export-verification.json']:
     if (out / name).exists():
         assert read(out / name)['status'] == 'passed'
         files.add(out / name)
@@ -168,7 +174,7 @@ if (out / 'sky-presentation-verification.json').exists():
     files.update(p for p in (out / 'sky-presentation-before').glob('*') if p.is_file())
 files.add(out / 'build.txt')
 manifest = {'format': 'yunshan.atlas-batch', 'version': 1, 'sheet': args.sheet, 'run': index['run'],
-            'candidateMasters': len(entries), 'humanArtAccepted': 0, 'assets': entries, 'revisedDependencies': dependencies,
+            'candidateReferences': len(entries), 'candidateMasters': len([r for r in entries if not r.get('primaryMasterId')]), 'sharedMasterReferences': [{'id':r['id'],'primaryMasterId':r['primaryMasterId']} for r in entries if r.get('primaryMasterId')], 'humanArtAccepted': 0, 'assets': entries, 'revisedDependencies': dependencies, 'sharedDependencies': shared_dependencies,
             'files': [{'path': str(p.relative_to(root)), 'bytes': p.stat().st_size,
                        'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(files)]}
 args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -190,5 +196,5 @@ with ZipFile(args.output) as archive:
 (out / 'batch-package.json').write_text(json.dumps({**manifest, 'archive': args.output.name,
     'archiveBytes': args.output.stat().st_size,
     'archiveSHA256': hashlib.sha256(args.output.read_bytes()).hexdigest()}, ensure_ascii=False, indent=2))
-print(json.dumps({'sheet': args.sheet, 'masters': len(entries), 'files': len(files),
+print(json.dumps({'sheet': args.sheet, 'references': len(entries), 'masters': len([r for r in entries if not r.get('primaryMasterId')]), 'files': len(files),
                   'path': str(args.output), 'bytes': args.output.stat().st_size}, ensure_ascii=False))

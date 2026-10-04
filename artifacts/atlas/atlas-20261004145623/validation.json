@@ -1,0 +1,104 @@
+{
+  "run": "atlas-20261004145623",
+  "status": "passed",
+  "scope": [
+    "CHAR-149",
+    "CHAR-150",
+    "CHAR-177",
+    "CHAR-178",
+    "CHAR-179",
+    "CHAR-180",
+    "CHAR-181",
+    "CHAR-182",
+    "CHAR-183",
+    "CHAR-184",
+    "CHAR-185",
+    "CHAR-186"
+  ],
+  "tests": {
+    "fullRegression": 411,
+    "focused": 9,
+    "foreignMaterialAllocation": 1,
+    "fullLog": "full-tests.txt",
+    "focusedLog": "focused-tests.txt",
+    "scope": "Full suite on M039 source, with final focused rerun for projected grip envelopes and explicit GLB shared-master metadata. All prior geometry hashes unchanged."
+  },
+  "build": "passed",
+  "typecheck": "passed",
+  "mcpChecks": 12,
+  "referenceEntries": 12,
+  "catalogMasters": 11,
+  "sharedMasterReferences": [
+    {
+      "id": "CHAR-182",
+      "primaryMasterId": "LIFE-046"
+    }
+  ],
+  "componentShapes": 24,
+  "authorInstallationStudies": 5,
+  "nativeVoxels": 1861,
+  "triangles": 12204,
+  "farTriangles": 11940,
+  "defaultGLBIndependentBoundsMaxErrorM": 5.91278075390278e-08,
+  "sceneGLBIndependentBoundsMaxErrorM": 7.438659666014757e-08,
+  "sceneFitRecords": 23,
+  "apertureChecks": 46,
+  "assetScreenshots": 36,
+  "installationScreenshots": 20,
+  "undersideDetailScreenshots": 12,
+  "parameterRebuildScreenshots": 2,
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "counts": {
+    "catalogEntries": 1068,
+    "baseModels": 486,
+    "auxiliaryMasters": 1,
+    "assemblies": 51,
+    "variantEntries": 4,
+    "variantModels": 9,
+    "accepted": 0,
+    "notProduced": 526,
+    "generatedEntries": 542,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 468,
+    "atlasSharedMasterReferences": 1,
+    "atlasUniqueMasters": 467
+  },
+  "visualReview": {
+    "status": "inspected-by-assistant",
+    "humanArtAccepted": 0,
+    "referenceImage": "projects/reference-atlas/images/M039.png",
+    "inspected": [
+      "M039.png: all twelve default asset views",
+      "M039-wear.png: all five actual installation studies",
+      "held-utensils-view-2.png",
+      "held-belt-view-2.png",
+      "held-badge-view-2.png",
+      "held-char-177-bottom.png",
+      "held-char-184-bottom.png",
+      "held-bag-detail.png",
+      "held-lid-detail.png"
+    ],
+    "observations": [
+      "Continuous canopy panels and ribs, slanted ladle shaft, vessel walls and real handle holes are visible; native pins/labels/endcaps remain distinct.",
+      "Two waist belt fits clear the actual existing clothes and lowered-outward arms in their finite author stance. Pouch connectors were lengthened after actual connected-component failure, then revalidated.",
+      "Props show seven specific grips and three open palm-root supports; no whole-person action or load claim.",
+      "Cup removed lid and collapsed bag are visibly distinct static shapes. Badge uses an explicit coupon, not a claimed complete wearer mount.",
+      "Original shared LIFE046 retains a visibly coarse 10mm stepped rim and bowl; not a newly smoothed bowl.",
+      "Rigid finger joints, simplified upright leaf blades, fixed bag straps and the doubled umbrella border remain art-review items."
+    ],
+    "scope": "Assistant visual inspection of actual editor renders, supplemented by source/triangle/voxel/export audits; not human aesthetic acceptance."
+  },
+  "sharedMasterAccounting": "Twelve references completed, eleven new independent geometry masters. Exact LIFE046 cells, explicit material remap; canonical dependency bundled and previous index row unchanged.",
+  "limitations": [
+    "Technical candidates; human art acceptance zero.",
+    "No original actor source, dimensions matrix, skeleton, controller or protected clearance supplied.",
+    "Seven finite author grips, three open palm-root supports, A/B belt with 20-degree shoulders, and two 3mm badge clip coupons only. No whole-motion or load certificate.",
+    "Parallel chopstick bundle, not eating animation; cup shown with palm support, not handle grasp.",
+    "Folded umbrella, collapsed bag, full/compact shafts and removed lid are separate static geometry states.",
+    "Original LIFE046 retains its stepped 10mm bowl silhouette; simplified leaf shapes, fixed straps and rigid finger seams remain for art review.",
+    "Single joint per prop component and hand segment. No soft skin, cloth, IK, liquid simulation, automatic inventory/equipment, medical or structural validation.",
+    "Software WebGL cannot certify hardware frame rate."
+  ]
+}

@@ -1,0 +1,129 @@
+check_geometry OK
+query_voxels OK
+list_production_recipes OK
+list_production_recipes OK
+query_materials_interfaces OK
+edit_transaction ERROR
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction OK
+near/far char-149
+near/far char-150
+near/far char-177
+near/far char-178
+near/far char-179
+near/far char-180
+near/far char-181
+near/far char-182
+near/far char-183
+near/far char-184
+near/far char-185
+near/far char-186
+edit_transaction OK
+edit_transaction OK
+query_materials_interfaces OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+... Skipped lines
+
+  {
+    authority: 'author',
+    joints: [
+      {
+        id: 'root',
+...
+          max: [
++           44,
++           13,
+-           10,
+-           30,
+            -7
+          ],
+          min: [
++           -4,
++           2,
+-           -10,
+-           7,
+            -12
+          ]
+        }
+      }
+    ]
+
+    at <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-held-mcp.ts:19:578)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: {
+    version: 1,
+    kind: 'prop',
+    joints: [ { id: 'root', parent: null, translation: [ 0, 0, 0 ] } ],
+    meshJoints: {
+      '带把杯真壁与杯底': 'root',
+      '杯口真实色釉唇': 'root',
+      '杯把真正穿孔': 'root',
+      '杯把根接0.038': 'root',
+      '杯把根接0.103': 'root',
+      '独立可移除杯盖': 'root',
+      '杯盖提钮': 'root',
+      '杯身标签底': 'root'
+    },
+    voxelJoints: [
+      {
+        region: { min: [ -4, 2, -12 ], max: [ 44, 13, -7 ] },
+        joint: 'root'
+      }
+    ],
+    sockets: {
+      'cup-mouth': 'root',
+      'handle-hole': 'root',
+      'lid-center': 'root'
+    },
+    pose: {},
+    authority: 'author',
+    originalSkeletonBound: false
+  },
+  expected: {
+    version: 1,
+    kind: 'prop',
+    joints: [ { id: 'root', parent: null, translation: [ 0, 0, 0 ] } ],
+    meshJoints: {
+      '带把杯真壁与杯底': 'root',
+      '杯口真实色釉唇': 'root',
+      '杯把真正穿孔': 'root',
+      '杯把根接0.038': 'root',
+      '杯把根接0.103': 'root',
+      '独立可移除杯盖': 'root',
+      '杯盖提钮': 'root',
+      '杯身标签底': 'root'
+    },
+    voxelJoints: [
+      {
+        region: { min: [ -10, 7, -12 ], max: [ 10, 30, -7 ] },
+        joint: 'root'
+      }
+    ],
+    sockets: {
+      'cup-mouth': 'root',
+      'handle-hole': 'root',
+      'lid-center': 'root'
+    },
+    pose: {},
+    authority: 'author',
+    originalSkeletonBound: false
+  },
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

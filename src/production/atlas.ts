@@ -5,7 +5,7 @@ import type {Project} from '../core/types';
 export type AtlasEntry={id:string;name:string;type:string;sheet:string;slot:number;theme:string;imageSHA256:string;description:string;crop:{left:number;top:number;width:number;height:number};legacy?:{file:string;assetIds:string[];stage:string}};
 export type AtlasSheet={id:string;theme:string;file:string;sha256:string;width:number;height:number;entries:number};
 export type AtlasIndex={format:'yunshan.reference-atlas';version:1;createdAt:string;sourceSHA256:string;catalogSHA256:string;sheets:AtlasSheet[];entries:AtlasEntry[]};
-export type AtlasBuild={id:string;sheet:string;slot:number;file:string;assetId:string;revision:number;referenceSHA256:string;voxels:number;triangles:number;cellSizeM?:number;sha256:string;boundsM:{min:number[];max:number[]};note:string};
+export type AtlasBuild={id:string;primaryMasterId?:string;sheet:string;slot:number;file:string;assetId:string;revision:number;referenceSHA256:string;voxels:number;triangles:number;cellSizeM?:number;sha256:string;boundsM:{min:number[];max:number[]};note:string};
 export type AtlasProduction={format:'yunshan.atlas-production';version:1;run:string;createdAt:string;entries:AtlasBuild[];studies:{id:string;name:string;file:string;assetIds:string[];note:string;group:string}[]};
 const headers=['图册编号','主题','图像文件','格序','资产ID','资产名称','图像宽','图像高','图像SHA256'];
 // Reference CSV is data. Reject malformed quoting, ambiguous headers and unsafe paths.

@@ -14,7 +14,7 @@ import {registerDomesticRecipes} from './atlas-domestic';
 
 /** Authored reconstructions, not image-to-mesh inference. Only these IDs are
  * upgraded. Reference props belonging to other catalog entries are excluded. */
-export type AtlasRecipe={size:V3;pitch:number;features:string;draw:(b:Shapes,w:number,h:number,d:number)=>void;mount?:'wall'|'ceiling'|'insert';limits:string;expectedComponents?:number};
+export type AtlasRecipe={size:V3;pitch:number;features:string;draw:(b:Shapes,w:number,h:number,d:number)=>void;mount?:'wall'|'ceiling'|'insert';limits:string;expectedComponents?:number;primaryMasterId?:string};
 export const atlasLifeRecipes:Record<number,AtlasRecipe>={};
 const add=(id:number,size:V3,features:string,draw:AtlasRecipe['draw'],options:Partial<Pick<AtlasRecipe,'mount'|'limits'|'pitch'|'expectedComponents'>>={})=>atlasLifeRecipes[id]={size,pitch:.01,features,draw,limits:'静态体素构造；无动画、交互或实测工程尺寸。',...options};
 const frame=(b:Shapes,x:number,y:number,z:number,w:number,h:number,d:number,t:number,m:number)=>{b.b(x,y,z,t,h,d,m);b.b(x+w-t,y,z,t,h,d,m);b.b(x+t,y,z,w-2*t,t,d,m);b.b(x+t,y+h-t,z,w-2*t,t,d,m);};
