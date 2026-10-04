@@ -1,3 +1,4 @@
+import {wearableRecipes,makeWearableAsset} from './atlas-wearables';
 import {headwearRecipes,makeHeadwearAsset} from './atlas-headwear';
 import {avatarRecipes,makeAvatarAsset} from './atlas-avatar';
 import {figureRecipes,makeFigureAsset} from './atlas-figure';
@@ -13,6 +14,7 @@ import {atlasBuiltRecipes,makeAtlasBuiltAsset} from './atlas-built';
 
 /** Dispatch by complete catalog ID; BUILT-003 must never alias LIFE-003. */
 export function atlasRecipe(catalogId:string){
+ if(wearableRecipes[catalogId])return wearableRecipes[catalogId];
  if(headwearRecipes[catalogId])return headwearRecipes[catalogId];
  if(avatarRecipes[catalogId])return avatarRecipes[catalogId];
  if(figureRecipes[catalogId])return figureRecipes[catalogId];
@@ -22,6 +24,7 @@ export function atlasRecipe(catalogId:string){
  return atlasBuiltRecipes[catalogId];
 }
 export function makeCatalogAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number|string>={}){
+ if(wearableRecipes[catalogId])return makeWearableAsset(catalogId,name,id,style,params);
  if(headwearRecipes[catalogId])return makeHeadwearAsset(catalogId,name,id,style,params);
  if(avatarRecipes[catalogId])return makeAvatarAsset(catalogId,name,id,style,params);
  if(figureRecipes[catalogId])return makeFigureAsset(catalogId,name,id,style,params);

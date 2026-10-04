@@ -3,10 +3,30 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=26;
+export const referenceFinishVersion=27;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ guardHelmet:{name:'守卫盔金属壳',color:'#373c40',roughness:.38,metalness:.65,...surface('none',.05,0,960)},
+ helmetPad:{name:'帽盔内衬软垫',color:'#41464a',roughness:.8,metalness:0,...surface('fabric',.05,.10,961)},
+ helmetStrap:{name:'帽盔下颌固定带',color:'#343c40',roughness:.8,metalness:0,...surface('fabric',.05,.10,962)},
+ workHelmet:{name:'工坊防护帽塑壳',color:'#536a7d',roughness:.48,metalness:0,...surface('none',.05,0,963)},
+ strawWeave:{name:'斗笠草编纤维',color:'#c4a479',roughness:.8,metalness:0,...surface('none',.05,0,964)},
+ spectaclesFrame:{name:'近视眼镜金属框',color:'#9e804c',roughness:.38,metalness:.65,...surface('none',.05,0,965)},
+ spectaclesLens:{name:'近视眼镜玻璃片',color:'#d4e2e2',roughness:.12,metalness:0,opacity:.22,emissive:'#000000',intensity:0,...surface('none',.05,0,966)},
+ gogglesFrame:{name:'防护眼镜框',color:'#5b737e',roughness:.48,metalness:0,...surface('none',.05,0,967)},
+ gogglesLens:{name:'防护透明塑料片',color:'#abcbd1',roughness:.12,metalness:0,opacity:.22,emissive:'#000000',intensity:0,...surface('none',.05,0,968)},
+ gogglesSeal:{name:'防护眼镜密封垫',color:'#364347',roughness:.8,metalness:0,...surface('none',.05,0,969)},
+ medicalMask:{name:'医护口罩织物层',color:'#e0e0d8',roughness:.8,metalness:0,...surface('fabric',.05,.10,970)},
+ maskElastic:{name:'口罩耳挂弹性织带',color:'#84b5bd',roughness:.8,metalness:0,...surface('fabric',.05,.10,971)},
+ respiratorShell:{name:'防尘面罩塑壳',color:'#3e474d',roughness:.48,metalness:0,...surface('none',.05,0,972)},
+ respiratorFilter:{name:'防尘面罩滤材',color:'#dbc7a0',roughness:.8,metalness:0,...surface('fabric',.05,.10,973)},
+ respiratorGrille:{name:'防尘滤盒金属格栅',color:'#b18b43',roughness:.38,metalness:.65,...surface('none',.05,0,974)},
+ medicalEmblem:{name:'医护帽织入徽记',color:'#ab4740',roughness:.8,metalness:0,...surface('fabric',.05,.10,975)},
+ hygieneCapCloth:{name:'卫生工作帽布',color:'#deddd5',roughness:.8,metalness:0,...surface('fabric',.05,.10,976)},
+ hygieneCapBand:{name:'卫生工作帽织带',color:'#9eafbd',roughness:.8,metalness:0,...surface('fabric',.05,.10,977)},
+ earringMetal:{name:'耳饰金属',color:'#bb9450',roughness:.38,metalness:.65,...surface('none',.05,0,978)},
+ earringGem:{name:'耳饰玻璃宝石',color:'#69abb8',roughness:.25,metalness:0,opacity:1,emissive:'#000000',intensity:0,...surface('none',.05,0,979)},
  hairOrnament:{name:'头发饰件金属',color:'#bd954b',roughness:.4,metalness:.65,...surface('none',.05,0,946)},
  hairGem:{name:'发饰装饰玻璃',color:'#64abb6',roughness:.25,metalness:0,opacity:1,intensity:0,emissive:'#000000',...surface('none',.05,0,947)},
  headWrap:{name:'布巾软帽主体',color:'#455464',roughness:.85,metalness:0,...surface('fabric',.065,.12,948)},

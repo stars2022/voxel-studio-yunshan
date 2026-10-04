@@ -1,0 +1,38 @@
+✔ M035 twelve masters and twenty-nine shapes retain closed oriented meshes, attached voxels, source provenance and independent materials (444.905604ms)
+✔ all twenty-nine wearable shapes clear actual head, hair or their explicit crown channel (13124.828276ms)
+✖ wearables clear the named standing bodies at bounded yaw and the four authored combinations (6353.269861ms)
+✔ hat bottoms, optical frame apertures and covered mouths are actual geometry with opaque eye clearance (2052.232703ms)
+✔ seven complete author studies retain source masters and head turns without copying them into new catalogue masters (676.233784ms)
+✔ turned wearable exports actual single-head skins and independently evaluated near/far bounds without revoxelization (1620.572532ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24872.008391
+
+✖ failing tests:
+
+test at tests/atlas-wearables.test.ts:8:1
+✖ wearables clear the named standing bodies at bounded yaw and the four authored combinations (6353.269861ms)
+  AssertionError [ERR_ASSERTION]: {"ids":["CHAR-104","CHAR-110"],"fit":"elder","pairs":12,"contained":6,"crossing":44,"details":[{"a":"下颌织带--1","b":"native-0","contained":3,"crossing":24},{"a":"下颌织带-1","b":"native-4","contained":3,"crossing":20}]}
+  
+  50 !== 0
+  
+      at wearableBodyAudit (/workspace/voxel-studio-yunshan/scripts/lib/wearable-audit.ts:5:908)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-wearables.test.ts:8:113)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 50,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

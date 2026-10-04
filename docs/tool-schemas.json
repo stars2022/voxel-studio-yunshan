@@ -566,6 +566,25 @@
                           "removed"
                         ]
                       },
+                      "wearFit": {
+                        "enum": [
+                          "adult",
+                          "child"
+                        ]
+                      },
+                      "pinLength": {
+                        "enum": [
+                          "short",
+                          "long"
+                        ]
+                      },
+                      "earFit": {
+                        "enum": [
+                          "adult",
+                          "child",
+                          "elder"
+                        ]
+                      },
                       "hour": {
                         "type": "number",
                         "minimum": 0,
@@ -908,6 +927,25 @@
                         "enum": [
                           "inserted",
                           "removed"
+                        ]
+                      },
+                      "wearFit": {
+                        "enum": [
+                          "adult",
+                          "child"
+                        ]
+                      },
+                      "pinLength": {
+                        "enum": [
+                          "short",
+                          "long"
+                        ]
+                      },
+                      "earFit": {
+                        "enum": [
+                          "adult",
+                          "child",
+                          "elder"
                         ]
                       },
                       "hour": {
@@ -2244,7 +2282,7 @@
                       "minimum": 1,
                       "maximum": 65535
                     },
-                    "maxProperties": 256
+                    "maxProperties": 512
                   }
                 },
                 "required": [

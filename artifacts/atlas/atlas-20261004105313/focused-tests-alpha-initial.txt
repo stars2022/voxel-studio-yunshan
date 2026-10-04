@@ -1,0 +1,34 @@
+✔ M035 twelve masters and twenty-nine shapes retain closed oriented meshes, attached voxels, source provenance and independent materials (444.673815ms)
+✔ all twenty-nine wearable shapes clear actual head, hair or their explicit crown channel (15765.401367ms)
+✔ wearables clear the named standing bodies at bounded yaw and the four authored combinations (11088.681917ms)
+✔ hat bottoms, optical frame apertures and covered mouths are actual geometry with opaque eye clearance (3641.815691ms)
+✔ seven complete author studies retain source masters and head turns without copying them into new catalogue masters (947.284041ms)
+✔ turned wearable exports actual single-head skins and independently evaluated near/far bounds without revoxelization (2215.54533ms)
+✖ real lens alpha exports independently of opaque filter fabric and one palette undo leaves geometry unchanged (2844.618583ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 37604.731169
+
+✖ failing tests:
+
+test at tests/atlas-wearables.test.ts:13:1
+✖ real lens alpha exports independently of opaque filter fabric and one palette undo leaves geometry unchanged (2844.618583ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0.22
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-wearables.test.ts:13:1007)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0.22,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
