@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 588,
-    "remainingReferenceEntries": 205,
-    "completedReferenceSheets": 49,
+    "referenceCandidates": 600,
+    "remainingReferenceEntries": 193,
+    "completedReferenceSheets": 50,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
       "auxiliaryMasters": 1,
-      "assemblies": 123,
+      "assemblies": 135,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 406,
-      "generatedEntries": 662,
+      "notProduced": 394,
+      "generatedEntries": 674,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 588,
+      "atlasReferenceCandidates": 600,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 72
+      "atlasAssemblyCandidates": 84
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M050",
+    "sheet": "M051",
     "state": "queued",
     "ids": [
-      "ENV-030",
-      "ENV-031",
-      "ENV-036",
-      "ENV-049",
-      "ENV-053",
-      "ENV-070",
-      "ENV-071",
-      "ENV-072",
-      "ENV-076",
-      "ENV-079",
-      "ENV-080",
-      "ENV-087"
+      "ENV-089",
+      "ENV-090",
+      "ENV-093",
+      "ENV-099",
+      "ENV-100",
+      "ENV-101",
+      "ENV-102",
+      "ENV-103",
+      "ENV-106",
+      "ENV-107",
+      "ENV-108",
+      "ENV-109"
     ],
-    "scope": "12个深潭/汇流/浅滩/码头岸床、林带/竹林/混交/垂直绿化、生态视觉与街院地形组合；连续曲面与最小原生组件并存，保留原世界和生态未绑定范围。"
+    "scope": "12个切坡护坡、桥岸/建筑街台接地、休憩石桌/叠石/观景平台/山步/护栏/导览/庭园/广场与滨水园路组合；最小块件体素，坡面连续，原世界和社会生态状态未绑定。"
   },
-  "nextBatch": "M050",
+  "nextBatch": "M051",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,19 +68,21 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M049共588条技术参考候选，余205；513独立图册母版、3共用引用、72图册组合，人工美术验收0。"
+    "M001–M050共600条技术参考候选，余193；513独立图册母版、3共用引用、84图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续优先：最小组件体素；斜面和曲面连续；天空与星空使用实际贴图。",
-    "M049完成12组合/14有限形态（311公交/轨道、ENV002近/远）；新增基础母版0。累计588/793，剩205；532基础候选、123组合、662已生成清单项。",
+    "M050完成12组合/14有限形态（053种子7/19、087踏步/坡道）；新增基础母版0。累计600/793，剩193；532基础候选、135组合、674已生成清单项。",
     "全库506角色256+250同事务，style42/finish40不变；本批复用真实材质用途，原件完整保留。",
-    "全库482项：481项直接通过，1项旧BUILT查询计数断言已修正、两文件16项复验通过；9专项、构建/类型检查及9组MCP通过；正式证据 artifacts/atlas/atlas-20261005103132。",
-    "14形态的连续闭壳、最小岩格/销着生、通路/上身/脚下、桥头/支座、水系和地块接缝均实核；水面累计米制UV随GLB导出。",
-    "ENV002远景为非碰撞代理，保留近景资产和实际导出terrain-authority.json；消费端须显式采用这份物理描述。自动距离LOD、18块缓存与物理切换未实现。",
-    "近景地形采用真实连续面+0.2m最小岩格，不冒称旧完整0.2m占用。M049本地地质/植被/建筑风格仍待人工美术验收。",
-    "36默认截图全部来自最终版本；移动梯/站台/瀑谷剖切、水帘组件、轨道站台变体、五组俯视及编辑器夜景另附。",
-    "M050整图和CSV已看；work/m050/source.json与review.json保存准备资料，无生产代码。原080市集隔离候选和076生态待核范围不可被新作者场景覆盖。",
+    "全库490项回归全部通过；最终8专项、构建/类型检查及9组MCP通过；正式证据 artifacts/atlas/atlas-20261005114721。",
+    "水面裁切实际同源床面三角；砾洲真出水，不把蓝盘压地。每段闭合且内部无重复端盖，瀑/支流累计米制UV随实际GLB保留。",
+    "真实根格/土体、藤锚、原鸟足/鱼表面及蝶体空气体积分别实核。非碰撞视觉动物不能用空碰撞列表冒称合适。",
+    "ENV076源待核、080源隔离未集成保留。52m市集是长度，下层Y1.2/上层Y4.4；作者场景不改写原世界失败或集成状态。",
+    "复用父组合BUILT284/211已加入递归依赖；不止保存其子组件。以后复用组合须同样包含父模板以便追溯。",
+    "初稿外缘过高，已压低外围并补植物；原稿和中间元数据运行在work/m050/superseded保留，只有最终运行交付。36默认图按严格同几何/材质/原生验证复用或重新拍摄，比例/密度/岩壁细节仍待人工美术验收。",
+    "新组合参数须进公开schema并以produceCatalogAssembly验证；铺面不得与地形共面，基础接楼板底，外围铺面避开室内范围。",
+    "M051整图与12条CSV已读，work/m051/source.json与review.json为准备资料，无M051生产代码。保原桥端巨块/204失败；导览/活动/权限不能编造原世界身份。",
     "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器保持串行。"
   ],
   "modelingDirection": {
@@ -90,9 +92,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M049",
-    "run": "atlas-20261005103132",
+    "sheet": "M050",
+    "run": "atlas-20261005114721",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261005103132"
+    "evidence": "artifacts/atlas/atlas-20261005114721"
   }
 }

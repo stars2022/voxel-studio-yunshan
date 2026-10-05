@@ -1,0 +1,4396 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-036": {
+      "id": "env-036",
+      "name": "浅滩砾洲与深浅水交界组合",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-036-0",
+          "assetId": "architecture-civic-terrain-shoal-islands-0-0-0-1-near-7ca82318b2",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-036-1",
+          "assetId": "architecture-civic-flooded-shoal-islands-be38255f33",
+          "name": "同源床面裁切的真实水域",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-036-2",
+          "assetId": "architecture-civic-habitat-exposed-gravel-365d05b916",
+          "name": "砾洲上真实散砾与水蚀石",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-036-3",
+          "assetId": "architecture-civic-root-pocket-shoal-bank-0-3229be5aae",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-036-4",
+          "assetId": "source-env-065",
+          "name": "细茎芦苇组件",
+          "position": [
+            -15,
+            7.8,
+            -8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-036-5",
+          "assetId": "architecture-civic-root-pocket-shoal-bank-1-8b8cdf2689",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-036-6",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            15,
+            7.8,
+            12
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-036",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M050",
+          "slot": 3,
+          "imageSHA256": "fc3606d5fbfb42b54f178c42f615af1bccade28ae0eccdc7028f9467b4d5e809"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-027",
+          "ENV-028",
+          "ENV-034",
+          "ENV-035",
+          "ENV-061",
+          "ENV-065"
+        ],
+        "instanceGroups": {
+          "env-036-0": "terrain",
+          "env-036-1": "water",
+          "env-036-2": "habitat-ground",
+          "env-036-3": "root-soil",
+          "env-036-4": "vegetation",
+          "env-036-5": "root-soil",
+          "env-036-6": "vegetation"
+        },
+        "parameters": {},
+        "routes": [],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              -10.024391436666667,
+              5.15422191341293,
+              -18.208579318666665
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              -7.666666666666666,
+              4.090855516380313,
+              -22.333333333333332
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              -6.333333333333334,
+              4.459612528880442,
+              5.333333333333334
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              -5.333333333333334,
+              3.584593096520455,
+              22.333333333333332
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              -3.333333333333333,
+              3.8142214786682858,
+              -8.666666666666666
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              -2.333333333333333,
+              3.068160851862572,
+              8.333333333333332
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              -0.3333333333333333,
+              2.880122365027054,
+              -18.666666666666664
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              0.6666666666666666,
+              3.15218915176662,
+              2.333333333333333
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              1.6666666666666665,
+              2.88013882209991,
+              19.333333333333332
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              3.333333333333333,
+              3.351892556447891,
+              -11.333333333333332
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              4.666666666666667,
+              4.441545686978095,
+              6.333333333333334
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              5.666666666666667,
+              3.271813272151886,
+              23.333333333333336
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              7.333333333333334,
+              3.8538000186590815,
+              3.666666666666666
+            ]
+          },
+          {
+            "name": "actual water bed env-036-1",
+            "point": [
+              9.333333333333334,
+              4.576722991955154,
+              17.666666666666668
+            ]
+          },
+          {
+            "name": "shoal-bank-0 root pocket terrain 0",
+            "point": [
+              -15.8,
+              7.6754788970000005,
+              -8.8
+            ],
+            "exclude": "env-036-3"
+          },
+          {
+            "name": "shoal-bank-0 root pocket terrain 1",
+            "point": [
+              -14,
+              7.6754788970000005,
+              -8.8
+            ],
+            "exclude": "env-036-3"
+          },
+          {
+            "name": "shoal-bank-0 root pocket terrain 2",
+            "point": [
+              -14,
+              7.639570774,
+              -7.2
+            ],
+            "exclude": "env-036-3"
+          },
+          {
+            "name": "shoal-bank-0 root pocket terrain 3",
+            "point": [
+              -15.8,
+              7.639570774,
+              -7.2
+            ],
+            "exclude": "env-036-3"
+          },
+          {
+            "name": "shoal-bank-0 root pocket terrain 4",
+            "point": [
+              -15,
+              7.663398985000001,
+              -8
+            ],
+            "exclude": "env-036-3"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -14.9,
+              7.78,
+              -7.9
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -14.5,
+              7.78,
+              -7.9
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -14.9,
+              7.78,
+              -7.7
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -15.1,
+              7.78,
+              -7.7
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -15.5,
+              7.78,
+              -8.3
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -15.3,
+              7.78,
+              -8.1
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -14.5,
+              7.78,
+              -8.5
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -14.5,
+              7.78,
+              -8.3
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-0 canonical root on actual soil",
+            "point": [
+              -14.7,
+              7.78,
+              -8.1
+            ],
+            "exclude": "env-036-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "shoal-bank-1 root pocket terrain 0",
+            "point": [
+              14.8,
+              7.634395840000001,
+              11.8
+            ],
+            "exclude": "env-036-5"
+          },
+          {
+            "name": "shoal-bank-1 root pocket terrain 1",
+            "point": [
+              15.4,
+              7.634395840000001,
+              11.8
+            ],
+            "exclude": "env-036-5"
+          },
+          {
+            "name": "shoal-bank-1 root pocket terrain 2",
+            "point": [
+              15.4,
+              7.611030525,
+              12.4
+            ],
+            "exclude": "env-036-5"
+          },
+          {
+            "name": "shoal-bank-1 root pocket terrain 3",
+            "point": [
+              14.8,
+              7.611030525,
+              12.4
+            ],
+            "exclude": "env-036-5"
+          },
+          {
+            "name": "shoal-bank-1 root pocket terrain 4",
+            "point": [
+              15,
+              7.628046543000001,
+              12
+            ],
+            "exclude": "env-036-5"
+          },
+          {
+            "name": "shoal-bank-1 canonical root on actual soil",
+            "point": [
+              15.1,
+              7.78,
+              12.1
+            ],
+            "exclude": "env-036-6",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored environment only. Original terrain, hydrology, ecology, residency, permissions and controllers remain unbound.",
+        "terrainAuthority": "Actual closed continuous terrain triangles;0.2m minimum native rock cells. Canonical plants and transport components retain their full original grids.",
+        "terrainTiles": [
+          {
+            "instance": "env-036-0",
+            "assetId": "architecture-civic-terrain-shoal-islands-0-0-0-1-near-7ca82318b2",
+            "authorityAssetId": "architecture-civic-terrain-shoal-islands-0-0-0-1-near-7ca82318b2",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 48,
+            "step": 1,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 48,
+          "step": 1,
+          "origin": [
+            -24,
+            -24
+          ],
+          "continuousPhysicalSurface": true
+        },
+        "waterBodies": [
+          {
+            "instance": "env-036-1",
+            "assetId": "architecture-civic-flooded-shoal-islands-be38255f33",
+            "rect": [
+              -24,
+              -24,
+              24,
+              24
+            ],
+            "step": 1,
+            "role": "flowWater",
+            "samples": [
+              {
+                "point": [
+                  -10.024391436666667,
+                  5.2,
+                  -18.208579318666665
+                ],
+                "bedY": 5.1742219134129295,
+                "depth": 0.025778086587070703
+              },
+              {
+                "point": [
+                  -10.2448795225,
+                  5.2,
+                  -13.624099397
+                ],
+                "bedY": 4.994085348013441,
+                "depth": 0.2059146519865589
+              },
+              {
+                "point": [
+                  -10.139606689,
+                  5.2,
+                  -8.55906397125
+                ],
+                "bedY": 5.086454101229235,
+                "depth": 0.1135458987707656
+              },
+              {
+                "point": [
+                  -9.301841563,
+                  5.2,
+                  -21.134184197
+                ],
+                "bedY": 5.061376881522145,
+                "depth": 0.13862311847785502
+              },
+              {
+                "point": [
+                  -9.666666666666668,
+                  5.2,
+                  -16.333333333333332
+                ],
+                "bedY": 4.71036094311544,
+                "depth": 0.48963905688456055
+              },
+              {
+                "point": [
+                  -9.666666666666668,
+                  5.2,
+                  -11.333333333333332
+                ],
+                "bedY": 4.568836885806689,
+                "depth": 0.6311631141933116
+              },
+              {
+                "point": [
+                  -9.72262855425,
+                  5.2,
+                  -6.39646784375
+                ],
+                "bedY": 5.014581028645765,
+                "depth": 0.18541897135423557
+              },
+              {
+                "point": [
+                  -8.41152699725,
+                  5.2,
+                  -23.7100658475
+                ],
+                "bedY": 4.8424866481788635,
+                "depth": 0.35751335182113664
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  5.2,
+                  -18.666666666666664
+                ],
+                "bedY": 4.054690313272449,
+                "depth": 1.1453096867275514
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  5.2,
+                  -13.666666666666668
+                ],
+                "bedY": 3.762047228143378,
+                "depth": 1.4379527718566223
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  5.2,
+                  -8.666666666666666
+                ],
+                "bedY": 3.879482012506588,
+                "depth": 1.320517987493412
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  5.2,
+                  -3.6666666666666665
+                ],
+                "bedY": 4.414917527099416,
+                "depth": 0.7850824729005845
+              },
+              {
+                "point": [
+                  -8.07964901775,
+                  5.2,
+                  1.4872252645
+                ],
+                "bedY": 5.134021185726217,
+                "depth": 0.06597881427378294
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  5.2,
+                  -22.333333333333332
+                ],
+                "bedY": 4.110855516380313,
+                "depth": 1.0891444836196875
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  5.2,
+                  -17.333333333333336
+                ],
+                "bedY": 3.6008376454180224,
+                "depth": 1.5991623545819778
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  5.2,
+                  -12.333333333333332
+                ],
+                "bedY": 3.454442503285903,
+                "depth": 1.7455574967140972
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  5.2,
+                  -7.333333333333334
+                ],
+                "bedY": 3.6627016145661306,
+                "depth": 1.5372983854338695
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  5.2,
+                  -2.333333333333333
+                ],
+                "bedY": 4.199614689546711,
+                "depth": 1.0003853104532894
+              },
+              {
+                "point": [
+                  -7.6972042975,
+                  5.2,
+                  2.5425497655
+                ],
+                "bedY": 5.037108682145211,
+                "depth": 0.16289131785478883
+              },
+              {
+                "point": [
+                  -7.039230967333333,
+                  5.2,
+                  18.664269378666667
+                ],
+                "bedY": 5.158927238785799,
+                "depth": 0.04107276121420078
+              },
+              {
+                "point": [
+                  -7.333333333333334,
+                  5.2,
+                  23.333333333333336
+                ],
+                "bedY": 4.634421641202478,
+                "depth": 0.5655783587975218
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  5.2,
+                  -19.666666666666668
+                ],
+                "bedY": 3.242719797131934,
+                "depth": 1.9572802028680663
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  5.2,
+                  -14.666666666666668
+                ],
+                "bedY": 3.0672912709876843,
+                "depth": 2.132708729012316
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  5.2,
+                  -9.666666666666668
+                ],
+                "bedY": 3.1436837347772664,
+                "depth": 2.056316265222734
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  5.2,
+                  -4.666666666666667
+                ],
+                "bedY": 3.4938204795503074,
+                "depth": 1.7061795204496928
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  5.2,
+                  0.3333333333333333
+                ],
+                "bedY": 3.8311872921022534,
+                "depth": 1.3688127078977468
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  5.2,
+                  5.333333333333334
+                ],
+                "bedY": 4.479612528880441,
+                "depth": 0.720387471119559
+              },
+              {
+                "point": [
+                  -6.30329226175,
+                  5.2,
+                  10.351304609
+                ],
+                "bedY": 4.961461651621349,
+                "depth": 0.2385383483786514
+              },
+              {
+                "point": [
+                  -6.31131333175,
+                  5.2,
+                  15.340690516
+                ],
+                "bedY": 4.937044684686589,
+                "depth": 0.26295531531341076
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  5.2,
+                  20.333333333333336
+                ],
+                "bedY": 4.413136098764003,
+                "depth": 0.7868639012359973
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  -22.666666666666668
+                ],
+                "bedY": 3.1453921028765413,
+                "depth": 2.054607897123459
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  -17.666666666666668
+                ],
+                "bedY": 2.959384029684216,
+                "depth": 2.240615970315784
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  -12.666666666666666
+                ],
+                "bedY": 2.9486686036733403,
+                "depth": 2.25133139632666
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  -7.666666666666666
+                ],
+                "bedY": 3.318583342704162,
+                "depth": 1.881416657295838
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  -2.6666666666666665
+                ],
+                "bedY": 3.5101712586776124,
+                "depth": 1.6898287413223878
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  2.333333333333333
+                ],
+                "bedY": 3.574557785304814,
+                "depth": 1.6254422146951861
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  7.333333333333334
+                ],
+                "bedY": 4.0664589053966615,
+                "depth": 1.1335410946033386
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  12.333333333333332
+                ],
+                "bedY": 4.322307660551233,
+                "depth": 0.8776923394487675
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  17.333333333333336
+                ],
+                "bedY": 4.110923905872523,
+                "depth": 1.0890760941274769
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  5.2,
+                  22.333333333333332
+                ],
+                "bedY": 3.604593096520455,
+                "depth": 1.595406903479545
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  -20.666666666666668
+                ],
+                "bedY": 2.9256174750039654,
+                "depth": 2.2743825249960348
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  -15.666666666666666
+                ],
+                "bedY": 2.9033573969958426,
+                "depth": 2.2966426030041576
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  -10.666666666666666
+                ],
+                "bedY": 3.102135091227062,
+                "depth": 2.097864908772938
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  -5.666666666666667
+                ],
+                "bedY": 3.9905047954804083,
+                "depth": 1.209495204519592
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  -0.6666666666666666
+                ],
+                "bedY": 3.402405491749806,
+                "depth": 1.797594508250194
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  4.333333333333333
+                ],
+                "bedY": 3.3434148113412707,
+                "depth": 1.8565851886587295
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  9.333333333333334
+                ],
+                "bedY": 3.672148763177489,
+                "depth": 1.527851236822511
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  14.333333333333334
+                ],
+                "bedY": 3.7254727682097704,
+                "depth": 1.4745272317902298
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  5.2,
+                  19.333333333333332
+                ],
+                "bedY": 3.450009644641101,
+                "depth": 1.7499903553588991
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  -23.666666666666668
+                ],
+                "bedY": 2.912879498401005,
+                "depth": 2.287120501598995
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  -18.666666666666664
+                ],
+                "bedY": 2.9000837878124797,
+                "depth": 2.2999162121875205
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  -13.666666666666668
+                ],
+                "bedY": 2.9342223109959145,
+                "depth": 2.2657776890040857
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  -8.666666666666666
+                ],
+                "bedY": 3.8342214786682858,
+                "depth": 1.3657785213317144
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  -3.6666666666666665
+                ],
+                "bedY": 4.611032245054389,
+                "depth": 0.5889677549456112
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  1.3333333333333333
+                ],
+                "bedY": 3.1564139611275337,
+                "depth": 2.0435860388724665
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  6.333333333333334
+                ],
+                "bedY": 3.165399757724115,
+                "depth": 2.0346002422758853
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  11.333333333333332
+                ],
+                "bedY": 3.324258549512079,
+                "depth": 1.8757414504879213
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  16.333333333333332
+                ],
+                "bedY": 3.2537091879792137,
+                "depth": 1.9462908120207865
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  5.2,
+                  21.333333333333332
+                ],
+                "bedY": 3.0377500244099602,
+                "depth": 2.16224997559004
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  -21.666666666666664
+                ],
+                "bedY": 2.9000008471703045,
+                "depth": 2.2999991528296957
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  -16.666666666666668
+                ],
+                "bedY": 2.90177947443482,
+                "depth": 2.29822052556518
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  -11.666666666666666
+                ],
+                "bedY": 3.148588131776367,
+                "depth": 2.0514118682236333
+              },
+              {
+                "point": [
+                  -2.548281526333333,
+                  5.2,
+                  -6.832680885
+                ],
+                "bedY": 5.023758699713108,
+                "depth": 0.17624130028689233
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  -1.6666666666666665
+                ],
+                "bedY": 4.360212332216012,
+                "depth": 0.8397876677839884
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  3.333333333333333
+                ],
+                "bedY": 2.993453282830577,
+                "depth": 2.2065467171694233
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  8.333333333333332
+                ],
+                "bedY": 3.088160851862572,
+                "depth": 2.1118391481374283
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  13.333333333333332
+                ],
+                "bedY": 3.0580646789381807,
+                "depth": 2.1419353210618195
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  18.333333333333332
+                ],
+                "bedY": 2.9720508139819115,
+                "depth": 2.2279491860180887
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  5.2,
+                  23.333333333333336
+                ],
+                "bedY": 2.9069403808205037,
+                "depth": 2.2930596191794965
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  -19.666666666666668
+                ],
+                "bedY": 2.9000283394512714,
+                "depth": 2.299971660548729
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  -14.666666666666668
+                ],
+                "bedY": 2.9203202404625537,
+                "depth": 2.2796797595374465
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  -9.666666666666668
+                ],
+                "bedY": 3.8746964788921883,
+                "depth": 1.325303521107812
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  -0.6666666666666666
+                ],
+                "bedY": 4.03694812990404,
+                "depth": 1.16305187009596
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  4.333333333333333
+                ],
+                "bedY": 3.039607937691407,
+                "depth": 2.1603920623085933
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  9.333333333333334
+                ],
+                "bedY": 3.164015493171672,
+                "depth": 2.035984506828328
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  14.333333333333334
+                ],
+                "bedY": 2.936830979332127,
+                "depth": 2.263169020667873
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  5.2,
+                  19.333333333333332
+                ],
+                "bedY": 2.903768522556113,
+                "depth": 2.2962314774438872
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  -23.666666666666668
+                ],
+                "bedY": 2.9000000192441107,
+                "depth": 2.2999999807558895
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  -18.666666666666664
+                ],
+                "bedY": 2.900122365027054,
+                "depth": 2.299877634972946
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  -13.666666666666668
+                ],
+                "bedY": 2.95170876288344,
+                "depth": 2.24829123711656
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  -8.666666666666666
+                ],
+                "bedY": 4.365105082017886,
+                "depth": 0.8348949179821146
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  0.3333333333333333
+                ],
+                "bedY": 3.5672894369185864,
+                "depth": 1.6327105630814138
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  5.333333333333334
+                ],
+                "bedY": 3.3468942653778786,
+                "depth": 1.8531057346221216
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  10.333333333333334
+                ],
+                "bedY": 3.3672525332836836,
+                "depth": 1.8327474667163166
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  15.333333333333332
+                ],
+                "bedY": 2.912109279268693,
+                "depth": 2.287890720731307
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  5.2,
+                  20.333333333333336
+                ],
+                "bedY": 2.900007324416891,
+                "depth": 2.299992675583109
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  -22.666666666666668
+                ],
+                "bedY": 2.900000104882442,
+                "depth": 2.299999895117558
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  -17.666666666666668
+                ],
+                "bedY": 2.9003922893069425,
+                "depth": 2.2996077106930577
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  -12.666666666666666
+                ],
+                "bedY": 2.9979597433142224,
+                "depth": 2.2020402566857777
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  -7.666666666666666
+                ],
+                "bedY": 4.5413448111478285,
+                "depth": 0.6586551888521717
+              },
+              {
+                "point": [
+                  0.55844672325,
+                  5.2,
+                  -2.728291272
+                ],
+                "bedY": 4.828471254619215,
+                "depth": 0.3715287453807852
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  2.333333333333333
+                ],
+                "bedY": 3.17218915176662,
+                "depth": 2.02781084823338
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  7.333333333333334
+                ],
+                "bedY": 4.271494918359731,
+                "depth": 0.9285050816402691
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  12.333333333333332
+                ],
+                "bedY": 3.2365761205521584,
+                "depth": 1.9634238794478418
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  17.333333333333336
+                ],
+                "bedY": 2.9019686656739734,
+                "depth": 2.298031334326027
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  5.2,
+                  22.333333333333332
+                ],
+                "bedY": 2.9000002634057154,
+                "depth": 2.299999736594285
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  -20.666666666666668
+                ],
+                "bedY": 2.900972131710268,
+                "depth": 2.2990278682897323
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  -15.666666666666666
+                ],
+                "bedY": 2.940526837365069,
+                "depth": 2.259473162634931
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  -10.666666666666666
+                ],
+                "bedY": 3.2151167697110283,
+                "depth": 1.9848832302889718
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  -5.666666666666667
+                ],
+                "bedY": 4.471815715182879,
+                "depth": 0.7281842848171216
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  -0.6666666666666666
+                ],
+                "bedY": 3.5072403184069687,
+                "depth": 1.6927596815930315
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  4.333333333333333
+                ],
+                "bedY": 3.7329700874642313,
+                "depth": 1.4670299125357689
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  9.333333333333334
+                ],
+                "bedY": 4.792395980334036,
+                "depth": 0.40760401966596405
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  14.333333333333334
+                ],
+                "bedY": 3.0061538660070397,
+                "depth": 2.1938461339929605
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  5.2,
+                  19.333333333333332
+                ],
+                "bedY": 2.90013882209991,
+                "depth": 2.29986117790009
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  5.2,
+                  -23.666666666666668
+                ],
+                "bedY": 2.9089318694967776,
+                "depth": 2.2910681305032226
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  5.2,
+                  -18.666666666666664
+                ],
+                "bedY": 3.012442140996459,
+                "depth": 2.187557859003541
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  5.2,
+                  -13.666666666666668
+                ],
+                "bedY": 3.1337329540315153,
+                "depth": 2.066267045968485
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  5.2,
+                  -8.666666666666666
+                ],
+                "bedY": 3.4782627352013273,
+                "depth": 1.7217372647986728
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  5.2,
+                  -3.6666666666666665
+                ],
+                "bedY": 3.747487768260969,
+                "depth": 1.452512231739031
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  5.2,
+                  1.3333333333333333
+                ],
+                "bedY": 3.104242153332468,
+                "depth": 2.0957578466675324
+              },
+              {
+                "point": [
+                  2.6554835285,
+                  5.2,
+                  6.2682783660000005
+                ],
+                "bedY": 5.019335411296614,
+                "depth": 0.18066458870338575
+              },
+              {
+                "point": [
+                  2.333333333333333,
+                  5.2,
+                  11.666666666666666
+                ],
+                "bedY": 3.8253404519737937,
+                "depth": 1.3746595480262065
+              },
+              {
+                "point": [
+                  2.333333333333333,
+                  5.2,
+                  16.666666666666668
+                ],
+                "bedY": 2.9094512200886395,
+                "depth": 2.2905487799113606
+              },
+              {
+                "point": [
+                  2.333333333333333,
+                  5.2,
+                  21.666666666666664
+                ],
+                "bedY": 2.9000023594272846,
+                "depth": 2.2999976405727156
+              },
+              {
+                "point": [
+                  3.333333333333333,
+                  5.2,
+                  -21.333333333333332
+                ],
+                "bedY": 3.037750225057834,
+                "depth": 2.162249774942166
+              },
+              {
+                "point": [
+                  3.333333333333333,
+                  5.2,
+                  -16.333333333333332
+                ],
+                "bedY": 3.2540490422605997,
+                "depth": 1.9459509577394005
+              },
+              {
+                "point": [
+                  3.333333333333333,
+                  5.2,
+                  -11.333333333333332
+                ],
+                "bedY": 3.371892556447891,
+                "depth": 1.828107443552109
+              },
+              {
+                "point": [
+                  3.333333333333333,
+                  5.2,
+                  -6.333333333333334
+                ],
+                "bedY": 3.6183341926278016,
+                "depth": 1.5816658073721985
+              },
+              {
+                "point": [
+                  3.333333333333333,
+                  5.2,
+                  -1.3333333333333333
+                ],
+                "bedY": 3.213705857919824,
+                "depth": 1.986294142080176
+              },
+              {
+                "point": [
+                  3.333333333333333,
+                  5.2,
+                  3.666666666666666
+                ],
+                "bedY": 3.559431666638112,
+                "depth": 1.6405683333618883
+              },
+              {
+                "point": [
+                  3.83446892,
+                  5.2,
+                  9.344277627
+                ],
+                "bedY": 5.076144020709119,
+                "depth": 0.1238559792908811
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  5.2,
+                  14.333333333333334
+                ],
+                "bedY": 3.029183444966278,
+                "depth": 2.1708165550337224
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  5.2,
+                  19.333333333333332
+                ],
+                "bedY": 2.9001721392822093,
+                "depth": 2.299827860717791
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  -23.666666666666668
+                ],
+                "bedY": 3.230948552259939,
+                "depth": 1.9690514477400614
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  -18.666666666666664
+                ],
+                "bedY": 3.6455044840502175,
+                "depth": 1.5544955159497826
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  -13.666666666666668
+                ],
+                "bedY": 3.915449735313758,
+                "depth": 1.2845502646862421
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  -8.666666666666666
+                ],
+                "bedY": 3.865306321040989,
+                "depth": 1.3346936789590114
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  -3.6666666666666665
+                ],
+                "bedY": 3.539453220856341,
+                "depth": 1.660546779143659
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  1.3333333333333333
+                ],
+                "bedY": 3.13317093640753,
+                "depth": 2.06682906359247
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  6.333333333333334
+                ],
+                "bedY": 4.461545686978095,
+                "depth": 0.7384543130219052
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  11.333333333333332
+                ],
+                "bedY": 3.760838552697831,
+                "depth": 1.439161447302169
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  16.333333333333332
+                ],
+                "bedY": 2.9142900211277247,
+                "depth": 2.2857099788722754
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  5.2,
+                  21.333333333333332
+                ],
+                "bedY": 2.9638529772295783,
+                "depth": 2.236147022770422
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  -21.666666666666664
+                ],
+                "bedY": 3.8425353438435703,
+                "depth": 1.3574646561564299
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  -16.666666666666668
+                ],
+                "bedY": 4.375262744651161,
+                "depth": 0.8247372553488388
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  -11.666666666666666
+                ],
+                "bedY": 4.541852284096282,
+                "depth": 0.6581477159037181
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  -6.666666666666667
+                ],
+                "bedY": 4.240925891782483,
+                "depth": 0.9590741082175169
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  -1.6666666666666665
+                ],
+                "bedY": 3.652459120113222,
+                "depth": 1.5475408798867782
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  3.333333333333333
+                ],
+                "bedY": 3.389560077965215,
+                "depth": 1.810439922034785
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  8.333333333333332
+                ],
+                "bedY": 4.131289710570137,
+                "depth": 1.0687102894298635
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  13.333333333333332
+                ],
+                "bedY": 3.0978013940421567,
+                "depth": 2.1021986059578435
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  18.333333333333332
+                ],
+                "bedY": 3.022481447395573,
+                "depth": 2.177518552604427
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  5.2,
+                  23.333333333333336
+                ],
+                "bedY": 3.2918132721518862,
+                "depth": 1.908186727848114
+              },
+              {
+                "point": [
+                  6.666666666666668,
+                  5.2,
+                  -19.666666666666668
+                ],
+                "bedY": 4.741158258913817,
+                "depth": 0.45884174108618314
+              },
+              {
+                "point": [
+                  6.392807348666667,
+                  5.2,
+                  -14.809844326333334
+                ],
+                "bedY": 5.03561870236823,
+                "depth": 0.16438129763177045
+              },
+              {
+                "point": [
+                  6.432606994666667,
+                  5.2,
+                  -9.772218953
+                ],
+                "bedY": 5.035128404052137,
+                "depth": 0.16487159594786327
+              },
+              {
+                "point": [
+                  6.666666666666668,
+                  5.2,
+                  -4.666666666666667
+                ],
+                "bedY": 4.629541775619008,
+                "depth": 0.5704582243809924
+              },
+              {
+                "point": [
+                  6.666666666666668,
+                  5.2,
+                  0.3333333333333333
+                ],
+                "bedY": 3.8854681518524568,
+                "depth": 1.3145318481475434
+              },
+              {
+                "point": [
+                  6.666666666666668,
+                  5.2,
+                  5.333333333333334
+                ],
+                "bedY": 3.665447347810968,
+                "depth": 1.5345526521890323
+              },
+              {
+                "point": [
+                  6.666666666666668,
+                  5.2,
+                  10.333333333333334
+                ],
+                "bedY": 3.5235049071888853,
+                "depth": 1.6764950928111149
+              },
+              {
+                "point": [
+                  6.666666666666668,
+                  5.2,
+                  15.333333333333332
+                ],
+                "bedY": 3.168982612488385,
+                "depth": 2.031017387511615
+              },
+              {
+                "point": [
+                  6.666666666666668,
+                  5.2,
+                  20.333333333333336
+                ],
+                "bedY": 3.4045378123004175,
+                "depth": 1.7954621876995827
+              },
+              {
+                "point": [
+                  7.6999098534999995,
+                  5.2,
+                  -22.788839107250002
+                ],
+                "bedY": 5.006986614257886,
+                "depth": 0.19301338574211435
+              },
+              {
+                "point": [
+                  7.052349529000001,
+                  5.2,
+                  -6.328130128
+                ],
+                "bedY": 5.1541809554571385,
+                "depth": 0.045819044542861675
+              },
+              {
+                "point": [
+                  7.333333333333334,
+                  5.2,
+                  -1.3333333333333333
+                ],
+                "bedY": 4.547782616632718,
+                "depth": 0.6522173833672822
+              },
+              {
+                "point": [
+                  7.333333333333334,
+                  5.2,
+                  3.666666666666666
+                ],
+                "bedY": 3.8738000186590815,
+                "depth": 1.3261999813409187
+              },
+              {
+                "point": [
+                  7.333333333333334,
+                  5.2,
+                  8.666666666666666
+                ],
+                "bedY": 3.6912410886798757,
+                "depth": 1.5087589113201245
+              },
+              {
+                "point": [
+                  7.333333333333334,
+                  5.2,
+                  13.666666666666668
+                ],
+                "bedY": 3.3623064482307066,
+                "depth": 1.8376935517692936
+              },
+              {
+                "point": [
+                  7.333333333333334,
+                  5.2,
+                  18.666666666666664
+                ],
+                "bedY": 3.5463065867295653,
+                "depth": 1.6536934132704348
+              },
+              {
+                "point": [
+                  7.333333333333334,
+                  5.2,
+                  23.666666666666668
+                ],
+                "bedY": 4.103536950191022,
+                "depth": 1.0964630498089782
+              },
+              {
+                "point": [
+                  8.405027819666666,
+                  5.2,
+                  0.23359013266666664
+                ],
+                "bedY": 5.058714992062411,
+                "depth": 0.14128500793758914
+              },
+              {
+                "point": [
+                  8.666666666666666,
+                  5.2,
+                  5.333333333333334
+                ],
+                "bedY": 4.42067410462418,
+                "depth": 0.7793258953758198
+              },
+              {
+                "point": [
+                  8.666666666666666,
+                  5.2,
+                  10.333333333333334
+                ],
+                "bedY": 4.011867895556642,
+                "depth": 1.1881321044433584
+              },
+              {
+                "point": [
+                  8.666666666666666,
+                  5.2,
+                  15.333333333333332
+                ],
+                "bedY": 3.9959259875109754,
+                "depth": 1.2040740124890248
+              },
+              {
+                "point": [
+                  8.666666666666666,
+                  5.2,
+                  20.333333333333336
+                ],
+                "bedY": 4.466358787886543,
+                "depth": 0.733641212113457
+              },
+              {
+                "point": [
+                  9.07154926,
+                  5.2,
+                  2.50930246
+                ],
+                "bedY": 5.140125643620447,
+                "depth": 0.059874356379553184
+              },
+              {
+                "point": [
+                  9.333333333333334,
+                  5.2,
+                  7.666666666666666
+                ],
+                "bedY": 4.593099413289261,
+                "depth": 0.6069005867107391
+              },
+              {
+                "point": [
+                  9.333333333333334,
+                  5.2,
+                  12.666666666666664
+                ],
+                "bedY": 4.332166943792738,
+                "depth": 0.867833056207262
+              },
+              {
+                "point": [
+                  9.333333333333334,
+                  5.2,
+                  17.666666666666668
+                ],
+                "bedY": 4.596722991955153,
+                "depth": 0.6032770080448469
+              },
+              {
+                "point": [
+                  9.07090749425,
+                  5.2,
+                  22.556012499
+                ],
+                "bedY": 5.1258320268227635,
+                "depth": 0.07416797317723667
+              },
+              {
+                "point": [
+                  10.283768553333335,
+                  5.2,
+                  10.147009617
+                ],
+                "bedY": 5.085602188346669,
+                "depth": 0.11439781165333152
+              },
+              {
+                "point": [
+                  10.269838876333333,
+                  5.2,
+                  15.128598798999999
+                ],
+                "bedY": 5.081548354728986,
+                "depth": 0.11845164527101382
+              }
+            ],
+            "shore": [
+              [
+                -10.07317431,
+                5.2,
+                -18.07317431
+              ],
+              [
+                -10.086738639,
+                5.2,
+                -18
+              ],
+              [
+                -10.192219991,
+                5.2,
+                -17.192219991
+              ],
+              [
+                -10.222735093,
+                5.2,
+                -17
+              ],
+              [
+                -10.297600399,
+                5.2,
+                -16.297600399
+              ],
+              [
+                -10.336157675,
+                5.2,
+                -16
+              ],
+              [
+                -10.385890812,
+                5.2,
+                -15.385890812
+              ],
+              [
+                -10.423825308,
+                5.2,
+                -15
+              ],
+              [
+                -10.453409526,
+                5.2,
+                -14.453409526
+              ],
+              [
+                -10.483120502,
+                5.2,
+                -14
+              ],
+              [
+                -10.496397588,
+                5.2,
+                -13.496397588
+              ],
+              [
+                -10.512187327,
+                5.2,
+                -13
+              ],
+              [
+                -10.511244065,
+                5.2,
+                -12.511244065
+              ],
+              [
+                -10.510084834,
+                5.2,
+                -12
+              ],
+              [
+                -10.494737639,
+                5.2,
+                -11.494737639
+              ],
+              [
+                -10.476867916,
+                5.2,
+                -11
+              ],
+              [
+                -10.444322637,
+                5.2,
+                -10.444322637
+              ],
+              [
+                -10.413581256,
+                5.2,
+                -10
+              ],
+              [
+                -10.358341863,
+                5.2,
+                -9.358341863
+              ],
+              [
+                -10.322170871,
+                5.2,
+                -9
+              ],
+              [
+                -10.236255885,
+                5.2,
+                -8.236255885
+              ],
+              [
+                -10.20533356,
+                5.2,
+                -8
+              ],
+              [
+                -10.078829662,
+                5.2,
+                -7.078829662
+              ],
+              [
+                -10.066329673,
+                5.2,
+                -7
+              ],
+              [
+                -10,
+                5.2,
+                -6.585871375
+              ],
+              [
+                -9.046908136,
+                5.2,
+                -23.046908136
+              ],
+              [
+                -9.059579982,
+                5.2,
+                -23
+              ],
+              [
+                -9.224050002,
+                5.2,
+                -22.224050002
+              ],
+              [
+                -9.282730703,
+                5.2,
+                -22
+              ],
+              [
+                -9.402552591,
+                5.2,
+                -21.402552591
+              ],
+              [
+                -9.502972098,
+                5.2,
+                -21
+              ],
+              [
+                -9.580980888,
+                5.2,
+                -20.580980888
+              ],
+              [
+                -9.716315535,
+                5.2,
+                -20
+              ],
+              [
+                -9.757338102,
+                5.2,
+                -19.757338102
+              ],
+              [
+                -9.918344523,
+                5.2,
+                -19
+              ],
+              [
+                -9.92896338,
+                5.2,
+                -18.92896338
+              ],
+              [
+                -10,
+                5.2,
+                -18.552563646
+              ],
+              [
+                -9.890514217,
+                5.2,
+                -6
+              ],
+              [
+                -9.866596509,
+                5.2,
+                -5.866596509
+              ],
+              [
+                -9.685531575,
+                5.2,
+                -5
+              ],
+              [
+                -9.608657108,
+                5.2,
+                -4.608657108
+              ],
+              [
+                -9.470200682,
+                5.2,
+                -4
+              ],
+              [
+                -9.328838629,
+                5.2,
+                -3.328838629
+              ],
+              [
+                -9.249153698,
+                5.2,
+                -3
+              ],
+              [
+                -9.035254707,
+                5.2,
+                -2.035254707
+              ],
+              [
+                -9.026322074,
+                5.2,
+                -2
+              ],
+              [
+                -9,
+                5.2,
+                -1.885327287
+              ],
+              [
+                -8.84026339,
+                5.2,
+                -23.84026339
+              ],
+              [
+                -9,
+                5.2,
+                -23.259967013
+              ],
+              [
+                -8.765946792,
+                5.2,
+                -1
+              ],
+              [
+                -8.696524272,
+                5.2,
+                -0.696524272
+              ],
+              [
+                -8.510670813,
+                5.2,
+                0
+              ],
+              [
+                -8.364287829,
+                5.2,
+                0.635712171
+              ],
+              [
+                -8.267497129,
+                5.2,
+                1
+              ],
+              [
+                -8.051098942,
+                5.2,
+                1.948901058
+              ],
+              [
+                -8.037770016,
+                5.2,
+                2
+              ],
+              [
+                -8,
+                5.2,
+                2.170199062
+              ],
+              [
+                -8.007905483,
+                5.2,
+                22.992094517
+              ],
+              [
+                -8.009966301,
+                5.2,
+                23
+              ],
+              [
+                -8.18809078,
+                5.2,
+                23.81190922
+              ],
+              [
+                -8.239060215,
+                5.2,
+                24
+              ],
+              [
+                -7.78881719,
+                5.2,
+                3
+              ],
+              [
+                -7.733331937,
+                5.2,
+                3.266668063
+              ],
+              [
+                -7.555839281,
+                5.2,
+                4
+              ],
+              [
+                -7.447934537,
+                5.2,
+                4.552065463
+              ],
+              [
+                -7.34674581,
+                5.2,
+                5
+              ],
+              [
+                -7.204203172,
+                5.2,
+                5.795796828
+              ],
+              [
+                -7.162072946,
+                5.2,
+                6
+              ],
+              [
+                -7.002937532,
+                5.2,
+                6.997062468
+              ],
+              [
+                -7.002398257,
+                5.2,
+                7
+              ],
+              [
+                -7,
+                5.2,
+                7.017454943
+              ],
+              [
+                -7.117692902,
+                5.2,
+                18.882307098
+              ],
+              [
+                -7.139528383,
+                5.2,
+                19
+              ],
+              [
+                -7.26529123,
+                5.2,
+                19.73470877
+              ],
+              [
+                -7.321087634,
+                5.2,
+                20
+              ],
+              [
+                -7.428002008,
+                5.2,
+                20.571997992
+              ],
+              [
+                -7.52735796,
+                5.2,
+                21
+              ],
+              [
+                -7.605957549,
+                5.2,
+                21.394042451
+              ],
+              [
+                -7.757832256,
+                5.2,
+                22
+              ],
+              [
+                -7.799639414,
+                5.2,
+                22.200360586
+              ],
+              [
+                -8,
+                5.2,
+                22.954995843
+              ],
+              [
+                -6.842787414,
+                5.2,
+                8
+              ],
+              [
+                -6.823103665,
+                5.2,
+                8.176896335
+              ],
+              [
+                -6.714726698,
+                5.2,
+                9
+              ],
+              [
+                -6.688079854,
+                5.2,
+                9.311920146
+              ],
+              [
+                -6.618387483,
+                5.2,
+                10
+              ],
+              [
+                -6.594781564,
+                5.2,
+                10.405218436
+              ],
+              [
+                -6.553570836,
+                5.2,
+                11
+              ],
+              [
+                -6.539650652,
+                5.2,
+                11.460349348
+              ],
+              [
+                -6.52015662,
+                5.2,
+                12
+              ],
+              [
+                -6.519260195,
+                5.2,
+                12.480739805
+              ],
+              [
+                -6.518087171,
+                5.2,
+                13
+              ],
+              [
+                -6.530473109,
+                5.2,
+                13.469526891
+              ],
+              [
+                -6.547357851,
+                5.2,
+                14
+              ],
+              [
+                -6.570552701,
+                5.2,
+                14.429447299
+              ],
+              [
+                -6.608015391,
+                5.2,
+                15
+              ],
+              [
+                -6.637237936,
+                5.2,
+                15.362762064
+              ],
+              [
+                -6.70016673,
+                5.2,
+                16
+              ],
+              [
+                -6.728794913,
+                5.2,
+                16.271205087
+              ],
+              [
+                -6.823999946,
+                5.2,
+                17
+              ],
+              [
+                -6.844053744,
+                5.2,
+                17.155946256
+              ],
+              [
+                -6.979817024,
+                5.2,
+                18
+              ],
+              [
+                -6.982438427,
+                5.2,
+                18.017561573
+              ],
+              [
+                -7,
+                5.2,
+                18.110501038
+              ],
+              [
+                -2,
+                5.2,
+                -7.156877993
+              ],
+              [
+                -2.086699011,
+                5.2,
+                -7.086699011
+              ],
+              [
+                -2.146801924,
+                5.2,
+                -7
+              ],
+              [
+                -2.498042655,
+                5.2,
+                -6.498042655
+              ],
+              [
+                -2.716584097,
+                5.2,
+                -6
+              ],
+              [
+                -2.767771082,
+                5.2,
+                -5.767771082
+              ],
+              [
+                -2.886363973,
+                5.2,
+                -5
+              ],
+              [
+                -2.85642913,
+                5.2,
+                -4.85642913
+              ],
+              [
+                -2.716585283,
+                5.2,
+                -4
+              ],
+              [
+                -2.304836183,
+                5.2,
+                -3.304836183
+              ],
+              [
+                -2.146817954,
+                5.2,
+                -3
+              ],
+              [
+                -1,
+                5.2,
+                -7.534315678
+              ],
+              [
+                -1.411897955,
+                5.2,
+                -7.411897955
+              ],
+              [
+                -1.766264524,
+                5.2,
+                -2.766264524
+              ],
+              [
+                -2,
+                5.2,
+                -2.843090595
+              ],
+              [
+                0,
+                5.2,
+                -7.156878028
+              ],
+              [
+                -0.233609781,
+                5.2,
+                -7.233609781
+              ],
+              [
+                -0.58787211,
+                5.2,
+                -2.58787211
+              ],
+              [
+                -1,
+                5.2,
+                -2.465515148
+              ],
+              [
+                0.146801969,
+                5.2,
+                -7
+              ],
+              [
+                0.304810251,
+                5.2,
+                -6.695189749
+              ],
+              [
+                0.716584646,
+                5.2,
+                -6
+              ],
+              [
+                0.856434013,
+                5.2,
+                -5.143565987
+              ],
+              [
+                0.88636855,
+                5.2,
+                -5
+              ],
+              [
+                0.767794107,
+                5.2,
+                -4.232205893
+              ],
+              [
+                0.716615226,
+                5.2,
+                -4
+              ],
+              [
+                0.498122199,
+                5.2,
+                -3.501877801
+              ],
+              [
+                0.146951981,
+                5.2,
+                -3
+              ],
+              [
+                0.086834912,
+                5.2,
+                -2.913165088
+              ],
+              [
+                0,
+                5.2,
+                -2.842889756
+              ],
+              [
+                2,
+                5.2,
+                7.063019638
+              ],
+              [
+                1.809422235,
+                5.2,
+                7.809422235
+              ],
+              [
+                1.778544757,
+                5.2,
+                8
+              ],
+              [
+                3,
+                5.2,
+                6.45117935
+              ],
+              [
+                2.621934114,
+                5.2,
+                6.621934114
+              ],
+              [
+                2.037803107,
+                5.2,
+                7
+              ],
+              [
+                2.022495964,
+                5.2,
+                7.022495964
+              ],
+              [
+                2,
+                5.2,
+                8.934804538
+              ],
+              [
+                2.039171796,
+                5.2,
+                9
+              ],
+              [
+                3.961062856,
+                5.2,
+                7
+              ],
+              [
+                4,
+                5.2,
+                7.064890908
+              ],
+              [
+                3.97665441,
+                5.2,
+                8.97665441
+              ],
+              [
+                3.960765172,
+                5.2,
+                9
+              ],
+              [
+                3.377110508,
+                5.2,
+                9.377110508
+              ],
+              [
+                3,
+                5.2,
+                9.547821095
+              ],
+              [
+                4.223494768,
+                5.2,
+                8
+              ],
+              [
+                4.190949022,
+                5.2,
+                8.190949022
+              ],
+              [
+                4,
+                5.2,
+                8.934670511
+              ],
+              [
+                7,
+                5.2,
+                -18.110504033
+              ],
+              [
+                6.982437907,
+                5.2,
+                -18.017562093
+              ],
+              [
+                6.979816385,
+                5.2,
+                -18
+              ],
+              [
+                6.844051645,
+                5.2,
+                -17.155948355
+              ],
+              [
+                6.823996215,
+                5.2,
+                -17
+              ],
+              [
+                6.728787054,
+                5.2,
+                -16.271212946
+              ],
+              [
+                6.700150191,
+                5.2,
+                -16
+              ],
+              [
+                6.637210796,
+                5.2,
+                -15.362789204
+              ],
+              [
+                6.607955025,
+                5.2,
+                -15
+              ],
+              [
+                6.570467021,
+                5.2,
+                -14.429532979
+              ],
+              [
+                6.547170818,
+                5.2,
+                -14
+              ],
+              [
+                6.530228305,
+                5.2,
+                -13.469771695
+              ],
+              [
+                6.517588712,
+                5.2,
+                -13
+              ],
+              [
+                6.518633787,
+                5.2,
+                -12.481366213
+              ],
+              [
+                6.519008156,
+                5.2,
+                -12
+              ],
+              [
+                6.538231723,
+                5.2,
+                -11.461768277
+              ],
+              [
+                6.551284269,
+                5.2,
+                -11
+              ],
+              [
+                6.591976666,
+                5.2,
+                -10.408023334
+              ],
+              [
+                6.614477843,
+                5.2,
+                -10
+              ],
+              [
+                6.683343141,
+                5.2,
+                -9.316656859
+              ],
+              [
+                6.709073292,
+                5.2,
+                -9
+              ],
+              [
+                6.816540087,
+                5.2,
+                -8.183459913
+              ],
+              [
+                6.836115571,
+                5.2,
+                -8
+              ],
+              [
+                6.99660766,
+                5.2,
+                -7.00339234
+              ],
+              [
+                6.997054397,
+                5.2,
+                -7
+              ],
+              [
+                8,
+                5.2,
+                -22.954995843
+              ],
+              [
+                7.799639414,
+                5.2,
+                -22.200360586
+              ],
+              [
+                7.757832255,
+                5.2,
+                -22
+              ],
+              [
+                7.605957548,
+                5.2,
+                -21.394042452
+              ],
+              [
+                7.527357957,
+                5.2,
+                -21
+              ],
+              [
+                7.428002004,
+                5.2,
+                -20.571997996
+              ],
+              [
+                7.321087617,
+                5.2,
+                -20
+              ],
+              [
+                7.26529121,
+                5.2,
+                -19.73470879
+              ],
+              [
+                7.139528281,
+                5.2,
+                -19
+              ],
+              [
+                7.117692807,
+                5.2,
+                -18.882307193
+              ],
+              [
+                7,
+                5.2,
+                -6.984390384
+              ],
+              [
+                7.157048587,
+                5.2,
+                -6
+              ],
+              [
+                7.198120232,
+                5.2,
+                -5.801879768
+              ],
+              [
+                7.342413107,
+                5.2,
+                -5
+              ],
+              [
+                7.443138881,
+                5.2,
+                -4.556861119
+              ],
+              [
+                7.553094312,
+                5.2,
+                -4
+              ],
+              [
+                7.731386644,
+                5.2,
+                -3.268613356
+              ],
+              [
+                7.788205496,
+                5.2,
+                -3
+              ],
+              [
+                8.239060215,
+                5.2,
+                -24
+              ],
+              [
+                8.18809078,
+                5.2,
+                -23.81190922
+              ],
+              [
+                8.009966301,
+                5.2,
+                -23
+              ],
+              [
+                8.007905483,
+                5.2,
+                -22.992094517
+              ],
+              [
+                8,
+                5.2,
+                -2.174045988
+              ],
+              [
+                8.038799611,
+                5.2,
+                -2
+              ],
+              [
+                8.052506289,
+                5.2,
+                -1.947493711
+              ],
+              [
+                8.269960089,
+                5.2,
+                -1
+              ],
+              [
+                8.3676065,
+                5.2,
+                -0.6323935
+              ],
+              [
+                8.514313061,
+                5.2,
+                0
+              ],
+              [
+                8.700770398,
+                5.2,
+                0.700770398
+              ],
+              [
+                8.769550171,
+                5.2,
+                1
+              ],
+              [
+                9,
+                5.2,
+                23.259967009
+              ],
+              [
+                8.840263389,
+                5.2,
+                23.840263389
+              ],
+              [
+                9,
+                5.2,
+                1.878615538
+              ],
+              [
+                9.027806882,
+                5.2,
+                2
+              ],
+              [
+                9.03720984,
+                5.2,
+                2.03720984
+              ],
+              [
+                9.2489872,
+                5.2,
+                3
+              ],
+              [
+                9.328250831,
+                5.2,
+                3.328250831
+              ],
+              [
+                9.467212677,
+                5.2,
+                4
+              ],
+              [
+                9.604289612,
+                5.2,
+                4.604289612
+              ],
+              [
+                9.679704951,
+                5.2,
+                5
+              ],
+              [
+                9.859484779,
+                5.2,
+                5.859484779
+              ],
+              [
+                9.883731382,
+                5.2,
+                6
+              ],
+              [
+                10,
+                5.2,
+                18.552552859
+              ],
+              [
+                9.928961707,
+                5.2,
+                18.928961707
+              ],
+              [
+                9.91834359,
+                5.2,
+                19
+              ],
+              [
+                9.757337319,
+                5.2,
+                19.757337319
+              ],
+              [
+                9.716315289,
+                5.2,
+                20
+              ],
+              [
+                9.580980684,
+                5.2,
+                20.580980684
+              ],
+              [
+                9.50297205,
+                5.2,
+                21
+              ],
+              [
+                9.402552552,
+                5.2,
+                21.402552552
+              ],
+              [
+                9.282730696,
+                5.2,
+                22
+              ],
+              [
+                9.224049996,
+                5.2,
+                22.224049996
+              ],
+              [
+                9.059579981,
+                5.2,
+                23
+              ],
+              [
+                9.046908135,
+                5.2,
+                23.046908135
+              ],
+              [
+                10,
+                5.2,
+                6.6163552
+              ],
+              [
+                10.061165073,
+                5.2,
+                7
+              ],
+              [
+                10.07274566,
+                5.2,
+                7.07274566
+              ],
+              [
+                10.200077777,
+                5.2,
+                8
+              ],
+              [
+                10.23040769,
+                5.2,
+                8.23040769
+              ],
+              [
+                10.31766769,
+                5.2,
+                9
+              ],
+              [
+                10.353612896,
+                5.2,
+                9.353612896
+              ],
+              [
+                10.410276809,
+                5.2,
+                10
+              ],
+              [
+                10.441028851,
+                5.2,
+                10.441028851
+              ],
+              [
+                10.47475837,
+                5.2,
+                11
+              ],
+              [
+                10.492718693,
+                5.2,
+                11.492718693
+              ],
+              [
+                10.508896983,
+                5.2,
+                12
+              ],
+              [
+                10.510137131,
+                5.2,
+                12.510137131
+              ],
+              [
+                10.511592119,
+                5.2,
+                13
+              ],
+              [
+                10.495851282,
+                5.2,
+                13.495851282
+              ],
+              [
+                10.482854752,
+                5.2,
+                14
+              ],
+              [
+                10.453168045,
+                5.2,
+                14.453168045
+              ],
+              [
+                10.423720232,
+                5.2,
+                15
+              ],
+              [
+                10.385796397,
+                5.2,
+                15.385796397
+              ],
+              [
+                10.33612127,
+                5.2,
+                16
+              ],
+              [
+                10.2975682,
+                5.2,
+                16.2975682
+              ],
+              [
+                10.222724163,
+                5.2,
+                17
+              ],
+              [
+                10.192210522,
+                5.2,
+                17.192210522
+              ],
+              [
+                10.086735822,
+                5.2,
+                18
+              ],
+              [
+                10.073171927,
+                5.2,
+                18.073171927
+              ]
+            ],
+            "waterPhysical": false
+          }
+        ],
+        "hydrology": {
+          "kind": "cut water topology around exposed gravel islands",
+          "waterY": 5.2,
+          "exposedSites": [
+            [
+              -1,
+              -5
+            ],
+            [
+              3,
+              8
+            ]
+          ],
+          "wadingControllerBound": false
+        },
+        "forest": [
+          {
+            "catalogId": "ENV-065",
+            "params": {},
+            "instance": "env-036-4",
+            "soilInstance": "env-036-3",
+            "position": [
+              -15,
+              7.8,
+              -8
+            ],
+            "rootSamples": [
+              [
+                -14.9,
+                7.8,
+                -7.9
+              ],
+              [
+                -14.5,
+                7.8,
+                -7.9
+              ],
+              [
+                -14.9,
+                7.8,
+                -7.7
+              ],
+              [
+                -15.1,
+                7.8,
+                -7.7
+              ],
+              [
+                -15.5,
+                7.8,
+                -8.3
+              ],
+              [
+                -15.3,
+                7.8,
+                -8.1
+              ],
+              [
+                -14.5,
+                7.8,
+                -8.5
+              ],
+              [
+                -14.5,
+                7.8,
+                -8.3
+              ],
+              [
+                -14.7,
+                7.8,
+                -8.1
+              ]
+            ],
+            "rootCount": 17,
+            "rootDomain": [
+              -0.8,
+              -0.8,
+              1,
+              0.8
+            ],
+            "ground": 7.683398985
+          },
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-036-6",
+            "soilInstance": "env-036-5",
+            "position": [
+              15,
+              7.8,
+              12
+            ],
+            "rootSamples": [
+              [
+                15.1,
+                7.8,
+                12.1
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 7.648046543
+          }
+        ]
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-shoal-islands-0-0-0-1-near-7ca82318b2",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 9600
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 9600
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-flooded-shoal-islands-be38255f33",
+      "name": "同源床面裁切的真实水域",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-192",
+          "material": 192,
+          "collision": false,
+          "triangles": 3792
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-habitat-exposed-gravel-365d05b916",
+      "name": "砾洲上真实散砾与水蚀石",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-191",
+          "material": 191,
+          "collision": true,
+          "triangles": 160
+        }
+      ]
+    },
+    {
+      "id": "source-env-065",
+      "name": "细茎芦苇组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.2,
+            0,
+            3.2
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四株相连根茎，须实接岸床",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              0,
+              -3
+            ],
+            "max": [
+              4,
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四根0.2×1.6×0.2米真实细茎",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              0,
+              -3
+            ],
+            "max": [
+              4,
+              8,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "细茎端部真实量化穗序",
+          "parent": "root",
+          "region": {
+            "min": [
+              -4,
+              8,
+              -3
+            ],
+            "max": [
+              5,
+              11,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "从茎节实际发出的窄长叶",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              2,
+              -8
+            ],
+            "max": [
+              9,
+              9,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-shoal-bank-0-3229be5aae",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            3
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -7
+            ],
+            "max": [
+              9,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "多根分叉木质细枝与连续接地根颈",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              0,
+              -5
+            ],
+            "max": [
+              8,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "彼此交错且保留根际透空的真实灌木叶簇",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              2,
+              -7
+            ],
+            "max": [
+              9,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端量化花簇与独立花药，均非灯芯和非自发光",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              6,
+              -6
+            ],
+            "max": [
+              9,
+              12,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-shoal-bank-1-8b8cdf2689",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-036-0",
+      "assetId": "architecture-civic-terrain-shoal-islands-0-0-0-1-near-7ca82318b2",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-036-1",
+      "assetId": "architecture-civic-flooded-shoal-islands-be38255f33",
+      "name": "同源床面裁切的真实水域",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-036-2",
+      "assetId": "architecture-civic-habitat-exposed-gravel-365d05b916",
+      "name": "砾洲上真实散砾与水蚀石",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-036-3",
+      "assetId": "architecture-civic-root-pocket-shoal-bank-0-3229be5aae",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-036-4",
+      "assetId": "source-env-065",
+      "name": "细茎芦苇组件",
+      "position": [
+        -15,
+        7.8,
+        -8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-036-5",
+      "assetId": "architecture-civic-root-pocket-shoal-bank-1-8b8cdf2689",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-036-6",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        15,
+        7.8,
+        12
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

@@ -1,0 +1,6765 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-070": {
+      "id": "env-070",
+      "name": "竹林林下生态组合",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-070-0",
+          "assetId": "architecture-civic-terrain-bamboo-understory-0-0-0-2-near-1ce6a01db9",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-1",
+          "assetId": "architecture-civic-ground-ramp-bamboo-path-0b2da270f6",
+          "name": "真实实体路基与连续坡面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-2",
+          "assetId": "architecture-civic-root-pocket-bamboo-0-bc1ec4e9e3",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-3",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -21,
+            6.4,
+            -22
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-4",
+          "assetId": "architecture-civic-root-pocket-bamboo-1-c8c4845ebb",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-5",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -21,
+            5.8,
+            -8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-6",
+          "assetId": "architecture-civic-root-pocket-bamboo-2-a865596c08",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-7",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -21,
+            5.8,
+            6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-8",
+          "assetId": "architecture-civic-root-pocket-bamboo-3-09a25041d0",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-9",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -21,
+            6.4,
+            20
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-10",
+          "assetId": "architecture-civic-root-pocket-bamboo-4-be36106e95",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-11",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -11,
+            5.6,
+            -22
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-12",
+          "assetId": "architecture-civic-root-pocket-bamboo-5-95d2a9f45f",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-13",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -11,
+            5,
+            -8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-14",
+          "assetId": "architecture-civic-root-pocket-bamboo-6-a8699730df",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-15",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -11,
+            5,
+            6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-16",
+          "assetId": "architecture-civic-root-pocket-bamboo-7-be94554915",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-17",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            -11,
+            5.6,
+            20
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-18",
+          "assetId": "architecture-civic-root-pocket-bamboo-8-6be11e3462",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-19",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            10,
+            5.4,
+            -22
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-20",
+          "assetId": "architecture-civic-root-pocket-bamboo-9-97d799a8b0",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-21",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            10,
+            5,
+            -8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-22",
+          "assetId": "architecture-civic-root-pocket-bamboo-10-ec40a7209c",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-23",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            10,
+            5,
+            6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-24",
+          "assetId": "architecture-civic-root-pocket-bamboo-11-76cf0191af",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-25",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            10,
+            5.4,
+            20
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-26",
+          "assetId": "architecture-civic-root-pocket-bamboo-12-e8bd675698",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-27",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            20,
+            6.4,
+            -22
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-28",
+          "assetId": "architecture-civic-root-pocket-bamboo-13-6e5e84e170",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-29",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            20,
+            5.8,
+            -8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-30",
+          "assetId": "architecture-civic-root-pocket-bamboo-14-afc8e4cdd1",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-31",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            20,
+            5.8,
+            6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-32",
+          "assetId": "architecture-civic-root-pocket-bamboo-15-ed00098694",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-33",
+          "assetId": "source-env-056",
+          "name": "竹竿竹节与叶簇母版",
+          "position": [
+            20,
+            6.4,
+            20
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-34",
+          "assetId": "architecture-civic-root-pocket-bamboo-ferns-0-e55a816adc",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-35",
+          "assetId": "source-env-064-groundcover-fern",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            -17,
+            5.8,
+            -15
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-36",
+          "assetId": "architecture-civic-root-pocket-bamboo-ferns-1-6a96ad2cd7",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-37",
+          "assetId": "source-env-062-height-0p6",
+          "name": "近景0.2m草叶簇组件",
+          "position": [
+            -15,
+            5.6,
+            14
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-38",
+          "assetId": "architecture-civic-root-pocket-bamboo-ferns-2-ee2c45aa0f",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-39",
+          "assetId": "source-env-064-groundcover-fern",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            15,
+            5.6,
+            -15
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-40",
+          "assetId": "architecture-civic-root-pocket-bamboo-ferns-3-a02840f892",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-41",
+          "assetId": "source-env-062-height-0p6",
+          "name": "近景0.2m草叶簇组件",
+          "position": [
+            15,
+            5.6,
+            14
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-42",
+          "assetId": "architecture-civic-root-pocket-bamboo-ferns-4-90a03675c5",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-43",
+          "assetId": "source-env-064-groundcover-fern",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            -25,
+            5.8,
+            1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-44",
+          "assetId": "architecture-civic-root-pocket-bamboo-ferns-5-f2f2eee26a",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-070-45",
+          "assetId": "source-env-062-height-0p6",
+          "name": "近景0.2m草叶簇组件",
+          "position": [
+            25,
+            5.8,
+            1
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-070",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M050",
+          "slot": 6,
+          "imageSHA256": "fc3606d5fbfb42b54f178c42f615af1bccade28ae0eccdc7028f9467b4d5e809"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-056",
+          "ENV-062",
+          "ENV-064",
+          "ENV-087",
+          "ENV-088"
+        ],
+        "instanceGroups": {
+          "env-070-0": "terrain",
+          "env-070-1": "terrain-road",
+          "env-070-2": "root-soil",
+          "env-070-3": "vegetation",
+          "env-070-4": "root-soil",
+          "env-070-5": "vegetation",
+          "env-070-6": "root-soil",
+          "env-070-7": "vegetation",
+          "env-070-8": "root-soil",
+          "env-070-9": "vegetation",
+          "env-070-10": "root-soil",
+          "env-070-11": "vegetation",
+          "env-070-12": "root-soil",
+          "env-070-13": "vegetation",
+          "env-070-14": "root-soil",
+          "env-070-15": "vegetation",
+          "env-070-16": "root-soil",
+          "env-070-17": "vegetation",
+          "env-070-18": "root-soil",
+          "env-070-19": "vegetation",
+          "env-070-20": "root-soil",
+          "env-070-21": "vegetation",
+          "env-070-22": "root-soil",
+          "env-070-23": "vegetation",
+          "env-070-24": "root-soil",
+          "env-070-25": "vegetation",
+          "env-070-26": "root-soil",
+          "env-070-27": "vegetation",
+          "env-070-28": "root-soil",
+          "env-070-29": "vegetation",
+          "env-070-30": "root-soil",
+          "env-070-31": "vegetation",
+          "env-070-32": "root-soil",
+          "env-070-33": "vegetation",
+          "env-070-34": "root-soil",
+          "env-070-35": "vegetation",
+          "env-070-36": "root-soil",
+          "env-070-37": "vegetation",
+          "env-070-38": "root-soil",
+          "env-070-39": "vegetation",
+          "env-070-40": "root-soil",
+          "env-070-41": "vegetation",
+          "env-070-42": "root-soil",
+          "env-070-43": "vegetation",
+          "env-070-44": "root-soil",
+          "env-070-45": "vegetation"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "bamboo-path actual public corridor",
+            "points": [
+              [
+                0,
+                4.2,
+                -29.5
+              ],
+              [
+                0,
+                4.2,
+                29.5
+              ]
+            ],
+            "width": 3
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "bamboo-0 root pocket terrain 0",
+            "point": [
+              -23.2,
+              6.2109761610000005,
+              -22.4
+            ],
+            "exclude": "env-070-2"
+          },
+          {
+            "name": "bamboo-0 root pocket terrain 1",
+            "point": [
+              -18.4,
+              5.826976161,
+              -22.4
+            ],
+            "exclude": "env-070-2"
+          },
+          {
+            "name": "bamboo-0 root pocket terrain 2",
+            "point": [
+              -18.4,
+              5.777383797000001,
+              -20.2
+            ],
+            "exclude": "env-070-2"
+          },
+          {
+            "name": "bamboo-0 root pocket terrain 3",
+            "point": [
+              -23.2,
+              6.161383797,
+              -20.2
+            ],
+            "exclude": "env-070-2"
+          },
+          {
+            "name": "bamboo-0 root pocket terrain 4",
+            "point": [
+              -21,
+              6.029720951000001,
+              -22
+            ],
+            "exclude": "env-070-2"
+          },
+          {
+            "name": "bamboo-0 canonical root on actual soil",
+            "point": [
+              -20.9,
+              6.380000000000001,
+              -21.9
+            ],
+            "exclude": "env-070-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-0 canonical root on actual soil",
+            "point": [
+              -20.1,
+              6.380000000000001,
+              -21.5
+            ],
+            "exclude": "env-070-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-0 canonical root on actual soil",
+            "point": [
+              -19.1,
+              6.380000000000001,
+              -21.1
+            ],
+            "exclude": "env-070-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-0 canonical root on actual soil",
+            "point": [
+              -18.9,
+              6.380000000000001,
+              -20.7
+            ],
+            "exclude": "env-070-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-0 canonical root on actual soil",
+            "point": [
+              -21.3,
+              6.380000000000001,
+              -21.5
+            ],
+            "exclude": "env-070-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-0 canonical root on actual soil",
+            "point": [
+              -22.7,
+              6.380000000000001,
+              -20.9
+            ],
+            "exclude": "env-070-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-0 canonical root on actual soil",
+            "point": [
+              -22.7,
+              6.380000000000001,
+              -20.5
+            ],
+            "exclude": "env-070-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-1 root pocket terrain 0",
+            "point": [
+              -23.2,
+              5.6378774730000005,
+              -8.4
+            ],
+            "exclude": "env-070-4"
+          },
+          {
+            "name": "bamboo-1 root pocket terrain 1",
+            "point": [
+              -18.4,
+              5.253877473,
+              -8.4
+            ],
+            "exclude": "env-070-4"
+          },
+          {
+            "name": "bamboo-1 root pocket terrain 2",
+            "point": [
+              -18.4,
+              5.166979915000001,
+              -6.2
+            ],
+            "exclude": "env-070-4"
+          },
+          {
+            "name": "bamboo-1 root pocket terrain 3",
+            "point": [
+              -23.2,
+              5.550979915,
+              -6.2
+            ],
+            "exclude": "env-070-4"
+          },
+          {
+            "name": "bamboo-1 root pocket terrain 4",
+            "point": [
+              -21,
+              5.443879078,
+              -8
+            ],
+            "exclude": "env-070-4"
+          },
+          {
+            "name": "bamboo-1 canonical root on actual soil",
+            "point": [
+              -20.9,
+              5.78,
+              -7.9
+            ],
+            "exclude": "env-070-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-1 canonical root on actual soil",
+            "point": [
+              -20.1,
+              5.78,
+              -7.5
+            ],
+            "exclude": "env-070-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-1 canonical root on actual soil",
+            "point": [
+              -19.1,
+              5.78,
+              -7.1
+            ],
+            "exclude": "env-070-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-1 canonical root on actual soil",
+            "point": [
+              -18.9,
+              5.78,
+              -6.7
+            ],
+            "exclude": "env-070-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-1 canonical root on actual soil",
+            "point": [
+              -21.3,
+              5.78,
+              -7.5
+            ],
+            "exclude": "env-070-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-1 canonical root on actual soil",
+            "point": [
+              -22.7,
+              5.78,
+              -6.9
+            ],
+            "exclude": "env-070-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-1 canonical root on actual soil",
+            "point": [
+              -22.7,
+              5.78,
+              -6.5
+            ],
+            "exclude": "env-070-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-2 root pocket terrain 0",
+            "point": [
+              -23.2,
+              5.531652957,
+              5.6
+            ],
+            "exclude": "env-070-6"
+          },
+          {
+            "name": "bamboo-2 root pocket terrain 1",
+            "point": [
+              -18.4,
+              5.147652957,
+              5.6
+            ],
+            "exclude": "env-070-6"
+          },
+          {
+            "name": "bamboo-2 root pocket terrain 2",
+            "point": [
+              -18.4,
+              5.228223615,
+              7.8
+            ],
+            "exclude": "env-070-6"
+          },
+          {
+            "name": "bamboo-2 root pocket terrain 3",
+            "point": [
+              -23.2,
+              5.612223615,
+              7.8
+            ],
+            "exclude": "env-070-6"
+          },
+          {
+            "name": "bamboo-2 root pocket terrain 4",
+            "point": [
+              -21,
+              5.367324452,
+              6
+            ],
+            "exclude": "env-070-6"
+          },
+          {
+            "name": "bamboo-2 canonical root on actual soil",
+            "point": [
+              -20.9,
+              5.78,
+              6.1
+            ],
+            "exclude": "env-070-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-2 canonical root on actual soil",
+            "point": [
+              -20.1,
+              5.78,
+              6.5
+            ],
+            "exclude": "env-070-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-2 canonical root on actual soil",
+            "point": [
+              -19.1,
+              5.78,
+              6.9
+            ],
+            "exclude": "env-070-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-2 canonical root on actual soil",
+            "point": [
+              -18.9,
+              5.78,
+              7.3
+            ],
+            "exclude": "env-070-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-2 canonical root on actual soil",
+            "point": [
+              -21.3,
+              5.78,
+              6.5
+            ],
+            "exclude": "env-070-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-2 canonical root on actual soil",
+            "point": [
+              -22.7,
+              5.78,
+              7.1
+            ],
+            "exclude": "env-070-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-2 canonical root on actual soil",
+            "point": [
+              -22.7,
+              5.78,
+              7.5
+            ],
+            "exclude": "env-070-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-3 root pocket terrain 0",
+            "point": [
+              -23.2,
+              6.142619847000001,
+              19.6
+            ],
+            "exclude": "env-070-8"
+          },
+          {
+            "name": "bamboo-3 root pocket terrain 1",
+            "point": [
+              -18.4,
+              5.758619847,
+              19.6
+            ],
+            "exclude": "env-070-8"
+          },
+          {
+            "name": "bamboo-3 root pocket terrain 2",
+            "point": [
+              -18.4,
+              5.816794601000001,
+              21.8
+            ],
+            "exclude": "env-070-8"
+          },
+          {
+            "name": "bamboo-3 root pocket terrain 3",
+            "point": [
+              -23.2,
+              6.200794601,
+              21.8
+            ],
+            "exclude": "env-070-8"
+          },
+          {
+            "name": "bamboo-3 root pocket terrain 4",
+            "point": [
+              -21,
+              5.980457446000001,
+              20
+            ],
+            "exclude": "env-070-8"
+          },
+          {
+            "name": "bamboo-3 canonical root on actual soil",
+            "point": [
+              -20.9,
+              6.380000000000001,
+              20.1
+            ],
+            "exclude": "env-070-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-3 canonical root on actual soil",
+            "point": [
+              -20.1,
+              6.380000000000001,
+              20.5
+            ],
+            "exclude": "env-070-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-3 canonical root on actual soil",
+            "point": [
+              -19.1,
+              6.380000000000001,
+              20.9
+            ],
+            "exclude": "env-070-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-3 canonical root on actual soil",
+            "point": [
+              -18.9,
+              6.380000000000001,
+              21.3
+            ],
+            "exclude": "env-070-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-3 canonical root on actual soil",
+            "point": [
+              -21.3,
+              6.380000000000001,
+              20.5
+            ],
+            "exclude": "env-070-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-3 canonical root on actual soil",
+            "point": [
+              -22.7,
+              6.380000000000001,
+              21.1
+            ],
+            "exclude": "env-070-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-3 canonical root on actual soil",
+            "point": [
+              -22.7,
+              6.380000000000001,
+              21.5
+            ],
+            "exclude": "env-070-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-4 root pocket terrain 0",
+            "point": [
+              -13.2,
+              5.3724901130000005,
+              -22.4
+            ],
+            "exclude": "env-070-10"
+          },
+          {
+            "name": "bamboo-4 root pocket terrain 1",
+            "point": [
+              -8.399999999999999,
+              4.582415910000001,
+              -22.4
+            ],
+            "exclude": "env-070-10"
+          },
+          {
+            "name": "bamboo-4 root pocket terrain 2",
+            "point": [
+              -8.399999999999999,
+              4.561273384000001,
+              -20.2
+            ],
+            "exclude": "env-070-10"
+          },
+          {
+            "name": "bamboo-4 root pocket terrain 3",
+            "point": [
+              -13.2,
+              5.325360924000001,
+              -20.2
+            ],
+            "exclude": "env-070-10"
+          },
+          {
+            "name": "bamboo-4 root pocket terrain 4",
+            "point": [
+              -11,
+              5.037290714,
+              -22
+            ],
+            "exclude": "env-070-10"
+          },
+          {
+            "name": "bamboo-4 canonical root on actual soil",
+            "point": [
+              -10.9,
+              5.58,
+              -21.9
+            ],
+            "exclude": "env-070-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-4 canonical root on actual soil",
+            "point": [
+              -10.1,
+              5.58,
+              -21.5
+            ],
+            "exclude": "env-070-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-4 canonical root on actual soil",
+            "point": [
+              -9.1,
+              5.58,
+              -21.1
+            ],
+            "exclude": "env-070-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-4 canonical root on actual soil",
+            "point": [
+              -8.9,
+              5.58,
+              -20.7
+            ],
+            "exclude": "env-070-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-4 canonical root on actual soil",
+            "point": [
+              -11.3,
+              5.58,
+              -21.5
+            ],
+            "exclude": "env-070-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-4 canonical root on actual soil",
+            "point": [
+              -12.7,
+              5.58,
+              -20.9
+            ],
+            "exclude": "env-070-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-4 canonical root on actual soil",
+            "point": [
+              -12.7,
+              5.58,
+              -20.5
+            ],
+            "exclude": "env-070-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-5 root pocket terrain 0",
+            "point": [
+              -13.2,
+              4.828683519,
+              -8.4
+            ],
+            "exclude": "env-070-12"
+          },
+          {
+            "name": "bamboo-5 root pocket terrain 1",
+            "point": [
+              -8.399999999999999,
+              4.341397605,
+              -8.4
+            ],
+            "exclude": "env-070-12"
+          },
+          {
+            "name": "bamboo-5 root pocket terrain 2",
+            "point": [
+              -8.399999999999999,
+              4.302397556000001,
+              -6.2
+            ],
+            "exclude": "env-070-12"
+          },
+          {
+            "name": "bamboo-5 root pocket terrain 3",
+            "point": [
+              -13.2,
+              4.745613692,
+              -6.2
+            ],
+            "exclude": "env-070-12"
+          },
+          {
+            "name": "bamboo-5 root pocket terrain 4",
+            "point": [
+              -11,
+              4.597909308,
+              -8
+            ],
+            "exclude": "env-070-12"
+          },
+          {
+            "name": "bamboo-5 canonical root on actual soil",
+            "point": [
+              -10.9,
+              4.98,
+              -7.9
+            ],
+            "exclude": "env-070-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-5 canonical root on actual soil",
+            "point": [
+              -10.1,
+              4.98,
+              -7.5
+            ],
+            "exclude": "env-070-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-5 canonical root on actual soil",
+            "point": [
+              -9.1,
+              4.98,
+              -7.1
+            ],
+            "exclude": "env-070-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-5 canonical root on actual soil",
+            "point": [
+              -8.9,
+              4.98,
+              -6.7
+            ],
+            "exclude": "env-070-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-5 canonical root on actual soil",
+            "point": [
+              -11.3,
+              4.98,
+              -7.5
+            ],
+            "exclude": "env-070-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-5 canonical root on actual soil",
+            "point": [
+              -12.7,
+              4.98,
+              -6.9
+            ],
+            "exclude": "env-070-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-5 canonical root on actual soil",
+            "point": [
+              -12.7,
+              4.98,
+              -6.5
+            ],
+            "exclude": "env-070-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-6 root pocket terrain 0",
+            "point": [
+              -13.2,
+              4.726286734,
+              5.6
+            ],
+            "exclude": "env-070-14"
+          },
+          {
+            "name": "bamboo-6 root pocket terrain 1",
+            "point": [
+              -8.399999999999999,
+              4.290318208,
+              5.6
+            ],
+            "exclude": "env-070-14"
+          },
+          {
+            "name": "bamboo-6 root pocket terrain 2",
+            "point": [
+              -8.399999999999999,
+              4.325363944,
+              7.8
+            ],
+            "exclude": "env-070-14"
+          },
+          {
+            "name": "bamboo-6 root pocket terrain 3",
+            "point": [
+              -13.2,
+              4.803029661,
+              7.8
+            ],
+            "exclude": "env-070-14"
+          },
+          {
+            "name": "bamboo-6 root pocket terrain 4",
+            "point": [
+              -11,
+              4.540493339,
+              6
+            ],
+            "exclude": "env-070-14"
+          },
+          {
+            "name": "bamboo-6 canonical root on actual soil",
+            "point": [
+              -10.9,
+              4.98,
+              6.1
+            ],
+            "exclude": "env-070-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-6 canonical root on actual soil",
+            "point": [
+              -10.1,
+              4.98,
+              6.5
+            ],
+            "exclude": "env-070-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-6 canonical root on actual soil",
+            "point": [
+              -9.1,
+              4.98,
+              6.9
+            ],
+            "exclude": "env-070-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-6 canonical root on actual soil",
+            "point": [
+              -8.9,
+              4.98,
+              7.3
+            ],
+            "exclude": "env-070-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-6 canonical root on actual soil",
+            "point": [
+              -11.3,
+              4.98,
+              6.5
+            ],
+            "exclude": "env-070-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-6 canonical root on actual soil",
+            "point": [
+              -12.7,
+              4.98,
+              7.1
+            ],
+            "exclude": "env-070-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-6 canonical root on actual soil",
+            "point": [
+              -12.7,
+              4.98,
+              7.5
+            ],
+            "exclude": "env-070-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-7 root pocket terrain 0",
+            "point": [
+              -13.2,
+              5.3065969740000005,
+              19.6
+            ],
+            "exclude": "env-070-16"
+          },
+          {
+            "name": "bamboo-7 root pocket terrain 1",
+            "point": [
+              -8.399999999999999,
+              4.549545915,
+              19.6
+            ],
+            "exclude": "env-070-16"
+          },
+          {
+            "name": "bamboo-7 root pocket terrain 2",
+            "point": [
+              -8.399999999999999,
+              4.576052435,
+              21.8
+            ],
+            "exclude": "env-070-16"
+          },
+          {
+            "name": "bamboo-7 root pocket terrain 3",
+            "point": [
+              -13.2,
+              5.362308553,
+              21.8
+            ],
+            "exclude": "env-070-16"
+          },
+          {
+            "name": "bamboo-7 root pocket terrain 4",
+            "point": [
+              -11,
+              5.000343085000001,
+              20
+            ],
+            "exclude": "env-070-16"
+          },
+          {
+            "name": "bamboo-7 canonical root on actual soil",
+            "point": [
+              -10.9,
+              5.58,
+              20.1
+            ],
+            "exclude": "env-070-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-7 canonical root on actual soil",
+            "point": [
+              -10.1,
+              5.58,
+              20.5
+            ],
+            "exclude": "env-070-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-7 canonical root on actual soil",
+            "point": [
+              -9.1,
+              5.58,
+              20.9
+            ],
+            "exclude": "env-070-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-7 canonical root on actual soil",
+            "point": [
+              -8.9,
+              5.58,
+              21.3
+            ],
+            "exclude": "env-070-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-7 canonical root on actual soil",
+            "point": [
+              -11.3,
+              5.58,
+              20.5
+            ],
+            "exclude": "env-070-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-7 canonical root on actual soil",
+            "point": [
+              -12.7,
+              5.58,
+              21.1
+            ],
+            "exclude": "env-070-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-7 canonical root on actual soil",
+            "point": [
+              -12.7,
+              5.58,
+              21.5
+            ],
+            "exclude": "env-070-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-8 root pocket terrain 0",
+            "point": [
+              7.8,
+              4.474716135,
+              -22.4
+            ],
+            "exclude": "env-070-18"
+          },
+          {
+            "name": "bamboo-8 root pocket terrain 1",
+            "point": [
+              12.600000000000001,
+              5.294968676000001,
+              -22.4
+            ],
+            "exclude": "env-070-18"
+          },
+          {
+            "name": "bamboo-8 root pocket terrain 2",
+            "point": [
+              12.600000000000001,
+              5.249727976000001,
+              -20.2
+            ],
+            "exclude": "env-070-18"
+          },
+          {
+            "name": "bamboo-8 root pocket terrain 3",
+            "point": [
+              7.8,
+              4.4567759,
+              -20.2
+            ],
+            "exclude": "env-070-18"
+          },
+          {
+            "name": "bamboo-8 root pocket terrain 4",
+            "point": [
+              10,
+              4.861075595000001,
+              -22
+            ],
+            "exclude": "env-070-18"
+          },
+          {
+            "name": "bamboo-8 canonical root on actual soil",
+            "point": [
+              10.1,
+              5.380000000000001,
+              -21.9
+            ],
+            "exclude": "env-070-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-8 canonical root on actual soil",
+            "point": [
+              10.9,
+              5.380000000000001,
+              -21.5
+            ],
+            "exclude": "env-070-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-8 canonical root on actual soil",
+            "point": [
+              11.9,
+              5.380000000000001,
+              -21.1
+            ],
+            "exclude": "env-070-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-8 canonical root on actual soil",
+            "point": [
+              12.1,
+              5.380000000000001,
+              -20.7
+            ],
+            "exclude": "env-070-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-8 canonical root on actual soil",
+            "point": [
+              9.7,
+              5.380000000000001,
+              -21.5
+            ],
+            "exclude": "env-070-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-8 canonical root on actual soil",
+            "point": [
+              8.3,
+              5.380000000000001,
+              -20.9
+            ],
+            "exclude": "env-070-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-8 canonical root on actual soil",
+            "point": [
+              8.3,
+              5.380000000000001,
+              -20.5
+            ],
+            "exclude": "env-070-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-9 root pocket terrain 0",
+            "point": [
+              7.8,
+              4.272857276000001,
+              -8.4
+            ],
+            "exclude": "env-070-20"
+          },
+          {
+            "name": "bamboo-9 root pocket terrain 1",
+            "point": [
+              12.600000000000001,
+              4.771538254,
+              -8.4
+            ],
+            "exclude": "env-070-20"
+          },
+          {
+            "name": "bamboo-9 root pocket terrain 2",
+            "point": [
+              12.600000000000001,
+              4.692632093,
+              -6.2
+            ],
+            "exclude": "env-070-20"
+          },
+          {
+            "name": "bamboo-9 root pocket terrain 3",
+            "point": [
+              7.8,
+              4.2425204910000005,
+              -6.2
+            ],
+            "exclude": "env-070-20"
+          },
+          {
+            "name": "bamboo-9 root pocket terrain 4",
+            "point": [
+              10,
+              4.494924424000001,
+              -8
+            ],
+            "exclude": "env-070-20"
+          },
+          {
+            "name": "bamboo-9 canonical root on actual soil",
+            "point": [
+              10.1,
+              4.98,
+              -7.9
+            ],
+            "exclude": "env-070-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-9 canonical root on actual soil",
+            "point": [
+              10.9,
+              4.98,
+              -7.5
+            ],
+            "exclude": "env-070-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-9 canonical root on actual soil",
+            "point": [
+              11.9,
+              4.98,
+              -7.1
+            ],
+            "exclude": "env-070-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-9 canonical root on actual soil",
+            "point": [
+              12.1,
+              4.98,
+              -6.7
+            ],
+            "exclude": "env-070-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-9 canonical root on actual soil",
+            "point": [
+              9.7,
+              4.98,
+              -7.5
+            ],
+            "exclude": "env-070-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-9 canonical root on actual soil",
+            "point": [
+              8.3,
+              4.98,
+              -6.9
+            ],
+            "exclude": "env-070-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-9 canonical root on actual soil",
+            "point": [
+              8.3,
+              4.98,
+              -6.5
+            ],
+            "exclude": "env-070-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-10 root pocket terrain 0",
+            "point": [
+              7.8,
+              4.238645684000001,
+              5.6
+            ],
+            "exclude": "env-070-22"
+          },
+          {
+            "name": "bamboo-10 root pocket terrain 1",
+            "point": [
+              12.600000000000001,
+              4.675721004000001,
+              5.6
+            ],
+            "exclude": "env-070-22"
+          },
+          {
+            "name": "bamboo-10 root pocket terrain 2",
+            "point": [
+              12.600000000000001,
+              4.749091129000001,
+              7.8
+            ],
+            "exclude": "env-070-22"
+          },
+          {
+            "name": "bamboo-10 root pocket terrain 3",
+            "point": [
+              7.8,
+              4.267400744000001,
+              7.8
+            ],
+            "exclude": "env-070-22"
+          },
+          {
+            "name": "bamboo-10 root pocket terrain 4",
+            "point": [
+              10,
+              4.447077783,
+              6
+            ],
+            "exclude": "env-070-22"
+          },
+          {
+            "name": "bamboo-10 canonical root on actual soil",
+            "point": [
+              10.1,
+              4.98,
+              6.1
+            ],
+            "exclude": "env-070-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-10 canonical root on actual soil",
+            "point": [
+              10.9,
+              4.98,
+              6.5
+            ],
+            "exclude": "env-070-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-10 canonical root on actual soil",
+            "point": [
+              11.9,
+              4.98,
+              6.9
+            ],
+            "exclude": "env-070-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-10 canonical root on actual soil",
+            "point": [
+              12.1,
+              4.98,
+              7.3
+            ],
+            "exclude": "env-070-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-10 canonical root on actual soil",
+            "point": [
+              9.7,
+              4.98,
+              6.5
+            ],
+            "exclude": "env-070-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-10 canonical root on actual soil",
+            "point": [
+              8.3,
+              4.98,
+              7.1
+            ],
+            "exclude": "env-070-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-10 canonical root on actual soil",
+            "point": [
+              8.3,
+              4.98,
+              7.5
+            ],
+            "exclude": "env-070-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-11 root pocket terrain 0",
+            "point": [
+              7.8,
+              4.452700706000001,
+              19.6
+            ],
+            "exclude": "env-070-24"
+          },
+          {
+            "name": "bamboo-11 root pocket terrain 1",
+            "point": [
+              12.600000000000001,
+              5.233309520000001,
+              19.6
+            ],
+            "exclude": "env-070-24"
+          },
+          {
+            "name": "bamboo-11 root pocket terrain 2",
+            "point": [
+              12.600000000000001,
+              5.286059811,
+              21.8
+            ],
+            "exclude": "env-070-24"
+          },
+          {
+            "name": "bamboo-11 root pocket terrain 3",
+            "point": [
+              7.8,
+              4.472786539,
+              21.8
+            ],
+            "exclude": "env-070-24"
+          },
+          {
+            "name": "bamboo-11 root pocket terrain 4",
+            "point": [
+              10,
+              4.830285904,
+              20
+            ],
+            "exclude": "env-070-24"
+          },
+          {
+            "name": "bamboo-11 canonical root on actual soil",
+            "point": [
+              10.1,
+              5.380000000000001,
+              20.1
+            ],
+            "exclude": "env-070-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-11 canonical root on actual soil",
+            "point": [
+              10.9,
+              5.380000000000001,
+              20.5
+            ],
+            "exclude": "env-070-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-11 canonical root on actual soil",
+            "point": [
+              11.9,
+              5.380000000000001,
+              20.9
+            ],
+            "exclude": "env-070-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-11 canonical root on actual soil",
+            "point": [
+              12.1,
+              5.380000000000001,
+              21.3
+            ],
+            "exclude": "env-070-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-11 canonical root on actual soil",
+            "point": [
+              9.7,
+              5.380000000000001,
+              20.5
+            ],
+            "exclude": "env-070-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-11 canonical root on actual soil",
+            "point": [
+              8.3,
+              5.380000000000001,
+              21.1
+            ],
+            "exclude": "env-070-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-11 canonical root on actual soil",
+            "point": [
+              8.3,
+              5.380000000000001,
+              21.5
+            ],
+            "exclude": "env-070-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-12 root pocket terrain 0",
+            "point": [
+              17.8,
+              5.778976161,
+              -22.4
+            ],
+            "exclude": "env-070-26"
+          },
+          {
+            "name": "bamboo-12 root pocket terrain 1",
+            "point": [
+              22.6,
+              6.1629761610000005,
+              -22.4
+            ],
+            "exclude": "env-070-26"
+          },
+          {
+            "name": "bamboo-12 root pocket terrain 2",
+            "point": [
+              22.6,
+              6.113383797,
+              -20.2
+            ],
+            "exclude": "env-070-26"
+          },
+          {
+            "name": "bamboo-12 root pocket terrain 3",
+            "point": [
+              17.8,
+              5.7293837970000006,
+              -20.2
+            ],
+            "exclude": "env-070-26"
+          },
+          {
+            "name": "bamboo-12 root pocket terrain 4",
+            "point": [
+              20,
+              5.949720951000001,
+              -22
+            ],
+            "exclude": "env-070-26"
+          },
+          {
+            "name": "bamboo-12 canonical root on actual soil",
+            "point": [
+              20.1,
+              6.380000000000001,
+              -21.9
+            ],
+            "exclude": "env-070-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-12 canonical root on actual soil",
+            "point": [
+              20.9,
+              6.380000000000001,
+              -21.5
+            ],
+            "exclude": "env-070-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-12 canonical root on actual soil",
+            "point": [
+              21.9,
+              6.380000000000001,
+              -21.1
+            ],
+            "exclude": "env-070-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-12 canonical root on actual soil",
+            "point": [
+              22.1,
+              6.380000000000001,
+              -20.7
+            ],
+            "exclude": "env-070-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-12 canonical root on actual soil",
+            "point": [
+              19.7,
+              6.380000000000001,
+              -21.5
+            ],
+            "exclude": "env-070-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-12 canonical root on actual soil",
+            "point": [
+              18.3,
+              6.380000000000001,
+              -20.9
+            ],
+            "exclude": "env-070-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-12 canonical root on actual soil",
+            "point": [
+              18.3,
+              6.380000000000001,
+              -20.5
+            ],
+            "exclude": "env-070-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-13 root pocket terrain 0",
+            "point": [
+              17.8,
+              5.205877473,
+              -8.4
+            ],
+            "exclude": "env-070-28"
+          },
+          {
+            "name": "bamboo-13 root pocket terrain 1",
+            "point": [
+              22.6,
+              5.5898774730000005,
+              -8.4
+            ],
+            "exclude": "env-070-28"
+          },
+          {
+            "name": "bamboo-13 root pocket terrain 2",
+            "point": [
+              22.6,
+              5.502979915,
+              -6.2
+            ],
+            "exclude": "env-070-28"
+          },
+          {
+            "name": "bamboo-13 root pocket terrain 3",
+            "point": [
+              17.8,
+              5.118979915000001,
+              -6.2
+            ],
+            "exclude": "env-070-28"
+          },
+          {
+            "name": "bamboo-13 root pocket terrain 4",
+            "point": [
+              20,
+              5.363879078,
+              -8
+            ],
+            "exclude": "env-070-28"
+          },
+          {
+            "name": "bamboo-13 canonical root on actual soil",
+            "point": [
+              20.1,
+              5.78,
+              -7.9
+            ],
+            "exclude": "env-070-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-13 canonical root on actual soil",
+            "point": [
+              20.9,
+              5.78,
+              -7.5
+            ],
+            "exclude": "env-070-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-13 canonical root on actual soil",
+            "point": [
+              21.9,
+              5.78,
+              -7.1
+            ],
+            "exclude": "env-070-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-13 canonical root on actual soil",
+            "point": [
+              22.1,
+              5.78,
+              -6.7
+            ],
+            "exclude": "env-070-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-13 canonical root on actual soil",
+            "point": [
+              19.7,
+              5.78,
+              -7.5
+            ],
+            "exclude": "env-070-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-13 canonical root on actual soil",
+            "point": [
+              18.3,
+              5.78,
+              -6.9
+            ],
+            "exclude": "env-070-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-13 canonical root on actual soil",
+            "point": [
+              18.3,
+              5.78,
+              -6.5
+            ],
+            "exclude": "env-070-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-14 root pocket terrain 0",
+            "point": [
+              17.8,
+              5.099652957,
+              5.6
+            ],
+            "exclude": "env-070-30"
+          },
+          {
+            "name": "bamboo-14 root pocket terrain 1",
+            "point": [
+              22.6,
+              5.483652957,
+              5.6
+            ],
+            "exclude": "env-070-30"
+          },
+          {
+            "name": "bamboo-14 root pocket terrain 2",
+            "point": [
+              22.6,
+              5.564223615,
+              7.8
+            ],
+            "exclude": "env-070-30"
+          },
+          {
+            "name": "bamboo-14 root pocket terrain 3",
+            "point": [
+              17.8,
+              5.180223615,
+              7.8
+            ],
+            "exclude": "env-070-30"
+          },
+          {
+            "name": "bamboo-14 root pocket terrain 4",
+            "point": [
+              20,
+              5.287324452,
+              6
+            ],
+            "exclude": "env-070-30"
+          },
+          {
+            "name": "bamboo-14 canonical root on actual soil",
+            "point": [
+              20.1,
+              5.78,
+              6.1
+            ],
+            "exclude": "env-070-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-14 canonical root on actual soil",
+            "point": [
+              20.9,
+              5.78,
+              6.5
+            ],
+            "exclude": "env-070-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-14 canonical root on actual soil",
+            "point": [
+              21.9,
+              5.78,
+              6.9
+            ],
+            "exclude": "env-070-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-14 canonical root on actual soil",
+            "point": [
+              22.1,
+              5.78,
+              7.3
+            ],
+            "exclude": "env-070-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-14 canonical root on actual soil",
+            "point": [
+              19.7,
+              5.78,
+              6.5
+            ],
+            "exclude": "env-070-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-14 canonical root on actual soil",
+            "point": [
+              18.3,
+              5.78,
+              7.1
+            ],
+            "exclude": "env-070-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-14 canonical root on actual soil",
+            "point": [
+              18.3,
+              5.78,
+              7.5
+            ],
+            "exclude": "env-070-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-15 root pocket terrain 0",
+            "point": [
+              17.8,
+              5.710619847,
+              19.6
+            ],
+            "exclude": "env-070-32"
+          },
+          {
+            "name": "bamboo-15 root pocket terrain 1",
+            "point": [
+              22.6,
+              6.094619847000001,
+              19.6
+            ],
+            "exclude": "env-070-32"
+          },
+          {
+            "name": "bamboo-15 root pocket terrain 2",
+            "point": [
+              22.6,
+              6.152794601,
+              21.8
+            ],
+            "exclude": "env-070-32"
+          },
+          {
+            "name": "bamboo-15 root pocket terrain 3",
+            "point": [
+              17.8,
+              5.768794601000001,
+              21.8
+            ],
+            "exclude": "env-070-32"
+          },
+          {
+            "name": "bamboo-15 root pocket terrain 4",
+            "point": [
+              20,
+              5.900457446000001,
+              20
+            ],
+            "exclude": "env-070-32"
+          },
+          {
+            "name": "bamboo-15 canonical root on actual soil",
+            "point": [
+              20.1,
+              6.380000000000001,
+              20.1
+            ],
+            "exclude": "env-070-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-15 canonical root on actual soil",
+            "point": [
+              20.9,
+              6.380000000000001,
+              20.5
+            ],
+            "exclude": "env-070-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-15 canonical root on actual soil",
+            "point": [
+              21.9,
+              6.380000000000001,
+              20.9
+            ],
+            "exclude": "env-070-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-15 canonical root on actual soil",
+            "point": [
+              22.1,
+              6.380000000000001,
+              21.3
+            ],
+            "exclude": "env-070-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-15 canonical root on actual soil",
+            "point": [
+              19.7,
+              6.380000000000001,
+              20.5
+            ],
+            "exclude": "env-070-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-15 canonical root on actual soil",
+            "point": [
+              18.3,
+              6.380000000000001,
+              21.1
+            ],
+            "exclude": "env-070-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-15 canonical root on actual soil",
+            "point": [
+              18.3,
+              6.380000000000001,
+              21.5
+            ],
+            "exclude": "env-070-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 root pocket terrain 0",
+            "point": [
+              -17.6,
+              5.535426672000001,
+              -15.6
+            ],
+            "exclude": "env-070-34"
+          },
+          {
+            "name": "bamboo-ferns-0 root pocket terrain 1",
+            "point": [
+              -16.2,
+              5.423426672000001,
+              -15.6
+            ],
+            "exclude": "env-070-34"
+          },
+          {
+            "name": "bamboo-ferns-0 root pocket terrain 2",
+            "point": [
+              -16.2,
+              5.356814453,
+              -14.2
+            ],
+            "exclude": "env-070-34"
+          },
+          {
+            "name": "bamboo-ferns-0 root pocket terrain 3",
+            "point": [
+              -17.6,
+              5.468814453,
+              -14.2
+            ],
+            "exclude": "env-070-34"
+          },
+          {
+            "name": "bamboo-ferns-0 root pocket terrain 4",
+            "point": [
+              -17,
+              5.458878578,
+              -15
+            ],
+            "exclude": "env-070-34"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -16.9,
+              5.78,
+              -14.9
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -16.7,
+              5.78,
+              -14.9
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -16.5,
+              5.78,
+              -14.9
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -16.9,
+              5.78,
+              -14.7
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -16.9,
+              5.78,
+              -14.5
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -17.3,
+              5.78,
+              -14.9
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -17.1,
+              5.78,
+              -14.9
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -16.9,
+              5.78,
+              -15.3
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-0 canonical root on actual soil",
+            "point": [
+              -16.9,
+              5.78,
+              -15.1
+            ],
+            "exclude": "env-070-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 root pocket terrain 0",
+            "point": [
+              -15.6,
+              5.2793797620000005,
+              13.6
+            ],
+            "exclude": "env-070-36"
+          },
+          {
+            "name": "bamboo-ferns-1 root pocket terrain 1",
+            "point": [
+              -14.2,
+              5.167379762,
+              13.6
+            ],
+            "exclude": "env-070-36"
+          },
+          {
+            "name": "bamboo-ferns-1 root pocket terrain 2",
+            "point": [
+              -14.2,
+              5.2253625470000005,
+              14.8
+            ],
+            "exclude": "env-070-36"
+          },
+          {
+            "name": "bamboo-ferns-1 root pocket terrain 3",
+            "point": [
+              -15.6,
+              5.337362547000001,
+              14.8
+            ],
+            "exclude": "env-070-36"
+          },
+          {
+            "name": "bamboo-ferns-1 root pocket terrain 4",
+            "point": [
+              -15,
+              5.2512984220000005,
+              14
+            ],
+            "exclude": "env-070-36"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -14.9,
+              5.58,
+              14.1
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -14.7,
+              5.58,
+              14.1
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -14.9,
+              5.58,
+              14.3
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -14.9,
+              5.58,
+              14.5
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -15.1,
+              5.58,
+              14.1
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -15.3,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -15.1,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -14.7,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-1 canonical root on actual soil",
+            "point": [
+              -14.5,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 root pocket terrain 0",
+            "point": [
+              14.4,
+              5.2794266720000005,
+              -15.6
+            ],
+            "exclude": "env-070-38"
+          },
+          {
+            "name": "bamboo-ferns-2 root pocket terrain 1",
+            "point": [
+              15.8,
+              5.391426672000001,
+              -15.6
+            ],
+            "exclude": "env-070-38"
+          },
+          {
+            "name": "bamboo-ferns-2 root pocket terrain 2",
+            "point": [
+              15.8,
+              5.324814453,
+              -14.2
+            ],
+            "exclude": "env-070-38"
+          },
+          {
+            "name": "bamboo-ferns-2 root pocket terrain 3",
+            "point": [
+              14.4,
+              5.212814453,
+              -14.2
+            ],
+            "exclude": "env-070-38"
+          },
+          {
+            "name": "bamboo-ferns-2 root pocket terrain 4",
+            "point": [
+              15,
+              5.298878578,
+              -15
+            ],
+            "exclude": "env-070-38"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              -14.9
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              15.3,
+              5.58,
+              -14.9
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              15.5,
+              5.58,
+              -14.9
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              -14.7
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              -14.5
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              14.7,
+              5.58,
+              -14.9
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              14.9,
+              5.58,
+              -14.9
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              -15.3
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-2 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              -15.1
+            ],
+            "exclude": "env-070-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 root pocket terrain 0",
+            "point": [
+              14.4,
+              5.183379762,
+              13.6
+            ],
+            "exclude": "env-070-40"
+          },
+          {
+            "name": "bamboo-ferns-3 root pocket terrain 1",
+            "point": [
+              15.8,
+              5.2953797620000005,
+              13.6
+            ],
+            "exclude": "env-070-40"
+          },
+          {
+            "name": "bamboo-ferns-3 root pocket terrain 2",
+            "point": [
+              15.8,
+              5.353362547000001,
+              14.8
+            ],
+            "exclude": "env-070-40"
+          },
+          {
+            "name": "bamboo-ferns-3 root pocket terrain 3",
+            "point": [
+              14.4,
+              5.2413625470000005,
+              14.8
+            ],
+            "exclude": "env-070-40"
+          },
+          {
+            "name": "bamboo-ferns-3 root pocket terrain 4",
+            "point": [
+              15,
+              5.2512984220000005,
+              14
+            ],
+            "exclude": "env-070-40"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              14.1
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              15.3,
+              5.58,
+              14.1
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              14.3
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              14.5
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              14.9,
+              5.58,
+              14.1
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              14.7,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              14.9,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              15.3,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-3 canonical root on actual soil",
+            "point": [
+              15.5,
+              5.58,
+              13.9
+            ],
+            "exclude": "env-070-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 root pocket terrain 0",
+            "point": [
+              -25.6,
+              5.630487006,
+              0.3999999999999999
+            ],
+            "exclude": "env-070-42"
+          },
+          {
+            "name": "bamboo-ferns-4 root pocket terrain 1",
+            "point": [
+              -24.2,
+              5.518487006000001,
+              0.3999999999999999
+            ],
+            "exclude": "env-070-42"
+          },
+          {
+            "name": "bamboo-ferns-4 root pocket terrain 2",
+            "point": [
+              -24.2,
+              5.527191528,
+              1.8
+            ],
+            "exclude": "env-070-42"
+          },
+          {
+            "name": "bamboo-ferns-4 root pocket terrain 3",
+            "point": [
+              -25.6,
+              5.6391915280000005,
+              1.8
+            ],
+            "exclude": "env-070-42"
+          },
+          {
+            "name": "bamboo-ferns-4 root pocket terrain 4",
+            "point": [
+              -25,
+              5.5862175160000005,
+              1
+            ],
+            "exclude": "env-070-42"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -24.9,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -24.7,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -24.5,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -24.9,
+              5.78,
+              1.3
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -24.9,
+              5.78,
+              1.5
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -25.3,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -25.1,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -24.9,
+              5.78,
+              0.7
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-4 canonical root on actual soil",
+            "point": [
+              -24.9,
+              5.78,
+              0.9
+            ],
+            "exclude": "env-070-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 root pocket terrain 0",
+            "point": [
+              24.4,
+              5.535730509,
+              0.6
+            ],
+            "exclude": "env-070-44"
+          },
+          {
+            "name": "bamboo-ferns-5 root pocket terrain 1",
+            "point": [
+              25.8,
+              5.6477305090000005,
+              0.6
+            ],
+            "exclude": "env-070-44"
+          },
+          {
+            "name": "bamboo-ferns-5 root pocket terrain 2",
+            "point": [
+              25.8,
+              5.6551915280000005,
+              1.8
+            ],
+            "exclude": "env-070-44"
+          },
+          {
+            "name": "bamboo-ferns-5 root pocket terrain 3",
+            "point": [
+              24.4,
+              5.543191528,
+              1.8
+            ],
+            "exclude": "env-070-44"
+          },
+          {
+            "name": "bamboo-ferns-5 root pocket terrain 4",
+            "point": [
+              25,
+              5.5862175160000005,
+              1
+            ],
+            "exclude": "env-070-44"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              25.1,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              25.3,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              25.1,
+              5.78,
+              1.3
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              25.1,
+              5.78,
+              1.5
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              24.9,
+              5.78,
+              1.1
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              24.7,
+              5.78,
+              0.9
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              24.9,
+              5.78,
+              0.9
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              25.3,
+              5.78,
+              0.9
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bamboo-ferns-5 canonical root on actual soil",
+            "point": [
+              25.5,
+              5.78,
+              0.9
+            ],
+            "exclude": "env-070-45",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored environment only. Original terrain, hydrology, ecology, residency, permissions and controllers remain unbound.",
+        "terrainAuthority": "Actual closed continuous terrain triangles;0.2m minimum native rock cells. Canonical plants and transport components retain their full original grids.",
+        "terrainTiles": [
+          {
+            "instance": "env-070-0",
+            "assetId": "architecture-civic-terrain-bamboo-understory-0-0-0-2-near-1ce6a01db9",
+            "authorityAssetId": "architecture-civic-terrain-bamboo-understory-0-0-0-2-near-1ce6a01db9",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 64,
+            "step": 2,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 64,
+          "step": 2,
+          "origin": [
+            -32,
+            -32
+          ],
+          "continuousPhysicalSurface": true
+        },
+        "bamboo": [
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-3",
+            "soilInstance": "env-070-2",
+            "position": [
+              -21,
+              6.4,
+              -22
+            ],
+            "rootSamples": [
+              [
+                -20.9,
+                6.4,
+                -21.9
+              ],
+              [
+                -20.1,
+                6.4,
+                -21.5
+              ],
+              [
+                -19.1,
+                6.4,
+                -21.1
+              ],
+              [
+                -18.9,
+                6.4,
+                -20.7
+              ],
+              [
+                -21.3,
+                6.4,
+                -21.5
+              ],
+              [
+                -22.7,
+                6.4,
+                -20.9
+              ],
+              [
+                -22.7,
+                6.4,
+                -20.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 6.049720951
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-5",
+            "soilInstance": "env-070-4",
+            "position": [
+              -21,
+              5.8,
+              -8
+            ],
+            "rootSamples": [
+              [
+                -20.9,
+                5.8,
+                -7.9
+              ],
+              [
+                -20.1,
+                5.8,
+                -7.5
+              ],
+              [
+                -19.1,
+                5.8,
+                -7.1
+              ],
+              [
+                -18.9,
+                5.8,
+                -6.7
+              ],
+              [
+                -21.3,
+                5.8,
+                -7.5
+              ],
+              [
+                -22.7,
+                5.8,
+                -6.9
+              ],
+              [
+                -22.7,
+                5.8,
+                -6.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.463879078
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-7",
+            "soilInstance": "env-070-6",
+            "position": [
+              -21,
+              5.8,
+              6
+            ],
+            "rootSamples": [
+              [
+                -20.9,
+                5.8,
+                6.1
+              ],
+              [
+                -20.1,
+                5.8,
+                6.5
+              ],
+              [
+                -19.1,
+                5.8,
+                6.9
+              ],
+              [
+                -18.9,
+                5.8,
+                7.3
+              ],
+              [
+                -21.3,
+                5.8,
+                6.5
+              ],
+              [
+                -22.7,
+                5.8,
+                7.1
+              ],
+              [
+                -22.7,
+                5.8,
+                7.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.387324452
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-9",
+            "soilInstance": "env-070-8",
+            "position": [
+              -21,
+              6.4,
+              20
+            ],
+            "rootSamples": [
+              [
+                -20.9,
+                6.4,
+                20.1
+              ],
+              [
+                -20.1,
+                6.4,
+                20.5
+              ],
+              [
+                -19.1,
+                6.4,
+                20.9
+              ],
+              [
+                -18.9,
+                6.4,
+                21.3
+              ],
+              [
+                -21.3,
+                6.4,
+                20.5
+              ],
+              [
+                -22.7,
+                6.4,
+                21.1
+              ],
+              [
+                -22.7,
+                6.4,
+                21.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 6.000457446
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-11",
+            "soilInstance": "env-070-10",
+            "position": [
+              -11,
+              5.6,
+              -22
+            ],
+            "rootSamples": [
+              [
+                -10.9,
+                5.6,
+                -21.9
+              ],
+              [
+                -10.1,
+                5.6,
+                -21.5
+              ],
+              [
+                -9.1,
+                5.6,
+                -21.1
+              ],
+              [
+                -8.9,
+                5.6,
+                -20.7
+              ],
+              [
+                -11.3,
+                5.6,
+                -21.5
+              ],
+              [
+                -12.7,
+                5.6,
+                -20.9
+              ],
+              [
+                -12.7,
+                5.6,
+                -20.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.057290714
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-13",
+            "soilInstance": "env-070-12",
+            "position": [
+              -11,
+              5,
+              -8
+            ],
+            "rootSamples": [
+              [
+                -10.9,
+                5,
+                -7.9
+              ],
+              [
+                -10.1,
+                5,
+                -7.5
+              ],
+              [
+                -9.1,
+                5,
+                -7.1
+              ],
+              [
+                -8.9,
+                5,
+                -6.7
+              ],
+              [
+                -11.3,
+                5,
+                -7.5
+              ],
+              [
+                -12.7,
+                5,
+                -6.9
+              ],
+              [
+                -12.7,
+                5,
+                -6.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 4.617909308
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-15",
+            "soilInstance": "env-070-14",
+            "position": [
+              -11,
+              5,
+              6
+            ],
+            "rootSamples": [
+              [
+                -10.9,
+                5,
+                6.1
+              ],
+              [
+                -10.1,
+                5,
+                6.5
+              ],
+              [
+                -9.1,
+                5,
+                6.9
+              ],
+              [
+                -8.9,
+                5,
+                7.3
+              ],
+              [
+                -11.3,
+                5,
+                6.5
+              ],
+              [
+                -12.7,
+                5,
+                7.1
+              ],
+              [
+                -12.7,
+                5,
+                7.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 4.560493339
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-17",
+            "soilInstance": "env-070-16",
+            "position": [
+              -11,
+              5.6,
+              20
+            ],
+            "rootSamples": [
+              [
+                -10.9,
+                5.6,
+                20.1
+              ],
+              [
+                -10.1,
+                5.6,
+                20.5
+              ],
+              [
+                -9.1,
+                5.6,
+                20.9
+              ],
+              [
+                -8.9,
+                5.6,
+                21.3
+              ],
+              [
+                -11.3,
+                5.6,
+                20.5
+              ],
+              [
+                -12.7,
+                5.6,
+                21.1
+              ],
+              [
+                -12.7,
+                5.6,
+                21.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.020343085
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-19",
+            "soilInstance": "env-070-18",
+            "position": [
+              10,
+              5.4,
+              -22
+            ],
+            "rootSamples": [
+              [
+                10.1,
+                5.4,
+                -21.9
+              ],
+              [
+                10.9,
+                5.4,
+                -21.5
+              ],
+              [
+                11.9,
+                5.4,
+                -21.1
+              ],
+              [
+                12.1,
+                5.4,
+                -20.7
+              ],
+              [
+                9.7,
+                5.4,
+                -21.5
+              ],
+              [
+                8.3,
+                5.4,
+                -20.9
+              ],
+              [
+                8.3,
+                5.4,
+                -20.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 4.881075595
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-21",
+            "soilInstance": "env-070-20",
+            "position": [
+              10,
+              5,
+              -8
+            ],
+            "rootSamples": [
+              [
+                10.1,
+                5,
+                -7.9
+              ],
+              [
+                10.9,
+                5,
+                -7.5
+              ],
+              [
+                11.9,
+                5,
+                -7.1
+              ],
+              [
+                12.1,
+                5,
+                -6.7
+              ],
+              [
+                9.7,
+                5,
+                -7.5
+              ],
+              [
+                8.3,
+                5,
+                -6.9
+              ],
+              [
+                8.3,
+                5,
+                -6.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 4.514924424
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-23",
+            "soilInstance": "env-070-22",
+            "position": [
+              10,
+              5,
+              6
+            ],
+            "rootSamples": [
+              [
+                10.1,
+                5,
+                6.1
+              ],
+              [
+                10.9,
+                5,
+                6.5
+              ],
+              [
+                11.9,
+                5,
+                6.9
+              ],
+              [
+                12.1,
+                5,
+                7.3
+              ],
+              [
+                9.7,
+                5,
+                6.5
+              ],
+              [
+                8.3,
+                5,
+                7.1
+              ],
+              [
+                8.3,
+                5,
+                7.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 4.467077783
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-25",
+            "soilInstance": "env-070-24",
+            "position": [
+              10,
+              5.4,
+              20
+            ],
+            "rootSamples": [
+              [
+                10.1,
+                5.4,
+                20.1
+              ],
+              [
+                10.9,
+                5.4,
+                20.5
+              ],
+              [
+                11.9,
+                5.4,
+                20.9
+              ],
+              [
+                12.1,
+                5.4,
+                21.3
+              ],
+              [
+                9.7,
+                5.4,
+                20.5
+              ],
+              [
+                8.3,
+                5.4,
+                21.1
+              ],
+              [
+                8.3,
+                5.4,
+                21.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 4.850285904
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-27",
+            "soilInstance": "env-070-26",
+            "position": [
+              20,
+              6.4,
+              -22
+            ],
+            "rootSamples": [
+              [
+                20.1,
+                6.4,
+                -21.9
+              ],
+              [
+                20.9,
+                6.4,
+                -21.5
+              ],
+              [
+                21.9,
+                6.4,
+                -21.1
+              ],
+              [
+                22.1,
+                6.4,
+                -20.7
+              ],
+              [
+                19.7,
+                6.4,
+                -21.5
+              ],
+              [
+                18.3,
+                6.4,
+                -20.9
+              ],
+              [
+                18.3,
+                6.4,
+                -20.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.969720951
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-29",
+            "soilInstance": "env-070-28",
+            "position": [
+              20,
+              5.8,
+              -8
+            ],
+            "rootSamples": [
+              [
+                20.1,
+                5.8,
+                -7.9
+              ],
+              [
+                20.9,
+                5.8,
+                -7.5
+              ],
+              [
+                21.9,
+                5.8,
+                -7.1
+              ],
+              [
+                22.1,
+                5.8,
+                -6.7
+              ],
+              [
+                19.7,
+                5.8,
+                -7.5
+              ],
+              [
+                18.3,
+                5.8,
+                -6.9
+              ],
+              [
+                18.3,
+                5.8,
+                -6.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.383879078
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-31",
+            "soilInstance": "env-070-30",
+            "position": [
+              20,
+              5.8,
+              6
+            ],
+            "rootSamples": [
+              [
+                20.1,
+                5.8,
+                6.1
+              ],
+              [
+                20.9,
+                5.8,
+                6.5
+              ],
+              [
+                21.9,
+                5.8,
+                6.9
+              ],
+              [
+                22.1,
+                5.8,
+                7.3
+              ],
+              [
+                19.7,
+                5.8,
+                6.5
+              ],
+              [
+                18.3,
+                5.8,
+                7.1
+              ],
+              [
+                18.3,
+                5.8,
+                7.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.307324452
+          },
+          {
+            "catalogId": "ENV-056",
+            "params": {},
+            "instance": "env-070-33",
+            "soilInstance": "env-070-32",
+            "position": [
+              20,
+              6.4,
+              20
+            ],
+            "rootSamples": [
+              [
+                20.1,
+                6.4,
+                20.1
+              ],
+              [
+                20.9,
+                6.4,
+                20.5
+              ],
+              [
+                21.9,
+                6.4,
+                20.9
+              ],
+              [
+                22.1,
+                6.4,
+                21.3
+              ],
+              [
+                19.7,
+                6.4,
+                20.5
+              ],
+              [
+                18.3,
+                6.4,
+                21.1
+              ],
+              [
+                18.3,
+                6.4,
+                21.5
+              ]
+            ],
+            "rootCount": 47,
+            "rootDomain": [
+              -2.2,
+              -0.4,
+              2.6000000000000005,
+              1.8
+            ],
+            "ground": 5.920457446
+          }
+        ],
+        "understory": [
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "fern"
+            },
+            "instance": "env-070-35",
+            "soilInstance": "env-070-34",
+            "position": [
+              -17,
+              5.8,
+              -15
+            ],
+            "rootSamples": [
+              [
+                -16.9,
+                5.8,
+                -14.9
+              ],
+              [
+                -16.7,
+                5.8,
+                -14.9
+              ],
+              [
+                -16.5,
+                5.8,
+                -14.9
+              ],
+              [
+                -16.9,
+                5.8,
+                -14.7
+              ],
+              [
+                -16.9,
+                5.8,
+                -14.5
+              ],
+              [
+                -17.3,
+                5.8,
+                -14.9
+              ],
+              [
+                -17.1,
+                5.8,
+                -14.9
+              ],
+              [
+                -16.9,
+                5.8,
+                -15.3
+              ],
+              [
+                -16.9,
+                5.8,
+                -15.1
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 5.478878578
+          },
+          {
+            "catalogId": "ENV-062",
+            "params": {
+              "height": 0.6
+            },
+            "instance": "env-070-37",
+            "soilInstance": "env-070-36",
+            "position": [
+              -15,
+              5.6,
+              14
+            ],
+            "rootSamples": [
+              [
+                -14.9,
+                5.6,
+                14.1
+              ],
+              [
+                -14.7,
+                5.6,
+                14.1
+              ],
+              [
+                -14.9,
+                5.6,
+                14.3
+              ],
+              [
+                -14.9,
+                5.6,
+                14.5
+              ],
+              [
+                -15.1,
+                5.6,
+                14.1
+              ],
+              [
+                -15.3,
+                5.6,
+                13.9
+              ],
+              [
+                -15.1,
+                5.6,
+                13.9
+              ],
+              [
+                -14.7,
+                5.6,
+                13.9
+              ],
+              [
+                -14.5,
+                5.6,
+                13.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.4,
+              0.8,
+              0.8
+            ],
+            "ground": 5.271298422
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "fern"
+            },
+            "instance": "env-070-39",
+            "soilInstance": "env-070-38",
+            "position": [
+              15,
+              5.6,
+              -15
+            ],
+            "rootSamples": [
+              [
+                15.1,
+                5.6,
+                -14.9
+              ],
+              [
+                15.3,
+                5.6,
+                -14.9
+              ],
+              [
+                15.5,
+                5.6,
+                -14.9
+              ],
+              [
+                15.1,
+                5.6,
+                -14.7
+              ],
+              [
+                15.1,
+                5.6,
+                -14.5
+              ],
+              [
+                14.7,
+                5.6,
+                -14.9
+              ],
+              [
+                14.9,
+                5.6,
+                -14.9
+              ],
+              [
+                15.1,
+                5.6,
+                -15.3
+              ],
+              [
+                15.1,
+                5.6,
+                -15.1
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 5.318878578
+          },
+          {
+            "catalogId": "ENV-062",
+            "params": {
+              "height": 0.6
+            },
+            "instance": "env-070-41",
+            "soilInstance": "env-070-40",
+            "position": [
+              15,
+              5.6,
+              14
+            ],
+            "rootSamples": [
+              [
+                15.1,
+                5.6,
+                14.1
+              ],
+              [
+                15.3,
+                5.6,
+                14.1
+              ],
+              [
+                15.1,
+                5.6,
+                14.3
+              ],
+              [
+                15.1,
+                5.6,
+                14.5
+              ],
+              [
+                14.9,
+                5.6,
+                14.1
+              ],
+              [
+                14.7,
+                5.6,
+                13.9
+              ],
+              [
+                14.9,
+                5.6,
+                13.9
+              ],
+              [
+                15.3,
+                5.6,
+                13.9
+              ],
+              [
+                15.5,
+                5.6,
+                13.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.4,
+              0.8,
+              0.8
+            ],
+            "ground": 5.271298422
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "fern"
+            },
+            "instance": "env-070-43",
+            "soilInstance": "env-070-42",
+            "position": [
+              -25,
+              5.8,
+              1
+            ],
+            "rootSamples": [
+              [
+                -24.9,
+                5.8,
+                1.1
+              ],
+              [
+                -24.7,
+                5.8,
+                1.1
+              ],
+              [
+                -24.5,
+                5.8,
+                1.1
+              ],
+              [
+                -24.9,
+                5.8,
+                1.3
+              ],
+              [
+                -24.9,
+                5.8,
+                1.5
+              ],
+              [
+                -25.3,
+                5.8,
+                1.1
+              ],
+              [
+                -25.1,
+                5.8,
+                1.1
+              ],
+              [
+                -24.9,
+                5.8,
+                0.7
+              ],
+              [
+                -24.9,
+                5.8,
+                0.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 5.606217516
+          },
+          {
+            "catalogId": "ENV-062",
+            "params": {
+              "height": 0.6
+            },
+            "instance": "env-070-45",
+            "soilInstance": "env-070-44",
+            "position": [
+              25,
+              5.8,
+              1
+            ],
+            "rootSamples": [
+              [
+                25.1,
+                5.8,
+                1.1
+              ],
+              [
+                25.3,
+                5.8,
+                1.1
+              ],
+              [
+                25.1,
+                5.8,
+                1.3
+              ],
+              [
+                25.1,
+                5.8,
+                1.5
+              ],
+              [
+                24.9,
+                5.8,
+                1.1
+              ],
+              [
+                24.7,
+                5.8,
+                0.9
+              ],
+              [
+                24.9,
+                5.8,
+                0.9
+              ],
+              [
+                25.3,
+                5.8,
+                0.9
+              ],
+              [
+                25.5,
+                5.8,
+                0.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.4,
+              0.8,
+              0.8
+            ],
+            "ground": 5.606217516
+          }
+        ],
+        "path": {
+          "width": 4,
+          "verifiedPublicWidth": 3,
+          "worldEcologyBound": false
+        }
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-bamboo-understory-0-0-0-2-near-1ce6a01db9",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 4352
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 4352
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-ground-ramp-bamboo-path-0b2da270f6",
+      "name": "真实实体路基与连续坡面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            8.200000000000001,
+            0,
+            5.6000000000000005
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -19,
+              0,
+              -11
+            ],
+            "max": [
+              22,
+              42,
+              17
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "三竿共生根茎，底锚连接不以土台替代竹根",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              0,
+              0
+            ],
+            "max": [
+              11,
+              1,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "真实中空竹竿，0.6m量化外径和0.2m内孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              -10,
+              0,
+              -1
+            ],
+            "max": [
+              12,
+              42,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "每0.8m实竹节与内部节隔，上切口保持空腔",
+          "parent": "root",
+          "region": {
+            "min": [
+              -10,
+              0,
+              -1
+            ],
+            "max": [
+              12,
+              41,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "竹节上实接细枝，不借普通树干配方",
+          "parent": "root",
+          "region": {
+            "min": [
+              -15,
+              12,
+              -6
+            ],
+            "max": [
+              17,
+              39,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "带空隙的尖长竹叶，原生细格叶片和中脉相连",
+          "parent": "root",
+          "region": {
+            "min": [
+              -19,
+              11,
+              -11
+            ],
+            "max": [
+              22,
+              39,
+              17
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-0-bc1ec4e9e3",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-1-c8c4845ebb",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-2-a865596c08",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-3-09a25041d0",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-4-be36106e95",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-5-95d2a9f45f",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-6-a8699730df",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-7-be94554915",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-8-6be11e3462",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-9-97d799a8b0",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-10-ec40a7209c",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-11-76cf0191af",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-12-e8bd675698",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-13-6e5e84e170",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-14-afc8e4cdd1",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-15-ed00098694",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.4000000000000004,
+            0,
+            3.2
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              9,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "根颈与真实根茎",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -2
+            ],
+            "max": [
+              3,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "七条弧形蕨叶轴，保留一格以上羽片间隙",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              1,
+              -8
+            ],
+            "max": [
+              9,
+              8,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "成对真实羽片，不用不透明整张平面",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              4,
+              -8
+            ],
+            "max": [
+              8,
+              9,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-ferns-0-e55a816adc",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-062-height-0p6",
+      "name": "近景0.2m草叶簇组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            1.6
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -3,
+              0,
+              -3
+            ],
+            "max": [
+              5,
+              3,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "三株共用真实根茎，非整块草坡底盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -1
+            ],
+            "max": [
+              3,
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "原给定0.2m方茎，完整0.4或0.6m高度",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -1
+            ],
+            "max": [
+              3,
+              3,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "弯曲草叶侧展，成熟草叶与茎分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -3,
+              1,
+              -3
+            ],
+            "max": [
+              5,
+              3,
+              5
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-ferns-1-6a96ad2cd7",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-ferns-2-ee2c45aa0f",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-ferns-3-a02840f892",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-ferns-4-90a03675c5",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bamboo-ferns-5-f2f2eee26a",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-070-0",
+      "assetId": "architecture-civic-terrain-bamboo-understory-0-0-0-2-near-1ce6a01db9",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-1",
+      "assetId": "architecture-civic-ground-ramp-bamboo-path-0b2da270f6",
+      "name": "真实实体路基与连续坡面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-2",
+      "assetId": "architecture-civic-root-pocket-bamboo-0-bc1ec4e9e3",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-3",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -21,
+        6.4,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-4",
+      "assetId": "architecture-civic-root-pocket-bamboo-1-c8c4845ebb",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-5",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -21,
+        5.8,
+        -8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-6",
+      "assetId": "architecture-civic-root-pocket-bamboo-2-a865596c08",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-7",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -21,
+        5.8,
+        6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-8",
+      "assetId": "architecture-civic-root-pocket-bamboo-3-09a25041d0",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-9",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -21,
+        6.4,
+        20
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-10",
+      "assetId": "architecture-civic-root-pocket-bamboo-4-be36106e95",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-11",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -11,
+        5.6,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-12",
+      "assetId": "architecture-civic-root-pocket-bamboo-5-95d2a9f45f",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-13",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -11,
+        5,
+        -8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-14",
+      "assetId": "architecture-civic-root-pocket-bamboo-6-a8699730df",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-15",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -11,
+        5,
+        6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-16",
+      "assetId": "architecture-civic-root-pocket-bamboo-7-be94554915",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-17",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        -11,
+        5.6,
+        20
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-18",
+      "assetId": "architecture-civic-root-pocket-bamboo-8-6be11e3462",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-19",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        10,
+        5.4,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-20",
+      "assetId": "architecture-civic-root-pocket-bamboo-9-97d799a8b0",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-21",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        10,
+        5,
+        -8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-22",
+      "assetId": "architecture-civic-root-pocket-bamboo-10-ec40a7209c",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-23",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        10,
+        5,
+        6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-24",
+      "assetId": "architecture-civic-root-pocket-bamboo-11-76cf0191af",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-25",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        10,
+        5.4,
+        20
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-26",
+      "assetId": "architecture-civic-root-pocket-bamboo-12-e8bd675698",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-27",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        20,
+        6.4,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-28",
+      "assetId": "architecture-civic-root-pocket-bamboo-13-6e5e84e170",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-29",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        20,
+        5.8,
+        -8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-30",
+      "assetId": "architecture-civic-root-pocket-bamboo-14-afc8e4cdd1",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-31",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        20,
+        5.8,
+        6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-32",
+      "assetId": "architecture-civic-root-pocket-bamboo-15-ed00098694",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-33",
+      "assetId": "source-env-056",
+      "name": "竹竿竹节与叶簇母版",
+      "position": [
+        20,
+        6.4,
+        20
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-34",
+      "assetId": "architecture-civic-root-pocket-bamboo-ferns-0-e55a816adc",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-35",
+      "assetId": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        -17,
+        5.8,
+        -15
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-36",
+      "assetId": "architecture-civic-root-pocket-bamboo-ferns-1-6a96ad2cd7",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-37",
+      "assetId": "source-env-062-height-0p6",
+      "name": "近景0.2m草叶簇组件",
+      "position": [
+        -15,
+        5.6,
+        14
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-38",
+      "assetId": "architecture-civic-root-pocket-bamboo-ferns-2-ee2c45aa0f",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-39",
+      "assetId": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        15,
+        5.6,
+        -15
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-40",
+      "assetId": "architecture-civic-root-pocket-bamboo-ferns-3-a02840f892",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-41",
+      "assetId": "source-env-062-height-0p6",
+      "name": "近景0.2m草叶簇组件",
+      "position": [
+        15,
+        5.6,
+        14
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-42",
+      "assetId": "architecture-civic-root-pocket-bamboo-ferns-4-90a03675c5",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-43",
+      "assetId": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        -25,
+        5.8,
+        1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-44",
+      "assetId": "architecture-civic-root-pocket-bamboo-ferns-5-f2f2eee26a",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-070-45",
+      "assetId": "source-env-062-height-0p6",
+      "name": "近景0.2m草叶簇组件",
+      "position": [
+        25,
+        5.8,
+        1
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

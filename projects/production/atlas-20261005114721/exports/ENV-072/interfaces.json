@@ -1,0 +1,2833 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-072": {
+      "id": "env-072",
+      "name": "街院边界绿化与垂直绿化组合",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-072-0",
+          "assetId": "architecture-civic-terrain-green-court-0-0-0-2-near-4c14ccb5d5",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-1",
+          "assetId": "architecture-civic-modern-plate-18-14-0p4-pp-7834e94ad3",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            0,
+            4.4,
+            6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-2",
+          "assetId": "architecture-civic-district-wall-18-4p2-true-false-d5dcedea3e",
+          "name": "中轴实开门墙",
+          "position": [
+            0,
+            4.4,
+            -1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-3",
+          "assetId": "architecture-civic-district-wall-18-4p2-false-false-c672ab051f",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            0,
+            4.4,
+            13
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-072-4",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            9,
+            4.4,
+            6
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-072-5",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -9,
+            4.4,
+            6
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-072-6",
+          "assetId": "architecture-civic-roof-18-14-1p5-gable-closed-24b152ca3b",
+          "name": "连续飞檐与梁椽",
+          "position": [
+            0,
+            8.6,
+            6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-7",
+          "assetId": "architecture-civic-habitat-green-house-foot-42e2209699",
+          "name": "实承院宅与开放门前石台",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-8",
+          "assetId": "architecture-civic-ground-ramp-green-court-entry-f1cba10322",
+          "name": "真实实体路基与连续坡面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-9",
+          "assetId": "source-env-096-planterForm-tree",
+          "name": "独立花槽与树池边框母版",
+          "position": [
+            -15,
+            4,
+            -12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-10",
+          "assetId": "architecture-civic-habitat-court-soil--15-a6ef0e3824",
+          "name": "石树池内真实独立表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-11",
+          "assetId": "source-env-060",
+          "name": "既有灌木低冠组件",
+          "position": [
+            -13.4,
+            4.4,
+            -10.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-12",
+          "assetId": "source-env-096-planterForm-tree",
+          "name": "独立花槽与树池边框母版",
+          "position": [
+            11,
+            4,
+            -12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-13",
+          "assetId": "architecture-civic-habitat-court-soil-11-7b782da5ec",
+          "name": "石树池内真实独立表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-14",
+          "assetId": "source-env-060",
+          "name": "既有灌木低冠组件",
+          "position": [
+            12.6,
+            4.4,
+            -10.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-15",
+          "assetId": "architecture-civic-habitat-vine-wall-58bf744eac",
+          "name": "院界藤蔓真实附着石壁",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-072-16",
+          "assetId": "source-env-067-vineDrop-2p4",
+          "name": "真实岩壁附壁垂藤组件",
+          "position": [
+            -10,
+            6.8,
+            15.4
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-072-17",
+          "assetId": "source-env-067-vineDrop-2p4",
+          "name": "真实岩壁附壁垂藤组件",
+          "position": [
+            0,
+            6.8,
+            15.4
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-072-18",
+          "assetId": "source-env-067-vineDrop-2p4",
+          "name": "真实岩壁附壁垂藤组件",
+          "position": [
+            10,
+            6.8,
+            15.4
+          ],
+          "rotation": 2,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-072",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M050",
+          "slot": 8,
+          "imageSHA256": "fc3606d5fbfb42b54f178c42f615af1bccade28ae0eccdc7028f9467b4d5e809"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-001",
+          "BUILT-003",
+          "BUILT-011",
+          "BUILT-012",
+          "BUILT-013",
+          "BUILT-015",
+          "BUILT-017",
+          "BUILT-091",
+          "BUILT-246",
+          "BUILT-247",
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-060",
+          "ENV-067",
+          "ENV-087",
+          "ENV-088",
+          "ENV-096"
+        ],
+        "instanceGroups": {
+          "env-072-0": "terrain",
+          "env-072-1": "floor",
+          "env-072-2": "facade",
+          "env-072-3": "facade",
+          "env-072-4": "facade",
+          "env-072-5": "facade",
+          "env-072-6": "roof",
+          "env-072-7": "habitat-ground",
+          "env-072-8": "terrain-road",
+          "env-072-9": "planter",
+          "env-072-10": "habitat-ground",
+          "env-072-11": "vegetation",
+          "env-072-12": "planter",
+          "env-072-13": "habitat-ground",
+          "env-072-14": "vegetation",
+          "env-072-15": "habitat-ground",
+          "env-072-16": "vine",
+          "env-072-17": "vine",
+          "env-072-18": "vine"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "green-court-house floor 0",
+            "points": [
+              [
+                1.4,
+                4.4,
+                1.5
+              ],
+              [
+                1.4,
+                4.4,
+                0
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "green-court-house entrance",
+            "points": [
+              [
+                0,
+                4.4,
+                -1.6
+              ],
+              [
+                0,
+                4.4,
+                0
+              ],
+              [
+                -1.4,
+                4.4,
+                0
+              ],
+              [
+                -1.4,
+                4.4,
+                1.5999999999999996
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "unblocked green court entrance",
+            "points": [
+              [
+                0,
+                4,
+                -20
+              ],
+              [
+                0,
+                4.4,
+                -3
+              ],
+              [
+                0,
+                4.4,
+                -1
+              ]
+            ],
+            "width": 3
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "tree planter roots on soil",
+            "point": [
+              -13.4,
+              4.38,
+              -10.4
+            ],
+            "exclude": "env-072-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "open bottom planter soil contacts terrain",
+            "point": [
+              -13.4,
+              3.98,
+              -10.4
+            ],
+            "exclude": "env-072-10"
+          },
+          {
+            "name": "tree planter roots on soil",
+            "point": [
+              12.6,
+              4.38,
+              -10.4
+            ],
+            "exclude": "env-072-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "open bottom planter soil contacts terrain",
+            "point": [
+              12.6,
+              3.98,
+              -10.4
+            ],
+            "exclude": "env-072-13"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -9.072641873329774,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -8.725684845517282,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -8.90336278009687,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -9.070919781617656,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -9.708316132486658,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -9.52330906885597,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -9.870087324125713,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -9.704955085090672,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -10.336344577787118,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -10.4833821194365,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -10.680434366751259,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -10.334434706182869,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -11.114837063534454,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -11.45873357276983,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -11.324890884701412,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -11.116134294867065,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-16",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              0.9273581266702252,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              1.2743151544827174,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              1.09663721990313,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              0.9290802183823438,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              0.29168386751334174,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              0.4766909311440307,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              0.129912675874287,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              0.29504491490932805,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -0.33634457778711807,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -0.48338211943650067,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -0.6804343667512588,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -0.3344347061828696,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -1.114837063534454,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -1.458733572769831,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -1.324890884701413,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              -1.1161342948670652,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-17",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              10.927358126670226,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              11.274315154482718,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              11.09663721990313,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              10.929080218382344,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              10.291683867513342,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              10.47669093114403,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              10.129912675874287,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              10.295044914909328,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              9.663655422212882,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              9.5166178805635,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              9.319565633248741,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              9.665565293817131,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              8.885162936465546,
+              6.299999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              8.54126642723017,
+              5.699999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              8.675109115298588,
+              5.1,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          },
+          {
+            "name": "vine actual wall attachment",
+            "point": [
+              8.883865705132935,
+              4.499999999999999,
+              15.39
+            ],
+            "exclude": "env-072-18",
+            "role": "wall"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored environment only. Original terrain, hydrology, ecology, residency, permissions and controllers remain unbound.",
+        "terrainAuthority": "Actual closed continuous terrain triangles;0.2m minimum native rock cells. Canonical plants and transport components retain their full original grids.",
+        "terrainTiles": [
+          {
+            "instance": "env-072-0",
+            "assetId": "architecture-civic-terrain-green-court-0-0-0-2-near-4c14ccb5d5",
+            "authorityAssetId": "architecture-civic-terrain-green-court-0-0-0-2-near-4c14ccb5d5",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 48,
+            "step": 2,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 48,
+          "step": 2,
+          "origin": [
+            -24,
+            -24
+          ],
+          "continuousPhysicalSurface": true
+        },
+        "greenCourt": {
+          "house": {
+            "key": "green-court-house",
+            "position": [
+              0,
+              4.4,
+              6
+            ],
+            "footprint": [
+              18,
+              14
+            ],
+            "floors": 1,
+            "levels": [
+              {
+                "level": 0,
+                "walkY": 4.4,
+                "proposedUse": "unassigned",
+                "permissions": "unbound"
+              }
+            ],
+            "instanceIds": [
+              "env-072-1",
+              "env-072-2",
+              "env-072-3",
+              "env-072-4",
+              "env-072-5",
+              "env-072-6"
+            ],
+            "frontDoor": [
+              0,
+              4.4,
+              -1
+            ],
+            "backDoor": null
+          },
+          "containers": [
+            {
+              "container": "env-072-9",
+              "soil": "env-072-10",
+              "plant": "env-072-11",
+              "cavity": {
+                "openings": [
+                  {
+                    "min": [
+                      2,
+                      3,
+                      2
+                    ],
+                    "max": [
+                      16,
+                      7,
+                      16
+                    ]
+                  }
+                ],
+                "soilCavityM": {
+                  "min": [
+                    0.4,
+                    0,
+                    0.4
+                  ],
+                  "max": [
+                    3.2,
+                    0.39999999999999997,
+                    3.2
+                  ]
+                },
+                "plantIncluded": false
+              },
+              "openBottom": true
+            },
+            {
+              "container": "env-072-12",
+              "soil": "env-072-13",
+              "plant": "env-072-14",
+              "cavity": {
+                "openings": [
+                  {
+                    "min": [
+                      2,
+                      3,
+                      2
+                    ],
+                    "max": [
+                      16,
+                      7,
+                      16
+                    ]
+                  }
+                ],
+                "soilCavityM": {
+                  "min": [
+                    0.4,
+                    0,
+                    0.4
+                  ],
+                  "max": [
+                    3.2,
+                    0.39999999999999997,
+                    3.2
+                  ]
+                },
+                "plantIncluded": false
+              },
+              "openBottom": true
+            }
+          ],
+          "vines": [
+            "env-072-16",
+            "env-072-17",
+            "env-072-18"
+          ],
+          "wall": "env-072-15",
+          "doorsAndWindowsRetained": true,
+          "waterViewDirection": "front -Z",
+          "permissionsBound": false
+        }
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-green-court-0-0-0-2-near-4c14ccb5d5",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-plate-18-14-0p4-pp-7834e94ad3",
+      "name": "石铺面与混凝土承板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "civic-floor",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            18,
+            0,
+            14
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-18-4p2-true-false-d5dcedea3e",
+      "name": "中轴实开门墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "civic-walk",
+          "position": [
+            0,
+            0,
+            -0.1
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            3.6,
+            3,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 108
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 240
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 48
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 48
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 168
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-18-4p2-false-false-c672ab051f",
+      "name": "分格窗洞与木石墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 72
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 180
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 36
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 72
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 180
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 36
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-roof-18-14-1p5-gable-closed-24b152ca3b",
+      "name": "连续飞檐与梁椽",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-5",
+          "material": 5,
+          "collision": true,
+          "triangles": 300
+        },
+        {
+          "name": "material-145",
+          "material": 145,
+          "collision": true,
+          "triangles": 288
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 528
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-41",
+          "material": 41,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-habitat-green-house-foot-42e2209699",
+      "name": "实承院宅与开放门前石台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 48
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 48
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-ground-ramp-green-court-entry-f1cba10322",
+      "name": "真实实体路基与连续坡面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-096-planterForm-tree",
+      "name": "独立花槽与树池边框母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            3.6
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              3,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "真正空心且厚0.4米的独立石框",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              3,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "底脚石带与可读石缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              2,
+              18
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            2,
+            3,
+            2
+          ],
+          "max": [
+            16,
+            7,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-habitat-court-soil--15-a6ef0e3824",
+      "name": "石树池内真实独立表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-060",
+      "name": "既有灌木低冠组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.8000000000000003,
+            0,
+            2.2
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              0,
+              -5
+            ],
+            "max": [
+              7,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "多根分叉木质细枝与连续接地根颈",
+          "parent": "root",
+          "region": {
+            "min": [
+              -5,
+              0,
+              -3
+            ],
+            "max": [
+              6,
+              8,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "彼此交错且保留根际透空的真实灌木叶簇",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              2,
+              -5
+            ],
+            "max": [
+              7,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "原给定2.8×1.8×2.2米的边缘叶梢",
+          "parent": "root",
+          "region": {
+            "min": [
+              -5,
+              5,
+              -3
+            ],
+            "max": [
+              6,
+              9,
+              5
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-habitat-court-soil-11-7b782da5ec",
+      "name": "石树池内真实独立表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-067-vineDrop-2p4",
+      "name": "真实岩壁附壁垂藤组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "wall-top",
+          "kind": "wall-attachment",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            2.4,
+            0,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-0",
+          "kind": "wall-attachment",
+          "position": [
+            -1.0273581266702252,
+            -0.6000000000000001,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-1",
+          "kind": "wall-attachment",
+          "position": [
+            -1.3743151544827175,
+            -1.2000000000000002,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-2",
+          "kind": "wall-attachment",
+          "position": [
+            -1.19663721990313,
+            -1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-3",
+          "kind": "wall-attachment",
+          "position": [
+            -1.0290802183823438,
+            -2.4000000000000004,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-4",
+          "kind": "wall-attachment",
+          "position": [
+            -0.3916838675133417,
+            -0.6000000000000001,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-5",
+          "kind": "wall-attachment",
+          "position": [
+            -0.5766909311440307,
+            -1.2000000000000002,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-6",
+          "kind": "wall-attachment",
+          "position": [
+            -0.22991267587428701,
+            -1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-7",
+          "kind": "wall-attachment",
+          "position": [
+            -0.395044914909328,
+            -2.4000000000000004,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-8",
+          "kind": "wall-attachment",
+          "position": [
+            0.23634457778711807,
+            -0.6000000000000001,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-9",
+          "kind": "wall-attachment",
+          "position": [
+            0.3833821194365007,
+            -1.2000000000000002,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-10",
+          "kind": "wall-attachment",
+          "position": [
+            0.5804343667512588,
+            -1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-11",
+          "kind": "wall-attachment",
+          "position": [
+            0.23443470618286957,
+            -2.4000000000000004,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-12",
+          "kind": "wall-attachment",
+          "position": [
+            1.014837063534454,
+            -0.6000000000000001,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-13",
+          "kind": "wall-attachment",
+          "position": [
+            1.3587335727698309,
+            -1.2000000000000002,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-14",
+          "kind": "wall-attachment",
+          "position": [
+            1.2248908847014128,
+            -1.8,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        },
+        {
+          "id": "holdfast-15",
+          "kind": "wall-attachment",
+          "position": [
+            1.016134294867065,
+            -2.4000000000000004,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.2,
+            0.2,
+            0
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              -12,
+              -3
+            ],
+            "max": [
+              9,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "顶部横向攀援茎与四条实际垂茎",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -12,
+              -1
+            ],
+            "max": [
+              8,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "有独立轮廓的贴壁藤叶，向墙外生长",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              -12,
+              -3
+            ],
+            "max": [
+              9,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶锚与分层贴壁附着组织",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              -12,
+              -1
+            ],
+            "max": [
+              8,
+              -2,
+              0
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-habitat-vine-wall-58bf744eac",
+      "name": "院界藤蔓真实附着石壁",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-072-0",
+      "assetId": "architecture-civic-terrain-green-court-0-0-0-2-near-4c14ccb5d5",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-1",
+      "assetId": "architecture-civic-modern-plate-18-14-0p4-pp-7834e94ad3",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        0,
+        4.4,
+        6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-2",
+      "assetId": "architecture-civic-district-wall-18-4p2-true-false-d5dcedea3e",
+      "name": "中轴实开门墙",
+      "position": [
+        0,
+        4.4,
+        -1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-3",
+      "assetId": "architecture-civic-district-wall-18-4p2-false-false-c672ab051f",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        0,
+        4.4,
+        13
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-072-4",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        9,
+        4.4,
+        6
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-072-5",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -9,
+        4.4,
+        6
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-072-6",
+      "assetId": "architecture-civic-roof-18-14-1p5-gable-closed-24b152ca3b",
+      "name": "连续飞檐与梁椽",
+      "position": [
+        0,
+        8.6,
+        6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-7",
+      "assetId": "architecture-civic-habitat-green-house-foot-42e2209699",
+      "name": "实承院宅与开放门前石台",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-8",
+      "assetId": "architecture-civic-ground-ramp-green-court-entry-f1cba10322",
+      "name": "真实实体路基与连续坡面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-9",
+      "assetId": "source-env-096-planterForm-tree",
+      "name": "独立花槽与树池边框母版",
+      "position": [
+        -15,
+        4,
+        -12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-10",
+      "assetId": "architecture-civic-habitat-court-soil--15-a6ef0e3824",
+      "name": "石树池内真实独立表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-11",
+      "assetId": "source-env-060",
+      "name": "既有灌木低冠组件",
+      "position": [
+        -13.4,
+        4.4,
+        -10.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-12",
+      "assetId": "source-env-096-planterForm-tree",
+      "name": "独立花槽与树池边框母版",
+      "position": [
+        11,
+        4,
+        -12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-13",
+      "assetId": "architecture-civic-habitat-court-soil-11-7b782da5ec",
+      "name": "石树池内真实独立表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-14",
+      "assetId": "source-env-060",
+      "name": "既有灌木低冠组件",
+      "position": [
+        12.6,
+        4.4,
+        -10.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-15",
+      "assetId": "architecture-civic-habitat-vine-wall-58bf744eac",
+      "name": "院界藤蔓真实附着石壁",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-072-16",
+      "assetId": "source-env-067-vineDrop-2p4",
+      "name": "真实岩壁附壁垂藤组件",
+      "position": [
+        -10,
+        6.8,
+        15.4
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-072-17",
+      "assetId": "source-env-067-vineDrop-2p4",
+      "name": "真实岩壁附壁垂藤组件",
+      "position": [
+        0,
+        6.8,
+        15.4
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-072-18",
+      "assetId": "source-env-067-vineDrop-2p4",
+      "name": "真实岩壁附壁垂藤组件",
+      "position": [
+        10,
+        6.8,
+        15.4
+      ],
+      "rotation": 2,
+      "parent": null
+    }
+  ]
+}

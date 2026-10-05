@@ -1,0 +1,7766 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-053": {
+      "id": "env-053",
+      "name": "城区林缘与山肩林带组合",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-053-0",
+          "assetId": "architecture-civic-terrain-city-forest-0-0-0-2-near-0f25880f3b",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-1",
+          "assetId": "architecture-civic-ground-ramp-forest-public-street-0d069aea02",
+          "name": "真实实体路基与连续坡面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-2",
+          "assetId": "architecture-civic-root-pocket-belt-19-0-0-57e9fe988a",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-3",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            14,
+            5.6,
+            -36
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-4",
+          "assetId": "architecture-civic-root-pocket-belt-19-0-1-b2a410fe4f",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-5",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            24,
+            6.6,
+            -36
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-6",
+          "assetId": "architecture-civic-root-pocket-belt-19-1-0-3d914fc78c",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-7",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -14,
+            5.6,
+            -36
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-8",
+          "assetId": "architecture-civic-root-pocket-belt-19-1-1-27211fd335",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-9",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -24,
+            6.4,
+            -36
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-10",
+          "assetId": "architecture-civic-root-pocket-belt-19-2-0-923d6a9a74",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-11",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            14,
+            5.8,
+            -24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-12",
+          "assetId": "architecture-civic-root-pocket-belt-19-2-1-489411dda6",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-13",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            24,
+            6.6,
+            -24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-14",
+          "assetId": "architecture-civic-root-pocket-belt-19-3-0-81424ae9b2",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-15",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -14,
+            5.8,
+            -24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-16",
+          "assetId": "architecture-civic-root-pocket-belt-19-3-1-4e82416269",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-17",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -24,
+            6.6,
+            -24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-18",
+          "assetId": "architecture-civic-root-pocket-belt-19-4-0-b4294e2f31",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-19",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            14,
+            5.6,
+            -12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-20",
+          "assetId": "architecture-civic-root-pocket-belt-19-4-1-d37aea18f6",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-21",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            24,
+            6.4,
+            -12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-22",
+          "assetId": "architecture-civic-root-pocket-belt-19-5-0-4dc990caa6",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-23",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -14,
+            5.4,
+            -12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-24",
+          "assetId": "architecture-civic-root-pocket-belt-19-5-1-ce10503712",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-25",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -24,
+            6.4,
+            -12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-26",
+          "assetId": "architecture-civic-root-pocket-belt-19-6-0-a107e1bc27",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-27",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            14,
+            5,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-28",
+          "assetId": "architecture-civic-root-pocket-belt-19-6-1-01771a931d",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-29",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            24,
+            6,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-30",
+          "assetId": "architecture-civic-root-pocket-belt-19-7-0-14290c3ca1",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-31",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -14,
+            5,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-32",
+          "assetId": "architecture-civic-root-pocket-belt-19-7-1-a6c56e002e",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-33",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -24,
+            6,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-34",
+          "assetId": "architecture-civic-root-pocket-belt-19-8-0-d06a124768",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-35",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            31,
+            6.8,
+            12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-36",
+          "assetId": "architecture-civic-root-pocket-belt-19-8-1-fc2dd1a71b",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-37",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            41,
+            7.6,
+            12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-38",
+          "assetId": "architecture-civic-root-pocket-belt-19-9-0-b312820df6",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-39",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            -31,
+            6.8,
+            12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-40",
+          "assetId": "architecture-civic-root-pocket-belt-19-9-1-4379848af7",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-41",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            -41,
+            7.6,
+            12
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-42",
+          "assetId": "architecture-civic-root-pocket-belt-19-10-0-7be7b650ca",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-43",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            31,
+            7.2,
+            24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-44",
+          "assetId": "architecture-civic-root-pocket-belt-19-10-1-39ca9507e2",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-45",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            41,
+            8,
+            24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-46",
+          "assetId": "architecture-civic-root-pocket-belt-19-11-0-cbc5a18a80",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-47",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            -31,
+            7.2,
+            24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-48",
+          "assetId": "architecture-civic-root-pocket-belt-19-11-1-0f3065a867",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-49",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            -41,
+            8,
+            24
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-50",
+          "assetId": "architecture-civic-root-pocket-belt-19-12-0-875a96515a",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-51",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            31,
+            7,
+            36
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-52",
+          "assetId": "architecture-civic-root-pocket-belt-19-12-1-779f9d9c87",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-053-53",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            41,
+            7.8,
+            36
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-053",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M050",
+          "slot": 5,
+          "imageSHA256": "fc3606d5fbfb42b54f178c42f615af1bccade28ae0eccdc7028f9467b4d5e809"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-050",
+          "ENV-054",
+          "ENV-055",
+          "ENV-057",
+          "ENV-087",
+          "ENV-088"
+        ],
+        "instanceGroups": {
+          "env-053-0": "terrain",
+          "env-053-1": "terrain-road",
+          "env-053-2": "root-soil",
+          "env-053-3": "vegetation",
+          "env-053-4": "root-soil",
+          "env-053-5": "vegetation",
+          "env-053-6": "root-soil",
+          "env-053-7": "vegetation",
+          "env-053-8": "root-soil",
+          "env-053-9": "vegetation",
+          "env-053-10": "root-soil",
+          "env-053-11": "vegetation",
+          "env-053-12": "root-soil",
+          "env-053-13": "vegetation",
+          "env-053-14": "root-soil",
+          "env-053-15": "vegetation",
+          "env-053-16": "root-soil",
+          "env-053-17": "vegetation",
+          "env-053-18": "root-soil",
+          "env-053-19": "vegetation",
+          "env-053-20": "root-soil",
+          "env-053-21": "vegetation",
+          "env-053-22": "root-soil",
+          "env-053-23": "vegetation",
+          "env-053-24": "root-soil",
+          "env-053-25": "vegetation",
+          "env-053-26": "root-soil",
+          "env-053-27": "vegetation",
+          "env-053-28": "root-soil",
+          "env-053-29": "vegetation",
+          "env-053-30": "root-soil",
+          "env-053-31": "vegetation",
+          "env-053-32": "root-soil",
+          "env-053-33": "vegetation",
+          "env-053-34": "root-soil",
+          "env-053-35": "vegetation",
+          "env-053-36": "root-soil",
+          "env-053-37": "vegetation",
+          "env-053-38": "root-soil",
+          "env-053-39": "vegetation",
+          "env-053-40": "root-soil",
+          "env-053-41": "vegetation",
+          "env-053-42": "root-soil",
+          "env-053-43": "vegetation",
+          "env-053-44": "root-soil",
+          "env-053-45": "vegetation",
+          "env-053-46": "root-soil",
+          "env-053-47": "vegetation",
+          "env-053-48": "root-soil",
+          "env-053-49": "vegetation",
+          "env-053-50": "root-soil",
+          "env-053-51": "vegetation",
+          "env-053-52": "root-soil",
+          "env-053-53": "vegetation"
+        },
+        "parameters": {
+          "layoutSeed": 19
+        },
+        "routes": [
+          {
+            "name": "forest-public-street actual public corridor",
+            "points": [
+              [
+                0,
+                4.2,
+                -45.5
+              ],
+              [
+                0,
+                4.2,
+                45.5
+              ]
+            ],
+            "width": 3
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "belt-19-0-0 root pocket terrain 0",
+            "point": [
+              12.2,
+              4.907587154000001,
+              -37.8
+            ],
+            "exclude": "env-053-2"
+          },
+          {
+            "name": "belt-19-0-0 root pocket terrain 1",
+            "point": [
+              16,
+              5.254895057000001,
+              -37.8
+            ],
+            "exclude": "env-053-2"
+          },
+          {
+            "name": "belt-19-0-0 root pocket terrain 2",
+            "point": [
+              16,
+              5.438434996000001,
+              -34
+            ],
+            "exclude": "env-053-2"
+          },
+          {
+            "name": "belt-19-0-0 root pocket terrain 3",
+            "point": [
+              12.2,
+              5.069361059,
+              -34
+            ],
+            "exclude": "env-053-2"
+          },
+          {
+            "name": "belt-19-0-0 root pocket terrain 4",
+            "point": [
+              14,
+              5.18431832,
+              -36
+            ],
+            "exclude": "env-053-2"
+          },
+          {
+            "name": "belt-19-0-0 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              -37.1
+            ],
+            "exclude": "env-053-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-0 canonical root on actual soil",
+            "point": [
+              14.1,
+              5.58,
+              -36.1
+            ],
+            "exclude": "env-053-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-0 canonical root on actual soil",
+            "point": [
+              14.5,
+              5.58,
+              -35.7
+            ],
+            "exclude": "env-053-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-0 canonical root on actual soil",
+            "point": [
+              14.3,
+              5.58,
+              -35.3
+            ],
+            "exclude": "env-053-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              5.58,
+              -35.5
+            ],
+            "exclude": "env-053-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              5.58,
+              -36.9
+            ],
+            "exclude": "env-053-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-0 canonical root on actual soil",
+            "point": [
+              13.9,
+              5.58,
+              -36.1
+            ],
+            "exclude": "env-053-3",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-1 root pocket terrain 0",
+            "point": [
+              21.4,
+              5.657274336,
+              -38.4
+            ],
+            "exclude": "env-053-4"
+          },
+          {
+            "name": "belt-19-0-1 root pocket terrain 1",
+            "point": [
+              26.8,
+              6.089274336000001,
+              -38.4
+            ],
+            "exclude": "env-053-4"
+          },
+          {
+            "name": "belt-19-0-1 root pocket terrain 2",
+            "point": [
+              26.8,
+              6.327341732000001,
+              -33.4
+            ],
+            "exclude": "env-053-4"
+          },
+          {
+            "name": "belt-19-0-1 root pocket terrain 3",
+            "point": [
+              21.4,
+              5.895341732,
+              -33.4
+            ],
+            "exclude": "env-053-4"
+          },
+          {
+            "name": "belt-19-0-1 root pocket terrain 4",
+            "point": [
+              24,
+              5.984318320000001,
+              -36
+            ],
+            "exclude": "env-053-4"
+          },
+          {
+            "name": "belt-19-0-1 canonical root on actual soil",
+            "point": [
+              25.7,
+              6.58,
+              -37.7
+            ],
+            "exclude": "env-053-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              6.58,
+              -36.3
+            ],
+            "exclude": "env-053-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              6.58,
+              -35.7
+            ],
+            "exclude": "env-053-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-1 canonical root on actual soil",
+            "point": [
+              24.1,
+              6.58,
+              -35.1
+            ],
+            "exclude": "env-053-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.58,
+              -35.5
+            ],
+            "exclude": "env-053-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.58,
+              -37.5
+            ],
+            "exclude": "env-053-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-0-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.58,
+              -36.1
+            ],
+            "exclude": "env-053-5",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-0 root pocket terrain 0",
+            "point": [
+              -15.8,
+              5.238895057000001,
+              -37.8
+            ],
+            "exclude": "env-053-6"
+          },
+          {
+            "name": "belt-19-1-0 root pocket terrain 1",
+            "point": [
+              -12,
+              4.885533175000001,
+              -37.8
+            ],
+            "exclude": "env-053-6"
+          },
+          {
+            "name": "belt-19-1-0 root pocket terrain 2",
+            "point": [
+              -12,
+              5.0461306210000005,
+              -34
+            ],
+            "exclude": "env-053-6"
+          },
+          {
+            "name": "belt-19-1-0 root pocket terrain 3",
+            "point": [
+              -15.8,
+              5.422434996000001,
+              -34
+            ],
+            "exclude": "env-053-6"
+          },
+          {
+            "name": "belt-19-1-0 root pocket terrain 4",
+            "point": [
+              -14,
+              5.18431832,
+              -36
+            ],
+            "exclude": "env-053-6"
+          },
+          {
+            "name": "belt-19-1-0 canonical root on actual soil",
+            "point": [
+              -12.9,
+              5.58,
+              -37.1
+            ],
+            "exclude": "env-053-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-0 canonical root on actual soil",
+            "point": [
+              -13.9,
+              5.58,
+              -36.1
+            ],
+            "exclude": "env-053-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-0 canonical root on actual soil",
+            "point": [
+              -13.5,
+              5.58,
+              -35.7
+            ],
+            "exclude": "env-053-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-0 canonical root on actual soil",
+            "point": [
+              -13.7,
+              5.58,
+              -35.3
+            ],
+            "exclude": "env-053-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              5.58,
+              -35.5
+            ],
+            "exclude": "env-053-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              5.58,
+              -36.9
+            ],
+            "exclude": "env-053-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-0 canonical root on actual soil",
+            "point": [
+              -14.1,
+              5.58,
+              -36.1
+            ],
+            "exclude": "env-053-7",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-1 root pocket terrain 0",
+            "point": [
+              -26.6,
+              6.073274336000001,
+              -38.4
+            ],
+            "exclude": "env-053-8"
+          },
+          {
+            "name": "belt-19-1-1 root pocket terrain 1",
+            "point": [
+              -21.2,
+              5.641274336,
+              -38.4
+            ],
+            "exclude": "env-053-8"
+          },
+          {
+            "name": "belt-19-1-1 root pocket terrain 2",
+            "point": [
+              -21.2,
+              5.879341732,
+              -33.4
+            ],
+            "exclude": "env-053-8"
+          },
+          {
+            "name": "belt-19-1-1 root pocket terrain 3",
+            "point": [
+              -26.6,
+              6.311341732000001,
+              -33.4
+            ],
+            "exclude": "env-053-8"
+          },
+          {
+            "name": "belt-19-1-1 root pocket terrain 4",
+            "point": [
+              -24,
+              5.984318320000001,
+              -36
+            ],
+            "exclude": "env-053-8"
+          },
+          {
+            "name": "belt-19-1-1 canonical root on actual soil",
+            "point": [
+              -22.3,
+              6.380000000000001,
+              -37.7
+            ],
+            "exclude": "env-053-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              6.380000000000001,
+              -36.3
+            ],
+            "exclude": "env-053-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              6.380000000000001,
+              -35.7
+            ],
+            "exclude": "env-053-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-1 canonical root on actual soil",
+            "point": [
+              -23.9,
+              6.380000000000001,
+              -35.1
+            ],
+            "exclude": "env-053-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.380000000000001,
+              -35.5
+            ],
+            "exclude": "env-053-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.380000000000001,
+              -37.5
+            ],
+            "exclude": "env-053-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-1-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.380000000000001,
+              -36.1
+            ],
+            "exclude": "env-053-9",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-0 root pocket terrain 0",
+            "point": [
+              12.2,
+              5.263750548000001,
+              -25.8
+            ],
+            "exclude": "env-053-10"
+          },
+          {
+            "name": "belt-19-2-0 root pocket terrain 1",
+            "point": [
+              16,
+              5.657486383,
+              -25.8
+            ],
+            "exclude": "env-053-10"
+          },
+          {
+            "name": "belt-19-2-0 root pocket terrain 2",
+            "point": [
+              16,
+              5.629720951,
+              -22
+            ],
+            "exclude": "env-053-10"
+          },
+          {
+            "name": "belt-19-2-0 root pocket terrain 3",
+            "point": [
+              12.2,
+              5.239127344000001,
+              -22
+            ],
+            "exclude": "env-053-10"
+          },
+          {
+            "name": "belt-19-2-0 root pocket terrain 4",
+            "point": [
+              14,
+              5.495996999000001,
+              -24
+            ],
+            "exclude": "env-053-10"
+          },
+          {
+            "name": "belt-19-2-0 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.78,
+              -25.1
+            ],
+            "exclude": "env-053-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-0 canonical root on actual soil",
+            "point": [
+              14.1,
+              5.78,
+              -24.1
+            ],
+            "exclude": "env-053-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-0 canonical root on actual soil",
+            "point": [
+              14.5,
+              5.78,
+              -23.7
+            ],
+            "exclude": "env-053-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-0 canonical root on actual soil",
+            "point": [
+              14.3,
+              5.78,
+              -23.3
+            ],
+            "exclude": "env-053-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              5.78,
+              -23.5
+            ],
+            "exclude": "env-053-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              5.78,
+              -24.9
+            ],
+            "exclude": "env-053-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-0 canonical root on actual soil",
+            "point": [
+              13.9,
+              5.78,
+              -24.1
+            ],
+            "exclude": "env-053-11",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-1 root pocket terrain 0",
+            "point": [
+              21.4,
+              6.085038031000001,
+              -26.4
+            ],
+            "exclude": "env-053-12"
+          },
+          {
+            "name": "belt-19-2-1 root pocket terrain 1",
+            "point": [
+              26.8,
+              6.517038031,
+              -26.4
+            ],
+            "exclude": "env-053-12"
+          },
+          {
+            "name": "belt-19-2-1 root pocket terrain 2",
+            "point": [
+              26.8,
+              6.478941900000001,
+              -21.4
+            ],
+            "exclude": "env-053-12"
+          },
+          {
+            "name": "belt-19-2-1 root pocket terrain 3",
+            "point": [
+              21.4,
+              6.0469419,
+              -21.4
+            ],
+            "exclude": "env-053-12"
+          },
+          {
+            "name": "belt-19-2-1 root pocket terrain 4",
+            "point": [
+              24,
+              6.295996999000001,
+              -24
+            ],
+            "exclude": "env-053-12"
+          },
+          {
+            "name": "belt-19-2-1 canonical root on actual soil",
+            "point": [
+              25.7,
+              6.58,
+              -25.7
+            ],
+            "exclude": "env-053-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              6.58,
+              -24.3
+            ],
+            "exclude": "env-053-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              6.58,
+              -23.7
+            ],
+            "exclude": "env-053-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-1 canonical root on actual soil",
+            "point": [
+              24.1,
+              6.58,
+              -23.1
+            ],
+            "exclude": "env-053-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.58,
+              -23.5
+            ],
+            "exclude": "env-053-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.58,
+              -25.5
+            ],
+            "exclude": "env-053-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-2-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.58,
+              -24.1
+            ],
+            "exclude": "env-053-13",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-0 root pocket terrain 0",
+            "point": [
+              -15.8,
+              5.641486383,
+              -25.8
+            ],
+            "exclude": "env-053-14"
+          },
+          {
+            "name": "belt-19-3-0 root pocket terrain 1",
+            "point": [
+              -12,
+              5.2378005850000005,
+              -25.8
+            ],
+            "exclude": "env-053-14"
+          },
+          {
+            "name": "belt-19-3-0 root pocket terrain 2",
+            "point": [
+              -12,
+              5.213505833,
+              -22
+            ],
+            "exclude": "env-053-14"
+          },
+          {
+            "name": "belt-19-3-0 root pocket terrain 3",
+            "point": [
+              -15.8,
+              5.613720951,
+              -22
+            ],
+            "exclude": "env-053-14"
+          },
+          {
+            "name": "belt-19-3-0 root pocket terrain 4",
+            "point": [
+              -14,
+              5.495996999000001,
+              -24
+            ],
+            "exclude": "env-053-14"
+          },
+          {
+            "name": "belt-19-3-0 canonical root on actual soil",
+            "point": [
+              -12.9,
+              5.78,
+              -25.1
+            ],
+            "exclude": "env-053-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-0 canonical root on actual soil",
+            "point": [
+              -13.9,
+              5.78,
+              -24.1
+            ],
+            "exclude": "env-053-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-0 canonical root on actual soil",
+            "point": [
+              -13.5,
+              5.78,
+              -23.7
+            ],
+            "exclude": "env-053-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-0 canonical root on actual soil",
+            "point": [
+              -13.7,
+              5.78,
+              -23.3
+            ],
+            "exclude": "env-053-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              5.78,
+              -23.5
+            ],
+            "exclude": "env-053-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              5.78,
+              -24.9
+            ],
+            "exclude": "env-053-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-0 canonical root on actual soil",
+            "point": [
+              -14.1,
+              5.78,
+              -24.1
+            ],
+            "exclude": "env-053-15",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-1 root pocket terrain 0",
+            "point": [
+              -26.6,
+              6.501038031,
+              -26.4
+            ],
+            "exclude": "env-053-16"
+          },
+          {
+            "name": "belt-19-3-1 root pocket terrain 1",
+            "point": [
+              -21.2,
+              6.069038031000001,
+              -26.4
+            ],
+            "exclude": "env-053-16"
+          },
+          {
+            "name": "belt-19-3-1 root pocket terrain 2",
+            "point": [
+              -21.2,
+              6.0309419,
+              -21.4
+            ],
+            "exclude": "env-053-16"
+          },
+          {
+            "name": "belt-19-3-1 root pocket terrain 3",
+            "point": [
+              -26.6,
+              6.462941900000001,
+              -21.4
+            ],
+            "exclude": "env-053-16"
+          },
+          {
+            "name": "belt-19-3-1 root pocket terrain 4",
+            "point": [
+              -24,
+              6.295996999000001,
+              -24
+            ],
+            "exclude": "env-053-16"
+          },
+          {
+            "name": "belt-19-3-1 canonical root on actual soil",
+            "point": [
+              -22.3,
+              6.58,
+              -25.7
+            ],
+            "exclude": "env-053-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              6.58,
+              -24.3
+            ],
+            "exclude": "env-053-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              6.58,
+              -23.7
+            ],
+            "exclude": "env-053-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-1 canonical root on actual soil",
+            "point": [
+              -23.9,
+              6.58,
+              -23.1
+            ],
+            "exclude": "env-053-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.58,
+              -23.5
+            ],
+            "exclude": "env-053-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.58,
+              -25.5
+            ],
+            "exclude": "env-053-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-3-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.58,
+              -24.1
+            ],
+            "exclude": "env-053-17",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-0 root pocket terrain 0",
+            "point": [
+              12.2,
+              4.964318019,
+              -13.8
+            ],
+            "exclude": "env-053-18"
+          },
+          {
+            "name": "belt-19-4-0 root pocket terrain 1",
+            "point": [
+              16,
+              5.3213390920000005,
+              -13.8
+            ],
+            "exclude": "env-053-18"
+          },
+          {
+            "name": "belt-19-4-0 root pocket terrain 2",
+            "point": [
+              16,
+              5.133871055,
+              -10
+            ],
+            "exclude": "env-053-18"
+          },
+          {
+            "name": "belt-19-4-0 root pocket terrain 3",
+            "point": [
+              12.2,
+              4.799060561,
+              -10
+            ],
+            "exclude": "env-053-18"
+          },
+          {
+            "name": "belt-19-4-0 root pocket terrain 4",
+            "point": [
+              14,
+              5.071705119000001,
+              -12
+            ],
+            "exclude": "env-053-18"
+          },
+          {
+            "name": "belt-19-4-0 canonical root on actual soil",
+            "point": [
+              15.1,
+              5.58,
+              -13.1
+            ],
+            "exclude": "env-053-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-0 canonical root on actual soil",
+            "point": [
+              14.1,
+              5.58,
+              -12.1
+            ],
+            "exclude": "env-053-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-0 canonical root on actual soil",
+            "point": [
+              14.5,
+              5.58,
+              -11.7
+            ],
+            "exclude": "env-053-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-0 canonical root on actual soil",
+            "point": [
+              14.3,
+              5.58,
+              -11.3
+            ],
+            "exclude": "env-053-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              5.58,
+              -11.5
+            ],
+            "exclude": "env-053-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              5.58,
+              -12.9
+            ],
+            "exclude": "env-053-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-0 canonical root on actual soil",
+            "point": [
+              13.9,
+              5.58,
+              -12.1
+            ],
+            "exclude": "env-053-19",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-1 root pocket terrain 0",
+            "point": [
+              21.4,
+              5.782330485,
+              -14.4
+            ],
+            "exclude": "env-053-20"
+          },
+          {
+            "name": "belt-19-4-1 root pocket terrain 1",
+            "point": [
+              26.8,
+              6.2143304850000005,
+              -14.4
+            ],
+            "exclude": "env-053-20"
+          },
+          {
+            "name": "belt-19-4-1 root pocket terrain 2",
+            "point": [
+              26.8,
+              5.970873462,
+              -9.399999999999999
+            ],
+            "exclude": "env-053-20"
+          },
+          {
+            "name": "belt-19-4-1 root pocket terrain 3",
+            "point": [
+              21.4,
+              5.538873462000001,
+              -9.399999999999999
+            ],
+            "exclude": "env-053-20"
+          },
+          {
+            "name": "belt-19-4-1 root pocket terrain 4",
+            "point": [
+              24,
+              5.8717051190000005,
+              -12
+            ],
+            "exclude": "env-053-20"
+          },
+          {
+            "name": "belt-19-4-1 canonical root on actual soil",
+            "point": [
+              25.7,
+              6.380000000000001,
+              -13.7
+            ],
+            "exclude": "env-053-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              6.380000000000001,
+              -12.3
+            ],
+            "exclude": "env-053-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              6.380000000000001,
+              -11.7
+            ],
+            "exclude": "env-053-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-1 canonical root on actual soil",
+            "point": [
+              24.1,
+              6.380000000000001,
+              -11.1
+            ],
+            "exclude": "env-053-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.380000000000001,
+              -11.5
+            ],
+            "exclude": "env-053-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.380000000000001,
+              -13.5
+            ],
+            "exclude": "env-053-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-4-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              6.380000000000001,
+              -12.1
+            ],
+            "exclude": "env-053-21",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-0 root pocket terrain 0",
+            "point": [
+              -15.8,
+              5.3053390920000005,
+              -13.8
+            ],
+            "exclude": "env-053-22"
+          },
+          {
+            "name": "belt-19-5-0 root pocket terrain 1",
+            "point": [
+              -12,
+              4.943671705000001,
+              -13.8
+            ],
+            "exclude": "env-053-22"
+          },
+          {
+            "name": "belt-19-5-0 root pocket terrain 2",
+            "point": [
+              -12,
+              4.779637173,
+              -10
+            ],
+            "exclude": "env-053-22"
+          },
+          {
+            "name": "belt-19-5-0 root pocket terrain 3",
+            "point": [
+              -15.8,
+              5.117871055,
+              -10
+            ],
+            "exclude": "env-053-22"
+          },
+          {
+            "name": "belt-19-5-0 root pocket terrain 4",
+            "point": [
+              -14,
+              5.071705119000001,
+              -12
+            ],
+            "exclude": "env-053-22"
+          },
+          {
+            "name": "belt-19-5-0 canonical root on actual soil",
+            "point": [
+              -12.9,
+              5.380000000000001,
+              -13.1
+            ],
+            "exclude": "env-053-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-0 canonical root on actual soil",
+            "point": [
+              -13.9,
+              5.380000000000001,
+              -12.1
+            ],
+            "exclude": "env-053-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-0 canonical root on actual soil",
+            "point": [
+              -13.5,
+              5.380000000000001,
+              -11.7
+            ],
+            "exclude": "env-053-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-0 canonical root on actual soil",
+            "point": [
+              -13.7,
+              5.380000000000001,
+              -11.3
+            ],
+            "exclude": "env-053-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              5.380000000000001,
+              -11.5
+            ],
+            "exclude": "env-053-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              5.380000000000001,
+              -12.9
+            ],
+            "exclude": "env-053-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-0 canonical root on actual soil",
+            "point": [
+              -14.1,
+              5.380000000000001,
+              -12.1
+            ],
+            "exclude": "env-053-23",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-1 root pocket terrain 0",
+            "point": [
+              -26.6,
+              6.1983304850000005,
+              -14.4
+            ],
+            "exclude": "env-053-24"
+          },
+          {
+            "name": "belt-19-5-1 root pocket terrain 1",
+            "point": [
+              -21.2,
+              5.766330485,
+              -14.4
+            ],
+            "exclude": "env-053-24"
+          },
+          {
+            "name": "belt-19-5-1 root pocket terrain 2",
+            "point": [
+              -21.2,
+              5.522873462000001,
+              -9.399999999999999
+            ],
+            "exclude": "env-053-24"
+          },
+          {
+            "name": "belt-19-5-1 root pocket terrain 3",
+            "point": [
+              -26.6,
+              5.954873462,
+              -9.399999999999999
+            ],
+            "exclude": "env-053-24"
+          },
+          {
+            "name": "belt-19-5-1 root pocket terrain 4",
+            "point": [
+              -24,
+              5.8717051190000005,
+              -12
+            ],
+            "exclude": "env-053-24"
+          },
+          {
+            "name": "belt-19-5-1 canonical root on actual soil",
+            "point": [
+              -22.3,
+              6.380000000000001,
+              -13.7
+            ],
+            "exclude": "env-053-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              6.380000000000001,
+              -12.3
+            ],
+            "exclude": "env-053-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              6.380000000000001,
+              -11.7
+            ],
+            "exclude": "env-053-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-1 canonical root on actual soil",
+            "point": [
+              -23.9,
+              6.380000000000001,
+              -11.1
+            ],
+            "exclude": "env-053-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.380000000000001,
+              -11.5
+            ],
+            "exclude": "env-053-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.380000000000001,
+              -13.5
+            ],
+            "exclude": "env-053-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-5-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              6.380000000000001,
+              -12.1
+            ],
+            "exclude": "env-053-25",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-0 root pocket terrain 0",
+            "point": [
+              12.2,
+              4.565792587000001,
+              -1.8
+            ],
+            "exclude": "env-053-26"
+          },
+          {
+            "name": "belt-19-6-0 root pocket terrain 1",
+            "point": [
+              16,
+              4.871191528000001,
+              -1.8
+            ],
+            "exclude": "env-053-26"
+          },
+          {
+            "name": "belt-19-6-0 root pocket terrain 2",
+            "point": [
+              16,
+              4.872435031,
+              2
+            ],
+            "exclude": "env-053-26"
+          },
+          {
+            "name": "belt-19-6-0 root pocket terrain 3",
+            "point": [
+              12.2,
+              4.56703609,
+              2
+            ],
+            "exclude": "env-053-26"
+          },
+          {
+            "name": "belt-19-6-0 root pocket terrain 4",
+            "point": [
+              14,
+              4.7,
+              0
+            ],
+            "exclude": "env-053-26"
+          },
+          {
+            "name": "belt-19-6-0 canonical root on actual soil",
+            "point": [
+              15.1,
+              4.98,
+              -1.1
+            ],
+            "exclude": "env-053-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-0 canonical root on actual soil",
+            "point": [
+              14.1,
+              4.98,
+              -0.1
+            ],
+            "exclude": "env-053-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-0 canonical root on actual soil",
+            "point": [
+              14.5,
+              4.98,
+              0.3
+            ],
+            "exclude": "env-053-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-0 canonical root on actual soil",
+            "point": [
+              14.3,
+              4.98,
+              0.7
+            ],
+            "exclude": "env-053-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              4.98,
+              0.5
+            ],
+            "exclude": "env-053-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-0 canonical root on actual soil",
+            "point": [
+              13.7,
+              4.98,
+              -0.9
+            ],
+            "exclude": "env-053-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-0 canonical root on actual soil",
+            "point": [
+              13.9,
+              4.98,
+              -0.1
+            ],
+            "exclude": "env-053-27",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-1 root pocket terrain 0",
+            "point": [
+              21.4,
+              5.311741420000001,
+              -2.4000000000000004
+            ],
+            "exclude": "env-053-28"
+          },
+          {
+            "name": "belt-19-6-1 root pocket terrain 1",
+            "point": [
+              26.8,
+              5.74374142,
+              -2.4000000000000004
+            ],
+            "exclude": "env-053-28"
+          },
+          {
+            "name": "belt-19-6-1 root pocket terrain 2",
+            "point": [
+              26.8,
+              5.747394614,
+              2.6000000000000005
+            ],
+            "exclude": "env-053-28"
+          },
+          {
+            "name": "belt-19-6-1 root pocket terrain 3",
+            "point": [
+              21.4,
+              5.315394614000001,
+              2.6000000000000005
+            ],
+            "exclude": "env-053-28"
+          },
+          {
+            "name": "belt-19-6-1 root pocket terrain 4",
+            "point": [
+              24,
+              5.5,
+              0
+            ],
+            "exclude": "env-053-28"
+          },
+          {
+            "name": "belt-19-6-1 canonical root on actual soil",
+            "point": [
+              25.7,
+              5.98,
+              -1.7
+            ],
+            "exclude": "env-053-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              5.98,
+              -0.3
+            ],
+            "exclude": "env-053-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-1 canonical root on actual soil",
+            "point": [
+              24.7,
+              5.98,
+              0.3
+            ],
+            "exclude": "env-053-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-1 canonical root on actual soil",
+            "point": [
+              24.1,
+              5.98,
+              0.9
+            ],
+            "exclude": "env-053-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              5.98,
+              0.5
+            ],
+            "exclude": "env-053-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              5.98,
+              -1.5
+            ],
+            "exclude": "env-053-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-6-1 canonical root on actual soil",
+            "point": [
+              23.5,
+              5.98,
+              -0.1
+            ],
+            "exclude": "env-053-29",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-0 root pocket terrain 0",
+            "point": [
+              -15.8,
+              4.855191528000001,
+              -1.8
+            ],
+            "exclude": "env-053-30"
+          },
+          {
+            "name": "belt-19-7-0 root pocket terrain 1",
+            "point": [
+              -12,
+              4.549792587000001,
+              -1.8
+            ],
+            "exclude": "env-053-30"
+          },
+          {
+            "name": "belt-19-7-0 root pocket terrain 2",
+            "point": [
+              -12,
+              4.550880652,
+              2
+            ],
+            "exclude": "env-053-30"
+          },
+          {
+            "name": "belt-19-7-0 root pocket terrain 3",
+            "point": [
+              -15.8,
+              4.856435031,
+              2
+            ],
+            "exclude": "env-053-30"
+          },
+          {
+            "name": "belt-19-7-0 root pocket terrain 4",
+            "point": [
+              -14,
+              4.7,
+              0
+            ],
+            "exclude": "env-053-30"
+          },
+          {
+            "name": "belt-19-7-0 canonical root on actual soil",
+            "point": [
+              -12.9,
+              4.98,
+              -1.1
+            ],
+            "exclude": "env-053-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-0 canonical root on actual soil",
+            "point": [
+              -13.9,
+              4.98,
+              -0.1
+            ],
+            "exclude": "env-053-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-0 canonical root on actual soil",
+            "point": [
+              -13.5,
+              4.98,
+              0.3
+            ],
+            "exclude": "env-053-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-0 canonical root on actual soil",
+            "point": [
+              -13.7,
+              4.98,
+              0.7
+            ],
+            "exclude": "env-053-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              4.98,
+              0.5
+            ],
+            "exclude": "env-053-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-0 canonical root on actual soil",
+            "point": [
+              -14.3,
+              4.98,
+              -0.9
+            ],
+            "exclude": "env-053-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-0 canonical root on actual soil",
+            "point": [
+              -14.1,
+              4.98,
+              -0.1
+            ],
+            "exclude": "env-053-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-1 root pocket terrain 0",
+            "point": [
+              -26.6,
+              5.72774142,
+              -2.4000000000000004
+            ],
+            "exclude": "env-053-32"
+          },
+          {
+            "name": "belt-19-7-1 root pocket terrain 1",
+            "point": [
+              -21.2,
+              5.295741420000001,
+              -2.4000000000000004
+            ],
+            "exclude": "env-053-32"
+          },
+          {
+            "name": "belt-19-7-1 root pocket terrain 2",
+            "point": [
+              -21.2,
+              5.299394614000001,
+              2.6000000000000005
+            ],
+            "exclude": "env-053-32"
+          },
+          {
+            "name": "belt-19-7-1 root pocket terrain 3",
+            "point": [
+              -26.6,
+              5.731394614,
+              2.6000000000000005
+            ],
+            "exclude": "env-053-32"
+          },
+          {
+            "name": "belt-19-7-1 root pocket terrain 4",
+            "point": [
+              -24,
+              5.5,
+              0
+            ],
+            "exclude": "env-053-32"
+          },
+          {
+            "name": "belt-19-7-1 canonical root on actual soil",
+            "point": [
+              -22.3,
+              5.98,
+              -1.7
+            ],
+            "exclude": "env-053-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              5.98,
+              -0.3
+            ],
+            "exclude": "env-053-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-1 canonical root on actual soil",
+            "point": [
+              -23.3,
+              5.98,
+              0.3
+            ],
+            "exclude": "env-053-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-1 canonical root on actual soil",
+            "point": [
+              -23.9,
+              5.98,
+              0.9
+            ],
+            "exclude": "env-053-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              5.98,
+              0.5
+            ],
+            "exclude": "env-053-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              5.98,
+              -1.5
+            ],
+            "exclude": "env-053-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-7-1 canonical root on actual soil",
+            "point": [
+              -24.5,
+              5.98,
+              -0.1
+            ],
+            "exclude": "env-053-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-0 root pocket terrain 0",
+            "point": [
+              29.2,
+              6.199654461000001,
+              10.2
+            ],
+            "exclude": "env-053-34"
+          },
+          {
+            "name": "belt-19-8-0 root pocket terrain 1",
+            "point": [
+              33,
+              6.503654461,
+              10.2
+            ],
+            "exclude": "env-053-34"
+          },
+          {
+            "name": "belt-19-8-0 root pocket terrain 2",
+            "point": [
+              33,
+              6.691298422,
+              14
+            ],
+            "exclude": "env-053-34"
+          },
+          {
+            "name": "belt-19-8-0 root pocket terrain 3",
+            "point": [
+              29.2,
+              6.387298422000001,
+              14
+            ],
+            "exclude": "env-053-34"
+          },
+          {
+            "name": "belt-19-8-0 root pocket terrain 4",
+            "point": [
+              31,
+              6.431705119,
+              12
+            ],
+            "exclude": "env-053-34"
+          },
+          {
+            "name": "belt-19-8-0 canonical root on actual soil",
+            "point": [
+              32.1,
+              6.78,
+              10.9
+            ],
+            "exclude": "env-053-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-0 canonical root on actual soil",
+            "point": [
+              31.1,
+              6.78,
+              11.9
+            ],
+            "exclude": "env-053-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-0 canonical root on actual soil",
+            "point": [
+              31.5,
+              6.78,
+              12.3
+            ],
+            "exclude": "env-053-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-0 canonical root on actual soil",
+            "point": [
+              31.3,
+              6.78,
+              12.7
+            ],
+            "exclude": "env-053-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-0 canonical root on actual soil",
+            "point": [
+              30.7,
+              6.78,
+              12.5
+            ],
+            "exclude": "env-053-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-0 canonical root on actual soil",
+            "point": [
+              30.7,
+              6.78,
+              11.1
+            ],
+            "exclude": "env-053-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-0 canonical root on actual soil",
+            "point": [
+              30.9,
+              6.78,
+              11.9
+            ],
+            "exclude": "env-053-35",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-1 root pocket terrain 0",
+            "point": [
+              39.2,
+              6.999654461,
+              10.2
+            ],
+            "exclude": "env-053-36"
+          },
+          {
+            "name": "belt-19-8-1 root pocket terrain 1",
+            "point": [
+              43,
+              7.303654461000001,
+              10.2
+            ],
+            "exclude": "env-053-36"
+          },
+          {
+            "name": "belt-19-8-1 root pocket terrain 2",
+            "point": [
+              43,
+              7.491298422000001,
+              14
+            ],
+            "exclude": "env-053-36"
+          },
+          {
+            "name": "belt-19-8-1 root pocket terrain 3",
+            "point": [
+              39.2,
+              7.1872984220000005,
+              14
+            ],
+            "exclude": "env-053-36"
+          },
+          {
+            "name": "belt-19-8-1 root pocket terrain 4",
+            "point": [
+              41,
+              7.231705119000001,
+              12
+            ],
+            "exclude": "env-053-36"
+          },
+          {
+            "name": "belt-19-8-1 canonical root on actual soil",
+            "point": [
+              42.1,
+              7.58,
+              10.9
+            ],
+            "exclude": "env-053-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-1 canonical root on actual soil",
+            "point": [
+              41.1,
+              7.58,
+              11.9
+            ],
+            "exclude": "env-053-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-1 canonical root on actual soil",
+            "point": [
+              41.5,
+              7.58,
+              12.3
+            ],
+            "exclude": "env-053-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-1 canonical root on actual soil",
+            "point": [
+              41.3,
+              7.58,
+              12.7
+            ],
+            "exclude": "env-053-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-1 canonical root on actual soil",
+            "point": [
+              40.7,
+              7.58,
+              12.5
+            ],
+            "exclude": "env-053-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-1 canonical root on actual soil",
+            "point": [
+              40.7,
+              7.58,
+              11.1
+            ],
+            "exclude": "env-053-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-8-1 canonical root on actual soil",
+            "point": [
+              40.9,
+              7.58,
+              11.9
+            ],
+            "exclude": "env-053-37",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-0 root pocket terrain 0",
+            "point": [
+              -32.8,
+              6.487654461,
+              10.2
+            ],
+            "exclude": "env-053-38"
+          },
+          {
+            "name": "belt-19-9-0 root pocket terrain 1",
+            "point": [
+              -29,
+              6.183654461000001,
+              10.2
+            ],
+            "exclude": "env-053-38"
+          },
+          {
+            "name": "belt-19-9-0 root pocket terrain 2",
+            "point": [
+              -29,
+              6.371298422000001,
+              14
+            ],
+            "exclude": "env-053-38"
+          },
+          {
+            "name": "belt-19-9-0 root pocket terrain 3",
+            "point": [
+              -32.8,
+              6.675298422,
+              14
+            ],
+            "exclude": "env-053-38"
+          },
+          {
+            "name": "belt-19-9-0 root pocket terrain 4",
+            "point": [
+              -31,
+              6.431705119,
+              12
+            ],
+            "exclude": "env-053-38"
+          },
+          {
+            "name": "belt-19-9-0 canonical root on actual soil",
+            "point": [
+              -29.9,
+              6.78,
+              10.9
+            ],
+            "exclude": "env-053-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-0 canonical root on actual soil",
+            "point": [
+              -30.9,
+              6.78,
+              11.9
+            ],
+            "exclude": "env-053-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-0 canonical root on actual soil",
+            "point": [
+              -30.5,
+              6.78,
+              12.3
+            ],
+            "exclude": "env-053-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-0 canonical root on actual soil",
+            "point": [
+              -30.7,
+              6.78,
+              12.7
+            ],
+            "exclude": "env-053-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-0 canonical root on actual soil",
+            "point": [
+              -31.3,
+              6.78,
+              12.5
+            ],
+            "exclude": "env-053-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-0 canonical root on actual soil",
+            "point": [
+              -31.3,
+              6.78,
+              11.1
+            ],
+            "exclude": "env-053-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-0 canonical root on actual soil",
+            "point": [
+              -31.1,
+              6.78,
+              11.9
+            ],
+            "exclude": "env-053-39",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-1 root pocket terrain 0",
+            "point": [
+              -42.8,
+              7.287654461000001,
+              10.2
+            ],
+            "exclude": "env-053-40"
+          },
+          {
+            "name": "belt-19-9-1 root pocket terrain 1",
+            "point": [
+              -39,
+              6.983654461,
+              10.2
+            ],
+            "exclude": "env-053-40"
+          },
+          {
+            "name": "belt-19-9-1 root pocket terrain 2",
+            "point": [
+              -39,
+              7.1712984220000004,
+              14
+            ],
+            "exclude": "env-053-40"
+          },
+          {
+            "name": "belt-19-9-1 root pocket terrain 3",
+            "point": [
+              -42.8,
+              7.475298422000001,
+              14
+            ],
+            "exclude": "env-053-40"
+          },
+          {
+            "name": "belt-19-9-1 root pocket terrain 4",
+            "point": [
+              -41,
+              7.231705119000001,
+              12
+            ],
+            "exclude": "env-053-40"
+          },
+          {
+            "name": "belt-19-9-1 canonical root on actual soil",
+            "point": [
+              -39.9,
+              7.58,
+              10.9
+            ],
+            "exclude": "env-053-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-1 canonical root on actual soil",
+            "point": [
+              -40.9,
+              7.58,
+              11.9
+            ],
+            "exclude": "env-053-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-1 canonical root on actual soil",
+            "point": [
+              -40.5,
+              7.58,
+              12.3
+            ],
+            "exclude": "env-053-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-1 canonical root on actual soil",
+            "point": [
+              -40.7,
+              7.58,
+              12.7
+            ],
+            "exclude": "env-053-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-1 canonical root on actual soil",
+            "point": [
+              -41.3,
+              7.58,
+              12.5
+            ],
+            "exclude": "env-053-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-1 canonical root on actual soil",
+            "point": [
+              -41.3,
+              7.58,
+              11.1
+            ],
+            "exclude": "env-053-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-9-1 canonical root on actual soil",
+            "point": [
+              -41.1,
+              7.58,
+              11.9
+            ],
+            "exclude": "env-053-41",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-0 root pocket terrain 0",
+            "point": [
+              29.2,
+              6.688348556,
+              22.2
+            ],
+            "exclude": "env-053-42"
+          },
+          {
+            "name": "belt-19-10-0 root pocket terrain 1",
+            "point": [
+              33,
+              6.9923485560000005,
+              22.2
+            ],
+            "exclude": "env-053-42"
+          },
+          {
+            "name": "belt-19-10-0 root pocket terrain 2",
+            "point": [
+              33,
+              7.017651870000001,
+              26
+            ],
+            "exclude": "env-053-42"
+          },
+          {
+            "name": "belt-19-10-0 root pocket terrain 3",
+            "point": [
+              29.2,
+              6.7136518700000005,
+              26
+            ],
+            "exclude": "env-053-42"
+          },
+          {
+            "name": "belt-19-10-0 root pocket terrain 4",
+            "point": [
+              31,
+              6.855996999,
+              24
+            ],
+            "exclude": "env-053-42"
+          },
+          {
+            "name": "belt-19-10-0 canonical root on actual soil",
+            "point": [
+              32.1,
+              7.180000000000001,
+              22.9
+            ],
+            "exclude": "env-053-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-0 canonical root on actual soil",
+            "point": [
+              31.1,
+              7.180000000000001,
+              23.9
+            ],
+            "exclude": "env-053-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-0 canonical root on actual soil",
+            "point": [
+              31.5,
+              7.180000000000001,
+              24.3
+            ],
+            "exclude": "env-053-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-0 canonical root on actual soil",
+            "point": [
+              31.3,
+              7.180000000000001,
+              24.7
+            ],
+            "exclude": "env-053-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-0 canonical root on actual soil",
+            "point": [
+              30.7,
+              7.180000000000001,
+              24.5
+            ],
+            "exclude": "env-053-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-0 canonical root on actual soil",
+            "point": [
+              30.7,
+              7.180000000000001,
+              23.1
+            ],
+            "exclude": "env-053-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-0 canonical root on actual soil",
+            "point": [
+              30.9,
+              7.180000000000001,
+              23.9
+            ],
+            "exclude": "env-053-43",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-1 root pocket terrain 0",
+            "point": [
+              39.2,
+              7.488348556,
+              22.2
+            ],
+            "exclude": "env-053-44"
+          },
+          {
+            "name": "belt-19-10-1 root pocket terrain 1",
+            "point": [
+              43,
+              7.792348556,
+              22.2
+            ],
+            "exclude": "env-053-44"
+          },
+          {
+            "name": "belt-19-10-1 root pocket terrain 2",
+            "point": [
+              43,
+              7.817651870000001,
+              26
+            ],
+            "exclude": "env-053-44"
+          },
+          {
+            "name": "belt-19-10-1 root pocket terrain 3",
+            "point": [
+              39.2,
+              7.51365187,
+              26
+            ],
+            "exclude": "env-053-44"
+          },
+          {
+            "name": "belt-19-10-1 root pocket terrain 4",
+            "point": [
+              41,
+              7.655996999,
+              24
+            ],
+            "exclude": "env-053-44"
+          },
+          {
+            "name": "belt-19-10-1 canonical root on actual soil",
+            "point": [
+              42.1,
+              7.98,
+              22.9
+            ],
+            "exclude": "env-053-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-1 canonical root on actual soil",
+            "point": [
+              41.1,
+              7.98,
+              23.9
+            ],
+            "exclude": "env-053-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-1 canonical root on actual soil",
+            "point": [
+              41.5,
+              7.98,
+              24.3
+            ],
+            "exclude": "env-053-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-1 canonical root on actual soil",
+            "point": [
+              41.3,
+              7.98,
+              24.7
+            ],
+            "exclude": "env-053-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-1 canonical root on actual soil",
+            "point": [
+              40.7,
+              7.98,
+              24.5
+            ],
+            "exclude": "env-053-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-1 canonical root on actual soil",
+            "point": [
+              40.7,
+              7.98,
+              23.1
+            ],
+            "exclude": "env-053-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-10-1 canonical root on actual soil",
+            "point": [
+              40.9,
+              7.98,
+              23.9
+            ],
+            "exclude": "env-053-45",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-0 root pocket terrain 0",
+            "point": [
+              -32.8,
+              6.9763485560000005,
+              22.2
+            ],
+            "exclude": "env-053-46"
+          },
+          {
+            "name": "belt-19-11-0 root pocket terrain 1",
+            "point": [
+              -29,
+              6.672348556,
+              22.2
+            ],
+            "exclude": "env-053-46"
+          },
+          {
+            "name": "belt-19-11-0 root pocket terrain 2",
+            "point": [
+              -29,
+              6.6976518700000005,
+              26
+            ],
+            "exclude": "env-053-46"
+          },
+          {
+            "name": "belt-19-11-0 root pocket terrain 3",
+            "point": [
+              -32.8,
+              7.001651870000001,
+              26
+            ],
+            "exclude": "env-053-46"
+          },
+          {
+            "name": "belt-19-11-0 root pocket terrain 4",
+            "point": [
+              -31,
+              6.855996999,
+              24
+            ],
+            "exclude": "env-053-46"
+          },
+          {
+            "name": "belt-19-11-0 canonical root on actual soil",
+            "point": [
+              -29.9,
+              7.180000000000001,
+              22.9
+            ],
+            "exclude": "env-053-47",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-0 canonical root on actual soil",
+            "point": [
+              -30.9,
+              7.180000000000001,
+              23.9
+            ],
+            "exclude": "env-053-47",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-0 canonical root on actual soil",
+            "point": [
+              -30.5,
+              7.180000000000001,
+              24.3
+            ],
+            "exclude": "env-053-47",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-0 canonical root on actual soil",
+            "point": [
+              -30.7,
+              7.180000000000001,
+              24.7
+            ],
+            "exclude": "env-053-47",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-0 canonical root on actual soil",
+            "point": [
+              -31.3,
+              7.180000000000001,
+              24.5
+            ],
+            "exclude": "env-053-47",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-0 canonical root on actual soil",
+            "point": [
+              -31.3,
+              7.180000000000001,
+              23.1
+            ],
+            "exclude": "env-053-47",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-0 canonical root on actual soil",
+            "point": [
+              -31.1,
+              7.180000000000001,
+              23.9
+            ],
+            "exclude": "env-053-47",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-1 root pocket terrain 0",
+            "point": [
+              -42.8,
+              7.776348556,
+              22.2
+            ],
+            "exclude": "env-053-48"
+          },
+          {
+            "name": "belt-19-11-1 root pocket terrain 1",
+            "point": [
+              -39,
+              7.472348556,
+              22.2
+            ],
+            "exclude": "env-053-48"
+          },
+          {
+            "name": "belt-19-11-1 root pocket terrain 2",
+            "point": [
+              -39,
+              7.49765187,
+              26
+            ],
+            "exclude": "env-053-48"
+          },
+          {
+            "name": "belt-19-11-1 root pocket terrain 3",
+            "point": [
+              -42.8,
+              7.801651870000001,
+              26
+            ],
+            "exclude": "env-053-48"
+          },
+          {
+            "name": "belt-19-11-1 root pocket terrain 4",
+            "point": [
+              -41,
+              7.655996999,
+              24
+            ],
+            "exclude": "env-053-48"
+          },
+          {
+            "name": "belt-19-11-1 canonical root on actual soil",
+            "point": [
+              -39.9,
+              7.98,
+              22.9
+            ],
+            "exclude": "env-053-49",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-1 canonical root on actual soil",
+            "point": [
+              -40.9,
+              7.98,
+              23.9
+            ],
+            "exclude": "env-053-49",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-1 canonical root on actual soil",
+            "point": [
+              -40.5,
+              7.98,
+              24.3
+            ],
+            "exclude": "env-053-49",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-1 canonical root on actual soil",
+            "point": [
+              -40.7,
+              7.98,
+              24.7
+            ],
+            "exclude": "env-053-49",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-1 canonical root on actual soil",
+            "point": [
+              -41.3,
+              7.98,
+              24.5
+            ],
+            "exclude": "env-053-49",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-1 canonical root on actual soil",
+            "point": [
+              -41.3,
+              7.98,
+              23.1
+            ],
+            "exclude": "env-053-49",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-11-1 canonical root on actual soil",
+            "point": [
+              -41.1,
+              7.98,
+              23.9
+            ],
+            "exclude": "env-053-49",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-0 root pocket terrain 0",
+            "point": [
+              29.2,
+              6.4850233280000005,
+              34.2
+            ],
+            "exclude": "env-053-50"
+          },
+          {
+            "name": "belt-19-12-0 root pocket terrain 1",
+            "point": [
+              33,
+              6.789023328000001,
+              34.2
+            ],
+            "exclude": "env-053-50"
+          },
+          {
+            "name": "belt-19-12-0 root pocket terrain 2",
+            "point": [
+              33,
+              6.604959139000001,
+              38
+            ],
+            "exclude": "env-053-50"
+          },
+          {
+            "name": "belt-19-12-0 root pocket terrain 3",
+            "point": [
+              29.2,
+              6.300959139000001,
+              38
+            ],
+            "exclude": "env-053-50"
+          },
+          {
+            "name": "belt-19-12-0 root pocket terrain 4",
+            "point": [
+              31,
+              6.54431832,
+              36
+            ],
+            "exclude": "env-053-50"
+          },
+          {
+            "name": "belt-19-12-0 canonical root on actual soil",
+            "point": [
+              32.1,
+              6.98,
+              34.9
+            ],
+            "exclude": "env-053-51",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-0 canonical root on actual soil",
+            "point": [
+              31.1,
+              6.98,
+              35.9
+            ],
+            "exclude": "env-053-51",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-0 canonical root on actual soil",
+            "point": [
+              31.5,
+              6.98,
+              36.3
+            ],
+            "exclude": "env-053-51",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-0 canonical root on actual soil",
+            "point": [
+              31.3,
+              6.98,
+              36.7
+            ],
+            "exclude": "env-053-51",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-0 canonical root on actual soil",
+            "point": [
+              30.7,
+              6.98,
+              36.5
+            ],
+            "exclude": "env-053-51",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-0 canonical root on actual soil",
+            "point": [
+              30.7,
+              6.98,
+              35.1
+            ],
+            "exclude": "env-053-51",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-0 canonical root on actual soil",
+            "point": [
+              30.9,
+              6.98,
+              35.9
+            ],
+            "exclude": "env-053-51",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-1 root pocket terrain 0",
+            "point": [
+              39.2,
+              7.285023328,
+              34.2
+            ],
+            "exclude": "env-053-52"
+          },
+          {
+            "name": "belt-19-12-1 root pocket terrain 1",
+            "point": [
+              43,
+              7.589023328000001,
+              34.2
+            ],
+            "exclude": "env-053-52"
+          },
+          {
+            "name": "belt-19-12-1 root pocket terrain 2",
+            "point": [
+              43,
+              7.404959139000001,
+              38
+            ],
+            "exclude": "env-053-52"
+          },
+          {
+            "name": "belt-19-12-1 root pocket terrain 3",
+            "point": [
+              39.2,
+              7.100959139,
+              38
+            ],
+            "exclude": "env-053-52"
+          },
+          {
+            "name": "belt-19-12-1 root pocket terrain 4",
+            "point": [
+              41,
+              7.34431832,
+              36
+            ],
+            "exclude": "env-053-52"
+          },
+          {
+            "name": "belt-19-12-1 canonical root on actual soil",
+            "point": [
+              42.1,
+              7.78,
+              34.9
+            ],
+            "exclude": "env-053-53",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-1 canonical root on actual soil",
+            "point": [
+              41.1,
+              7.78,
+              35.9
+            ],
+            "exclude": "env-053-53",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-1 canonical root on actual soil",
+            "point": [
+              41.5,
+              7.78,
+              36.3
+            ],
+            "exclude": "env-053-53",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-1 canonical root on actual soil",
+            "point": [
+              41.3,
+              7.78,
+              36.7
+            ],
+            "exclude": "env-053-53",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-1 canonical root on actual soil",
+            "point": [
+              40.7,
+              7.78,
+              36.5
+            ],
+            "exclude": "env-053-53",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-1 canonical root on actual soil",
+            "point": [
+              40.7,
+              7.78,
+              35.1
+            ],
+            "exclude": "env-053-53",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "belt-19-12-1 canonical root on actual soil",
+            "point": [
+              40.9,
+              7.78,
+              35.9
+            ],
+            "exclude": "env-053-53",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored environment only. Original terrain, hydrology, ecology, residency, permissions and controllers remain unbound.",
+        "terrainAuthority": "Actual closed continuous terrain triangles;0.2m minimum native rock cells. Canonical plants and transport components retain their full original grids.",
+        "terrainTiles": [
+          {
+            "instance": "env-053-0",
+            "assetId": "architecture-civic-terrain-city-forest-0-0-0-2-near-0f25880f3b",
+            "authorityAssetId": "architecture-civic-terrain-city-forest-0-0-0-2-near-0f25880f3b",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 96,
+            "step": 2,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 96,
+          "step": 2,
+          "origin": [
+            -48,
+            -48
+          ],
+          "continuousPhysicalSurface": true
+        },
+        "forestBelts": {
+          "seed": 19,
+          "belts": [
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-3",
+                  "soilInstance": "env-053-2",
+                  "position": [
+                    14,
+                    5.6,
+                    -36
+                  ],
+                  "rootSamples": [
+                    [
+                      15.1,
+                      5.6,
+                      -37.1
+                    ],
+                    [
+                      14.1,
+                      5.6,
+                      -36.1
+                    ],
+                    [
+                      14.5,
+                      5.6,
+                      -35.7
+                    ],
+                    [
+                      14.3,
+                      5.6,
+                      -35.3
+                    ],
+                    [
+                      13.7,
+                      5.6,
+                      -35.5
+                    ],
+                    [
+                      13.7,
+                      5.6,
+                      -36.9
+                    ],
+                    [
+                      13.9,
+                      5.6,
+                      -36.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 5.20431832
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-5",
+                  "soilInstance": "env-053-4",
+                  "position": [
+                    24,
+                    6.6,
+                    -36
+                  ],
+                  "rootSamples": [
+                    [
+                      25.7,
+                      6.6,
+                      -37.7
+                    ],
+                    [
+                      24.7,
+                      6.6,
+                      -36.3
+                    ],
+                    [
+                      24.7,
+                      6.6,
+                      -35.7
+                    ],
+                    [
+                      24.1,
+                      6.6,
+                      -35.1
+                    ],
+                    [
+                      23.5,
+                      6.6,
+                      -35.5
+                    ],
+                    [
+                      23.5,
+                      6.6,
+                      -37.5
+                    ],
+                    [
+                      23.5,
+                      6.6,
+                      -36.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 6.00431832
+                }
+              ]
+            },
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-7",
+                  "soilInstance": "env-053-6",
+                  "position": [
+                    -14,
+                    5.6,
+                    -36
+                  ],
+                  "rootSamples": [
+                    [
+                      -12.9,
+                      5.6,
+                      -37.1
+                    ],
+                    [
+                      -13.9,
+                      5.6,
+                      -36.1
+                    ],
+                    [
+                      -13.5,
+                      5.6,
+                      -35.7
+                    ],
+                    [
+                      -13.7,
+                      5.6,
+                      -35.3
+                    ],
+                    [
+                      -14.3,
+                      5.6,
+                      -35.5
+                    ],
+                    [
+                      -14.3,
+                      5.6,
+                      -36.9
+                    ],
+                    [
+                      -14.1,
+                      5.6,
+                      -36.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 5.20431832
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-9",
+                  "soilInstance": "env-053-8",
+                  "position": [
+                    -24,
+                    6.4,
+                    -36
+                  ],
+                  "rootSamples": [
+                    [
+                      -22.3,
+                      6.4,
+                      -37.7
+                    ],
+                    [
+                      -23.3,
+                      6.4,
+                      -36.3
+                    ],
+                    [
+                      -23.3,
+                      6.4,
+                      -35.7
+                    ],
+                    [
+                      -23.9,
+                      6.4,
+                      -35.1
+                    ],
+                    [
+                      -24.5,
+                      6.4,
+                      -35.5
+                    ],
+                    [
+                      -24.5,
+                      6.4,
+                      -37.5
+                    ],
+                    [
+                      -24.5,
+                      6.4,
+                      -36.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 6.00431832
+                }
+              ]
+            },
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-11",
+                  "soilInstance": "env-053-10",
+                  "position": [
+                    14,
+                    5.8,
+                    -24
+                  ],
+                  "rootSamples": [
+                    [
+                      15.1,
+                      5.8,
+                      -25.1
+                    ],
+                    [
+                      14.1,
+                      5.8,
+                      -24.1
+                    ],
+                    [
+                      14.5,
+                      5.8,
+                      -23.7
+                    ],
+                    [
+                      14.3,
+                      5.8,
+                      -23.3
+                    ],
+                    [
+                      13.7,
+                      5.8,
+                      -23.5
+                    ],
+                    [
+                      13.7,
+                      5.8,
+                      -24.9
+                    ],
+                    [
+                      13.9,
+                      5.8,
+                      -24.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 5.515996999
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-13",
+                  "soilInstance": "env-053-12",
+                  "position": [
+                    24,
+                    6.6,
+                    -24
+                  ],
+                  "rootSamples": [
+                    [
+                      25.7,
+                      6.6,
+                      -25.7
+                    ],
+                    [
+                      24.7,
+                      6.6,
+                      -24.3
+                    ],
+                    [
+                      24.7,
+                      6.6,
+                      -23.7
+                    ],
+                    [
+                      24.1,
+                      6.6,
+                      -23.1
+                    ],
+                    [
+                      23.5,
+                      6.6,
+                      -23.5
+                    ],
+                    [
+                      23.5,
+                      6.6,
+                      -25.5
+                    ],
+                    [
+                      23.5,
+                      6.6,
+                      -24.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 6.315996999
+                }
+              ]
+            },
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-15",
+                  "soilInstance": "env-053-14",
+                  "position": [
+                    -14,
+                    5.8,
+                    -24
+                  ],
+                  "rootSamples": [
+                    [
+                      -12.9,
+                      5.8,
+                      -25.1
+                    ],
+                    [
+                      -13.9,
+                      5.8,
+                      -24.1
+                    ],
+                    [
+                      -13.5,
+                      5.8,
+                      -23.7
+                    ],
+                    [
+                      -13.7,
+                      5.8,
+                      -23.3
+                    ],
+                    [
+                      -14.3,
+                      5.8,
+                      -23.5
+                    ],
+                    [
+                      -14.3,
+                      5.8,
+                      -24.9
+                    ],
+                    [
+                      -14.1,
+                      5.8,
+                      -24.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 5.515996999
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-17",
+                  "soilInstance": "env-053-16",
+                  "position": [
+                    -24,
+                    6.6,
+                    -24
+                  ],
+                  "rootSamples": [
+                    [
+                      -22.3,
+                      6.6,
+                      -25.7
+                    ],
+                    [
+                      -23.3,
+                      6.6,
+                      -24.3
+                    ],
+                    [
+                      -23.3,
+                      6.6,
+                      -23.7
+                    ],
+                    [
+                      -23.9,
+                      6.6,
+                      -23.1
+                    ],
+                    [
+                      -24.5,
+                      6.6,
+                      -23.5
+                    ],
+                    [
+                      -24.5,
+                      6.6,
+                      -25.5
+                    ],
+                    [
+                      -24.5,
+                      6.6,
+                      -24.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 6.315996999
+                }
+              ]
+            },
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-19",
+                  "soilInstance": "env-053-18",
+                  "position": [
+                    14,
+                    5.6,
+                    -12
+                  ],
+                  "rootSamples": [
+                    [
+                      15.1,
+                      5.6,
+                      -13.1
+                    ],
+                    [
+                      14.1,
+                      5.6,
+                      -12.1
+                    ],
+                    [
+                      14.5,
+                      5.6,
+                      -11.7
+                    ],
+                    [
+                      14.3,
+                      5.6,
+                      -11.3
+                    ],
+                    [
+                      13.7,
+                      5.6,
+                      -11.5
+                    ],
+                    [
+                      13.7,
+                      5.6,
+                      -12.9
+                    ],
+                    [
+                      13.9,
+                      5.6,
+                      -12.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 5.091705119
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-21",
+                  "soilInstance": "env-053-20",
+                  "position": [
+                    24,
+                    6.4,
+                    -12
+                  ],
+                  "rootSamples": [
+                    [
+                      25.7,
+                      6.4,
+                      -13.7
+                    ],
+                    [
+                      24.7,
+                      6.4,
+                      -12.3
+                    ],
+                    [
+                      24.7,
+                      6.4,
+                      -11.7
+                    ],
+                    [
+                      24.1,
+                      6.4,
+                      -11.1
+                    ],
+                    [
+                      23.5,
+                      6.4,
+                      -11.5
+                    ],
+                    [
+                      23.5,
+                      6.4,
+                      -13.5
+                    ],
+                    [
+                      23.5,
+                      6.4,
+                      -12.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 5.891705119
+                }
+              ]
+            },
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-23",
+                  "soilInstance": "env-053-22",
+                  "position": [
+                    -14,
+                    5.4,
+                    -12
+                  ],
+                  "rootSamples": [
+                    [
+                      -12.9,
+                      5.4,
+                      -13.1
+                    ],
+                    [
+                      -13.9,
+                      5.4,
+                      -12.1
+                    ],
+                    [
+                      -13.5,
+                      5.4,
+                      -11.7
+                    ],
+                    [
+                      -13.7,
+                      5.4,
+                      -11.3
+                    ],
+                    [
+                      -14.3,
+                      5.4,
+                      -11.5
+                    ],
+                    [
+                      -14.3,
+                      5.4,
+                      -12.9
+                    ],
+                    [
+                      -14.1,
+                      5.4,
+                      -12.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 5.091705119
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-25",
+                  "soilInstance": "env-053-24",
+                  "position": [
+                    -24,
+                    6.4,
+                    -12
+                  ],
+                  "rootSamples": [
+                    [
+                      -22.3,
+                      6.4,
+                      -13.7
+                    ],
+                    [
+                      -23.3,
+                      6.4,
+                      -12.3
+                    ],
+                    [
+                      -23.3,
+                      6.4,
+                      -11.7
+                    ],
+                    [
+                      -23.9,
+                      6.4,
+                      -11.1
+                    ],
+                    [
+                      -24.5,
+                      6.4,
+                      -11.5
+                    ],
+                    [
+                      -24.5,
+                      6.4,
+                      -13.5
+                    ],
+                    [
+                      -24.5,
+                      6.4,
+                      -12.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 5.891705119
+                }
+              ]
+            },
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-27",
+                  "soilInstance": "env-053-26",
+                  "position": [
+                    14,
+                    5,
+                    0
+                  ],
+                  "rootSamples": [
+                    [
+                      15.1,
+                      5,
+                      -1.1
+                    ],
+                    [
+                      14.1,
+                      5,
+                      -0.1
+                    ],
+                    [
+                      14.5,
+                      5,
+                      0.3
+                    ],
+                    [
+                      14.3,
+                      5,
+                      0.7
+                    ],
+                    [
+                      13.7,
+                      5,
+                      0.5
+                    ],
+                    [
+                      13.7,
+                      5,
+                      -0.9
+                    ],
+                    [
+                      13.9,
+                      5,
+                      -0.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 4.72
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-29",
+                  "soilInstance": "env-053-28",
+                  "position": [
+                    24,
+                    6,
+                    0
+                  ],
+                  "rootSamples": [
+                    [
+                      25.7,
+                      6,
+                      -1.7
+                    ],
+                    [
+                      24.7,
+                      6,
+                      -0.3
+                    ],
+                    [
+                      24.7,
+                      6,
+                      0.3
+                    ],
+                    [
+                      24.1,
+                      6,
+                      0.9
+                    ],
+                    [
+                      23.5,
+                      6,
+                      0.5
+                    ],
+                    [
+                      23.5,
+                      6,
+                      -1.5
+                    ],
+                    [
+                      23.5,
+                      6,
+                      -0.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 5.52
+                }
+              ]
+            },
+            {
+              "kind": "urban",
+              "plants": [
+                {
+                  "catalogId": "ENV-050",
+                  "params": {
+                    "height": 16
+                  },
+                  "instance": "env-053-31",
+                  "soilInstance": "env-053-30",
+                  "position": [
+                    -14,
+                    5,
+                    0
+                  ],
+                  "rootSamples": [
+                    [
+                      -12.9,
+                      5,
+                      -1.1
+                    ],
+                    [
+                      -13.9,
+                      5,
+                      -0.1
+                    ],
+                    [
+                      -13.5,
+                      5,
+                      0.3
+                    ],
+                    [
+                      -13.7,
+                      5,
+                      0.7
+                    ],
+                    [
+                      -14.3,
+                      5,
+                      0.5
+                    ],
+                    [
+                      -14.3,
+                      5,
+                      -0.9
+                    ],
+                    [
+                      -14.1,
+                      5,
+                      -0.1
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 4.72
+                },
+                {
+                  "catalogId": "ENV-057",
+                  "params": {},
+                  "instance": "env-053-33",
+                  "soilInstance": "env-053-32",
+                  "position": [
+                    -24,
+                    6,
+                    0
+                  ],
+                  "rootSamples": [
+                    [
+                      -22.3,
+                      6,
+                      -1.7
+                    ],
+                    [
+                      -23.3,
+                      6,
+                      -0.3
+                    ],
+                    [
+                      -23.3,
+                      6,
+                      0.3
+                    ],
+                    [
+                      -23.9,
+                      6,
+                      0.9
+                    ],
+                    [
+                      -24.5,
+                      6,
+                      0.5
+                    ],
+                    [
+                      -24.5,
+                      6,
+                      -1.5
+                    ],
+                    [
+                      -24.5,
+                      6,
+                      -0.1
+                    ]
+                  ],
+                  "rootCount": 87,
+                  "rootDomain": [
+                    -2.6000000000000005,
+                    -2.4000000000000004,
+                    2.8000000000000007,
+                    2.6000000000000005
+                  ],
+                  "ground": 5.52
+                }
+              ]
+            },
+            {
+              "kind": "shoulder",
+              "plants": [
+                {
+                  "catalogId": "ENV-054",
+                  "params": {},
+                  "instance": "env-053-35",
+                  "soilInstance": "env-053-34",
+                  "position": [
+                    31,
+                    6.8,
+                    12
+                  ],
+                  "rootSamples": [
+                    [
+                      32.1,
+                      6.8,
+                      10.9
+                    ],
+                    [
+                      31.1,
+                      6.8,
+                      11.9
+                    ],
+                    [
+                      31.5,
+                      6.8,
+                      12.3
+                    ],
+                    [
+                      31.3,
+                      6.8,
+                      12.7
+                    ],
+                    [
+                      30.7,
+                      6.8,
+                      12.5
+                    ],
+                    [
+                      30.7,
+                      6.8,
+                      11.1
+                    ],
+                    [
+                      30.9,
+                      6.8,
+                      11.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 6.451705119
+                },
+                {
+                  "catalogId": "ENV-055",
+                  "params": {},
+                  "instance": "env-053-37",
+                  "soilInstance": "env-053-36",
+                  "position": [
+                    41,
+                    7.6,
+                    12
+                  ],
+                  "rootSamples": [
+                    [
+                      42.1,
+                      7.6,
+                      10.9
+                    ],
+                    [
+                      41.1,
+                      7.6,
+                      11.9
+                    ],
+                    [
+                      41.5,
+                      7.6,
+                      12.3
+                    ],
+                    [
+                      41.3,
+                      7.6,
+                      12.7
+                    ],
+                    [
+                      40.7,
+                      7.6,
+                      12.5
+                    ],
+                    [
+                      40.7,
+                      7.6,
+                      11.1
+                    ],
+                    [
+                      40.9,
+                      7.6,
+                      11.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 7.251705119
+                }
+              ]
+            },
+            {
+              "kind": "shoulder",
+              "plants": [
+                {
+                  "catalogId": "ENV-054",
+                  "params": {},
+                  "instance": "env-053-39",
+                  "soilInstance": "env-053-38",
+                  "position": [
+                    -31,
+                    6.8,
+                    12
+                  ],
+                  "rootSamples": [
+                    [
+                      -29.9,
+                      6.8,
+                      10.9
+                    ],
+                    [
+                      -30.9,
+                      6.8,
+                      11.9
+                    ],
+                    [
+                      -30.5,
+                      6.8,
+                      12.3
+                    ],
+                    [
+                      -30.7,
+                      6.8,
+                      12.7
+                    ],
+                    [
+                      -31.3,
+                      6.8,
+                      12.5
+                    ],
+                    [
+                      -31.3,
+                      6.8,
+                      11.1
+                    ],
+                    [
+                      -31.1,
+                      6.8,
+                      11.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 6.451705119
+                },
+                {
+                  "catalogId": "ENV-055",
+                  "params": {},
+                  "instance": "env-053-41",
+                  "soilInstance": "env-053-40",
+                  "position": [
+                    -41,
+                    7.6,
+                    12
+                  ],
+                  "rootSamples": [
+                    [
+                      -39.9,
+                      7.6,
+                      10.9
+                    ],
+                    [
+                      -40.9,
+                      7.6,
+                      11.9
+                    ],
+                    [
+                      -40.5,
+                      7.6,
+                      12.3
+                    ],
+                    [
+                      -40.7,
+                      7.6,
+                      12.7
+                    ],
+                    [
+                      -41.3,
+                      7.6,
+                      12.5
+                    ],
+                    [
+                      -41.3,
+                      7.6,
+                      11.1
+                    ],
+                    [
+                      -41.1,
+                      7.6,
+                      11.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 7.251705119
+                }
+              ]
+            },
+            {
+              "kind": "shoulder",
+              "plants": [
+                {
+                  "catalogId": "ENV-054",
+                  "params": {},
+                  "instance": "env-053-43",
+                  "soilInstance": "env-053-42",
+                  "position": [
+                    31,
+                    7.2,
+                    24
+                  ],
+                  "rootSamples": [
+                    [
+                      32.1,
+                      7.2,
+                      22.9
+                    ],
+                    [
+                      31.1,
+                      7.2,
+                      23.9
+                    ],
+                    [
+                      31.5,
+                      7.2,
+                      24.3
+                    ],
+                    [
+                      31.3,
+                      7.2,
+                      24.7
+                    ],
+                    [
+                      30.7,
+                      7.2,
+                      24.5
+                    ],
+                    [
+                      30.7,
+                      7.2,
+                      23.1
+                    ],
+                    [
+                      30.9,
+                      7.2,
+                      23.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 6.875996999
+                },
+                {
+                  "catalogId": "ENV-055",
+                  "params": {},
+                  "instance": "env-053-45",
+                  "soilInstance": "env-053-44",
+                  "position": [
+                    41,
+                    8,
+                    24
+                  ],
+                  "rootSamples": [
+                    [
+                      42.1,
+                      8,
+                      22.9
+                    ],
+                    [
+                      41.1,
+                      8,
+                      23.9
+                    ],
+                    [
+                      41.5,
+                      8,
+                      24.3
+                    ],
+                    [
+                      41.3,
+                      8,
+                      24.7
+                    ],
+                    [
+                      40.7,
+                      8,
+                      24.5
+                    ],
+                    [
+                      40.7,
+                      8,
+                      23.1
+                    ],
+                    [
+                      40.9,
+                      8,
+                      23.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 7.675996999
+                }
+              ]
+            },
+            {
+              "kind": "shoulder",
+              "plants": [
+                {
+                  "catalogId": "ENV-054",
+                  "params": {},
+                  "instance": "env-053-47",
+                  "soilInstance": "env-053-46",
+                  "position": [
+                    -31,
+                    7.2,
+                    24
+                  ],
+                  "rootSamples": [
+                    [
+                      -29.9,
+                      7.2,
+                      22.9
+                    ],
+                    [
+                      -30.9,
+                      7.2,
+                      23.9
+                    ],
+                    [
+                      -30.5,
+                      7.2,
+                      24.3
+                    ],
+                    [
+                      -30.7,
+                      7.2,
+                      24.7
+                    ],
+                    [
+                      -31.3,
+                      7.2,
+                      24.5
+                    ],
+                    [
+                      -31.3,
+                      7.2,
+                      23.1
+                    ],
+                    [
+                      -31.1,
+                      7.2,
+                      23.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 6.875996999
+                },
+                {
+                  "catalogId": "ENV-055",
+                  "params": {},
+                  "instance": "env-053-49",
+                  "soilInstance": "env-053-48",
+                  "position": [
+                    -41,
+                    8,
+                    24
+                  ],
+                  "rootSamples": [
+                    [
+                      -39.9,
+                      8,
+                      22.9
+                    ],
+                    [
+                      -40.9,
+                      8,
+                      23.9
+                    ],
+                    [
+                      -40.5,
+                      8,
+                      24.3
+                    ],
+                    [
+                      -40.7,
+                      8,
+                      24.7
+                    ],
+                    [
+                      -41.3,
+                      8,
+                      24.5
+                    ],
+                    [
+                      -41.3,
+                      8,
+                      23.1
+                    ],
+                    [
+                      -41.1,
+                      8,
+                      23.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 7.675996999
+                }
+              ]
+            },
+            {
+              "kind": "shoulder",
+              "plants": [
+                {
+                  "catalogId": "ENV-054",
+                  "params": {},
+                  "instance": "env-053-51",
+                  "soilInstance": "env-053-50",
+                  "position": [
+                    31,
+                    7,
+                    36
+                  ],
+                  "rootSamples": [
+                    [
+                      32.1,
+                      7,
+                      34.9
+                    ],
+                    [
+                      31.1,
+                      7,
+                      35.9
+                    ],
+                    [
+                      31.5,
+                      7,
+                      36.3
+                    ],
+                    [
+                      31.3,
+                      7,
+                      36.7
+                    ],
+                    [
+                      30.7,
+                      7,
+                      36.5
+                    ],
+                    [
+                      30.7,
+                      7,
+                      35.1
+                    ],
+                    [
+                      30.9,
+                      7,
+                      35.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 6.56431832
+                },
+                {
+                  "catalogId": "ENV-055",
+                  "params": {},
+                  "instance": "env-053-53",
+                  "soilInstance": "env-053-52",
+                  "position": [
+                    41,
+                    7.8,
+                    36
+                  ],
+                  "rootSamples": [
+                    [
+                      42.1,
+                      7.8,
+                      34.9
+                    ],
+                    [
+                      41.1,
+                      7.8,
+                      35.9
+                    ],
+                    [
+                      41.5,
+                      7.8,
+                      36.3
+                    ],
+                    [
+                      41.3,
+                      7.8,
+                      36.7
+                    ],
+                    [
+                      40.7,
+                      7.8,
+                      36.5
+                    ],
+                    [
+                      40.7,
+                      7.8,
+                      35.1
+                    ],
+                    [
+                      40.9,
+                      7.8,
+                      35.9
+                    ]
+                  ],
+                  "rootCount": 61,
+                  "rootDomain": [
+                    -1.8,
+                    -1.8,
+                    2,
+                    2
+                  ],
+                  "ground": 7.36431832
+                }
+              ]
+            }
+          ],
+          "urbanBelts": 8,
+          "shoulderBelts": 5,
+          "actualTrees": 26,
+          "sourceUpperLimit": 5200,
+          "sourceAlgorithmBound": false,
+          "excludedPublicCorridor": {
+            "minX": -5,
+            "maxX": 5
+          }
+        }
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-city-forest-0-0-0-2-near-0f25880f3b",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 9600
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 9600
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-ground-ramp-forest-public-street-0d069aea02",
+      "name": "真实实体路基与连续坡面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              80,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              72,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -21,
+              25,
+              -22
+            ],
+            "max": [
+              24,
+              74,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              28,
+              -28
+            ],
+            "max": [
+              31,
+              78,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              68,
+              -4
+            ],
+            "max": [
+              5,
+              80,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-0-0-57e9fe988a",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            13.600000000000001,
+            0,
+            13
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -34,
+              0,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              0,
+              -11
+            ],
+            "max": [
+              13,
+              26,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -24,
+              11,
+              -25
+            ],
+            "max": [
+              25,
+              45,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -34,
+              31,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-0-1-b2a410fe4f",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-1-0-3d914fc78c",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-1-1-27211fd335",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-2-0-923d6a9a74",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-2-1-489411dda6",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-3-0-81424ae9b2",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-3-1-4e82416269",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-4-0-b4294e2f31",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-4-1-d37aea18f6",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-5-0-4dc990caa6",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-5-1-ce10503712",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-6-0-a107e1bc27",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-6-1-01771a931d",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-7-0-14290c3ca1",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-7-1-a6c56e002e",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              70,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              19,
+              -21
+            ],
+            "max": [
+              24,
+              62,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              23,
+              -28
+            ],
+            "max": [
+              31,
+              63,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              62,
+              -6
+            ],
+            "max": [
+              11,
+              70,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-8-0-d06a124768",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.8,
+            0,
+            3.6
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -9
+            ],
+            "max": [
+              10,
+              70,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -5,
+              26,
+              -5
+            ],
+            "max": [
+              7,
+              61,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              33,
+              -9
+            ],
+            "max": [
+              10,
+              70,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-8-1-fc2dd1a71b",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-9-0-b312820df6",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-9-1-4379848af7",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-10-0-7be7b650ca",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-10-1-39ca9507e2",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-11-0-cbc5a18a80",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-11-1-0f3065a867",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-12-0-875a96515a",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-belt-19-12-1-779f9d9c87",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-053-0",
+      "assetId": "architecture-civic-terrain-city-forest-0-0-0-2-near-0f25880f3b",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-1",
+      "assetId": "architecture-civic-ground-ramp-forest-public-street-0d069aea02",
+      "name": "真实实体路基与连续坡面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-2",
+      "assetId": "architecture-civic-root-pocket-belt-19-0-0-57e9fe988a",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-3",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        14,
+        5.6,
+        -36
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-4",
+      "assetId": "architecture-civic-root-pocket-belt-19-0-1-b2a410fe4f",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-5",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        24,
+        6.6,
+        -36
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-6",
+      "assetId": "architecture-civic-root-pocket-belt-19-1-0-3d914fc78c",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-7",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -14,
+        5.6,
+        -36
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-8",
+      "assetId": "architecture-civic-root-pocket-belt-19-1-1-27211fd335",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-9",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -24,
+        6.4,
+        -36
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-10",
+      "assetId": "architecture-civic-root-pocket-belt-19-2-0-923d6a9a74",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-11",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        14,
+        5.8,
+        -24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-12",
+      "assetId": "architecture-civic-root-pocket-belt-19-2-1-489411dda6",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-13",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        24,
+        6.6,
+        -24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-14",
+      "assetId": "architecture-civic-root-pocket-belt-19-3-0-81424ae9b2",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-15",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -14,
+        5.8,
+        -24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-16",
+      "assetId": "architecture-civic-root-pocket-belt-19-3-1-4e82416269",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-17",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -24,
+        6.6,
+        -24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-18",
+      "assetId": "architecture-civic-root-pocket-belt-19-4-0-b4294e2f31",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-19",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        14,
+        5.6,
+        -12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-20",
+      "assetId": "architecture-civic-root-pocket-belt-19-4-1-d37aea18f6",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-21",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        24,
+        6.4,
+        -12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-22",
+      "assetId": "architecture-civic-root-pocket-belt-19-5-0-4dc990caa6",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-23",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -14,
+        5.4,
+        -12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-24",
+      "assetId": "architecture-civic-root-pocket-belt-19-5-1-ce10503712",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-25",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -24,
+        6.4,
+        -12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-26",
+      "assetId": "architecture-civic-root-pocket-belt-19-6-0-a107e1bc27",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-27",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        14,
+        5,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-28",
+      "assetId": "architecture-civic-root-pocket-belt-19-6-1-01771a931d",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-29",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        24,
+        6,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-30",
+      "assetId": "architecture-civic-root-pocket-belt-19-7-0-14290c3ca1",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-31",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -14,
+        5,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-32",
+      "assetId": "architecture-civic-root-pocket-belt-19-7-1-a6c56e002e",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-33",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -24,
+        6,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-34",
+      "assetId": "architecture-civic-root-pocket-belt-19-8-0-d06a124768",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-35",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        31,
+        6.8,
+        12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-36",
+      "assetId": "architecture-civic-root-pocket-belt-19-8-1-fc2dd1a71b",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-37",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        41,
+        7.6,
+        12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-38",
+      "assetId": "architecture-civic-root-pocket-belt-19-9-0-b312820df6",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-39",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        -31,
+        6.8,
+        12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-40",
+      "assetId": "architecture-civic-root-pocket-belt-19-9-1-4379848af7",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-41",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        -41,
+        7.6,
+        12
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-42",
+      "assetId": "architecture-civic-root-pocket-belt-19-10-0-7be7b650ca",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-43",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        31,
+        7.2,
+        24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-44",
+      "assetId": "architecture-civic-root-pocket-belt-19-10-1-39ca9507e2",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-45",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        41,
+        8,
+        24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-46",
+      "assetId": "architecture-civic-root-pocket-belt-19-11-0-cbc5a18a80",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-47",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        -31,
+        7.2,
+        24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-48",
+      "assetId": "architecture-civic-root-pocket-belt-19-11-1-0f3065a867",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-49",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        -41,
+        8,
+        24
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-50",
+      "assetId": "architecture-civic-root-pocket-belt-19-12-0-875a96515a",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-51",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        31,
+        7,
+        36
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-52",
+      "assetId": "architecture-civic-root-pocket-belt-19-12-1-779f9d9c87",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-053-53",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        41,
+        7.8,
+        36
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

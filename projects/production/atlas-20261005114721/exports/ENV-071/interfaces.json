@@ -1,0 +1,5343 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-071": {
+      "id": "env-071",
+      "name": "针阔混交与山地分区群落组合",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-071-0",
+          "assetId": "architecture-civic-terrain-mixed-elevation-zones-0-0-0-2-near-8e4075ff67",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-1",
+          "assetId": "architecture-civic-root-pocket-mixed-0-0-91ac2e1a25",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-2",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -22,
+            4.8,
+            -22
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-3",
+          "assetId": "architecture-civic-root-pocket-mixed-0-1-cc742b42b8",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-4",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -22,
+            4.4,
+            -7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-5",
+          "assetId": "architecture-civic-root-pocket-mixed-0-2-8451877227",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-6",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -22,
+            4.4,
+            8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-7",
+          "assetId": "architecture-civic-root-pocket-mixed-0-3-28bcc4ea95",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-8",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -22,
+            4.8,
+            23
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-9",
+          "assetId": "architecture-civic-root-pocket-mixed-1-0-3d853a916a",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-10",
+          "assetId": "source-env-052",
+          "name": "近远林冠代理组件",
+          "position": [
+            -3,
+            6.2,
+            -22
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-11",
+          "assetId": "architecture-civic-root-pocket-mixed-1-1-0b280de253",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-12",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            -3,
+            5.8,
+            -7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-13",
+          "assetId": "architecture-civic-root-pocket-mixed-1-2-099893e00c",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-14",
+          "assetId": "source-env-052",
+          "name": "近远林冠代理组件",
+          "position": [
+            -3,
+            5.8,
+            8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-15",
+          "assetId": "architecture-civic-root-pocket-mixed-1-3-10fca45403",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-16",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            -3,
+            6.2,
+            23
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-17",
+          "assetId": "architecture-civic-root-pocket-mixed-2-0-1afa38313a",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-18",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            19,
+            12.4,
+            -22
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-19",
+          "assetId": "architecture-civic-root-pocket-mixed-2-1-952667308a",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-20",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            19,
+            12,
+            -7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-21",
+          "assetId": "architecture-civic-root-pocket-mixed-2-2-a494ce8321",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-22",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            19,
+            12,
+            8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-23",
+          "assetId": "architecture-civic-root-pocket-mixed-2-3-3a14175885",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-24",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            19,
+            12.4,
+            23
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-25",
+          "assetId": "architecture-civic-root-pocket-mixed-low-plants-0-658e9d1eeb",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-26",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            -12,
+            4.8,
+            -18
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-27",
+          "assetId": "architecture-civic-root-pocket-mixed-low-plants-1-a093f0f22d",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-28",
+          "assetId": "source-env-064-groundcover-broadleaf",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            -13,
+            4.8,
+            16
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-29",
+          "assetId": "architecture-civic-root-pocket-mixed-low-plants-2-e806f59758",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-30",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            9,
+            9,
+            -20
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-31",
+          "assetId": "architecture-civic-root-pocket-mixed-low-plants-3-e5dd35dc11",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-071-32",
+          "assetId": "source-env-064-groundcover-broadleaf",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            10,
+            9.4,
+            18
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-071",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M050",
+          "slot": 7,
+          "imageSHA256": "fc3606d5fbfb42b54f178c42f615af1bccade28ae0eccdc7028f9467b4d5e809"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-050",
+          "ENV-052",
+          "ENV-054",
+          "ENV-055",
+          "ENV-057",
+          "ENV-061",
+          "ENV-064"
+        ],
+        "instanceGroups": {
+          "env-071-0": "terrain",
+          "env-071-1": "root-soil",
+          "env-071-2": "vegetation",
+          "env-071-3": "root-soil",
+          "env-071-4": "vegetation",
+          "env-071-5": "root-soil",
+          "env-071-6": "vegetation",
+          "env-071-7": "root-soil",
+          "env-071-8": "vegetation",
+          "env-071-9": "root-soil",
+          "env-071-10": "vegetation",
+          "env-071-11": "root-soil",
+          "env-071-12": "vegetation",
+          "env-071-13": "root-soil",
+          "env-071-14": "vegetation",
+          "env-071-15": "root-soil",
+          "env-071-16": "vegetation",
+          "env-071-17": "root-soil",
+          "env-071-18": "vegetation",
+          "env-071-19": "root-soil",
+          "env-071-20": "vegetation",
+          "env-071-21": "root-soil",
+          "env-071-22": "vegetation",
+          "env-071-23": "root-soil",
+          "env-071-24": "vegetation",
+          "env-071-25": "root-soil",
+          "env-071-26": "vegetation",
+          "env-071-27": "root-soil",
+          "env-071-28": "vegetation",
+          "env-071-29": "root-soil",
+          "env-071-30": "vegetation",
+          "env-071-31": "root-soil",
+          "env-071-32": "vegetation"
+        },
+        "parameters": {},
+        "routes": [],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "mixed-0-0 root pocket terrain 0",
+            "point": [
+              -23.8,
+              4.5391991030000005,
+              -23.8
+            ],
+            "exclude": "env-071-1"
+          },
+          {
+            "name": "mixed-0-0 root pocket terrain 1",
+            "point": [
+              -20,
+              4.5391991030000005,
+              -23.8
+            ],
+            "exclude": "env-071-1"
+          },
+          {
+            "name": "mixed-0-0 root pocket terrain 2",
+            "point": [
+              -20,
+              4.5793728950000006,
+              -20
+            ],
+            "exclude": "env-071-1"
+          },
+          {
+            "name": "mixed-0-0 root pocket terrain 3",
+            "point": [
+              -23.8,
+              4.5793728950000006,
+              -20
+            ],
+            "exclude": "env-071-1"
+          },
+          {
+            "name": "mixed-0-0 root pocket terrain 4",
+            "point": [
+              -22,
+              4.571184508000001,
+              -22
+            ],
+            "exclude": "env-071-1"
+          },
+          {
+            "name": "mixed-0-0 canonical root on actual soil",
+            "point": [
+              -20.9,
+              4.78,
+              -23.1
+            ],
+            "exclude": "env-071-2",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-0 canonical root on actual soil",
+            "point": [
+              -21.9,
+              4.78,
+              -22.1
+            ],
+            "exclude": "env-071-2",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-0 canonical root on actual soil",
+            "point": [
+              -21.5,
+              4.78,
+              -21.7
+            ],
+            "exclude": "env-071-2",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-0 canonical root on actual soil",
+            "point": [
+              -21.7,
+              4.78,
+              -21.3
+            ],
+            "exclude": "env-071-2",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-0 canonical root on actual soil",
+            "point": [
+              -22.3,
+              4.78,
+              -21.5
+            ],
+            "exclude": "env-071-2",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-0 canonical root on actual soil",
+            "point": [
+              -22.3,
+              4.78,
+              -22.9
+            ],
+            "exclude": "env-071-2",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-0 canonical root on actual soil",
+            "point": [
+              -22.1,
+              4.78,
+              -22.1
+            ],
+            "exclude": "env-071-2",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-1 root pocket terrain 0",
+            "point": [
+              -24.6,
+              4.243194740000001,
+              -9.4
+            ],
+            "exclude": "env-071-3"
+          },
+          {
+            "name": "mixed-0-1 root pocket terrain 1",
+            "point": [
+              -19.2,
+              4.243194740000001,
+              -9.4
+            ],
+            "exclude": "env-071-3"
+          },
+          {
+            "name": "mixed-0-1 root pocket terrain 2",
+            "point": [
+              -19.2,
+              4.047825488000001,
+              -4.3999999999999995
+            ],
+            "exclude": "env-071-3"
+          },
+          {
+            "name": "mixed-0-1 root pocket terrain 3",
+            "point": [
+              -24.6,
+              4.047825488000001,
+              -4.3999999999999995
+            ],
+            "exclude": "env-071-3"
+          },
+          {
+            "name": "mixed-0-1 root pocket terrain 4",
+            "point": [
+              -22,
+              4.139467711,
+              -7
+            ],
+            "exclude": "env-071-3"
+          },
+          {
+            "name": "mixed-0-1 canonical root on actual soil",
+            "point": [
+              -20.3,
+              4.380000000000001,
+              -8.7
+            ],
+            "exclude": "env-071-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-1 canonical root on actual soil",
+            "point": [
+              -21.3,
+              4.380000000000001,
+              -7.3
+            ],
+            "exclude": "env-071-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-1 canonical root on actual soil",
+            "point": [
+              -21.3,
+              4.380000000000001,
+              -6.7
+            ],
+            "exclude": "env-071-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-1 canonical root on actual soil",
+            "point": [
+              -21.9,
+              4.380000000000001,
+              -6.1
+            ],
+            "exclude": "env-071-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-1 canonical root on actual soil",
+            "point": [
+              -22.5,
+              4.380000000000001,
+              -6.5
+            ],
+            "exclude": "env-071-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-1 canonical root on actual soil",
+            "point": [
+              -22.5,
+              4.380000000000001,
+              -8.5
+            ],
+            "exclude": "env-071-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-1 canonical root on actual soil",
+            "point": [
+              -22.5,
+              4.380000000000001,
+              -7.1
+            ],
+            "exclude": "env-071-4",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-2 root pocket terrain 0",
+            "point": [
+              -23.8,
+              4.1070849130000004,
+              6.2
+            ],
+            "exclude": "env-071-5"
+          },
+          {
+            "name": "mixed-0-2 root pocket terrain 1",
+            "point": [
+              -20,
+              4.1070849130000004,
+              6.2
+            ],
+            "exclude": "env-071-5"
+          },
+          {
+            "name": "mixed-0-2 root pocket terrain 2",
+            "point": [
+              -20,
+              4.2703012540000005,
+              10
+            ],
+            "exclude": "env-071-5"
+          },
+          {
+            "name": "mixed-0-2 root pocket terrain 3",
+            "point": [
+              -23.8,
+              4.2703012540000005,
+              10
+            ],
+            "exclude": "env-071-5"
+          },
+          {
+            "name": "mixed-0-2 root pocket terrain 4",
+            "point": [
+              -22,
+              4.179946209000001,
+              8
+            ],
+            "exclude": "env-071-5"
+          },
+          {
+            "name": "mixed-0-2 canonical root on actual soil",
+            "point": [
+              -20.9,
+              4.380000000000001,
+              6.9
+            ],
+            "exclude": "env-071-6",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-2 canonical root on actual soil",
+            "point": [
+              -21.9,
+              4.380000000000001,
+              7.9
+            ],
+            "exclude": "env-071-6",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-2 canonical root on actual soil",
+            "point": [
+              -21.5,
+              4.380000000000001,
+              8.3
+            ],
+            "exclude": "env-071-6",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-2 canonical root on actual soil",
+            "point": [
+              -21.7,
+              4.380000000000001,
+              8.7
+            ],
+            "exclude": "env-071-6",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-2 canonical root on actual soil",
+            "point": [
+              -22.3,
+              4.380000000000001,
+              8.5
+            ],
+            "exclude": "env-071-6",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-2 canonical root on actual soil",
+            "point": [
+              -22.3,
+              4.380000000000001,
+              7.1
+            ],
+            "exclude": "env-071-6",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-2 canonical root on actual soil",
+            "point": [
+              -22.1,
+              4.380000000000001,
+              7.9
+            ],
+            "exclude": "env-071-6",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-3 root pocket terrain 0",
+            "point": [
+              -24.6,
+              4.576916379,
+              20.6
+            ],
+            "exclude": "env-071-7"
+          },
+          {
+            "name": "mixed-0-3 root pocket terrain 1",
+            "point": [
+              -19.2,
+              4.576916379,
+              20.6
+            ],
+            "exclude": "env-071-7"
+          },
+          {
+            "name": "mixed-0-3 root pocket terrain 2",
+            "point": [
+              -19.2,
+              4.488003503000001,
+              25.6
+            ],
+            "exclude": "env-071-7"
+          },
+          {
+            "name": "mixed-0-3 root pocket terrain 3",
+            "point": [
+              -24.6,
+              4.488003503000001,
+              25.6
+            ],
+            "exclude": "env-071-7"
+          },
+          {
+            "name": "mixed-0-3 root pocket terrain 4",
+            "point": [
+              -22,
+              4.553414838,
+              23
+            ],
+            "exclude": "env-071-7"
+          },
+          {
+            "name": "mixed-0-3 canonical root on actual soil",
+            "point": [
+              -20.3,
+              4.78,
+              21.3
+            ],
+            "exclude": "env-071-8",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-3 canonical root on actual soil",
+            "point": [
+              -21.3,
+              4.78,
+              22.7
+            ],
+            "exclude": "env-071-8",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-3 canonical root on actual soil",
+            "point": [
+              -21.3,
+              4.78,
+              23.3
+            ],
+            "exclude": "env-071-8",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-3 canonical root on actual soil",
+            "point": [
+              -21.9,
+              4.78,
+              23.9
+            ],
+            "exclude": "env-071-8",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-3 canonical root on actual soil",
+            "point": [
+              -22.5,
+              4.78,
+              23.5
+            ],
+            "exclude": "env-071-8",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-3 canonical root on actual soil",
+            "point": [
+              -22.5,
+              4.78,
+              21.5
+            ],
+            "exclude": "env-071-8",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-0-3 canonical root on actual soil",
+            "point": [
+              -22.5,
+              4.78,
+              22.9
+            ],
+            "exclude": "env-071-8",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-0 root pocket terrain 0",
+            "point": [
+              -4.6,
+              4.934753037,
+              -23.6
+            ],
+            "exclude": "env-071-9"
+          },
+          {
+            "name": "mixed-1-0 root pocket terrain 1",
+            "point": [
+              -1.2,
+              5.886753037,
+              -23.6
+            ],
+            "exclude": "env-071-9"
+          },
+          {
+            "name": "mixed-1-0 root pocket terrain 2",
+            "point": [
+              -1.2,
+              5.922554057,
+              -20.2
+            ],
+            "exclude": "env-071-9"
+          },
+          {
+            "name": "mixed-1-0 root pocket terrain 3",
+            "point": [
+              -4.6,
+              4.970554057,
+              -20.2
+            ],
+            "exclude": "env-071-9"
+          },
+          {
+            "name": "mixed-1-0 root pocket terrain 4",
+            "point": [
+              -3,
+              5.411184508000001,
+              -22
+            ],
+            "exclude": "env-071-9"
+          },
+          {
+            "name": "mixed-1-0 canonical root on actual soil",
+            "point": [
+              -2.9,
+              6.180000000000001,
+              -21.9
+            ],
+            "exclude": "env-071-10",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-0 canonical root on actual soil",
+            "point": [
+              -1.7,
+              6.180000000000001,
+              -21.7
+            ],
+            "exclude": "env-071-10",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-0 canonical root on actual soil",
+            "point": [
+              -2.5,
+              6.180000000000001,
+              -20.5
+            ],
+            "exclude": "env-071-10",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-0 canonical root on actual soil",
+            "point": [
+              -2.5,
+              6.180000000000001,
+              -22.3
+            ],
+            "exclude": "env-071-10",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-0 canonical root on actual soil",
+            "point": [
+              -3.3,
+              6.180000000000001,
+              -21.5
+            ],
+            "exclude": "env-071-10",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-0 canonical root on actual soil",
+            "point": [
+              -3.3,
+              6.180000000000001,
+              -23.1
+            ],
+            "exclude": "env-071-10",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-0 canonical root on actual soil",
+            "point": [
+              -3.7,
+              6.180000000000001,
+              -22.1
+            ],
+            "exclude": "env-071-10",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-1 root pocket terrain 0",
+            "point": [
+              -4.8,
+              4.5520882270000005,
+              -8.8
+            ],
+            "exclude": "env-071-11"
+          },
+          {
+            "name": "mixed-1-1 root pocket terrain 1",
+            "point": [
+              -1,
+              5.6160882270000005,
+              -8.8
+            ],
+            "exclude": "env-071-11"
+          },
+          {
+            "name": "mixed-1-1 root pocket terrain 2",
+            "point": [
+              -1,
+              5.467011885000001,
+              -5
+            ],
+            "exclude": "env-071-11"
+          },
+          {
+            "name": "mixed-1-1 root pocket terrain 3",
+            "point": [
+              -4.8,
+              4.403011885000001,
+              -5
+            ],
+            "exclude": "env-071-11"
+          },
+          {
+            "name": "mixed-1-1 root pocket terrain 4",
+            "point": [
+              -3,
+              4.979467711000001,
+              -7
+            ],
+            "exclude": "env-071-11"
+          },
+          {
+            "name": "mixed-1-1 canonical root on actual soil",
+            "point": [
+              -1.9,
+              5.78,
+              -8.1
+            ],
+            "exclude": "env-071-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-1 canonical root on actual soil",
+            "point": [
+              -2.9,
+              5.78,
+              -7.1
+            ],
+            "exclude": "env-071-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-1 canonical root on actual soil",
+            "point": [
+              -2.5,
+              5.78,
+              -6.7
+            ],
+            "exclude": "env-071-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-1 canonical root on actual soil",
+            "point": [
+              -2.7,
+              5.78,
+              -6.3
+            ],
+            "exclude": "env-071-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-1 canonical root on actual soil",
+            "point": [
+              -3.3,
+              5.78,
+              -6.5
+            ],
+            "exclude": "env-071-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-1 canonical root on actual soil",
+            "point": [
+              -3.3,
+              5.78,
+              -7.9
+            ],
+            "exclude": "env-071-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-1 canonical root on actual soil",
+            "point": [
+              -3.1,
+              5.78,
+              -7.1
+            ],
+            "exclude": "env-071-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-2 root pocket terrain 0",
+            "point": [
+              -4.6,
+              4.507180613,
+              6.4
+            ],
+            "exclude": "env-071-13"
+          },
+          {
+            "name": "mixed-1-2 root pocket terrain 1",
+            "point": [
+              -1.2,
+              5.459180613,
+              6.4
+            ],
+            "exclude": "env-071-13"
+          },
+          {
+            "name": "mixed-1-2 root pocket terrain 2",
+            "point": [
+              -1.2,
+              5.605265749000001,
+              9.8
+            ],
+            "exclude": "env-071-13"
+          },
+          {
+            "name": "mixed-1-2 root pocket terrain 3",
+            "point": [
+              -4.6,
+              4.653265749,
+              9.8
+            ],
+            "exclude": "env-071-13"
+          },
+          {
+            "name": "mixed-1-2 root pocket terrain 4",
+            "point": [
+              -3,
+              5.019946209,
+              8
+            ],
+            "exclude": "env-071-13"
+          },
+          {
+            "name": "mixed-1-2 canonical root on actual soil",
+            "point": [
+              -2.9,
+              5.78,
+              8.1
+            ],
+            "exclude": "env-071-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-2 canonical root on actual soil",
+            "point": [
+              -1.7,
+              5.78,
+              8.3
+            ],
+            "exclude": "env-071-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-2 canonical root on actual soil",
+            "point": [
+              -2.5,
+              5.78,
+              9.5
+            ],
+            "exclude": "env-071-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-2 canonical root on actual soil",
+            "point": [
+              -2.5,
+              5.78,
+              7.7
+            ],
+            "exclude": "env-071-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-2 canonical root on actual soil",
+            "point": [
+              -3.3,
+              5.78,
+              8.5
+            ],
+            "exclude": "env-071-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-2 canonical root on actual soil",
+            "point": [
+              -3.3,
+              5.78,
+              6.9
+            ],
+            "exclude": "env-071-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-2 canonical root on actual soil",
+            "point": [
+              -3.7,
+              5.78,
+              7.9
+            ],
+            "exclude": "env-071-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-3 root pocket terrain 0",
+            "point": [
+              -4.8,
+              4.910459863000001,
+              21.2
+            ],
+            "exclude": "env-071-15"
+          },
+          {
+            "name": "mixed-1-3 root pocket terrain 1",
+            "point": [
+              -1,
+              5.974459863000001,
+              21.2
+            ],
+            "exclude": "env-071-15"
+          },
+          {
+            "name": "mixed-1-3 root pocket terrain 2",
+            "point": [
+              -1,
+              5.905869128000001,
+              25
+            ],
+            "exclude": "env-071-15"
+          },
+          {
+            "name": "mixed-1-3 root pocket terrain 3",
+            "point": [
+              -4.8,
+              4.841869128000001,
+              25
+            ],
+            "exclude": "env-071-15"
+          },
+          {
+            "name": "mixed-1-3 root pocket terrain 4",
+            "point": [
+              -3,
+              5.393414838,
+              23
+            ],
+            "exclude": "env-071-15"
+          },
+          {
+            "name": "mixed-1-3 canonical root on actual soil",
+            "point": [
+              -1.9,
+              6.180000000000001,
+              21.9
+            ],
+            "exclude": "env-071-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-3 canonical root on actual soil",
+            "point": [
+              -2.9,
+              6.180000000000001,
+              22.9
+            ],
+            "exclude": "env-071-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-3 canonical root on actual soil",
+            "point": [
+              -2.5,
+              6.180000000000001,
+              23.3
+            ],
+            "exclude": "env-071-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-3 canonical root on actual soil",
+            "point": [
+              -2.7,
+              6.180000000000001,
+              23.7
+            ],
+            "exclude": "env-071-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-3 canonical root on actual soil",
+            "point": [
+              -3.3,
+              6.180000000000001,
+              23.5
+            ],
+            "exclude": "env-071-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-3 canonical root on actual soil",
+            "point": [
+              -3.3,
+              6.180000000000001,
+              22.1
+            ],
+            "exclude": "env-071-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-1-3 canonical root on actual soil",
+            "point": [
+              -3.1,
+              6.180000000000001,
+              22.9
+            ],
+            "exclude": "env-071-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-0 root pocket terrain 0",
+            "point": [
+              17.2,
+              11.035199103,
+              -23.8
+            ],
+            "exclude": "env-071-17"
+          },
+          {
+            "name": "mixed-2-0 root pocket terrain 1",
+            "point": [
+              21,
+              12.099199103,
+              -23.8
+            ],
+            "exclude": "env-071-17"
+          },
+          {
+            "name": "mixed-2-0 root pocket terrain 2",
+            "point": [
+              21,
+              12.139372895000001,
+              -20
+            ],
+            "exclude": "env-071-17"
+          },
+          {
+            "name": "mixed-2-0 root pocket terrain 3",
+            "point": [
+              17.2,
+              11.075372895000001,
+              -20
+            ],
+            "exclude": "env-071-17"
+          },
+          {
+            "name": "mixed-2-0 root pocket terrain 4",
+            "point": [
+              19,
+              11.571184508,
+              -22
+            ],
+            "exclude": "env-071-17"
+          },
+          {
+            "name": "mixed-2-0 canonical root on actual soil",
+            "point": [
+              20.1,
+              12.38,
+              -23.1
+            ],
+            "exclude": "env-071-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-0 canonical root on actual soil",
+            "point": [
+              19.1,
+              12.38,
+              -22.1
+            ],
+            "exclude": "env-071-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-0 canonical root on actual soil",
+            "point": [
+              19.5,
+              12.38,
+              -21.7
+            ],
+            "exclude": "env-071-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-0 canonical root on actual soil",
+            "point": [
+              19.3,
+              12.38,
+              -21.3
+            ],
+            "exclude": "env-071-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-0 canonical root on actual soil",
+            "point": [
+              18.7,
+              12.38,
+              -21.5
+            ],
+            "exclude": "env-071-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-0 canonical root on actual soil",
+            "point": [
+              18.7,
+              12.38,
+              -22.9
+            ],
+            "exclude": "env-071-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-0 canonical root on actual soil",
+            "point": [
+              18.9,
+              12.38,
+              -22.1
+            ],
+            "exclude": "env-071-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-1 root pocket terrain 0",
+            "point": [
+              17.2,
+              10.712088227,
+              -8.8
+            ],
+            "exclude": "env-071-19"
+          },
+          {
+            "name": "mixed-2-1 root pocket terrain 1",
+            "point": [
+              21,
+              11.776088227,
+              -8.8
+            ],
+            "exclude": "env-071-19"
+          },
+          {
+            "name": "mixed-2-1 root pocket terrain 2",
+            "point": [
+              21,
+              11.627011885,
+              -5
+            ],
+            "exclude": "env-071-19"
+          },
+          {
+            "name": "mixed-2-1 root pocket terrain 3",
+            "point": [
+              17.2,
+              10.563011885,
+              -5
+            ],
+            "exclude": "env-071-19"
+          },
+          {
+            "name": "mixed-2-1 root pocket terrain 4",
+            "point": [
+              19,
+              11.139467711,
+              -7
+            ],
+            "exclude": "env-071-19"
+          },
+          {
+            "name": "mixed-2-1 canonical root on actual soil",
+            "point": [
+              20.1,
+              11.98,
+              -8.1
+            ],
+            "exclude": "env-071-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-1 canonical root on actual soil",
+            "point": [
+              19.1,
+              11.98,
+              -7.1
+            ],
+            "exclude": "env-071-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-1 canonical root on actual soil",
+            "point": [
+              19.5,
+              11.98,
+              -6.7
+            ],
+            "exclude": "env-071-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-1 canonical root on actual soil",
+            "point": [
+              19.3,
+              11.98,
+              -6.3
+            ],
+            "exclude": "env-071-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-1 canonical root on actual soil",
+            "point": [
+              18.7,
+              11.98,
+              -6.5
+            ],
+            "exclude": "env-071-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-1 canonical root on actual soil",
+            "point": [
+              18.7,
+              11.98,
+              -7.9
+            ],
+            "exclude": "env-071-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-1 canonical root on actual soil",
+            "point": [
+              18.9,
+              11.98,
+              -7.1
+            ],
+            "exclude": "env-071-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-2 root pocket terrain 0",
+            "point": [
+              17.2,
+              10.603084913,
+              6.2
+            ],
+            "exclude": "env-071-21"
+          },
+          {
+            "name": "mixed-2-2 root pocket terrain 1",
+            "point": [
+              21,
+              11.667084913,
+              6.2
+            ],
+            "exclude": "env-071-21"
+          },
+          {
+            "name": "mixed-2-2 root pocket terrain 2",
+            "point": [
+              21,
+              11.830301254,
+              10
+            ],
+            "exclude": "env-071-21"
+          },
+          {
+            "name": "mixed-2-2 root pocket terrain 3",
+            "point": [
+              17.2,
+              10.766301254,
+              10
+            ],
+            "exclude": "env-071-21"
+          },
+          {
+            "name": "mixed-2-2 root pocket terrain 4",
+            "point": [
+              19,
+              11.179946209,
+              8
+            ],
+            "exclude": "env-071-21"
+          },
+          {
+            "name": "mixed-2-2 canonical root on actual soil",
+            "point": [
+              20.1,
+              11.98,
+              6.9
+            ],
+            "exclude": "env-071-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-2 canonical root on actual soil",
+            "point": [
+              19.1,
+              11.98,
+              7.9
+            ],
+            "exclude": "env-071-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-2 canonical root on actual soil",
+            "point": [
+              19.5,
+              11.98,
+              8.3
+            ],
+            "exclude": "env-071-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-2 canonical root on actual soil",
+            "point": [
+              19.3,
+              11.98,
+              8.7
+            ],
+            "exclude": "env-071-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-2 canonical root on actual soil",
+            "point": [
+              18.7,
+              11.98,
+              8.5
+            ],
+            "exclude": "env-071-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-2 canonical root on actual soil",
+            "point": [
+              18.7,
+              11.98,
+              7.1
+            ],
+            "exclude": "env-071-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-2 canonical root on actual soil",
+            "point": [
+              18.9,
+              11.98,
+              7.9
+            ],
+            "exclude": "env-071-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-3 root pocket terrain 0",
+            "point": [
+              17.2,
+              11.070459863,
+              21.2
+            ],
+            "exclude": "env-071-23"
+          },
+          {
+            "name": "mixed-2-3 root pocket terrain 1",
+            "point": [
+              21,
+              12.134459863,
+              21.2
+            ],
+            "exclude": "env-071-23"
+          },
+          {
+            "name": "mixed-2-3 root pocket terrain 2",
+            "point": [
+              21,
+              12.065869128000001,
+              25
+            ],
+            "exclude": "env-071-23"
+          },
+          {
+            "name": "mixed-2-3 root pocket terrain 3",
+            "point": [
+              17.2,
+              11.001869128000001,
+              25
+            ],
+            "exclude": "env-071-23"
+          },
+          {
+            "name": "mixed-2-3 root pocket terrain 4",
+            "point": [
+              19,
+              11.553414838,
+              23
+            ],
+            "exclude": "env-071-23"
+          },
+          {
+            "name": "mixed-2-3 canonical root on actual soil",
+            "point": [
+              20.1,
+              12.38,
+              21.9
+            ],
+            "exclude": "env-071-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-3 canonical root on actual soil",
+            "point": [
+              19.1,
+              12.38,
+              22.9
+            ],
+            "exclude": "env-071-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-3 canonical root on actual soil",
+            "point": [
+              19.5,
+              12.38,
+              23.3
+            ],
+            "exclude": "env-071-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-3 canonical root on actual soil",
+            "point": [
+              19.3,
+              12.38,
+              23.7
+            ],
+            "exclude": "env-071-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-3 canonical root on actual soil",
+            "point": [
+              18.7,
+              12.38,
+              23.5
+            ],
+            "exclude": "env-071-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-3 canonical root on actual soil",
+            "point": [
+              18.7,
+              12.38,
+              22.1
+            ],
+            "exclude": "env-071-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-2-3 canonical root on actual soil",
+            "point": [
+              18.9,
+              12.38,
+              22.9
+            ],
+            "exclude": "env-071-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-0 root pocket terrain 0",
+            "point": [
+              -12.2,
+              4.561434366,
+              -18.2
+            ],
+            "exclude": "env-071-25"
+          },
+          {
+            "name": "mixed-low-plants-0 root pocket terrain 1",
+            "point": [
+              -11.6,
+              4.561434366,
+              -18.2
+            ],
+            "exclude": "env-071-25"
+          },
+          {
+            "name": "mixed-low-plants-0 root pocket terrain 2",
+            "point": [
+              -11.6,
+              4.550205275000001,
+              -17.6
+            ],
+            "exclude": "env-071-25"
+          },
+          {
+            "name": "mixed-low-plants-0 root pocket terrain 3",
+            "point": [
+              -12.2,
+              4.550205275000001,
+              -17.6
+            ],
+            "exclude": "env-071-25"
+          },
+          {
+            "name": "mixed-low-plants-0 root pocket terrain 4",
+            "point": [
+              -12,
+              4.559441196000001,
+              -18
+            ],
+            "exclude": "env-071-25"
+          },
+          {
+            "name": "mixed-low-plants-0 canonical root on actual soil",
+            "point": [
+              -11.9,
+              4.78,
+              -17.9
+            ],
+            "exclude": "env-071-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 root pocket terrain 0",
+            "point": [
+              -13.6,
+              4.492834635,
+              15.4
+            ],
+            "exclude": "env-071-27"
+          },
+          {
+            "name": "mixed-low-plants-1 root pocket terrain 1",
+            "point": [
+              -12.2,
+              4.492834635,
+              15.4
+            ],
+            "exclude": "env-071-27"
+          },
+          {
+            "name": "mixed-low-plants-1 root pocket terrain 2",
+            "point": [
+              -12.2,
+              4.531733434,
+              16.8
+            ],
+            "exclude": "env-071-27"
+          },
+          {
+            "name": "mixed-low-plants-1 root pocket terrain 3",
+            "point": [
+              -13.6,
+              4.531733434,
+              16.8
+            ],
+            "exclude": "env-071-27"
+          },
+          {
+            "name": "mixed-low-plants-1 root pocket terrain 4",
+            "point": [
+              -13,
+              4.513261593,
+              16
+            ],
+            "exclude": "env-071-27"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -12.9,
+              4.78,
+              16.1
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -12.7,
+              4.78,
+              16.1
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -12.5,
+              4.78,
+              16.1
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -12.9,
+              4.78,
+              16.3
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -12.9,
+              4.78,
+              16.5
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -13.3,
+              4.78,
+              16.1
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -13.1,
+              4.78,
+              16.1
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -12.9,
+              4.78,
+              15.7
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-1 canonical root on actual soil",
+            "point": [
+              -12.9,
+              4.78,
+              15.9
+            ],
+            "exclude": "env-071-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-2 root pocket terrain 0",
+            "point": [
+              8.8,
+              8.722554057,
+              -20.2
+            ],
+            "exclude": "env-071-29"
+          },
+          {
+            "name": "mixed-low-plants-2 root pocket terrain 1",
+            "point": [
+              9.4,
+              8.890554057000001,
+              -20.2
+            ],
+            "exclude": "env-071-29"
+          },
+          {
+            "name": "mixed-low-plants-2 root pocket terrain 2",
+            "point": [
+              9.4,
+              8.887386556000001,
+              -19.6
+            ],
+            "exclude": "env-071-29"
+          },
+          {
+            "name": "mixed-low-plants-2 root pocket terrain 3",
+            "point": [
+              8.8,
+              8.719386556,
+              -19.6
+            ],
+            "exclude": "env-071-29"
+          },
+          {
+            "name": "mixed-low-plants-2 root pocket terrain 4",
+            "point": [
+              9,
+              8.779372895,
+              -20
+            ],
+            "exclude": "env-071-29"
+          },
+          {
+            "name": "mixed-low-plants-2 canonical root on actual soil",
+            "point": [
+              9.1,
+              8.98,
+              -19.9
+            ],
+            "exclude": "env-071-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 root pocket terrain 0",
+            "point": [
+              9.4,
+              8.857587315,
+              17.4
+            ],
+            "exclude": "env-071-31"
+          },
+          {
+            "name": "mixed-low-plants-3 root pocket terrain 1",
+            "point": [
+              10.8,
+              9.249587315000001,
+              17.4
+            ],
+            "exclude": "env-071-31"
+          },
+          {
+            "name": "mixed-low-plants-3 root pocket terrain 2",
+            "point": [
+              10.8,
+              9.271413876,
+              18.8
+            ],
+            "exclude": "env-071-31"
+          },
+          {
+            "name": "mixed-low-plants-3 root pocket terrain 3",
+            "point": [
+              9.4,
+              8.879413876000001,
+              18.8
+            ],
+            "exclude": "env-071-31"
+          },
+          {
+            "name": "mixed-low-plants-3 root pocket terrain 4",
+            "point": [
+              10,
+              9.039441196,
+              18
+            ],
+            "exclude": "env-071-31"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              10.1,
+              9.38,
+              18.1
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              10.3,
+              9.38,
+              18.1
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              10.5,
+              9.38,
+              18.1
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              10.1,
+              9.38,
+              18.3
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              10.1,
+              9.38,
+              18.5
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              9.7,
+              9.38,
+              18.1
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              9.9,
+              9.38,
+              18.1
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              10.1,
+              9.38,
+              17.7
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "mixed-low-plants-3 canonical root on actual soil",
+            "point": [
+              10.1,
+              9.38,
+              17.9
+            ],
+            "exclude": "env-071-32",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored environment only. Original terrain, hydrology, ecology, residency, permissions and controllers remain unbound.",
+        "terrainAuthority": "Actual closed continuous terrain triangles;0.2m minimum native rock cells. Canonical plants and transport components retain their full original grids.",
+        "terrainTiles": [
+          {
+            "instance": "env-071-0",
+            "assetId": "architecture-civic-terrain-mixed-elevation-zones-0-0-0-2-near-8e4075ff67",
+            "authorityAssetId": "architecture-civic-terrain-mixed-elevation-zones-0-0-0-2-near-8e4075ff67",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 64,
+            "step": 2,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 64,
+          "step": 2,
+          "origin": [
+            -32,
+            -32
+          ],
+          "continuousPhysicalSurface": true
+        },
+        "ecologyBands": [
+          {
+            "zone": "moist lower broadleaf",
+            "moistureAuthorIndex": 1,
+            "plants": [
+              {
+                "catalogId": "ENV-050",
+                "params": {
+                  "height": 16
+                },
+                "instance": "env-071-2",
+                "soilInstance": "env-071-1",
+                "position": [
+                  -22,
+                  4.8,
+                  -22
+                ],
+                "rootSamples": [
+                  [
+                    -20.9,
+                    4.8,
+                    -23.1
+                  ],
+                  [
+                    -21.9,
+                    4.8,
+                    -22.1
+                  ],
+                  [
+                    -21.5,
+                    4.8,
+                    -21.7
+                  ],
+                  [
+                    -21.7,
+                    4.8,
+                    -21.3
+                  ],
+                  [
+                    -22.3,
+                    4.8,
+                    -21.5
+                  ],
+                  [
+                    -22.3,
+                    4.8,
+                    -22.9
+                  ],
+                  [
+                    -22.1,
+                    4.8,
+                    -22.1
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 4.591184508
+              },
+              {
+                "catalogId": "ENV-057",
+                "params": {},
+                "instance": "env-071-4",
+                "soilInstance": "env-071-3",
+                "position": [
+                  -22,
+                  4.4,
+                  -7
+                ],
+                "rootSamples": [
+                  [
+                    -20.3,
+                    4.4,
+                    -8.7
+                  ],
+                  [
+                    -21.3,
+                    4.4,
+                    -7.3
+                  ],
+                  [
+                    -21.3,
+                    4.4,
+                    -6.7
+                  ],
+                  [
+                    -21.9,
+                    4.4,
+                    -6.1
+                  ],
+                  [
+                    -22.5,
+                    4.4,
+                    -6.5
+                  ],
+                  [
+                    -22.5,
+                    4.4,
+                    -8.5
+                  ],
+                  [
+                    -22.5,
+                    4.4,
+                    -7.1
+                  ]
+                ],
+                "rootCount": 87,
+                "rootDomain": [
+                  -2.6000000000000005,
+                  -2.4000000000000004,
+                  2.8000000000000007,
+                  2.6000000000000005
+                ],
+                "ground": 4.159467711
+              },
+              {
+                "catalogId": "ENV-050",
+                "params": {
+                  "height": 16
+                },
+                "instance": "env-071-6",
+                "soilInstance": "env-071-5",
+                "position": [
+                  -22,
+                  4.4,
+                  8
+                ],
+                "rootSamples": [
+                  [
+                    -20.9,
+                    4.4,
+                    6.9
+                  ],
+                  [
+                    -21.9,
+                    4.4,
+                    7.9
+                  ],
+                  [
+                    -21.5,
+                    4.4,
+                    8.3
+                  ],
+                  [
+                    -21.7,
+                    4.4,
+                    8.7
+                  ],
+                  [
+                    -22.3,
+                    4.4,
+                    8.5
+                  ],
+                  [
+                    -22.3,
+                    4.4,
+                    7.1
+                  ],
+                  [
+                    -22.1,
+                    4.4,
+                    7.9
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 4.199946209
+              },
+              {
+                "catalogId": "ENV-057",
+                "params": {},
+                "instance": "env-071-8",
+                "soilInstance": "env-071-7",
+                "position": [
+                  -22,
+                  4.8,
+                  23
+                ],
+                "rootSamples": [
+                  [
+                    -20.3,
+                    4.8,
+                    21.3
+                  ],
+                  [
+                    -21.3,
+                    4.8,
+                    22.7
+                  ],
+                  [
+                    -21.3,
+                    4.8,
+                    23.3
+                  ],
+                  [
+                    -21.9,
+                    4.8,
+                    23.9
+                  ],
+                  [
+                    -22.5,
+                    4.8,
+                    23.5
+                  ],
+                  [
+                    -22.5,
+                    4.8,
+                    21.5
+                  ],
+                  [
+                    -22.5,
+                    4.8,
+                    22.9
+                  ]
+                ],
+                "rootCount": 87,
+                "rootDomain": [
+                  -2.6000000000000005,
+                  -2.4000000000000004,
+                  2.8000000000000007,
+                  2.6000000000000005
+                ],
+                "ground": 4.573414838
+              }
+            ]
+          },
+          {
+            "zone": "middle mixed forest",
+            "moistureAuthorIndex": 0.7,
+            "plants": [
+              {
+                "catalogId": "ENV-052",
+                "params": {},
+                "instance": "env-071-10",
+                "soilInstance": "env-071-9",
+                "position": [
+                  -3,
+                  6.2,
+                  -22
+                ],
+                "rootSamples": [
+                  [
+                    -2.9,
+                    6.2,
+                    -21.9
+                  ],
+                  [
+                    -1.7,
+                    6.2,
+                    -21.7
+                  ],
+                  [
+                    -2.5,
+                    6.2,
+                    -20.5
+                  ],
+                  [
+                    -2.5,
+                    6.2,
+                    -22.3
+                  ],
+                  [
+                    -3.3,
+                    6.2,
+                    -21.5
+                  ],
+                  [
+                    -3.3,
+                    6.2,
+                    -23.1
+                  ],
+                  [
+                    -3.7,
+                    6.2,
+                    -22.1
+                  ]
+                ],
+                "rootCount": 51,
+                "rootDomain": [
+                  -1.6,
+                  -1.6,
+                  1.8,
+                  1.8
+                ],
+                "ground": 5.431184508
+              },
+              {
+                "catalogId": "ENV-054",
+                "params": {},
+                "instance": "env-071-12",
+                "soilInstance": "env-071-11",
+                "position": [
+                  -3,
+                  5.8,
+                  -7
+                ],
+                "rootSamples": [
+                  [
+                    -1.9,
+                    5.8,
+                    -8.1
+                  ],
+                  [
+                    -2.9,
+                    5.8,
+                    -7.1
+                  ],
+                  [
+                    -2.5,
+                    5.8,
+                    -6.7
+                  ],
+                  [
+                    -2.7,
+                    5.8,
+                    -6.3
+                  ],
+                  [
+                    -3.3,
+                    5.8,
+                    -6.5
+                  ],
+                  [
+                    -3.3,
+                    5.8,
+                    -7.9
+                  ],
+                  [
+                    -3.1,
+                    5.8,
+                    -7.1
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 4.999467711
+              },
+              {
+                "catalogId": "ENV-052",
+                "params": {},
+                "instance": "env-071-14",
+                "soilInstance": "env-071-13",
+                "position": [
+                  -3,
+                  5.8,
+                  8
+                ],
+                "rootSamples": [
+                  [
+                    -2.9,
+                    5.8,
+                    8.1
+                  ],
+                  [
+                    -1.7,
+                    5.8,
+                    8.3
+                  ],
+                  [
+                    -2.5,
+                    5.8,
+                    9.5
+                  ],
+                  [
+                    -2.5,
+                    5.8,
+                    7.7
+                  ],
+                  [
+                    -3.3,
+                    5.8,
+                    8.5
+                  ],
+                  [
+                    -3.3,
+                    5.8,
+                    6.9
+                  ],
+                  [
+                    -3.7,
+                    5.8,
+                    7.9
+                  ]
+                ],
+                "rootCount": 51,
+                "rootDomain": [
+                  -1.6,
+                  -1.6,
+                  1.8,
+                  1.8
+                ],
+                "ground": 5.039946209
+              },
+              {
+                "catalogId": "ENV-054",
+                "params": {},
+                "instance": "env-071-16",
+                "soilInstance": "env-071-15",
+                "position": [
+                  -3,
+                  6.2,
+                  23
+                ],
+                "rootSamples": [
+                  [
+                    -1.9,
+                    6.2,
+                    21.9
+                  ],
+                  [
+                    -2.9,
+                    6.2,
+                    22.9
+                  ],
+                  [
+                    -2.5,
+                    6.2,
+                    23.3
+                  ],
+                  [
+                    -2.7,
+                    6.2,
+                    23.7
+                  ],
+                  [
+                    -3.3,
+                    6.2,
+                    23.5
+                  ],
+                  [
+                    -3.3,
+                    6.2,
+                    22.1
+                  ],
+                  [
+                    -3.1,
+                    6.2,
+                    22.9
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 5.413414838
+              }
+            ]
+          },
+          {
+            "zone": "higher pine and cypress",
+            "moistureAuthorIndex": 0.4,
+            "plants": [
+              {
+                "catalogId": "ENV-054",
+                "params": {},
+                "instance": "env-071-18",
+                "soilInstance": "env-071-17",
+                "position": [
+                  19,
+                  12.4,
+                  -22
+                ],
+                "rootSamples": [
+                  [
+                    20.1,
+                    12.4,
+                    -23.1
+                  ],
+                  [
+                    19.1,
+                    12.4,
+                    -22.1
+                  ],
+                  [
+                    19.5,
+                    12.4,
+                    -21.7
+                  ],
+                  [
+                    19.3,
+                    12.4,
+                    -21.3
+                  ],
+                  [
+                    18.7,
+                    12.4,
+                    -21.5
+                  ],
+                  [
+                    18.7,
+                    12.4,
+                    -22.9
+                  ],
+                  [
+                    18.9,
+                    12.4,
+                    -22.1
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 11.591184508
+              },
+              {
+                "catalogId": "ENV-055",
+                "params": {},
+                "instance": "env-071-20",
+                "soilInstance": "env-071-19",
+                "position": [
+                  19,
+                  12,
+                  -7
+                ],
+                "rootSamples": [
+                  [
+                    20.1,
+                    12,
+                    -8.1
+                  ],
+                  [
+                    19.1,
+                    12,
+                    -7.1
+                  ],
+                  [
+                    19.5,
+                    12,
+                    -6.7
+                  ],
+                  [
+                    19.3,
+                    12,
+                    -6.3
+                  ],
+                  [
+                    18.7,
+                    12,
+                    -6.5
+                  ],
+                  [
+                    18.7,
+                    12,
+                    -7.9
+                  ],
+                  [
+                    18.9,
+                    12,
+                    -7.1
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 11.159467711
+              },
+              {
+                "catalogId": "ENV-054",
+                "params": {},
+                "instance": "env-071-22",
+                "soilInstance": "env-071-21",
+                "position": [
+                  19,
+                  12,
+                  8
+                ],
+                "rootSamples": [
+                  [
+                    20.1,
+                    12,
+                    6.9
+                  ],
+                  [
+                    19.1,
+                    12,
+                    7.9
+                  ],
+                  [
+                    19.5,
+                    12,
+                    8.3
+                  ],
+                  [
+                    19.3,
+                    12,
+                    8.7
+                  ],
+                  [
+                    18.7,
+                    12,
+                    8.5
+                  ],
+                  [
+                    18.7,
+                    12,
+                    7.1
+                  ],
+                  [
+                    18.9,
+                    12,
+                    7.9
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 11.199946209
+              },
+              {
+                "catalogId": "ENV-055",
+                "params": {},
+                "instance": "env-071-24",
+                "soilInstance": "env-071-23",
+                "position": [
+                  19,
+                  12.4,
+                  23
+                ],
+                "rootSamples": [
+                  [
+                    20.1,
+                    12.4,
+                    21.9
+                  ],
+                  [
+                    19.1,
+                    12.4,
+                    22.9
+                  ],
+                  [
+                    19.5,
+                    12.4,
+                    23.3
+                  ],
+                  [
+                    19.3,
+                    12.4,
+                    23.7
+                  ],
+                  [
+                    18.7,
+                    12.4,
+                    23.5
+                  ],
+                  [
+                    18.7,
+                    12.4,
+                    22.1
+                  ],
+                  [
+                    18.9,
+                    12.4,
+                    22.9
+                  ]
+                ],
+                "rootCount": 61,
+                "rootDomain": [
+                  -1.8,
+                  -1.8,
+                  2,
+                  2
+                ],
+                "ground": 11.573414838
+              }
+            ]
+          }
+        ],
+        "understory": [
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-071-26",
+            "soilInstance": "env-071-25",
+            "position": [
+              -12,
+              4.8,
+              -18
+            ],
+            "rootSamples": [
+              [
+                -11.9,
+                4.8,
+                -17.9
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 4.579441196
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "broadleaf"
+            },
+            "instance": "env-071-28",
+            "soilInstance": "env-071-27",
+            "position": [
+              -13,
+              4.8,
+              16
+            ],
+            "rootSamples": [
+              [
+                -12.9,
+                4.8,
+                16.1
+              ],
+              [
+                -12.7,
+                4.8,
+                16.1
+              ],
+              [
+                -12.5,
+                4.8,
+                16.1
+              ],
+              [
+                -12.9,
+                4.8,
+                16.3
+              ],
+              [
+                -12.9,
+                4.8,
+                16.5
+              ],
+              [
+                -13.3,
+                4.8,
+                16.1
+              ],
+              [
+                -13.1,
+                4.8,
+                16.1
+              ],
+              [
+                -12.9,
+                4.8,
+                15.7
+              ],
+              [
+                -12.9,
+                4.8,
+                15.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 4.533261593
+          },
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-071-30",
+            "soilInstance": "env-071-29",
+            "position": [
+              9,
+              9,
+              -20
+            ],
+            "rootSamples": [
+              [
+                9.1,
+                9,
+                -19.9
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 8.799372895
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "broadleaf"
+            },
+            "instance": "env-071-32",
+            "soilInstance": "env-071-31",
+            "position": [
+              10,
+              9.4,
+              18
+            ],
+            "rootSamples": [
+              [
+                10.1,
+                9.4,
+                18.1
+              ],
+              [
+                10.3,
+                9.4,
+                18.1
+              ],
+              [
+                10.5,
+                9.4,
+                18.1
+              ],
+              [
+                10.1,
+                9.4,
+                18.3
+              ],
+              [
+                10.1,
+                9.4,
+                18.5
+              ],
+              [
+                9.7,
+                9.4,
+                18.1
+              ],
+              [
+                9.9,
+                9.4,
+                18.1
+              ],
+              [
+                10.1,
+                9.4,
+                17.7
+              ],
+              [
+                10.1,
+                9.4,
+                17.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 9.059441196
+          }
+        ],
+        "ecologyScope": "Different canonical trunk and crown structures, finite authored moisture/altitude zones; no ecology simulator or distance residency binding."
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-mixed-elevation-zones-0-0-0-2-near-8e4075ff67",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 4352
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 4352
+        }
+      ]
+    },
+    {
+      "id": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              80,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              72,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -21,
+              25,
+              -22
+            ],
+            "max": [
+              24,
+              74,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              28,
+              -28
+            ],
+            "max": [
+              31,
+              78,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              68,
+              -4
+            ],
+            "max": [
+              5,
+              80,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-0-0-91ac2e1a25",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            13.600000000000001,
+            0,
+            13
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -34,
+              0,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              0,
+              -11
+            ],
+            "max": [
+              13,
+              26,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -24,
+              11,
+              -25
+            ],
+            "max": [
+              25,
+              45,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -34,
+              31,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-0-1-cc742b42b8",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-0-2-8451877227",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-0-3-28bcc4ea95",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-052",
+      "name": "近远林冠代理组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            9.600000000000001,
+            0,
+            9.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -24,
+              0,
+              -24
+            ],
+            "max": [
+              24,
+              70,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              0,
+              -7
+            ],
+            "max": [
+              8,
+              63,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -17,
+              22,
+              -18
+            ],
+            "max": [
+              18,
+              65,
+              17
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -24,
+              25,
+              -24
+            ],
+            "max": [
+              24,
+              68,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -6,
+              60,
+              -3
+            ],
+            "max": [
+              4,
+              70,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-1-0-3d853a916a",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              70,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              19,
+              -21
+            ],
+            "max": [
+              24,
+              62,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              23,
+              -28
+            ],
+            "max": [
+              31,
+              63,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              62,
+              -6
+            ],
+            "max": [
+              11,
+              70,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-1-1-0b280de253",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-1-2-099893e00c",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-1-3-10fca45403",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-2-0-1afa38313a",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.8,
+            0,
+            3.6
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -9
+            ],
+            "max": [
+              10,
+              70,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -5,
+              26,
+              -5
+            ],
+            "max": [
+              7,
+              61,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              33,
+              -9
+            ],
+            "max": [
+              10,
+              70,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-2-1-952667308a",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-2-2-a494ce8321",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-2-3-3a14175885",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            3
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -7
+            ],
+            "max": [
+              9,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "多根分叉木质细枝与连续接地根颈",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              0,
+              -5
+            ],
+            "max": [
+              8,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "彼此交错且保留根际透空的真实灌木叶簇",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              2,
+              -7
+            ],
+            "max": [
+              9,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端量化花簇与独立花药，均非灯芯和非自发光",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              6,
+              -6
+            ],
+            "max": [
+              9,
+              12,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-low-plants-0-658e9d1eeb",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-064-groundcover-broadleaf",
+      "name": "蕨类与阔叶地被簇母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3,
+            0,
+            3
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -7,
+              0,
+              -7
+            ],
+            "max": [
+              8,
+              6,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "根颈与真实根茎",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -2
+            ],
+            "max": [
+              3,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "阔叶地被辐射叶柄",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              1,
+              -2
+            ],
+            "max": [
+              3,
+              5,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "有厚度的椭圆阔叶与开放株间隙",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              2,
+              -7
+            ],
+            "max": [
+              8,
+              6,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-low-plants-1-a093f0f22d",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-low-plants-2-e806f59758",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-mixed-low-plants-3-e5dd35dc11",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-071-0",
+      "assetId": "architecture-civic-terrain-mixed-elevation-zones-0-0-0-2-near-8e4075ff67",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-1",
+      "assetId": "architecture-civic-root-pocket-mixed-0-0-91ac2e1a25",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-2",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -22,
+        4.8,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-3",
+      "assetId": "architecture-civic-root-pocket-mixed-0-1-cc742b42b8",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-4",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -22,
+        4.4,
+        -7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-5",
+      "assetId": "architecture-civic-root-pocket-mixed-0-2-8451877227",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-6",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -22,
+        4.4,
+        8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-7",
+      "assetId": "architecture-civic-root-pocket-mixed-0-3-28bcc4ea95",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-8",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -22,
+        4.8,
+        23
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-9",
+      "assetId": "architecture-civic-root-pocket-mixed-1-0-3d853a916a",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-10",
+      "assetId": "source-env-052",
+      "name": "近远林冠代理组件",
+      "position": [
+        -3,
+        6.2,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-11",
+      "assetId": "architecture-civic-root-pocket-mixed-1-1-0b280de253",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-12",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        -3,
+        5.8,
+        -7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-13",
+      "assetId": "architecture-civic-root-pocket-mixed-1-2-099893e00c",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-14",
+      "assetId": "source-env-052",
+      "name": "近远林冠代理组件",
+      "position": [
+        -3,
+        5.8,
+        8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-15",
+      "assetId": "architecture-civic-root-pocket-mixed-1-3-10fca45403",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-16",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        -3,
+        6.2,
+        23
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-17",
+      "assetId": "architecture-civic-root-pocket-mixed-2-0-1afa38313a",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-18",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        19,
+        12.4,
+        -22
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-19",
+      "assetId": "architecture-civic-root-pocket-mixed-2-1-952667308a",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-20",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        19,
+        12,
+        -7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-21",
+      "assetId": "architecture-civic-root-pocket-mixed-2-2-a494ce8321",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-22",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        19,
+        12,
+        8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-23",
+      "assetId": "architecture-civic-root-pocket-mixed-2-3-3a14175885",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-24",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        19,
+        12.4,
+        23
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-25",
+      "assetId": "architecture-civic-root-pocket-mixed-low-plants-0-658e9d1eeb",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-26",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        -12,
+        4.8,
+        -18
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-27",
+      "assetId": "architecture-civic-root-pocket-mixed-low-plants-1-a093f0f22d",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-28",
+      "assetId": "source-env-064-groundcover-broadleaf",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        -13,
+        4.8,
+        16
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-29",
+      "assetId": "architecture-civic-root-pocket-mixed-low-plants-2-e806f59758",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-30",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        9,
+        9,
+        -20
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-31",
+      "assetId": "architecture-civic-root-pocket-mixed-low-plants-3-e5dd35dc11",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-071-32",
+      "assetId": "source-env-064-groundcover-broadleaf",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        10,
+        9.4,
+        18
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

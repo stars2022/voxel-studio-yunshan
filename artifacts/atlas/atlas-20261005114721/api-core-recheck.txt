@@ -1,0 +1,38 @@
+✔ all 1068 supplied CSV records import losslessly as planned work, not manufactured assets (225.284688ms)
+✔ CSV parser handles BOM, CRLF, escaped quotes and multiline cells; rejects duplicates and malformed data (0.862781ms)
+✔ catalog and geometry share one atomic, idempotent, conflict-checked undoable transaction (4.670456ms)
+✔ model acceptance needs native geometry and a record; changed masters require renewed review (39.128428ms)
+✔ CSV merge retains local notes and omitted rows; changed source requirements invalidate acceptance (3.934306ms)
+✔ animation catalog entries cannot be passed off as completed static models (2.599141ms)
+✔ single-master native export omits full-library catalog while project export preserves it (82.933195ms)
+✔ sparse chunks round-trip negative coordinates and seam dirty neighbours (3.041298ms)
+✔ greedy solid block is six quads; cross-chunk internal faces are culled (96.82069ms)
+✔ opacity material batches preserve visible opaque surface behind glass (37.20111ms)
+✔ batch atomic rollback on missing material / no version advance (1.709969ms)
+✔ dry-run does not mutate and large modification requires exact preview (250.563031ms)
+✔ version conflict and idempotency replay / payload conflict (1.972075ms)
+✔ transaction undo redo restores all voxel/material/instance edits in one step (462.460925ms)
+✔ voxel replace, mirrored brush, bounded connected fill and surface rules (3.833372ms)
+✔ integer rotation, mirror, move, copy array and collision rollback (3.860043ms)
+✔ extrude adds exposed face columns and is undoable (2.778142ms)
+✔ all general templates generate legal structures and unknown parameters reject (6975.550506ms)
+✔ assembly template instantiation shares masters and preserves relative placement (170.966085ms)
+✔ mixed-resolution opening obstruction detects subcell blocking geometry (331.473541ms)
+✔ interfaces require common pitch, normal and footprint; detach preserves master (55.314177ms)
+✔ metadata transforms preserve port/part spatial relationship; cyclic parents rejected (62.542802ms)
+✔ schema rejects pathological selection, decimals, unknown fields and invalid materials (2.361132ms)
+✔ demo has enterable door, window and stairs clearances without collisions (117.020022ms)
+✔ PBR batch previews, preserves every voxel/part/port/instance, and undoes atomically (466.994849ms)
+✔ reapplying the profile does not overwrite original palette; both looks remain editable (513.017905ms)
+✔ reference appearance stays bounded with more than 512 document materials and preserves unrelated user material/palette entries (518.336736ms)
+✔ export embeds PBR maps, transparent glass, physical scale, and real emissive strength (12399.937406ms)
+✔ material library entries do not inflate base-model or accepted counts (12.367788ms)
+✔ MCP preview schema accepts explicit material look and rejects unsupported or duplicate views (12.625467ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16904.867502
