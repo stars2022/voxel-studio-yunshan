@@ -1,0 +1,3444 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-089": {
+      "id": "env-089",
+      "name": "山道切坡石壁与护坡组合",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-089-0",
+          "assetId": "architecture-civic-terrain-park-road-cut-0-0-0-1-near-fd12b72f7b",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-1",
+          "assetId": "architecture-civic-ground-ramp-park-cut-road-fed31b7cca",
+          "name": "真实实体路基与连续坡面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-2",
+          "assetId": "architecture-civic-park-cut-retaining-wall-5192996a8d",
+          "name": "真实坡脚与分层挡土墙",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-3",
+          "assetId": "architecture-civic-park-cut-open-drain-ac33ef1a61",
+          "name": "具有真实空腔和开口端的排水槽",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-4",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            1.9,
+            4.4,
+            -13
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-089-5",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            1.9,
+            4.4,
+            -9
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-089-6",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            1.9,
+            4.4,
+            -5
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-089-7",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            1.9,
+            4.4,
+            -1
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-089-8",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            1.9,
+            4.4,
+            3
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-089-9",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            1.9,
+            4.4,
+            7
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-089-10",
+          "assetId": "architecture-civic-rail-2-ee8b8eaf13",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            1.9,
+            4.4,
+            11
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-089-11",
+          "assetId": "architecture-civic-root-pocket-cut-green-0-48e249f751",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-12",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -11,
+            12.2,
+            -9
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-13",
+          "assetId": "architecture-civic-root-pocket-cut-green-1-c24796b98e",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-14",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            -11,
+            12.2,
+            6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-15",
+          "assetId": "architecture-civic-root-pocket-cut-green-2-4f8bbcbf8c",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-16",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            13,
+            2.2,
+            -8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-17",
+          "assetId": "architecture-civic-root-pocket-cut-green-3-dab235d517",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-18",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            13,
+            2.2,
+            7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-19",
+          "assetId": "architecture-civic-root-pocket-cut-understory-0-e4a5d6c7e9",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-20",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            -9,
+            12.2,
+            -1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-21",
+          "assetId": "architecture-civic-root-pocket-cut-understory-1-eb10941896",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-22",
+          "assetId": "source-env-064-groundcover-fern",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            10.2,
+            2.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-23",
+          "assetId": "architecture-civic-root-pocket-cut-understory-2-b0abe2af8b",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-089-24",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            -10,
+            12.2,
+            12
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-089",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M051",
+          "slot": 1,
+          "imageSHA256": "20738d740c580d126dffd89b4ca90c1a770338e42ad173b3a02519d0c735ec1e"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-097",
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-054",
+          "ENV-057",
+          "ENV-061",
+          "ENV-064",
+          "ENV-082",
+          "ENV-084",
+          "ENV-087",
+          "ENV-088",
+          "ENV-091"
+        ],
+        "instanceGroups": {
+          "env-089-0": "terrain",
+          "env-089-1": "terrain-road",
+          "env-089-2": "park-fixture",
+          "env-089-3": "park-fixture",
+          "env-089-4": "guard",
+          "env-089-5": "guard",
+          "env-089-6": "guard",
+          "env-089-7": "guard",
+          "env-089-8": "guard",
+          "env-089-9": "guard",
+          "env-089-10": "guard",
+          "env-089-11": "root-soil",
+          "env-089-12": "vegetation",
+          "env-089-13": "root-soil",
+          "env-089-14": "vegetation",
+          "env-089-15": "root-soil",
+          "env-089-16": "vegetation",
+          "env-089-17": "root-soil",
+          "env-089-18": "vegetation",
+          "env-089-19": "root-soil",
+          "env-089-20": "vegetation",
+          "env-089-21": "root-soil",
+          "env-089-22": "vegetation",
+          "env-089-23": "root-soil",
+          "env-089-24": "vegetation"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "real cut road without buried path",
+            "points": [
+              [
+                0,
+                4.4,
+                -13
+              ],
+              [
+                0,
+                4.4,
+                13
+              ]
+            ],
+            "width": 3
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "retaining wall into actual slope toe",
+            "point": [
+              -3.5,
+              3.98,
+              0
+            ],
+            "exclude": "env-089-2"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              -12.9
+            ],
+            "exclude": "env-089-4"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              -9.18
+            ],
+            "exclude": "env-089-4"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              -8.9
+            ],
+            "exclude": "env-089-5"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              -5.18
+            ],
+            "exclude": "env-089-5"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              -4.9
+            ],
+            "exclude": "env-089-6"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              -1.1800000000000002
+            ],
+            "exclude": "env-089-6"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              -0.9
+            ],
+            "exclude": "env-089-7"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              2.82
+            ],
+            "exclude": "env-089-7"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              3.1
+            ],
+            "exclude": "env-089-8"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              6.82
+            ],
+            "exclude": "env-089-8"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              7.1
+            ],
+            "exclude": "env-089-9"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              10.82
+            ],
+            "exclude": "env-089-9"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              11.1
+            ],
+            "exclude": "env-089-10"
+          },
+          {
+            "name": "cut-road-valley-edge actual rail foot",
+            "point": [
+              1.9,
+              4.380000000000001,
+              12.82
+            ],
+            "exclude": "env-089-10"
+          },
+          {
+            "name": "cut-green-0 root pocket terrain 0",
+            "point": [
+              -13.600000000000001,
+              11.98,
+              -11.4
+            ],
+            "exclude": "env-089-11"
+          },
+          {
+            "name": "cut-green-0 root pocket terrain 1",
+            "point": [
+              -8.2,
+              11.98,
+              -11.4
+            ],
+            "exclude": "env-089-11"
+          },
+          {
+            "name": "cut-green-0 root pocket terrain 2",
+            "point": [
+              -8.2,
+              11.98,
+              -6.3999999999999995
+            ],
+            "exclude": "env-089-11"
+          },
+          {
+            "name": "cut-green-0 root pocket terrain 3",
+            "point": [
+              -13.600000000000001,
+              11.98,
+              -6.3999999999999995
+            ],
+            "exclude": "env-089-11"
+          },
+          {
+            "name": "cut-green-0 root pocket terrain 4",
+            "point": [
+              -11,
+              11.98,
+              -9
+            ],
+            "exclude": "env-089-11"
+          },
+          {
+            "name": "cut-green-0 canonical root on actual soil",
+            "point": [
+              -9.3,
+              12.18,
+              -10.7
+            ],
+            "exclude": "env-089-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-0 canonical root on actual soil",
+            "point": [
+              -10.3,
+              12.18,
+              -9.3
+            ],
+            "exclude": "env-089-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-0 canonical root on actual soil",
+            "point": [
+              -10.3,
+              12.18,
+              -8.7
+            ],
+            "exclude": "env-089-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-0 canonical root on actual soil",
+            "point": [
+              -10.9,
+              12.18,
+              -8.1
+            ],
+            "exclude": "env-089-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-0 canonical root on actual soil",
+            "point": [
+              -11.5,
+              12.18,
+              -8.5
+            ],
+            "exclude": "env-089-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-0 canonical root on actual soil",
+            "point": [
+              -11.5,
+              12.18,
+              -10.5
+            ],
+            "exclude": "env-089-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-0 canonical root on actual soil",
+            "point": [
+              -11.5,
+              12.18,
+              -9.1
+            ],
+            "exclude": "env-089-12",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-1 root pocket terrain 0",
+            "point": [
+              -12.8,
+              11.98,
+              4.2
+            ],
+            "exclude": "env-089-13"
+          },
+          {
+            "name": "cut-green-1 root pocket terrain 1",
+            "point": [
+              -9,
+              11.98,
+              4.2
+            ],
+            "exclude": "env-089-13"
+          },
+          {
+            "name": "cut-green-1 root pocket terrain 2",
+            "point": [
+              -9,
+              11.98,
+              8
+            ],
+            "exclude": "env-089-13"
+          },
+          {
+            "name": "cut-green-1 root pocket terrain 3",
+            "point": [
+              -12.8,
+              11.98,
+              8
+            ],
+            "exclude": "env-089-13"
+          },
+          {
+            "name": "cut-green-1 root pocket terrain 4",
+            "point": [
+              -11,
+              11.98,
+              6
+            ],
+            "exclude": "env-089-13"
+          },
+          {
+            "name": "cut-green-1 canonical root on actual soil",
+            "point": [
+              -9.9,
+              12.18,
+              4.9
+            ],
+            "exclude": "env-089-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-1 canonical root on actual soil",
+            "point": [
+              -10.9,
+              12.18,
+              5.9
+            ],
+            "exclude": "env-089-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-1 canonical root on actual soil",
+            "point": [
+              -10.5,
+              12.18,
+              6.3
+            ],
+            "exclude": "env-089-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-1 canonical root on actual soil",
+            "point": [
+              -10.7,
+              12.18,
+              6.7
+            ],
+            "exclude": "env-089-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-1 canonical root on actual soil",
+            "point": [
+              -11.3,
+              12.18,
+              6.5
+            ],
+            "exclude": "env-089-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-1 canonical root on actual soil",
+            "point": [
+              -11.3,
+              12.18,
+              5.1
+            ],
+            "exclude": "env-089-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-1 canonical root on actual soil",
+            "point": [
+              -11.1,
+              12.18,
+              5.9
+            ],
+            "exclude": "env-089-14",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-2 root pocket terrain 0",
+            "point": [
+              10.399999999999999,
+              1.98,
+              -10.4
+            ],
+            "exclude": "env-089-15"
+          },
+          {
+            "name": "cut-green-2 root pocket terrain 1",
+            "point": [
+              15.8,
+              1.98,
+              -10.4
+            ],
+            "exclude": "env-089-15"
+          },
+          {
+            "name": "cut-green-2 root pocket terrain 2",
+            "point": [
+              15.8,
+              1.98,
+              -5.3999999999999995
+            ],
+            "exclude": "env-089-15"
+          },
+          {
+            "name": "cut-green-2 root pocket terrain 3",
+            "point": [
+              10.399999999999999,
+              1.98,
+              -5.3999999999999995
+            ],
+            "exclude": "env-089-15"
+          },
+          {
+            "name": "cut-green-2 root pocket terrain 4",
+            "point": [
+              13,
+              1.98,
+              -8
+            ],
+            "exclude": "env-089-15"
+          },
+          {
+            "name": "cut-green-2 canonical root on actual soil",
+            "point": [
+              14.7,
+              2.18,
+              -9.7
+            ],
+            "exclude": "env-089-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-2 canonical root on actual soil",
+            "point": [
+              13.7,
+              2.18,
+              -8.3
+            ],
+            "exclude": "env-089-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-2 canonical root on actual soil",
+            "point": [
+              13.7,
+              2.18,
+              -7.7
+            ],
+            "exclude": "env-089-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-2 canonical root on actual soil",
+            "point": [
+              13.1,
+              2.18,
+              -7.1
+            ],
+            "exclude": "env-089-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-2 canonical root on actual soil",
+            "point": [
+              12.5,
+              2.18,
+              -7.5
+            ],
+            "exclude": "env-089-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-2 canonical root on actual soil",
+            "point": [
+              12.5,
+              2.18,
+              -9.5
+            ],
+            "exclude": "env-089-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-2 canonical root on actual soil",
+            "point": [
+              12.5,
+              2.18,
+              -8.1
+            ],
+            "exclude": "env-089-16",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-3 root pocket terrain 0",
+            "point": [
+              11.2,
+              1.98,
+              5.2
+            ],
+            "exclude": "env-089-17"
+          },
+          {
+            "name": "cut-green-3 root pocket terrain 1",
+            "point": [
+              15,
+              1.98,
+              5.2
+            ],
+            "exclude": "env-089-17"
+          },
+          {
+            "name": "cut-green-3 root pocket terrain 2",
+            "point": [
+              15,
+              1.98,
+              9
+            ],
+            "exclude": "env-089-17"
+          },
+          {
+            "name": "cut-green-3 root pocket terrain 3",
+            "point": [
+              11.2,
+              1.98,
+              9
+            ],
+            "exclude": "env-089-17"
+          },
+          {
+            "name": "cut-green-3 root pocket terrain 4",
+            "point": [
+              13,
+              1.98,
+              7
+            ],
+            "exclude": "env-089-17"
+          },
+          {
+            "name": "cut-green-3 canonical root on actual soil",
+            "point": [
+              14.1,
+              2.18,
+              5.9
+            ],
+            "exclude": "env-089-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-3 canonical root on actual soil",
+            "point": [
+              13.1,
+              2.18,
+              6.9
+            ],
+            "exclude": "env-089-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-3 canonical root on actual soil",
+            "point": [
+              13.5,
+              2.18,
+              7.3
+            ],
+            "exclude": "env-089-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-3 canonical root on actual soil",
+            "point": [
+              13.3,
+              2.18,
+              7.7
+            ],
+            "exclude": "env-089-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-3 canonical root on actual soil",
+            "point": [
+              12.7,
+              2.18,
+              7.5
+            ],
+            "exclude": "env-089-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-3 canonical root on actual soil",
+            "point": [
+              12.7,
+              2.18,
+              6.1
+            ],
+            "exclude": "env-089-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-green-3 canonical root on actual soil",
+            "point": [
+              12.9,
+              2.18,
+              6.9
+            ],
+            "exclude": "env-089-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-0 root pocket terrain 0",
+            "point": [
+              -9.2,
+              11.98,
+              -1.2
+            ],
+            "exclude": "env-089-19"
+          },
+          {
+            "name": "cut-understory-0 root pocket terrain 1",
+            "point": [
+              -8.6,
+              11.98,
+              -1.2
+            ],
+            "exclude": "env-089-19"
+          },
+          {
+            "name": "cut-understory-0 root pocket terrain 2",
+            "point": [
+              -8.6,
+              11.98,
+              -0.6
+            ],
+            "exclude": "env-089-19"
+          },
+          {
+            "name": "cut-understory-0 root pocket terrain 3",
+            "point": [
+              -9.2,
+              11.98,
+              -0.6
+            ],
+            "exclude": "env-089-19"
+          },
+          {
+            "name": "cut-understory-0 root pocket terrain 4",
+            "point": [
+              -9,
+              11.98,
+              -1
+            ],
+            "exclude": "env-089-19"
+          },
+          {
+            "name": "cut-understory-0 canonical root on actual soil",
+            "point": [
+              -8.9,
+              12.18,
+              -0.9
+            ],
+            "exclude": "env-089-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 root pocket terrain 0",
+            "point": [
+              9.6,
+              1.98,
+              -0.6000000000000001
+            ],
+            "exclude": "env-089-21"
+          },
+          {
+            "name": "cut-understory-1 root pocket terrain 1",
+            "point": [
+              11,
+              1.98,
+              -0.6000000000000001
+            ],
+            "exclude": "env-089-21"
+          },
+          {
+            "name": "cut-understory-1 root pocket terrain 2",
+            "point": [
+              11,
+              1.98,
+              0.8
+            ],
+            "exclude": "env-089-21"
+          },
+          {
+            "name": "cut-understory-1 root pocket terrain 3",
+            "point": [
+              9.6,
+              1.98,
+              0.8
+            ],
+            "exclude": "env-089-21"
+          },
+          {
+            "name": "cut-understory-1 root pocket terrain 4",
+            "point": [
+              10.2,
+              1.98,
+              0
+            ],
+            "exclude": "env-089-21"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.3,
+              2.18,
+              0.1
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.5,
+              2.18,
+              0.1
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.7,
+              2.18,
+              0.1
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.3,
+              2.18,
+              0.3
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.3,
+              2.18,
+              0.5
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              9.9,
+              2.18,
+              0.1
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.1,
+              2.18,
+              0.1
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.3,
+              2.18,
+              -0.3
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-1 canonical root on actual soil",
+            "point": [
+              10.3,
+              2.18,
+              -0.1
+            ],
+            "exclude": "env-089-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "cut-understory-2 root pocket terrain 0",
+            "point": [
+              -10.2,
+              11.98,
+              11.8
+            ],
+            "exclude": "env-089-23"
+          },
+          {
+            "name": "cut-understory-2 root pocket terrain 1",
+            "point": [
+              -9.6,
+              11.98,
+              11.8
+            ],
+            "exclude": "env-089-23"
+          },
+          {
+            "name": "cut-understory-2 root pocket terrain 2",
+            "point": [
+              -9.6,
+              11.98,
+              12.4
+            ],
+            "exclude": "env-089-23"
+          },
+          {
+            "name": "cut-understory-2 root pocket terrain 3",
+            "point": [
+              -10.2,
+              11.98,
+              12.4
+            ],
+            "exclude": "env-089-23"
+          },
+          {
+            "name": "cut-understory-2 root pocket terrain 4",
+            "point": [
+              -10,
+              11.98,
+              12
+            ],
+            "exclude": "env-089-23"
+          },
+          {
+            "name": "cut-understory-2 canonical root on actual soil",
+            "point": [
+              -9.9,
+              12.18,
+              12.1
+            ],
+            "exclude": "env-089-24",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "forest": [
+          {
+            "catalogId": "ENV-057",
+            "params": {},
+            "instance": "env-089-12",
+            "soilInstance": "env-089-11",
+            "position": [
+              -11,
+              12.2,
+              -9
+            ],
+            "rootSamples": [
+              [
+                -9.3,
+                12.2,
+                -10.7
+              ],
+              [
+                -10.3,
+                12.2,
+                -9.3
+              ],
+              [
+                -10.3,
+                12.2,
+                -8.7
+              ],
+              [
+                -10.9,
+                12.2,
+                -8.1
+              ],
+              [
+                -11.5,
+                12.2,
+                -8.5
+              ],
+              [
+                -11.5,
+                12.2,
+                -10.5
+              ],
+              [
+                -11.5,
+                12.2,
+                -9.1
+              ]
+            ],
+            "rootCount": 87,
+            "rootDomain": [
+              -2.6000000000000005,
+              -2.4000000000000004,
+              2.8000000000000007,
+              2.6000000000000005
+            ],
+            "ground": 12
+          },
+          {
+            "catalogId": "ENV-054",
+            "params": {},
+            "instance": "env-089-14",
+            "soilInstance": "env-089-13",
+            "position": [
+              -11,
+              12.2,
+              6
+            ],
+            "rootSamples": [
+              [
+                -9.9,
+                12.2,
+                4.9
+              ],
+              [
+                -10.9,
+                12.2,
+                5.9
+              ],
+              [
+                -10.5,
+                12.2,
+                6.3
+              ],
+              [
+                -10.7,
+                12.2,
+                6.7
+              ],
+              [
+                -11.3,
+                12.2,
+                6.5
+              ],
+              [
+                -11.3,
+                12.2,
+                5.1
+              ],
+              [
+                -11.1,
+                12.2,
+                5.9
+              ]
+            ],
+            "rootCount": 61,
+            "rootDomain": [
+              -1.8,
+              -1.8,
+              2,
+              2
+            ],
+            "ground": 12
+          },
+          {
+            "catalogId": "ENV-057",
+            "params": {},
+            "instance": "env-089-16",
+            "soilInstance": "env-089-15",
+            "position": [
+              13,
+              2.2,
+              -8
+            ],
+            "rootSamples": [
+              [
+                14.7,
+                2.2,
+                -9.7
+              ],
+              [
+                13.7,
+                2.2,
+                -8.3
+              ],
+              [
+                13.7,
+                2.2,
+                -7.7
+              ],
+              [
+                13.1,
+                2.2,
+                -7.1
+              ],
+              [
+                12.5,
+                2.2,
+                -7.5
+              ],
+              [
+                12.5,
+                2.2,
+                -9.5
+              ],
+              [
+                12.5,
+                2.2,
+                -8.1
+              ]
+            ],
+            "rootCount": 87,
+            "rootDomain": [
+              -2.6000000000000005,
+              -2.4000000000000004,
+              2.8000000000000007,
+              2.6000000000000005
+            ],
+            "ground": 2
+          },
+          {
+            "catalogId": "ENV-054",
+            "params": {},
+            "instance": "env-089-18",
+            "soilInstance": "env-089-17",
+            "position": [
+              13,
+              2.2,
+              7
+            ],
+            "rootSamples": [
+              [
+                14.1,
+                2.2,
+                5.9
+              ],
+              [
+                13.1,
+                2.2,
+                6.9
+              ],
+              [
+                13.5,
+                2.2,
+                7.3
+              ],
+              [
+                13.3,
+                2.2,
+                7.7
+              ],
+              [
+                12.7,
+                2.2,
+                7.5
+              ],
+              [
+                12.7,
+                2.2,
+                6.1
+              ],
+              [
+                12.9,
+                2.2,
+                6.9
+              ]
+            ],
+            "rootCount": 61,
+            "rootDomain": [
+              -1.8,
+              -1.8,
+              2,
+              2
+            ],
+            "ground": 2
+          },
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-089-20",
+            "soilInstance": "env-089-19",
+            "position": [
+              -9,
+              12.2,
+              -1
+            ],
+            "rootSamples": [
+              [
+                -8.9,
+                12.2,
+                -0.9
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 12
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "fern"
+            },
+            "instance": "env-089-22",
+            "soilInstance": "env-089-21",
+            "position": [
+              10.2,
+              2.2,
+              0
+            ],
+            "rootSamples": [
+              [
+                10.3,
+                2.2,
+                0.1
+              ],
+              [
+                10.5,
+                2.2,
+                0.1
+              ],
+              [
+                10.7,
+                2.2,
+                0.1
+              ],
+              [
+                10.3,
+                2.2,
+                0.3
+              ],
+              [
+                10.3,
+                2.2,
+                0.5
+              ],
+              [
+                9.9,
+                2.2,
+                0.1
+              ],
+              [
+                10.1,
+                2.2,
+                0.1
+              ],
+              [
+                10.3,
+                2.2,
+                -0.3
+              ],
+              [
+                10.3,
+                2.2,
+                -0.1
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 2
+          },
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-089-24",
+            "soilInstance": "env-089-23",
+            "position": [
+              -10,
+              12.2,
+              12
+            ],
+            "rootSamples": [
+              [
+                -9.9,
+                12.2,
+                12.1
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 12
+          }
+        ],
+        "park": {
+          "pads": [],
+          "guards": [
+            {
+              "key": "cut-road-valley-edge",
+              "instance": "env-089-4",
+              "from": [
+                1.9,
+                4.4,
+                -13
+              ],
+              "to": [
+                1.9,
+                4.4,
+                -9
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "cut-road-valley-edge",
+              "instance": "env-089-5",
+              "from": [
+                1.9,
+                4.4,
+                -9
+              ],
+              "to": [
+                1.9,
+                4.4,
+                -5
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "cut-road-valley-edge",
+              "instance": "env-089-6",
+              "from": [
+                1.9,
+                4.4,
+                -5
+              ],
+              "to": [
+                1.9,
+                4.4,
+                -1
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "cut-road-valley-edge",
+              "instance": "env-089-7",
+              "from": [
+                1.9,
+                4.4,
+                -1
+              ],
+              "to": [
+                1.9,
+                4.4,
+                3
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "cut-road-valley-edge",
+              "instance": "env-089-8",
+              "from": [
+                1.9,
+                4.4,
+                3
+              ],
+              "to": [
+                1.9,
+                4.4,
+                7
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "cut-road-valley-edge",
+              "instance": "env-089-9",
+              "from": [
+                1.9,
+                4.4,
+                7
+              ],
+              "to": [
+                1.9,
+                4.4,
+                11
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "cut-road-valley-edge",
+              "instance": "env-089-10",
+              "from": [
+                1.9,
+                4.4,
+                11
+              ],
+              "to": [
+                1.9,
+                4.4,
+                13
+              ],
+              "width": 2,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            }
+          ],
+          "seats": [],
+          "steps": [],
+          "rockContacts": [],
+          "drains": [
+            {
+              "instance": "env-089-3",
+              "points": [
+                [
+                  -2.52,
+                  4.25,
+                  -12.7
+                ],
+                [
+                  -2.52,
+                  4.25,
+                  0.1
+                ],
+                [
+                  -2.52,
+                  4.25,
+                  12.7
+                ]
+              ],
+              "openEnds": [
+                [
+                  -2.52,
+                  4.25,
+                  -13
+                ],
+                [
+                  -2.52,
+                  4.25,
+                  13
+                ]
+              ],
+              "flowSimulated": false
+            }
+          ],
+          "viewRays": [],
+          "wayfinding": [],
+          "activityPoints": [],
+          "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance.",
+          "cutRoad": {
+            "wall": "env-089-2",
+            "drain": "env-089-3",
+            "pathWidth": 4.2,
+            "publicWidth": 3,
+            "sourceWorldShoulderBound": false
+          }
+        },
+        "terrainAuthority": "Actual closed continuous triangles with native minimum rock cells. Original full voxel masters retained without resampling.",
+        "terrainTiles": [
+          {
+            "instance": "env-089-0",
+            "assetId": "architecture-civic-terrain-park-road-cut-0-0-0-1-near-fd12b72f7b",
+            "authorityAssetId": "architecture-civic-terrain-park-road-cut-0-0-0-1-near-fd12b72f7b",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 32,
+            "step": 1,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 32,
+          "step": 1,
+          "origin": [
+            -16,
+            -16
+          ],
+          "actualTriangles": true
+        }
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-park-road-cut-0-0-0-1-near-fd12b72f7b",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 4352
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 4352
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-ground-ramp-park-cut-road-fed31b7cca",
+      "name": "真实实体路基与连续坡面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-cut-retaining-wall-5192996a8d",
+      "name": "真实坡脚与分层挡土墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 2640
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-cut-open-drain-ac33ef1a61",
+      "name": "具有真实空腔和开口端的排水槽",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-225",
+          "material": 225,
+          "collision": true,
+          "triangles": 780
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 156
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-2-ee8b8eaf13",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 84
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            13.600000000000001,
+            0,
+            13
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -34,
+              0,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              0,
+              -11
+            ],
+            "max": [
+              13,
+              26,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -24,
+              11,
+              -25
+            ],
+            "max": [
+              25,
+              45,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -34,
+              31,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-cut-green-0-48e249f751",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              70,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              19,
+              -21
+            ],
+            "max": [
+              24,
+              62,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              23,
+              -28
+            ],
+            "max": [
+              31,
+              63,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              62,
+              -6
+            ],
+            "max": [
+              11,
+              70,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-cut-green-1-c24796b98e",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-cut-green-2-4f8bbcbf8c",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-cut-green-3-dab235d517",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            3
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -7
+            ],
+            "max": [
+              9,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "多根分叉木质细枝与连续接地根颈",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              0,
+              -5
+            ],
+            "max": [
+              8,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "彼此交错且保留根际透空的真实灌木叶簇",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              2,
+              -7
+            ],
+            "max": [
+              9,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端量化花簇与独立花药，均非灯芯和非自发光",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              6,
+              -6
+            ],
+            "max": [
+              9,
+              12,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-cut-understory-0-e4a5d6c7e9",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.4000000000000004,
+            0,
+            3.2
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              9,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "根颈与真实根茎",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -2
+            ],
+            "max": [
+              3,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "七条弧形蕨叶轴，保留一格以上羽片间隙",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              1,
+              -8
+            ],
+            "max": [
+              9,
+              8,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "成对真实羽片，不用不透明整张平面",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              4,
+              -8
+            ],
+            "max": [
+              8,
+              9,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-cut-understory-1-eb10941896",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-cut-understory-2-b0abe2af8b",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-089-0",
+      "assetId": "architecture-civic-terrain-park-road-cut-0-0-0-1-near-fd12b72f7b",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-1",
+      "assetId": "architecture-civic-ground-ramp-park-cut-road-fed31b7cca",
+      "name": "真实实体路基与连续坡面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-2",
+      "assetId": "architecture-civic-park-cut-retaining-wall-5192996a8d",
+      "name": "真实坡脚与分层挡土墙",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-3",
+      "assetId": "architecture-civic-park-cut-open-drain-ac33ef1a61",
+      "name": "具有真实空腔和开口端的排水槽",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-4",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        1.9,
+        4.4,
+        -13
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-089-5",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        1.9,
+        4.4,
+        -9
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-089-6",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        1.9,
+        4.4,
+        -5
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-089-7",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        1.9,
+        4.4,
+        -1
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-089-8",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        1.9,
+        4.4,
+        3
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-089-9",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        1.9,
+        4.4,
+        7
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-089-10",
+      "assetId": "architecture-civic-rail-2-ee8b8eaf13",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        1.9,
+        4.4,
+        11
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-089-11",
+      "assetId": "architecture-civic-root-pocket-cut-green-0-48e249f751",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-12",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -11,
+        12.2,
+        -9
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-13",
+      "assetId": "architecture-civic-root-pocket-cut-green-1-c24796b98e",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-14",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        -11,
+        12.2,
+        6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-15",
+      "assetId": "architecture-civic-root-pocket-cut-green-2-4f8bbcbf8c",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-16",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        13,
+        2.2,
+        -8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-17",
+      "assetId": "architecture-civic-root-pocket-cut-green-3-dab235d517",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-18",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        13,
+        2.2,
+        7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-19",
+      "assetId": "architecture-civic-root-pocket-cut-understory-0-e4a5d6c7e9",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-20",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        -9,
+        12.2,
+        -1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-21",
+      "assetId": "architecture-civic-root-pocket-cut-understory-1-eb10941896",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-22",
+      "assetId": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        10.2,
+        2.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-23",
+      "assetId": "architecture-civic-root-pocket-cut-understory-2-b0abe2af8b",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-089-24",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        -10,
+        12.2,
+        12
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

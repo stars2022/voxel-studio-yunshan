@@ -15,12 +15,13 @@ import {airportServiceIds,makeAirportService} from './airport-service-assemblies
 import {transportStructureIds,makeTransportStructure} from './transport-structures';
 import {landscapeAssemblyIds,makeLandscapeAssembly} from './landscape-assemblies';
 import {habitatAssemblyIds,makeHabitatAssembly} from './habitat-assemblies';
-export {habitatAssemblyIds};
+import {parkAssemblyIds,makeParkAssembly} from './park-assemblies';
+export {habitatAssemblyIds,parkAssemblyIds};
 export const regionalAssemblyIds=[...airportServiceIds,...transportStructureIds,...landscapeAssemblyIds];
 export const fleetAssemblyIds=[...fleetAirportIds,...fleetVehicleIds];
 export const districtAssemblyIds=[...districtConnectionIds,...districtCourtIds,'BUILT-265'];
 export const metropolisAssemblyIds=[...metropolisTowerIds,...metropolisAviationIds,...metropolisInfrastructureIds];
-export const architectureAssemblyIds=['BUILT-019','BUILT-020','BUILT-021','BUILT-022','BUILT-023','BUILT-024','BUILT-040','BUILT-042','BUILT-075','BUILT-076','BUILT-077','BUILT-078',...civicLandmarkIds,...civicTransportIds,...metropolisAssemblyIds,...districtAssemblyIds,...fleetAssemblyIds,...regionalAssemblyIds,...habitatAssemblyIds];
+export const architectureAssemblyIds=['BUILT-019','BUILT-020','BUILT-021','BUILT-022','BUILT-023','BUILT-024','BUILT-040','BUILT-042','BUILT-075','BUILT-076','BUILT-077','BUILT-078',...civicLandmarkIds,...civicTransportIds,...metropolisAssemblyIds,...districtAssemblyIds,...fleetAssemblyIds,...regionalAssemblyIds,...habitatAssemblyIds,...parkAssemblyIds];
 export function architectureAssemblyParameters(id:string):Record<string,unknown>{
  if(id==='BUILT-023'||id==='BUILT-079')return{program:{enum:['bank','medical'],default:'bank'}};
  if(id==='BUILT-164')return{liftStop:{enum:['bottom','top'],default:'bottom'}};
@@ -28,7 +29,7 @@ export function architectureAssemblyParameters(id:string):Record<string,unknown>
  if(id==='BUILT-311')return{stationMode:{enum:['bus','rail'],default:'bus'}};
  if(id==='ENV-002')return{terrainDetail:{enum:['near','far'],default:'near'}};
  if(id==='ENV-053')return{layoutSeed:{enum:[7,19],default:7}};
- if(id==='ENV-087')return{entryTransition:{enum:['steps','ramp'],default:'steps'}};
+ if(id==='ENV-087'||id==='ENV-102')return{entryTransition:{enum:['steps','ramp'],default:'steps'}};
  if(id==='BUILT-042')return{layoutSeed:{enum:[7,19],default:7}};
  if(['BUILT-075','BUILT-076','BUILT-077','BUILT-078'].includes(id))return{roofWidth:{enum:['standard','wide'],default:'standard'}};
  return{};
@@ -36,6 +37,7 @@ export function architectureAssemblyParameters(id:string):Record<string,unknown>
 export function makeArchitectureAssembly(p:Project,catalogId:string,id:string,name:string,params:Record<string,string|number>={}){
  if(!architectureAssemblyIds.includes(catalogId))throw new Error('未知建筑组合配方');const schema=architectureAssemblyParameters(catalogId) as Record<string,{enum:(number|string)[]}>;
  for(const[k,v]of Object.entries(params))if(!schema[k]||!schema[k].enum.includes(v))throw new Error('未经验证的建筑组合参数 '+k);
+ if(parkAssemblyIds.includes(catalogId))return makeParkAssembly(p,catalogId,id,name,params);
  if(habitatAssemblyIds.includes(catalogId))return makeHabitatAssembly(p,catalogId,id,name,params);
  if(civicLandmarkIds.includes(catalogId))return makeCivicLandmark(p,catalogId,id,name,params);
  if(civicTransportIds.includes(catalogId))return makeCivicTransport(p,catalogId,id,name,params);

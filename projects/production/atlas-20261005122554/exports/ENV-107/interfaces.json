@@ -1,0 +1,7532 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-107": {
+      "id": "env-107",
+      "name": "中式庭园与溪岸公园模板",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-107-0",
+          "assetId": "architecture-civic-terrain-park-stream-garden-0-0-0-1-near-7f2f93d5b9",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-1",
+          "assetId": "architecture-civic-flooded-garden-stream-8318ba46ad",
+          "name": "同源床面裁切的真实水域",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-2",
+          "assetId": "architecture-civic-park-paving-garden-bank-path--11-158a75beba",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-3",
+          "assetId": "architecture-civic-park-paving-garden-east-lower-6864c2b80e",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-4",
+          "assetId": "architecture-civic-park-paving-garden-east-upper-133d5be123",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-5",
+          "assetId": "architecture-civic-park-paving-garden-footbridge-97c05ab363",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-6",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -8.9,
+            6.4,
+            -6.04
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-7",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -4.9,
+            6.4,
+            -6.04
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-8",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -0.9,
+            6.4,
+            -6.04
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-9",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            3.1,
+            6.4,
+            -6.04
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-10",
+          "assetId": "architecture-civic-rail-1p8000000000000007-66c9346c21",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            7.1,
+            6.4,
+            -6.04
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-11",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -8.9,
+            6.4,
+            -1.96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-12",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -4.9,
+            6.4,
+            -1.96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-13",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -0.9,
+            6.4,
+            -1.96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-14",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            3.1,
+            6.4,
+            -1.96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-15",
+          "assetId": "architecture-civic-rail-1p8000000000000007-66c9346c21",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            7.1,
+            6.4,
+            -1.96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-16",
+          "assetId": "architecture-civic-park-paving-garden-pavilion-pad-adffbe7b96",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-17",
+          "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+          "name": "石础、木柱与金属承箍",
+          "position": [
+            7,
+            6.4,
+            7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-18",
+          "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+          "name": "石础、木柱与金属承箍",
+          "position": [
+            7,
+            6.4,
+            15
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-19",
+          "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+          "name": "石础、木柱与金属承箍",
+          "position": [
+            15,
+            6.4,
+            7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-20",
+          "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+          "name": "石础、木柱与金属承箍",
+          "position": [
+            15,
+            6.4,
+            15
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-21",
+          "assetId": "architecture-civic-roof-8-8-1p4-hip-closed-c5e353b46f",
+          "name": "连续飞檐与梁椽",
+          "position": [
+            11,
+            10.4,
+            11
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-22",
+          "assetId": "source-env-098-seatForm-wood",
+          "name": "公共长椅与石凳母版",
+          "position": [
+            12.2,
+            6.4,
+            10.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-23",
+          "assetId": "architecture-civic-root-pocket-garden-shade-0-b7061d3198",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-24",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -17,
+            6.2,
+            10
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-25",
+          "assetId": "architecture-civic-root-pocket-garden-shade-1-dde76566a3",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-26",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            -16,
+            6.2,
+            -13
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-27",
+          "assetId": "architecture-civic-root-pocket-garden-shade-2-d1785f3c89",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-28",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            18,
+            6.2,
+            16
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-29",
+          "assetId": "architecture-civic-root-pocket-garden-shade-3-d8117342e8",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-30",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            18,
+            6.2,
+            -13
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-31",
+          "assetId": "architecture-civic-root-pocket-garden-understory-0-5105d59d75",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-32",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            -6,
+            6.2,
+            9
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-33",
+          "assetId": "architecture-civic-root-pocket-garden-understory-1-a27a74883a",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-34",
+          "assetId": "source-env-064-groundcover-fern",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            6,
+            6.2,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-35",
+          "assetId": "architecture-civic-root-pocket-garden-understory-2-fb450c23e5",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-36",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            -17,
+            6.2,
+            17
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-37",
+          "assetId": "architecture-civic-root-pocket-garden-understory-3-ba83791878",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-38",
+          "assetId": "source-env-064-groundcover-fern",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            17,
+            6.2,
+            1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-39",
+          "assetId": "source-env-017-shoreSize-3p6",
+          "name": "灰白水蚀岸石组件",
+          "position": [
+            -18,
+            6,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-107-40",
+          "assetId": "source-env-104-lampForm-stone",
+          "name": "独立景观灯杆与石灯母版",
+          "position": [
+            6.2,
+            6.4,
+            13
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-107",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M051",
+          "slot": 10,
+          "imageSHA256": "20738d740c580d126dffd89b4ca90c1a770338e42ad173b3a02519d0c735ec1e"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-003",
+          "BUILT-011",
+          "BUILT-012",
+          "BUILT-013",
+          "BUILT-059",
+          "BUILT-089",
+          "BUILT-097",
+          "BUILT-246",
+          "BUILT-247",
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-017",
+          "ENV-027",
+          "ENV-028",
+          "ENV-034",
+          "ENV-035",
+          "ENV-054",
+          "ENV-057",
+          "ENV-061",
+          "ENV-064",
+          "ENV-094",
+          "ENV-098",
+          "ENV-104"
+        ],
+        "instanceGroups": {
+          "env-107-0": "terrain",
+          "env-107-1": "water",
+          "env-107-2": "park-fixture",
+          "env-107-3": "park-fixture",
+          "env-107-4": "park-fixture",
+          "env-107-5": "park-fixture",
+          "env-107-6": "guard",
+          "env-107-7": "guard",
+          "env-107-8": "guard",
+          "env-107-9": "guard",
+          "env-107-10": "guard",
+          "env-107-11": "guard",
+          "env-107-12": "guard",
+          "env-107-13": "guard",
+          "env-107-14": "guard",
+          "env-107-15": "guard",
+          "env-107-16": "park-fixture",
+          "env-107-17": "column",
+          "env-107-18": "column",
+          "env-107-19": "column",
+          "env-107-20": "column",
+          "env-107-21": "roof",
+          "env-107-22": "park-seat",
+          "env-107-23": "root-soil",
+          "env-107-24": "vegetation",
+          "env-107-25": "root-soil",
+          "env-107-26": "vegetation",
+          "env-107-27": "root-soil",
+          "env-107-28": "vegetation",
+          "env-107-29": "root-soil",
+          "env-107-30": "vegetation",
+          "env-107-31": "root-soil",
+          "env-107-32": "vegetation",
+          "env-107-33": "root-soil",
+          "env-107-34": "vegetation",
+          "env-107-35": "root-soil",
+          "env-107-36": "vegetation",
+          "env-107-37": "root-soil",
+          "env-107-38": "vegetation",
+          "env-107-39": "garden-rock",
+          "env-107-40": "park-lamp"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "garden-bank-path -11",
+            "points": [
+              [
+                -11,
+                6.4,
+                -19
+              ],
+              [
+                -11,
+                6.4,
+                17
+              ]
+            ],
+            "width": 1.5
+          },
+          {
+            "name": "garden-bank-path 11",
+            "points": [
+              [
+                11,
+                6.4,
+                -19
+              ],
+              [
+                11,
+                6.4,
+                17
+              ]
+            ],
+            "width": 1.5
+          },
+          {
+            "name": "garden-footbridge actual bridge",
+            "points": [
+              [
+                -8.9,
+                6.4,
+                -4
+              ],
+              [
+                8.9,
+                6.4,
+                -4
+              ]
+            ],
+            "width": 3
+          },
+          {
+            "name": "park path across actual bridge",
+            "points": [
+              [
+                -11,
+                6.4,
+                -4
+              ],
+              [
+                11,
+                6.4,
+                -4
+              ]
+            ],
+            "width": 1.5
+          },
+          {
+            "name": "bank path enters pavilion",
+            "points": [
+              [
+                11,
+                6.4,
+                4
+              ],
+              [
+                11,
+                6.4,
+                11
+              ]
+            ],
+            "width": 1.5
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -8.8,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-6"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -5.08,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-6"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -4.800000000000001,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-7"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -1.0800000000000005,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-7"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -0.8000000000000004,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-8"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              2.9199999999999995,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-8"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              3.1999999999999997,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-9"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              6.92,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-9"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              7.199999999999999,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-10"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              8.72,
+              6.380000000000001,
+              -6.04
+            ],
+            "exclude": "env-107-10"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -8.8,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-11"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -5.08,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-11"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -4.800000000000001,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-12"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -1.0800000000000005,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-12"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              -0.8000000000000004,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-13"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              2.9199999999999995,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-13"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              3.1999999999999997,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-14"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              6.92,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-14"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              7.199999999999999,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-15"
+          },
+          {
+            "name": "garden-footbridge-rail actual rail foot",
+            "point": [
+              8.72,
+              6.380000000000001,
+              -1.9599999999999997
+            ],
+            "exclude": "env-107-15"
+          },
+          {
+            "name": "stream-pavilion true pavilion foot",
+            "point": [
+              7,
+              6.380000000000001,
+              7
+            ],
+            "exclude": "env-107-17"
+          },
+          {
+            "name": "stream-pavilion true pavilion foot",
+            "point": [
+              7,
+              6.380000000000001,
+              15
+            ],
+            "exclude": "env-107-18"
+          },
+          {
+            "name": "stream-pavilion true pavilion foot",
+            "point": [
+              15,
+              6.380000000000001,
+              7
+            ],
+            "exclude": "env-107-19"
+          },
+          {
+            "name": "stream-pavilion true pavilion foot",
+            "point": [
+              15,
+              6.380000000000001,
+              15
+            ],
+            "exclude": "env-107-20"
+          },
+          {
+            "name": "stream-pavilion-seat actual seat foot",
+            "point": [
+              12.5,
+              6.380000000000001,
+              11
+            ],
+            "exclude": "env-107-22"
+          },
+          {
+            "name": "stream-pavilion-seat actual seat foot",
+            "point": [
+              15.5,
+              6.380000000000001,
+              11
+            ],
+            "exclude": "env-107-22"
+          },
+          {
+            "name": "garden-shade-0 root pocket terrain 0",
+            "point": [
+              -19.6,
+              5.98,
+              7.6
+            ],
+            "exclude": "env-107-23"
+          },
+          {
+            "name": "garden-shade-0 root pocket terrain 1",
+            "point": [
+              -14.2,
+              5.98,
+              7.6
+            ],
+            "exclude": "env-107-23"
+          },
+          {
+            "name": "garden-shade-0 root pocket terrain 2",
+            "point": [
+              -14.2,
+              5.98,
+              12.600000000000001
+            ],
+            "exclude": "env-107-23"
+          },
+          {
+            "name": "garden-shade-0 root pocket terrain 3",
+            "point": [
+              -19.6,
+              5.98,
+              12.600000000000001
+            ],
+            "exclude": "env-107-23"
+          },
+          {
+            "name": "garden-shade-0 root pocket terrain 4",
+            "point": [
+              -17,
+              5.98,
+              10
+            ],
+            "exclude": "env-107-23"
+          },
+          {
+            "name": "garden-shade-0 canonical root on actual soil",
+            "point": [
+              -15.3,
+              6.180000000000001,
+              8.3
+            ],
+            "exclude": "env-107-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-0 canonical root on actual soil",
+            "point": [
+              -16.3,
+              6.180000000000001,
+              9.7
+            ],
+            "exclude": "env-107-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-0 canonical root on actual soil",
+            "point": [
+              -16.3,
+              6.180000000000001,
+              10.3
+            ],
+            "exclude": "env-107-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-0 canonical root on actual soil",
+            "point": [
+              -16.9,
+              6.180000000000001,
+              10.9
+            ],
+            "exclude": "env-107-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-0 canonical root on actual soil",
+            "point": [
+              -17.5,
+              6.180000000000001,
+              10.5
+            ],
+            "exclude": "env-107-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-0 canonical root on actual soil",
+            "point": [
+              -17.5,
+              6.180000000000001,
+              8.5
+            ],
+            "exclude": "env-107-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-0 canonical root on actual soil",
+            "point": [
+              -17.5,
+              6.180000000000001,
+              9.9
+            ],
+            "exclude": "env-107-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-1 root pocket terrain 0",
+            "point": [
+              -17.8,
+              5.98,
+              -14.8
+            ],
+            "exclude": "env-107-25"
+          },
+          {
+            "name": "garden-shade-1 root pocket terrain 1",
+            "point": [
+              -14,
+              5.98,
+              -14.8
+            ],
+            "exclude": "env-107-25"
+          },
+          {
+            "name": "garden-shade-1 root pocket terrain 2",
+            "point": [
+              -14,
+              5.98,
+              -11
+            ],
+            "exclude": "env-107-25"
+          },
+          {
+            "name": "garden-shade-1 root pocket terrain 3",
+            "point": [
+              -17.8,
+              5.98,
+              -11
+            ],
+            "exclude": "env-107-25"
+          },
+          {
+            "name": "garden-shade-1 root pocket terrain 4",
+            "point": [
+              -16,
+              5.98,
+              -13
+            ],
+            "exclude": "env-107-25"
+          },
+          {
+            "name": "garden-shade-1 canonical root on actual soil",
+            "point": [
+              -14.9,
+              6.180000000000001,
+              -14.1
+            ],
+            "exclude": "env-107-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-1 canonical root on actual soil",
+            "point": [
+              -15.9,
+              6.180000000000001,
+              -13.1
+            ],
+            "exclude": "env-107-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-1 canonical root on actual soil",
+            "point": [
+              -15.5,
+              6.180000000000001,
+              -12.7
+            ],
+            "exclude": "env-107-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-1 canonical root on actual soil",
+            "point": [
+              -15.7,
+              6.180000000000001,
+              -12.3
+            ],
+            "exclude": "env-107-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-1 canonical root on actual soil",
+            "point": [
+              -16.3,
+              6.180000000000001,
+              -12.5
+            ],
+            "exclude": "env-107-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-1 canonical root on actual soil",
+            "point": [
+              -16.3,
+              6.180000000000001,
+              -13.9
+            ],
+            "exclude": "env-107-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-1 canonical root on actual soil",
+            "point": [
+              -16.1,
+              6.180000000000001,
+              -13.1
+            ],
+            "exclude": "env-107-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-2 root pocket terrain 0",
+            "point": [
+              15.399999999999999,
+              5.98,
+              13.6
+            ],
+            "exclude": "env-107-27"
+          },
+          {
+            "name": "garden-shade-2 root pocket terrain 1",
+            "point": [
+              20.8,
+              5.98,
+              13.6
+            ],
+            "exclude": "env-107-27"
+          },
+          {
+            "name": "garden-shade-2 root pocket terrain 2",
+            "point": [
+              20.8,
+              5.98,
+              18.6
+            ],
+            "exclude": "env-107-27"
+          },
+          {
+            "name": "garden-shade-2 root pocket terrain 3",
+            "point": [
+              15.399999999999999,
+              5.98,
+              18.6
+            ],
+            "exclude": "env-107-27"
+          },
+          {
+            "name": "garden-shade-2 root pocket terrain 4",
+            "point": [
+              18,
+              5.98,
+              16
+            ],
+            "exclude": "env-107-27"
+          },
+          {
+            "name": "garden-shade-2 canonical root on actual soil",
+            "point": [
+              19.7,
+              6.180000000000001,
+              14.3
+            ],
+            "exclude": "env-107-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-2 canonical root on actual soil",
+            "point": [
+              18.7,
+              6.180000000000001,
+              15.7
+            ],
+            "exclude": "env-107-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-2 canonical root on actual soil",
+            "point": [
+              18.7,
+              6.180000000000001,
+              16.3
+            ],
+            "exclude": "env-107-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-2 canonical root on actual soil",
+            "point": [
+              18.1,
+              6.180000000000001,
+              16.9
+            ],
+            "exclude": "env-107-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-2 canonical root on actual soil",
+            "point": [
+              17.5,
+              6.180000000000001,
+              16.5
+            ],
+            "exclude": "env-107-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-2 canonical root on actual soil",
+            "point": [
+              17.5,
+              6.180000000000001,
+              14.5
+            ],
+            "exclude": "env-107-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-2 canonical root on actual soil",
+            "point": [
+              17.5,
+              6.180000000000001,
+              15.9
+            ],
+            "exclude": "env-107-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-3 root pocket terrain 0",
+            "point": [
+              16.2,
+              5.98,
+              -14.8
+            ],
+            "exclude": "env-107-29"
+          },
+          {
+            "name": "garden-shade-3 root pocket terrain 1",
+            "point": [
+              20,
+              5.98,
+              -14.8
+            ],
+            "exclude": "env-107-29"
+          },
+          {
+            "name": "garden-shade-3 root pocket terrain 2",
+            "point": [
+              20,
+              5.98,
+              -11
+            ],
+            "exclude": "env-107-29"
+          },
+          {
+            "name": "garden-shade-3 root pocket terrain 3",
+            "point": [
+              16.2,
+              5.98,
+              -11
+            ],
+            "exclude": "env-107-29"
+          },
+          {
+            "name": "garden-shade-3 root pocket terrain 4",
+            "point": [
+              18,
+              5.98,
+              -13
+            ],
+            "exclude": "env-107-29"
+          },
+          {
+            "name": "garden-shade-3 canonical root on actual soil",
+            "point": [
+              19.1,
+              6.180000000000001,
+              -14.1
+            ],
+            "exclude": "env-107-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-3 canonical root on actual soil",
+            "point": [
+              18.1,
+              6.180000000000001,
+              -13.1
+            ],
+            "exclude": "env-107-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-3 canonical root on actual soil",
+            "point": [
+              18.5,
+              6.180000000000001,
+              -12.7
+            ],
+            "exclude": "env-107-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-3 canonical root on actual soil",
+            "point": [
+              18.3,
+              6.180000000000001,
+              -12.3
+            ],
+            "exclude": "env-107-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-3 canonical root on actual soil",
+            "point": [
+              17.7,
+              6.180000000000001,
+              -12.5
+            ],
+            "exclude": "env-107-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-3 canonical root on actual soil",
+            "point": [
+              17.7,
+              6.180000000000001,
+              -13.9
+            ],
+            "exclude": "env-107-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-shade-3 canonical root on actual soil",
+            "point": [
+              17.9,
+              6.180000000000001,
+              -13.1
+            ],
+            "exclude": "env-107-30",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-0 root pocket terrain 0",
+            "point": [
+              -6.2,
+              5.98,
+              8.8
+            ],
+            "exclude": "env-107-31"
+          },
+          {
+            "name": "garden-understory-0 root pocket terrain 1",
+            "point": [
+              -5.6,
+              5.685263158000001,
+              8.8
+            ],
+            "exclude": "env-107-31"
+          },
+          {
+            "name": "garden-understory-0 root pocket terrain 2",
+            "point": [
+              -5.6,
+              5.685263158000001,
+              9.4
+            ],
+            "exclude": "env-107-31"
+          },
+          {
+            "name": "garden-understory-0 root pocket terrain 3",
+            "point": [
+              -6.2,
+              5.98,
+              9.4
+            ],
+            "exclude": "env-107-31"
+          },
+          {
+            "name": "garden-understory-0 root pocket terrain 4",
+            "point": [
+              -6,
+              5.98,
+              9
+            ],
+            "exclude": "env-107-31"
+          },
+          {
+            "name": "garden-understory-0 canonical root on actual soil",
+            "point": [
+              -5.9,
+              6.180000000000001,
+              9.1
+            ],
+            "exclude": "env-107-32",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 root pocket terrain 0",
+            "point": [
+              5.4,
+              5.537894737,
+              -0.6000000000000001
+            ],
+            "exclude": "env-107-33"
+          },
+          {
+            "name": "garden-understory-1 root pocket terrain 1",
+            "point": [
+              6.8,
+              5.98,
+              -0.6000000000000001
+            ],
+            "exclude": "env-107-33"
+          },
+          {
+            "name": "garden-understory-1 root pocket terrain 2",
+            "point": [
+              6.8,
+              5.98,
+              0.8
+            ],
+            "exclude": "env-107-33"
+          },
+          {
+            "name": "garden-understory-1 root pocket terrain 3",
+            "point": [
+              5.4,
+              5.537894737,
+              0.8
+            ],
+            "exclude": "env-107-33"
+          },
+          {
+            "name": "garden-understory-1 root pocket terrain 4",
+            "point": [
+              6,
+              5.98,
+              0
+            ],
+            "exclude": "env-107-33"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              6.1,
+              6.180000000000001,
+              0.1
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              6.3,
+              6.180000000000001,
+              0.1
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              6.5,
+              6.180000000000001,
+              0.1
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              6.1,
+              6.180000000000001,
+              0.3
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              6.1,
+              6.180000000000001,
+              0.5
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              5.7,
+              6.180000000000001,
+              0.1
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              5.9,
+              6.180000000000001,
+              0.1
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              6.1,
+              6.180000000000001,
+              -0.3
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-1 canonical root on actual soil",
+            "point": [
+              6.1,
+              6.180000000000001,
+              -0.1
+            ],
+            "exclude": "env-107-34",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-2 root pocket terrain 0",
+            "point": [
+              -17.2,
+              5.98,
+              16.8
+            ],
+            "exclude": "env-107-35"
+          },
+          {
+            "name": "garden-understory-2 root pocket terrain 1",
+            "point": [
+              -16.6,
+              5.98,
+              16.8
+            ],
+            "exclude": "env-107-35"
+          },
+          {
+            "name": "garden-understory-2 root pocket terrain 2",
+            "point": [
+              -16.6,
+              5.98,
+              17.4
+            ],
+            "exclude": "env-107-35"
+          },
+          {
+            "name": "garden-understory-2 root pocket terrain 3",
+            "point": [
+              -17.2,
+              5.98,
+              17.4
+            ],
+            "exclude": "env-107-35"
+          },
+          {
+            "name": "garden-understory-2 root pocket terrain 4",
+            "point": [
+              -17,
+              5.98,
+              17
+            ],
+            "exclude": "env-107-35"
+          },
+          {
+            "name": "garden-understory-2 canonical root on actual soil",
+            "point": [
+              -16.9,
+              6.180000000000001,
+              17.1
+            ],
+            "exclude": "env-107-36",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 root pocket terrain 0",
+            "point": [
+              16.4,
+              5.98,
+              0.3999999999999999
+            ],
+            "exclude": "env-107-37"
+          },
+          {
+            "name": "garden-understory-3 root pocket terrain 1",
+            "point": [
+              17.8,
+              5.98,
+              0.3999999999999999
+            ],
+            "exclude": "env-107-37"
+          },
+          {
+            "name": "garden-understory-3 root pocket terrain 2",
+            "point": [
+              17.8,
+              5.98,
+              1.8
+            ],
+            "exclude": "env-107-37"
+          },
+          {
+            "name": "garden-understory-3 root pocket terrain 3",
+            "point": [
+              16.4,
+              5.98,
+              1.8
+            ],
+            "exclude": "env-107-37"
+          },
+          {
+            "name": "garden-understory-3 root pocket terrain 4",
+            "point": [
+              17,
+              5.98,
+              1
+            ],
+            "exclude": "env-107-37"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              17.1,
+              6.180000000000001,
+              1.1
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              17.3,
+              6.180000000000001,
+              1.1
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              17.5,
+              6.180000000000001,
+              1.1
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              17.1,
+              6.180000000000001,
+              1.3
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              17.1,
+              6.180000000000001,
+              1.5
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              16.7,
+              6.180000000000001,
+              1.1
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              16.9,
+              6.180000000000001,
+              1.1
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              17.1,
+              6.180000000000001,
+              0.7
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "garden-understory-3 canonical root on actual soil",
+            "point": [
+              17.1,
+              6.180000000000001,
+              0.9
+            ],
+            "exclude": "env-107-38",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "original stone lamp on paving",
+            "point": [
+              6.5,
+              6.380000000000001,
+              13.3
+            ],
+            "exclude": "env-107-40"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "forest": [
+          {
+            "catalogId": "ENV-057",
+            "params": {},
+            "instance": "env-107-24",
+            "soilInstance": "env-107-23",
+            "position": [
+              -17,
+              6.2,
+              10
+            ],
+            "rootSamples": [
+              [
+                -15.3,
+                6.2,
+                8.3
+              ],
+              [
+                -16.3,
+                6.2,
+                9.7
+              ],
+              [
+                -16.3,
+                6.2,
+                10.3
+              ],
+              [
+                -16.9,
+                6.2,
+                10.9
+              ],
+              [
+                -17.5,
+                6.2,
+                10.5
+              ],
+              [
+                -17.5,
+                6.2,
+                8.5
+              ],
+              [
+                -17.5,
+                6.2,
+                9.9
+              ]
+            ],
+            "rootCount": 87,
+            "rootDomain": [
+              -2.6000000000000005,
+              -2.4000000000000004,
+              2.8000000000000007,
+              2.6000000000000005
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-054",
+            "params": {},
+            "instance": "env-107-26",
+            "soilInstance": "env-107-25",
+            "position": [
+              -16,
+              6.2,
+              -13
+            ],
+            "rootSamples": [
+              [
+                -14.9,
+                6.2,
+                -14.1
+              ],
+              [
+                -15.9,
+                6.2,
+                -13.1
+              ],
+              [
+                -15.5,
+                6.2,
+                -12.7
+              ],
+              [
+                -15.7,
+                6.2,
+                -12.3
+              ],
+              [
+                -16.3,
+                6.2,
+                -12.5
+              ],
+              [
+                -16.3,
+                6.2,
+                -13.9
+              ],
+              [
+                -16.1,
+                6.2,
+                -13.1
+              ]
+            ],
+            "rootCount": 61,
+            "rootDomain": [
+              -1.8,
+              -1.8,
+              2,
+              2
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-057",
+            "params": {},
+            "instance": "env-107-28",
+            "soilInstance": "env-107-27",
+            "position": [
+              18,
+              6.2,
+              16
+            ],
+            "rootSamples": [
+              [
+                19.7,
+                6.2,
+                14.3
+              ],
+              [
+                18.7,
+                6.2,
+                15.7
+              ],
+              [
+                18.7,
+                6.2,
+                16.3
+              ],
+              [
+                18.1,
+                6.2,
+                16.9
+              ],
+              [
+                17.5,
+                6.2,
+                16.5
+              ],
+              [
+                17.5,
+                6.2,
+                14.5
+              ],
+              [
+                17.5,
+                6.2,
+                15.9
+              ]
+            ],
+            "rootCount": 87,
+            "rootDomain": [
+              -2.6000000000000005,
+              -2.4000000000000004,
+              2.8000000000000007,
+              2.6000000000000005
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-054",
+            "params": {},
+            "instance": "env-107-30",
+            "soilInstance": "env-107-29",
+            "position": [
+              18,
+              6.2,
+              -13
+            ],
+            "rootSamples": [
+              [
+                19.1,
+                6.2,
+                -14.1
+              ],
+              [
+                18.1,
+                6.2,
+                -13.1
+              ],
+              [
+                18.5,
+                6.2,
+                -12.7
+              ],
+              [
+                18.3,
+                6.2,
+                -12.3
+              ],
+              [
+                17.7,
+                6.2,
+                -12.5
+              ],
+              [
+                17.7,
+                6.2,
+                -13.9
+              ],
+              [
+                17.9,
+                6.2,
+                -13.1
+              ]
+            ],
+            "rootCount": 61,
+            "rootDomain": [
+              -1.8,
+              -1.8,
+              2,
+              2
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-107-32",
+            "soilInstance": "env-107-31",
+            "position": [
+              -6,
+              6.2,
+              9
+            ],
+            "rootSamples": [
+              [
+                -5.9,
+                6.2,
+                9.1
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "fern"
+            },
+            "instance": "env-107-34",
+            "soilInstance": "env-107-33",
+            "position": [
+              6,
+              6.2,
+              0
+            ],
+            "rootSamples": [
+              [
+                6.1,
+                6.2,
+                0.1
+              ],
+              [
+                6.3,
+                6.2,
+                0.1
+              ],
+              [
+                6.5,
+                6.2,
+                0.1
+              ],
+              [
+                6.1,
+                6.2,
+                0.3
+              ],
+              [
+                6.1,
+                6.2,
+                0.5
+              ],
+              [
+                5.7,
+                6.2,
+                0.1
+              ],
+              [
+                5.9,
+                6.2,
+                0.1
+              ],
+              [
+                6.1,
+                6.2,
+                -0.3
+              ],
+              [
+                6.1,
+                6.2,
+                -0.1
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-107-36",
+            "soilInstance": "env-107-35",
+            "position": [
+              -17,
+              6.2,
+              17
+            ],
+            "rootSamples": [
+              [
+                -16.9,
+                6.2,
+                17.1
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "fern"
+            },
+            "instance": "env-107-38",
+            "soilInstance": "env-107-37",
+            "position": [
+              17,
+              6.2,
+              1
+            ],
+            "rootSamples": [
+              [
+                17.1,
+                6.2,
+                1.1
+              ],
+              [
+                17.3,
+                6.2,
+                1.1
+              ],
+              [
+                17.5,
+                6.2,
+                1.1
+              ],
+              [
+                17.1,
+                6.2,
+                1.3
+              ],
+              [
+                17.1,
+                6.2,
+                1.5
+              ],
+              [
+                16.7,
+                6.2,
+                1.1
+              ],
+              [
+                16.9,
+                6.2,
+                1.1
+              ],
+              [
+                17.1,
+                6.2,
+                0.7
+              ],
+              [
+                17.1,
+                6.2,
+                0.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 6
+          }
+        ],
+        "park": {
+          "pads": [
+            {
+              "instance": "env-107-2",
+              "rect": [
+                -13,
+                -20,
+                -9,
+                18
+              ],
+              "y": 6.4,
+              "bottom": 5.6,
+              "hole": null
+            },
+            {
+              "instance": "env-107-3",
+              "rect": [
+                9,
+                -20,
+                13,
+                6
+              ],
+              "y": 6.4,
+              "bottom": 5.6,
+              "hole": null
+            },
+            {
+              "instance": "env-107-4",
+              "rect": [
+                9,
+                16,
+                13,
+                18
+              ],
+              "y": 6.4,
+              "bottom": 5.6,
+              "hole": null
+            },
+            {
+              "instance": "env-107-5",
+              "rect": [
+                -9,
+                -6.2,
+                9,
+                -1.7999999999999998
+              ],
+              "y": 6.4,
+              "bottom": 6,
+              "hole": null
+            },
+            {
+              "instance": "env-107-16",
+              "rect": [
+                6,
+                6,
+                16,
+                16
+              ],
+              "y": 6.4,
+              "bottom": 5.6,
+              "hole": null
+            }
+          ],
+          "guards": [
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-6",
+              "from": [
+                -8.9,
+                6.4,
+                -6.04
+              ],
+              "to": [
+                -4.9,
+                6.4,
+                -6.04
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-7",
+              "from": [
+                -4.9,
+                6.4,
+                -6.04
+              ],
+              "to": [
+                -0.9000000000000004,
+                6.4,
+                -6.04
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-8",
+              "from": [
+                -0.9000000000000004,
+                6.4,
+                -6.04
+              ],
+              "to": [
+                3.0999999999999996,
+                6.4,
+                -6.04
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-9",
+              "from": [
+                3.0999999999999996,
+                6.4,
+                -6.04
+              ],
+              "to": [
+                7.1,
+                6.4,
+                -6.04
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-10",
+              "from": [
+                7.1,
+                6.4,
+                -6.04
+              ],
+              "to": [
+                8.9,
+                6.4,
+                -6.04
+              ],
+              "width": 1.8000000000000007,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-11",
+              "from": [
+                -8.9,
+                6.4,
+                -1.9599999999999997
+              ],
+              "to": [
+                -4.9,
+                6.4,
+                -1.9599999999999997
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-12",
+              "from": [
+                -4.9,
+                6.4,
+                -1.9599999999999997
+              ],
+              "to": [
+                -0.9000000000000004,
+                6.4,
+                -1.9599999999999997
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-13",
+              "from": [
+                -0.9000000000000004,
+                6.4,
+                -1.9599999999999997
+              ],
+              "to": [
+                3.0999999999999996,
+                6.4,
+                -1.9599999999999997
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-14",
+              "from": [
+                3.0999999999999996,
+                6.4,
+                -1.9599999999999997
+              ],
+              "to": [
+                7.1,
+                6.4,
+                -1.9599999999999997
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "garden-footbridge-rail",
+              "instance": "env-107-15",
+              "from": [
+                7.1,
+                6.4,
+                -1.9599999999999997
+              ],
+              "to": [
+                8.9,
+                6.4,
+                -1.9599999999999997
+              ],
+              "width": 1.8000000000000007,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            }
+          ],
+          "seats": [
+            {
+              "key": "stream-pavilion-seat",
+              "instance": "env-107-22",
+              "point": [
+                14,
+                7,
+                10.9
+              ],
+              "approach": [
+                14,
+                6.4,
+                9.8
+              ],
+              "form": "wood"
+            }
+          ],
+          "steps": [],
+          "rockContacts": [
+            {
+              "key": "garden-bank-rock",
+              "instance": "env-107-39",
+              "samples": [
+                [
+                  -19.3,
+                  6,
+                  -1.7
+                ],
+                [
+                  -17.900000000000002,
+                  6,
+                  -1.7
+                ],
+                [
+                  -19.5,
+                  6,
+                  -1.5
+                ],
+                [
+                  -18.1,
+                  6,
+                  -1.5
+                ],
+                [
+                  -16.7,
+                  6,
+                  -1.5
+                ],
+                [
+                  -18.5,
+                  6,
+                  -1.3
+                ],
+                [
+                  -17.1,
+                  6,
+                  -1.3
+                ],
+                [
+                  -18.900000000000002,
+                  6,
+                  -1.1
+                ],
+                [
+                  -17.5,
+                  6,
+                  -1.1
+                ],
+                [
+                  -19.3,
+                  6,
+                  -0.9
+                ],
+                [
+                  -17.900000000000002,
+                  6,
+                  -0.9
+                ],
+                [
+                  -19.7,
+                  6,
+                  -0.7
+                ],
+                [
+                  -18.3,
+                  6,
+                  -0.7
+                ],
+                [
+                  -16.9,
+                  6,
+                  -0.7
+                ],
+                [
+                  -18.7,
+                  6,
+                  -0.5
+                ],
+                [
+                  -17.3,
+                  6,
+                  -0.5
+                ],
+                [
+                  -19.1,
+                  6,
+                  -0.30000000000000004
+                ],
+                [
+                  -17.7,
+                  6,
+                  -0.30000000000000004
+                ],
+                [
+                  -19.5,
+                  6,
+                  -0.09999999999999987
+                ],
+                [
+                  -18.1,
+                  6,
+                  -0.09999999999999987
+                ],
+                [
+                  -16.7,
+                  6,
+                  -0.09999999999999987
+                ],
+                [
+                  -18.5,
+                  6,
+                  0.10000000000000009
+                ],
+                [
+                  -17.1,
+                  6,
+                  0.10000000000000009
+                ],
+                [
+                  -18.900000000000002,
+                  6,
+                  0.30000000000000004
+                ],
+                [
+                  -17.5,
+                  6,
+                  0.30000000000000004
+                ],
+                [
+                  -19.3,
+                  6,
+                  0.5000000000000002
+                ],
+                [
+                  -17.900000000000002,
+                  6,
+                  0.5000000000000002
+                ],
+                [
+                  -19.7,
+                  6,
+                  0.7
+                ],
+                [
+                  -18.3,
+                  6,
+                  0.7
+                ],
+                [
+                  -16.9,
+                  6,
+                  0.7
+                ],
+                [
+                  -18.7,
+                  6,
+                  0.9000000000000001
+                ],
+                [
+                  -17.3,
+                  6,
+                  0.9000000000000001
+                ],
+                [
+                  -19.1,
+                  6,
+                  1.1000000000000003
+                ],
+                [
+                  -17.7,
+                  6,
+                  1.1000000000000003
+                ],
+                [
+                  -19.5,
+                  6,
+                  1.3
+                ],
+                [
+                  -18.1,
+                  6,
+                  1.3
+                ],
+                [
+                  -16.7,
+                  6,
+                  1.3
+                ],
+                [
+                  -18.3,
+                  6,
+                  1.5000000000000002
+                ],
+                [
+                  -16.9,
+                  6,
+                  1.5000000000000002
+                ],
+                [
+                  -18.3,
+                  6,
+                  1.7
+                ],
+                [
+                  -16.9,
+                  6,
+                  1.7
+                ],
+                [
+                  -16.5,
+                  6,
+                  -0.9
+                ],
+                [
+                  -16.3,
+                  6,
+                  -0.30000000000000004
+                ],
+                [
+                  -16.5,
+                  6,
+                  0.5000000000000002
+                ],
+                [
+                  -16.3,
+                  6,
+                  1.1000000000000003
+                ]
+              ],
+              "kind": "original rock base",
+              "minimumContacts": 45
+            }
+          ],
+          "drains": [],
+          "viewRays": [],
+          "wayfinding": [],
+          "activityPoints": [],
+          "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance.",
+          "streamGarden": {
+            "bridge": {
+              "instance": "env-107-5",
+              "rect": [
+                -9,
+                -6.2,
+                9,
+                -1.7999999999999998
+              ],
+              "y": 6.4,
+              "feet": []
+            },
+            "gazebo": {
+              "posts": [
+                "env-107-17",
+                "env-107-18",
+                "env-107-19",
+                "env-107-20"
+              ],
+              "roof": "env-107-21",
+              "at": [
+                11,
+                6.4,
+                11
+              ],
+              "size": [
+                8,
+                8
+              ]
+            },
+            "actualPlaces": [
+              "pavilion",
+              "banks",
+              "bridge"
+            ],
+            "socialAndEcologyBound": false
+          }
+        },
+        "terrainAuthority": "Actual closed continuous triangles with native minimum rock cells. Original full voxel masters retained without resampling.",
+        "terrainTiles": [
+          {
+            "instance": "env-107-0",
+            "assetId": "architecture-civic-terrain-park-stream-garden-0-0-0-1-near-7f2f93d5b9",
+            "authorityAssetId": "architecture-civic-terrain-park-stream-garden-0-0-0-1-near-7f2f93d5b9",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 48,
+            "step": 1,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 48,
+          "step": 1,
+          "origin": [
+            -24,
+            -24
+          ],
+          "actualTriangles": true
+        },
+        "waterBodies": [
+          {
+            "instance": "env-107-1",
+            "assetId": "architecture-civic-flooded-garden-stream-8318ba46ad",
+            "rect": [
+              -24,
+              -24,
+              24,
+              24
+            ],
+            "step": 1,
+            "role": "flowWater",
+            "samples": [
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -23.59285714275
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -20.59285714275
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -17.59285714275
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -14.592857142749999
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -11.592857142749999
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -8.592857142749999
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -5.59285714275
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  -2.59285714275
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  0.40714285725
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  3.40714285725
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  6.40714285725
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  9.407142857250001
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  12.407142857250001
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  15.407142857250001
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  18.40714285725
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -4.1857142855,
+                  4.8,
+                  21.40714285725
+                ],
+                "bedY": 4.663157894736842,
+                "depth": 0.13684210526315788
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 4.035087719298246,
+                "depth": 0.7649122807017541
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 3.3964912280701753,
+                "depth": 1.4035087719298245
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 3.2,
+                "depth": 1.5999999999999996
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 3.5929824561403514,
+                "depth": 1.2070175438596484
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -23.666666666666668
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -20.666666666666668
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -17.666666666666668
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -14.666666666666668
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -11.666666666666666
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -8.666666666666666
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -5.666666666666667
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  -2.6666666666666665
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  0.3333333333333333
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  3.333333333333333
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  6.333333333333334
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  9.333333333333334
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  12.333333333333332
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  15.333333333333332
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  18.333333333333332
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  4.8,
+                  21.333333333333332
+                ],
+                "bedY": 4.280701754385965,
+                "depth": 0.5192982456140349
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -23.876190476333335
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -20.876190476333335
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -17.876190476333335
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -14.876190476333335
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -11.876190476333333
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -8.876190476333333
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -5.876190476333333
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  -2.8761904763333335
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  0.12380952366666666
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  3.123809523666667
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  6.123809523666667
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  9.123809523666667
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  12.123809523666665
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  15.123809523666665
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  18.123809523666665
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              },
+              {
+                "point": [
+                  4.247619047333333,
+                  4.8,
+                  21.123809523666665
+                ],
+                "bedY": 4.708771929824561,
+                "depth": 0.09122807017543888
+              }
+            ],
+            "shore": [
+              [
+                -4.371428571,
+                4.8,
+                -23.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -23
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -22.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -22
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -21.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -21
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -20.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -20
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -19.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -19
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -18.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -18
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -17.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -17
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -16.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -16
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -15.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -15
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -14.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -14
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -13.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -13
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -12.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -12
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -11.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -11
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -10.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -10
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -9.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -9
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -8.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -8
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -7.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -7
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -6.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -6
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -5.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -5
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -4.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -4
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -3.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -3
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -2.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -2
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -1.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -1
+              ],
+              [
+                -4.371428571,
+                4.8,
+                -0.371428571
+              ],
+              [
+                -4.371428571,
+                4.8,
+                0
+              ],
+              [
+                -4.371428571,
+                4.8,
+                0.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                1
+              ],
+              [
+                -4.371428571,
+                4.8,
+                1.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                2
+              ],
+              [
+                -4.371428571,
+                4.8,
+                2.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                3
+              ],
+              [
+                -4.371428571,
+                4.8,
+                3.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                4
+              ],
+              [
+                -4.371428571,
+                4.8,
+                4.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                5
+              ],
+              [
+                -4.371428571,
+                4.8,
+                5.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                6
+              ],
+              [
+                -4.371428571,
+                4.8,
+                6.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                7
+              ],
+              [
+                -4.371428571,
+                4.8,
+                7.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                8
+              ],
+              [
+                -4.371428571,
+                4.8,
+                8.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                9
+              ],
+              [
+                -4.371428571,
+                4.8,
+                9.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                10
+              ],
+              [
+                -4.371428571,
+                4.8,
+                10.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                11
+              ],
+              [
+                -4.371428571,
+                4.8,
+                11.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                12
+              ],
+              [
+                -4.371428571,
+                4.8,
+                12.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                13
+              ],
+              [
+                -4.371428571,
+                4.8,
+                13.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                14
+              ],
+              [
+                -4.371428571,
+                4.8,
+                14.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                15
+              ],
+              [
+                -4.371428571,
+                4.8,
+                15.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                16
+              ],
+              [
+                -4.371428571,
+                4.8,
+                16.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                17
+              ],
+              [
+                -4.371428571,
+                4.8,
+                17.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                18
+              ],
+              [
+                -4.371428571,
+                4.8,
+                18.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                19
+              ],
+              [
+                -4.371428571,
+                4.8,
+                19.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                20
+              ],
+              [
+                -4.371428571,
+                4.8,
+                20.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                21
+              ],
+              [
+                -4.371428571,
+                4.8,
+                21.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                22
+              ],
+              [
+                -4.371428571,
+                4.8,
+                22.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                23
+              ],
+              [
+                -4.371428571,
+                4.8,
+                23.628571429
+              ],
+              [
+                -4.371428571,
+                4.8,
+                24
+              ],
+              [
+                4.371428571,
+                4.8,
+                -24
+              ],
+              [
+                4.371428571,
+                4.8,
+                -23.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -23
+              ],
+              [
+                4.371428571,
+                4.8,
+                -22.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -22
+              ],
+              [
+                4.371428571,
+                4.8,
+                -21.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -21
+              ],
+              [
+                4.371428571,
+                4.8,
+                -20.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -20
+              ],
+              [
+                4.371428571,
+                4.8,
+                -19.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -19
+              ],
+              [
+                4.371428571,
+                4.8,
+                -18.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -18
+              ],
+              [
+                4.371428571,
+                4.8,
+                -17.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -17
+              ],
+              [
+                4.371428571,
+                4.8,
+                -16.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -16
+              ],
+              [
+                4.371428571,
+                4.8,
+                -15.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -15
+              ],
+              [
+                4.371428571,
+                4.8,
+                -14.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -14
+              ],
+              [
+                4.371428571,
+                4.8,
+                -13.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -13
+              ],
+              [
+                4.371428571,
+                4.8,
+                -12.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -12
+              ],
+              [
+                4.371428571,
+                4.8,
+                -11.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -11
+              ],
+              [
+                4.371428571,
+                4.8,
+                -10.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -10
+              ],
+              [
+                4.371428571,
+                4.8,
+                -9.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -9
+              ],
+              [
+                4.371428571,
+                4.8,
+                -8.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -8
+              ],
+              [
+                4.371428571,
+                4.8,
+                -7.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -7
+              ],
+              [
+                4.371428571,
+                4.8,
+                -6.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -6
+              ],
+              [
+                4.371428571,
+                4.8,
+                -5.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -5
+              ],
+              [
+                4.371428571,
+                4.8,
+                -4.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -4
+              ],
+              [
+                4.371428571,
+                4.8,
+                -3.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -3
+              ],
+              [
+                4.371428571,
+                4.8,
+                -2.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -2
+              ],
+              [
+                4.371428571,
+                4.8,
+                -1.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                -1
+              ],
+              [
+                4.371428571,
+                4.8,
+                -0.628571429
+              ],
+              [
+                4.371428571,
+                4.8,
+                0
+              ],
+              [
+                4.371428571,
+                4.8,
+                0.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                1
+              ],
+              [
+                4.371428571,
+                4.8,
+                1.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                2
+              ],
+              [
+                4.371428571,
+                4.8,
+                2.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                3
+              ],
+              [
+                4.371428571,
+                4.8,
+                3.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                4
+              ],
+              [
+                4.371428571,
+                4.8,
+                4.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                5
+              ],
+              [
+                4.371428571,
+                4.8,
+                5.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                6
+              ],
+              [
+                4.371428571,
+                4.8,
+                6.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                7
+              ],
+              [
+                4.371428571,
+                4.8,
+                7.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                8
+              ],
+              [
+                4.371428571,
+                4.8,
+                8.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                9
+              ],
+              [
+                4.371428571,
+                4.8,
+                9.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                10
+              ],
+              [
+                4.371428571,
+                4.8,
+                10.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                11
+              ],
+              [
+                4.371428571,
+                4.8,
+                11.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                12
+              ],
+              [
+                4.371428571,
+                4.8,
+                12.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                13
+              ],
+              [
+                4.371428571,
+                4.8,
+                13.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                14
+              ],
+              [
+                4.371428571,
+                4.8,
+                14.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                15
+              ],
+              [
+                4.371428571,
+                4.8,
+                15.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                16
+              ],
+              [
+                4.371428571,
+                4.8,
+                16.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                17
+              ],
+              [
+                4.371428571,
+                4.8,
+                17.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                18
+              ],
+              [
+                4.371428571,
+                4.8,
+                18.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                19
+              ],
+              [
+                4.371428571,
+                4.8,
+                19.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                20
+              ],
+              [
+                4.371428571,
+                4.8,
+                20.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                21
+              ],
+              [
+                4.371428571,
+                4.8,
+                21.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                22
+              ],
+              [
+                4.371428571,
+                4.8,
+                22.371428571
+              ],
+              [
+                4.371428571,
+                4.8,
+                23
+              ],
+              [
+                4.371428571,
+                4.8,
+                23.371428571
+              ]
+            ],
+            "waterPhysical": false
+          }
+        ]
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-park-stream-garden-0-0-0-1-near-7f2f93d5b9",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 9600
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 9600
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-flooded-garden-stream-8318ba46ad",
+      "name": "同源床面裁切的真实水域",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-192",
+          "material": 192,
+          "collision": false,
+          "triangles": 2148
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-garden-bank-path--11-158a75beba",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 6156
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 1536
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-garden-east-lower-6864c2b80e",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 4236
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 1056
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-garden-east-upper-133d5be123",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 396
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 96
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-garden-footbridge-97c05ab363",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 2892
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 720
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 156
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-1p8000000000000007-66c9346c21",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 72
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-garden-pavilion-pad-adffbe7b96",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 3900
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 972
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-post-4-0p28-0ba96165d1",
+      "name": "石础、木柱与金属承箍",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-roof-8-8-1p4-hip-closed-c5e353b46f",
+      "name": "连续飞檐与梁椽",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-5",
+          "material": 5,
+          "collision": true,
+          "triangles": 580
+        },
+        {
+          "name": "material-145",
+          "material": 145,
+          "collision": true,
+          "triangles": 568
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 688
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-41",
+          "material": 41,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-env-098-seatForm-wood",
+      "name": "公共长椅与石凳母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.2000000000000002
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              8,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两个真实接地石承脚和座板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              3,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "木纹向背靠、扶手和铜锁件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              3,
+              0
+            ],
+            "max": [
+              18,
+              8,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            13.600000000000001,
+            0,
+            13
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -34,
+              0,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              0,
+              -11
+            ],
+            "max": [
+              13,
+              26,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -24,
+              11,
+              -25
+            ],
+            "max": [
+              25,
+              45,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -34,
+              31,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-shade-0-b7061d3198",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              70,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              19,
+              -21
+            ],
+            "max": [
+              24,
+              62,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              23,
+              -28
+            ],
+            "max": [
+              31,
+              63,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              62,
+              -6
+            ],
+            "max": [
+              11,
+              70,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-shade-1-dde76566a3",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-shade-2-d1785f3c89",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-shade-3-d8117342e8",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            3
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -7
+            ],
+            "max": [
+              9,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "多根分叉木质细枝与连续接地根颈",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              0,
+              -5
+            ],
+            "max": [
+              8,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "彼此交错且保留根际透空的真实灌木叶簇",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              2,
+              -7
+            ],
+            "max": [
+              9,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端量化花簇与独立花药，均非灯芯和非自发光",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              6,
+              -6
+            ],
+            "max": [
+              9,
+              12,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-understory-0-5105d59d75",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.4000000000000004,
+            0,
+            3.2
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              9,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "根颈与真实根茎",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -2
+            ],
+            "max": [
+              3,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "七条弧形蕨叶轴，保留一格以上羽片间隙",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              1,
+              -8
+            ],
+            "max": [
+              9,
+              8,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "成对真实羽片，不用不透明整张平面",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              4,
+              -8
+            ],
+            "max": [
+              8,
+              9,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-understory-1-a27a74883a",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-understory-2-fb450c23e5",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-garden-understory-3-ba83791878",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-017-shoreSize-3p6",
+      "name": "灰白水蚀岸石组件",
+      "version": 1,
+      "origin": [
+        -1.8,
+        0,
+        -1.8
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            3.6
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              12,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "有实际平底的水蚀岩体和退层岸肩",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              12,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "较暗浸蚀基面和独立顶面风化石",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              12,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶肩稀疏苔层",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              10,
+              12
+            ],
+            "max": [
+              10,
+              11,
+              13
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-env-104-lampForm-stone",
+      "name": "独立景观灯杆与石灯母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.2000000000000002,
+            0,
+            1.2000000000000002
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              6,
+              14,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "真实接地基座、灯杆或石柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              6,
+              6,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "灯体金属底顶与四根边梃",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              6,
+              1
+            ],
+            "max": [
+              5,
+              12,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "独立透明硬玻璃四面与内部光学灯芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              7,
+              1
+            ],
+            "max": [
+              5,
+              11,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "铜件及石灯挑檐",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              6,
+              0
+            ],
+            "max": [
+              6,
+              14,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-107-0",
+      "assetId": "architecture-civic-terrain-park-stream-garden-0-0-0-1-near-7f2f93d5b9",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-1",
+      "assetId": "architecture-civic-flooded-garden-stream-8318ba46ad",
+      "name": "同源床面裁切的真实水域",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-2",
+      "assetId": "architecture-civic-park-paving-garden-bank-path--11-158a75beba",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-3",
+      "assetId": "architecture-civic-park-paving-garden-east-lower-6864c2b80e",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-4",
+      "assetId": "architecture-civic-park-paving-garden-east-upper-133d5be123",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-5",
+      "assetId": "architecture-civic-park-paving-garden-footbridge-97c05ab363",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-6",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -8.9,
+        6.4,
+        -6.04
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-7",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -4.9,
+        6.4,
+        -6.04
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-8",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -0.9,
+        6.4,
+        -6.04
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-9",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        3.1,
+        6.4,
+        -6.04
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-10",
+      "assetId": "architecture-civic-rail-1p8000000000000007-66c9346c21",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        7.1,
+        6.4,
+        -6.04
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-11",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -8.9,
+        6.4,
+        -1.96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-12",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -4.9,
+        6.4,
+        -1.96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-13",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -0.9,
+        6.4,
+        -1.96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-14",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        3.1,
+        6.4,
+        -1.96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-15",
+      "assetId": "architecture-civic-rail-1p8000000000000007-66c9346c21",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        7.1,
+        6.4,
+        -1.96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-16",
+      "assetId": "architecture-civic-park-paving-garden-pavilion-pad-adffbe7b96",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-17",
+      "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+      "name": "石础、木柱与金属承箍",
+      "position": [
+        7,
+        6.4,
+        7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-18",
+      "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+      "name": "石础、木柱与金属承箍",
+      "position": [
+        7,
+        6.4,
+        15
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-19",
+      "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+      "name": "石础、木柱与金属承箍",
+      "position": [
+        15,
+        6.4,
+        7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-20",
+      "assetId": "architecture-civic-post-4-0p28-0ba96165d1",
+      "name": "石础、木柱与金属承箍",
+      "position": [
+        15,
+        6.4,
+        15
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-21",
+      "assetId": "architecture-civic-roof-8-8-1p4-hip-closed-c5e353b46f",
+      "name": "连续飞檐与梁椽",
+      "position": [
+        11,
+        10.4,
+        11
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-22",
+      "assetId": "source-env-098-seatForm-wood",
+      "name": "公共长椅与石凳母版",
+      "position": [
+        12.2,
+        6.4,
+        10.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-23",
+      "assetId": "architecture-civic-root-pocket-garden-shade-0-b7061d3198",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-24",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -17,
+        6.2,
+        10
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-25",
+      "assetId": "architecture-civic-root-pocket-garden-shade-1-dde76566a3",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-26",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        -16,
+        6.2,
+        -13
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-27",
+      "assetId": "architecture-civic-root-pocket-garden-shade-2-d1785f3c89",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-28",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        18,
+        6.2,
+        16
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-29",
+      "assetId": "architecture-civic-root-pocket-garden-shade-3-d8117342e8",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-30",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        18,
+        6.2,
+        -13
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-31",
+      "assetId": "architecture-civic-root-pocket-garden-understory-0-5105d59d75",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-32",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        -6,
+        6.2,
+        9
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-33",
+      "assetId": "architecture-civic-root-pocket-garden-understory-1-a27a74883a",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-34",
+      "assetId": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        6,
+        6.2,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-35",
+      "assetId": "architecture-civic-root-pocket-garden-understory-2-fb450c23e5",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-36",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        -17,
+        6.2,
+        17
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-37",
+      "assetId": "architecture-civic-root-pocket-garden-understory-3-ba83791878",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-38",
+      "assetId": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        17,
+        6.2,
+        1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-39",
+      "assetId": "source-env-017-shoreSize-3p6",
+      "name": "灰白水蚀岸石组件",
+      "position": [
+        -18,
+        6,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-107-40",
+      "assetId": "source-env-104-lampForm-stone",
+      "name": "独立景观灯杆与石灯母版",
+      "position": [
+        6.2,
+        6.4,
+        13
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

@@ -1,0 +1,5512 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-103": {
+      "id": "env-103",
+      "name": "滨水与崖边景观护栏布置模板",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-103-0",
+          "assetId": "architecture-civic-terrain-park-water-cliff-rails-0-0-0-1-nea-bfa52adc6a",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-1",
+          "assetId": "architecture-civic-flooded-rail-water-f62d1ebe92",
+          "name": "同源床面裁切的真实水域",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-2",
+          "assetId": "architecture-civic-park-paving-bank-promenade-3653863a31",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-3",
+          "assetId": "architecture-civic-park-paving-water-lookout-f688b8da91",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-4",
+          "assetId": "architecture-civic-park-water-lookout-foot-0-34f7ca9514",
+          "name": "真实地形至台板底的独立承脚",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-5",
+          "assetId": "architecture-civic-park-water-lookout-foot-1-e40f56c8f0",
+          "name": "真实地形至台板底的独立承脚",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-6",
+          "assetId": "architecture-civic-park-water-lookout-foot-2-1c93d42422",
+          "name": "真实地形至台板底的独立承脚",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-7",
+          "assetId": "architecture-civic-park-water-lookout-foot-3-bcff8ac23a",
+          "name": "真实地形至台板底的独立承脚",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-8",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            4.2,
+            6.4,
+            -5.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-9",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            4.2,
+            6.4,
+            -1.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-10",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            4.2,
+            6.4,
+            2.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-11",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            4.2,
+            6.4,
+            6.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-12",
+          "assetId": "architecture-civic-rail-3p6000000000000014-0e5e4e35f6",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            4.2,
+            6.4,
+            10.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-13",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -7.8,
+            6.4,
+            -13.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-14",
+          "assetId": "architecture-civic-rail-3p6000000000000005-cd90a3287f",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -7.8,
+            6.4,
+            -9.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-15",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -7.8,
+            6.4,
+            -13.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-16",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -3.8,
+            6.4,
+            -13.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-17",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            0.2,
+            6.4,
+            -13.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-18",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            4.2,
+            6.4,
+            -13.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-19",
+          "assetId": "architecture-civic-rail-3p6000000000000014-0e5e4e35f6",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            8.2,
+            6.4,
+            -13.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-20",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -7.8,
+            6.4,
+            -6.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-21",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -3.8,
+            6.4,
+            -6.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-22",
+          "assetId": "architecture-civic-rail-3p5999999999999996-8817bd4edc",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            0.2,
+            6.4,
+            -6.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-23",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            11.8,
+            6.4,
+            -7.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-24",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            11.8,
+            6.4,
+            -3.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-25",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            11.8,
+            6.4,
+            0.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-26",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            11.8,
+            6.4,
+            4.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-27",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            11.8,
+            6.4,
+            8.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-28",
+          "assetId": "architecture-civic-rail-1p6000000000000014-6119ebddd6",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            11.8,
+            6.4,
+            12.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-103-29",
+          "assetId": "source-env-098-seatForm-wood",
+          "name": "公共长椅与石凳母版",
+          "position": [
+            7.8,
+            6.4,
+            7.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-30",
+          "assetId": "architecture-civic-root-pocket-rail-bank-green-0-6675c45590",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-31",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            16,
+            6.2,
+            -5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-32",
+          "assetId": "architecture-civic-root-pocket-rail-bank-green-1-3f5dc553e3",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-103-33",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            16,
+            6.2,
+            11
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-103",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M051",
+          "slot": 8,
+          "imageSHA256": "20738d740c580d126dffd89b4ca90c1a770338e42ad173b3a02519d0c735ec1e"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-003",
+          "BUILT-097",
+          "BUILT-307",
+          "BUILT-308",
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-027",
+          "ENV-028",
+          "ENV-034",
+          "ENV-035",
+          "ENV-054",
+          "ENV-057",
+          "ENV-081",
+          "ENV-094",
+          "ENV-098"
+        ],
+        "instanceGroups": {
+          "env-103-0": "terrain",
+          "env-103-1": "water",
+          "env-103-2": "park-fixture",
+          "env-103-3": "park-fixture",
+          "env-103-4": "park-fixture",
+          "env-103-5": "park-fixture",
+          "env-103-6": "park-fixture",
+          "env-103-7": "park-fixture",
+          "env-103-8": "guard",
+          "env-103-9": "guard",
+          "env-103-10": "guard",
+          "env-103-11": "guard",
+          "env-103-12": "guard",
+          "env-103-13": "guard",
+          "env-103-14": "guard",
+          "env-103-15": "guard",
+          "env-103-16": "guard",
+          "env-103-17": "guard",
+          "env-103-18": "guard",
+          "env-103-19": "guard",
+          "env-103-20": "guard",
+          "env-103-21": "guard",
+          "env-103-22": "guard",
+          "env-103-23": "guard",
+          "env-103-24": "guard",
+          "env-103-25": "guard",
+          "env-103-26": "guard",
+          "env-103-27": "guard",
+          "env-103-28": "guard",
+          "env-103-29": "park-seat",
+          "env-103-30": "root-soil",
+          "env-103-31": "vegetation",
+          "env-103-32": "root-soil",
+          "env-103-33": "vegetation"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "real land entrance through rail gap",
+            "points": [
+              [
+                12,
+                6.4,
+                -10
+              ],
+              [
+                6,
+                6.4,
+                -10
+              ],
+              [
+                -5,
+                6.4,
+                -10
+              ]
+            ],
+            "width": 1.5
+          },
+          {
+            "name": "bank longitudinal path",
+            "points": [
+              [
+                6.5,
+                6.4,
+                -10
+              ],
+              [
+                6.5,
+                6.4,
+                12
+              ]
+            ],
+            "width": 1.5
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "water-lookout actual footing 0",
+            "point": [
+              -7.2,
+              2.78,
+              -13.2
+            ],
+            "exclude": "env-103-4"
+          },
+          {
+            "name": "water-lookout actual deck bearing 0",
+            "point": [
+              -7.2,
+              6.01,
+              -13.2
+            ],
+            "exclude": "env-103-4"
+          },
+          {
+            "name": "water-lookout actual footing 1",
+            "point": [
+              3.2,
+              5.126666667,
+              -13.2
+            ],
+            "exclude": "env-103-5"
+          },
+          {
+            "name": "water-lookout actual deck bearing 1",
+            "point": [
+              3.2,
+              6.01,
+              -13.2
+            ],
+            "exclude": "env-103-5"
+          },
+          {
+            "name": "water-lookout actual footing 2",
+            "point": [
+              -7.2,
+              2.78,
+              -6.8
+            ],
+            "exclude": "env-103-6"
+          },
+          {
+            "name": "water-lookout actual deck bearing 2",
+            "point": [
+              -7.2,
+              6.01,
+              -6.8
+            ],
+            "exclude": "env-103-6"
+          },
+          {
+            "name": "water-lookout actual footing 3",
+            "point": [
+              3.2,
+              5.126666667,
+              -6.8
+            ],
+            "exclude": "env-103-7"
+          },
+          {
+            "name": "water-lookout actual deck bearing 3",
+            "point": [
+              3.2,
+              6.01,
+              -6.8
+            ],
+            "exclude": "env-103-7"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              -5.7
+            ],
+            "exclude": "env-103-8"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              -1.98
+            ],
+            "exclude": "env-103-8"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              -1.6999999999999997
+            ],
+            "exclude": "env-103-9"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              2.02
+            ],
+            "exclude": "env-103-9"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              2.3000000000000003
+            ],
+            "exclude": "env-103-10"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              6.02
+            ],
+            "exclude": "env-103-10"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              6.3
+            ],
+            "exclude": "env-103-11"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              10.02
+            ],
+            "exclude": "env-103-11"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              10.299999999999999
+            ],
+            "exclude": "env-103-12"
+          },
+          {
+            "name": "river-edge actual rail foot",
+            "point": [
+              4.2,
+              6.380000000000001,
+              13.620000000000001
+            ],
+            "exclude": "env-103-12"
+          },
+          {
+            "name": "outer-cliff-edge actual rail foot",
+            "point": [
+              -7.8,
+              6.380000000000001,
+              -13.700000000000001
+            ],
+            "exclude": "env-103-13"
+          },
+          {
+            "name": "outer-cliff-edge actual rail foot",
+            "point": [
+              -7.8,
+              6.380000000000001,
+              -9.98
+            ],
+            "exclude": "env-103-13"
+          },
+          {
+            "name": "outer-cliff-edge actual rail foot",
+            "point": [
+              -7.8,
+              6.380000000000001,
+              -9.700000000000001
+            ],
+            "exclude": "env-103-14"
+          },
+          {
+            "name": "outer-cliff-edge actual rail foot",
+            "point": [
+              -7.8,
+              6.380000000000001,
+              -6.380000000000001
+            ],
+            "exclude": "env-103-14"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              -7.7,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-15"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              -3.98,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-15"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              -3.6999999999999997,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-16"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              0.020000000000000018,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-16"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              0.30000000000000016,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-17"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              4.02,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-17"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              4.3,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-18"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              8.02,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-18"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              8.299999999999999,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-19"
+          },
+          {
+            "name": "front-bank-edge actual rail foot",
+            "point": [
+              11.620000000000001,
+              6.380000000000001,
+              -13.8
+            ],
+            "exclude": "env-103-19"
+          },
+          {
+            "name": "lookout-back actual rail foot",
+            "point": [
+              -7.7,
+              6.380000000000001,
+              -6.2
+            ],
+            "exclude": "env-103-20"
+          },
+          {
+            "name": "lookout-back actual rail foot",
+            "point": [
+              -3.98,
+              6.380000000000001,
+              -6.2
+            ],
+            "exclude": "env-103-20"
+          },
+          {
+            "name": "lookout-back actual rail foot",
+            "point": [
+              -3.6999999999999997,
+              6.380000000000001,
+              -6.2
+            ],
+            "exclude": "env-103-21"
+          },
+          {
+            "name": "lookout-back actual rail foot",
+            "point": [
+              0.020000000000000018,
+              6.380000000000001,
+              -6.2
+            ],
+            "exclude": "env-103-21"
+          },
+          {
+            "name": "lookout-back actual rail foot",
+            "point": [
+              0.30000000000000016,
+              6.380000000000001,
+              -6.2
+            ],
+            "exclude": "env-103-22"
+          },
+          {
+            "name": "lookout-back actual rail foot",
+            "point": [
+              3.6199999999999997,
+              6.380000000000001,
+              -6.2
+            ],
+            "exclude": "env-103-22"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              -7.7
+            ],
+            "exclude": "env-103-23"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              -3.98
+            ],
+            "exclude": "env-103-23"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              -3.6999999999999997
+            ],
+            "exclude": "env-103-24"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              0.020000000000000018
+            ],
+            "exclude": "env-103-24"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              0.30000000000000016
+            ],
+            "exclude": "env-103-25"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              4.02
+            ],
+            "exclude": "env-103-25"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              4.3
+            ],
+            "exclude": "env-103-26"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              8.02
+            ],
+            "exclude": "env-103-26"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              8.299999999999999
+            ],
+            "exclude": "env-103-27"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              12.02
+            ],
+            "exclude": "env-103-27"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              12.299999999999999
+            ],
+            "exclude": "env-103-28"
+          },
+          {
+            "name": "bank-land-boundary actual rail foot",
+            "point": [
+              11.8,
+              6.380000000000001,
+              13.620000000000001
+            ],
+            "exclude": "env-103-28"
+          },
+          {
+            "name": "bank-rail-seat actual seat foot",
+            "point": [
+              8.1,
+              6.380000000000001,
+              8
+            ],
+            "exclude": "env-103-29"
+          },
+          {
+            "name": "bank-rail-seat actual seat foot",
+            "point": [
+              11.1,
+              6.380000000000001,
+              8
+            ],
+            "exclude": "env-103-29"
+          },
+          {
+            "name": "rail-bank-green-0 root pocket terrain 0",
+            "point": [
+              13.399999999999999,
+              5.98,
+              -7.4
+            ],
+            "exclude": "env-103-30"
+          },
+          {
+            "name": "rail-bank-green-0 root pocket terrain 1",
+            "point": [
+              18.8,
+              5.98,
+              -7.4
+            ],
+            "exclude": "env-103-30"
+          },
+          {
+            "name": "rail-bank-green-0 root pocket terrain 2",
+            "point": [
+              18.8,
+              5.98,
+              -2.3999999999999995
+            ],
+            "exclude": "env-103-30"
+          },
+          {
+            "name": "rail-bank-green-0 root pocket terrain 3",
+            "point": [
+              13.399999999999999,
+              5.98,
+              -2.3999999999999995
+            ],
+            "exclude": "env-103-30"
+          },
+          {
+            "name": "rail-bank-green-0 root pocket terrain 4",
+            "point": [
+              16,
+              5.98,
+              -5
+            ],
+            "exclude": "env-103-30"
+          },
+          {
+            "name": "rail-bank-green-0 canonical root on actual soil",
+            "point": [
+              17.7,
+              6.180000000000001,
+              -6.7
+            ],
+            "exclude": "env-103-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-0 canonical root on actual soil",
+            "point": [
+              16.7,
+              6.180000000000001,
+              -5.3
+            ],
+            "exclude": "env-103-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-0 canonical root on actual soil",
+            "point": [
+              16.7,
+              6.180000000000001,
+              -4.7
+            ],
+            "exclude": "env-103-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-0 canonical root on actual soil",
+            "point": [
+              16.1,
+              6.180000000000001,
+              -4.1
+            ],
+            "exclude": "env-103-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-0 canonical root on actual soil",
+            "point": [
+              15.5,
+              6.180000000000001,
+              -4.5
+            ],
+            "exclude": "env-103-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-0 canonical root on actual soil",
+            "point": [
+              15.5,
+              6.180000000000001,
+              -6.5
+            ],
+            "exclude": "env-103-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-0 canonical root on actual soil",
+            "point": [
+              15.5,
+              6.180000000000001,
+              -5.1
+            ],
+            "exclude": "env-103-31",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-1 root pocket terrain 0",
+            "point": [
+              14.2,
+              5.98,
+              9.2
+            ],
+            "exclude": "env-103-32"
+          },
+          {
+            "name": "rail-bank-green-1 root pocket terrain 1",
+            "point": [
+              18,
+              5.98,
+              9.2
+            ],
+            "exclude": "env-103-32"
+          },
+          {
+            "name": "rail-bank-green-1 root pocket terrain 2",
+            "point": [
+              18,
+              5.98,
+              13
+            ],
+            "exclude": "env-103-32"
+          },
+          {
+            "name": "rail-bank-green-1 root pocket terrain 3",
+            "point": [
+              14.2,
+              5.98,
+              13
+            ],
+            "exclude": "env-103-32"
+          },
+          {
+            "name": "rail-bank-green-1 root pocket terrain 4",
+            "point": [
+              16,
+              5.98,
+              11
+            ],
+            "exclude": "env-103-32"
+          },
+          {
+            "name": "rail-bank-green-1 canonical root on actual soil",
+            "point": [
+              17.1,
+              6.180000000000001,
+              9.9
+            ],
+            "exclude": "env-103-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-1 canonical root on actual soil",
+            "point": [
+              16.1,
+              6.180000000000001,
+              10.9
+            ],
+            "exclude": "env-103-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-1 canonical root on actual soil",
+            "point": [
+              16.5,
+              6.180000000000001,
+              11.3
+            ],
+            "exclude": "env-103-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-1 canonical root on actual soil",
+            "point": [
+              16.3,
+              6.180000000000001,
+              11.7
+            ],
+            "exclude": "env-103-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-1 canonical root on actual soil",
+            "point": [
+              15.7,
+              6.180000000000001,
+              11.5
+            ],
+            "exclude": "env-103-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-1 canonical root on actual soil",
+            "point": [
+              15.7,
+              6.180000000000001,
+              10.1
+            ],
+            "exclude": "env-103-33",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "rail-bank-green-1 canonical root on actual soil",
+            "point": [
+              15.9,
+              6.180000000000001,
+              10.9
+            ],
+            "exclude": "env-103-33",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "forest": [
+          {
+            "catalogId": "ENV-057",
+            "params": {},
+            "instance": "env-103-31",
+            "soilInstance": "env-103-30",
+            "position": [
+              16,
+              6.2,
+              -5
+            ],
+            "rootSamples": [
+              [
+                17.7,
+                6.2,
+                -6.7
+              ],
+              [
+                16.7,
+                6.2,
+                -5.3
+              ],
+              [
+                16.7,
+                6.2,
+                -4.7
+              ],
+              [
+                16.1,
+                6.2,
+                -4.1
+              ],
+              [
+                15.5,
+                6.2,
+                -4.5
+              ],
+              [
+                15.5,
+                6.2,
+                -6.5
+              ],
+              [
+                15.5,
+                6.2,
+                -5.1
+              ]
+            ],
+            "rootCount": 87,
+            "rootDomain": [
+              -2.6000000000000005,
+              -2.4000000000000004,
+              2.8000000000000007,
+              2.6000000000000005
+            ],
+            "ground": 6
+          },
+          {
+            "catalogId": "ENV-054",
+            "params": {},
+            "instance": "env-103-33",
+            "soilInstance": "env-103-32",
+            "position": [
+              16,
+              6.2,
+              11
+            ],
+            "rootSamples": [
+              [
+                17.1,
+                6.2,
+                9.9
+              ],
+              [
+                16.1,
+                6.2,
+                10.9
+              ],
+              [
+                16.5,
+                6.2,
+                11.3
+              ],
+              [
+                16.3,
+                6.2,
+                11.7
+              ],
+              [
+                15.7,
+                6.2,
+                11.5
+              ],
+              [
+                15.7,
+                6.2,
+                10.1
+              ],
+              [
+                15.9,
+                6.2,
+                10.9
+              ]
+            ],
+            "rootCount": 61,
+            "rootDomain": [
+              -1.8,
+              -1.8,
+              2,
+              2
+            ],
+            "ground": 6
+          }
+        ],
+        "park": {
+          "pads": [
+            {
+              "instance": "env-103-2",
+              "rect": [
+                4,
+                -14,
+                12,
+                14
+              ],
+              "y": 6.4,
+              "bottom": 5.6,
+              "hole": null
+            },
+            {
+              "instance": "env-103-3",
+              "rect": [
+                -8,
+                -14,
+                4,
+                -6
+              ],
+              "y": 6.4,
+              "bottom": 6,
+              "hole": null
+            }
+          ],
+          "guards": [
+            {
+              "key": "river-edge",
+              "instance": "env-103-8",
+              "from": [
+                4.2,
+                6.4,
+                -5.8
+              ],
+              "to": [
+                4.2,
+                6.4,
+                -1.7999999999999998
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "river-edge",
+              "instance": "env-103-9",
+              "from": [
+                4.2,
+                6.4,
+                -1.7999999999999998
+              ],
+              "to": [
+                4.2,
+                6.4,
+                2.2
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "river-edge",
+              "instance": "env-103-10",
+              "from": [
+                4.2,
+                6.4,
+                2.2
+              ],
+              "to": [
+                4.2,
+                6.4,
+                6.2
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "river-edge",
+              "instance": "env-103-11",
+              "from": [
+                4.2,
+                6.4,
+                6.2
+              ],
+              "to": [
+                4.2,
+                6.4,
+                10.2
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "river-edge",
+              "instance": "env-103-12",
+              "from": [
+                4.2,
+                6.4,
+                10.2
+              ],
+              "to": [
+                4.2,
+                6.4,
+                13.8
+              ],
+              "width": 3.6000000000000014,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "outer-cliff-edge",
+              "instance": "env-103-13",
+              "from": [
+                -7.8,
+                6.4,
+                -13.8
+              ],
+              "to": [
+                -7.8,
+                6.4,
+                -9.8
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "outer-cliff-edge",
+              "instance": "env-103-14",
+              "from": [
+                -7.8,
+                6.4,
+                -9.8
+              ],
+              "to": [
+                -7.8,
+                6.4,
+                -6.2
+              ],
+              "width": 3.6000000000000005,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "front-bank-edge",
+              "instance": "env-103-15",
+              "from": [
+                -7.8,
+                6.4,
+                -13.8
+              ],
+              "to": [
+                -3.8,
+                6.4,
+                -13.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "front-bank-edge",
+              "instance": "env-103-16",
+              "from": [
+                -3.8,
+                6.4,
+                -13.8
+              ],
+              "to": [
+                0.20000000000000018,
+                6.4,
+                -13.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "front-bank-edge",
+              "instance": "env-103-17",
+              "from": [
+                0.20000000000000018,
+                6.4,
+                -13.8
+              ],
+              "to": [
+                4.2,
+                6.4,
+                -13.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "front-bank-edge",
+              "instance": "env-103-18",
+              "from": [
+                4.2,
+                6.4,
+                -13.8
+              ],
+              "to": [
+                8.2,
+                6.4,
+                -13.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "front-bank-edge",
+              "instance": "env-103-19",
+              "from": [
+                8.2,
+                6.4,
+                -13.8
+              ],
+              "to": [
+                11.8,
+                6.4,
+                -13.8
+              ],
+              "width": 3.6000000000000014,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "lookout-back",
+              "instance": "env-103-20",
+              "from": [
+                -7.8,
+                6.4,
+                -6.2
+              ],
+              "to": [
+                -3.8,
+                6.4,
+                -6.2
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "lookout-back",
+              "instance": "env-103-21",
+              "from": [
+                -3.8,
+                6.4,
+                -6.2
+              ],
+              "to": [
+                0.20000000000000018,
+                6.4,
+                -6.2
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "lookout-back",
+              "instance": "env-103-22",
+              "from": [
+                0.20000000000000018,
+                6.4,
+                -6.2
+              ],
+              "to": [
+                3.8,
+                6.4,
+                -6.2
+              ],
+              "width": 3.5999999999999996,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "bank-land-boundary",
+              "instance": "env-103-23",
+              "from": [
+                11.8,
+                6.4,
+                -7.8
+              ],
+              "to": [
+                11.8,
+                6.4,
+                -3.8
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "bank-land-boundary",
+              "instance": "env-103-24",
+              "from": [
+                11.8,
+                6.4,
+                -3.8
+              ],
+              "to": [
+                11.8,
+                6.4,
+                0.20000000000000018
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "bank-land-boundary",
+              "instance": "env-103-25",
+              "from": [
+                11.8,
+                6.4,
+                0.20000000000000018
+              ],
+              "to": [
+                11.8,
+                6.4,
+                4.2
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "bank-land-boundary",
+              "instance": "env-103-26",
+              "from": [
+                11.8,
+                6.4,
+                4.2
+              ],
+              "to": [
+                11.8,
+                6.4,
+                8.2
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "bank-land-boundary",
+              "instance": "env-103-27",
+              "from": [
+                11.8,
+                6.4,
+                8.2
+              ],
+              "to": [
+                11.8,
+                6.4,
+                12.2
+              ],
+              "width": 4,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "bank-land-boundary",
+              "instance": "env-103-28",
+              "from": [
+                11.8,
+                6.4,
+                12.2
+              ],
+              "to": [
+                11.8,
+                6.4,
+                13.8
+              ],
+              "width": 1.6000000000000014,
+              "axis": "z",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            }
+          ],
+          "seats": [
+            {
+              "key": "bank-rail-seat",
+              "instance": "env-103-29",
+              "point": [
+                9.6,
+                7,
+                7.9
+              ],
+              "approach": [
+                9.6,
+                6.4,
+                6.8
+              ],
+              "form": "wood"
+            }
+          ],
+          "steps": [],
+          "rockContacts": [],
+          "drains": [],
+          "viewRays": [],
+          "wayfinding": [],
+          "activityPoints": [],
+          "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance.",
+          "railLayout": {
+            "deck": {
+              "instance": "env-103-3",
+              "rect": [
+                -8,
+                -14,
+                4,
+                -6
+              ],
+              "y": 6.4,
+              "feet": [
+                {
+                  "instance": "env-103-4",
+                  "point": [
+                    -7.2,
+                    2.8,
+                    -13.2
+                  ],
+                  "top": 6
+                },
+                {
+                  "instance": "env-103-5",
+                  "point": [
+                    3.2,
+                    5.146666667,
+                    -13.2
+                  ],
+                  "top": 6
+                },
+                {
+                  "instance": "env-103-6",
+                  "point": [
+                    -7.2,
+                    2.8,
+                    -6.8
+                  ],
+                  "top": 6
+                },
+                {
+                  "instance": "env-103-7",
+                  "point": [
+                    3.2,
+                    5.146666667,
+                    -6.8
+                  ],
+                  "top": 6
+                }
+              ]
+            },
+            "entry": {
+              "min": [
+                11.5,
+                6.4,
+                -12
+              ],
+              "max": [
+                12.2,
+                8.12,
+                -8
+              ]
+            },
+            "guardMaster": "BUILT-097",
+            "physicalBodiesChecked": true,
+            "safetyCertification": false
+          }
+        },
+        "terrainAuthority": "Actual closed continuous triangles with native minimum rock cells. Original full voxel masters retained without resampling.",
+        "terrainTiles": [
+          {
+            "instance": "env-103-0",
+            "assetId": "architecture-civic-terrain-park-water-cliff-rails-0-0-0-1-nea-bfa52adc6a",
+            "authorityAssetId": "architecture-civic-terrain-park-water-cliff-rails-0-0-0-1-nea-bfa52adc6a",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 40,
+            "step": 1,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 40,
+          "step": 1,
+          "origin": [
+            -20,
+            -20
+          ],
+          "actualTriangles": true
+        },
+        "waterBodies": [
+          {
+            "instance": "env-103-1",
+            "assetId": "architecture-civic-flooded-rail-water-f62d1ebe92",
+            "rect": [
+              -20,
+              -20,
+              20,
+              20
+            ],
+            "step": 1,
+            "role": "flowWater",
+            "samples": [
+              {
+                "point": [
+                  -19.333333333333332,
+                  4.2,
+                  -19.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -19.666666666666668,
+                  4.2,
+                  -14.333333333333336
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -19.333333333333332,
+                  4.2,
+                  -8.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -19.666666666666668,
+                  4.2,
+                  -3.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -19.333333333333332,
+                  4.2,
+                  2.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -19.666666666666668,
+                  4.2,
+                  7.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -19.333333333333332,
+                  4.2,
+                  13.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -19.666666666666668,
+                  4.2,
+                  18.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -18.333333333333332,
+                  4.2,
+                  -15.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -18.666666666666664,
+                  4.2,
+                  -10.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -18.333333333333332,
+                  4.2,
+                  -4.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -18.666666666666664,
+                  4.2,
+                  0.6666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -18.333333333333332,
+                  4.2,
+                  6.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -18.666666666666664,
+                  4.2,
+                  11.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -18.333333333333332,
+                  4.2,
+                  17.333333333333336
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -17.666666666666668,
+                  4.2,
+                  -17.333333333333336
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -17.333333333333336,
+                  4.2,
+                  -11.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -17.666666666666668,
+                  4.2,
+                  -6.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -17.333333333333336,
+                  4.2,
+                  -0.6666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -17.666666666666668,
+                  4.2,
+                  4.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -17.333333333333336,
+                  4.2,
+                  10.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -17.666666666666668,
+                  4.2,
+                  15.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.333333333333332,
+                  4.2,
+                  -18.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.666666666666668,
+                  4.2,
+                  -13.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.333333333333332,
+                  4.2,
+                  -7.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.666666666666668,
+                  4.2,
+                  -2.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.333333333333332,
+                  4.2,
+                  3.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.666666666666668,
+                  4.2,
+                  8.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.333333333333332,
+                  4.2,
+                  14.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -16.666666666666668,
+                  4.2,
+                  19.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -15.333333333333332,
+                  4.2,
+                  -14.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -15.666666666666664,
+                  4.2,
+                  -9.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -15.333333333333332,
+                  4.2,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -15.666666666666664,
+                  4.2,
+                  1.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -15.333333333333332,
+                  4.2,
+                  7.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -15.666666666666664,
+                  4.2,
+                  12.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -15.333333333333332,
+                  4.2,
+                  18.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -14.666666666666668,
+                  4.2,
+                  -16.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -14.333333333333336,
+                  4.2,
+                  -10.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -14.666666666666668,
+                  4.2,
+                  -5.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -14.333333333333336,
+                  4.2,
+                  0.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -14.666666666666668,
+                  4.2,
+                  5.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -14.333333333333336,
+                  4.2,
+                  11.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -14.666666666666668,
+                  4.2,
+                  16.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -13.333333333333332,
+                  4.2,
+                  -17.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -13.666666666666668,
+                  4.2,
+                  -12.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -13.333333333333332,
+                  4.2,
+                  -6.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -13.666666666666668,
+                  4.2,
+                  -1.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -13.333333333333332,
+                  4.2,
+                  4.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -13.666666666666668,
+                  4.2,
+                  9.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -13.333333333333332,
+                  4.2,
+                  15.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.666666666666664,
+                  4.2,
+                  -19.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.333333333333332,
+                  4.2,
+                  -13.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.666666666666664,
+                  4.2,
+                  -8.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.333333333333332,
+                  4.2,
+                  -2.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.666666666666664,
+                  4.2,
+                  2.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.333333333333332,
+                  4.2,
+                  8.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.666666666666664,
+                  4.2,
+                  13.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -12.333333333333332,
+                  4.2,
+                  19.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -11.666666666666666,
+                  4.2,
+                  -15.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -11.333333333333332,
+                  4.2,
+                  -9.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -11.666666666666666,
+                  4.2,
+                  -4.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -11.333333333333332,
+                  4.2,
+                  1.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -11.666666666666666,
+                  4.2,
+                  6.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -11.333333333333332,
+                  4.2,
+                  12.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -11.666666666666666,
+                  4.2,
+                  17.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -10.333333333333334,
+                  4.2,
+                  -16.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -10.666666666666666,
+                  4.2,
+                  -11.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -10.333333333333334,
+                  4.2,
+                  -5.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -10.666666666666666,
+                  4.2,
+                  -0.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -10.333333333333334,
+                  4.2,
+                  5.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -10.666666666666666,
+                  4.2,
+                  10.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -10.333333333333334,
+                  4.2,
+                  16.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -9.666666666666668,
+                  4.2,
+                  -18.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -9.333333333333334,
+                  4.2,
+                  -12.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -9.666666666666668,
+                  4.2,
+                  -7.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -9.333333333333334,
+                  4.2,
+                  -1.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -9.666666666666668,
+                  4.2,
+                  3.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -9.333333333333334,
+                  4.2,
+                  9.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -9.666666666666668,
+                  4.2,
+                  14.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  4.2,
+                  -19.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.666666666666666,
+                  4.2,
+                  -14.333333333333336
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  4.2,
+                  -8.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.666666666666666,
+                  4.2,
+                  -3.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  4.2,
+                  2.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.666666666666666,
+                  4.2,
+                  7.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.333333333333332,
+                  4.2,
+                  13.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -8.666666666666666,
+                  4.2,
+                  18.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -7.333333333333334,
+                  4.2,
+                  -15.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  4.2,
+                  -10.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -7.333333333333334,
+                  4.2,
+                  -4.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  4.2,
+                  0.6666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -7.333333333333334,
+                  4.2,
+                  6.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -7.666666666666666,
+                  4.2,
+                  11.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -7.333333333333334,
+                  4.2,
+                  17.333333333333336
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -6.666666666666668,
+                  4.2,
+                  -17.333333333333336
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  4.2,
+                  -11.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -6.666666666666668,
+                  4.2,
+                  -6.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  4.2,
+                  -0.6666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -6.666666666666668,
+                  4.2,
+                  4.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -6.333333333333334,
+                  4.2,
+                  10.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -6.666666666666668,
+                  4.2,
+                  15.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  4.2,
+                  -18.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.666666666666667,
+                  4.2,
+                  -13.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  4.2,
+                  -7.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.666666666666667,
+                  4.2,
+                  -2.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  4.2,
+                  3.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.666666666666667,
+                  4.2,
+                  8.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  4.2,
+                  14.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -5.666666666666667,
+                  4.2,
+                  19.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  4.2,
+                  -14.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -4.666666666666667,
+                  4.2,
+                  -9.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  4.2,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -4.666666666666667,
+                  4.2,
+                  1.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  4.2,
+                  7.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -4.666666666666667,
+                  4.2,
+                  12.666666666666664
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  4.2,
+                  18.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -3.666666666666666,
+                  4.2,
+                  -16.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.2,
+                  -10.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -3.666666666666666,
+                  4.2,
+                  -5.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.2,
+                  0.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -3.666666666666666,
+                  4.2,
+                  5.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  4.2,
+                  11.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -3.666666666666666,
+                  4.2,
+                  16.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.2,
+                  -17.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -2.6666666666666665,
+                  4.2,
+                  -12.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.2,
+                  -6.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -2.6666666666666665,
+                  4.2,
+                  -1.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.2,
+                  4.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -2.6666666666666665,
+                  4.2,
+                  9.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  4.2,
+                  15.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.6666666666666665,
+                  4.2,
+                  -19.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.2,
+                  -13.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.6666666666666665,
+                  4.2,
+                  -8.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.2,
+                  -2.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.6666666666666665,
+                  4.2,
+                  2.6666666666666665
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.2,
+                  8.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.6666666666666665,
+                  4.2,
+                  13.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  4.2,
+                  19.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -0.6666666666666666,
+                  4.2,
+                  -15.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.2,
+                  -9.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -0.6666666666666666,
+                  4.2,
+                  -4.333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.2,
+                  1.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -0.6666666666666666,
+                  4.2,
+                  6.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  4.2,
+                  12.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  -0.6666666666666666,
+                  4.2,
+                  17.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.2,
+                  -16.666666666666668
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  0.3333333333333333,
+                  4.2,
+                  -11.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.2,
+                  -5.666666666666667
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  0.3333333333333333,
+                  4.2,
+                  -0.3333333333333333
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.2,
+                  5.333333333333334
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  0.3333333333333333,
+                  4.2,
+                  10.666666666666666
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  4.2,
+                  16.333333333333332
+                ],
+                "bedY": 2.8,
+                "depth": 1.4000000000000004
+              },
+              {
+                "point": [
+                  1.3333333333333333,
+                  4.2,
+                  -18.333333333333332
+                ],
+                "bedY": 3.155555555555555,
+                "depth": 1.0444444444444452
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.2,
+                  -12.666666666666666
+                ],
+                "bedY": 3.5111111111111106,
+                "depth": 0.6888888888888896
+              },
+              {
+                "point": [
+                  1.3333333333333333,
+                  4.2,
+                  -7.333333333333334
+                ],
+                "bedY": 3.155555555555555,
+                "depth": 1.0444444444444452
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.2,
+                  -1.6666666666666665
+                ],
+                "bedY": 3.5111111111111106,
+                "depth": 0.6888888888888896
+              },
+              {
+                "point": [
+                  1.3333333333333333,
+                  4.2,
+                  3.666666666666666
+                ],
+                "bedY": 3.155555555555555,
+                "depth": 1.0444444444444452
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  4.2,
+                  9.333333333333334
+                ],
+                "bedY": 3.5111111111111106,
+                "depth": 0.6888888888888896
+              },
+              {
+                "point": [
+                  1.3333333333333333,
+                  4.2,
+                  14.666666666666668
+                ],
+                "bedY": 3.155555555555555,
+                "depth": 1.0444444444444452
+              },
+              {
+                "point": [
+                  2.2083333333333335,
+                  4.2,
+                  -19.895833333333336
+                ],
+                "bedY": 4.0888888888888895,
+                "depth": 0.11111111111111072
+              },
+              {
+                "point": [
+                  2.15625,
+                  4.2,
+                  -14.421875
+                ],
+                "bedY": 4.033333333333333,
+                "depth": 0.16666666666666696
+              },
+              {
+                "point": [
+                  2.2083333333333335,
+                  4.2,
+                  -8.895833333333334
+                ],
+                "bedY": 4.0888888888888895,
+                "depth": 0.11111111111111072
+              },
+              {
+                "point": [
+                  2.15625,
+                  4.2,
+                  -3.421875
+                ],
+                "bedY": 4.033333333333333,
+                "depth": 0.16666666666666696
+              },
+              {
+                "point": [
+                  2.2083333333333335,
+                  4.2,
+                  2.1041666666666665
+                ],
+                "bedY": 4.0888888888888895,
+                "depth": 0.11111111111111072
+              },
+              {
+                "point": [
+                  2.15625,
+                  4.2,
+                  7.578125
+                ],
+                "bedY": 4.033333333333333,
+                "depth": 0.16666666666666696
+              },
+              {
+                "point": [
+                  2.2083333333333335,
+                  4.2,
+                  13.104166666666666
+                ],
+                "bedY": 4.0888888888888895,
+                "depth": 0.11111111111111072
+              },
+              {
+                "point": [
+                  2.15625,
+                  4.2,
+                  18.578125
+                ],
+                "bedY": 4.033333333333333,
+                "depth": 0.16666666666666696
+              }
+            ],
+            "shore": [
+              [
+                2.3125,
+                4.2,
+                -20
+              ],
+              [
+                2.3125,
+                4.2,
+                -19.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -19
+              ],
+              [
+                2.3125,
+                4.2,
+                -18.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -18
+              ],
+              [
+                2.3125,
+                4.2,
+                -17.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -17
+              ],
+              [
+                2.3125,
+                4.2,
+                -16.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -16
+              ],
+              [
+                2.3125,
+                4.2,
+                -15.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -15
+              ],
+              [
+                2.3125,
+                4.2,
+                -14.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -14
+              ],
+              [
+                2.3125,
+                4.2,
+                -13.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -13
+              ],
+              [
+                2.3125,
+                4.2,
+                -12.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -12
+              ],
+              [
+                2.3125,
+                4.2,
+                -11.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -11
+              ],
+              [
+                2.3125,
+                4.2,
+                -10.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -10
+              ],
+              [
+                2.3125,
+                4.2,
+                -9.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -9
+              ],
+              [
+                2.3125,
+                4.2,
+                -8.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -8
+              ],
+              [
+                2.3125,
+                4.2,
+                -7.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -7
+              ],
+              [
+                2.3125,
+                4.2,
+                -6.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -6
+              ],
+              [
+                2.3125,
+                4.2,
+                -5.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -5
+              ],
+              [
+                2.3125,
+                4.2,
+                -4.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -4
+              ],
+              [
+                2.3125,
+                4.2,
+                -3.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -3
+              ],
+              [
+                2.3125,
+                4.2,
+                -2.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -2
+              ],
+              [
+                2.3125,
+                4.2,
+                -1.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                -1
+              ],
+              [
+                2.3125,
+                4.2,
+                -0.6875
+              ],
+              [
+                2.3125,
+                4.2,
+                0
+              ],
+              [
+                2.3125,
+                4.2,
+                0.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                1
+              ],
+              [
+                2.3125,
+                4.2,
+                1.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                2
+              ],
+              [
+                2.3125,
+                4.2,
+                2.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                3
+              ],
+              [
+                2.3125,
+                4.2,
+                3.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                4
+              ],
+              [
+                2.3125,
+                4.2,
+                4.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                5
+              ],
+              [
+                2.3125,
+                4.2,
+                5.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                6
+              ],
+              [
+                2.3125,
+                4.2,
+                6.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                7
+              ],
+              [
+                2.3125,
+                4.2,
+                7.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                8
+              ],
+              [
+                2.3125,
+                4.2,
+                8.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                9
+              ],
+              [
+                2.3125,
+                4.2,
+                9.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                10
+              ],
+              [
+                2.3125,
+                4.2,
+                10.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                11
+              ],
+              [
+                2.3125,
+                4.2,
+                11.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                12
+              ],
+              [
+                2.3125,
+                4.2,
+                12.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                13
+              ],
+              [
+                2.3125,
+                4.2,
+                13.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                14
+              ],
+              [
+                2.3125,
+                4.2,
+                14.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                15
+              ],
+              [
+                2.3125,
+                4.2,
+                15.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                16
+              ],
+              [
+                2.3125,
+                4.2,
+                16.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                17
+              ],
+              [
+                2.3125,
+                4.2,
+                17.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                18
+              ],
+              [
+                2.3125,
+                4.2,
+                18.3125
+              ],
+              [
+                2.3125,
+                4.2,
+                19
+              ],
+              [
+                2.3125,
+                4.2,
+                19.3125
+              ]
+            ],
+            "waterPhysical": false
+          }
+        ]
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-park-water-cliff-rails-0-0-0-1-nea-bfa52adc6a",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 6720
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 6720
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-flooded-rail-water-f62d1ebe92",
+      "name": "同源床面裁切的真实水域",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-192",
+          "material": 192,
+          "collision": false,
+          "triangles": 3930
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-bank-promenade-3653863a31",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 8076
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 2016
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-water-lookout-f688b8da91",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 3372
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 840
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-water-lookout-foot-0-34f7ca9514",
+      "name": "真实地形至台板底的独立承脚",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-water-lookout-foot-1-e40f56c8f0",
+      "name": "真实地形至台板底的独立承脚",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-water-lookout-foot-2-1c93d42422",
+      "name": "真实地形至台板底的独立承脚",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-water-lookout-foot-3-bcff8ac23a",
+      "name": "真实地形至台板底的独立承脚",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 156
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-3p6000000000000014-0e5e4e35f6",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 144
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-3p6000000000000005-cd90a3287f",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 144
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-3p5999999999999996-8817bd4edc",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 144
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-1p6000000000000014-6119ebddd6",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 72
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-env-098-seatForm-wood",
+      "name": "公共长椅与石凳母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            1.2000000000000002
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              8,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两个真实接地石承脚和座板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              18,
+              3,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "木纹向背靠、扶手和铜锁件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              3,
+              0
+            ],
+            "max": [
+              18,
+              8,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            13.600000000000001,
+            0,
+            13
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -34,
+              0,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              0,
+              -11
+            ],
+            "max": [
+              13,
+              26,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -24,
+              11,
+              -25
+            ],
+            "max": [
+              25,
+              45,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -34,
+              31,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-rail-bank-green-0-6675c45590",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              70,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              19,
+              -21
+            ],
+            "max": [
+              24,
+              62,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              23,
+              -28
+            ],
+            "max": [
+              31,
+              63,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              62,
+              -6
+            ],
+            "max": [
+              11,
+              70,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-rail-bank-green-1-3f5dc553e3",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-103-0",
+      "assetId": "architecture-civic-terrain-park-water-cliff-rails-0-0-0-1-nea-bfa52adc6a",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-1",
+      "assetId": "architecture-civic-flooded-rail-water-f62d1ebe92",
+      "name": "同源床面裁切的真实水域",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-2",
+      "assetId": "architecture-civic-park-paving-bank-promenade-3653863a31",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-3",
+      "assetId": "architecture-civic-park-paving-water-lookout-f688b8da91",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-4",
+      "assetId": "architecture-civic-park-water-lookout-foot-0-34f7ca9514",
+      "name": "真实地形至台板底的独立承脚",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-5",
+      "assetId": "architecture-civic-park-water-lookout-foot-1-e40f56c8f0",
+      "name": "真实地形至台板底的独立承脚",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-6",
+      "assetId": "architecture-civic-park-water-lookout-foot-2-1c93d42422",
+      "name": "真实地形至台板底的独立承脚",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-7",
+      "assetId": "architecture-civic-park-water-lookout-foot-3-bcff8ac23a",
+      "name": "真实地形至台板底的独立承脚",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-8",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        4.2,
+        6.4,
+        -5.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-9",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        4.2,
+        6.4,
+        -1.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-10",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        4.2,
+        6.4,
+        2.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-11",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        4.2,
+        6.4,
+        6.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-12",
+      "assetId": "architecture-civic-rail-3p6000000000000014-0e5e4e35f6",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        4.2,
+        6.4,
+        10.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-13",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -7.8,
+        6.4,
+        -13.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-14",
+      "assetId": "architecture-civic-rail-3p6000000000000005-cd90a3287f",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -7.8,
+        6.4,
+        -9.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-15",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -7.8,
+        6.4,
+        -13.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-16",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -3.8,
+        6.4,
+        -13.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-17",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        0.2,
+        6.4,
+        -13.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-18",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        4.2,
+        6.4,
+        -13.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-19",
+      "assetId": "architecture-civic-rail-3p6000000000000014-0e5e4e35f6",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        8.2,
+        6.4,
+        -13.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-20",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -7.8,
+        6.4,
+        -6.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-21",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -3.8,
+        6.4,
+        -6.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-22",
+      "assetId": "architecture-civic-rail-3p5999999999999996-8817bd4edc",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        0.2,
+        6.4,
+        -6.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-23",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        11.8,
+        6.4,
+        -7.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-24",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        11.8,
+        6.4,
+        -3.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-25",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        11.8,
+        6.4,
+        0.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-26",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        11.8,
+        6.4,
+        4.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-27",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        11.8,
+        6.4,
+        8.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-28",
+      "assetId": "architecture-civic-rail-1p6000000000000014-6119ebddd6",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        11.8,
+        6.4,
+        12.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-103-29",
+      "assetId": "source-env-098-seatForm-wood",
+      "name": "公共长椅与石凳母版",
+      "position": [
+        7.8,
+        6.4,
+        7.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-30",
+      "assetId": "architecture-civic-root-pocket-rail-bank-green-0-6675c45590",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-31",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        16,
+        6.2,
+        -5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-32",
+      "assetId": "architecture-civic-root-pocket-rail-bank-green-1-3f5dc553e3",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-103-33",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        16,
+        6.2,
+        11
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

@@ -1,0 +1,6302 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-090": {
+      "id": "env-090",
+      "name": "桥接岸与基础地形衔接模板",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-090-0",
+          "assetId": "architecture-civic-terrain-park-bridge-banks-0-0-0-1-near-637e1d181e",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-1",
+          "assetId": "architecture-civic-flooded-bank-water-7608c886ea",
+          "name": "同源床面裁切的真实水域",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-2",
+          "assetId": "architecture-civic-fleet-bridge-park-bank-crossing-4cab62593d",
+          "name": "分层路床、承梁、支座和实墩",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-3",
+          "assetId": "architecture-civic-park-paving-actual-bridge-landing--1-07285fc871",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-4",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -22.9,
+            8.4,
+            -2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-5",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -18.9,
+            8.4,
+            -2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-6",
+          "assetId": "architecture-civic-rail-0p7999999999999989-dc85871d07",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -14.9,
+            8.4,
+            -2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-7",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -22.9,
+            8.4,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-8",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -18.9,
+            8.4,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-9",
+          "assetId": "architecture-civic-rail-0p7999999999999989-dc85871d07",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            -14.9,
+            8.4,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-10",
+          "assetId": "architecture-civic-park-paving-actual-bridge-landing-1-ad38d62265",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-11",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            14.1,
+            8.4,
+            -2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-12",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            18.1,
+            8.4,
+            -2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-13",
+          "assetId": "architecture-civic-rail-0p7999999999999972-2f14e5bffe",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            22.1,
+            8.4,
+            -2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-14",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            14.1,
+            8.4,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-15",
+          "assetId": "architecture-civic-rail-4-c692a62af3",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            18.1,
+            8.4,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-16",
+          "assetId": "architecture-civic-rail-0p7999999999999972-2f14e5bffe",
+          "name": "廊边木栏与实际竖梃",
+          "position": [
+            22.1,
+            8.4,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-17",
+          "assetId": "architecture-civic-root-pocket-bridge-bank-trees-0-92fb08d1ea",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-18",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            -19,
+            8.2,
+            -10
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-19",
+          "assetId": "architecture-civic-root-pocket-bridge-bank-trees-1-0678392708",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-20",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            -18,
+            8.2,
+            10
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-21",
+          "assetId": "architecture-civic-root-pocket-bridge-bank-trees-2-b4d29e4b00",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-22",
+          "assetId": "source-env-057",
+          "name": "阔叶分枝与开阔树冠母版",
+          "position": [
+            19,
+            8.2,
+            -10
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-23",
+          "assetId": "architecture-civic-root-pocket-bridge-bank-trees-3-4c2e2ed8b0",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-24",
+          "assetId": "source-env-054",
+          "name": "松类体素分枝树母版",
+          "position": [
+            19,
+            8.2,
+            11
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-25",
+          "assetId": "architecture-civic-root-pocket-bridge-bank-understory-0-9cc101c0de",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-26",
+          "assetId": "source-env-061-habit-low",
+          "name": "分枝灌木与花灌木母版",
+          "position": [
+            -15,
+            8.2,
+            -6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-27",
+          "assetId": "architecture-civic-root-pocket-bridge-bank-understory-1-4b44bbba4b",
+          "name": "贴地独立根域与表土",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-090-28",
+          "assetId": "source-env-064-groundcover-fern",
+          "name": "蕨类与阔叶地被簇母版",
+          "position": [
+            15,
+            8.2,
+            7
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-090",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M051",
+          "slot": 2,
+          "imageSHA256": "20738d740c580d126dffd89b4ca90c1a770338e42ad173b3a02519d0c735ec1e"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-003",
+          "BUILT-097",
+          "BUILT-146",
+          "BUILT-147",
+          "BUILT-305",
+          "BUILT-307",
+          "BUILT-308",
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-027",
+          "ENV-028",
+          "ENV-034",
+          "ENV-035",
+          "ENV-054",
+          "ENV-057",
+          "ENV-061",
+          "ENV-064",
+          "ENV-094"
+        ],
+        "instanceGroups": {
+          "env-090-0": "terrain",
+          "env-090-1": "water",
+          "env-090-2": "bridge",
+          "env-090-3": "park-fixture",
+          "env-090-4": "guard",
+          "env-090-5": "guard",
+          "env-090-6": "guard",
+          "env-090-7": "guard",
+          "env-090-8": "guard",
+          "env-090-9": "guard",
+          "env-090-10": "park-fixture",
+          "env-090-11": "guard",
+          "env-090-12": "guard",
+          "env-090-13": "guard",
+          "env-090-14": "guard",
+          "env-090-15": "guard",
+          "env-090-16": "guard",
+          "env-090-17": "root-soil",
+          "env-090-18": "vegetation",
+          "env-090-19": "root-soil",
+          "env-090-20": "vegetation",
+          "env-090-21": "root-soil",
+          "env-090-22": "vegetation",
+          "env-090-23": "root-soil",
+          "env-090-24": "vegetation",
+          "env-090-25": "root-soil",
+          "env-090-26": "vegetation",
+          "env-090-27": "root-soil",
+          "env-090-28": "vegetation"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "park-bank-crossing deck",
+            "points": [
+              [
+                -13,
+                8.4,
+                1
+              ],
+              [
+                13,
+                8.4,
+                1
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "bank landing to actual bridge deck",
+            "points": [
+              [
+                -22,
+                8.4,
+                1
+              ],
+              [
+                22,
+                8.4,
+                1
+              ]
+            ],
+            "width": 1.2
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "park-bank-crossing foundation into actual terrain",
+            "point": [
+              -8.96,
+              4.844,
+              -2.15
+            ],
+            "exclude": "env-090-2"
+          },
+          {
+            "name": "park-bank-crossing foundation into actual terrain",
+            "point": [
+              -8.96,
+              4.844,
+              2.15
+            ],
+            "exclude": "env-090-2"
+          },
+          {
+            "name": "park-bank-crossing foundation into actual terrain",
+            "point": [
+              8.96,
+              4.844,
+              -2.15
+            ],
+            "exclude": "env-090-2"
+          },
+          {
+            "name": "park-bank-crossing foundation into actual terrain",
+            "point": [
+              8.96,
+              4.844,
+              2.15
+            ],
+            "exclude": "env-090-2"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -22.799999999999997,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-4"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -19.08,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-4"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -18.799999999999997,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-5"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -15.079999999999998,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-5"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -14.799999999999999,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-6"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -14.28,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-6"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -22.799999999999997,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-7"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -19.08,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-7"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -18.799999999999997,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-8"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -15.079999999999998,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-8"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -14.799999999999999,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-9"
+          },
+          {
+            "name": "landing--1 actual rail foot",
+            "point": [
+              -14.28,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-9"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              14.2,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-11"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              17.919999999999998,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-11"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              18.200000000000003,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-12"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              21.92,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-12"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              22.200000000000003,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-13"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              22.72,
+              8.38,
+              -2.8
+            ],
+            "exclude": "env-090-13"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              14.2,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-14"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              17.919999999999998,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-14"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              18.200000000000003,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-15"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              21.92,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-15"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              22.200000000000003,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-16"
+          },
+          {
+            "name": "landing-1 actual rail foot",
+            "point": [
+              22.72,
+              8.38,
+              2.8
+            ],
+            "exclude": "env-090-16"
+          },
+          {
+            "name": "bridge-bank-trees-0 root pocket terrain 0",
+            "point": [
+              -21.6,
+              7.98,
+              -12.4
+            ],
+            "exclude": "env-090-17"
+          },
+          {
+            "name": "bridge-bank-trees-0 root pocket terrain 1",
+            "point": [
+              -16.2,
+              7.98,
+              -12.4
+            ],
+            "exclude": "env-090-17"
+          },
+          {
+            "name": "bridge-bank-trees-0 root pocket terrain 2",
+            "point": [
+              -16.2,
+              7.98,
+              -7.3999999999999995
+            ],
+            "exclude": "env-090-17"
+          },
+          {
+            "name": "bridge-bank-trees-0 root pocket terrain 3",
+            "point": [
+              -21.6,
+              7.98,
+              -7.3999999999999995
+            ],
+            "exclude": "env-090-17"
+          },
+          {
+            "name": "bridge-bank-trees-0 root pocket terrain 4",
+            "point": [
+              -19,
+              7.98,
+              -10
+            ],
+            "exclude": "env-090-17"
+          },
+          {
+            "name": "bridge-bank-trees-0 canonical root on actual soil",
+            "point": [
+              -17.3,
+              8.18,
+              -11.7
+            ],
+            "exclude": "env-090-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-0 canonical root on actual soil",
+            "point": [
+              -18.3,
+              8.18,
+              -10.3
+            ],
+            "exclude": "env-090-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-0 canonical root on actual soil",
+            "point": [
+              -18.3,
+              8.18,
+              -9.7
+            ],
+            "exclude": "env-090-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-0 canonical root on actual soil",
+            "point": [
+              -18.9,
+              8.18,
+              -9.1
+            ],
+            "exclude": "env-090-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-0 canonical root on actual soil",
+            "point": [
+              -19.5,
+              8.18,
+              -9.5
+            ],
+            "exclude": "env-090-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-0 canonical root on actual soil",
+            "point": [
+              -19.5,
+              8.18,
+              -11.5
+            ],
+            "exclude": "env-090-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-0 canonical root on actual soil",
+            "point": [
+              -19.5,
+              8.18,
+              -10.1
+            ],
+            "exclude": "env-090-18",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-1 root pocket terrain 0",
+            "point": [
+              -19.8,
+              7.98,
+              8.2
+            ],
+            "exclude": "env-090-19"
+          },
+          {
+            "name": "bridge-bank-trees-1 root pocket terrain 1",
+            "point": [
+              -16,
+              7.98,
+              8.2
+            ],
+            "exclude": "env-090-19"
+          },
+          {
+            "name": "bridge-bank-trees-1 root pocket terrain 2",
+            "point": [
+              -16,
+              7.98,
+              12
+            ],
+            "exclude": "env-090-19"
+          },
+          {
+            "name": "bridge-bank-trees-1 root pocket terrain 3",
+            "point": [
+              -19.8,
+              7.98,
+              12
+            ],
+            "exclude": "env-090-19"
+          },
+          {
+            "name": "bridge-bank-trees-1 root pocket terrain 4",
+            "point": [
+              -18,
+              7.98,
+              10
+            ],
+            "exclude": "env-090-19"
+          },
+          {
+            "name": "bridge-bank-trees-1 canonical root on actual soil",
+            "point": [
+              -16.9,
+              8.18,
+              8.9
+            ],
+            "exclude": "env-090-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-1 canonical root on actual soil",
+            "point": [
+              -17.9,
+              8.18,
+              9.9
+            ],
+            "exclude": "env-090-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-1 canonical root on actual soil",
+            "point": [
+              -17.5,
+              8.18,
+              10.3
+            ],
+            "exclude": "env-090-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-1 canonical root on actual soil",
+            "point": [
+              -17.7,
+              8.18,
+              10.7
+            ],
+            "exclude": "env-090-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-1 canonical root on actual soil",
+            "point": [
+              -18.3,
+              8.18,
+              10.5
+            ],
+            "exclude": "env-090-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-1 canonical root on actual soil",
+            "point": [
+              -18.3,
+              8.18,
+              9.1
+            ],
+            "exclude": "env-090-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-1 canonical root on actual soil",
+            "point": [
+              -18.1,
+              8.18,
+              9.9
+            ],
+            "exclude": "env-090-20",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-2 root pocket terrain 0",
+            "point": [
+              16.4,
+              7.98,
+              -12.4
+            ],
+            "exclude": "env-090-21"
+          },
+          {
+            "name": "bridge-bank-trees-2 root pocket terrain 1",
+            "point": [
+              21.8,
+              7.98,
+              -12.4
+            ],
+            "exclude": "env-090-21"
+          },
+          {
+            "name": "bridge-bank-trees-2 root pocket terrain 2",
+            "point": [
+              21.8,
+              7.98,
+              -7.3999999999999995
+            ],
+            "exclude": "env-090-21"
+          },
+          {
+            "name": "bridge-bank-trees-2 root pocket terrain 3",
+            "point": [
+              16.4,
+              7.98,
+              -7.3999999999999995
+            ],
+            "exclude": "env-090-21"
+          },
+          {
+            "name": "bridge-bank-trees-2 root pocket terrain 4",
+            "point": [
+              19,
+              7.98,
+              -10
+            ],
+            "exclude": "env-090-21"
+          },
+          {
+            "name": "bridge-bank-trees-2 canonical root on actual soil",
+            "point": [
+              20.7,
+              8.18,
+              -11.7
+            ],
+            "exclude": "env-090-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-2 canonical root on actual soil",
+            "point": [
+              19.7,
+              8.18,
+              -10.3
+            ],
+            "exclude": "env-090-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-2 canonical root on actual soil",
+            "point": [
+              19.7,
+              8.18,
+              -9.7
+            ],
+            "exclude": "env-090-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-2 canonical root on actual soil",
+            "point": [
+              19.1,
+              8.18,
+              -9.1
+            ],
+            "exclude": "env-090-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-2 canonical root on actual soil",
+            "point": [
+              18.5,
+              8.18,
+              -9.5
+            ],
+            "exclude": "env-090-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-2 canonical root on actual soil",
+            "point": [
+              18.5,
+              8.18,
+              -11.5
+            ],
+            "exclude": "env-090-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-2 canonical root on actual soil",
+            "point": [
+              18.5,
+              8.18,
+              -10.1
+            ],
+            "exclude": "env-090-22",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-3 root pocket terrain 0",
+            "point": [
+              17.2,
+              7.98,
+              9.2
+            ],
+            "exclude": "env-090-23"
+          },
+          {
+            "name": "bridge-bank-trees-3 root pocket terrain 1",
+            "point": [
+              21,
+              7.98,
+              9.2
+            ],
+            "exclude": "env-090-23"
+          },
+          {
+            "name": "bridge-bank-trees-3 root pocket terrain 2",
+            "point": [
+              21,
+              7.98,
+              13
+            ],
+            "exclude": "env-090-23"
+          },
+          {
+            "name": "bridge-bank-trees-3 root pocket terrain 3",
+            "point": [
+              17.2,
+              7.98,
+              13
+            ],
+            "exclude": "env-090-23"
+          },
+          {
+            "name": "bridge-bank-trees-3 root pocket terrain 4",
+            "point": [
+              19,
+              7.98,
+              11
+            ],
+            "exclude": "env-090-23"
+          },
+          {
+            "name": "bridge-bank-trees-3 canonical root on actual soil",
+            "point": [
+              20.1,
+              8.18,
+              9.9
+            ],
+            "exclude": "env-090-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-3 canonical root on actual soil",
+            "point": [
+              19.1,
+              8.18,
+              10.9
+            ],
+            "exclude": "env-090-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-3 canonical root on actual soil",
+            "point": [
+              19.5,
+              8.18,
+              11.3
+            ],
+            "exclude": "env-090-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-3 canonical root on actual soil",
+            "point": [
+              19.3,
+              8.18,
+              11.7
+            ],
+            "exclude": "env-090-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-3 canonical root on actual soil",
+            "point": [
+              18.7,
+              8.18,
+              11.5
+            ],
+            "exclude": "env-090-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-3 canonical root on actual soil",
+            "point": [
+              18.7,
+              8.18,
+              10.1
+            ],
+            "exclude": "env-090-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-trees-3 canonical root on actual soil",
+            "point": [
+              18.9,
+              8.18,
+              10.9
+            ],
+            "exclude": "env-090-24",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-0 root pocket terrain 0",
+            "point": [
+              -15.2,
+              7.98,
+              -6.2
+            ],
+            "exclude": "env-090-25"
+          },
+          {
+            "name": "bridge-bank-understory-0 root pocket terrain 1",
+            "point": [
+              -14.6,
+              7.98,
+              -6.2
+            ],
+            "exclude": "env-090-25"
+          },
+          {
+            "name": "bridge-bank-understory-0 root pocket terrain 2",
+            "point": [
+              -14.6,
+              7.98,
+              -5.6
+            ],
+            "exclude": "env-090-25"
+          },
+          {
+            "name": "bridge-bank-understory-0 root pocket terrain 3",
+            "point": [
+              -15.2,
+              7.98,
+              -5.6
+            ],
+            "exclude": "env-090-25"
+          },
+          {
+            "name": "bridge-bank-understory-0 root pocket terrain 4",
+            "point": [
+              -15,
+              7.98,
+              -6
+            ],
+            "exclude": "env-090-25"
+          },
+          {
+            "name": "bridge-bank-understory-0 canonical root on actual soil",
+            "point": [
+              -14.9,
+              8.18,
+              -5.9
+            ],
+            "exclude": "env-090-26",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 root pocket terrain 0",
+            "point": [
+              14.4,
+              7.98,
+              6.4
+            ],
+            "exclude": "env-090-27"
+          },
+          {
+            "name": "bridge-bank-understory-1 root pocket terrain 1",
+            "point": [
+              15.8,
+              7.98,
+              6.4
+            ],
+            "exclude": "env-090-27"
+          },
+          {
+            "name": "bridge-bank-understory-1 root pocket terrain 2",
+            "point": [
+              15.8,
+              7.98,
+              7.8
+            ],
+            "exclude": "env-090-27"
+          },
+          {
+            "name": "bridge-bank-understory-1 root pocket terrain 3",
+            "point": [
+              14.4,
+              7.98,
+              7.8
+            ],
+            "exclude": "env-090-27"
+          },
+          {
+            "name": "bridge-bank-understory-1 root pocket terrain 4",
+            "point": [
+              15,
+              7.98,
+              7
+            ],
+            "exclude": "env-090-27"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              15.1,
+              8.18,
+              7.1
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              15.3,
+              8.18,
+              7.1
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              15.5,
+              8.18,
+              7.1
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              15.1,
+              8.18,
+              7.3
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              15.1,
+              8.18,
+              7.5
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              14.7,
+              8.18,
+              7.1
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              14.9,
+              8.18,
+              7.1
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              15.1,
+              8.18,
+              6.7
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "bridge-bank-understory-1 canonical root on actual soil",
+            "point": [
+              15.1,
+              8.18,
+              6.9
+            ],
+            "exclude": "env-090-28",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "forest": [
+          {
+            "catalogId": "ENV-057",
+            "params": {},
+            "instance": "env-090-18",
+            "soilInstance": "env-090-17",
+            "position": [
+              -19,
+              8.2,
+              -10
+            ],
+            "rootSamples": [
+              [
+                -17.3,
+                8.2,
+                -11.7
+              ],
+              [
+                -18.3,
+                8.2,
+                -10.3
+              ],
+              [
+                -18.3,
+                8.2,
+                -9.7
+              ],
+              [
+                -18.9,
+                8.2,
+                -9.1
+              ],
+              [
+                -19.5,
+                8.2,
+                -9.5
+              ],
+              [
+                -19.5,
+                8.2,
+                -11.5
+              ],
+              [
+                -19.5,
+                8.2,
+                -10.1
+              ]
+            ],
+            "rootCount": 87,
+            "rootDomain": [
+              -2.6000000000000005,
+              -2.4000000000000004,
+              2.8000000000000007,
+              2.6000000000000005
+            ],
+            "ground": 8
+          },
+          {
+            "catalogId": "ENV-054",
+            "params": {},
+            "instance": "env-090-20",
+            "soilInstance": "env-090-19",
+            "position": [
+              -18,
+              8.2,
+              10
+            ],
+            "rootSamples": [
+              [
+                -16.9,
+                8.2,
+                8.9
+              ],
+              [
+                -17.9,
+                8.2,
+                9.9
+              ],
+              [
+                -17.5,
+                8.2,
+                10.3
+              ],
+              [
+                -17.7,
+                8.2,
+                10.7
+              ],
+              [
+                -18.3,
+                8.2,
+                10.5
+              ],
+              [
+                -18.3,
+                8.2,
+                9.1
+              ],
+              [
+                -18.1,
+                8.2,
+                9.9
+              ]
+            ],
+            "rootCount": 61,
+            "rootDomain": [
+              -1.8,
+              -1.8,
+              2,
+              2
+            ],
+            "ground": 8
+          },
+          {
+            "catalogId": "ENV-057",
+            "params": {},
+            "instance": "env-090-22",
+            "soilInstance": "env-090-21",
+            "position": [
+              19,
+              8.2,
+              -10
+            ],
+            "rootSamples": [
+              [
+                20.7,
+                8.2,
+                -11.7
+              ],
+              [
+                19.7,
+                8.2,
+                -10.3
+              ],
+              [
+                19.7,
+                8.2,
+                -9.7
+              ],
+              [
+                19.1,
+                8.2,
+                -9.1
+              ],
+              [
+                18.5,
+                8.2,
+                -9.5
+              ],
+              [
+                18.5,
+                8.2,
+                -11.5
+              ],
+              [
+                18.5,
+                8.2,
+                -10.1
+              ]
+            ],
+            "rootCount": 87,
+            "rootDomain": [
+              -2.6000000000000005,
+              -2.4000000000000004,
+              2.8000000000000007,
+              2.6000000000000005
+            ],
+            "ground": 8
+          },
+          {
+            "catalogId": "ENV-054",
+            "params": {},
+            "instance": "env-090-24",
+            "soilInstance": "env-090-23",
+            "position": [
+              19,
+              8.2,
+              11
+            ],
+            "rootSamples": [
+              [
+                20.1,
+                8.2,
+                9.9
+              ],
+              [
+                19.1,
+                8.2,
+                10.9
+              ],
+              [
+                19.5,
+                8.2,
+                11.3
+              ],
+              [
+                19.3,
+                8.2,
+                11.7
+              ],
+              [
+                18.7,
+                8.2,
+                11.5
+              ],
+              [
+                18.7,
+                8.2,
+                10.1
+              ],
+              [
+                18.9,
+                8.2,
+                10.9
+              ]
+            ],
+            "rootCount": 61,
+            "rootDomain": [
+              -1.8,
+              -1.8,
+              2,
+              2
+            ],
+            "ground": 8
+          },
+          {
+            "catalogId": "ENV-061",
+            "params": {
+              "habit": "low"
+            },
+            "instance": "env-090-26",
+            "soilInstance": "env-090-25",
+            "position": [
+              -15,
+              8.2,
+              -6
+            ],
+            "rootSamples": [
+              [
+                -14.9,
+                8.2,
+                -5.9
+              ]
+            ],
+            "rootCount": 1,
+            "rootDomain": [
+              -0.2,
+              -0.2,
+              0.4,
+              0.4
+            ],
+            "ground": 8
+          },
+          {
+            "catalogId": "ENV-064",
+            "params": {
+              "groundcover": "fern"
+            },
+            "instance": "env-090-28",
+            "soilInstance": "env-090-27",
+            "position": [
+              15,
+              8.2,
+              7
+            ],
+            "rootSamples": [
+              [
+                15.1,
+                8.2,
+                7.1
+              ],
+              [
+                15.3,
+                8.2,
+                7.1
+              ],
+              [
+                15.5,
+                8.2,
+                7.1
+              ],
+              [
+                15.1,
+                8.2,
+                7.3
+              ],
+              [
+                15.1,
+                8.2,
+                7.5
+              ],
+              [
+                14.7,
+                8.2,
+                7.1
+              ],
+              [
+                14.9,
+                8.2,
+                7.1
+              ],
+              [
+                15.1,
+                8.2,
+                6.7
+              ],
+              [
+                15.1,
+                8.2,
+                6.9
+              ]
+            ],
+            "rootCount": 9,
+            "rootDomain": [
+              -0.6000000000000001,
+              -0.6000000000000001,
+              0.8,
+              0.8
+            ],
+            "ground": 8
+          }
+        ],
+        "park": {
+          "pads": [
+            {
+              "instance": "env-090-3",
+              "rect": [
+                -23,
+                -3,
+                -14,
+                3
+              ],
+              "y": 8.4,
+              "bottom": 7.6,
+              "hole": null
+            },
+            {
+              "instance": "env-090-10",
+              "rect": [
+                14,
+                -3,
+                23,
+                3
+              ],
+              "y": 8.4,
+              "bottom": 7.6,
+              "hole": null
+            }
+          ],
+          "guards": [
+            {
+              "key": "landing--1",
+              "instance": "env-090-4",
+              "from": [
+                -22.9,
+                8.4,
+                -2.8
+              ],
+              "to": [
+                -18.9,
+                8.4,
+                -2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing--1",
+              "instance": "env-090-5",
+              "from": [
+                -18.9,
+                8.4,
+                -2.8
+              ],
+              "to": [
+                -14.899999999999999,
+                8.4,
+                -2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing--1",
+              "instance": "env-090-6",
+              "from": [
+                -14.899999999999999,
+                8.4,
+                -2.8
+              ],
+              "to": [
+                -14.1,
+                8.4,
+                -2.8
+              ],
+              "width": 0.7999999999999989,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing--1",
+              "instance": "env-090-7",
+              "from": [
+                -22.9,
+                8.4,
+                2.8
+              ],
+              "to": [
+                -18.9,
+                8.4,
+                2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing--1",
+              "instance": "env-090-8",
+              "from": [
+                -18.9,
+                8.4,
+                2.8
+              ],
+              "to": [
+                -14.899999999999999,
+                8.4,
+                2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing--1",
+              "instance": "env-090-9",
+              "from": [
+                -14.899999999999999,
+                8.4,
+                2.8
+              ],
+              "to": [
+                -14.1,
+                8.4,
+                2.8
+              ],
+              "width": 0.7999999999999989,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing-1",
+              "instance": "env-090-11",
+              "from": [
+                14.1,
+                8.4,
+                -2.8
+              ],
+              "to": [
+                18.1,
+                8.4,
+                -2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing-1",
+              "instance": "env-090-12",
+              "from": [
+                18.1,
+                8.4,
+                -2.8
+              ],
+              "to": [
+                22.1,
+                8.4,
+                -2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing-1",
+              "instance": "env-090-13",
+              "from": [
+                22.1,
+                8.4,
+                -2.8
+              ],
+              "to": [
+                22.9,
+                8.4,
+                -2.8
+              ],
+              "width": 0.7999999999999972,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing-1",
+              "instance": "env-090-14",
+              "from": [
+                14.1,
+                8.4,
+                2.8
+              ],
+              "to": [
+                18.1,
+                8.4,
+                2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing-1",
+              "instance": "env-090-15",
+              "from": [
+                18.1,
+                8.4,
+                2.8
+              ],
+              "to": [
+                22.1,
+                8.4,
+                2.8
+              ],
+              "width": 4,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            },
+            {
+              "key": "landing-1",
+              "instance": "env-090-16",
+              "from": [
+                22.1,
+                8.4,
+                2.8
+              ],
+              "to": [
+                22.9,
+                8.4,
+                2.8
+              ],
+              "width": 0.7999999999999972,
+              "axis": "x",
+              "height": 1.1,
+              "largestProfileGapM": 0.28
+            }
+          ],
+          "seats": [],
+          "steps": [],
+          "rockContacts": [],
+          "drains": [],
+          "viewRays": [],
+          "wayfinding": [],
+          "activityPoints": [],
+          "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance.",
+          "bridgeBank": {
+            "bridge": {
+              "instance": "env-090-2",
+              "length": 28,
+              "width": 6,
+              "walkY": 8.4,
+              "piers": [
+                {
+                  "x": -8.96,
+                  "z": -2.15,
+                  "ground": 4.864
+                },
+                {
+                  "x": -8.96,
+                  "z": 2.15,
+                  "ground": 4.864
+                },
+                {
+                  "x": 8.96,
+                  "z": -2.15,
+                  "ground": 4.864
+                },
+                {
+                  "x": 8.96,
+                  "z": 2.15,
+                  "ground": 4.864
+                }
+              ]
+            },
+            "actualLandingY": 8.4,
+            "sourceRendererEndBox": "12 × height difference × 10 giant box remains a known source defect",
+            "original204PierConflict": "FAIL / integration paused; not overridden",
+            "originalBodyControllerBound": false
+          }
+        },
+        "terrainAuthority": "Actual closed continuous triangles with native minimum rock cells. Original full voxel masters retained without resampling.",
+        "terrainTiles": [
+          {
+            "instance": "env-090-0",
+            "assetId": "architecture-civic-terrain-park-bridge-banks-0-0-0-1-near-637e1d181e",
+            "authorityAssetId": "architecture-civic-terrain-park-bridge-banks-0-0-0-1-near-637e1d181e",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 48,
+            "step": 1,
+            "detail": "near"
+          }
+        ],
+        "terrainDomain": {
+          "size": 48,
+          "step": 1,
+          "origin": [
+            -24,
+            -24
+          ],
+          "actualTriangles": true
+        },
+        "waterBodies": [
+          {
+            "instance": "env-090-1",
+            "assetId": "architecture-civic-flooded-bank-water-7608c886ea",
+            "rect": [
+              -24,
+              -24,
+              24,
+              24
+            ],
+            "step": 1,
+            "role": "flowWater",
+            "samples": [
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  -23.73214285725
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  -19.73214285725
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  -15.73214285725
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  -11.73214285725
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  -7.73214285725
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  -3.73214285725
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  0.26785714275
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  4.26785714275
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  8.26785714275
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  12.26785714275
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  16.26785714275
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -6.464285714500001,
+                  3.6,
+                  20.26785714275
+                ],
+                "bedY": 3.311111111111111,
+                "depth": 0.2888888888888892
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -5.333333333333334,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.607407407407407,
+                "depth": 0.9925925925925925
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -4.333333333333333,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -3.333333333333333,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -2.333333333333333,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -1.3333333333333333,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  -0.3333333333333333,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  0.6666666666666666,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  1.6666666666666665,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  2.6666666666666665,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  3.666666666666666,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  4.666666666666667,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.4,
+                "depth": 1.1999999999999997
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  -23.666666666666668
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  -19.666666666666668
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  -15.666666666666666
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  -11.666666666666666
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  -7.666666666666666
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  -3.6666666666666665
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  0.3333333333333333
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  4.333333333333333
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  8.333333333333332
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  12.333333333333332
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  16.333333333333332
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  5.666666666666667,
+                  3.5999999999999996,
+                  20.333333333333336
+                ],
+                "bedY": 2.814814814814815,
+                "depth": 0.7851851851851848
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  -23.69047619033333
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  -19.690476190333335
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  -15.690476190333332
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  -11.690476190333333
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  -7.690476190333333
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  -3.6904761903333334
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  0.30952380966666665
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  4.309523809666667
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  8.309523809666667
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  12.309523809666667
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  16.309523809666665
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              },
+              {
+                "point": [
+                  6.619047619333333,
+                  3.5999999999999996,
+                  20.30952380966667
+                ],
+                "bedY": 3.4074074074074074,
+                "depth": 0.1925925925925922
+              }
+            ],
+            "shore": [
+              [
+                -6.928571429,
+                3.6,
+                -23.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -23
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -22.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -22
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -21.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -21
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -20.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -20
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -19.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -19
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -18.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -18
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -17.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -17
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -16.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -16
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -15.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -15
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -14.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -14
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -13.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -13
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -12.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -12
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -11.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -11
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -10.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -10
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -9.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -9
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -8.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -8
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -7.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -7
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -6.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -6
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -5.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -5
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -4.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -4
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -3.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -3
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -2.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -2
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -1.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -1
+              ],
+              [
+                -6.928571429,
+                3.6,
+                -0.928571429
+              ],
+              [
+                -6.928571429,
+                3.6,
+                0
+              ],
+              [
+                -6.928571429,
+                3.6,
+                0.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                1
+              ],
+              [
+                -6.928571429,
+                3.6,
+                1.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                2
+              ],
+              [
+                -6.928571429,
+                3.6,
+                2.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                3
+              ],
+              [
+                -6.928571429,
+                3.6,
+                3.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                4
+              ],
+              [
+                -6.928571429,
+                3.6,
+                4.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                5
+              ],
+              [
+                -6.928571429,
+                3.6,
+                5.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                6
+              ],
+              [
+                -6.928571429,
+                3.6,
+                6.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                7
+              ],
+              [
+                -6.928571429,
+                3.6,
+                7.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                8
+              ],
+              [
+                -6.928571429,
+                3.6,
+                8.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                9
+              ],
+              [
+                -6.928571429,
+                3.6,
+                9.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                10
+              ],
+              [
+                -6.928571429,
+                3.6,
+                10.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                11
+              ],
+              [
+                -6.928571429,
+                3.6,
+                11.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                12
+              ],
+              [
+                -6.928571429,
+                3.6,
+                12.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                13
+              ],
+              [
+                -6.928571429,
+                3.6,
+                13.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                14
+              ],
+              [
+                -6.928571429,
+                3.6,
+                14.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                15
+              ],
+              [
+                -6.928571429,
+                3.6,
+                15.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                16
+              ],
+              [
+                -6.928571429,
+                3.6,
+                16.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                17
+              ],
+              [
+                -6.928571429,
+                3.6,
+                17.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                18
+              ],
+              [
+                -6.928571429,
+                3.6,
+                18.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                19
+              ],
+              [
+                -6.928571429,
+                3.6,
+                19.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                20
+              ],
+              [
+                -6.928571429,
+                3.6,
+                20.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                21
+              ],
+              [
+                -6.928571429,
+                3.6,
+                21.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                22
+              ],
+              [
+                -6.928571429,
+                3.6,
+                22.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                23
+              ],
+              [
+                -6.928571429,
+                3.6,
+                23.071428571
+              ],
+              [
+                -6.928571429,
+                3.6,
+                24
+              ],
+              [
+                6.928571429,
+                3.6,
+                -24
+              ],
+              [
+                6.928571429,
+                3.6,
+                -23.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -23
+              ],
+              [
+                6.928571429,
+                3.6,
+                -22.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -22
+              ],
+              [
+                6.928571429,
+                3.6,
+                -21.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -21
+              ],
+              [
+                6.928571429,
+                3.6,
+                -20.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -20
+              ],
+              [
+                6.928571429,
+                3.6,
+                -19.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -19
+              ],
+              [
+                6.928571429,
+                3.6,
+                -18.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -18
+              ],
+              [
+                6.928571429,
+                3.6,
+                -17.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -17
+              ],
+              [
+                6.928571429,
+                3.6,
+                -16.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -16
+              ],
+              [
+                6.928571429,
+                3.6,
+                -15.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -15
+              ],
+              [
+                6.928571429,
+                3.6,
+                -14.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -14
+              ],
+              [
+                6.928571429,
+                3.6,
+                -13.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -13
+              ],
+              [
+                6.928571429,
+                3.6,
+                -12.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -12
+              ],
+              [
+                6.928571429,
+                3.6,
+                -11.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -11
+              ],
+              [
+                6.928571429,
+                3.6,
+                -10.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -10
+              ],
+              [
+                6.928571429,
+                3.6,
+                -9.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -9
+              ],
+              [
+                6.928571429,
+                3.6,
+                -8.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -8
+              ],
+              [
+                6.928571429,
+                3.6,
+                -7.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -7
+              ],
+              [
+                6.928571429,
+                3.6,
+                -6.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -6
+              ],
+              [
+                6.928571429,
+                3.6,
+                -5.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -5
+              ],
+              [
+                6.928571429,
+                3.6,
+                -4.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -4
+              ],
+              [
+                6.928571429,
+                3.6,
+                -3.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -3
+              ],
+              [
+                6.928571429,
+                3.6,
+                -2.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -2
+              ],
+              [
+                6.928571429,
+                3.6,
+                -1.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                -1
+              ],
+              [
+                6.928571429,
+                3.6,
+                -0.071428571
+              ],
+              [
+                6.928571429,
+                3.6,
+                0
+              ],
+              [
+                6.928571429,
+                3.6,
+                0.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                1
+              ],
+              [
+                6.928571429,
+                3.6,
+                1.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                2
+              ],
+              [
+                6.928571429,
+                3.6,
+                2.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                3
+              ],
+              [
+                6.928571429,
+                3.6,
+                3.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                4
+              ],
+              [
+                6.928571429,
+                3.6,
+                4.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                5
+              ],
+              [
+                6.928571429,
+                3.6,
+                5.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                6
+              ],
+              [
+                6.928571429,
+                3.6,
+                6.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                7
+              ],
+              [
+                6.928571429,
+                3.6,
+                7.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                8
+              ],
+              [
+                6.928571429,
+                3.6,
+                8.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                9
+              ],
+              [
+                6.928571429,
+                3.6,
+                9.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                10
+              ],
+              [
+                6.928571429,
+                3.6,
+                10.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                11
+              ],
+              [
+                6.928571429,
+                3.6,
+                11.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                12
+              ],
+              [
+                6.928571429,
+                3.6,
+                12.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                13
+              ],
+              [
+                6.928571429,
+                3.6,
+                13.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                14
+              ],
+              [
+                6.928571429,
+                3.6,
+                14.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                15
+              ],
+              [
+                6.928571429,
+                3.6,
+                15.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                16
+              ],
+              [
+                6.928571429,
+                3.6,
+                16.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                17
+              ],
+              [
+                6.928571429,
+                3.6,
+                17.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                18
+              ],
+              [
+                6.928571429,
+                3.6,
+                18.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                19
+              ],
+              [
+                6.928571429,
+                3.6,
+                19.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                20
+              ],
+              [
+                6.928571429,
+                3.6,
+                20.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                21
+              ],
+              [
+                6.928571429,
+                3.6,
+                21.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                22
+              ],
+              [
+                6.928571429,
+                3.6,
+                22.928571429
+              ],
+              [
+                6.928571429,
+                3.6,
+                23
+              ],
+              [
+                6.928571429,
+                3.6,
+                23.928571429
+              ]
+            ],
+            "waterPhysical": false
+          }
+        ],
+        "bearingJoints": [
+          {
+            "name": "park-bank-crossing",
+            "point": [
+              -8.96,
+              6.87,
+              -2.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "park-bank-crossing",
+            "point": [
+              -8.96,
+              6.87,
+              2.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "park-bank-crossing",
+            "point": [
+              8.96,
+              6.87,
+              -2.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "park-bank-crossing",
+            "point": [
+              8.96,
+              6.87,
+              2.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-park-bridge-banks-0-0-0-1-near-637e1d181e",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 9600
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 9600
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-flooded-bank-water-7608c886ea",
+      "name": "同源床面裁切的真实水域",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-192",
+          "material": 192,
+          "collision": false,
+          "triangles": 2932
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-bridge-park-bank-crossing-4cab62593d",
+      "name": "分层路床、承梁、支座和实墩",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 132
+        },
+        {
+          "name": "material-152",
+          "material": 152,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-153",
+          "material": 153,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 384
+        },
+        {
+          "name": "material-79",
+          "material": 79,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-154",
+          "material": 154,
+          "collision": true,
+          "triangles": 48
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-actual-bridge-landing--1-07285fc871",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 1932
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 480
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 156
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-0p7999999999999989-dc85871d07",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-actual-bridge-landing-1-ad38d62265",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 1932
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 480
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-rail-0p7999999999999972-2f14e5bffe",
+      "name": "廊边木栏与实际竖梃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            13.600000000000001,
+            0,
+            13
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -34,
+              0,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -12,
+              0,
+              -11
+            ],
+            "max": [
+              13,
+              26,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -24,
+              11,
+              -25
+            ],
+            "max": [
+              25,
+              45,
+              26
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -34,
+              31,
+              -32
+            ],
+            "max": [
+              34,
+              50,
+              33
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-bridge-bank-trees-0-92fb08d1ea",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              70,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -20,
+              19,
+              -21
+            ],
+            "max": [
+              24,
+              62,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              23,
+              -28
+            ],
+            "max": [
+              31,
+              63,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              62,
+              -6
+            ],
+            "max": [
+              11,
+              70,
+              6
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-bridge-bank-trees-1-0678392708",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bridge-bank-trees-2-b4d29e4b00",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-root-pocket-bridge-bank-trees-3-4c2e2ed8b0",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.6,
+            0,
+            3
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -7
+            ],
+            "max": [
+              9,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "多根分叉木质细枝与连续接地根颈",
+          "parent": "root",
+          "region": {
+            "min": [
+              -7,
+              0,
+              -5
+            ],
+            "max": [
+              8,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "彼此交错且保留根际透空的真实灌木叶簇",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              2,
+              -7
+            ],
+            "max": [
+              9,
+              11,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端量化花簇与独立花药，均非灯芯和非自发光",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              6,
+              -6
+            ],
+            "max": [
+              9,
+              12,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-bridge-bank-understory-0-9cc101c0de",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.4000000000000004,
+            0,
+            3.2
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              9,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "根颈与真实根茎",
+          "parent": "root",
+          "region": {
+            "min": [
+              -2,
+              0,
+              -2
+            ],
+            "max": [
+              3,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "七条弧形蕨叶轴，保留一格以上羽片间隙",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              1,
+              -8
+            ],
+            "max": [
+              9,
+              8,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "成对真实羽片，不用不透明整张平面",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              4,
+              -8
+            ],
+            "max": [
+              8,
+              9,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-root-pocket-bridge-bank-understory-1-4b44bbba4b",
+      "name": "贴地独立根域与表土",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-090-0",
+      "assetId": "architecture-civic-terrain-park-bridge-banks-0-0-0-1-near-637e1d181e",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-1",
+      "assetId": "architecture-civic-flooded-bank-water-7608c886ea",
+      "name": "同源床面裁切的真实水域",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-2",
+      "assetId": "architecture-civic-fleet-bridge-park-bank-crossing-4cab62593d",
+      "name": "分层路床、承梁、支座和实墩",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-3",
+      "assetId": "architecture-civic-park-paving-actual-bridge-landing--1-07285fc871",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-4",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -22.9,
+        8.4,
+        -2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-5",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -18.9,
+        8.4,
+        -2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-6",
+      "assetId": "architecture-civic-rail-0p7999999999999989-dc85871d07",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -14.9,
+        8.4,
+        -2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-7",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -22.9,
+        8.4,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-8",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -18.9,
+        8.4,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-9",
+      "assetId": "architecture-civic-rail-0p7999999999999989-dc85871d07",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        -14.9,
+        8.4,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-10",
+      "assetId": "architecture-civic-park-paving-actual-bridge-landing-1-ad38d62265",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-11",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        14.1,
+        8.4,
+        -2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-12",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        18.1,
+        8.4,
+        -2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-13",
+      "assetId": "architecture-civic-rail-0p7999999999999972-2f14e5bffe",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        22.1,
+        8.4,
+        -2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-14",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        14.1,
+        8.4,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-15",
+      "assetId": "architecture-civic-rail-4-c692a62af3",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        18.1,
+        8.4,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-16",
+      "assetId": "architecture-civic-rail-0p7999999999999972-2f14e5bffe",
+      "name": "廊边木栏与实际竖梃",
+      "position": [
+        22.1,
+        8.4,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-17",
+      "assetId": "architecture-civic-root-pocket-bridge-bank-trees-0-92fb08d1ea",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-18",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        -19,
+        8.2,
+        -10
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-19",
+      "assetId": "architecture-civic-root-pocket-bridge-bank-trees-1-0678392708",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-20",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        -18,
+        8.2,
+        10
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-21",
+      "assetId": "architecture-civic-root-pocket-bridge-bank-trees-2-b4d29e4b00",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-22",
+      "assetId": "source-env-057",
+      "name": "阔叶分枝与开阔树冠母版",
+      "position": [
+        19,
+        8.2,
+        -10
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-23",
+      "assetId": "architecture-civic-root-pocket-bridge-bank-trees-3-4c2e2ed8b0",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-24",
+      "assetId": "source-env-054",
+      "name": "松类体素分枝树母版",
+      "position": [
+        19,
+        8.2,
+        11
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-25",
+      "assetId": "architecture-civic-root-pocket-bridge-bank-understory-0-9cc101c0de",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-26",
+      "assetId": "source-env-061-habit-low",
+      "name": "分枝灌木与花灌木母版",
+      "position": [
+        -15,
+        8.2,
+        -6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-27",
+      "assetId": "architecture-civic-root-pocket-bridge-bank-understory-1-4b44bbba4b",
+      "name": "贴地独立根域与表土",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-090-28",
+      "assetId": "source-env-064-groundcover-fern",
+      "name": "蕨类与阔叶地被簇母版",
+      "position": [
+        15,
+        8.2,
+        7
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

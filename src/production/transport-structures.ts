@@ -7,8 +7,8 @@ import {districtHouse,route,thinCanopy,counter} from './district-components';
 import {terrainTile,terrainHeightAt,grove,type HeightField} from './landscape-components';
 
 export const transportStructureIds=['BUILT-305','BUILT-306','BUILT-311','BUILT-313','BUILT-314'];
-export function bridgeSpan(b:ArchitectureBuilder,s:FleetSource,key:string,x:number,z:number,length:number,width:number,walkY:number,ground:HeightField,rail=false){
- const piers=[x-length*.32,x+length*.32].flatMap(px=>[-1,1].map(side=>({x:px,z:z+side*(width/2-.85),ground:ground(px,z+side*(width/2-.85))}))),deck=fleetPart(b,'bridge-'+key,'分层路床、承梁、支座和实墩', ['BUILT-134','BUILT-146','BUILT-147','BUILT-154','BUILT-305'],{length,width,walkY,piers,rail,originalNetworkBound:false},c=>{
+export function bridgeSpan(b:ArchitectureBuilder,s:FleetSource,key:string,x:number,z:number,length:number,width:number,walkY:number,ground:HeightField,rail=false,sourceDependencies=['BUILT-134','BUILT-146','BUILT-147','BUILT-154','BUILT-305']){
+ const piers=[x-length*.32,x+length*.32].flatMap(px=>[-1,1].map(side=>({x:px,z:z+side*(width/2-.85),ground:ground(px,z+side*(width/2-.85))}))),deck=fleetPart(b,'bridge-'+key,'分层路床、承梁、支座和实墩', sourceDependencies,{length,width,walkY,piers,rail,originalNetworkBound:false},c=>{
   c.box('独立连续混凝土承板','structuralConcrete',x-length/2,walkY-.7,z-width/2,length,.55,width);c.box('连续道路磨耗面','pavementConcrete',x-length/2,walkY-.15,z-width/2,length,.15,width);
   if(rail)for(const zz of[z-1.35,z+1.35]){c.box('固定钢轨导向件','metal',x-length/2,walkY,zz-.10,length,.15,.2);for(let xx=x-length/2;xx<x+length/2;xx+=1.4)c.box('独立轨枕','structuralConcrete',xx,walkY-.03,z-1.8,.3,.06,3.6);}
   else c.box('实嵌陶瓷中心条','roadInlay',x-length/2,walkY-.03,z-.08,length,.032,.16);
