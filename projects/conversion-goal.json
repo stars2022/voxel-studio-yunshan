@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 552,
-    "remainingReferenceEntries": 241,
-    "completedReferenceSheets": 46,
+    "referenceCandidates": 564,
+    "remainingReferenceEntries": 229,
+    "completedReferenceSheets": 47,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
       "auxiliaryMasters": 1,
-      "assemblies": 87,
+      "assemblies": 99,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 442,
-      "generatedEntries": 626,
+      "notProduced": 430,
+      "generatedEntries": 638,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 552,
+      "atlasReferenceCandidates": 564,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 36
+      "atlasAssemblyCandidates": 48
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M047",
+    "sheet": "M048",
     "state": "queued",
     "ids": [
-      "BUILT-224",
-      "BUILT-226",
-      "BUILT-227",
-      "BUILT-228",
-      "BUILT-229",
-      "BUILT-230",
-      "BUILT-231",
-      "BUILT-236",
-      "BUILT-237",
-      "BUILT-238",
-      "BUILT-239",
-      "BUILT-265"
+      "BUILT-266",
+      "BUILT-267",
+      "BUILT-271",
+      "BUILT-275",
+      "BUILT-277",
+      "BUILT-279",
+      "BUILT-280",
+      "BUILT-281",
+      "BUILT-282",
+      "BUILT-283",
+      "BUILT-284",
+      "BUILT-285"
     ],
-    "scope": "12个塔间连廊、换乘、街屋庭院、檐廊/悬浮基座与谷地航站楼组合；来源运行约束与作者替代分开。"
+    "scope": "12个空管、机坪、机库、星港平台与公共客运/货运载具组合；实际舱口、支承及登离面须验证，原运行身份和控制器继续未绑定。"
   },
-  "nextBatch": "M047",
+  "nextBatch": "M048",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,18 +68,19 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M046共552条技术参考候选，余241；513独立图册母版、3共用引用、36图册组合，人工美术验收0。"
+    "M001–M047共564条技术参考候选，余229；513独立图册母版、3共用引用、48图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正持续优先：最小细件体素；斜面和曲面连续；天空与星空可用实际贴图。",
-    "M046完成12组合/12默认形态，新增基础母版0；累计552/793，余241。532基础候选、87组合、626已生成清单项。",
-    "新角色519–522为载具光学面、作者航线标记、建筑金属覆板与建筑光学面；496角色256+240同事务，style40/finish38。",
-    "457完整回归、5专项、构建/类型检查和9组MCP通过；4216楼梯净空、182楼板孔、429额外净空及434接触样本。证据 artifacts/atlas/atlas-20261005072532。",
-    "36正式实图含33经相同几何、材质、模板和浏览器证明复用的同批截图，另3张更新规格后实拍；复用源清单及文件哈希随包。",
-    "M046保留204原pier/lower bridge冲突FAIL和211原隔离实验未集成边界。原FloorPlan、世界地形、权限、身份、租用/驾驶/销售/路线控制器均未绑定。",
-    "BUILT001/121/236/237/247仅为清单契约引用，独立母版或模板未交付；实际新作几何完整在组合内，188原生脚完整复用。",
-    "M047下一批为224/226/227/228/229/230/231/236/237/238/239/265；需看整图及CSV来源，保留悬浮/磁浮的静态几何与运行边界。",
+    "用户修正持续优先：最小细件体素；斜面和曲面连续；天空与星空使用实际贴图。",
+    "M047完成12组合/12默认形态，新增基础母版0；累计564/793，余229。532基础候选、99组合、638已生成清单项。",
+    "新角色523 magneticCore与524 coilInsulator独立于通用金属/硬塑；498角色按256+242同事务创建，style41/finish39；外来ID及一次撤销已验证。",
+    "465完整回归、7专项、构建/类型检查及9组MCP通过；771楼梯净空、134柱头、48楼板孔、2440额外净空、2567脚下/柱脚样本。证据 artifacts/atlas/atlas-20261005080140。",
+    "36正式实图全部重新拍摄；另附学校/航站/连廊剖面、磁芯近景及柱廊编辑器夜景。",
+    "238由实际钢柱支承；239静态机械止挡承板、绕组未通电。M047和M046均未冒称原W/跨层吸附、权限、销售、学校、航班、驾驶、能源控制器通过。",
+    "BUILT001/175/176/247仅清单用途契约引用，独立母版/变体未交付；实际作者几何完整保存，资产包另含23个已有递归依赖。",
+    "M046的204原pier/lower bridge冲突FAIL、211隔离实验与旧机场边界继续保留。",
+    "M048整图和来源已看，记录 work/m048/source.json 与 review.json；尚未制作生产代码。重点是完整载具舱体、门、轮组、真实支承与登离路线，不把旧三盒公共代理换名。",
     "每批验证后推送origin/main已获授权，不重复确认；单批完成不调用stop_goal，浏览器串行。"
   ],
   "modelingDirection": {
@@ -89,9 +90,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M046",
-    "run": "atlas-20261005072532",
+    "sheet": "M047",
+    "run": "atlas-20261005080140",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261005072532"
+    "evidence": "artifacts/atlas/atlas-20261005080140"
   }
 }
