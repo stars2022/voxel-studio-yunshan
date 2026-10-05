@@ -1,0 +1,3686 @@
+{
+  "status": "development-only-not-accepted",
+  "results": [
+    {
+      "id": "CHAR-151",
+      "kind": "layers",
+      "sourceKey": "coat-a",
+      "parts": [
+        {
+          "instance": "coat-a-body",
+          "assetId": "slot-adultA-CHAR-113-CHAR-118-CHAR-116-CHAR-121",
+          "source": {
+            "kind": "author-garment-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "裤腿膝踝连续收束--1",
+              "膝前衣褶--1",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "裤脚织边--1",
+              "裤腿膝踝连续收束-1",
+              "膝前衣褶-1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1",
+              "裤脚织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing"
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "coat-a-CHAR-113",
+          "assetId": "char-113-adultA-coat-underlayer",
+          "source": {
+            "kind": "author-coat-underlayer",
+            "catalogId": "CHAR-113",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "独立交领短上衣；真领/腰/袖口和分件织带",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 1,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "torsoProfiles": [
+                {
+                  "y": 0.88,
+                  "rx": 0.21648,
+                  "rz": 0.14924
+                },
+                {
+                  "y": 1.0436,
+                  "rx": 0.14600000000000002,
+                  "rz": 0.10979800000000002
+                },
+                {
+                  "y": 1.1400000000000001,
+                  "rx": 0.18039999999999998,
+                  "rz": 0.12045800000000001
+                },
+                {
+                  "y": 1.4000000000000001,
+                  "rx": 0.2009,
+                  "rz": 0.10660000000000001
+                },
+                {
+                  "y": 1.446,
+                  "rx": 0.0528,
+                  "rz": 0.049199999999999994
+                }
+              ],
+              "neckAndWaistOpen": true,
+              "realArmholeGaps": true,
+              "sleeveless": false,
+              "openFront": false,
+              "sourceBodyShellReplacement": true,
+              "coatRequiresIndependentUnderlayer": false,
+              "restSleeveSeamY": 1.1252,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.768608036,
+              0.566,
+              0.31223999999999996
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentLight",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            },
+            "sourceAssetId": "char-113-adultA",
+            "notCatalogMaster": true,
+            "sourceMasterRetained": true,
+            "removedHiddenMeshes": [
+              "衣身独立胸背片-2.356194490192345",
+              "衣身独立胸背片-2.356194490192345独立内衬",
+              "肩顶桥片-0.7853981633974483",
+              "肩顶桥片-0.7853981633974483独立内衬",
+              "肩顶桥片-3.9269908169872414",
+              "肩顶桥片-3.9269908169872414独立内衬",
+              "上袖真腔--1",
+              "下袖真腔--1",
+              "独立袖口织边--1",
+              "上袖真腔-1",
+              "下袖真腔-1",
+              "独立袖口织边-1",
+              "衣腰织边"
+            ],
+            "removedHiddenNativeParts": [
+              "袖部最小织片--1",
+              "袖部最小扣--1",
+              "袖部最小织片-1",
+              "袖部最小扣-1",
+              "衣腰最小搭扣"
+            ],
+            "torsoRetainedSectorRadians": [
+              -0.9424777960769379,
+              0.9424777960769379
+            ],
+            "originalGarmentGeometryPreserved": false,
+            "reason": "Replace hidden sleeves, rear/shoulder panels and redundant waistband with its buckle in this explicit coat installation; retain the source master"
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 9
+        },
+        {
+          "instance": "coat-a-CHAR-118",
+          "assetId": "char-118-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        },
+        {
+          "instance": "coat-a-CHAR-116",
+          "assetId": "char-116-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-116",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "前开口外搭长衫；连续衣摆和内层空间",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 4,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "torsoProfiles": [
+                {
+                  "y": 0.88,
+                  "rx": 0.23448,
+                  "rz": 0.16724
+                },
+                {
+                  "y": 1.0436,
+                  "rx": 0.164,
+                  "rz": 0.12779800000000002
+                },
+                {
+                  "y": 1.1400000000000001,
+                  "rx": 0.19839999999999997,
+                  "rz": 0.138458
+                },
+                {
+                  "y": 1.4000000000000001,
+                  "rx": 0.21889999999999998,
+                  "rz": 0.12460000000000002
+                },
+                {
+                  "y": 1.446,
+                  "rx": 0.0708,
+                  "rz": 0.0672
+                }
+              ],
+              "neckAndWaistOpen": true,
+              "realArmholeGaps": true,
+              "sleeveless": false,
+              "openFront": true,
+              "sourceBodyShellReplacement": false,
+              "coatRequiresIndependentUnderlayer": true,
+              "restSleeveSeamY": 1.1252,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.820101976,
+              0.9259999999999999,
+              0.305560955
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentOuter",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 21
+        },
+        {
+          "instance": "coat-a-CHAR-121",
+          "assetId": "char-121-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-121",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对皮质短靴；真鞋腔、布衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 9,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.368,
+              0.265,
+              0.314
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "bootUpper",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "coat-a-head",
+          "assetId": "mounted-head-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "coat-a-hair",
+          "assetId": "mounted-hair-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "coat-a-hand-1",
+          "assetId": "mounted-hand-adult-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "coat-a-foot-1",
+          "assetId": "mounted-foot-adult-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "coat-a-hand1",
+          "assetId": "mounted-hand-adult-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "coat-a-foot1",
+          "assetId": "mounted-foot-adult-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.6,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-113-CHAR-118-CHAR-116-CHAR-121",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": []
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-152",
+      "kind": "tops",
+      "sourceKey": "top-0",
+      "parts": [
+        {
+          "instance": "top-0-body",
+          "assetId": "slot-adultA-CHAR-113-CHAR-118-CHAR-121",
+          "source": {
+            "kind": "author-garment-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "裤腿膝踝连续收束--1",
+              "膝前衣褶--1",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "裤脚织边--1",
+              "裤腿膝踝连续收束-1",
+              "膝前衣褶-1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1",
+              "裤脚织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing"
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "top-0-CHAR-113",
+          "assetId": "char-113-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-113",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "独立交领短上衣；真领/腰/袖口和分件织带",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 1,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "torsoProfiles": [
+                {
+                  "y": 0.88,
+                  "rx": 0.21648,
+                  "rz": 0.14924
+                },
+                {
+                  "y": 1.0436,
+                  "rx": 0.14600000000000002,
+                  "rz": 0.10979800000000002
+                },
+                {
+                  "y": 1.1400000000000001,
+                  "rx": 0.18039999999999998,
+                  "rz": 0.12045800000000001
+                },
+                {
+                  "y": 1.4000000000000001,
+                  "rx": 0.2009,
+                  "rz": 0.10660000000000001
+                },
+                {
+                  "y": 1.446,
+                  "rx": 0.0528,
+                  "rz": 0.049199999999999994
+                }
+              ],
+              "neckAndWaistOpen": true,
+              "realArmholeGaps": true,
+              "sleeveless": false,
+              "openFront": false,
+              "sourceBodyShellReplacement": true,
+              "coatRequiresIndependentUnderlayer": false,
+              "restSleeveSeamY": 1.1252,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.768608036,
+              0.566,
+              0.31223999999999996
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentLight",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 22
+        },
+        {
+          "instance": "top-0-CHAR-118",
+          "assetId": "char-118-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        },
+        {
+          "instance": "top-0-CHAR-121",
+          "assetId": "char-121-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-121",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对皮质短靴；真鞋腔、布衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 9,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.368,
+              0.265,
+              0.314
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "bootUpper",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "top-0-head",
+          "assetId": "mounted-head-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "top-0-hair",
+          "assetId": "mounted-hair-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "top-0-hand-1",
+          "assetId": "mounted-hand-adult-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "top-0-foot-1",
+          "assetId": "mounted-foot-adult-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "top-0-hand1",
+          "assetId": "mounted-hand-adult-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "top-0-foot1",
+          "assetId": "mounted-foot-adult-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            -0.95,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-113-CHAR-118-CHAR-121",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": []
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-155",
+      "kind": "tops",
+      "sourceKey": "top-1",
+      "parts": [
+        {
+          "instance": "top-1-body",
+          "assetId": "slot-adultA-CHAR-114-CHAR-118-CHAR-121",
+          "source": {
+            "kind": "author-garment-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "裤腿膝踝连续收束--1",
+              "膝前衣褶--1",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "裤脚织边--1",
+              "裤腿膝踝连续收束-1",
+              "膝前衣褶-1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1",
+              "裤脚织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing"
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "top-1-CHAR-114",
+          "assetId": "char-114-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-114",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "独立长袍上身；蓝布胸背与浅色袖",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 2,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "torsoProfiles": [
+                {
+                  "y": 0.88,
+                  "rx": 0.21648,
+                  "rz": 0.14924
+                },
+                {
+                  "y": 1.0436,
+                  "rx": 0.14600000000000002,
+                  "rz": 0.10979800000000002
+                },
+                {
+                  "y": 1.1400000000000001,
+                  "rx": 0.18039999999999998,
+                  "rz": 0.12045800000000001
+                },
+                {
+                  "y": 1.4000000000000001,
+                  "rx": 0.2009,
+                  "rz": 0.10660000000000001
+                },
+                {
+                  "y": 1.446,
+                  "rx": 0.0528,
+                  "rz": 0.049199999999999994
+                }
+              ],
+              "neckAndWaistOpen": true,
+              "realArmholeGaps": true,
+              "sleeveless": false,
+              "openFront": false,
+              "sourceBodyShellReplacement": true,
+              "coatRequiresIndependentUnderlayer": false,
+              "restSleeveSeamY": 1.1252,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.768608036,
+              0.756,
+              0.36724
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentOuter",
+                "garmentLight",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 24
+        },
+        {
+          "instance": "top-1-CHAR-118",
+          "assetId": "char-118-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        },
+        {
+          "instance": "top-1-CHAR-121",
+          "assetId": "char-121-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-121",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对皮质短靴；真鞋腔、布衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 9,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.368,
+              0.265,
+              0.314
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "bootUpper",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "top-1-head",
+          "assetId": "mounted-head-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "top-1-hair",
+          "assetId": "mounted-hair-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "top-1-hand-1",
+          "assetId": "mounted-hand-adult-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "top-1-foot-1",
+          "assetId": "mounted-foot-adult-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "top-1-hand1",
+          "assetId": "mounted-hand-adult-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "top-1-foot1",
+          "assetId": "mounted-foot-adult-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-114-CHAR-118-CHAR-121",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": []
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-157",
+      "kind": "skirt-sash",
+      "sourceKey": "sash",
+      "parts": [
+        {
+          "instance": "sash-body",
+          "assetId": "slot-adultA-CHAR-117-CHAR-118-CHAR-120-CHAR-122",
+          "source": {
+            "kind": "author-garment-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "裤腿膝踝连续收束--1",
+              "膝前衣褶--1",
+              "袖口织边--1",
+              "裤脚织边--1",
+              "裤腿膝踝连续收束-1",
+              "膝前衣褶-1",
+              "袖口织边-1",
+              "裤脚织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": true,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing"
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 4
+        },
+        {
+          "instance": "sash-CHAR-117",
+          "assetId": "char-117-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-117",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "无袖马甲；真实双侧臂孔与交领",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 5,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "torsoProfiles": [
+                {
+                  "y": 0.88,
+                  "rx": 0.21648,
+                  "rz": 0.14924
+                },
+                {
+                  "y": 1.0436,
+                  "rx": 0.14600000000000002,
+                  "rz": 0.10979800000000002
+                },
+                {
+                  "y": 1.1400000000000001,
+                  "rx": 0.18039999999999998,
+                  "rz": 0.12045800000000001
+                },
+                {
+                  "y": 1.427,
+                  "rx": 0.2009,
+                  "rz": 0.10660000000000001
+                },
+                {
+                  "y": 1.446,
+                  "rx": 0.0528,
+                  "rz": 0.049199999999999994
+                }
+              ],
+              "neckAndWaistOpen": true,
+              "realArmholeGaps": true,
+              "sleeveless": true,
+              "openFront": false,
+              "sourceBodyShellReplacement": true,
+              "coatRequiresIndependentUnderlayer": false,
+              "restSleeveSeamY": 1.1252,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.43896,
+              0.566,
+              0.31223999999999996
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentOuter",
+                "garmentLight",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 16
+        },
+        {
+          "instance": "sash-CHAR-118",
+          "assetId": "char-118-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        },
+        {
+          "instance": "sash-CHAR-120",
+          "assetId": "char-120-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-120",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "独立织带腰封；真实环孔与三条垂带",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 8,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "independentSash": true,
+              "openRing": true,
+              "threeRealHangingTabs": true,
+              "tabDynamics": false
+            },
+            "dimensionsM": [
+              0.50496,
+              0.4029999999999999,
+              0.39024
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentOuter",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "sash-CHAR-122",
+          "assetId": "char-122-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-122",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对布鞋；独立织物鞋面、内衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 10,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.366,
+              0.1543,
+              0.309
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "shoeCloth",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "sash-head",
+          "assetId": "mounted-head-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "sash-hair",
+          "assetId": "mounted-hair-adult-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "sash-hand-1",
+          "assetId": "mounted-hand-adult-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "sash-foot-1",
+          "assetId": "mounted-foot-adult-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "sash-hand1",
+          "assetId": "mounted-hand-adult-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adult-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "sash-foot1",
+          "assetId": "mounted-foot-adult-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adult",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0.55,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-117-CHAR-118-CHAR-120-CHAR-122",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": [
+            "作者暴露手臂--1下分件",
+            "作者暴露手臂--1上分件",
+            "作者暴露手臂-1下分件",
+            "作者暴露手臂-1上分件"
+          ]
+        },
+        {
+          "sourceForearm": "作者暴露手臂--1下分件",
+          "cutY": 0.912,
+          "replacement": "作者暴露手臂--1下分件上分件"
+        },
+        {
+          "sourceForearm": "作者暴露手臂-1下分件",
+          "cutY": 0.912,
+          "replacement": "作者暴露手臂-1下分件上分件"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-153",
+      "kind": "costume",
+      "sourceKey": "CHAR-127",
+      "parts": [
+        {
+          "instance": "actor-body",
+          "assetId": "slot-adultA-CHAR-127",
+          "source": {
+            "kind": "author-costume-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing",
+            "costumeCatalogId": "CHAR-127",
+            "neutralCoveredEndsRetained": false,
+            "independentUnderlayerForOpenCoat": false,
+            "exposedForearmsAreAuthorProfileStudy": false
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "actor-CHAR-127",
+          "assetId": "char-127-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-127",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "costumeFit": "adultA"
+            },
+            "features": "警务立领制服；胸袋、织带与独立身份扣",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M037",
+              "slot": 3,
+              "imageSHA256": "70cfb1b8946a9e55b05e83c2722515dff519c35628fce7c9c23ed48509ff8a13"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标为5mm原生体素，衣面/斜襟/口袋/护板为连续网格。单分件刚性关节，不含软布、软权重、动作片段或原骨架控制器；不夹带图中头、帽、背包或工具。视觉层非碰撞，人工美术验收0。穿戴范围须以本批实际验证报告为准。",
+            "units": "metres",
+            "front": "-Z",
+            "gameIntegration": false,
+            "animationClips": false,
+            "collision": "none; visual-only",
+            "detail": {
+              "cut": {
+                "role": "uniformCloth",
+                "hem": 0.775,
+                "loose": 0,
+                "openFront": false,
+                "sleeveRole": "uniformCloth",
+                "shortSleeves": false,
+                "collar": "stand"
+              },
+              "sourceBodyProportions": {
+                "heightM": 1.7,
+                "headM": 0.24,
+                "hipYM": 0.86,
+                "kneeYM": 0.46,
+                "shoulderYM": 1.37,
+                "shoulderHalfWidthM": 0.205,
+                "hipHalfWidthM": 0.1,
+                "waistHalfWidthM": 0.14,
+                "hipRadiusM": 0.164,
+                "section": "bevelled"
+              },
+              "upperClothingOnly": true,
+              "oldBodySurfaceMustBeReplaced": true,
+              "finiteRigidJoints": true,
+              "softCloth": false,
+              "minimumDetailPitchM": 0.005,
+              "frontPocketsAreActualOpenShells": true
+            },
+            "dimensionsM": [
+              0.760230368,
+              0.6709999999999999,
+              0.28358
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "uniformCloth",
+                "uniformIdBack",
+                "uniformIdPrint",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "织物/耐磨片/护板金属/软垫/塑料身份扣/印刷图形独立；全部非碰撞零发光，不借镜片、灯芯、食品或建筑类别。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 23
+        },
+        {
+          "instance": "actor-CHAR-122",
+          "assetId": "char-122-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-122",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对布鞋；独立织物鞋面、内衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 10,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.366,
+              0.1543,
+              0.309
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "shoeCloth",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "actor-head",
+          "assetId": "mounted-head-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "actor-hair",
+          "assetId": "mounted-hair-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "actor-hand-1",
+          "assetId": "mounted-hand-adultA-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot-1",
+          "assetId": "mounted-foot-adultA-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "actor-hand1",
+          "assetId": "mounted-hand-adultA-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot1",
+          "assetId": "mounted-foot-adultA-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "probe-hollow-pants",
+          "assetId": "probe-hollow-pants",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-127",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ]
+        },
+        {
+          "pantsWaistBandTop": 0.872,
+          "preservedBottom": 0.84,
+          "waistFastenerCellsMoved": 40,
+          "deltaCells": [
+            0,
+            -8,
+            0
+          ]
+        },
+        {
+          "sourceBodyPants": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ],
+          "replacement": "CHAR-118"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-154",
+      "kind": "costume",
+      "sourceKey": "CHAR-128",
+      "parts": [
+        {
+          "instance": "actor-body",
+          "assetId": "slot-adultA-CHAR-128",
+          "source": {
+            "kind": "author-costume-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing",
+            "costumeCatalogId": "CHAR-128",
+            "neutralCoveredEndsRetained": false,
+            "independentUnderlayerForOpenCoat": false,
+            "exposedForearmsAreAuthorProfileStudy": false
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "actor-CHAR-128",
+          "assetId": "char-128-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-128",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "costumeFit": "adultA"
+            },
+            "features": "守卫防护衣；分区金属胸板、肩板与软垫",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M037",
+              "slot": 4,
+              "imageSHA256": "70cfb1b8946a9e55b05e83c2722515dff519c35628fce7c9c23ed48509ff8a13"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标为5mm原生体素，衣面/斜襟/口袋/护板为连续网格。单分件刚性关节，不含软布、软权重、动作片段或原骨架控制器；不夹带图中头、帽、背包或工具。视觉层非碰撞，人工美术验收0。穿戴范围须以本批实际验证报告为准。",
+            "units": "metres",
+            "front": "-Z",
+            "gameIntegration": false,
+            "animationClips": false,
+            "collision": "none; visual-only",
+            "detail": {
+              "cut": {
+                "role": "uniformCloth",
+                "hem": 0.878,
+                "loose": 0,
+                "openFront": false,
+                "sleeveRole": "uniformCloth",
+                "shortSleeves": false,
+                "collar": "stand"
+              },
+              "sourceBodyProportions": {
+                "heightM": 1.7,
+                "headM": 0.24,
+                "hipYM": 0.86,
+                "kneeYM": 0.46,
+                "shoulderYM": 1.37,
+                "shoulderHalfWidthM": 0.205,
+                "hipHalfWidthM": 0.1,
+                "waistHalfWidthM": 0.14,
+                "hipRadiusM": 0.164,
+                "section": "bevelled"
+              },
+              "upperClothingOnly": true,
+              "oldBodySurfaceMustBeReplaced": true,
+              "finiteRigidJoints": true,
+              "softCloth": false,
+              "minimumDetailPitchM": 0.005,
+              "frontPocketsAreActualOpenShells": true
+            },
+            "referenceCaptionMismatch": "Automated atlas description incorrectly describes a railing; actual M037 image and catalogue name identify guard protective clothing. No railing geometry was inferred.",
+            "dimensionsM": [
+              0.760230368,
+              0.568,
+              0.28358
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "uniformCloth",
+                "armorPlate",
+                "armorPad",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "织物/耐磨片/护板金属/软垫/塑料身份扣/印刷图形独立；全部非碰撞零发光，不借镜片、灯芯、食品或建筑类别。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 24
+        },
+        {
+          "instance": "actor-CHAR-122",
+          "assetId": "char-122-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-122",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对布鞋；独立织物鞋面、内衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 10,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.366,
+              0.1543,
+              0.309
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "shoeCloth",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "actor-head",
+          "assetId": "mounted-head-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "actor-hair",
+          "assetId": "mounted-hair-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "actor-hand-1",
+          "assetId": "mounted-hand-adultA-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot-1",
+          "assetId": "mounted-foot-adultA-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "actor-hand1",
+          "assetId": "mounted-hand-adultA-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot1",
+          "assetId": "mounted-foot-adultA-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "probe-hollow-pants",
+          "assetId": "probe-hollow-pants",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-128",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ]
+        },
+        {
+          "pantsWaistBandTop": 0.872,
+          "preservedBottom": 0.84,
+          "waistFastenerCellsMoved": 40,
+          "deltaCells": [
+            0,
+            -8,
+            0
+          ]
+        },
+        {
+          "sourceBodyPants": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ],
+          "replacement": "CHAR-118"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-156",
+      "kind": "costume",
+      "sourceKey": "CHAR-129",
+      "parts": [
+        {
+          "instance": "actor-body",
+          "assetId": "slot-adultA-CHAR-129",
+          "source": {
+            "kind": "author-costume-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing",
+            "costumeCatalogId": "CHAR-129",
+            "neutralCoveredEndsRetained": false,
+            "independentUnderlayerForOpenCoat": false,
+            "exposedForearmsAreAuthorProfileStudy": false
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "actor-CHAR-129",
+          "assetId": "char-129-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-129",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "costumeFit": "adultA"
+            },
+            "features": "驾驶调度衣；斜挂织带、长口袋与身份扣",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M037",
+              "slot": 5,
+              "imageSHA256": "70cfb1b8946a9e55b05e83c2722515dff519c35628fce7c9c23ed48509ff8a13"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标为5mm原生体素，衣面/斜襟/口袋/护板为连续网格。单分件刚性关节，不含软布、软权重、动作片段或原骨架控制器；不夹带图中头、帽、背包或工具。视觉层非碰撞，人工美术验收0。穿戴范围须以本批实际验证报告为准。",
+            "units": "metres",
+            "front": "-Z",
+            "gameIntegration": false,
+            "animationClips": false,
+            "collision": "none; visual-only",
+            "detail": {
+              "cut": {
+                "role": "uniformCloth",
+                "hem": 0.8,
+                "loose": 0,
+                "openFront": false,
+                "sleeveRole": "garmentLight",
+                "shortSleeves": false,
+                "collar": "stand"
+              },
+              "sourceBodyProportions": {
+                "heightM": 1.7,
+                "headM": 0.24,
+                "hipYM": 0.86,
+                "kneeYM": 0.46,
+                "shoulderYM": 1.37,
+                "shoulderHalfWidthM": 0.205,
+                "hipHalfWidthM": 0.1,
+                "waistHalfWidthM": 0.14,
+                "hipRadiusM": 0.164,
+                "section": "bevelled"
+              },
+              "upperClothingOnly": true,
+              "oldBodySurfaceMustBeReplaced": true,
+              "finiteRigidJoints": true,
+              "softCloth": false,
+              "minimumDetailPitchM": 0.005,
+              "frontPocketsAreActualOpenShells": true
+            },
+            "dimensionsM": [
+              0.760230368,
+              0.6459999999999999,
+              0.297720844
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "uniformCloth",
+                "uniformIdBack",
+                "uniformIdPrint",
+                "garmentLight",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "织物/耐磨片/护板金属/软垫/塑料身份扣/印刷图形独立；全部非碰撞零发光，不借镜片、灯芯、食品或建筑类别。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 24
+        },
+        {
+          "instance": "actor-CHAR-122",
+          "assetId": "char-122-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-122",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对布鞋；独立织物鞋面、内衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 10,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.366,
+              0.1543,
+              0.309
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "shoeCloth",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "actor-head",
+          "assetId": "mounted-head-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "actor-hair",
+          "assetId": "mounted-hair-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "actor-hand-1",
+          "assetId": "mounted-hand-adultA-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot-1",
+          "assetId": "mounted-foot-adultA-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "actor-hand1",
+          "assetId": "mounted-hand-adultA-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot1",
+          "assetId": "mounted-foot-adultA-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "probe-hollow-pants",
+          "assetId": "probe-hollow-pants",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-129",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ]
+        },
+        {
+          "pantsWaistBandTop": 0.872,
+          "preservedBottom": 0.84,
+          "waistFastenerCellsMoved": 40,
+          "deltaCells": [
+            0,
+            -8,
+            0
+          ]
+        },
+        {
+          "sourceBodyPants": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ],
+          "replacement": "CHAR-118"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-161",
+      "kind": "costume",
+      "sourceKey": "CHAR-130",
+      "parts": [
+        {
+          "instance": "actor-body",
+          "assetId": "slot-adultA-CHAR-130",
+          "source": {
+            "kind": "author-costume-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing",
+            "costumeCatalogId": "CHAR-130",
+            "neutralCoveredEndsRetained": false,
+            "independentUnderlayerForOpenCoat": false,
+            "exposedForearmsAreAuthorProfileStudy": false
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "actor-CHAR-130",
+          "assetId": "char-130-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-130",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "costumeFit": "adultA"
+            },
+            "features": "工坊劳动衣；耐磨肘片、工具袋与收束袖口",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M037",
+              "slot": 6,
+              "imageSHA256": "70cfb1b8946a9e55b05e83c2722515dff519c35628fce7c9c23ed48509ff8a13"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标为5mm原生体素，衣面/斜襟/口袋/护板为连续网格。单分件刚性关节，不含软布、软权重、动作片段或原骨架控制器；不夹带图中头、帽、背包或工具。视觉层非碰撞，人工美术验收0。穿戴范围须以本批实际验证报告为准。",
+            "units": "metres",
+            "front": "-Z",
+            "gameIntegration": false,
+            "animationClips": false,
+            "collision": "none; visual-only",
+            "detail": {
+              "cut": {
+                "role": "garmentOuter",
+                "hem": 0.878,
+                "loose": 0,
+                "openFront": false,
+                "sleeveRole": "garmentLight",
+                "shortSleeves": false,
+                "collar": "cross"
+              },
+              "sourceBodyProportions": {
+                "heightM": 1.7,
+                "headM": 0.24,
+                "hipYM": 0.86,
+                "kneeYM": 0.46,
+                "shoulderYM": 1.37,
+                "shoulderHalfWidthM": 0.205,
+                "hipHalfWidthM": 0.1,
+                "waistHalfWidthM": 0.14,
+                "hipRadiusM": 0.164,
+                "section": "bevelled"
+              },
+              "upperClothingOnly": true,
+              "oldBodySurfaceMustBeReplaced": true,
+              "finiteRigidJoints": true,
+              "softCloth": false,
+              "minimumDetailPitchM": 0.005,
+              "frontPocketsAreActualOpenShells": true
+            },
+            "dimensionsM": [
+              0.760230368,
+              0.568,
+              0.298220651
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "workReinforcement",
+                "uniformInsignia",
+                "garmentOuter",
+                "garmentLight",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "织物/耐磨片/护板金属/软垫/塑料身份扣/印刷图形独立；全部非碰撞零发光，不借镜片、灯芯、食品或建筑类别。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 26
+        },
+        {
+          "instance": "actor-CHAR-122",
+          "assetId": "char-122-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-122",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对布鞋；独立织物鞋面、内衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 10,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.366,
+              0.1543,
+              0.309
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "shoeCloth",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "actor-head",
+          "assetId": "mounted-head-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "actor-hair",
+          "assetId": "mounted-hair-adultA-adultA-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "actor-hand-1",
+          "assetId": "mounted-hand-adultA-adultA-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot-1",
+          "assetId": "mounted-foot-adultA-reflected-adultA-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "actor-hand1",
+          "assetId": "mounted-hand-adultA-reflected-adultA-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot1",
+          "assetId": "mounted-foot-adultA-adultA-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "probe-hollow-pants",
+          "assetId": "probe-hollow-pants",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-adultA-CHAR-130",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ]
+        },
+        {
+          "pantsWaistBandTop": 0.872,
+          "preservedBottom": 0.84,
+          "waistFastenerCellsMoved": 40,
+          "deltaCells": [
+            0,
+            -8,
+            0
+          ]
+        },
+        {
+          "sourceBodyPants": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ],
+          "replacement": "CHAR-118"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "CHAR-158",
+      "kind": "attire",
+      "sourceKey": "CHAR-137",
+      "parts": [
+        {
+          "instance": "actor-body",
+          "assetId": "slot-CHAR-137-adultA",
+          "source": {
+            "kind": "author-garment-body-slot",
+            "notCatalogMaster": true,
+            "sourceAssetId": "body-adultA",
+            "originalBodyRetained": true,
+            "removedMeshes": [
+              "髋腹胸肩连续衣身",
+              "衣领承接颈部",
+              "肩肘腕连续袖身--1",
+              "袖口织边--1",
+              "肩肘腕连续袖身-1",
+              "袖口织边-1"
+            ],
+            "removedNativeParts": [
+              "胸前最小织标",
+              "腹部拉链止挡"
+            ],
+            "exposedArmsAreAuthorProfileStudy": false,
+            "cutSourceMeshesAtActualElbowKnee": true,
+            "oldCoveredExtremitiesExcluded": true,
+            "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing"
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 0
+        },
+        {
+          "instance": "actor-CHAR-137",
+          "assetId": "char-137-adultA-closed",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-137",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "costumeFit": "adultA"
+            },
+            "features": "官署礼常服：独立长襟、浅叠片与宽边钟袖",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M038",
+              "slot": 1,
+              "imageSHA256": "d465236745543edf4500c8a811a9ed81864cd948f6de9c2abc06ac024f8eb757"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：5mm原生最小组件，连续衣面/斜面/曲面；透明雨膜实际alpha导出。角色外观全非碰撞，设备光学片未绑定且零发光。每分件刚性关节；原骨骼、尺寸矩阵与控制器缺失。有限穿戴和开合研究按报告范围，不含软布、IK、防护/医疗/浮力模拟；人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "gameIntegration": false,
+            "animationClips": false,
+            "collision": "none; visual-only",
+            "detail": {
+              "cut": "formal straight-panel court robe",
+              "defaultShoulderAbductionDegrees": 20,
+              "standingOnly": true,
+              "hemM": 0.14,
+              "headHairOrnamentsExcluded": true,
+              "softCloth": false
+            },
+            "dimensionsM": [
+              0.99828833,
+              1.306,
+              0.35
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "courtCloth",
+                "ceremonyTrim",
+                "garmentLight",
+                "garmentLining",
+                "garmentTrim",
+                "garmentStrap",
+                "garmentBuckle"
+              ],
+              "note": "织物、皮革、塑料膜、橡胶、泡棉、金属和未绑定光学片独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 29
+        },
+        {
+          "instance": "actor-CHAR-122",
+          "assetId": "char-122-adultA",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-122",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对布鞋；独立织物鞋面、内衬与橡胶底",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 10,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedFootwear": true,
+              "footExcluded": true,
+              "shoeCavity": true,
+              "independentLiningAndSole": true,
+              "fitsFoot": "CHAR-071 adult",
+              "sourceBody": "CHAR-059",
+              "soleGroundOffsetM": -0.02,
+              "poseScope": "rigid ankle binding; no sole compression or toe flex"
+            },
+            "dimensionsM": [
+              0.366,
+              0.1543,
+              0.309
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentStrap",
+                "garmentBuckle",
+                "shoeCloth",
+                "shoeLining",
+                "footwearSole",
+                "footwearEdge"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 12
+        },
+        {
+          "instance": "actor-head",
+          "assetId": "mounted-head-adultA-CHAR-137-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "head-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 5
+        },
+        {
+          "instance": "actor-hair",
+          "assetId": "mounted-hair-adultA-CHAR-137-head",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hair-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "head",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 17
+        },
+        {
+          "instance": "actor-hand-1",
+          "assetId": "mounted-hand-adultA-CHAR-137-wrist-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot-1",
+          "assetId": "mounted-foot-adultA-reflected-CHAR-137-ankle-1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle-1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "actor-hand1",
+          "assetId": "mounted-hand-adultA-reflected-CHAR-137-wrist1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "hand-adultA-reflected",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "hand-basis",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 18
+        },
+        {
+          "instance": "actor-foot1",
+          "assetId": "mounted-foot-adultA-CHAR-137-ankle1",
+          "source": {
+            "kind": "author-garment-mounted-component",
+            "notCatalogMaster": true,
+            "sourceAssetId": "foot-adultA",
+            "originOnlyRelocation": true,
+            "rigidBodyJoint": "ankle1",
+            "originalComponentRigRetainedInSource": true
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 8
+        },
+        {
+          "instance": "probe-hollow-pants",
+          "assetId": "probe-hollow-pants",
+          "source": {
+            "kind": "catalog-recipe",
+            "catalogId": "CHAR-118",
+            "recipeRevision": 1,
+            "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+            "styleRevision": 44,
+            "parameters": {
+              "bodyFit": "adultA"
+            },
+            "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+            "geometryStage": "candidate",
+            "reference": {
+              "sheet": "M036",
+              "slot": 6,
+              "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+            },
+            "referenceStage": "candidate",
+            "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+            "units": "metres",
+            "front": "-Z",
+            "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+            "gameIntegration": false,
+            "animationClips": false,
+            "manualRigidBinding": true,
+            "collision": "none; visual-only",
+            "detail": {
+              "bodyFit": "adultA",
+              "pairedLegs": true,
+              "waistAndAnklesOpen": true,
+              "hipAndKneeRigidSections": true,
+              "clothDynamics": false
+            },
+            "dimensionsM": [
+              0.38048,
+              0.7867000000000001,
+              0.249722
+            ],
+            "materialAssignmentReview": {
+              "revision": 1,
+              "method": "actual-voxel-and-mesh-role-check",
+              "roles": [
+                "garmentTrim",
+                "garmentPattern",
+                "garmentBuckle",
+                "trouserCloth"
+              ],
+              "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+            }
+          },
+          "position": [
+            0,
+            0.02,
+            0
+          ],
+          "remainingMeshes": 7
+        }
+      ],
+      "bodyNeckRemovalStudy": [
+        {
+          "assetId": "slot-CHAR-137-adultA",
+          "removedNames": [
+            "作者颈部连接皮肤"
+          ],
+          "remainingMeshes": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ]
+        },
+        {
+          "pantsWaistBandTop": 0.872,
+          "preservedBottom": 0.84,
+          "waistFastenerCellsMoved": 40,
+          "deltaCells": [
+            0,
+            -8,
+            0
+          ]
+        },
+        {
+          "sourceBodyPants": [
+            "裤腿膝踝连续收束--1下分件",
+            "裤腿膝踝连续收束--1上分件",
+            "膝前衣褶--1",
+            "裤脚织边--1",
+            "裤腿膝踝连续收束-1下分件",
+            "裤腿膝踝连续收束-1上分件",
+            "膝前衣褶-1",
+            "裤脚织边-1"
+          ],
+          "replacement": "CHAR-118"
+        }
+      ],
+      "failures": []
+    }
+  ]
+}

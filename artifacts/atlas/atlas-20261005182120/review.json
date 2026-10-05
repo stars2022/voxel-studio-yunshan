@@ -1,0 +1,96 @@
+{
+  "status": "preparation-only-no-models-produced",
+  "sheet": "M057",
+  "referenceViewed": true,
+  "imageSHA256": "17a32523734f7a31141a8b2020f974e501bb5e7b5f08c4dcdcaeb7aca5d3945d",
+  "scope": [
+    "CHAR016 is an existing far assembly contract referencing CHAR001, not a new resident or independent base master. The reference picture incorrectly contains a highly detailed wearer and pet; preserve catalog near/far requirements and document this conflict.",
+    "CHAR151..161 are eleven reusable author outfit templates, not eleven independent human meshes. Follow exact declared clothing/accessory dependencies before discretionary illustration details.",
+    "All original Citizen, actorProfiles, quality distance, identity, wages, permissions and inventories remain read-only source contracts. No original runtime binding is present in this repository."
+  ],
+  "clothingAccessories": {
+    "CHAR-016": "远景删面孔/手/发帽包等细节并用整腿；按quality距离切换，不产生独立人物",
+    "CHAR-151": "衣装=CHAR-116，佩戴=CHAR-147；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-152": "衣装=CHAR-113，佩戴=CHAR-148；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-153": "衣装=CHAR-127，佩戴=CHAR-101；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-154": "衣装=CHAR-128，佩戴=CHAR-102；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-155": "衣装=CHAR-114，佩戴=CHAR-148；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-156": "衣装=CHAR-129，佩戴=CHAR-150；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-157": "衣装=CHAR-117，佩戴=CHAR-120；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-158": "衣装=CHAR-137，佩戴=CHAR-150；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-159": "衣装=CHAR-137，佩戴=CHAR-150；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-160": "衣装=CHAR-137，佩戴=CHAR-150；绑定职业只读状态；同人换职业保持id/外观种子，不新增model",
+    "CHAR-161": "衣装=CHAR-130，佩戴=CHAR-103；绑定职业只读状态；同人换职业保持id/外观种子，不新增model"
+  },
+  "availableConstruction": [
+    "garmentScene provides tops, coat layers, robe and sash outfits with actual source graph and rigid rigs.",
+    "costumeWearers provides uniform127, guard128, driver129 and worker130; whole outfit includes its own pants and should not be double clothed.",
+    "attireWearers provides137礼服 and existing closed147 backpack /148 shoulder bag installation studies; bags must be refitted for different overcoats rather than assumed compatible.",
+    "wearable101/102/103 are real hats with open interiors, fitted to actual adult head and short hair.",
+    "held150 is actual physical blank ink badge and open back clip. Clothing attachment must use true clip contact, no floating badge."
+  ],
+  "risks": [
+    "Duplicate resident neck found in M056 applies to reused bodies: retain source but do not reinstall duplicate neck. Other body slots may retain actual legs or arms and cannot be dropped wholesale.",
+    "Check actual posed mesh pairs for every installed wearer; empty collisions do not certify fitting. Preserve failures and derive explicit fitting changes only as needed.",
+    "Minimum native details remain5mm, garment surfaces and slanted elements remain continuous.512 material roles remain fixed; no color-only identity or purpose borrowing."
+  ],
+  "originalSourceFilesRead": [
+    "src/production/garment-assembly.ts",
+    "src/production/costume-assembly.ts",
+    "src/production/attire-assembly.ts",
+    "src/production/wearable-assembly.ts",
+    "src/production/attire-bags.ts",
+    "src/production/atlas-held.ts",
+    "src/production/held-assembly.ts"
+  ],
+  "preliminaryReadOnlyWholeOutfitAudit": {
+    "file": "work/m057/base-outfit-probe.json",
+    "method": "Existing scene compositions cloned in memory only; duplicate neck connector omitted in scratch study; all installed displayed triangle pairs checked. No production source changed.",
+    "passAfterNeckOmission": [
+      "CHAR151 coat baseline without pack",
+      "CHAR152 short top baseline without shoulder bag",
+      "CHAR155 long top baseline without shoulder bag"
+    ],
+    "unresolved": [
+      "Merchant117 sleeveless exposed lower arm intersects both detailed hands and their wrist wraps. Needs explicit original-preserving wrist fit derivative.",
+      "Uniform127/128/129/130 and robe137 keep original neutral solid trouser legs; these intersect detailed ankles/feet. Needs hollow trouser replacement or actual lower-body fit derivative; cannot simply hide original feet or ignore pairs."
+    ],
+    "next": "Save all original source assets. Test clothing and accessories with actual physical clip/strap/head contacts and mesh pairs before integrating public production recipes."
+  },
+  "scratchRefinementAfterPairFailures": {
+    "status": "nine-baseline-outfit-pair-audits-passed-accessories-not-yet-fitted",
+    "logs": [
+      "work/m057/base-outfit-probe.json",
+      "work/m057/base-outfit-refinement.json",
+      "work/m057/base-outfit-refinement-waist.json"
+    ],
+    "proposedExplicitDerivatives": [
+      "Merchant117 exposed forearm cut at bind-space wrist+0.015m using existing closed split helper, preserving elbow joint. This removes actual hand/wrist-wrap overlap.",
+      "For costume127/128/129/130 and robe137, retain old body/neutral pants sources separately and replace installed solid neutral legs with real hollow CHAR118 pants.",
+      "Full original CHAR118 waistband still touches costume inner lining: scratch derivative keeps band bottom hip−0.020m, reduces top from hip+0.052 to hip+0.012, shifts only native waist buckle by−8 Y cells (−0.040m). All other cells/parts stay.",
+      "Actual full pair tests then pass for nine distinct baseline outfit constructions. Shared official/council/mayor137 currently only one baseline; final distinct definitions/accessories still required."
+    ],
+    "remainingChecks": [
+      "Implement source-preserving derivatives with sealed metadata, actual rigs and native part-region remapping; never mutate canonical originals.",
+      "Closed parts, native attached islands and precise wrist/waist connections still require dedicated checks for the new fitting derivatives.",
+      "Packs, shoulder bags, hats, badges and any extra held items are not included in scratch refinement; must fit and audit entire final outfit.",
+      "CHAR016 far derivation from actual CHAR001 remains unimplemented."
+    ]
+  },
+  "initialAccessoryPairAudit": {
+    "file": "work/m057/accessory-first-probe.json",
+    "scratchOnly": true,
+    "passingWholeOutfits": [
+      "CHAR152 plus closed CHAR148 shoulder bag",
+      "CHAR155 plus closed CHAR148 shoulder bag",
+      "CHAR153 uniform127 plus cap101",
+      "CHAR154 guard128 plus helmet102",
+      "CHAR161 worker130 plus protective hat103"
+    ],
+    "unresolved": [
+      "CHAR151 coat116 overlaps the two backpack147 shoulder loops at front opening, shoulder bridges and collar. Original closed-bag adultA study used113 underlayer; not valid for coat116. Needs original-preserving strap fit derivative and actual shoulder contact.",
+      "156/158/159/160 still need actual badge150 attachment; current audit has no badges.",
+      "All source graph sealing, closed/native attachment and finite contact checks still required before formal M057 production."
+    ]
+  }
+}

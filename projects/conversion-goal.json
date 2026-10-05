@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 672,
-    "remainingReferenceEntries": 121,
-    "completedReferenceSheets": 56,
+    "referenceCandidates": 684,
+    "remainingReferenceEntries": 109,
+    "completedReferenceSheets": 57,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
       "auxiliaryMasters": 1,
-      "assemblies": 156,
+      "assemblies": 168,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 373,
-      "generatedEntries": 695,
+      "notProduced": 361,
+      "generatedEntries": 707,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 672,
+      "atlasReferenceCandidates": 684,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 156
+      "atlasAssemblyCandidates": 168
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M057",
+    "sheet": "M058",
     "state": "queued",
     "ids": [
-      "CHAR-016",
-      "CHAR-151",
-      "CHAR-152",
-      "CHAR-153",
-      "CHAR-154",
-      "CHAR-155",
-      "CHAR-156",
-      "CHAR-157",
-      "CHAR-158",
-      "CHAR-159",
-      "CHAR-160",
-      "CHAR-161"
+      "CHAR-162",
+      "CHAR-163",
+      "CHAR-164",
+      "CHAR-165",
+      "CHAR-166",
+      "CHAR-167",
+      "CHAR-168",
+      "CHAR-169",
+      "CHAR-170",
+      "CHAR-171",
+      "CHAR-172",
+      "CHAR-173"
     ],
-    "scope": "CHAR016远景居民与CHAR151–161十一种可复用穿搭组合；复用实际身体、衣装和佩戴原件，不新增基础人物。"
+    "scope": "CHAR162–173医护、学生、服务劳动与婚丧礼服组合；复用实际母版，学生采用独立学龄儿童比例。"
   },
-  "nextBatch": "M057",
+  "nextBatch": "M058",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,19 +68,21 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M056共672条技术参考候选，余121；513独立图册母版、3共用引用、156图册组合，人工美术验收0。"
+    "M001–M057共684条技术参考候选，余109；513独立图册母版、3共用引用、168图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续优先：最小组件体素，斜面和曲面连续，天空、星空使用实际贴图。",
-    "M056完成12组合/12有限形态，新增基础母版0，累计672/793，余121。全库532基础候选、156组合、695已生成条目、373未制作。",
-    "529项整库测试及植物用途修正后32项专项复验、构建、最终类型、36份GLB、9组实际MCP流程通过；36默认截图（花槽及葬仪6张重拍，其余30张一致性复核复用），另有9张MCP实图。证据artifacts/atlas/atlas-20261005173405。",
-    "512用途材质按256+256同事务，上限保持；184/186/189/196光学与190植物用途派生逐格保留原占用、碰撞和接口。花卉用途不得借灯芯。",
-    "M056居民只有9个安装组件；保留原身体与短颈派生，但重复短颈不安装。真实关节数据和36对姿态三角检查通过；鞋底Y=0。公开组合ID schema已支持CHAR。",
-    "M057图、CSV和既有衣装/佩戴代码已实际读取，work/m057/reference.json和review.json为准备，尚未制作。CHAR016原契约为远景简化，参考图却是带宠物的细节角色，应记录冲突并遵守真实近远契约。",
-    "CHAR151–161应按清单实际衣装/佩戴组合，不能把颜色差异或多人物图集当新母版。帽、背包/挎包、胸牌的真实贴合须逐一核验，旧试片验证不能冒称整人安装已通过。",
-    "对重复短颈应保留原件并省去安装；其他身体派生可能仍含真实四肢，不能整体删除。复用每个源图谱并另核实际姿态三角面，空碰撞不代表无穿插。",
-    "保留原describeCitizen与CHAR016远景已集成基线；新详细人物不绑定原年龄/种子/职业/quality距离/模拟/库存/权限。原活动逻辑与历史FAIL均保留。",
+    "M057完成12模板、10种不同几何配置，新增基础母版0，累计684/793，余109。全库532基础候选、168组合、707已生成条目、361未制作。",
+    "537项整库和8项本批专项、构建、最终类型、36份GLB、9组实际MCP流程通过；36默认截图和17张额外MCP实图均新拍。证据artifacts/atlas/atlas-20261005182120。",
+    "M057实核117安装实例、555组件三角面对、28真实表面接点、2820闭合分件、135来源关系。原件和派生同存，512用途上限及256+256同事务保持。",
+    "CHAR016由实际近景CHAR001派生12760→2360三角面；源定义/组件保留，位置朝向脚底基准一致，手动切换未接自动quality距离。158–160按原137+150合同共享几何，不伪造制服差异。",
+    "M058图和CSV实际读取，work/m058/reference.json及source/fit studies为准备；不得把准备结果称制作完成。CHAR165源合同为CHAR063学龄儿童，不能缩放成人或无条件使用成人配件。",
+    "CHAR162=132+111；163=133+106；164=131+104；165=126+148；166=134+109；167=116+141；168和170=130+149共享；169=135+136；171=114+150；172=138+100；173=139+141。按真实清单服装/佩戴装配，不增加参考图额外设备动物。",
+    "M058初步全身检查发现131暴露前臂与精细手、126原儿童中性裤与精细足相交；儿童也有重复短颈。保留真实失败，按实际关节和截面封口/空腔替换。原件保存。",
+    "帽/口罩/护目镜、围巾、腰带、围裙和发冠须验证真实表面接触与全套姿态三角面；此前头部试件或内搭试件不代替新衣装全身适配。原rigid肩开口及参考比例差异须记录。",
+    "M058后续准备见work/m058/review.json：口罩耳挂、护目镜后密封、两帽内衬、两围巾、114胸牌与工具腰带已有实际拟合探针；儿童裤腰0.96径向安装调整及低挎包通过初检。尚待儿童肩带、135/136围裙去重拟合、发冠承接、正式来源/姿态派生与全部生产验证。准备不计完成。",
+    "保留原describeCitizen与远景已集成来源，详细人物不绑定原年龄/种子/职业/quality距离/模拟/库存/权限。原活动逻辑和历史FAIL不改写。",
     "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。全部参考候选仍不等于人工美术验收，完整1068清单未制作条目另计。"
   ],
   "modelingDirection": {
@@ -90,9 +92,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M056",
-    "run": "atlas-20261005173405",
+    "sheet": "M057",
+    "run": "atlas-20261005182120",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261005173405"
+    "evidence": "artifacts/atlas/atlas-20261005182120"
   }
 }

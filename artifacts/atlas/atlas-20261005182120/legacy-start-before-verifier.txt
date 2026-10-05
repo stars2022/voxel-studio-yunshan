@@ -1,0 +1,16 @@
+node:internal/fs/promises:697
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open 'artifacts/atlas/atlas-20261005182120/assembly-verification.json'
+    at async open (node:internal/fs/promises:697:25)
+    at async readFile (node:internal/fs/promises:1348:14)
+    at async read (/workspace/voxel-studio-yunshan/scripts/export-legacy-assembly-dependencies.ts:5:40)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/export-legacy-assembly-dependencies.ts:5:237) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'artifacts/atlas/atlas-20261005182120/assembly-verification.json'
+}
+
+Node.js v24.19.0
