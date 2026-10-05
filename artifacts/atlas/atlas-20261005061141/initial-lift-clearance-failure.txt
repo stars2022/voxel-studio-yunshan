@@ -1,0 +1,32 @@
+✔ M045 fourteen finite civic forms retain closed oriented component shells, nondegenerate UVs and attached native pins (4070.492477ms)
+✖ M045 actual solids preserve stair headroom, floor holes, column contact and finite boarding paths (2029.003241ms)
+✔ M045 source envelopes and author limits are explicit; finite variants change actual geometry and reject unsupported states (115.328391ms)
+✔ M045 concrete, ceramic and unbound optical surfaces retain actual semantics under appearance replacement (757.684767ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 3
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7876.180971
+
+✖ failing tests:
+
+test at tests/atlas-civic-assemblies.test.ts:7:1
+✖ M045 actual solids preserve stair headroom, floor holes, column contact and finite boarding paths (2029.003241ms)
+  AssertionError [ERR_ASSERTION]: BUILT-164[{"name":"151m finite central car-body corridor","min":[138.21,103.63,33.11],"max":[141.79,257.19,36.89],"excludedInstances":["built-164-1"],"clear":false,"blocked":[{"instance":"built-164-6","part":"端承舌"}]}]
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-civic-assemblies.test.ts:7:561)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

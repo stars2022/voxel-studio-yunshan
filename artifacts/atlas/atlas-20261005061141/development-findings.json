@@ -1,0 +1,26 @@
+{
+  "run": "atlas-20261005061141",
+  "resolved": [
+    {
+      "finding": "Roof beam to deck underside lacked a continuous bearing path",
+      "change": "Added actual bearing blocks following the same piecewise roof profile; moved waterfront and summit canopy supports onto beams."
+    },
+    {
+      "finding": "Initial tower facade looked too much like a glazed modern tower",
+      "change": "Reduced actual glazed openings with stone piers and spandrels; widened four tier eaves and adjusted upper-level bearing heights. Still a technical candidate with sparse ornament, not art accepted."
+    },
+    {
+      "finding": "Grouped material mesh parity falsely rejected road pins and point-inside-only audit rejected face contact",
+      "change": "Audit closed source components separately; support contact additionally reads actual triangle distance at 1e-7 m tolerance."
+    },
+    {
+      "finding": "Full shaft sweep included an intentionally installed boarding tongue at the parked upper car floor",
+      "change": "Report explicitly excludes parked car and its bridge from shaft-only sweep. Actual endpoint boarding is checked with all installed parts; no moving bridge/controller claimed."
+    },
+    {
+      "finding": "Road ceramic stripe sat above the pavement and cable sheave arm crossed cable axis",
+      "change": "Split actual road slab around flush ceramic inlay; shifted sheave hanging arm beside cable and connected a lateral axle."
+    }
+  ],
+  "preservedSources": "Canonical BUILT291/292/293/300 assets remain unchanged; pre-M045 files are untouched."
+}

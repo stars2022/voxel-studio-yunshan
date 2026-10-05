@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 528,
-    "remainingReferenceEntries": 265,
-    "completedReferenceSheets": 44,
+    "referenceCandidates": 540,
+    "remainingReferenceEntries": 253,
+    "completedReferenceSheets": 45,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
       "auxiliaryMasters": 1,
-      "assemblies": 63,
+      "assemblies": 75,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 466,
-      "generatedEntries": 602,
+      "notProduced": 454,
+      "generatedEntries": 614,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 528,
+      "atlasReferenceCandidates": 540,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 12
+      "atlasAssemblyCandidates": 24
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M045",
+    "sheet": "M046",
     "state": "queued",
     "ids": [
-      "BUILT-079",
-      "BUILT-080",
-      "BUILT-081",
-      "BUILT-086",
-      "BUILT-087",
-      "BUILT-092",
-      "BUILT-093",
-      "BUILT-161",
-      "BUILT-162",
-      "BUILT-163",
-      "BUILT-164",
-      "BUILT-165"
+      "BUILT-166",
+      "BUILT-167",
+      "BUILT-169",
+      "BUILT-181",
+      "BUILT-184",
+      "BUILT-185",
+      "BUILT-204",
+      "BUILT-211",
+      "BUILT-220",
+      "BUILT-221",
+      "BUILT-222",
+      "BUILT-223"
     ],
-    "scope": "12个建筑/地标/交通组合；连续屋顶与真实组件放置，明确原世界、FloorPlan及控制器未绑定。"
+    "scope": "12个航空、桥街与现代高层组合；保留原路线/运行约束与作者尺寸边界，最小细件体素，其余适用连续网格。"
   },
-  "nextBatch": "M045",
+  "nextBatch": "M046",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,19 +68,18 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M044共528条技术参考候选，余265；513独立图册母版、3共用引用、12图册组合，人工美术验收0。"
+    "M001–M045共540条技术参考候选，余253；513独立图册母版、3共用引用、24图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正持续优先：最小细件体素、连续斜面曲面；天空/星空可用实际贴图，不强制整件卡网格。",
-    "M044验证通过，12组合18有限形态；532基础候选不变。剩余265参考为174组合和91变体，不将实例或参数形态计为基础母版。",
-    "M044屋面/坡梁/墙楼板连续，20mm铜销原生；15新用途503–517，全库491角色256+235同事务；style38/finish36。",
-    "六近景建筑族+六远景建筑族及四组六点作者布置，007/008/009楼梯原件保留，014侧出口派生逐格记录移除护边；不能冒称原FloorPlan/权限/地形或运行时通过。",
-    "447完整回归、7专项及最终UV/柱头/原生往返补查、9组真实MCP检查通过。18形态142有限净空/98柱头承接点；15实际新增用途及5独立内部点。证据 artifacts/atlas/atlas-20261004190922。",
-    "M045整图及12条原始清单已查看，work/m045/source.json和preflight.json保存研究；尚未开始制作。",
-    "M045地标086给定144×112m至72×56m五级各6层、234m及B1/B2；087原civicPlan位置未收件；092给定96×84m前院。保留原始量与来源缺口，不能缩成参考缩略图便声称复原。",
-    "M045交通164上下点(140,103.6,35)/(140,254.6,35)高差151m；161–165原NetworkEdge/地形/控制器缺失，有限作者接口与静态放置不能冒称实际交通运行。",
-    "每批提交并推送origin/main已授权，不重复确认。完成单批不调用stop_goal；浏览器串行，MCP命令保持<9MiB。"
+    "用户修正持续优先：最小细件体素；斜面和曲面连续；天空与星空可用实际贴图。",
+    "M045完成12组合14有限形态，新增基础母版0；累计540/793，余253。532基础候选、75组合、614已生成清单项。",
+    "新角色518 civicGuideOptic为非碰撞玻璃、零发光；全库492角色256+236同事务；style39/finish37。",
+    "M045塔楼保原144×112m至72×56m、30层/B1/B2及234m；151m升降保原世界坐标。未接原FloorPlan、权限、地形、NetworkEdge和控制器；全部技术候选，人工美术0。",
+    "452完整回归与4专项通过；14形态2868楼梯净空、158柱头接触、73楼板孔、178交通净空；9组真实MCP、36正式截图及接口近景。证据 artifacts/atlas/atlas-20261005061141。",
+    "M046 12条参考清单索引已提取到work/m046/reference-rows.json；尚未查看整图或制作。继续先读对应CSV与真实参考图，不把原运行约束改为作者结果已通过。",
+    "M045包将001/002/006/247单列为仅清单契约引用，独立母版未交付；实际新作几何完整在组合内，不把缺件当原件已复用。",
+    "每批验证后推送origin/main已获授权，不重复确认。单批完成不调用stop_goal；浏览器串行，MCP命令保持<9MiB。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -89,9 +88,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M044",
-    "run": "atlas-20261004190922",
+    "sheet": "M045",
+    "run": "atlas-20261005061141",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261004190922"
+    "evidence": "artifacts/atlas/atlas-20261005061141"
   }
 }
