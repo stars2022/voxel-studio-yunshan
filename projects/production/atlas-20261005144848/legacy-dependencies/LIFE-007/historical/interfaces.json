@@ -1,0 +1,174 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47
+    }
+  },
+  "assemblies": {},
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "life-007",
+      "name": "衣柜门叶与把手",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.01,
+            0,
+            -0.05
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.06,
+            0,
+            0.12000000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              1,
+              0,
+              -5
+            ],
+            "max": [
+              107,
+              176,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜门 1 · 嵌芯与回纹",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              -1
+            ],
+            "max": [
+              53,
+              176,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "柜门 1 · 拉手和铰接座",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              19,
+              -5
+            ],
+            "max": [
+              50,
+              157,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "柜门 2 · 嵌芯与回纹",
+          "parent": "root",
+          "region": {
+            "min": [
+              55,
+              0,
+              -1
+            ],
+            "max": [
+              107,
+              176,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "柜门 2 · 拉手和铰接座",
+          "parent": "root",
+          "region": {
+            "min": [
+              58,
+              19,
+              -5
+            ],
+            "max": [
+              107,
+              157,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "双扇浅色凹芯门、回纹、长黄铜拉手与明合页",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              -5
+            ],
+            "max": [
+              107,
+              176,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

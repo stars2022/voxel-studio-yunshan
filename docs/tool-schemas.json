@@ -1681,6 +1681,44 @@
                   "params": {
                     "type": "object",
                     "properties": {
+                      "privacyDoor": {
+                        "enum": [
+                          "open",
+                          "closed"
+                        ]
+                      },
+                      "hour": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 24
+                      },
+                      "weather": {
+                        "enum": [
+                          "clear",
+                          "overcast",
+                          "rain",
+                          "fog"
+                        ]
+                      },
+                      "windStrength": {
+                        "enum": [
+                          "calm",
+                          "breeze",
+                          "strong"
+                        ]
+                      },
+                      "winterCover": {
+                        "enum": [
+                          "snow",
+                          "frost"
+                        ]
+                      },
+                      "damageState": {
+                        "enum": [
+                          "baseline",
+                          "aftermath"
+                        ]
+                      },
                       "program": {
                         "enum": [
                           "bank",

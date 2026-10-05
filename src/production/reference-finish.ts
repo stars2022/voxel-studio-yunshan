@@ -3,10 +3,11 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=41;
+export const referenceFinishVersion=42;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ cookedFish:{color:'#eee4cd',roughness:.72,metalness:0,intensity:0,...surface('none',.02,0,538)},
  weatherCloud:{color:'#d4e0e5',roughness:1,metalness:0,opacity:.85,intensity:0},
  valleyFog:{color:'#c4d8db',roughness:1,metalness:0,opacity:.46,intensity:0},
  rainDroplet:{color:'#a4c7d6',roughness:.3,metalness:0,opacity:.65,intensity:0},

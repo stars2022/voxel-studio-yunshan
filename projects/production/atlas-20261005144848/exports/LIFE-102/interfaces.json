@@ -1,0 +1,3770 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532,
+      "weatherCloud": 533,
+      "valleyFog": 534,
+      "rainDroplet": 535,
+      "snowCover": 536,
+      "frostCover": 537,
+      "cookedFish": 538
+    }
+  },
+  "assemblies": {
+    "life-102": {
+      "id": "life-102",
+      "name": "餐馆厨房配置",
+      "version": 1,
+      "instances": [
+        {
+          "id": "life-102-0",
+          "assetId": "architecture-civic-park-paving-life-space-102-5853e699e0",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-1",
+          "assetId": "architecture-civic-life-space-shell-102-a7385543f9",
+          "name": "真实窗洞、木梁与切角房间墙",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-2",
+          "assetId": "architecture-civic-room-kitchen-sink-cabinet-5947a25623",
+          "name": "保留原下柜的水槽上口避让派生",
+          "position": [
+            0.3,
+            0,
+            6.46
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-3",
+          "assetId": "architecture-civic-room-kitchen-fitted-worktops-0a0c140f36",
+          "name": "匹配盆体的真孔台面与独立灶台",
+          "position": [
+            0,
+            0,
+            1.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-4",
+          "assetId": "source-life-040",
+          "name": "厨房水槽及龙头",
+          "position": [
+            0.53,
+            0.7,
+            6.53
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-5",
+          "assetId": "source-life-037",
+          "name": "厨房操作台柜体",
+          "position": [
+            1.6,
+            0,
+            6.46
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-6",
+          "assetId": "source-life-039",
+          "name": "厨房灶具及烟罩",
+          "position": [
+            1.8,
+            0.88,
+            6.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-7",
+          "assetId": "architecture-civic-room-kitchen-wall-mounts-1c07319a7a",
+          "name": "吊柜与烟罩实际壁挂承件",
+          "position": [
+            0,
+            0,
+            1.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-8",
+          "assetId": "source-life-041",
+          "name": "厨房吊柜",
+          "position": [
+            0.48,
+            1.4,
+            6.86
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-9",
+          "assetId": "source-life-043",
+          "name": "冰箱/冷藏柜外壳",
+          "position": [
+            3.2,
+            0,
+            6.46
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-10",
+          "assetId": "source-life-042",
+          "name": "食品储物柜",
+          "position": [
+            4.5,
+            0,
+            6.68
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-11",
+          "assetId": "source-life-048",
+          "name": "砧板与切配工具",
+          "position": [
+            2.05,
+            0.88,
+            6.59
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-12",
+          "assetId": "architecture-restaurant-prep-island",
+          "name": "连续不锈钢备餐岛",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-13",
+          "assetId": "source-life-048",
+          "name": "砧板与切配工具",
+          "position": [
+            3.3,
+            0.9,
+            2.92
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-14",
+          "assetId": "source-life-021",
+          "name": "餐桌桌架",
+          "position": [
+            6.3,
+            0,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-102-15",
+          "assetId": "source-life-022",
+          "name": "餐椅",
+          "position": [
+            6.95,
+            0,
+            2.65
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "life-102-16",
+          "assetId": "source-life-022",
+          "name": "餐椅",
+          "position": [
+            7.65,
+            0,
+            2.65
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "life-102-17",
+          "assetId": "source-life-022",
+          "name": "餐椅",
+          "position": [
+            6.5,
+            0,
+            4.08
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "LIFE-102",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M053",
+          "slot": 8,
+          "imageSHA256": "20029c35deee0997d91f647bb12f2a6741827533aec581d34de81c8cc39cf5f6"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-003",
+          "BUILT-015",
+          "BUILT-017",
+          "BUILT-059",
+          "ENV-094",
+          "LIFE-021",
+          "LIFE-022",
+          "LIFE-037",
+          "LIFE-038",
+          "LIFE-039",
+          "LIFE-040",
+          "LIFE-041",
+          "LIFE-042",
+          "LIFE-043",
+          "LIFE-048",
+          "LIFE-049",
+          "LIFE-061"
+        ],
+        "instanceGroups": {
+          "life-102-0": "park-fixture",
+          "life-102-1": "room-shell",
+          "life-102-2": "kitchen-cabinet",
+          "life-102-3": "kitchen-top",
+          "life-102-4": "furniture",
+          "life-102-5": "furniture",
+          "life-102-6": "furniture",
+          "life-102-7": "wall-mount",
+          "life-102-8": "furniture",
+          "life-102-9": "furniture",
+          "life-102-10": "furniture",
+          "life-102-11": "furniture",
+          "life-102-12": "prep-table",
+          "life-102-13": "furniture",
+          "life-102-14": "furniture",
+          "life-102-15": "furniture",
+          "life-102-16": "furniture",
+          "life-102-17": "furniture"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "kitchen entry to prep",
+            "points": [
+              [
+                4.2,
+                0,
+                0.4
+              ],
+              [
+                4.2,
+                0,
+                1.5
+              ],
+              [
+                3.8,
+                0,
+                2.05
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "kitchen side aisle",
+            "points": [
+              [
+                4.2,
+                0,
+                1.3
+              ],
+              [
+                5.55,
+                0,
+                1.3
+              ],
+              [
+                5.55,
+                0,
+                5.7
+              ],
+              [
+                0.86,
+                0,
+                5.7
+              ]
+            ],
+            "width": 0.7
+          }
+        ],
+        "scope": "Author cutaway spaces with current canonical components, explicit continuous alternatives and finite real access/bearing probes. No original FloorPlan, inventories, ownership, commerce, work, classroom or public-counter integration. Historical files and original FAILs remain. Awaiting human art acceptance.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "forest": [],
+        "park": {
+          "pads": [
+            {
+              "instance": "life-102-0",
+              "rect": [
+                0,
+                0,
+                8.4,
+                7.2
+              ],
+              "y": 0,
+              "bottom": -0.28,
+              "hole": null
+            }
+          ],
+          "guards": [],
+          "seats": [],
+          "steps": [],
+          "rockContacts": [],
+          "drains": [],
+          "viewRays": [],
+          "wayfinding": [],
+          "activityPoints": [],
+          "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance."
+        },
+        "room": {
+          "dimensions": [
+            8.4,
+            2.8,
+            7.2
+          ],
+          "floorY": 0,
+          "entrance": [
+            4.2,
+            0,
+            0
+          ],
+          "usePoints": [
+            {
+              "key": "sink",
+              "point": [
+                0.86,
+                0,
+                5.7
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "stove",
+              "point": [
+                2.16,
+                0,
+                5.7
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "cold storage",
+              "point": [
+                3.55,
+                0,
+                5.7
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "pantry",
+              "point": [
+                4.98,
+                0,
+                5.7
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "prep front",
+              "point": [
+                3.8,
+                0,
+                2.05
+              ],
+              "width": 0.7
+            }
+          ],
+          "seats": [
+            {
+              "key": "restaurant dining",
+              "instance": "life-102-15",
+              "point": [
+                6.73,
+                0.44,
+                2.4299999999999997
+              ],
+              "approach": [
+                6.73,
+                0,
+                1.8499999999999999
+              ]
+            },
+            {
+              "key": "restaurant dining",
+              "instance": "life-102-16",
+              "point": [
+                7.430000000000001,
+                0.44,
+                2.4299999999999997
+              ],
+              "approach": [
+                7.430000000000001,
+                0,
+                1.8499999999999999
+              ]
+            },
+            {
+              "key": "restaurant dining",
+              "instance": "life-102-17",
+              "point": [
+                6.72,
+                0.44,
+                4.3
+              ],
+              "approach": [
+                6.72,
+                0,
+                4.98
+              ]
+            }
+          ],
+          "supportedPairs": [
+            {
+              "upper": "life-102-13",
+              "lower": "life-102-12",
+              "points": [
+                [
+                  3.5,
+                  0.9,
+                  3.05
+                ]
+              ]
+            }
+          ],
+          "mounts": [
+            {
+              "instance": "life-102-7",
+              "wall": "life-102-1",
+              "point": [
+                0.6,
+                1.77,
+                7.199999999999999
+              ]
+            }
+          ],
+          "sourceLegacy": "life-20261002143409-scene-102.ysvox.json",
+          "legacyLayoutRetainedInOriginalFile": true,
+          "originalFloorPlanBound": false,
+          "utilitiesBound": false,
+          "shell": "life-102-1",
+          "kitchen": {
+            "sink": "life-102-4",
+            "counterTop": "life-102-3",
+            "installedCabinet": "life-102-2",
+            "canonicalCabinet": "source-life-037",
+            "canonicalWorktop": "source-life-038",
+            "stove": "life-102-6",
+            "prep": "life-102-11",
+            "bowlCenter": [
+              0.86,
+              0.79,
+              6.74
+            ],
+            "hoodIntake": [
+              2.16,
+              1.76,
+              6.76
+            ],
+            "hoodGaps": [
+              [
+                1.89,
+                1.74,
+                6.720000000000001
+              ],
+              [
+                2.05,
+                1.74,
+                6.720000000000001
+              ],
+              [
+                2.21,
+                1.74,
+                6.720000000000001
+              ]
+            ],
+            "hoodGrille": [
+              1.87,
+              1.74,
+              6.720000000000001
+            ],
+            "appliancesPowered": false
+          },
+          "diningTable": "life-102-14",
+          "ordersBound": false,
+          "chefBound": false
+        },
+        "parentAssemblies": [
+          {
+            "catalogId": "LIFE-061",
+            "definition": {
+              "id": "life-061",
+              "name": "住宅厨房配置",
+              "version": 1,
+              "instances": [
+                {
+                  "id": "life-061-0",
+                  "assetId": "architecture-civic-park-paving-room-61-7ed0896def",
+                  "name": "分层实心台基与独立石铺面",
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-1",
+                  "assetId": "architecture-civic-room-shell-61-db7bd2af17",
+                  "name": "真实窗洞、木梁与切角房间墙",
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-2",
+                  "assetId": "architecture-civic-room-kitchen-sink-cabinet-5947a25623",
+                  "name": "保留原下柜的水槽上口避让派生",
+                  "position": [
+                    0.3,
+                    0,
+                    4.86
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-3",
+                  "assetId": "architecture-civic-room-kitchen-fitted-worktops-0a0c140f36",
+                  "name": "匹配盆体的真孔台面与独立灶台",
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-4",
+                  "assetId": "source-life-040",
+                  "name": "厨房水槽及龙头",
+                  "position": [
+                    0.53,
+                    0.7,
+                    4.93
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-5",
+                  "assetId": "source-life-037",
+                  "name": "厨房操作台柜体",
+                  "position": [
+                    1.6,
+                    0,
+                    4.86
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-6",
+                  "assetId": "source-life-039",
+                  "name": "厨房灶具及烟罩",
+                  "position": [
+                    1.8,
+                    0.88,
+                    4.9
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-7",
+                  "assetId": "architecture-civic-room-kitchen-wall-mounts-1c07319a7a",
+                  "name": "吊柜与烟罩实际壁挂承件",
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-8",
+                  "assetId": "source-life-041",
+                  "name": "厨房吊柜",
+                  "position": [
+                    0.48,
+                    1.4,
+                    5.26
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-9",
+                  "assetId": "source-life-043",
+                  "name": "冰箱/冷藏柜外壳",
+                  "position": [
+                    3.2,
+                    0,
+                    4.86
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-10",
+                  "assetId": "source-life-042",
+                  "name": "食品储物柜",
+                  "position": [
+                    4.5,
+                    0,
+                    5.08
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-11",
+                  "assetId": "source-life-048",
+                  "name": "砧板与切配工具",
+                  "position": [
+                    2.05,
+                    0.88,
+                    4.99
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-12",
+                  "assetId": "source-life-021",
+                  "name": "餐桌桌架",
+                  "position": [
+                    1.25,
+                    0,
+                    1.55
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-13",
+                  "assetId": "source-life-022",
+                  "name": "餐椅",
+                  "position": [
+                    1.75,
+                    0,
+                    1.4
+                  ],
+                  "rotation": 2,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-14",
+                  "assetId": "source-life-022",
+                  "name": "餐椅",
+                  "position": [
+                    2.4,
+                    0,
+                    1.4
+                  ],
+                  "rotation": 2,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-15",
+                  "assetId": "source-life-022",
+                  "name": "餐椅",
+                  "position": [
+                    1.32,
+                    0,
+                    2.83
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-16",
+                  "assetId": "source-life-022",
+                  "name": "餐椅",
+                  "position": [
+                    2.15,
+                    0,
+                    2.83
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                },
+                {
+                  "id": "life-061-17",
+                  "assetId": "source-life-049",
+                  "name": "茶具壶及杯组合",
+                  "position": [
+                    1.65,
+                    0.74,
+                    1.76
+                  ],
+                  "rotation": 0,
+                  "parent": null
+                }
+              ],
+              "source": {
+                "kind": "catalog-assembly",
+                "catalogId": "LIFE-061",
+                "recipeRevision": 1,
+                "reference": {
+                  "sheet": "M052",
+                  "slot": 12,
+                  "imageSHA256": "ce1922ec149f512d89991984bb96e9c9fcf92540fdc67c024dc28dbbcb8abb86"
+                },
+                "units": "metres",
+                "authority": "author",
+                "originalRuntimeBound": false,
+                "notCatalogBase": true,
+                "dependencies": [
+                  "BUILT-003",
+                  "BUILT-015",
+                  "BUILT-017",
+                  "BUILT-059",
+                  "ENV-094",
+                  "LIFE-021",
+                  "LIFE-022",
+                  "LIFE-037",
+                  "LIFE-038",
+                  "LIFE-039",
+                  "LIFE-040",
+                  "LIFE-041",
+                  "LIFE-042",
+                  "LIFE-043",
+                  "LIFE-048",
+                  "LIFE-049"
+                ],
+                "instanceGroups": {
+                  "life-061-0": "park-fixture",
+                  "life-061-1": "room-shell",
+                  "life-061-2": "kitchen-cabinet",
+                  "life-061-3": "kitchen-top",
+                  "life-061-4": "furniture",
+                  "life-061-5": "furniture",
+                  "life-061-6": "furniture",
+                  "life-061-7": "wall-mount",
+                  "life-061-8": "furniture",
+                  "life-061-9": "furniture",
+                  "life-061-10": "furniture",
+                  "life-061-11": "furniture",
+                  "life-061-12": "furniture",
+                  "life-061-13": "furniture",
+                  "life-061-14": "furniture",
+                  "life-061-15": "furniture",
+                  "life-061-16": "furniture",
+                  "life-061-17": "furniture"
+                },
+                "parameters": {},
+                "routes": [
+                  {
+                    "name": "kitchen doorway and appliance aisle",
+                    "points": [
+                      [
+                        3,
+                        0,
+                        0.7
+                      ],
+                      [
+                        3.5,
+                        0,
+                        0.8
+                      ],
+                      [
+                        3.5,
+                        0,
+                        4.15
+                      ],
+                      [
+                        0.86,
+                        0,
+                        4.15
+                      ]
+                    ],
+                    "width": 0.7
+                  },
+                  {
+                    "name": "kitchen storage",
+                    "points": [
+                      [
+                        3.5,
+                        0,
+                        3.9
+                      ],
+                      [
+                        4.98,
+                        0,
+                        3.9
+                      ],
+                      [
+                        4.98,
+                        0,
+                        4.3
+                      ]
+                    ],
+                    "width": 0.7
+                  }
+                ],
+                "scope": "Author room cutaway with real door/window, floor and finite use points. Canonical furniture retained; explicit sink cabinet derivation and fitted top are saved separately. No original FloorPlan, sleeping/sitting/cooking controller, energy, inventory or human art acceptance.",
+                "walkSamples": [],
+                "clearBoxes": [],
+                "contacts": [],
+                "driverEyes": [],
+                "identityBound": false,
+                "controllerBound": false,
+                "cargoInventoryBound": false,
+                "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+                "forest": [],
+                "park": {
+                  "pads": [
+                    {
+                      "instance": "life-061-0",
+                      "rect": [
+                        0,
+                        0,
+                        6,
+                        5.6
+                      ],
+                      "y": 0,
+                      "bottom": -0.28,
+                      "hole": null
+                    }
+                  ],
+                  "guards": [],
+                  "seats": [],
+                  "steps": [],
+                  "rockContacts": [],
+                  "drains": [],
+                  "viewRays": [],
+                  "wayfinding": [],
+                  "activityPoints": [],
+                  "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance."
+                },
+                "room": {
+                  "dimensions": [
+                    6,
+                    2.8,
+                    5.6
+                  ],
+                  "floorY": 0,
+                  "entrance": [
+                    3,
+                    0,
+                    0
+                  ],
+                  "usePoints": [
+                    {
+                      "key": "sink front",
+                      "point": [
+                        0.86,
+                        0,
+                        4.15
+                      ],
+                      "width": 0.7
+                    },
+                    {
+                      "key": "stove front",
+                      "point": [
+                        2.16,
+                        0,
+                        4.15
+                      ],
+                      "width": 0.7
+                    },
+                    {
+                      "key": "fridge front",
+                      "point": [
+                        3.55,
+                        0,
+                        4.15
+                      ],
+                      "width": 0.7
+                    },
+                    {
+                      "key": "food store front",
+                      "point": [
+                        4.98,
+                        0,
+                        4.3
+                      ],
+                      "width": 0.7
+                    }
+                  ],
+                  "seats": [
+                    {
+                      "key": "dining chair",
+                      "instance": "life-061-13",
+                      "point": [
+                        1.53,
+                        0.44,
+                        1.18
+                      ],
+                      "approach": [
+                        1.53,
+                        0,
+                        0.5999999999999999
+                      ]
+                    },
+                    {
+                      "key": "dining chair",
+                      "instance": "life-061-14",
+                      "point": [
+                        2.1799999999999997,
+                        0.44,
+                        1.18
+                      ],
+                      "approach": [
+                        2.1799999999999997,
+                        0,
+                        0.5999999999999999
+                      ]
+                    },
+                    {
+                      "key": "dining chair",
+                      "instance": "life-061-15",
+                      "point": [
+                        1.54,
+                        0.44,
+                        3.0500000000000003
+                      ],
+                      "approach": [
+                        1.54,
+                        0,
+                        3.73
+                      ]
+                    },
+                    {
+                      "key": "dining chair",
+                      "instance": "life-061-16",
+                      "point": [
+                        2.37,
+                        0.44,
+                        3.0500000000000003
+                      ],
+                      "approach": [
+                        2.37,
+                        0,
+                        3.73
+                      ]
+                    }
+                  ],
+                  "supportedPairs": [
+                    {
+                      "upper": "life-061-17",
+                      "lower": "life-061-12",
+                      "points": [
+                        [
+                          1.8,
+                          0.74,
+                          1.9
+                        ]
+                      ]
+                    }
+                  ],
+                  "mounts": [
+                    {
+                      "instance": "life-061-7",
+                      "wall": "life-061-1",
+                      "point": [
+                        0.6,
+                        1.77,
+                        5.6
+                      ]
+                    }
+                  ],
+                  "sourceLegacy": "life-20261002143409-scene-061.ysvox.json",
+                  "legacyLayoutRetainedInOriginalFile": true,
+                  "originalFloorPlanBound": false,
+                  "utilitiesBound": false,
+                  "shell": "life-061-1",
+                  "kitchen": {
+                    "sink": "life-061-4",
+                    "counterTop": "life-061-3",
+                    "installedCabinet": "life-061-2",
+                    "canonicalCabinet": "source-life-037",
+                    "canonicalWorktop": "source-life-038",
+                    "stove": "life-061-6",
+                    "prep": "life-061-11",
+                    "bowlCenter": [
+                      0.86,
+                      0.79,
+                      5.140000000000001
+                    ],
+                    "hoodIntake": [
+                      2.16,
+                      1.76,
+                      5.16
+                    ],
+                    "hoodGaps": [
+                      [
+                        1.89,
+                        1.74,
+                        5.12
+                      ],
+                      [
+                        2.05,
+                        1.74,
+                        5.12
+                      ],
+                      [
+                        2.21,
+                        1.74,
+                        5.12
+                      ]
+                    ],
+                    "hoodGrille": [
+                      1.87,
+                      1.74,
+                      5.12
+                    ],
+                    "appliancesPowered": false
+                  }
+                }
+              }
+            },
+            "transform": {
+              "position": [
+                0,
+                0,
+                1.6
+              ],
+              "rotation": 0
+            },
+            "selectedInstances": [
+              [
+                "life-061-2",
+                "life-102-2"
+              ],
+              [
+                "life-061-3",
+                "life-102-3"
+              ],
+              [
+                "life-061-4",
+                "life-102-4"
+              ],
+              [
+                "life-061-5",
+                "life-102-5"
+              ],
+              [
+                "life-061-6",
+                "life-102-6"
+              ],
+              [
+                "life-061-7",
+                "life-102-7"
+              ],
+              [
+                "life-061-8",
+                "life-102-8"
+              ],
+              [
+                "life-061-9",
+                "life-102-9"
+              ],
+              [
+                "life-061-10",
+                "life-102-10"
+              ],
+              [
+                "life-061-11",
+                "life-102-11"
+              ]
+            ],
+            "omittedInstances": [
+              "life-061-0",
+              "life-061-1",
+              "life-061-12",
+              "life-061-13",
+              "life-061-14",
+              "life-061-15",
+              "life-061-16",
+              "life-061-17"
+            ],
+            "originalGeometryUnchanged": true
+          }
+        ]
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-park-paving-life-space-102-5853e699e0",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 2028
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 504
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-life-space-shell-102-a7385543f9",
+      "name": "真实窗洞、木梁与切角房间墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "author-room-entry",
+          "position": [
+            4.2,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.4,
+            2.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 1488
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 240
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-park-paving-room-61-7ed0896def",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 1212
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 300
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-room-shell-61-db7bd2af17",
+      "name": "真实窗洞、木梁与切角房间墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "author-room-entry",
+          "position": [
+            3,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.4,
+            2.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 1104
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "id": "source-life-037",
+      "name": "厨房操作台柜体",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.05
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.23,
+            0,
+            0.67
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -5
+            ],
+            "max": [
+              122,
+              82,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              82,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              58,
+              14,
+              2
+            ],
+            "max": [
+              62,
+              78,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              122,
+              82,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "左嵌芯门、铰链与右浅抽屉",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              14,
+              -5
+            ],
+            "max": [
+              114,
+              75,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "右开架搁板、门内层板和后管孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              34,
+              3
+            ],
+            "max": [
+              114,
+              45,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "厨房下柜：左单门、右浅屉双开格、内腔、背部管线通孔与独立角柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -5
+            ],
+            "max": [
+              122,
+              82,
+              62
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-038",
+      "name": "厨房台面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.24,
+            0,
+            0.64
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "sink-cutout",
+          "kind": "counter-cutout",
+          "position": [
+            0.1,
+            0,
+            0.16
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.46,
+            0,
+            0.35
+          ],
+          "pitch": 0.01
+        },
+        {
+          "id": "hob-cutout",
+          "kind": "counter-cutout",
+          "position": [
+            0.7000000000000001,
+            0,
+            0.16
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            0.43,
+            0,
+            0.35
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              124,
+              13,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "承托框、浅色石台与后挡水条",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              124,
+              13,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "真实通孔、嵌装边和检修线槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              4,
+              14
+            ],
+            "max": [
+              115,
+              6,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "厨房台面：厚石沿、倒阶外边、后挡水条、独立水槽与灶具安装孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              124,
+              13,
+              64
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            10,
+            0,
+            16
+          ],
+          "max": [
+            56,
+            6,
+            51
+          ]
+        },
+        {
+          "min": [
+            70,
+            0,
+            16
+          ],
+          "max": [
+            113,
+            6,
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-room-kitchen-sink-cabinet-5947a25623",
+      "name": "保留原下柜的水槽上口避让派生",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.05
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.23,
+            0,
+            0.67
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -5
+            ],
+            "max": [
+              122,
+              82,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              120,
+              82,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              58,
+              14,
+              2
+            ],
+            "max": [
+              62,
+              78,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              122,
+              82,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "左嵌芯门、铰链与右浅抽屉",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              14,
+              -5
+            ],
+            "max": [
+              114,
+              75,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "右开架搁板、门内层板和后管孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              34,
+              3
+            ],
+            "max": [
+              114,
+              45,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "厨房下柜：左单门、右浅屉双开格、内腔、背部管线通孔与独立角柱",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -5
+            ],
+            "max": [
+              122,
+              82,
+              62
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-room-kitchen-fitted-worktops-0a0c140f36",
+      "name": "匹配盆体的真孔台面与独立灶台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 60
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-life-040",
+      "name": "厨房水槽及龙头",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.66,
+            0,
+            0.48
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              66,
+              45,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "盆体、空腔、翻边与内收盆底",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              66,
+              18,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "排水篦、溢流口与龙头阀座",
+          "parent": "root",
+          "region": {
+            "min": [
+              29,
+              3,
+              20
+            ],
+            "max": [
+              57,
+              45,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "厨房水槽：斜收盆底、贯通盆腔、溢流槽、滤水篦和分层出水嘴",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              66,
+              45,
+              48
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            8,
+            6,
+            8
+          ],
+          "max": [
+            58,
+            18,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-039",
+      "name": "厨房灶具及烟罩",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.72,
+            0,
+            0.55
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              72,
+              130,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "灶面、炉圈与透空锅架",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              72,
+              11,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "烟罩折级外壳、过滤格栅与工作灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              84,
+              -2
+            ],
+            "max": [
+              71,
+              102,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "烟道、法兰和顶部贯通口",
+          "parent": "root",
+          "region": {
+            "min": [
+              25,
+              102,
+              26
+            ],
+            "max": [
+              47,
+              130,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双灶及烟罩：有孔支锅架、分离旋钮、滤网下口、折级烟罩和排烟接口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              72,
+              130,
+              52
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-room-kitchen-wall-mounts-1c07319a7a",
+      "name": "吊柜与烟罩实际壁挂承件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-life-041",
+      "name": "厨房吊柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "wall-mount",
+          "kind": "wall-mount",
+          "position": [
+            0.4,
+            0.34,
+            0.34
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "size": [
+            0.8,
+            0.68,
+            0
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -6
+            ],
+            "max": [
+              80,
+              68,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "悬挂柜框与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              2,
+              0
+            ],
+            "max": [
+              80,
+              68,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四扇前门、铰链和细框玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              6,
+              -6
+            ],
+            "max": [
+              77,
+              63,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "顶底包角、安装梁和两处下照灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -4
+            ],
+            "max": [
+              80,
+              66,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "厨房吊柜：双实门、双玻璃门、双层搁板、下照灯和后挂梁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -6
+            ],
+            "max": [
+              80,
+              68,
+              34
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-043",
+      "name": "冰箱/冷藏柜外壳",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.08
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.7100000000000001,
+            0,
+            0.78
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -8
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              68,
+              182,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              55,
+              2
+            ],
+            "max": [
+              64,
+              140,
+              65
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "隔热壳、内部搁板和橡胶调平脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -2
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "双门板、门封线和长拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              15,
+              -8
+            ],
+            "max": [
+              64,
+              174,
+              0
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "下格栅、可见换热背肋和角锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              5,
+              -7
+            ],
+            "max": [
+              68,
+              182,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "双开冷藏柜：内腔、门封凹槽、铜长拉手、右门控制屏与散热格栅",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -8
+            ],
+            "max": [
+              70,
+              182,
+              70
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-042",
+      "name": "食品储物柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.99,
+            0,
+            0.54
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -6
+            ],
+            "max": [
+              98,
+              170,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              96,
+              170,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              46,
+              14,
+              2
+            ],
+            "max": [
+              50,
+              166,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              98,
+              170,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "左分层与右内层板",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              40,
+              3
+            ],
+            "max": [
+              92,
+              127,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "右凹芯长门、合页和底通风",
+          "parent": "root",
+          "region": {
+            "min": [
+              50,
+              14,
+              -6
+            ],
+            "max": [
+              91,
+              163,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "食品柜：左五层开放架、右长门、铜合页、内空腔和底部通风",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -6
+            ],
+            "max": [
+              98,
+              170,
+              48
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-048",
+      "name": "砧板与切配工具",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.42,
+            0,
+            0.28
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              42,
+              7,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "拼板砧面与四角金属包件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              42,
+              5,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "刀片、刃线、穿孔和铆接木柄",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              4,
+              9
+            ],
+            "max": [
+              37,
+              7,
+              19
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "切配工具：拼板砧面、凹入接汁槽、环形提耳、菜刀刃背与铆接木柄",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              42,
+              7,
+              28
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-021",
+      "name": "餐桌桌架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.4000000000000001,
+            0,
+            0.8200000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              140,
+              74,
+              82
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              138,
+              69,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              69,
+              0
+            ],
+            "max": [
+              140,
+              74,
+              82
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "攒边浅石芯餐桌、束腰、插肩牙头、套脚和角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              140,
+              74,
+              82
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-022",
+      "name": "餐椅",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.01,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.43,
+            0,
+            0.43
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              44,
+              88,
+              45
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              42,
+              44,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三枨透空靠背、回纹中牌、蓝灰坐垫、横枨与套脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              44,
+              88,
+              45
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-049",
+      "name": "茶具壶及杯组合",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.5,
+            0,
+            0.34
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              50,
+              28,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "茶盘外框、透水条板与集水底",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              50,
+              5,
+              34
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "方壶、分层盖、提梁与出水嘴",
+          "parent": "root",
+          "region": {
+            "min": [
+              22,
+              5,
+              9
+            ],
+            "max": [
+              44,
+              28,
+              25
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "四只空心杯与独立底足",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              5,
+              6
+            ],
+            "max": [
+              23,
+              14,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "茶具组合母体：透水茶盘、提梁壶、真实杯腔、回纹与铜角",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              50,
+              28,
+              34
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-restaurant-prep-island",
+      "name": "连续不锈钢备餐岛",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 60
+        },
+        {
+          "name": "material-79",
+          "material": 79,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "life-102-0",
+      "assetId": "architecture-civic-park-paving-life-space-102-5853e699e0",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-1",
+      "assetId": "architecture-civic-life-space-shell-102-a7385543f9",
+      "name": "真实窗洞、木梁与切角房间墙",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-2",
+      "assetId": "architecture-civic-room-kitchen-sink-cabinet-5947a25623",
+      "name": "保留原下柜的水槽上口避让派生",
+      "position": [
+        0.3,
+        0,
+        6.46
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-3",
+      "assetId": "architecture-civic-room-kitchen-fitted-worktops-0a0c140f36",
+      "name": "匹配盆体的真孔台面与独立灶台",
+      "position": [
+        0,
+        0,
+        1.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-4",
+      "assetId": "source-life-040",
+      "name": "厨房水槽及龙头",
+      "position": [
+        0.53,
+        0.7,
+        6.53
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-5",
+      "assetId": "source-life-037",
+      "name": "厨房操作台柜体",
+      "position": [
+        1.6,
+        0,
+        6.46
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-6",
+      "assetId": "source-life-039",
+      "name": "厨房灶具及烟罩",
+      "position": [
+        1.8,
+        0.88,
+        6.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-7",
+      "assetId": "architecture-civic-room-kitchen-wall-mounts-1c07319a7a",
+      "name": "吊柜与烟罩实际壁挂承件",
+      "position": [
+        0,
+        0,
+        1.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-8",
+      "assetId": "source-life-041",
+      "name": "厨房吊柜",
+      "position": [
+        0.48,
+        1.4,
+        6.86
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-9",
+      "assetId": "source-life-043",
+      "name": "冰箱/冷藏柜外壳",
+      "position": [
+        3.2,
+        0,
+        6.46
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-10",
+      "assetId": "source-life-042",
+      "name": "食品储物柜",
+      "position": [
+        4.5,
+        0,
+        6.68
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-11",
+      "assetId": "source-life-048",
+      "name": "砧板与切配工具",
+      "position": [
+        2.05,
+        0.88,
+        6.59
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-12",
+      "assetId": "architecture-restaurant-prep-island",
+      "name": "连续不锈钢备餐岛",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-13",
+      "assetId": "source-life-048",
+      "name": "砧板与切配工具",
+      "position": [
+        3.3,
+        0.9,
+        2.92
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-14",
+      "assetId": "source-life-021",
+      "name": "餐桌桌架",
+      "position": [
+        6.3,
+        0,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-102-15",
+      "assetId": "source-life-022",
+      "name": "餐椅",
+      "position": [
+        6.95,
+        0,
+        2.65
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "life-102-16",
+      "assetId": "source-life-022",
+      "name": "餐椅",
+      "position": [
+        7.65,
+        0,
+        2.65
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "life-102-17",
+      "assetId": "source-life-022",
+      "name": "餐椅",
+      "position": [
+        6.5,
+        0,
+        4.08
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

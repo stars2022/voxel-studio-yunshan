@@ -15,9 +15,9 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 624,
-    "remainingReferenceEntries": 169,
-    "completedReferenceSheets": 52,
+    "referenceCandidates": 636,
+    "remainingReferenceEntries": 157,
+    "completedReferenceSheets": 53,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
@@ -30,33 +30,33 @@
       "generatedEntries": 694,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 624,
+      "atlasReferenceCandidates": 636,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 108
+      "atlasAssemblyCandidates": 120
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M053",
+    "sheet": "M054",
     "state": "queued",
     "ids": [
-      "LIFE-062",
-      "LIFE-063",
-      "LIFE-097",
-      "LIFE-098",
-      "LIFE-099",
-      "LIFE-100",
-      "LIFE-101",
-      "LIFE-102",
-      "LIFE-103",
-      "LIFE-104",
-      "LIFE-105",
-      "LIFE-128"
+      "LIFE-129",
+      "LIFE-130",
+      "LIFE-131",
+      "LIFE-132",
+      "LIFE-133",
+      "LIFE-134",
+      "LIFE-135",
+      "LIFE-136",
+      "LIFE-137",
+      "LIFE-138",
+      "LIFE-139",
+      "LIFE-160"
     ],
-    "scope": "9个卫生间/储物/市场/商店/厨房/工坊/仓储/粮柜/教室空间组合及3套桌面菜品；升级旧配置，保留原件与原状态边界。"
+    "scope": "12个教育、文化、实验、调度、数据、医护与议事空间；升级旧配置，保留原件和未绑定的原控制器边界。"
   },
-  "nextBatch": "M053",
+  "nextBatch": "M054",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,21 +68,21 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M052共624条技术参考候选，余169；513独立图册母版、3共用引用、108图册组合，人工美术验收0。"
+    "M001–M053共636条技术参考候选，余157；513独立图册母版、3共用引用、120图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续优先：最小组件体素；斜面和曲面连续；天空、星空使用实际贴图。",
-    "M052完成12组合/22有限形态，新增基础母版0；8新环境组合及4旧住宅配置升级。累计624/793，余169。全库532基础候选、155组合、694已生成条目、374未制作。",
-    "整库504项测试503首轮通过，唯一旧506角色断言更新为511后单项复验通过；当前最初6项M052均通过；最终加入家具逐格用途复核后7项全部复验通过，旋转方向光另复验。构建/类型、22形态导出、121贴图实例、66份GLB前景边界及36默认截图均通过；公开MCP实际流程通过，次数见正式validation.json。不是把重跑次数相加。",
-    "正式证据 artifacts/atlas/atlas-20261005130251。云/雾/雨PNG实际内嵌GLB并随包；日月方向光实际导出，半球光须消费端显式配置。背景天球不参与前景边界，普通查看器需按extras单独绘制天空。",
-    "511材质角色256+255同事务，512的style/palette上限保持。M052新增5个非碰撞water用途且零发光，外来ID实核保留。后续新用途须设计语义与容量兼容，不借同色材质或直接扩上限。",
-    "M052当前家具配方原件保持，历史版本另存；厨房真孔台面、盆底钢承枨、柜体逐格删除派生与烟罩进气槽分别核验。纯原生柜体以真实面连通检查，不套用混合网格细件附着检查。小家具安装相位不重栅格连续坡面。",
-    "M053参考图和12条CSV已读，work/m053/reference.json及review.json为准备，尚未生产模型。097/098/099仅桌面成品菜，不扩展餐厅；读取dish与烹饪/消耗的源合同保持未绑定。",
-    "LIFE105源隔离原型未集成v4、续班/历史上限FAIL必须保留。库存、所有权、预算、售货、工作到岗、服务队列、工资、课堂/考试与真实分钟不可由几何通过冒称集成。",
-    "升级LIFE062后复核tests/production.test.ts中旧公开preload缺母版用例；该用例需按仍适用的旧合同调整，不能让旧假设阻止授权升级。",
-    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。全部参考候选仍不等于人工美术验收，完整1068清单的未制作条目另计。",
-    "M052最终复核另修正5种家具材质派生，最终7项专项重验；原家具当前配方件与19项历史母版/导出均随包。005/006/017的已有木收边差异逐格记录；002/003/004/018/108的材质派生另存，几何/碰撞/接口不变。源淤泥编号ENV073已去除。"
+    "M053完成12组合/13有限形态，新增基础母版0；9空间与3桌面菜品升级。累计636/793，余157。全库532基础候选、155组合、694已生成条目、374未制作。",
+    "511项整库测试全部通过，含6组M053专项；最终原生柜体断言另复验1项通过，不叠加计数。构建、最终类型、13形态导出及9组真实MCP流程通过。36默认截图含27张验证后复用、9张重拍；7张额外MCP视图。正式证据 artifacts/atlas/atlas-20261005144848。",
+    "512材质角色按256+256同事务，512上限保持。cookedFish独立food/非碰撞/零发光。后续用途在容量内设计，不按颜色借材质或直接扩上限。",
+    "M053卫生间真地漏/柜口与有限隐私门、11碗盘真空腔/46食材接触、6套学生完整桌椅净空均核验。最小细件体素，棚面/讲台/菜叶/餐具连续。原件与材料派生分开，厨房102复用061父模板和实际拟合组件。",
+    "M054参考图与12条CSV已读取、实际看图，work/m054/reference.json和review.json为准备，尚未制作。111已含桌椅，129不重复加022；131含书卷档案，136/137/139须核床边与搬运通道。",
+    "复用M052 residentialFurniture的002/004/018/108材料派生和M053 spaceFurniture的111派生；需检查其他旧家具的实际用途。原件、源哈希、逐格差异和历史独立导出保留。",
+    "M054课程/考试/医护/药房/急救/调度/数据/议事均只作作者空间，不能冒称真实分钟或原控制器已绑定；LIFE160原法院/监狱完整玩法未实现边界保留。",
+    "LIFE105隔离原型未集成v4、续班/历史上限FAIL继续保留。库存、所有权、预算、工资、队列和烹饪不由几何通过替代。",
+    "升级LIFE129后复核tests/production.test.ts旧preload缺母版用例，改用经过核对的仍旧配置ID，保留原51布局直接测试。",
+    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。全部参考候选仍不等于人工美术验收，完整1068清单未制作条目另计。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -91,9 +91,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M052",
-    "run": "atlas-20261005130251",
+    "sheet": "M053",
+    "run": "atlas-20261005144848",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261005130251"
+    "evidence": "artifacts/atlas/atlas-20261005144848"
   }
 }

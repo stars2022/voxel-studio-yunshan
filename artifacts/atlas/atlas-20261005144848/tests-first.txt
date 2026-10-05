@@ -1,0 +1,37 @@
+✔ M053 thirteen finite forms retain closed continuous parts and attached native minimum cells (13232.211046ms)
+✔ M053 real room routes, fixture bearings, drain and seated classroom clearances (106898.45498ms)
+✖ M053 actual prepared food, fabric, waterproofing and book-cover roles remain independently assigned (750.168068ms)
+✔ M053 canonical originals, explicit vanity removal and original public-counter failure are preserved (13781.185589ms)
+✔ M053 public privacy-door states, foreign IDs, exact512-role cap and undo are atomic (4959.160254ms)
+✔ M053 a whole appearance change and rotated placement preserve all authoritative geometry (635.450772ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 141003.9372
+
+✖ failing tests:
+
+test at tests/atlas-life-space-assemblies.test.ts:9:1
+✖ M053 actual prepared food, fabric, waterproofing and book-cover roles remain independently assigned (750.168068ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3 !== 92
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-life-space-assemblies.test.ts:9:1518)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 92,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
