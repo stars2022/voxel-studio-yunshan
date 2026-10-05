@@ -1,0 +1,3562 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532,
+      "weatherCloud": 533,
+      "valleyFog": 534,
+      "rainDroplet": 535,
+      "snowCover": 536,
+      "frostCover": 537,
+      "cookedFish": 538
+    }
+  },
+  "assemblies": {
+    "life-161": {
+      "id": "life-161",
+      "name": "市长/公务办公配置",
+      "version": 1,
+      "instances": [
+        {
+          "id": "life-161-0",
+          "assetId": "architecture-civic-park-paving-life-space-161-f42506c4f0",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-1",
+          "assetId": "architecture-civic-life-space-shell-161-0e76565455",
+          "name": "真实窗洞、木梁与切角房间墙",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-2",
+          "assetId": "source-life-016",
+          "name": "办公桌桌架",
+          "position": [
+            0.75,
+            0,
+            6.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-3",
+          "assetId": "source-life-017",
+          "name": "办公桌抽屉模块",
+          "position": [
+            0.83,
+            0,
+            6.78
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-4",
+          "assetId": "architecture-room-material-18",
+          "name": "桌面显示器与支座 · 用途材质派生",
+          "position": [
+            1.44,
+            0.76,
+            7.03
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-5",
+          "assetId": "source-life-019",
+          "name": "桌面输入设备托板",
+          "position": [
+            1.42,
+            0.76,
+            6.71
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-6",
+          "assetId": "source-life-020",
+          "name": "书桌灯",
+          "position": [
+            0.85,
+            0.76,
+            7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-7",
+          "assetId": "source-life-106",
+          "name": "书册母版",
+          "position": [
+            1.1,
+            0.76,
+            6.76
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-8",
+          "assetId": "source-life-022",
+          "name": "餐椅",
+          "position": [
+            1.9,
+            0,
+            6.47
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "life-161-9",
+          "assetId": "source-life-144",
+          "name": "公共预算账簿柜",
+          "position": [
+            3.2,
+            0,
+            7.6
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-10",
+          "assetId": "architecture-institution-material-148",
+          "name": "外交仪仗旗座 · 独立光学用途",
+          "position": [
+            6.9,
+            0,
+            7.3
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-11",
+          "assetId": "architecture-institution-material-147",
+          "name": "城市信息查询终端 · 独立光学用途",
+          "position": [
+            7.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-161-12",
+          "assetId": "source-life-141",
+          "name": "会议桌及席位",
+          "position": [
+            3.3,
+            0,
+            3
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "LIFE-161",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M055",
+          "slot": 1,
+          "imageSHA256": "87a756d5deb81a239133ce6109320ed20b8f5dd2602fafaa40e96305a1fe93ae"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-003",
+          "BUILT-015",
+          "BUILT-017",
+          "BUILT-059",
+          "ENV-094",
+          "LIFE-016",
+          "LIFE-017",
+          "LIFE-018",
+          "LIFE-019",
+          "LIFE-020",
+          "LIFE-022",
+          "LIFE-106",
+          "LIFE-141",
+          "LIFE-144",
+          "LIFE-147",
+          "LIFE-148"
+        ],
+        "instanceGroups": {
+          "life-161-0": "park-fixture",
+          "life-161-1": "room-shell",
+          "life-161-2": "furniture",
+          "life-161-3": "furniture",
+          "life-161-4": "furniture",
+          "life-161-5": "furniture",
+          "life-161-6": "furniture",
+          "life-161-7": "furniture",
+          "life-161-8": "furniture",
+          "life-161-9": "furniture",
+          "life-161-10": "furniture",
+          "life-161-11": "furniture",
+          "life-161-12": "furniture"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "civil office entry",
+            "points": [
+              [
+                4.5,
+                0,
+                0.4
+              ],
+              [
+                4.5,
+                0,
+                1.4
+              ],
+              [
+                6.3,
+                0,
+                1.4
+              ],
+              [
+                6.3,
+                0,
+                6
+              ],
+              [
+                2.65,
+                0,
+                6
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "meeting back seats",
+            "points": [
+              [
+                6.3,
+                0,
+                5.1
+              ],
+              [
+                3.7,
+                0,
+                5.1
+              ]
+            ],
+            "width": 0.7
+          }
+        ],
+        "scope": "Author institutional and cultural cutaways; originals and explicit continuous alternatives retained. Finite body and route checks; no original FloorPlan, identity, budget, evidence, court/prison, welfare, audio or cultural schedule integration. Static zero-emission indicators do not indicate authoritative state. Awaiting human art acceptance.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "forest": [],
+        "park": {
+          "pads": [
+            {
+              "instance": "life-161-0",
+              "rect": [
+                0,
+                0,
+                9,
+                8.2
+              ],
+              "y": 0,
+              "bottom": -0.28,
+              "hole": null
+            }
+          ],
+          "guards": [],
+          "seats": [],
+          "steps": [],
+          "rockContacts": [],
+          "drains": [],
+          "viewRays": [],
+          "wayfinding": [],
+          "activityPoints": [],
+          "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance."
+        },
+        "room": {
+          "dimensions": [
+            9,
+            2.8,
+            8.2
+          ],
+          "floorY": 0,
+          "entrance": [
+            4.5,
+            0,
+            0
+          ],
+          "usePoints": [
+            {
+              "key": "budget records",
+              "point": [
+                3.75,
+                0,
+                6.85
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "information terminal",
+              "point": [
+                8,
+                0,
+                0.48
+              ],
+              "width": 0.7
+            }
+          ],
+          "seats": [
+            {
+              "key": "office chair",
+              "instance": "life-161-8",
+              "point": [
+                1.68,
+                0.465,
+                6.250000000000001
+              ],
+              "approach": [
+                2.65,
+                0,
+                6.15
+              ]
+            }
+          ],
+          "supportedPairs": [
+            {
+              "upper": "life-161-4",
+              "lower": "life-161-2",
+              "points": [
+                [
+                  1.545,
+                  0.76,
+                  7.055000000000001
+                ],
+                [
+                  1.575,
+                  0.76,
+                  7.155
+                ],
+                [
+                  1.705,
+                  0.76,
+                  7.075
+                ],
+                [
+                  1.6949999999999998,
+                  0.76,
+                  7.115
+                ],
+                [
+                  1.685,
+                  0.76,
+                  7.155
+                ],
+                [
+                  1.835,
+                  0.76,
+                  7.055000000000001
+                ],
+                [
+                  1.825,
+                  0.76,
+                  7.095000000000001
+                ],
+                [
+                  1.815,
+                  0.76,
+                  7.135000000000001
+                ],
+                [
+                  1.805,
+                  0.76,
+                  7.175
+                ],
+                [
+                  1.555,
+                  0.76,
+                  7.205
+                ],
+                [
+                  1.685,
+                  0.76,
+                  7.215
+                ],
+                [
+                  1.835,
+                  0.76,
+                  7.205
+                ]
+              ],
+              "source": "finite samples of actual lowest solid native cells",
+              "nativeFootCells": 760
+            },
+            {
+              "upper": "life-161-5",
+              "lower": "life-161-2",
+              "points": [
+                [
+                  1.4249999999999998,
+                  0.76,
+                  6.715
+                ],
+                [
+                  1.505,
+                  0.76,
+                  6.775
+                ],
+                [
+                  1.4249999999999998,
+                  0.76,
+                  6.845
+                ],
+                [
+                  1.665,
+                  0.76,
+                  6.745
+                ],
+                [
+                  1.585,
+                  0.76,
+                  6.815
+                ],
+                [
+                  1.825,
+                  0.76,
+                  6.715
+                ],
+                [
+                  1.7449999999999999,
+                  0.76,
+                  6.785
+                ],
+                [
+                  1.825,
+                  0.76,
+                  6.845
+                ],
+                [
+                  1.4249999999999998,
+                  0.76,
+                  6.875
+                ],
+                [
+                  1.505,
+                  0.76,
+                  6.935
+                ],
+                [
+                  1.585,
+                  0.76,
+                  6.925
+                ],
+                [
+                  1.825,
+                  0.76,
+                  6.905
+                ]
+              ],
+              "source": "finite samples of actual lowest solid native cells",
+              "nativeFootCells": 1248
+            },
+            {
+              "upper": "life-161-6",
+              "lower": "life-161-2",
+              "points": [
+                [
+                  0.875,
+                  0.76,
+                  7.075
+                ],
+                [
+                  0.885,
+                  0.76,
+                  7.105
+                ],
+                [
+                  0.895,
+                  0.76,
+                  7.135
+                ],
+                [
+                  1.045,
+                  0.76,
+                  7.075
+                ],
+                [
+                  1.035,
+                  0.76,
+                  7.115
+                ],
+                [
+                  1.025,
+                  0.76,
+                  7.155
+                ],
+                [
+                  0.9249999999999999,
+                  0.76,
+                  7.185
+                ],
+                [
+                  0.9349999999999999,
+                  0.76,
+                  7.215
+                ],
+                [
+                  0.945,
+                  0.76,
+                  7.245
+                ],
+                [
+                  0.955,
+                  0.76,
+                  7.275
+                ],
+                [
+                  1.055,
+                  0.76,
+                  7.195
+                ],
+                [
+                  1.045,
+                  0.76,
+                  7.235
+                ]
+              ],
+              "source": "finite samples of actual lowest solid native cells",
+              "nativeFootCells": 525
+            },
+            {
+              "upper": "life-161-7",
+              "lower": "life-161-2",
+              "points": [
+                [
+                  1.1025,
+                  0.76,
+                  6.7625
+                ],
+                [
+                  1.1675,
+                  0.76,
+                  6.8325
+                ],
+                [
+                  1.2325000000000002,
+                  0.76,
+                  6.8275
+                ],
+                [
+                  1.2775,
+                  0.76,
+                  6.8325
+                ],
+                [
+                  1.1225,
+                  0.76,
+                  6.9075
+                ],
+                [
+                  1.1875,
+                  0.76,
+                  6.9025
+                ],
+                [
+                  1.2925,
+                  0.76,
+                  6.9025
+                ],
+                [
+                  1.1575000000000002,
+                  0.76,
+                  6.9775
+                ],
+                [
+                  1.2225000000000001,
+                  0.76,
+                  6.9725
+                ],
+                [
+                  1.3075,
+                  0.76,
+                  6.9725
+                ],
+                [
+                  1.1125,
+                  0.76,
+                  7.0525
+                ],
+                [
+                  1.2575,
+                  0.76,
+                  7.0525
+                ]
+              ],
+              "source": "finite samples of actual lowest solid native cells",
+              "nativeFootCells": 2852
+            }
+          ],
+          "mounts": [],
+          "sourceLegacy": "life-20261002143409-scene-161.ysvox.json",
+          "legacyLayoutRetainedInOriginalFile": true,
+          "originalFloorPlanBound": false,
+          "utilitiesBound": false,
+          "shell": "life-161-1",
+          "bundledSeats": [
+            {
+              "key": "civil meeting",
+              "instance": "life-161-12",
+              "point": [
+                3.71,
+                0.52,
+                2.6
+              ],
+              "approach": [
+                3.71,
+                0,
+                1.9
+              ],
+              "lowerTop": 0.7,
+              "wholeSetExcluded": false
+            },
+            {
+              "key": "civil meeting",
+              "instance": "life-161-12",
+              "point": [
+                4.41,
+                0.52,
+                2.6
+              ],
+              "approach": [
+                4.41,
+                0,
+                1.9
+              ],
+              "lowerTop": 0.7,
+              "wholeSetExcluded": false
+            },
+            {
+              "key": "civil meeting",
+              "instance": "life-161-12",
+              "point": [
+                5.09,
+                0.52,
+                2.6
+              ],
+              "approach": [
+                5.09,
+                0,
+                1.9
+              ],
+              "lowerTop": 0.7,
+              "wholeSetExcluded": false
+            },
+            {
+              "key": "civil meeting",
+              "instance": "life-161-12",
+              "point": [
+                3.71,
+                0.52,
+                4.4
+              ],
+              "approach": [
+                3.71,
+                0,
+                5.1
+              ],
+              "lowerTop": 0.7,
+              "wholeSetExcluded": false
+            },
+            {
+              "key": "civil meeting",
+              "instance": "life-161-12",
+              "point": [
+                4.41,
+                0.52,
+                4.4
+              ],
+              "approach": [
+                4.41,
+                0,
+                5.1
+              ],
+              "lowerTop": 0.7,
+              "wholeSetExcluded": false
+            },
+            {
+              "key": "civil meeting",
+              "instance": "life-161-12",
+              "point": [
+                5.09,
+                0.52,
+                4.4
+              ],
+              "approach": [
+                5.09,
+                0,
+                5.1
+              ],
+              "lowerTop": 0.7,
+              "wholeSetExcluded": false
+            }
+          ],
+          "clearVolumes": [],
+          "exactContacts": [],
+          "stageChecks": [],
+          "includedSeats": [],
+          "curtains": []
+        },
+        "originalStatus": {
+          "roleRulesBound": false,
+          "courtPrisonFullGameplayImplemented": false,
+          "sourceLimitation": "原法院/监狱完整玩法未实现不能借美术声明完成"
+        }
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-park-paving-life-space-161-f42506c4f0",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 2700
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 672
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-life-space-shell-161-0e76565455",
+      "name": "真实窗洞、木梁与切角房间墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "author-room-entry",
+          "position": [
+            4.5,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.4,
+            2.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 1584
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 264
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "id": "source-life-016",
+      "name": "办公桌桌架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.4000000000000001,
+            0,
+            0.7000000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              140,
+              76,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              138,
+              71,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              71,
+              0
+            ],
+            "max": [
+              140,
+              76,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "浅石嵌芯书桌、束腰、侧枨和真实后走线槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              140,
+              76,
+              70
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-017",
+      "name": "办公桌抽屉模块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.43,
+            0,
+            0.51
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -3
+            ],
+            "max": [
+              42,
+              70,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              70,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              31,
+              2
+            ],
+            "max": [
+              36,
+              51,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              42,
+              70,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立木面三屉箱、箱内空腔与黑金凹拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -3
+            ],
+            "max": [
+              42,
+              70,
+              48
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-018",
+      "name": "桌面显示器与支座",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.6,
+            0,
+            0.19999999999999998
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              60,
+              46,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "分层基座、颈架及固定鞍座",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              0,
+              1
+            ],
+            "max": [
+              50,
+              16,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "通风后壳与可分选框架",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              14,
+              4
+            ],
+            "max": [
+              60,
+              46,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "屏内静态体素图形：刻度、回形导航和状态列",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              18,
+              3
+            ],
+            "max": [
+              54,
+              41,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "攒框终端屏、分层石座、角榫、后壳散热和静态体素界面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              60,
+              46,
+              21
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-room-material-18",
+      "name": "桌面显示器与支座 · 用途材质派生",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.6,
+            0,
+            0.19999999999999998
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              60,
+              46,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "分层基座、颈架及固定鞍座",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              0,
+              1
+            ],
+            "max": [
+              50,
+              16,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "通风后壳与可分选框架",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              14,
+              4
+            ],
+            "max": [
+              60,
+              46,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "屏内静态体素图形：刻度、回形导航和状态列",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              18,
+              3
+            ],
+            "max": [
+              54,
+              41,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "攒框终端屏、分层石座、角榫、后壳散热和静态体素界面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              60,
+              46,
+              21
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-019",
+      "name": "桌面输入设备托板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.52,
+            0,
+            0.24
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              52,
+              7,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底壳、木围边与金属角锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              52,
+              5,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "四排键帽、长空格和分离旋钮",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              3,
+              4
+            ],
+            "max": [
+              50,
+              7,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "走线座和侧面状态条",
+          "parent": "root",
+          "region": {
+            "min": [
+              42,
+              3,
+              0
+            ],
+            "max": [
+              47,
+              4,
+              1
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "输入托板：独立键帽与键间槽、掌托木边、右侧旋钮及后走线口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              52,
+              7,
+              24
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-020",
+      "name": "书桌灯",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.25,
+            0,
+            0.26
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              27,
+              47,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "退层石座、脚垫和触控区",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              5
+            ],
+            "max": [
+              27,
+              8,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双木臂、抱箍和三个轴关节",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              7,
+              9
+            ],
+            "max": [
+              21,
+              47,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "悬吊灯框、内缩灯芯和透空格栅",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              33,
+              2
+            ],
+            "max": [
+              26,
+              41,
+              17
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "折臂台灯：双木臂、销轴夹耳、退层石座、悬挂灯罩与格栅底口",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              27,
+              47,
+              28
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-106",
+      "name": "书册母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.005,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.23500000000000001,
+            0,
+            0.31
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              46,
+              12,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "硬封面、弧阶书脊与内退页芯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              46,
+              11,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "露出页边与四道书脊筋",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              1,
+              3
+            ],
+            "max": [
+              45,
+              10,
+              60
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "八只包角、封面浅嵌框及中心空白铭签",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              46,
+              12,
+              62
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "书册：硬封面、内退书页、书脊筋、封角、浅刻页缝与嵌芯书签",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              0
+            ],
+            "max": [
+              46,
+              12,
+              62
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-022",
+      "name": "餐椅",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.01,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.43,
+            0,
+            0.43
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              44,
+              88,
+              45
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              42,
+              44,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三枨透空靠背、回纹中牌、蓝灰坐垫、横枨与套脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              44,
+              88,
+              45
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "source-life-144",
+      "name": "公共预算账簿柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.19,
+            0,
+            0.47
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -3
+            ],
+            "max": [
+              118,
+              156,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              116,
+              156,
+              42
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              118,
+              156,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承框石脚、空心侧板、分层板与顶面",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -2
+            ],
+            "max": [
+              118,
+              156,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "六本高册、五本短册及三摞档案纸盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              63,
+              6
+            ],
+            "max": [
+              104,
+              140,
+              36
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "下部双门和嵌芯回纹、双铰链与铜拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              16,
+              -3
+            ],
+            "max": [
+              111,
+              55,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "预算账簿柜：双层开放书架、带标签账簿、纸板档案盒、下双门与框榫",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -3
+            ],
+            "max": [
+              118,
+              156,
+              44
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            10,
+            98,
+            3
+          ],
+          "max": [
+            53,
+            102,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-148",
+      "name": "外交仪仗旗座",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.76,
+            0,
+            0.39
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              78,
+              212,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石台阶、木金属灯座和承插套筒",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              42,
+              45,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "分节方杆、三道夹箍和封顶榫",
+          "parent": "root",
+          "region": {
+            "min": [
+              17,
+              40,
+              17
+            ],
+            "max": [
+              27,
+              212,
+              25
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "连续褶皱旗布、上下包边和两处挂耳",
+          "parent": "root",
+          "region": {
+            "min": [
+              23,
+              78,
+              18
+            ],
+            "max": [
+              78,
+              200,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "沿褶皱连续织入的双菱形纹样",
+          "parent": "root",
+          "region": {
+            "min": [
+              33,
+              121,
+              19
+            ],
+            "max": [
+              65,
+              153,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "单面仪仗旗：三层基座、嵌灯套筒、分节旗杆、夹环、连续折旗面与织入纹样",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              78,
+              212,
+              41
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            24,
+            83,
+            20
+          ],
+          "max": [
+            25,
+            85,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-institution-material-148",
+      "name": "外交仪仗旗座 · 独立光学用途",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.76,
+            0,
+            0.39
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              78,
+              212,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "石台阶、木金属灯座和承插套筒",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              42,
+              45,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "分节方杆、三道夹箍和封顶榫",
+          "parent": "root",
+          "region": {
+            "min": [
+              17,
+              40,
+              17
+            ],
+            "max": [
+              27,
+              212,
+              25
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "连续褶皱旗布、上下包边和两处挂耳",
+          "parent": "root",
+          "region": {
+            "min": [
+              23,
+              78,
+              18
+            ],
+            "max": [
+              78,
+              200,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "沿褶皱连续织入的双菱形纹样",
+          "parent": "root",
+          "region": {
+            "min": [
+              33,
+              121,
+              19
+            ],
+            "max": [
+              65,
+              153,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "单面仪仗旗：三层基座、嵌灯套筒、分节旗杆、夹环、连续折旗面与织入纹样",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              2
+            ],
+            "max": [
+              78,
+              212,
+              41
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            24,
+            83,
+            20
+          ],
+          "max": [
+            25,
+            85,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-147",
+      "name": "城市信息查询终端",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.05
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.1500000000000001,
+            0,
+            0.6200000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四立柱与石脚、空心柜腔及上下背撑",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双石芯柜门、铜拉手与中分承板",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              14,
+              -3
+            ],
+            "max": [
+              111,
+              72,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "上部大屏、后壳通风和框端灯盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              92,
+              41
+            ],
+            "max": [
+              110,
+              161,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "阶梯斜面输入台、随坡嵌屏、独立键帽与贯通读卡槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              71,
+              -5
+            ],
+            "max": [
+              114,
+              97,
+              45
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "侧控灯、前铜销和后部走线通孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              33,
+              -2
+            ],
+            "max": [
+              115,
+              61,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "城市终端：空心双门柜、双层竖框大屏、倾斜输入台、实体按键、读卡孔与后检修口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            12,
+            20,
+            12
+          ],
+          "max": [
+            49,
+            65,
+            44
+          ]
+        },
+        {
+          "min": [
+            65,
+            20,
+            12
+          ],
+          "max": [
+            102,
+            65,
+            44
+          ]
+        },
+        {
+          "min": [
+            40,
+            24,
+            48
+          ],
+          "max": [
+            54,
+            34,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-institution-material-147",
+      "name": "城市信息查询终端 · 独立光学用途",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.05
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.1500000000000001,
+            0,
+            0.6200000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四立柱与石脚、空心柜腔及上下背撑",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双石芯柜门、铜拉手与中分承板",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              14,
+              -3
+            ],
+            "max": [
+              111,
+              72,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "上部大屏、后壳通风和框端灯盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              92,
+              41
+            ],
+            "max": [
+              110,
+              161,
+              52
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "阶梯斜面输入台、随坡嵌屏、独立键帽与贯通读卡槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              71,
+              -5
+            ],
+            "max": [
+              114,
+              97,
+              45
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "侧控灯、前铜销和后部走线通孔",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              33,
+              -2
+            ],
+            "max": [
+              115,
+              61,
+              6
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "城市终端：空心双门柜、双层竖框大屏、倾斜输入台、实体按键、读卡孔与后检修口",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              115,
+              164,
+              57
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            12,
+            20,
+            12
+          ],
+          "max": [
+            49,
+            65,
+            44
+          ]
+        },
+        {
+          "min": [
+            65,
+            20,
+            12
+          ],
+          "max": [
+            102,
+            65,
+            44
+          ]
+        },
+        {
+          "min": [
+            40,
+            24,
+            48
+          ],
+          "max": [
+            54,
+            34,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-141",
+      "name": "会议桌及席位",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.68
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.2,
+            0,
+            2.36
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -34
+            ],
+            "max": [
+              110,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              1
+            ],
+            "max": [
+              109,
+              36,
+              49
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              36,
+              0
+            ],
+            "max": [
+              110,
+              38,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "会议桌本体：四足、牙头、石芯桌面和走线槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              110,
+              39,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "桌端两块薄控制台和压角",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              38,
+              19
+            ],
+            "max": [
+              105,
+              42,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "近侧独立座椅 1",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              0,
+              -34
+            ],
+            "max": [
+              32,
+              52,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "远侧独立座椅 1",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              0,
+              59
+            ],
+            "max": [
+              33,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "近侧独立座椅 2",
+          "parent": "root",
+          "region": {
+            "min": [
+              43,
+              0,
+              -34
+            ],
+            "max": [
+              67,
+              52,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "远侧独立座椅 2",
+          "parent": "root",
+          "region": {
+            "min": [
+              44,
+              0,
+              59
+            ],
+            "max": [
+              68,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "近侧独立座椅 3",
+          "parent": "root",
+          "region": {
+            "min": [
+              77,
+              0,
+              -34
+            ],
+            "max": [
+              101,
+              52,
+              -9
+            ]
+          }
+        },
+        {
+          "id": "part-9",
+          "name": "远侧独立座椅 3",
+          "parent": "root",
+          "region": {
+            "min": [
+              78,
+              0,
+              59
+            ],
+            "max": [
+              102,
+              52,
+              84
+            ]
+          }
+        },
+        {
+          "id": "part-10",
+          "name": "会议桌席：石芯长桌、双列六椅、开放下枨、走线槽、端部控制屏和独立软垫",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -34
+            ],
+            "max": [
+              110,
+              52,
+              84
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            5,
+            6
+          ],
+          "max": [
+            95,
+            30,
+            44
+          ]
+        },
+        {
+          "min": [
+            41,
+            36,
+            23
+          ],
+          "max": [
+            63,
+            39,
+            25
+          ]
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "life-161-0",
+      "assetId": "architecture-civic-park-paving-life-space-161-f42506c4f0",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-1",
+      "assetId": "architecture-civic-life-space-shell-161-0e76565455",
+      "name": "真实窗洞、木梁与切角房间墙",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-2",
+      "assetId": "source-life-016",
+      "name": "办公桌桌架",
+      "position": [
+        0.75,
+        0,
+        6.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-3",
+      "assetId": "source-life-017",
+      "name": "办公桌抽屉模块",
+      "position": [
+        0.83,
+        0,
+        6.78
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-4",
+      "assetId": "architecture-room-material-18",
+      "name": "桌面显示器与支座 · 用途材质派生",
+      "position": [
+        1.44,
+        0.76,
+        7.03
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-5",
+      "assetId": "source-life-019",
+      "name": "桌面输入设备托板",
+      "position": [
+        1.42,
+        0.76,
+        6.71
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-6",
+      "assetId": "source-life-020",
+      "name": "书桌灯",
+      "position": [
+        0.85,
+        0.76,
+        7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-7",
+      "assetId": "source-life-106",
+      "name": "书册母版",
+      "position": [
+        1.1,
+        0.76,
+        6.76
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-8",
+      "assetId": "source-life-022",
+      "name": "餐椅",
+      "position": [
+        1.9,
+        0,
+        6.47
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "life-161-9",
+      "assetId": "source-life-144",
+      "name": "公共预算账簿柜",
+      "position": [
+        3.2,
+        0,
+        7.6
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-10",
+      "assetId": "architecture-institution-material-148",
+      "name": "外交仪仗旗座 · 独立光学用途",
+      "position": [
+        6.9,
+        0,
+        7.3
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-11",
+      "assetId": "architecture-institution-material-147",
+      "name": "城市信息查询终端 · 独立光学用途",
+      "position": [
+        7.5,
+        0,
+        1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-161-12",
+      "assetId": "source-life-141",
+      "name": "会议桌及席位",
+      "position": [
+        3.3,
+        0,
+        3
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

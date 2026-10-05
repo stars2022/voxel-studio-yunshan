@@ -1,0 +1,965 @@
+{
+  "status": "preparation-only",
+  "newModels": 0,
+  "rows": [
+    {
+      "id": "LIFE-153",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "LIFE-153",
+        "recipeRevision": 3,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "dimensionsM": [
+          2.4,
+          1.54,
+          1.64
+        ],
+        "parameters": {},
+        "features": "三席审判工位：木构长台、凹芯前围、三组固定屏与话筒、铜制平衡纹以及三把独立高背椅",
+        "geometryStage": "candidate",
+        "gameIntegration": false,
+        "animation": false,
+        "units": "metres",
+        "front": "-Z",
+        "reference": {
+          "sheet": "M009",
+          "slot": 7,
+          "imageSHA256": "364bf3033092f2f0aba41635ddd743afb07e6a17df0b9948fd35aa5832d3dd2d"
+        },
+        "dimensionBasis": "authored metres; no dimensions recoverable from a single independently scaled image tile",
+        "limitations": "该清单条目是三席工位：长台与三把座椅共四个预期分离结构，没有额外新增基础 ID。屏和话筒固定于台面，平衡纹为虚构装饰。无司法业务、录音或座椅活动机构。",
+        "kinematics": "static; no rig or runtime motion",
+        "referenceStage": "candidate"
+      },
+      "boundsM": {
+        "min": [
+          0,
+          0,
+          -0.02
+        ],
+        "max": [
+          2.4,
+          1.54,
+          1.58
+        ]
+      },
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              120,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "束腰、插肩榫、阶梯牙头与金属脚套",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              1
+            ],
+            "max": [
+              119,
+              43,
+              37
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "攒边嵌芯桌面与锁固角件",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              43,
+              0
+            ],
+            "max": [
+              120,
+              45,
+              38
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "前围、浅石侧芯及中央铜制平衡图形",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              7,
+              -1
+            ],
+            "max": [
+              114,
+              39,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "木台面分板、固定屏、弯颈话筒与木槌",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              44,
+              2
+            ],
+            "max": [
+              118,
+              64,
+              36
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "独立高背椅 1",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              0,
+              50
+            ],
+            "max": [
+              36,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "独立高背椅 2",
+          "parent": "root",
+          "region": {
+            "min": [
+              46,
+              0,
+              50
+            ],
+            "max": [
+              74,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "独立高背椅 3",
+          "parent": "root",
+          "region": {
+            "min": [
+              85,
+              0,
+              50
+            ],
+            "max": [
+              113,
+              77,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "三席审判工位：木构长台、凹芯前围、三组固定屏与话筒、铜制平衡纹以及三把独立高背椅",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              120,
+              77,
+              79
+            ]
+          }
+        }
+      ],
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.4,
+            0,
+            1.6
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            13,
+            5,
+            7
+          ],
+          "max": [
+            106,
+            32,
+            33
+          ]
+        }
+      ],
+      "materialCells": {
+        "wood": 37807,
+        "recess": 1038,
+        "wall": 1552,
+        "metal": 2670,
+        "bronze": 384,
+        "woodEdge": 3068,
+        "trim": 256,
+        "rubber": 48,
+        "glass": 380,
+        "screen": 380,
+        "polymer": 80,
+        "fabric": 10440
+      },
+      "nativeComponents": [
+        {
+          "cells": 36863,
+          "attached": false
+        },
+        {
+          "cells": 7080,
+          "attached": false
+        },
+        {
+          "cells": 7080,
+          "attached": false
+        },
+        {
+          "cells": 7080,
+          "attached": false
+        }
+      ],
+      "recipe": {
+        "size": [
+          2.4,
+          1.54,
+          1.64
+        ],
+        "pitch": 0.02,
+        "features": "三席审判工位：木构长台、凹芯前围、三组固定屏与话筒、铜制平衡纹以及三把独立高背椅",
+        "limits": "该清单条目是三席工位：长台与三把座椅共四个预期分离结构，没有额外新增基础 ID。屏和话筒固定于台面，平衡纹为虚构装饰。无司法业务、录音或座椅活动机构。",
+        "expectedComponents": 4
+      }
+    },
+    {
+      "id": "LIFE-154",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "LIFE-154",
+        "recipeRevision": 3,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "dimensionsM": [
+          1.92,
+          0.97,
+          0.66
+        ],
+        "parameters": {},
+        "features": "三连旁听座椅：共享下架、四组扶手柱、分体坐垫、后倾靠垫、包缝、背枨与石脚",
+        "geometryStage": "candidate",
+        "gameIntegration": false,
+        "animation": false,
+        "units": "metres",
+        "front": "-Z",
+        "reference": {
+          "sheet": "M009",
+          "slot": 8,
+          "imageSHA256": "364bf3033092f2f0aba41635ddd743afb07e6a17df0b9948fd35aa5832d3dd2d"
+        },
+        "dimensionBasis": "authored metres; no dimensions recoverable from a single independently scaled image tile",
+        "limitations": "三席为一个连座母版，共享下架而非三个新资产。布垫与木扶手、金属套箍、石脚分开；人体空间只做几何净空检查，不宣称结构承重认证或坐姿动画。",
+        "kinematics": "static; no rig or runtime motion",
+        "referenceStage": "candidate"
+      },
+      "boundsM": {
+        "min": [
+          0,
+          0,
+          0.02
+        ],
+        "max": [
+          1.92,
+          0.97,
+          0.66
+        ]
+      },
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              2
+            ],
+            "max": [
+              192,
+              97,
+              66
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四组前后柱、贯通下枨及每席承板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              2
+            ],
+            "max": [
+              192,
+              97,
+              66
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "三块独立软垫、折边和阶梯后倾靠背",
+          "parent": "root",
+          "region": {
+            "min": [
+              11,
+              37,
+              6
+            ],
+            "max": [
+              180,
+              92,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "三连旁听座椅：共享下架、四组扶手柱、分体坐垫、后倾靠垫、包缝、背枨与石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              2
+            ],
+            "max": [
+              192,
+              97,
+              66
+            ]
+          }
+        }
+      ],
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0.02
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.92,
+            0,
+            0.64
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            14,
+            5,
+            15
+          ],
+          "max": [
+            54,
+            28,
+            48
+          ]
+        }
+      ],
+      "materialCells": {
+        "wall": 2592,
+        "bronze": 288,
+        "metal": 4956,
+        "wood": 71895,
+        "fabricEdge": 25578,
+        "fabric": 95373
+      },
+      "nativeComponents": [
+        {
+          "cells": 200682,
+          "attached": false
+        }
+      ],
+      "recipe": {
+        "size": [
+          1.92,
+          0.97,
+          0.66
+        ],
+        "pitch": 0.01,
+        "features": "三连旁听座椅：共享下架、四组扶手柱、分体坐垫、后倾靠垫、包缝、背枨与石脚",
+        "limits": "三席为一个连座母版，共享下架而非三个新资产。布垫与木扶手、金属套箍、石脚分开；人体空间只做几何净空检查，不宣称结构承重认证或坐姿动画。"
+      }
+    },
+    {
+      "id": "LIFE-156",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "LIFE-156",
+        "recipeRevision": 3,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "dimensionsM": [
+          2.06,
+          1.98,
+          0.9
+        ],
+        "parameters": {},
+        "features": "双层床储物组合：木金属四柱、上下承床、两组棉枕与床品、长短防护栏、贯通梯级与空心下柜",
+        "geometryStage": "candidate",
+        "gameIntegration": false,
+        "animation": false,
+        "units": "metres",
+        "front": "-Z",
+        "reference": {
+          "sheet": "M009",
+          "slot": 10,
+          "imageSHA256": "364bf3033092f2f0aba41635ddd743afb07e6a17df0b9948fd35aa5832d3dd2d"
+        },
+        "dimensionBasis": "authored metres; no dimensions recoverable from a single independently scaled image tile",
+        "limitations": "上下铺净空、梯间通孔和下柜空腔为真实网格，床品、橡胶踏面和纸盒分别归类。无人物、床铺动画或工程承重认证；薄构造按 20 mm 格距表达，梯角和床垫曲面仍为阶梯。",
+        "kinematics": "static; no rig or runtime motion",
+        "referenceStage": "candidate"
+      },
+      "boundsM": {
+        "min": [
+          0,
+          0,
+          -0.06
+        ],
+        "max": [
+          2.06,
+          1.98,
+          0.88
+        ]
+      },
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              103,
+              99,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四角柱、分层纵梁、床板与端板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              103,
+              99,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "上下床品、独立棉枕与可见缝边",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              27,
+              5
+            ],
+            "max": [
+              98,
+              81,
+              40
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "上铺前后护栏、端栏及固定卡座",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              71,
+              2
+            ],
+            "max": [
+              100,
+              93,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "外挂直梯、贯通梯间空格和踏面橡胶",
+          "parent": "root",
+          "region": {
+            "min": [
+              74,
+              0,
+              -3
+            ],
+            "max": [
+              99,
+              94,
+              7
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "床下双门空柜、开放纸盒格和底托",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              5,
+              0
+            ],
+            "max": [
+              97,
+              23,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "端柱检修面板与独立状态灯",
+          "parent": "root",
+          "region": {
+            "min": [
+              97,
+              37,
+              -1
+            ],
+            "max": [
+              101,
+              54,
+              2
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "双层床储物组合：木金属四柱、上下承床、两组棉枕与床品、长短防护栏、贯通梯级与空心下柜",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              103,
+              99,
+              44
+            ]
+          }
+        }
+      ],
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2.06,
+            0,
+            0.94
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            25,
+            34,
+            8
+          ],
+          "max": [
+            66,
+            66,
+            37
+          ]
+        },
+        {
+          "min": [
+            27,
+            82,
+            8
+          ],
+          "max": [
+            68,
+            95,
+            37
+          ]
+        },
+        {
+          "min": [
+            78,
+            12,
+            -2
+          ],
+          "max": [
+            95,
+            18,
+            -1
+          ]
+        }
+      ],
+      "materialCells": {
+        "wall": 6957,
+        "bronze": 329,
+        "metal": 22624,
+        "wood": 18478,
+        "recess": 114,
+        "cottonWhite": 31718,
+        "trim": 1410,
+        "fabric": 2408,
+        "archiveBoard": 7462,
+        "fabricEdge": 474,
+        "rubber": 420,
+        "screen": 12,
+        "displayGlyph": 2,
+        "printedDark": 20,
+        "paperSheet": 52
+      },
+      "nativeComponents": [
+        {
+          "cells": 92480,
+          "attached": false
+        }
+      ],
+      "recipe": {
+        "size": [
+          2.06,
+          1.98,
+          0.9
+        ],
+        "pitch": 0.02,
+        "features": "双层床储物组合：木金属四柱、上下承床、两组棉枕与床品、长短防护栏、贯通梯级与空心下柜",
+        "limits": "上下铺净空、梯间通孔和下柜空腔为真实网格，床品、橡胶踏面和纸盒分别归类。无人物、床铺动画或工程承重认证；薄构造按 20 mm 格距表达，梯角和床垫曲面仍为阶梯。"
+      }
+    },
+    {
+      "id": "LIFE-176",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "LIFE-176",
+        "recipeRevision": 3,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "dimensionsM": [
+          2,
+          0.42,
+          1.6
+        ],
+        "parameters": {},
+        "features": "演出舞台模块：可拼接齐边木台、金属桁架、端部凹锁与三阶前梯",
+        "geometryStage": "candidate",
+        "gameIntegration": false,
+        "animation": false,
+        "units": "metres",
+        "front": "-Z",
+        "reference": {
+          "sheet": "M010",
+          "slot": 9,
+          "imageSHA256": "a7c85d88426ed6d3bb41092269f7861f787d397737085584a1948cd5f1316c11"
+        },
+        "dimensionBasis": "authored metres; no dimensions recoverable from a single independently scaled image tile",
+        "limitations": "标准单元含前置三阶梯，X 方向接续边齐平，灯条只在前后面。凹锁与桁架为静态结构，尚无荷载计算、收折、拆梯或工程安全认证。",
+        "kinematics": "static; no rig or runtime motion",
+        "referenceStage": "candidate",
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "authored-use-and-actual-voxel-check",
+          "note": "台面和踏板为木，边框桁架为金属，脚为石，灯窗使用灯芯；连接槽为空格。"
+        }
+      },
+      "boundsM": {
+        "min": [
+          0,
+          0,
+          -0.78
+        ],
+        "max": [
+          2,
+          0.42,
+          1.62
+        ]
+      },
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -39
+            ],
+            "max": [
+              100,
+              21,
+              81
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "六脚承托、侧框桁架和分板木面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              100,
+              21,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "嵌入端锁、灯窗与结构对接面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              10,
+              -1
+            ],
+            "max": [
+              100,
+              21,
+              81
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "三阶前梯、包鼻、双侧实托与无突出侧沿",
+          "parent": "root",
+          "region": {
+            "min": [
+              30,
+              0,
+              -39
+            ],
+            "max": [
+              71,
+              21,
+              3
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "演出舞台模块：可拼接齐边木台、金属桁架、端部凹锁与三阶前梯",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -39
+            ],
+            "max": [
+              100,
+              21,
+              81
+            ]
+          }
+        }
+      ],
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.78
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            2,
+            0,
+            2.4000000000000004
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "join-left",
+          "kind": "stage-1600",
+          "position": [
+            0,
+            0.34,
+            0.8
+          ],
+          "normal": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.08,
+            1.6
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "join-right",
+          "kind": "stage-1600",
+          "position": [
+            2,
+            0.34,
+            0.8
+          ],
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "size": [
+            0,
+            0.08,
+            1.6
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            15,
+            1,
+            20
+          ],
+          "max": [
+            40,
+            5,
+            45
+          ]
+        }
+      ],
+      "materialCells": {
+        "trim": 868,
+        "metal": 30309,
+        "wall": 888,
+        "bronze": 336,
+        "wood": 15032,
+        "warm": 192
+      },
+      "nativeComponents": [
+        {
+          "cells": 47625,
+          "attached": false
+        }
+      ],
+      "recipe": {
+        "size": [
+          2,
+          0.42,
+          1.6
+        ],
+        "pitch": 0.02,
+        "features": "演出舞台模块：可拼接齐边木台、金属桁架、端部凹锁与三阶前梯",
+        "limits": "标准单元含前置三阶梯，X 方向接续边齐平，灯条只在前后面。凹锁与桁架为静态结构，尚无荷载计算、收折、拆梯或工程安全认证。"
+      }
+    }
+  ]
+}

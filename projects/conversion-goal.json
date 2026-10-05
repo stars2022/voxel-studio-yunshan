@@ -15,9 +15,9 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 648,
-    "remainingReferenceEntries": 145,
-    "completedReferenceSheets": 54,
+    "referenceCandidates": 660,
+    "remainingReferenceEntries": 133,
+    "completedReferenceSheets": 55,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
@@ -30,33 +30,33 @@
       "generatedEntries": 694,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 648,
+      "atlasReferenceCandidates": 660,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 132
+      "atlasAssemblyCandidates": 144
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M055",
+    "sheet": "M056",
     "state": "queued",
     "ids": [
-      "LIFE-161",
-      "LIFE-162",
-      "LIFE-163",
-      "LIFE-164",
-      "LIFE-165",
-      "LIFE-166",
-      "LIFE-167",
-      "LIFE-168",
-      "LIFE-201",
-      "LIFE-202",
-      "LIFE-203",
-      "LIFE-204"
+      "LIFE-205",
+      "LIFE-206",
+      "LIFE-207",
+      "LIFE-208",
+      "LIFE-209",
+      "LIFE-210",
+      "LIFE-211",
+      "LIFE-212",
+      "LIFE-213",
+      "LIFE-214",
+      "LIFE-228",
+      "CHAR-001"
     ],
-    "scope": "12个制度服务与文化空间；保留原件、用途材质、实际净空和未绑定控制器边界。"
+    "scope": "10个生活活动空间、LIFE228花槽组合、CHAR001现有居民组合母版；按实际源契约分别建模。"
   },
-  "nextBatch": "M055",
+  "nextBatch": "M056",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,20 +68,20 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M054共648条技术参考候选，余145；513独立图册母版、3共用引用、132图册组合，人工美术验收0。"
+    "M001–M055共660条技术参考候选，余133；513独立图册母版、3共用引用、144图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正持续优先：最小组件体素；斜面和曲面连续；天空、星空使用实际贴图。",
-    "M054完成12组合/12有限形态，新增基础母版0，累计648/793，余145。全库532基础候选、155组合、694已生成条目、374未制作。",
-    "517项整库测试、构建、最终类型、36份GLB、9组真实MCP流程通过；36默认截图全部新拍，另有7张MCP实图。证据artifacts/atlas/atlas-20261005153244。",
-    "512用途材质角色按256+256同事务，上限保持；不得因容量而按近似色借用用途。M054纸封/装帧布/显示像素/光学面派生完整保留原件及实际占用、碰撞、接口与孔洞。",
-    "M055参考图和12条CSV已实际读取并看图，work/m055/reference.json和review.json为准备，尚未制作。办公/会客/审判席/旁听椅/监所床位/舞台须查原件已有构造，不能重复加椅或床垫。",
-    "可复用publicFurniture/spaceFurniture/residentialFurniture已验证的用途派生；新用途应实际检查。原件、源哈希、逐格差异和历史独立导出保留。",
-    "原法院/监狱完整玩法未实现继续保留。身份门禁、预算、金库、取证、拘押、警务、移民福利、艺术活动与日程未绑定，不能以空间几何代替原运行时。",
-    "LIFE105隔离原型未集成v4、续班/历史上限FAIL继续保留。库存、所有权、预算、工资、队列和烹饪不由几何通过替代。",
-    "升级LIFE161后复核tests/production.test.ts旧preload缺母版用例，改用实际核对的仍旧配置ID，保留原51布局直接测试。",
-    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。完整1068清单未制作条目另计，全部参考候选仍不等于人工美术验收。"
+    "用户修正持续优先：最小组件体素，斜面和曲面连续，天空、星空使用实际贴图。",
+    "M055完成12组合/12有限形态，新增基础母版0，累计660/793，余133。全库532基础候选、155组合、694已生成条目、374未制作。",
+    "523项整库测试、构建、最终类型、36份GLB、9组实际MCP流程通过；36默认截图全部新拍，另有7张MCP实图。证据artifacts/atlas/atlas-20261005161856。",
+    "512用途材质按256+256同事务，上限保持；不得按近似色借用途。147/148/151光学条/灯芯派生保留原件、原生占用、碰撞、分件、接口与孔洞。",
+    "M055原153三椅、141每套六椅、156床品梯子均不重复添加；154新连座靠背连续，176原含梯舞台独立保留，新舞台坡道是明确替代组件。有限坐姿与坡面包络不等于所有体型、动作或工程验收。",
+    "M056参考图与12条CSV已实际读取并看图，work/m056/reference.json和review.json为准备，尚未制作。10个生活活动房间、花槽组合和居民组合母版虽均是组合模板，不能全部按房间转换。",
+    "CHAR001须读取现有居民原契约、近远层级、头发/服装/手持/绑定资料；不要由参考图猜测原完整组合，也不要把辅助占位当作完成。LIFE228三株花复用实际植物，不把花色算独立母版。",
+    "婚丧、节庆、体育、家务、游客和宠物家庭空间不代表原行为、服务、活动日程或角色绑定已集成。原法院/监狱完整玩法未实现、LIFE105隔离原型未集成v4与历史FAIL继续保留。",
+    "升级LIFE205后，须核对是否还有旧配置可作preload负例；若51种均已升级，应直接验证旧布局生成器的缺母版行为，不要强迫公开新配方报错。保留原51布局直接测试。",
+    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。全部参考候选仍不等于人工美术验收，完整1068清单未制作条目另计。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -90,9 +90,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M054",
-    "run": "atlas-20261005153244",
+    "sheet": "M055",
+    "run": "atlas-20261005161856",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261005153244"
+    "evidence": "artifacts/atlas/atlas-20261005161856"
   }
 }
