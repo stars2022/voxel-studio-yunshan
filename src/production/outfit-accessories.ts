@@ -27,7 +27,7 @@ function fittedShoulderBag(p:Project,source:Asset,clothes:Asset){
  a.id=source.id+'-shoulder-fit-'+String(clothes.source!.catalogId);a.name+=' · 实贴肩部';a.source={kind:'author-outfit-fit',notCatalogMaster:true,sourceAssetId:source.id,sourceGeometrySHA256:outfitHash(geometryData(source)),originalRetained:true,replacedMeshes:[{name:old.name,sha256:outfitHash(old)}],actualShoulderContacts:[contact],garmentSourceAssetId:clothes.id,garmentGeometrySHA256:outfitHash(geometryData(clothes)),preservedNativeCells:true,preservedPropRig:true,reason:'Lower and flatten only the continuous shoulder span to touch the actual shirt shoulder. Original bag body, anchors, lid, native detail and source retained.'};return a;
 }
 
-function fittedHat(base:ReturnType<typeof outfitBaseScene>,source:Asset){
+export function fittedHat(base:ReturnType<typeof outfitBaseScene>,source:Asset){
  const{p,items,fit}=base,neck=garmentFrame(fit).neck,points:V3[]=[];
  for(const i of items.filter(i=>i.id.endsWith('-head')||i.id.endsWith('-hair')))for(const m of displayMesh(p.assets[i.assetId],p.materials))for(let j=0;j<m.indices.length;j+=3){let poly=m.indices.slice(j,j+3).map(i=>[m.positions[i*3],m.positions[i*3+1]-neck,m.positions[i*3+2]]as V3);poly=clipPlane(clipPlane(poly,1,.160,true),1,.185,false);points.push(...poly);}
  if(!points.length)throw new Error('No actual head or hair at hat liner');

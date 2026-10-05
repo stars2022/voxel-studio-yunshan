@@ -1,6 +1,6 @@
 # 67 张图册：三维资产转化
 
-截至 M057，累计 **684/793** 条参考技术候选，剩余 109 条，人工美术验收 0。最新 [M057 远景居民与人物穿搭](M057-ARCHITECTURE-ASSEMBLIES.md)、[进度](../projects/conversion-goal.json) 和 [实际总览](../artifacts/atlas/atlas-20261005182120/M057.png)。当前采用最小体素组件、连续斜面/曲面和天空贴图的混合建模标准。
+截至 M058，累计 **696/793** 条参考技术候选，剩余 97 条，人工美术验收 0。最新 [M058 职业、学生与婚丧穿搭](M058-ARCHITECTURE-ASSEMBLIES.md)、[进度](../projects/conversion-goal.json) 和 [实际总览](../artifacts/atlas/atlas-20261005190632/M058.png)。当前采用最小体素组件、连续斜面/曲面和天空贴图的混合建模标准。
 
 以下 M017 及更早数字、约定和验证保留为历史记录，不是最新累计状态。
 

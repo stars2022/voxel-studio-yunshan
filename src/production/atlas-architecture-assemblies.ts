@@ -1,3 +1,4 @@
+import{professionAssemblyIds,makeProfessionAssembly}from'./profession-assemblies';
 import {communityAssemblyIds,makeCommunityAssembly} from './community-assemblies';
 import {institutionalAssemblyIds,makeInstitutionalAssembly} from './institutional-assemblies';
 import {publicSpaceAssemblyIds,makePublicSpaceAssembly} from './public-space-assemblies';
@@ -22,12 +23,12 @@ import {transportStructureIds,makeTransportStructure} from './transport-structur
 import {landscapeAssemblyIds,makeLandscapeAssembly} from './landscape-assemblies';
 import {habitatAssemblyIds,makeHabitatAssembly} from './habitat-assemblies';
 import {parkAssemblyIds,makeParkAssembly} from './park-assemblies';
-export {outfitAssemblyIds,communityAssemblyIds,institutionalAssemblyIds,publicSpaceAssemblyIds,lifeSpaceAssemblyIds,habitatAssemblyIds,parkAssemblyIds,environmentAssemblyIds,residentialAssemblyIds};
+export {professionAssemblyIds,outfitAssemblyIds,communityAssemblyIds,institutionalAssemblyIds,publicSpaceAssemblyIds,lifeSpaceAssemblyIds,habitatAssemblyIds,parkAssemblyIds,environmentAssemblyIds,residentialAssemblyIds};
 export const regionalAssemblyIds=[...airportServiceIds,...transportStructureIds,...landscapeAssemblyIds];
 export const fleetAssemblyIds=[...fleetAirportIds,...fleetVehicleIds];
 export const districtAssemblyIds=[...districtConnectionIds,...districtCourtIds,'BUILT-265'];
 export const metropolisAssemblyIds=[...metropolisTowerIds,...metropolisAviationIds,...metropolisInfrastructureIds];
-export const architectureAssemblyIds=['BUILT-019','BUILT-020','BUILT-021','BUILT-022','BUILT-023','BUILT-024','BUILT-040','BUILT-042','BUILT-075','BUILT-076','BUILT-077','BUILT-078',...civicLandmarkIds,...civicTransportIds,...metropolisAssemblyIds,...districtAssemblyIds,...fleetAssemblyIds,...regionalAssemblyIds,...habitatAssemblyIds,...parkAssemblyIds,...environmentAssemblyIds,...residentialAssemblyIds,...lifeSpaceAssemblyIds,...publicSpaceAssemblyIds,...institutionalAssemblyIds,...communityAssemblyIds,...outfitAssemblyIds];
+export const architectureAssemblyIds=['BUILT-019','BUILT-020','BUILT-021','BUILT-022','BUILT-023','BUILT-024','BUILT-040','BUILT-042','BUILT-075','BUILT-076','BUILT-077','BUILT-078',...civicLandmarkIds,...civicTransportIds,...metropolisAssemblyIds,...districtAssemblyIds,...fleetAssemblyIds,...regionalAssemblyIds,...habitatAssemblyIds,...parkAssemblyIds,...environmentAssemblyIds,...residentialAssemblyIds,...lifeSpaceAssemblyIds,...publicSpaceAssemblyIds,...institutionalAssemblyIds,...communityAssemblyIds,...outfitAssemblyIds,...professionAssemblyIds];
 export function architectureAssemblyParameters(id:string):Record<string,unknown>{
  if(id==='LIFE-062')return{privacyDoor:{enum:['open','closed'],default:'open'}};
  if(environmentAssemblyIds.includes(id))return environmentParameters(id);
@@ -45,6 +46,7 @@ export function architectureAssemblyParameters(id:string):Record<string,unknown>
 export function makeArchitectureAssembly(p:Project,catalogId:string,id:string,name:string,params:Record<string,string|number>={}){
  if(!architectureAssemblyIds.includes(catalogId))throw new Error('未知建筑组合配方');const schema=architectureAssemblyParameters(catalogId) as Record<string,{enum?:(number|string)[];type?:string;minimum?:number;maximum?:number}>;
  for(const[k,v]of Object.entries(params))if(!schema[k]||(schema[k].enum?!schema[k].enum!.includes(v):typeof v!=='number'||!Number.isFinite(v)||v<schema[k].minimum!||v>schema[k].maximum!))throw new Error('未经验证的建筑组合参数 '+k);
+ if(professionAssemblyIds.includes(catalogId))return makeProfessionAssembly(p,catalogId,id,name);
  if(outfitAssemblyIds.includes(catalogId))return makeOutfitAssembly(p,catalogId,id,name);
  if(communityAssemblyIds.includes(catalogId))return makeCommunityAssembly(p,catalogId,id,name);
  if(institutionalAssemblyIds.includes(catalogId))return makeInstitutionalAssembly(p,catalogId,id,name);

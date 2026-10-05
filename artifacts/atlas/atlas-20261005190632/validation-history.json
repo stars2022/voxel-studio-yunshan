@@ -1,0 +1,71 @@
+{
+  "run": "atlas-20261005190632",
+  "status": "historical-failures-preserved",
+  "rawEvidence": [
+    "development-accessory-contact-probe.json",
+    "development-apron-refinement-probe.json",
+    "development-apron-source-parts.txt",
+    "development-apron-strip-bend-probe.json",
+    "development-apron-strip-bend-probe.txt",
+    "development-apron-strip-lower-end-probe.json",
+    "development-apron-strip-lower-end-probe.txt",
+    "development-badge114-envelope-probe.json",
+    "development-badge114-fit-probe.json",
+    "development-base-fit-probe.json",
+    "development-belt-angle-probe.json",
+    "development-belt-height-probe.json",
+    "development-belt-liner-fit-probe.json",
+    "development-belt-raised-arm-probe.json",
+    "development-body-refinement-probe.json",
+    "development-child-lowered-bag-probe.json",
+    "development-child-radius-probe.json",
+    "development-child-waist-low-probe.json",
+    "development-formal-development.json",
+    "development-formal-development.txt",
+    "development-goggle-seal-fit-probe.json",
+    "development-head-fit-probe.json",
+    "development-initial-formal-development.json",
+    "development-initial-formal-development.txt",
+    "development-mask-contact-fit-probe.json",
+    "development-original-accessory-probe.json",
+    "development-reference.json",
+    "development-reused-accessory-fit-probe.json",
+    "development-review.json",
+    "development-scarf-contact-fit-probe.json",
+    "development-tests-targeted-first.txt"
+  ],
+  "bodyFit": {
+    "initial": "Duplicate short neck,164 forearm/hand overlap and165 neutral solid pants/feet overlap. Child waistband downshift alone still intersected clothing.",
+    "correction": "Retain original sources, omit duplicate neck, cap actual forearms, use real hollow adult118 or explicit child063-frame pants, lower waistband and actual buckle binding together; child band radial factor.96."
+  },
+  "accessories": {
+    "initial": "Raw cap/mask/goggle/scarf gaps; child shoulder bag hit hand at adult placement; tool belt hit clothing/sleeves/hand;135 and136 aprons duplicated; original114 badge tab positions hit cloth or native trim.",
+    "correction": "Actual surface-driven liner/loop/seal/strap fits; child bag lower mount; retained-original24degree standing shoulder pose and belt inner liner; exact cloth/native front-envelope badge tab. All final actual posed triangles and declared contacts independently checked."
+  },
+  "apron": {
+    "initial": "First formal apron strip bent.008m but left lower endpoint still crossed135 diagonal collar. Larger bend-only values to.048m did not solve endpoint collision; first targeted suite8/9, not passed.",
+    "correction": "Retain original136; reconnect both lower strap endpoints to actual bib front while keeping upper endpoints, original bib/neck loop/pockets and native fasteners. Add two explicit internal strap-bib contact witnesses. Final targeted9/9 passed."
+  },
+  "formalIntegration": {
+    "initial": "Omitted empty fitted body retained as invalid empty rig, and long posed derivative IDs exceeded80-character schema limit.",
+    "correction": "Retain original parent of omitted empty body; pose IDs use deterministic source hashes. Keep full source graph and normal schema limits. Initial failures retained."
+  },
+  "limitations": [
+    "Twelve finite templates,eleven geometries:168/170 share original130+149 contract.",
+    "165 independent child; other templates adultA. Original author proportions and rigid shoulder openings remain.",
+    "No soft cloth, all-age matrix, role/age/seed/wages/permissions/inventory binding or original runtime integration.",
+    "Actual hair-side mask contact is not ear contact or protection certification.",
+    "Human art accepted0."
+  ],
+  "finalValidation": {
+    "status": "passed",
+    "fullRepositoryTests": 546,
+    "currentM058Tests": 9,
+    "build": "passed",
+    "typecheck": "passed",
+    "mcpCheckGroups": 9,
+    "actualPosedComponentPairs": 580,
+    "actualSurfaceContacts": 23,
+    "closedComponentParts": 3236
+  }
+}
