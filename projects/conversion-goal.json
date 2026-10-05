@@ -15,9 +15,9 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 636,
-    "remainingReferenceEntries": 157,
-    "completedReferenceSheets": 53,
+    "referenceCandidates": 648,
+    "remainingReferenceEntries": 145,
+    "completedReferenceSheets": 54,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
@@ -30,33 +30,33 @@
       "generatedEntries": 694,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 636,
+      "atlasReferenceCandidates": 648,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 120
+      "atlasAssemblyCandidates": 132
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M054",
+    "sheet": "M055",
     "state": "queued",
     "ids": [
-      "LIFE-129",
-      "LIFE-130",
-      "LIFE-131",
-      "LIFE-132",
-      "LIFE-133",
-      "LIFE-134",
-      "LIFE-135",
-      "LIFE-136",
-      "LIFE-137",
-      "LIFE-138",
-      "LIFE-139",
-      "LIFE-160"
+      "LIFE-161",
+      "LIFE-162",
+      "LIFE-163",
+      "LIFE-164",
+      "LIFE-165",
+      "LIFE-166",
+      "LIFE-167",
+      "LIFE-168",
+      "LIFE-201",
+      "LIFE-202",
+      "LIFE-203",
+      "LIFE-204"
     ],
-    "scope": "12个教育、文化、实验、调度、数据、医护与议事空间；升级旧配置，保留原件和未绑定的原控制器边界。"
+    "scope": "12个制度服务与文化空间；保留原件、用途材质、实际净空和未绑定控制器边界。"
   },
-  "nextBatch": "M054",
+  "nextBatch": "M055",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,21 +68,20 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M053共636条技术参考候选，余157；513独立图册母版、3共用引用、120图册组合，人工美术验收0。"
+    "M001–M054共648条技术参考候选，余145；513独立图册母版、3共用引用、132图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续优先：最小组件体素；斜面和曲面连续；天空、星空使用实际贴图。",
-    "M053完成12组合/13有限形态，新增基础母版0；9空间与3桌面菜品升级。累计636/793，余157。全库532基础候选、155组合、694已生成条目、374未制作。",
-    "511项整库测试全部通过，含6组M053专项；最终原生柜体断言另复验1项通过，不叠加计数。构建、最终类型、13形态导出及9组真实MCP流程通过。36默认截图含27张验证后复用、9张重拍；7张额外MCP视图。正式证据 artifacts/atlas/atlas-20261005144848。",
-    "512材质角色按256+256同事务，512上限保持。cookedFish独立food/非碰撞/零发光。后续用途在容量内设计，不按颜色借材质或直接扩上限。",
-    "M053卫生间真地漏/柜口与有限隐私门、11碗盘真空腔/46食材接触、6套学生完整桌椅净空均核验。最小细件体素，棚面/讲台/菜叶/餐具连续。原件与材料派生分开，厨房102复用061父模板和实际拟合组件。",
-    "M054参考图与12条CSV已读取、实际看图，work/m054/reference.json和review.json为准备，尚未制作。111已含桌椅，129不重复加022；131含书卷档案，136/137/139须核床边与搬运通道。",
-    "复用M052 residentialFurniture的002/004/018/108材料派生和M053 spaceFurniture的111派生；需检查其他旧家具的实际用途。原件、源哈希、逐格差异和历史独立导出保留。",
-    "M054课程/考试/医护/药房/急救/调度/数据/议事均只作作者空间，不能冒称真实分钟或原控制器已绑定；LIFE160原法院/监狱完整玩法未实现边界保留。",
+    "M054完成12组合/12有限形态，新增基础母版0，累计648/793，余145。全库532基础候选、155组合、694已生成条目、374未制作。",
+    "517项整库测试、构建、最终类型、36份GLB、9组真实MCP流程通过；36默认截图全部新拍，另有7张MCP实图。证据artifacts/atlas/atlas-20261005153244。",
+    "512用途材质角色按256+256同事务，上限保持；不得因容量而按近似色借用用途。M054纸封/装帧布/显示像素/光学面派生完整保留原件及实际占用、碰撞、接口与孔洞。",
+    "M055参考图和12条CSV已实际读取并看图，work/m055/reference.json和review.json为准备，尚未制作。办公/会客/审判席/旁听椅/监所床位/舞台须查原件已有构造，不能重复加椅或床垫。",
+    "可复用publicFurniture/spaceFurniture/residentialFurniture已验证的用途派生；新用途应实际检查。原件、源哈希、逐格差异和历史独立导出保留。",
+    "原法院/监狱完整玩法未实现继续保留。身份门禁、预算、金库、取证、拘押、警务、移民福利、艺术活动与日程未绑定，不能以空间几何代替原运行时。",
     "LIFE105隔离原型未集成v4、续班/历史上限FAIL继续保留。库存、所有权、预算、工资、队列和烹饪不由几何通过替代。",
-    "升级LIFE129后复核tests/production.test.ts旧preload缺母版用例，改用经过核对的仍旧配置ID，保留原51布局直接测试。",
-    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。全部参考候选仍不等于人工美术验收，完整1068清单未制作条目另计。"
+    "升级LIFE161后复核tests/production.test.ts旧preload缺母版用例，改用实际核对的仍旧配置ID，保留原51布局直接测试。",
+    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。完整1068清单未制作条目另计，全部参考候选仍不等于人工美术验收。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -91,9 +90,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M053",
-    "run": "atlas-20261005144848",
+    "sheet": "M054",
+    "run": "atlas-20261005153244",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261005144848"
+    "evidence": "artifacts/atlas/atlas-20261005153244"
   }
 }

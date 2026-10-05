@@ -1,0 +1,140 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47
+    }
+  },
+  "assemblies": {},
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "life-004",
+      "name": "被褥及枕头组合",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.48,
+            0,
+            1.87
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              148,
+              13,
+              187
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "蓝灰被面、棉白折边",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              148,
+              10,
+              141
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "双枕",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              2,
+              153
+            ],
+            "max": [
+              138,
+              13,
+              187
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "两只独立棉枕、蓝灰被面、折边和侧包缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              148,
+              13,
+              187
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

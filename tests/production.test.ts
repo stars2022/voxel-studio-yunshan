@@ -39,7 +39,7 @@ test('all 51 room layouts reference native masters, snap to grids and count plac
  assert.equal(Object.keys(lifeLayouts).length,51);
  for(const n of Object.keys(lifeLayouts)){const id='LIFE-'+n.padStart(3,'0'),a=makeLifeAssembly(p,id,id.toLowerCase(),id);assert.ok(a.instances.length>0);assert.deepEqual([...new Set(a.instances.map(i=>i.assetId))].sort(),layoutDependencies(Number(n)).sort());for(const i of a.instances){assert.ok(p.assets[i.assetId]);assert.ok(i.position.every(v=>Math.abs(v/p.assets[i.assetId].cellSize-Math.round(v/p.assets[i.assetId].cellSize))<1e-8));}p.assemblies??={};p.assemblies[a.id]=a;}
  validateProject(p);assert.equal(Object.keys(p.assets).length,162);
- const e=new Engine(base());assert.throws(()=>commit(e,[{op:'produceCatalogAssembly',catalogId:'LIFE-129',id:'examroom'}]),/缺少母版/);assert.equal(Object.keys(e.project.assemblies??{}).length,0);
+ const e=new Engine(base());assert.throws(()=>commit(e,[{op:'produceCatalogAssembly',catalogId:'LIFE-161',id:'civicroom'}]),/缺少母版/);assert.equal(Object.keys(e.project.assemblies??{}).length,0);
 });
 
 test('width regeneration rebuilds supports and planks; unknown and unverified dimensions are rejected',()=>{

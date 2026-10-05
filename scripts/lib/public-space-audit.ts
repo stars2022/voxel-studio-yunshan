@@ -1,0 +1,14 @@
+import {Vector3} from 'three';
+import type {Project,Assembly,V3} from '../../src/core/types';
+import {CivicAudit} from './civic-audit';
+import {inside} from './mesh-audit';
+export function publicSpaceAudit(p:Project,a:Assembly){
+ const q=new CivicAudit(p,a),r=(a.source as any).room;
+ const visual=(point:V3,id:string)=>{const i=a.instances.find(i=>i.id===id)!;if(!i)throw new Error('Missing actual instance '+id);const asset=p.assets[i.assetId],local=q.local(i,point),v=new Vector3(...local),c=q.assets.get(i.assetId)!;return!!c.grid.get(local.map((n,k)=>Math.floor((n-asset.origin[k])/asset.cellSize))as V3)||c.shapes.some(sh=>inside(v,sh)||sh.ts.some(t=>t.closestPointToPoint(v,new Vector3()).distanceToSquared(v)<1e-14));};
+ const includedSeats=(r.includedSeats??[]).map((s:any)=>{const v=s.point as V3;return{...s,seatPresent:visual([v[0],v[1]-.015,v[2]],s.instance),lowerBody:q.clear('finite seated lower body including complete table set',[v[0]-.14,v[1]+.03,v[2]-.17],[v[0]+.14,.70,v[2]+.17]),torso:q.clear('finite seated torso above chair arms including complete table set',[v[0]-.19,.71,v[2]-.19],[v[0]+.19,1.48,v[2]+.19]),approach:q.head('reading seat approach',s.approach,.7,1.72),wholeSetExcluded:false};});
+ const volumes=(r.clearVolumes??[]).map((v:any)=>q.clear(v.key,v.min,v.max));
+ const contacts=(r.exactContacts??[]).map((c:any)=>{const hits=q.point(c.point,undefined,true);return{...c,actualContact:hits.some(h=>h.instance===c.a)&&hits.some(h=>h.instance===c.b),hits};});
+ const curtains=(r.curtains??[]).map((c:any)=>{const i=a.instances.find(i=>i.id===c.instance)!,end=c.length*.72,hangers=[];for(let k=0;k<=6;k++){const x=.08+(end-.08)*k/6,lower=q.world(i,[x,2.247,.004]),upper=q.world(i,[x,2.37,0]),cloth=q.point(lower,undefined,true).filter(h=>h.instance===i.id),rail=q.point(upper).filter(h=>h.instance===i.id);hangers.push({lower,upper,clothAndClip:cloth.some(h=>h.material===p.styles.yunshan.cottonWhite)&&cloth.some(h=>h.material===p.styles.yunshan.metal),clipAndRail:rail.some(h=>h.material===p.styles.yunshan.metal)&&rail.some(h=>h.material===p.styles.yunshan.metalBright)});}return{...c,hangers,partialOpening:q.clear('finite opening beside partial curtain',q.world(i,[end+.15,.30,-.10]).map((v,k)=>Math.min(v,q.world(i,[c.length-.15,2.1,.10])[k]))as V3,q.world(i,[end+.15,.30,-.10]).map((v,k)=>Math.max(v,q.world(i,[c.length-.15,2.1,.10])[k]))as V3)};});
+ const labSinks=(r.labSinks??[]).map((v:any)=>q.clear('actual lab sink cavity',v.min,v.max));
+ return{includedSeats,volumes,contacts,curtains,labSinks,scope:'Finite author body/transport boxes, actual native occupancy and continuous component triangles. Complete table/chair assets remain included. Partial curtains and medical layouts are static author geometry, not full privacy, healthcare, accessibility or clinical certification.'};
+}

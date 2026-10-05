@@ -1,0 +1,157 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47
+    }
+  },
+  "assemblies": {},
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "life-017",
+      "name": "办公桌抽屉模块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.03
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.43,
+            0,
+            0.51
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -3
+            ],
+            "max": [
+              42,
+              70,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "柜脚、框体与背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              40,
+              70,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "隔板与分格",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              31,
+              2
+            ],
+            "max": [
+              36,
+              51,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "承重边柱、退层柱帽、锁销及底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              8,
+              -2
+            ],
+            "max": [
+              42,
+              70,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立木面三屉箱、箱内空腔与黑金凹拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -3
+            ],
+            "max": [
+              42,
+              70,
+              48
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

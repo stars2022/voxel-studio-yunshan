@@ -1,0 +1,61 @@
+✔ M054 twelve public spaces retain closed continuous parts and real native minimum connections (14547.655191ms)
+✖ M054 actual public access, student and complete reading-set seats, medical passages and curtain contacts (18235.010342ms)
+✔ M054 explicit archive and optical material derivatives preserve every occupied cell and canonical metadata (16169.604255ms)
+✔ M054 bundled desks and chairs are not duplicated and original unbound service restrictions survive (1.048622ms)
+✔ M054 public creation preserves foreign IDs, rejects unimplemented clinical state and rolls back atomically (13757.054651ms)
+✖ M054 all twelve templates support public quarter-turn placement and reversible independent appearance (1998.351928ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 65402.382085
+
+✖ failing tests:
+
+test at tests/atlas-public-space-assemblies.test.ts:7:1
+✖ M054 actual public access, student and complete reading-set seats, medical passages and curtain contacts (18235.010342ms)
+  AssertionError [ERR_ASSERTION]: LIFE-130 included seats
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-public-space-assemblies.test.ts:7:851)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/atlas-public-space-assemblies.test.ts:11:1
+✖ M054 all twelve templates support public quarter-turn placement and reversible independent appearance (1998.351928ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  +   15.120000000000001,
+  -   15.12,
+      0.76,
+      8.35
+    ]
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-public-space-assemblies.test.ts:11:462)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 15.120000000000001, 0.76, 8.35 ],
+    expected: [ 15.12, 0.76, 8.35 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

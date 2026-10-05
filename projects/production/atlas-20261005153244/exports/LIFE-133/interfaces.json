@@ -1,0 +1,2415 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532,
+      "weatherCloud": 533,
+      "valleyFog": 534,
+      "rainDroplet": 535,
+      "snowCover": 536,
+      "frostCover": 537,
+      "cookedFish": 538
+    }
+  },
+  "assemblies": {
+    "life-133": {
+      "id": "life-133",
+      "name": "科研实验室配置",
+      "version": 1,
+      "instances": [
+        {
+          "id": "life-133-0",
+          "assetId": "architecture-civic-park-paving-life-space-133-8acfdebc74",
+          "name": "分层实心台基与独立石铺面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-1",
+          "assetId": "architecture-civic-life-space-shell-133-528bd72feb",
+          "name": "真实窗洞、木梁与切角房间墙",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-2",
+          "assetId": "architecture-public-material-112",
+          "name": "实验台 · 公共空间用途修正",
+          "position": [
+            0.6,
+            0,
+            6.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-3",
+          "assetId": "source-life-114",
+          "name": "显微观察设备",
+          "position": [
+            0.76,
+            0.91,
+            6.18
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-4",
+          "assetId": "source-life-115",
+          "name": "研究样品容器",
+          "position": [
+            1.29,
+            0.91,
+            6.19
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-5",
+          "assetId": "architecture-public-material-112",
+          "name": "实验台 · 公共空间用途修正",
+          "position": [
+            2.6,
+            0,
+            6.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-6",
+          "assetId": "source-life-114",
+          "name": "显微观察设备",
+          "position": [
+            2.76,
+            0.91,
+            6.18
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-7",
+          "assetId": "source-life-115",
+          "name": "研究样品容器",
+          "position": [
+            3.29,
+            0.91,
+            6.19
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-8",
+          "assetId": "source-life-113",
+          "name": "实验仪器外壳",
+          "position": [
+            5.55,
+            0,
+            5.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-9",
+          "assetId": "architecture-public-material-116",
+          "name": "科研资料柜 · 公共空间用途修正",
+          "position": [
+            6.35,
+            0,
+            3.7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-10",
+          "assetId": "architecture-public-table-lab-island",
+          "name": "实际承托工作面与四足",
+          "position": [
+            2.65,
+            0,
+            2.7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "life-133-11",
+          "assetId": "source-life-115",
+          "name": "研究样品容器",
+          "position": [
+            3,
+            0.91,
+            2.87
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "LIFE-133",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M054",
+          "slot": 5,
+          "imageSHA256": "1eaf54e79d4944d621af45281f19347d898d62478afbb7aefc16fdc1b6c857c4"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-003",
+          "BUILT-015",
+          "BUILT-017",
+          "BUILT-059",
+          "ENV-094",
+          "LIFE-112",
+          "LIFE-113",
+          "LIFE-114",
+          "LIFE-115",
+          "LIFE-116"
+        ],
+        "instanceGroups": {
+          "life-133-0": "park-fixture",
+          "life-133-1": "room-shell",
+          "life-133-2": "furniture",
+          "life-133-3": "furniture",
+          "life-133-4": "furniture",
+          "life-133-5": "furniture",
+          "life-133-6": "furniture",
+          "life-133-7": "furniture",
+          "life-133-8": "furniture",
+          "life-133-9": "furniture",
+          "life-133-10": "lab-island",
+          "life-133-11": "furniture"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "laboratory entry",
+            "points": [
+              [
+                4,
+                0,
+                0.4
+              ],
+              [
+                4,
+                0,
+                1.9
+              ],
+              [
+                1.8,
+                0,
+                1.9
+              ],
+              [
+                1.8,
+                0,
+                5.3
+              ],
+              [
+                6.05,
+                0,
+                5.3
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "laboratory side aisle",
+            "points": [
+              [
+                4,
+                0,
+                1.9
+              ],
+              [
+                5.55,
+                0,
+                1.9
+              ],
+              [
+                5.55,
+                0,
+                5.3
+              ]
+            ],
+            "width": 0.7
+          }
+        ],
+        "scope": "Author-sized cutaway public spaces; canonical originals, explicit material derivatives and continuous alternatives retained. Static screens and optical faces are unbound and zero emission. No original FloorPlan, course/exam minutes, medical service, stock, energy/data, identity or assembly-hall controller integration. Awaiting human art acceptance.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "forest": [],
+        "park": {
+          "pads": [
+            {
+              "instance": "life-133-0",
+              "rect": [
+                0,
+                0,
+                8,
+                7.2
+              ],
+              "y": 0,
+              "bottom": -0.28,
+              "hole": null
+            }
+          ],
+          "guards": [],
+          "seats": [],
+          "steps": [],
+          "rockContacts": [],
+          "drains": [],
+          "viewRays": [],
+          "wayfinding": [],
+          "activityPoints": [],
+          "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance."
+        },
+        "room": {
+          "dimensions": [
+            8,
+            2.8,
+            7.2
+          ],
+          "floorY": 0,
+          "entrance": [
+            4,
+            0,
+            0
+          ],
+          "usePoints": [
+            {
+              "key": "lab bench 0.6",
+              "point": [
+                1.43,
+                0,
+                5.4
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "lab bench 2.6",
+              "point": [
+                3.43,
+                0,
+                5.4
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "island experiment point",
+              "point": [
+                3.7,
+                0,
+                2
+              ],
+              "width": 0.7
+            },
+            {
+              "key": "lab instrument access",
+              "point": [
+                6.05,
+                0,
+                5.25
+              ],
+              "width": 0.7
+            }
+          ],
+          "seats": [],
+          "supportedPairs": [
+            {
+              "upper": "life-133-3",
+              "lower": "life-133-2",
+              "points": [
+                [
+                  0.85,
+                  0.91,
+                  6.29
+                ]
+              ]
+            },
+            {
+              "upper": "life-133-4",
+              "lower": "life-133-2",
+              "points": [
+                [
+                  1.405,
+                  0.91,
+                  6.35
+                ],
+                [
+                  1.62,
+                  0.91,
+                  6.26
+                ]
+              ]
+            },
+            {
+              "upper": "life-133-6",
+              "lower": "life-133-5",
+              "points": [
+                [
+                  2.85,
+                  0.91,
+                  6.29
+                ]
+              ]
+            },
+            {
+              "upper": "life-133-7",
+              "lower": "life-133-5",
+              "points": [
+                [
+                  3.4050000000000002,
+                  0.91,
+                  6.35
+                ],
+                [
+                  3.62,
+                  0.91,
+                  6.26
+                ]
+              ]
+            },
+            {
+              "upper": "life-133-11",
+              "lower": "life-133-10",
+              "points": [
+                [
+                  3.115,
+                  0.91,
+                  3.03
+                ],
+                [
+                  3.33,
+                  0.91,
+                  2.94
+                ]
+              ]
+            }
+          ],
+          "mounts": [],
+          "sourceLegacy": "life-20261002143409-scene-133.ysvox.json",
+          "legacyLayoutRetainedInOriginalFile": true,
+          "originalFloorPlanBound": false,
+          "utilitiesBound": false,
+          "shell": "life-133-1",
+          "studentStations": [],
+          "includedSeats": [],
+          "clearVolumes": [],
+          "curtains": [],
+          "exactContacts": [],
+          "labSinks": [
+            {
+              "instance": "life-133-2",
+              "min": [
+                1.7999999999999998,
+                0.7,
+                6.4
+              ],
+              "max": [
+                2.08,
+                0.9,
+                6.66
+              ]
+            },
+            {
+              "instance": "life-133-5",
+              "min": [
+                3.8,
+                0.7,
+                6.4
+              ],
+              "max": [
+                4.08,
+                0.9,
+                6.66
+              ]
+            }
+          ],
+          "experimentsBound": false
+        }
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-park-paving-life-space-133-8acfdebc74",
+      "name": "分层实心台基与独立石铺面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 2028
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 504
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-life-space-shell-133-528bd72feb",
+      "name": "真实窗洞、木梁与切角房间墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "author-room-entry",
+          "position": [
+            4,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            1.4,
+            2.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 1392
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 12
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 240
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "id": "source-life-112",
+      "name": "实验台",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6700000000000002,
+            0,
+            0.74
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              166,
+              140,
+              73
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四柱、柜体侧壁、背撑和石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              163,
+              90,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "左三屉、右检修门与中间浅屉",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              18,
+              -1
+            ],
+            "max": [
+              153,
+              86,
+              54
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "厚嵌芯台面、真实水槽内腔与排水口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              63,
+              -1
+            ],
+            "max": [
+              166,
+              92,
+              73
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "背架双柱、水电插盒和中央状态槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              88,
+              47
+            ],
+            "max": [
+              161,
+              140,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "实验台：耐洗石台面、贯通洗槽、双接口背架、细龙头、三抽屉、检修柜与开放膝位",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              166,
+              140,
+              73
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            51,
+            16,
+            10
+          ],
+          "max": [
+            113,
+            70,
+            59
+          ]
+        },
+        {
+          "min": [
+            120,
+            68,
+            30
+          ],
+          "max": [
+            149,
+            93,
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-public-material-112",
+      "name": "实验台 · 公共空间用途修正",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.01,
+            0,
+            -0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6700000000000002,
+            0,
+            0.74
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              166,
+              140,
+              73
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四柱、柜体侧壁、背撑和石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              1,
+              0,
+              2
+            ],
+            "max": [
+              163,
+              90,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "左三屉、右检修门与中间浅屉",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              18,
+              -1
+            ],
+            "max": [
+              153,
+              86,
+              54
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "厚嵌芯台面、真实水槽内腔与排水口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              63,
+              -1
+            ],
+            "max": [
+              166,
+              92,
+              73
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "背架双柱、水电插盒和中央状态槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              88,
+              47
+            ],
+            "max": [
+              161,
+              140,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "实验台：耐洗石台面、贯通洗槽、双接口背架、细龙头、三抽屉、检修柜与开放膝位",
+          "parent": "root",
+          "region": {
+            "min": [
+              -1,
+              0,
+              -1
+            ],
+            "max": [
+              166,
+              140,
+              73
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            51,
+            16,
+            10
+          ],
+          "max": [
+            113,
+            70,
+            59
+          ]
+        },
+        {
+          "min": [
+            120,
+            68,
+            30
+          ],
+          "max": [
+            149,
+            93,
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-114",
+      "name": "显微观察设备",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.025
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.44,
+            0,
+            0.49500000000000005
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              88,
+              121,
+              94
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "分层底框、嵌装面板、四角黑金脚套和前检修槽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -3
+            ],
+            "max": [
+              86,
+              17,
+              94
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "后立柱涂装壳、前导轨、滑座、刻度与承台连臂",
+          "parent": "root",
+          "region": {
+            "min": [
+              47,
+              16,
+              47
+            ],
+            "max": [
+              78,
+              97,
+              87
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双侧调焦轴、金属法兰、铜套和分齿防滑旋钮",
+          "parent": "root",
+          "region": {
+            "min": [
+              41,
+              31,
+              65
+            ],
+            "max": [
+              88,
+              86,
+              83
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "载物台凹框、贯通光孔、玻璃载片与双夹片",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              57,
+              14
+            ],
+            "max": [
+              71,
+              69,
+              70
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "下聚光器、独立暖光投射座和分层压环",
+          "parent": "root",
+          "region": {
+            "min": [
+              27,
+              16,
+              21
+            ],
+            "max": [
+              62,
+              57,
+              47
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "分件机头、黑色密封带、物镜转换盘与三根套筒",
+          "parent": "root",
+          "region": {
+            "min": [
+              21,
+              71,
+              21
+            ],
+            "max": [
+              75,
+              113,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-6",
+          "name": "双目斜筒、内缩眼罩、独立青色镜芯与前玻璃",
+          "parent": "root",
+          "region": {
+            "min": [
+              13,
+              89,
+              -5
+            ],
+            "max": [
+              59,
+              111,
+              44
+            ]
+          }
+        },
+        {
+          "id": "part-7",
+          "name": "机头状态屏、仪器涂装分板、后立筒与顶调节钮",
+          "parent": "root",
+          "region": {
+            "min": [
+              16,
+              89,
+              27
+            ],
+            "max": [
+              74,
+              121,
+              89
+            ]
+          }
+        },
+        {
+          "id": "part-8",
+          "name": "显微镜精修：分层机壳、双目发光镜芯、导轨滑座、转换物镜、透孔载物台与锁固底座",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -5
+            ],
+            "max": [
+              88,
+              121,
+              94
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            38,
+            40,
+            31
+          ],
+          "max": [
+            42,
+            62,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-115",
+      "name": "研究样品容器",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.005,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            -0.055,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.495,
+            0,
+            0.28500000000000003
+          ],
+          "pitch": 0.005
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -11,
+              0,
+              0
+            ],
+            "max": [
+              88,
+              55,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "厚底敞口量杯、玻璃壁和双金属口沿",
+          "parent": "root",
+          "region": {
+            "min": [
+              5,
+              0,
+              14
+            ],
+            "max": [
+              41,
+              55,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "量杯方把、双连接耳、真实指孔及销钉",
+          "parent": "root",
+          "region": {
+            "min": [
+              -11,
+              11,
+              24
+            ],
+            "max": [
+              9,
+              48,
+              32
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双层收肩的两只样品瓶、细颈和盖筋",
+          "parent": "root",
+          "region": {
+            "min": [
+              46,
+              0,
+              35
+            ],
+            "max": [
+              88,
+              48,
+              57
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "独立培养皿、内凹底与双边沿",
+          "parent": "root",
+          "region": {
+            "min": [
+              52,
+              0,
+              0
+            ],
+            "max": [
+              80,
+              8,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "研究容器：敞口量杯、两只带颈瓶、培养皿、厚唇圈、指孔把手及刻度格",
+          "parent": "root",
+          "region": {
+            "min": [
+              -11,
+              0,
+              0
+            ],
+            "max": [
+              88,
+              55,
+              57
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            13,
+            10,
+            22
+          ],
+          "max": [
+            33,
+            50,
+            42
+          ]
+        },
+        {
+          "min": [
+            54,
+            4,
+            43
+          ],
+          "max": [
+            60,
+            33,
+            49
+          ]
+        },
+        {
+          "min": [
+            77,
+            4,
+            44
+          ],
+          "max": [
+            81,
+            19,
+            48
+          ]
+        },
+        {
+          "min": [
+            59,
+            2,
+            7
+          ],
+          "max": [
+            73,
+            6,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-113",
+      "name": "实验仪器外壳",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            -0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.98,
+            0,
+            0.6900000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              98,
+              102,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "底框、石脚、倒阶左右壳体及后背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              98,
+              102,
+              68
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "凹腔底盘、样台、行程导向和检修间缝",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              15,
+              5
+            ],
+            "max": [
+              96,
+              39,
+              66
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "分格透明斜罩、实心压边、转轴座与开启拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              22,
+              30,
+              8
+            ],
+            "max": [
+              76,
+              89,
+              41
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "侧壳真孔、顶模块、竖向灯框与双控键",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              15,
+              -1
+            ],
+            "max": [
+              91,
+              82,
+              46
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "实验仪器：倒阶壳体、内退工作腔、斜观察罩、样台、右操作柱与贯通通风栅",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              -1
+            ],
+            "max": [
+              98,
+              102,
+              68
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            30,
+            40,
+            40
+          ],
+          "max": [
+            70,
+            78,
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-life-116",
+      "name": "科研资料柜",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.09,
+            0,
+            0.47000000000000003
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              0
+            ],
+            "max": [
+              111,
+              178,
+              47
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四柱、五道承板、顶框和薄背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              3
+            ],
+            "max": [
+              111,
+              178,
+              47
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "下四抽、右嵌芯门、上下锁固横枋",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              16,
+              2
+            ],
+            "max": [
+              109,
+              174,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双玻璃门、分离压条与铜铰链",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              74,
+              0
+            ],
+            "max": [
+              101,
+              162,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "资料夹脊、内缩书页、标签凹面及留空格",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              72,
+              15
+            ],
+            "max": [
+              90,
+              166,
+              38
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "科研柜：四柱攒边、上层双玻璃门、三层资料格、四抽屉、底柜与铜拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              0
+            ],
+            "max": [
+              111,
+              178,
+              47
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-public-material-116",
+      "name": "科研资料柜 · 公共空间用途修正",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0.02,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.09,
+            0,
+            0.47000000000000003
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              2,
+              0,
+              0
+            ],
+            "max": [
+              111,
+              178,
+              47
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四柱、五道承板、顶框和薄背板",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              3
+            ],
+            "max": [
+              111,
+              178,
+              47
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "下四抽、右嵌芯门、上下锁固横枋",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              16,
+              2
+            ],
+            "max": [
+              109,
+              174,
+              43
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "双玻璃门、分离压条与铜铰链",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              74,
+              0
+            ],
+            "max": [
+              101,
+              162,
+              8
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "资料夹脊、内缩书页、标签凹面及留空格",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              72,
+              15
+            ],
+            "max": [
+              90,
+              166,
+              38
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "科研柜：四柱攒边、上层双玻璃门、三层资料格、四抽屉、底柜与铜拉手",
+          "parent": "root",
+          "region": {
+            "min": [
+              2,
+              0,
+              0
+            ],
+            "max": [
+              111,
+              178,
+              47
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-public-table-lab-island",
+      "name": "实际承托工作面与四足",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 60
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "life-133-0",
+      "assetId": "architecture-civic-park-paving-life-space-133-8acfdebc74",
+      "name": "分层实心台基与独立石铺面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-1",
+      "assetId": "architecture-civic-life-space-shell-133-528bd72feb",
+      "name": "真实窗洞、木梁与切角房间墙",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-2",
+      "assetId": "architecture-public-material-112",
+      "name": "实验台 · 公共空间用途修正",
+      "position": [
+        0.6,
+        0,
+        6.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-3",
+      "assetId": "source-life-114",
+      "name": "显微观察设备",
+      "position": [
+        0.76,
+        0.91,
+        6.18
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-4",
+      "assetId": "source-life-115",
+      "name": "研究样品容器",
+      "position": [
+        1.29,
+        0.91,
+        6.19
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-5",
+      "assetId": "architecture-public-material-112",
+      "name": "实验台 · 公共空间用途修正",
+      "position": [
+        2.6,
+        0,
+        6.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-6",
+      "assetId": "source-life-114",
+      "name": "显微观察设备",
+      "position": [
+        2.76,
+        0.91,
+        6.18
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-7",
+      "assetId": "source-life-115",
+      "name": "研究样品容器",
+      "position": [
+        3.29,
+        0.91,
+        6.19
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-8",
+      "assetId": "source-life-113",
+      "name": "实验仪器外壳",
+      "position": [
+        5.55,
+        0,
+        5.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-9",
+      "assetId": "architecture-public-material-116",
+      "name": "科研资料柜 · 公共空间用途修正",
+      "position": [
+        6.35,
+        0,
+        3.7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-10",
+      "assetId": "architecture-public-table-lab-island",
+      "name": "实际承托工作面与四足",
+      "position": [
+        2.65,
+        0,
+        2.7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "life-133-11",
+      "assetId": "source-life-115",
+      "name": "研究样品容器",
+      "position": [
+        3,
+        0.91,
+        2.87
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}
