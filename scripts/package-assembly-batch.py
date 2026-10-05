@@ -30,6 +30,15 @@ assert not previews['errors'] and previews['run'] == latest['run']
 assert {r['id'] for r in previews['items']} == {r['id'] for r in entries}
 assert all({'isometric', 'front', 'material'} <= r['files'].keys() for r in previews['items'])
 by_id = {r['id']: r for r in index['entries']}
+legacy_report = out / 'legacy-dependencies.json'
+if legacy_report.exists():
+    legacy = read(legacy_report)
+    assert legacy['status'] == 'passed' and legacy['run'] == latest['run']
+    for row in legacy['dependencies']:
+        assert row['kind'] == 'legacy-base-dependency' and row['canonicalCopiedIdentity'] and row['collisionOccupancyIdentity']
+        assert hashlib.sha256((root / 'projects' / row['file']).read_bytes()).hexdigest() == row['originalFileSHA256']
+        assert row['id'] not in by_id, 'Atlas masters take precedence over legacy exports'
+        by_id[row['id']] = row
 closure = {r['id']: r for r in entries}
 catalog_contracts = {}
 todo = list(entries) + read(out / 'assembly-verification.json')['variants']
@@ -67,10 +76,20 @@ def add(p):
     files.add(p)
 for row in closure.values():
     add(root / 'projects' / row['file'])
-    run = re.match(r'(atlas-\d{14})-', row['file']).group(1)
-    directory = root / 'projects/production' / run / 'exports' / row['id']
+    if row.get('kind') == 'legacy-base-dependency':
+        directory = root / row['exportDirectory']
+        assert directory.resolve().is_relative_to((root / latest['out'] / 'legacy-dependencies').resolve())
+        assert read(directory / 'voxels.ysvox.json')['assets'][row['assetId']] == read(root / row['sourceParentFile'])['assets'][row['sourceParentAssetId']]
+        for historical_file in row['historicalExportFiles']:
+            add(root / historical_file)
+    else:
+        run = re.match(r'(atlas-\d{14})-', row['file']).group(1)
+        directory = root / 'projects/production' / run / 'exports' / row['id']
     for name in ['voxels.ysvox.json', 'visual.glb', 'collision.json', 'interfaces.json', 'atlas.json', 'atlas.png']:
         add(directory / name)
+    for pattern in ['*-sky.png', '*-atmosphere-*.png']:
+        for image in directory.glob(pattern):
+            add(image)
     if (directory / 'terrain-authority.json').exists():
         add(directory / 'terrain-authority.json')
     if row['id'] in {e['id'] for e in entries}:
@@ -102,7 +121,7 @@ with ZipFile(args.output, 'w', ZIP_DEFLATED, compresslevel=6) as archive:
     archive.writestr('使用说明.txt', f'''{args.sheet} 建筑组合模板：{reference_count} 条参考，{form_count} 种有限形态，新增基础母版 0。
 projects 中的原生文件保存组件、原件/派生关系和实际实例；整体单位米，Y 轴向上。
 visual.glb 为整组场景，visual-material.glb 带实际参考材质，visual-far.glb 为手动远档。
-通用查看器可直接打开 GLB；编辑器可打开原生单组或 gallery 文件。
+通用查看器可读取GLB；编辑器可打开原生单组或gallery文件。若含天球，应按场景extras在独立背景通道绘制天空，按前景几何构图，避免天球半径使场景缩小；半球光须消费端配置。云雾雨与天空PNG同时随包。
 斜面、曲面及地形保留连续网格，最小块件为原生体素。原生格和连续网格分别保存碰撞声明；手动远档不等于自动距离 LOD。
 若有 terrain-authority.json，须显式加载其中近景实体及实际放置作为物理权威；远景显示面并非体素碰撞代理。
 包内保留本批组合及其递归依赖，不把依赖、重复放置或宽度形态算成新基础母版。

@@ -1,0 +1,50 @@
+✖ M052 22 finite forms retain closed physical parts, attached minimum cells and reversible quarter turns (29900.513624ms)
+✖ M052 actual rooms, bearings, drain, terrain contacts, water and body routes pass independently (31937.954678ms)
+✔ M052 original assets and exact sink cabinet deletion are preserved (14541.039753ms)
+✔ M052 public creation preserves foreign IDs, supports continuous time, rejects invalid states and undoes atomically (24188.924938ms)
+✔ M052 atmospheric RGBA textures survive GLB unchanged and never merge different descriptors (4509.333497ms)
+✔ M052 day-night use one curve, preserve foreground and export actual directional lights (3000.5366ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 108995.907763
+
+✖ failing tests:
+
+test at tests/atlas-environment-assemblies.test.ts:7:1
+✖ M052 22 finite forms retain closed physical parts, attached minimum cells and reversible quarter turns (29900.513624ms)
+  Error: 实例位置必须吸附到母版格距
+      at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:163:160)
+      at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:107:349)
+      at Engine.execute (/workspace/voxel-studio-yunshan/src/core/engine.ts:54:39)
+      at commit (/workspace/voxel-studio-yunshan/tests/atlas-environment-assemblies.test.ts:4:133)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-environment-assemblies.test.ts:7:588)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests/atlas-environment-assemblies.test.ts:8:1
+✖ M052 actual rooms, bearings, drain, terrain contacts, water and body routes pass independently (31937.954678ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(extra.atmospheric.every(x=>x.nonphysical&&x.actualTriangles===2&&x.alphaRange[0]===0&&x.alphaRange[1]>0&&x.alphaRange[1]<255&&x.clearOfTerrain))
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-environment-assemblies.test.ts:8:1111)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,0 +1,157 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47
+    }
+  },
+  "assemblies": {},
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "life-018",
+      "name": "桌面显示器与支座",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0.01
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.6,
+            0,
+            0.19999999999999998
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              60,
+              46,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "分层基座、颈架及固定鞍座",
+          "parent": "root",
+          "region": {
+            "min": [
+              10,
+              0,
+              1
+            ],
+            "max": [
+              50,
+              16,
+              21
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "通风后壳与可分选框架",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              14,
+              4
+            ],
+            "max": [
+              60,
+              46,
+              20
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "屏内静态体素图形：刻度、回形导航和状态列",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              18,
+              3
+            ],
+            "max": [
+              54,
+              41,
+              4
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "攒框终端屏、分层石座、角榫、后壳散热和静态体素界面",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              1
+            ],
+            "max": [
+              60,
+              46,
+              21
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

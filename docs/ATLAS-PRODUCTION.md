@@ -1,6 +1,6 @@
 # 67 张图册：三维资产转化
 
-截至 M051，累计 **612/793** 条参考技术候选，剩余 181 条，人工美术验收 0。最新 [M051 切坡、桥岸与公共景观](M051-ARCHITECTURE-ASSEMBLIES.md)、[进度](../projects/conversion-goal.json) 和 [实际总览](../artifacts/atlas/atlas-20261005122554/M051.png)。当前采用最小体素组件、连续斜面/曲面和天空贴图的混合建模标准。
+截至 M052，累计 **624/793** 条参考技术候选，剩余 169 条，人工美术验收 0。最新 [M052 昼夜天气与住宅房间](M052-ARCHITECTURE-ASSEMBLIES.md)、[进度](../projects/conversion-goal.json) 和 [实际总览](../artifacts/atlas/atlas-20261005130251/M052.png)。当前采用最小体素组件、连续斜面/曲面和天空贴图的混合建模标准。
 
 以下 M017 及更早数字、约定和验证保留为历史记录，不是最新累计状态。
 

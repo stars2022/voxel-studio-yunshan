@@ -3,10 +3,15 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=40;
+export const referenceFinishVersion=41;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ weatherCloud:{color:'#d4e0e5',roughness:1,metalness:0,opacity:.85,intensity:0},
+ valleyFog:{color:'#c4d8db',roughness:1,metalness:0,opacity:.46,intensity:0},
+ rainDroplet:{color:'#a4c7d6',roughness:.3,metalness:0,opacity:.65,intensity:0},
+ snowCover:{color:'#edf3f2',roughness:.92,metalness:0,opacity:1,intensity:0},
+ frostCover:{color:'#c5d6dc',roughness:.55,metalness:0,opacity:.7,intensity:0},
  transitBody:{color:'#607e82',roughness:.48,metalness:.65,...surface('metal',.2,.06,525)},
  cabinLiner:{color:'#dad6ca',roughness:.85,metalness:0,...surface('none',.2,.06,526)},
  passengerUpholstery:{color:'#617e85',roughness:.85,metalness:0,...surface('fabric',.2,.06,527)},

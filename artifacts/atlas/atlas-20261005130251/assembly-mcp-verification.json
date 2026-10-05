@@ -1,0 +1,1324 @@
+{
+  "run": "atlas-20261005130251",
+  "status": "passed",
+  "checks": [
+    "Actual public library has624 references,108 atlas assemblies,513 unique atlas masters; continuous hour0..24 is public",
+    "Actual atlas button opens complete editable kitchen assembly",
+    "Additional real MCP/browser views cover terrain fog, living and kitchen plans; the separate36-image atlas covers all12 defaults",
+    "Public MCP continuous17.35 creation passes dry-run, CAS, idempotency, atomic invalid-state rollback and wrong-type rejection",
+    "Real minimum rock query, independent cloud/rock palette changes rebuild atmospheric texture cache, synchronize and undo with geometry unchanged",
+    "Actual near/far/near render switches retain saved data, four sky backgrounds and refreshed resource disposal",
+    "Actual quarter turn exports exactly and one undo per transaction restores placement then dependent components",
+    "Real day/night/sunset/overcast/rain/fog render uses actual saved clock, embedded sky and soft alpha textures; finite snapshots, no live simulation",
+    "Leaving climate restores studio illumination; public kitchen factory keeps actual basin opening, air gaps and finite use spaces",
+    "Native save and server restart preserve exact components, instances, source provenance and assembly definitions"
+  ],
+  "errors": [],
+  "views": [
+    {
+      "key": "ENV-126-front",
+      "file": "assembly-ENV-126-front.png",
+      "authorEnvironment": {
+        "assemblyId": "env-126",
+        "environment": {
+          "version": 1,
+          "hour": 12,
+          "weather": "clear",
+          "visibility": 1,
+          "skyAssetIds": [
+            "source-env-110-hour-12-weather-clear-visibility-1",
+            "source-env-112-hour-12-weather-clear-visibility-1",
+            "source-env-113-hour-12-weather-clear-visibility-1",
+            "source-env-114-hour-12-weather-clear-visibility-1"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 12,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sun": [
+            6.123233995736766e-17,
+            1,
+            8.572527594031473e-18
+          ],
+          "moon": [
+            -6.123233995736766e-17,
+            -1,
+            -8.572527594031473e-18
+          ],
+          "sunIntensity": 3.6,
+          "moonIntensity": 0,
+          "hemisphereIntensity": 1.18,
+          "fillIntensity": 0.43,
+          "exposure": 1,
+          "sunColor": "#fff2dc",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 12,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sourceIds": [
+            "source-env-110-hour-12-weather-clear-visibility-1",
+            "source-env-112-hour-12-weather-clear-visibility-1",
+            "source-env-113-hour-12-weather-clear-visibility-1",
+            "source-env-114-hour-12-weather-clear-visibility-1"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            -1.400000095367442,
+            14.399999976158128,
+            -84.95999965667725
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 16,
+          "disposedMaterials": 16
+        }
+      },
+      "lighting": {
+        "direction": [
+          6.115635329851812e-17,
+          0.9999999999999999,
+          8.572527594031472e-18
+        ],
+        "directionalIntensity": 3.6,
+        "hemisphereIntensity": 1.18,
+        "fillIntensity": 0.43,
+        "exposure": 1
+      },
+      "triangles": 166064
+    },
+    {
+      "key": "LIFE-059-top",
+      "file": "assembly-LIFE-059-top.png",
+      "authorEnvironment": null,
+      "lighting": {
+        "direction": [
+          -0.3157894736842105,
+          0.7894736842105263,
+          -0.5263157894736842
+        ],
+        "directionalIntensity": 3.6,
+        "hemisphereIntensity": 1.25,
+        "fillIntensity": 0.7,
+        "exposure": 0.85
+      },
+      "triangles": 33622
+    },
+    {
+      "key": "LIFE-061-top",
+      "file": "assembly-LIFE-061-top.png",
+      "authorEnvironment": null,
+      "lighting": {
+        "direction": [
+          -0.3157894736842105,
+          0.7894736842105263,
+          -0.5263157894736842
+        ],
+        "directionalIntensity": 3.6,
+        "hemisphereIntensity": 1.25,
+        "fillIntensity": 0.7,
+        "exposure": 0.85
+      },
+      "triangles": 62306
+    },
+    {
+      "key": "continuous-hour-17p35",
+      "file": "assembly-continuous-hour-17p35.png",
+      "authorEnvironment": {
+        "assemblyId": "climate",
+        "environment": {
+          "version": 1,
+          "hour": 17.35,
+          "weather": "clear",
+          "visibility": 1,
+          "skyAssetIds": [
+            "source-env-110-hour-17p35-weather-clear-visibility-1",
+            "source-env-112-hour-17p35-weather-clear-visibility-1",
+            "source-env-113-hour-17p35-weather-clear-visibility-1",
+            "source-env-114-hour-17p35-weather-clear-visibility-1"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 17.35,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sun": [
+            -0.9763064687395065,
+            0.16776013354699018,
+            -0.13668290562353091
+          ],
+          "moon": [
+            0.9763064687395065,
+            -0.16776013354699018,
+            0.13668290562353091
+          ],
+          "sunIntensity": 3.5825112689459213,
+          "moonIntensity": 0.0017002932969243211,
+          "hemisphereIntensity": 1.1751420191516448,
+          "fillIntensity": 0.42829970670307566,
+          "exposure": 0.9995142019151645,
+          "sunColor": "#ffd09a",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 17.35,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sourceIds": [
+            "source-env-110-hour-17p35-weather-clear-visibility-1",
+            "source-env-112-hour-17p35-weather-clear-visibility-1",
+            "source-env-113-hour-17p35-weather-clear-visibility-1",
+            "source-env-114-hour-17p35-weather-clear-visibility-1"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            83.55999956130985,
+            99.35999963283538,
+            -84.95999965667727
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 24,
+          "disposedMaterials": 24
+        }
+      },
+      "lighting": {
+        "direction": [
+          -0.9763064687395064,
+          0.16776013354699018,
+          -0.1366829056235309
+        ],
+        "directionalIntensity": 3.5825112689459213,
+        "hemisphereIntensity": 1.1751420191516448,
+        "fillIntensity": 0.42829970670307566,
+        "exposure": 0.9995142019151645
+      },
+      "triangles": 165960
+    },
+    {
+      "key": "changed-cloud-texture",
+      "file": "assembly-changed-cloud-texture.png",
+      "authorEnvironment": {
+        "assemblyId": "climate",
+        "environment": {
+          "version": 1,
+          "hour": 17.35,
+          "weather": "clear",
+          "visibility": 1,
+          "skyAssetIds": [
+            "source-env-110-hour-17p35-weather-clear-visibility-1",
+            "source-env-112-hour-17p35-weather-clear-visibility-1",
+            "source-env-113-hour-17p35-weather-clear-visibility-1",
+            "source-env-114-hour-17p35-weather-clear-visibility-1"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 17.35,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sun": [
+            -0.9763064687395065,
+            0.16776013354699018,
+            -0.13668290562353091
+          ],
+          "moon": [
+            0.9763064687395065,
+            -0.16776013354699018,
+            0.13668290562353091
+          ],
+          "sunIntensity": 3.5825112689459213,
+          "moonIntensity": 0.0017002932969243211,
+          "hemisphereIntensity": 1.1751420191516448,
+          "fillIntensity": 0.42829970670307566,
+          "exposure": 0.9995142019151645,
+          "sunColor": "#ffd09a",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 17.35,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sourceIds": [
+            "source-env-110-hour-17p35-weather-clear-visibility-1",
+            "source-env-112-hour-17p35-weather-clear-visibility-1",
+            "source-env-113-hour-17p35-weather-clear-visibility-1",
+            "source-env-114-hour-17p35-weather-clear-visibility-1"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            83.55999956130985,
+            99.35999963283538,
+            -84.95999965667727
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 32,
+          "disposedMaterials": 32
+        }
+      },
+      "lighting": {
+        "direction": [
+          -0.9763064687395064,
+          0.16776013354699018,
+          -0.1366829056235309
+        ],
+        "directionalIntensity": 3.5825112689459213,
+        "hemisphereIntensity": 1.1751420191516448,
+        "fillIntensity": 0.42829970670307566,
+        "exposure": 0.9995142019151645
+      },
+      "triangles": 165960
+    },
+    {
+      "key": "quarter-turn",
+      "file": "assembly-quarter-turn.png",
+      "authorEnvironment": {
+        "assemblyId": "climate",
+        "environment": {
+          "version": 1,
+          "hour": 17.35,
+          "weather": "clear",
+          "visibility": 1,
+          "skyAssetIds": [
+            "source-env-110-hour-17p35-weather-clear-visibility-1",
+            "source-env-112-hour-17p35-weather-clear-visibility-1",
+            "source-env-113-hour-17p35-weather-clear-visibility-1",
+            "source-env-114-hour-17p35-weather-clear-visibility-1"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 17.35,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sun": [
+            -0.9763064687395065,
+            0.16776013354699018,
+            -0.13668290562353091
+          ],
+          "moon": [
+            0.9763064687395065,
+            -0.16776013354699018,
+            0.13668290562353091
+          ],
+          "sunIntensity": 3.5825112689459213,
+          "moonIntensity": 0.0017002932969243211,
+          "hemisphereIntensity": 1.1751420191516448,
+          "fillIntensity": 0.42829970670307566,
+          "exposure": 0.9995142019151645,
+          "sunColor": "#ffd09a",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 17.35,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sourceIds": [
+            "source-env-110-hour-17p35-weather-clear-visibility-1",
+            "source-env-112-hour-17p35-weather-clear-visibility-1",
+            "source-env-113-hour-17p35-weather-clear-visibility-1",
+            "source-env-114-hour-17p35-weather-clear-visibility-1"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            216.5,
+            203.39999997615814,
+            -156.49999999999997
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 52,
+          "disposedMaterials": 52
+        }
+      },
+      "lighting": {
+        "direction": [
+          -0.9763064687395065,
+          0.16776013354699018,
+          -0.13668290562353094
+        ],
+        "directionalIntensity": 3.5825112689459213,
+        "hemisphereIntensity": 1.1751420191516448,
+        "fillIntensity": 0.42829970670307566,
+        "exposure": 0.9995142019151645
+      },
+      "triangles": 312080
+    },
+    {
+      "key": "night",
+      "file": "assembly-night.png",
+      "authorEnvironment": {
+        "assemblyId": "snapshot",
+        "environment": {
+          "version": 1,
+          "hour": 0,
+          "weather": "clear",
+          "visibility": 1,
+          "skyAssetIds": [
+            "source-env-110-hour-0-weather-clear-visibility-1",
+            "source-env-112-hour-0-weather-clear-visibility-1",
+            "source-env-113-hour-0-weather-clear-visibility-1",
+            "source-env-114-hour-0-weather-clear-visibility-1"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 0,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sun": [
+            6.123233995736766e-17,
+            -1,
+            8.572527594031473e-18
+          ],
+          "moon": [
+            -6.123233995736766e-17,
+            1,
+            -8.572527594031473e-18
+          ],
+          "sunIntensity": 0,
+          "moonIntensity": 0.35,
+          "hemisphereIntensity": 0.18,
+          "fillIntensity": 0.08,
+          "exposure": 0.9,
+          "sunColor": "#fff2dc",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 0,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sourceIds": [
+            "source-env-110-hour-0-weather-clear-visibility-1",
+            "source-env-112-hour-0-weather-clear-visibility-1",
+            "source-env-113-hour-0-weather-clear-visibility-1",
+            "source-env-114-hour-0-weather-clear-visibility-1"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            83.55999956130985,
+            99.35999963283538,
+            -84.95999965667727
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 68,
+          "disposedMaterials": 68
+        }
+      },
+      "lighting": {
+        "direction": [
+          -6.115635329851812e-17,
+          0.9999999999999999,
+          -8.572527594031472e-18
+        ],
+        "directionalIntensity": 0.35,
+        "hemisphereIntensity": 0.18,
+        "fillIntensity": 0.08,
+        "exposure": 0.9
+      },
+      "triangles": 166040
+    },
+    {
+      "key": "sunset",
+      "file": "assembly-sunset.png",
+      "authorEnvironment": {
+        "assemblyId": "snapshot",
+        "environment": {
+          "version": 1,
+          "hour": 18,
+          "weather": "clear",
+          "visibility": 1,
+          "skyAssetIds": [
+            "source-env-110-hour-18-weather-clear-visibility-1",
+            "source-env-112-hour-18-weather-clear-visibility-1",
+            "source-env-113-hour-18-weather-clear-visibility-1",
+            "source-env-114-hour-18-weather-clear-visibility-1"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 18,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sun": [
+            -0.9903417466743302,
+            1.2128188501267172e-16,
+            -0.13864784453440623
+          ],
+          "moon": [
+            0.9903417466743302,
+            -1.2128188501267172e-16,
+            0.13864784453440623
+          ],
+          "sunIntensity": 1.2672000000000023,
+          "moonIntensity": 0.22679999999999975,
+          "hemisphereIntensity": 0.5320000000000007,
+          "fillIntensity": 0.2032000000000002,
+          "exposure": 0.9352,
+          "sunColor": "#ffd09a",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 18,
+            "weather": "clear",
+            "visibility": 1
+          },
+          "sourceIds": [
+            "source-env-110-hour-18-weather-clear-visibility-1",
+            "source-env-112-hour-18-weather-clear-visibility-1",
+            "source-env-113-hour-18-weather-clear-visibility-1",
+            "source-env-114-hour-18-weather-clear-visibility-1"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            83.55999956130985,
+            99.35999963283538,
+            -84.95999965667727
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 84,
+          "disposedMaterials": 84
+        }
+      },
+      "lighting": {
+        "direction": [
+          -0.9903417466743302,
+          1.129040368588027e-16,
+          -0.13864784453440626
+        ],
+        "directionalIntensity": 1.2672000000000023,
+        "hemisphereIntensity": 0.5320000000000007,
+        "fillIntensity": 0.2032000000000002,
+        "exposure": 0.9352
+      },
+      "triangles": 166040
+    },
+    {
+      "key": "overcast",
+      "file": "assembly-overcast.png",
+      "authorEnvironment": {
+        "assemblyId": "snapshot",
+        "environment": {
+          "version": 1,
+          "hour": 12,
+          "weather": "overcast",
+          "visibility": 1,
+          "skyAssetIds": [
+            "source-env-110-hour-12-weather-overcast-visibility-1",
+            "source-env-112-hour-12-weather-overcast-visibility-1",
+            "source-env-113-hour-12-weather-overcast-visibility-1",
+            "source-env-114-hour-12-weather-overcast-visibility-1"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 12,
+            "weather": "overcast",
+            "visibility": 1
+          },
+          "sun": [
+            6.123233995736766e-17,
+            1,
+            8.572527594031473e-18
+          ],
+          "moon": [
+            -6.123233995736766e-17,
+            -1,
+            -8.572527594031473e-18
+          ],
+          "sunIntensity": 1.728,
+          "moonIntensity": 0,
+          "hemisphereIntensity": 0.6599999999999999,
+          "fillIntensity": 0.43,
+          "exposure": 1,
+          "sunColor": "#fff2dc",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 12,
+            "weather": "overcast",
+            "visibility": 1
+          },
+          "sourceIds": [
+            "source-env-110-hour-12-weather-overcast-visibility-1",
+            "source-env-112-hour-12-weather-overcast-visibility-1",
+            "source-env-113-hour-12-weather-overcast-visibility-1",
+            "source-env-114-hour-12-weather-overcast-visibility-1"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            83.55999956130985,
+            99.35999963283538,
+            -84.95999965667727
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 100,
+          "disposedMaterials": 100
+        }
+      },
+      "lighting": {
+        "direction": [
+          6.115635329851812e-17,
+          0.9999999999999999,
+          8.572527594031472e-18
+        ],
+        "directionalIntensity": 1.728,
+        "hemisphereIntensity": 0.6599999999999999,
+        "fillIntensity": 0.43,
+        "exposure": 1
+      },
+      "triangles": 173984
+    },
+    {
+      "key": "rain",
+      "file": "assembly-rain.png",
+      "authorEnvironment": {
+        "assemblyId": "snapshot",
+        "environment": {
+          "version": 1,
+          "hour": 12,
+          "weather": "rain",
+          "visibility": 0.8,
+          "skyAssetIds": [
+            "source-env-110-hour-12-weather-overcast-visibility-0p8",
+            "source-env-112-hour-12-weather-overcast-visibility-0p8",
+            "source-env-113-hour-12-weather-overcast-visibility-0p8",
+            "source-env-114-hour-12-weather-overcast-visibility-0p8"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 12,
+            "weather": "overcast",
+            "visibility": 0.8
+          },
+          "sun": [
+            6.123233995736766e-17,
+            1,
+            8.572527594031473e-18
+          ],
+          "moon": [
+            -6.123233995736766e-17,
+            -1,
+            -8.572527594031473e-18
+          ],
+          "sunIntensity": 1.08,
+          "moonIntensity": 0,
+          "hemisphereIntensity": 0.48,
+          "fillIntensity": 0.43,
+          "exposure": 1,
+          "sunColor": "#fff2dc",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 12,
+            "weather": "overcast",
+            "visibility": 0.8
+          },
+          "sourceIds": [
+            "source-env-110-hour-12-weather-overcast-visibility-0p8",
+            "source-env-112-hour-12-weather-overcast-visibility-0p8",
+            "source-env-113-hour-12-weather-overcast-visibility-0p8",
+            "source-env-114-hour-12-weather-overcast-visibility-0p8"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            83.55999956130985,
+            99.35999963283538,
+            -84.95999965667727
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 116,
+          "disposedMaterials": 116
+        }
+      },
+      "lighting": {
+        "direction": [
+          6.115635329851812e-17,
+          0.9999999999999999,
+          8.572527594031472e-18
+        ],
+        "directionalIntensity": 1.08,
+        "hemisphereIntensity": 0.48,
+        "fillIntensity": 0.43,
+        "exposure": 1
+      },
+      "triangles": 173992
+    },
+    {
+      "key": "fog",
+      "file": "assembly-fog.png",
+      "authorEnvironment": {
+        "assemblyId": "snapshot",
+        "environment": {
+          "version": 1,
+          "hour": 12,
+          "weather": "fog",
+          "visibility": 0.68,
+          "skyAssetIds": [
+            "source-env-110-hour-12-weather-overcast-visibility-0p68",
+            "source-env-112-hour-12-weather-overcast-visibility-0p68",
+            "source-env-113-hour-12-weather-overcast-visibility-0p68",
+            "source-env-114-hour-12-weather-overcast-visibility-0p68"
+          ],
+          "clockSource": "author-preview",
+          "originalStateBound": false
+        },
+        "rotation": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": {
+          "clock": {
+            "hour": 12,
+            "weather": "overcast",
+            "visibility": 0.68
+          },
+          "sun": [
+            6.123233995736766e-17,
+            1,
+            8.572527594031473e-18
+          ],
+          "moon": [
+            -6.123233995736766e-17,
+            -1,
+            -8.572527594031473e-18
+          ],
+          "sunIntensity": 1.512,
+          "moonIntensity": 0,
+          "hemisphereIntensity": 0.6,
+          "fillIntensity": 0.43,
+          "exposure": 1,
+          "sunColor": "#fff2dc",
+          "moonColor": "#9ebee5",
+          "originalStateBound": false
+        },
+        "background": {
+          "clock": {
+            "hour": 12,
+            "weather": "overcast",
+            "visibility": 0.68
+          },
+          "sourceIds": [
+            "source-env-110-hour-12-weather-overcast-visibility-0p68",
+            "source-env-112-hour-12-weather-overcast-visibility-0p68",
+            "source-env-113-hour-12-weather-overcast-visibility-0p68",
+            "source-env-114-hour-12-weather-overcast-visibility-0p68"
+          ],
+          "objects": 4,
+          "triangles": 15872,
+          "observer": [
+            83.55999956130985,
+            99.35999963283538,
+            -84.95999965667727
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 132,
+          "disposedMaterials": 132
+        }
+      },
+      "lighting": {
+        "direction": [
+          6.115635329851812e-17,
+          0.9999999999999999,
+          8.572527594031472e-18
+        ],
+        "directionalIntensity": 1.512,
+        "hemisphereIntensity": 0.6,
+        "fillIntensity": 0.43,
+        "exposure": 1
+      },
+      "triangles": 174004
+    },
+    {
+      "key": "kitchen-after-environment",
+      "file": "assembly-kitchen-after-environment.png",
+      "authorEnvironment": null,
+      "lighting": {
+        "direction": [
+          -0.3157894736842105,
+          0.7894736842105263,
+          -0.5263157894736842
+        ],
+        "directionalIntensity": 3.6,
+        "hemisphereIntensity": 1.25,
+        "fillIntensity": 0.7,
+        "exposure": 0.85
+      },
+      "triangles": 62306
+    }
+  ],
+  "notifications": [
+    {
+      "event": "state-invalidated",
+      "version": 3,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 4,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 5,
+      "bytes": 6245,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 6,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 7,
+      "bytes": 8994,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 8,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 9,
+      "bytes": 12109,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 10,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 11,
+      "bytes": 8200,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 12,
+      "bytes": 5277,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 13,
+      "bytes": 5269,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 14,
+      "bytes": 1245,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 15,
+      "bytes": 1239,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 16,
+      "bytes": 8192,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 17,
+      "bytes": 8199,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 18,
+      "bytes": 5291,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 19,
+      "bytes": 5284,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 20,
+      "bytes": 8192,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 21,
+      "bytes": 8211,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 22,
+      "bytes": 5299,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 23,
+      "bytes": 5291,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 24,
+      "bytes": 8204,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 25,
+      "bytes": 8742,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 26,
+      "bytes": 5657,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 27,
+      "bytes": 5649,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 28,
+      "bytes": 8734,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 29,
+      "bytes": 9259,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 30,
+      "bytes": 6008,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 31,
+      "bytes": 6000,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 32,
+      "bytes": 9251,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 33,
+      "bytes": 10012,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 34,
+      "bytes": 6517,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 35,
+      "bytes": 6508,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 36,
+      "bytes": 10005,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 37,
+      "bytes": 17497,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 38,
+      "bytes": 12093,
+      "fullProject": false
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "details": [
+    {
+      "mode": "far",
+      "triangles": 163224,
+      "disposedBackgrounds": 40
+    },
+    {
+      "mode": "near",
+      "triangles": 165960,
+      "disposedBackgrounds": 44
+    }
+  ],
+  "export": {
+    "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261005130251/environment-assembly-mcp-runtime/exports/environment-quarter-turn-1791208981654",
+    "files": [
+      "source-env-110-hour-17p35-weather-clear-visibility-1-sky.png",
+      "source-env-112-hour-17p35-weather-clear-visibility-1-sky.png",
+      "source-env-113-hour-17p35-weather-clear-visibility-1-sky.png",
+      "source-env-114-hour-17p35-weather-clear-visibility-1-sky.png",
+      "architecture-civic-atmosphere-high-0-ppversionpp1ppkindpppclo-15d857eb0d-atmosphere-0.png",
+      "architecture-civic-atmosphere-high-1-ppversionpp1ppkindpppclo-fc92c1bfdd-atmosphere-0.png",
+      "visual.glb",
+      "voxels.ysvox.json",
+      "collision.json",
+      "interfaces.json",
+      "atlas.png",
+      "atlas.json"
+    ],
+    "glbBytes": 6242288,
+    "isError": false
+  },
+  "kitchen": {
+    "atmospheric": [],
+    "uses": [
+      {
+        "key": "sink front",
+        "point": [
+          0.86,
+          0,
+          4.15
+        ],
+        "width": 0.7,
+        "clear": true,
+        "blocked": [],
+        "footPresent": true
+      },
+      {
+        "key": "stove front",
+        "point": [
+          2.16,
+          0,
+          4.15
+        ],
+        "width": 0.7,
+        "clear": true,
+        "blocked": [],
+        "footPresent": true
+      },
+      {
+        "key": "fridge front",
+        "point": [
+          3.55,
+          0,
+          4.15
+        ],
+        "width": 0.7,
+        "clear": true,
+        "blocked": [],
+        "footPresent": true
+      },
+      {
+        "key": "food store front",
+        "point": [
+          4.98,
+          0,
+          4.3
+        ],
+        "width": 0.7,
+        "clear": true,
+        "blocked": [],
+        "footPresent": true
+      }
+    ],
+    "seats": [
+      {
+        "key": "dining chair",
+        "instance": "kitchen-13",
+        "point": [
+          1.53,
+          0.44,
+          1.18
+        ],
+        "approach": [
+          1.53,
+          0,
+          0.5999999999999999
+        ],
+        "seatPresent": true,
+        "torsoClear": true,
+        "torsoBlocked": [],
+        "approachClear": true,
+        "approachBlocked": [],
+        "footPresent": true
+      },
+      {
+        "key": "dining chair",
+        "instance": "kitchen-14",
+        "point": [
+          2.1799999999999997,
+          0.44,
+          1.18
+        ],
+        "approach": [
+          2.1799999999999997,
+          0,
+          0.5999999999999999
+        ],
+        "seatPresent": true,
+        "torsoClear": true,
+        "torsoBlocked": [],
+        "approachClear": true,
+        "approachBlocked": [],
+        "footPresent": true
+      },
+      {
+        "key": "dining chair",
+        "instance": "kitchen-15",
+        "point": [
+          1.54,
+          0.44,
+          3.0500000000000003
+        ],
+        "approach": [
+          1.54,
+          0,
+          3.73
+        ],
+        "seatPresent": true,
+        "torsoClear": true,
+        "torsoBlocked": [],
+        "approachClear": true,
+        "approachBlocked": [],
+        "footPresent": true
+      },
+      {
+        "key": "dining chair",
+        "instance": "kitchen-16",
+        "point": [
+          2.37,
+          0.44,
+          3.0500000000000003
+        ],
+        "approach": [
+          2.37,
+          0,
+          3.73
+        ],
+        "seatPresent": true,
+        "torsoClear": true,
+        "torsoBlocked": [],
+        "approachClear": true,
+        "approachBlocked": [],
+        "footPresent": true
+      }
+    ],
+    "bearings": [
+      {
+        "upper": "kitchen-17",
+        "lower": "kitchen-12",
+        "points": [
+          [
+            1.8,
+            0.74,
+            1.9
+          ]
+        ],
+        "point": [
+          1.8,
+          0.74,
+          1.9
+        ],
+        "lowerPresent": true,
+        "upperPresent": true
+      }
+    ],
+    "mounts": [
+      {
+        "instance": "kitchen-7",
+        "wall": "kitchen-1",
+        "point": [
+          0.6,
+          1.77,
+          5.6
+        ],
+        "wallPresent": true,
+        "fixtureTouchesWall": true
+      }
+    ],
+    "kitchen": {
+      "bowlClear": {
+        "name": "actual sink inner bowl",
+        "min": [
+          0.7,
+          0.79,
+          5.040000000000001
+        ],
+        "max": [
+          1.02,
+          0.8500000000000001,
+          5.24
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      "hoodOpen": {
+        "clear": true,
+        "grillePresent": true,
+        "gaps": [
+          [
+            1.89,
+            1.74,
+            5.12
+          ],
+          [
+            2.05,
+            1.74,
+            5.12
+          ],
+          [
+            2.21,
+            1.74,
+            5.12
+          ]
+        ]
+      }
+    },
+    "bonsai": [],
+    "drain": null,
+    "nativeTriangles": 31152,
+    "scope": "Independent queries of actual triangles/cells and evaluated texture alpha. Finite author snapshots only; no simulated wind, precipitation, temperature, hydrology or room controllers."
+  }
+}

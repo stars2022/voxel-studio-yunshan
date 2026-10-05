@@ -1,4 +1,5 @@
 import {texturedSkyMaterial,disposeSkyMaterial} from './sky-material';
+import {activeAuthorEnvironment} from '../core/author-environment';
 import {SkyPreview} from './sky-preview';
 import type {SkyClock} from '../core/sky';
 import * as THREE from 'three';
@@ -21,7 +22,7 @@ type Built={texture?:MeshBucket['texture'];geometry:THREE.BufferGeometry;materia
 export class Viewer {
  renderer:THREE.WebGLRenderer;scene=new THREE.Scene();camera:THREE.PerspectiveCamera|THREE.OrthographicCamera;controls:OrbitControls;root=new THREE.Group();original=new THREE.Group();
  worker=new Worker(new URL('./mesh-worker.ts',import.meta.url),{type:'module'});cache=new Map<string,Map<string,Built[]>>();renderCache=new Map<string,Built[]>();private materialLibrary=new RenderMaterialLibrary();materials=this.materialLibrary.materials;pending=new Map<string,(v:any)=>void>();
- skyPreview=new SkyPreview();private skyRestore:{camera:THREE.PerspectiveCamera|THREE.OrthographicCamera;target:THREE.Vector3;clay:boolean}|null=null;
+ skyPreview=new SkyPreview();environmentPreview=new SkyPreview();private skyRestore:{camera:THREE.PerspectiveCamera|THREE.OrthographicCamera;target:THREE.Vector3;clay:boolean}|null=null;
  private proceduralMaterials:THREE.Material[]=[];
  private cacheSources=new Map<string,{asset:Asset;signature:string}>();private materialSignature='';private cacheAccess=new Map<string,number>();private accessClock=0;
  isolatedRegion:Bounds|null=null;lastMeshedAssets:string[]=[];meshJobs=0;lastMeshError:string|null=null;
@@ -84,7 +85,7 @@ export class Viewer {
    // Keep the last complete frame until rebuild() publishes its replacement;
    // rendering old meshes here would re-upload disposed materials and buffers.
    if(!this.ready&&!(this.original.visible&&this.original.children.length))return;
-   this.renderer.info.reset();if(this.skyPreview.clock){const previous=this.renderer.autoClear;this.renderer.autoClear=false;this.renderer.clear();this.skyPreview.render(this.renderer,this.camera,this.el.clientWidth/this.el.clientHeight);this.renderer.clearDepth();this.renderer.render(this.scene,this.camera);this.renderer.autoClear=previous;}else if(!this.clayEnabled&&(this.aoEnabled||this.bloomEnabled)&&this.studio){this.aoPass.enabled=this.aoEnabled;this.bloomPass.enabled=this.bloomEnabled;this.syncEffectsCamera();this.composer.render();}else this.renderer.render(this.scene,this.camera);};animate();
+   this.renderer.info.reset();if(this.skyPreview.clock||this.environmentPreview.clock){const previous=this.renderer.autoClear;this.renderer.autoClear=false;this.renderer.clear();(this.skyPreview.clock?this.skyPreview:this.environmentPreview).render(this.renderer,this.camera,this.el.clientWidth/this.el.clientHeight);this.renderer.clearDepth();this.renderer.render(this.scene,this.camera);this.renderer.autoClear=previous;}else if(!this.clayEnabled&&(this.aoEnabled||this.bloomEnabled)&&this.studio){this.aoPass.enabled=this.aoEnabled;this.bloomPass.enabled=this.bloomEnabled;this.syncEffectsCamera();this.composer.render();}else this.renderer.render(this.scene,this.camera);};animate();
  }
  syncEffectsCamera(){
   const mat=this.aoPass.ssaoMaterial,flag=this.camera instanceof THREE.PerspectiveCamera?1:0;
@@ -112,8 +113,9 @@ export class Viewer {
   const tasks:Promise<void>[]=[];
   for(const key of visible){
    const a=project.assets[key],gridAsset=displayAsset(a,this.mode==='asset'?this.layer:null,this.mode==='asset'?this.isolatedRegion:null),old=this.cacheSources.get(key),assetSignature=signature+(a.sky?JSON.stringify(Object.values(a.sky.materials).map(id=>[id,project.materials[id].color,project.materials[id].opacity])):'');
-   const changed=dirtyMeshChunks(old?.asset,gridAsset,old?.signature!==assetSignature);this.cacheAccess.set(key,++this.accessClock);
-   if(!changed.length){this.cacheSources.set(key,{asset:gridAsset,signature:assetSignature});continue;}
+   const effectSignature=assetSignature+JSON.stringify((a.meshes??[]).filter(m=>m.atmosphere).map(m=>[m.material,project.materials[m.material].color,project.materials[m.material].opacity]));
+   const changed=dirtyMeshChunks(old?.asset,gridAsset,old?.signature!==effectSignature);this.cacheAccess.set(key,++this.accessClock);
+   if(!changed.length){this.cacheSources.set(key,{asset:gridAsset,signature:effectSignature});continue;}
    const id=crypto.randomUUID();this.lastMeshedAssets.push(key);this.meshJobs++;
    tasks.push(new Promise<void>((resolve,reject)=>{
     this.pending.set(id,data=>{
@@ -124,16 +126,16 @@ export class Viewer {
      catch(e){for(const list of next.values())list.forEach(b=>b.geometry.dispose());reject(e);return;}
      let cached=this.cache.get(key);if(!cached){cached=new Map;this.cache.set(key,cached);}
      this.dropMerged(key);if(data.replaceAll){for(const list of cached.values())list.forEach(b=>b.geometry.dispose());cached.clear();}for(const [ck,list]of next){cached.get(ck)?.forEach(b=>b.geometry.dispose());if(list.length)cached.set(ck,list);else cached.delete(ck);}
-     this.cacheSources.set(key,{asset:gridAsset,signature:assetSignature});this.emitterCache.set(key,data.emitters??[]);this.lastMeshMs=data.durationMs;resolve();
+     this.cacheSources.set(key,{asset:gridAsset,signature:effectSignature});this.emitterCache.set(key,data.emitters??[]);this.lastMeshMs=data.durationMs;resolve();
     });
-    this.worker.postMessage({id,asset:gridAsset,materials:project.materials,keys:changed,far:meshMode==='far',replaceAll:old?.signature!==assetSignature||!!old?.asset.sky!==!!gridAsset.sky||!!old?.asset.meshes!==!!gridAsset.meshes});
+    this.worker.postMessage({id,asset:gridAsset,materials:project.materials,keys:changed,far:meshMode==='far',replaceAll:old?.signature!==effectSignature||!!old?.asset.sky!==!!gridAsset.sky||!!old?.asset.meshes!==!!gridAsset.meshes});
    }));
   }
   // Await every job before the next snapshot can write the cache, including failures.
   const settled=await Promise.allSettled(tasks),error=settled.find(r=>r.status==='rejected') as PromiseRejectedResult|undefined;
   if(error){this.lastMeshError=String(error.reason?.message??error.reason);if(rev===this.revision)this.el.classList.remove('meshing');throw error.reason;}
   for(const id of this.cache.keys())if(!project.assets[id])this.dropAssetCache(id);
-  this.builtProject=project;if(rev!==this.revision)return;if(this.skyPreview.clock){if(Object.values(project.assets).some(a=>a.sky))this.skyPreview.set(project,this.skyPreview.clock);else this.setSkyPreview(null);}this.rebuild();this.pruneCache(new Set(visible));this.ready=true;this.el.classList.remove('meshing');
+  this.builtProject=project;if(rev!==this.revision)return;if(this.skyPreview.clock){if(Object.values(project.assets).some(a=>a.sky))this.skyPreview.set(project,this.skyPreview.clock);else this.setSkyPreview(null);}this.syncAuthorEnvironment();this.rebuild();this.pruneCache(new Set(visible));this.ready=true;this.el.classList.remove('meshing');
  }
  private dropAssetCache(id:string){for(const list of this.cache.get(id)?.values()??[])for(const b of list)b.geometry.dispose();this.cache.delete(id);this.dropMerged(id);this.emitterCache.delete(id);this.cacheSources.delete(id);this.cacheAccess.delete(id);}
  get geometryBytes(){let bytes=0;const add=(g:THREE.BufferGeometry)=>{for(const a of Object.values(g.attributes))bytes+=a.array.byteLength;bytes+=g.index?.array.byteLength??0;};for(const chunks of this.cache.values())for(const list of chunks.values())for(const b of list)add(b.geometry);for(const list of this.renderCache.values())for(const b of list)add(b.geometry);return bytes;}
@@ -141,17 +143,19 @@ export class Viewer {
  dropMerged(id:string){for(const b of this.renderCache.get(id)??[])b.geometry.dispose();this.renderCache.delete(id);}
  merged(id:string):Built[]{
   const existing=this.renderCache.get(id);if(existing)return existing;
-  const groups=new Map<number,THREE.BufferGeometry[]>(),settings=new Map<number,Built>();for(const list of this.cache.get(id)?.values()??[])for(const b of list){settings.set(b.material,b);if(!groups.has(b.material))groups.set(b.material,[]);groups.get(b.material)!.push(b.geometry);}
-  const merged:Built[]=[];for(const [material,geometries]of groups){const geometry=mergeGeometries(geometries,false);if(geometry){geometry.computeBoundingSphere();merged.push({...settings.get(material),geometry,material});}}this.renderCache.set(id,merged);return merged;
+  const groups=new Map<string,THREE.BufferGeometry[]>(),settings=new Map<string,Built>();let textureIndex=0;for(const list of this.cache.get(id)?.values()??[])for(const b of list){const key=String(b.material)+(b.texture?'-texture-'+textureIndex++:'');settings.set(key,b);if(!groups.has(key))groups.set(key,[]);groups.get(key)!.push(b.geometry);}
+  const merged:Built[]=[];for(const [key,geometries]of groups){const geometry=mergeGeometries(geometries,false);if(geometry){geometry.computeBoundingSphere();merged.push({...settings.get(key)!,geometry});}}this.renderCache.set(id,merged);return merged;
  }
  rebuild(){
-  this.original.visible=false;this.proceduralMaterials.forEach(disposeSkyMaterial);this.proceduralMaterials=[];this.root.clear();this.practicalLights.clear();let lightCount=0;const add=(a:Asset,position:V3,rotation:number,instanceId:string|null)=>{if(this.skyPreview.clock&&a.sky)return;const group=new THREE.Group();group.position.fromArray(position);group.rotation.y=rotation*Math.PI/2;for(const b of this.merged(a.id)){const sourceMaterial=this.materials.get(b.material);if(!sourceMaterial)continue;const material=b.unlit?texturedSkyMaterial(b):sourceMaterial;if(b.unlit)this.proceduralMaterials.push(material);const mesh=new THREE.Mesh(b.geometry,material);mesh.userData={assetId:a.id,instanceId};mesh.onBeforeRender=()=>{if(this.clayEnabled){this.clayMaterial.uniforms.baseColor.value.copy(material.color);this.clayMaterial.uniforms.unlitComponent.value=!!b.unlit;this.clayMaterial.uniforms.skyMap.value=b.unlit?(material as THREE.MeshBasicMaterial).map:null;this.clayMaterial.uniforms.skyOpacity.value=material.opacity;this.clayMaterial.uniformsNeedUpdate=true;}};mesh.castShadow=!b.unlit&&!material.transparent;mesh.receiveShadow=!b.unlit&&!material.transparent;mesh.renderOrder=material.transparent?2:sourceMaterial.emissiveIntensity>0?1:0;group.add(mesh);}this.root.add(group);
+  this.original.visible=false;this.proceduralMaterials.forEach(disposeSkyMaterial);this.proceduralMaterials=[];this.root.clear();this.practicalLights.clear();let lightCount=0;const add=(a:Asset,position:V3,rotation:number,instanceId:string|null)=>{if(a.sky&&(this.skyPreview.clock||this.mode==='scene'&&Object.values(this.project.assemblies??{}).some(v=>(v.source?.environment as any)?.skyAssetIds?.includes(a.id))))return;const group=new THREE.Group();group.position.fromArray(position);group.rotation.y=rotation*Math.PI/2;for(const b of this.merged(a.id)){const sourceMaterial=this.materials.get(b.material);if(!sourceMaterial)continue;const material=b.unlit?texturedSkyMaterial(b):sourceMaterial;if(b.unlit)this.proceduralMaterials.push(material);const mesh=new THREE.Mesh(b.geometry,material);mesh.userData={assetId:a.id,instanceId};mesh.onBeforeRender=()=>{if(this.clayEnabled){this.clayMaterial.uniforms.baseColor.value.copy(material.color);this.clayMaterial.uniforms.unlitComponent.value=!!b.unlit;this.clayMaterial.uniforms.skyMap.value=b.unlit?(material as THREE.MeshBasicMaterial).map:null;this.clayMaterial.uniforms.skyOpacity.value=material.opacity;this.clayMaterial.uniformsNeedUpdate=true;}};mesh.castShadow=!b.unlit&&!material.transparent;mesh.receiveShadow=!b.unlit&&!material.transparent;mesh.renderOrder=material.transparent?2:sourceMaterial.emissiveIntensity>0?1:0;group.add(mesh);}this.root.add(group);
    for(const e of this.emitterCache.get(a.id)??[]){if(lightCount>=8)break;const mat=this.project.materials[e.material];if(!mat?.intensity)continue;const light=new THREE.PointLight(mat.emissive,Math.min(4,mat.intensity*e.area*35),1.35,2);light.position.fromArray(e.position).applyAxisAngle(new THREE.Vector3(0,1,0),rotation*Math.PI/2).add(new THREE.Vector3().fromArray(position));this.practicalLights.add(light);lightCount++;}
   };
   if(this.mode==='asset'&&this.assetId&&this.project.assets[this.assetId])add(this.project.assets[this.assetId],[0,0,0],0,null);else for(const i of Object.values(this.project.instances))add(this.project.assets[i.assetId],i.position,i.rotation,i.id);
   if(this.mode==='asset'&&this.project.selection.region&&this.project.selection.assetId===this.assetId)this.box(this.selection,this.project.selection.region,this.project.assets[this.assetId!]);else this.selection.visible=false;
   this.practicalLights.visible=!this.clayEnabled&&this.studio&&this.practicalsEnabled;this.fitLight();this.onStats({drawObjects:this.root.children.reduce((n,g)=>n+g.children.length,0),triangles:this.renderer.info.render.triangles,meshMs:this.lastMeshMs});
  }
+ syncAuthorEnvironment(){const active=this.mode==='scene'?activeAuthorEnvironment(this.project):null;if(active)this.environmentPreview.set(this.project,active.state.clock,active.environment.skyAssetIds,active.rotation);else{const wasActive=!!this.environmentPreview.clock;this.environmentPreview.clear();if(wasActive)this.setStudio(this.studio);}}
+ get authorEnvironment(){const a=this.mode==='scene'?activeAuthorEnvironment(this.project):null;return a?{...a,background:this.environmentPreview.stats}:null;}
  async setMode(mode:'scene'|'asset',assetId?:string){if(this.skyPreview.clock)this.setSkyPreview(null);this.mode=mode;this.assetId=assetId??this.assetId;this.original.visible=false;this.layer=null;this.isolatedRegion=null;await this.update(this.project);await this.updateQueue;this.fit();}
  contentBounds(){return new THREE.Box3().setFromObject(this.original.visible&&this.original.children.length?this.original:this.root);}
  frame(bounds?:THREE.Box3){
@@ -211,7 +215,9 @@ export class Viewer {
   if(this.project?.assets[this.assetId!]?.sky?.kind==='stars'){this.renderer.setClearColor(0x071125);this.ground.visible=false;this.grid.visible=false;}this.fitLight();if(this.clayEnabled)this.setClay(true);
  }
  setReferenceLighting(enabled:boolean){this.referenceLighting=enabled;this.setStudio(this.studio);}
- fitLight(){const b=new THREE.Box3().setFromObject(this.original.visible&&this.original.children.length?this.original:this.root);if(b.isEmpty())return;const center=b.getCenter(new THREE.Vector3()),d=Math.max(...b.getSize(new THREE.Vector3()).toArray(),1);this.sun.position.copy(center).add(new THREE.Vector3(-.6,this.referenceLighting?2.5:1.5,-1).multiplyScalar(d));this.sun.target.position.copy(center);const cam=this.sun.shadow.camera;cam.left=-d;cam.right=d;cam.top=d;cam.bottom=-d;cam.near=.01;cam.far=d*5;cam.updateProjectionMatrix();this.sun.shadow.normalBias=d*.0008;this.ground.position.y=b.min.y-.005;}
+ fitLight(){const b=new THREE.Box3().setFromObject(this.original.visible&&this.original.children.length?this.original:this.root);if(b.isEmpty())return;const center=b.getCenter(new THREE.Vector3()),d=Math.max(...b.getSize(new THREE.Vector3()).toArray(),1);this.sun.position.copy(center).add(new THREE.Vector3(-.6,this.referenceLighting?2.5:1.5,-1).multiplyScalar(d));this.sun.target.position.copy(center);const cam=this.sun.shadow.camera;cam.left=-d;cam.right=d;cam.top=d;cam.bottom=-d;cam.near=.01;cam.far=d*5;cam.updateProjectionMatrix();this.sun.shadow.normalBias=d*.0008;this.ground.position.y=b.min.y-.005;
+  const active=this.mode==='scene'?activeAuthorEnvironment(this.project):null;if(active&&!this.skyPreview.clock){const s=active.state,day=s.sunIntensity>s.moonIntensity;this.sun.position.copy(center).add(new THREE.Vector3(...(day?s.sun:s.moon)).multiplyScalar(d*2));this.sun.color.set(day?s.sunColor:s.moonColor);this.sun.intensity=day?s.sunIntensity:s.moonIntensity;this.ambient.intensity=s.hemisphereIntensity;this.fill.intensity=s.fillIntensity;this.scene.environmentIntensity=.02;this.renderer.toneMappingExposure=s.exposure;this.ground.visible=false;this.grid.visible=false;this.sun.shadow.normalBias=Math.max(.001,d*.00015);}
+ }
  safeGLTFLoader(){const manager=new THREE.LoadingManager();manager.setURLModifier(url=>{if(!url.startsWith('blob:')&&!url.startsWith('data:'))throw new Error('原件预览禁止外部地址读取，请同时选择伴随文件');return url;});return new GLTFLoader(manager);}
  async sourceObject(source:{filename:string;data:string;resources?:Record<string,string>;scale:number;upAxis:string}){
   const bytes=Uint8Array.from(atob(source.data),c=>c.charCodeAt(0));let input:string|ArrayBuffer=bytes.buffer;

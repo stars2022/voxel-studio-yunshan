@@ -1,3 +1,4 @@
+import {validAuthorEnvironment} from './author-environment';
 import {validateRig,posedRigPorts} from './rig';
 import {validateAuthoredMeshes} from './authored-mesh';
 import {needsNativeGrid} from './grid-policy';
@@ -13,7 +14,7 @@ import {generateTemplate} from './templates';
 import {transactionSchema} from './schema';
 import {makeCatalogAsset} from '../production/catalog-assets';
 import {makeLifeAssembly} from '../production/layouts';
-import {makeArchitectureAssembly} from '../production/atlas-architecture-assemblies';
+import {makeArchitectureAssembly,architectureAssemblyIds} from '../production/atlas-architecture-assemblies';
 import {ensureProductionRoles} from '../production/style';
 import {appearanceKeys,materialAppearance} from './material-appearance';
 const ajv=new Ajv({strict:false,allErrors:true}),validate=ajv.compile(transactionSchema);
@@ -33,7 +34,7 @@ export function validateProject(p:Project){
   for(const o of a.openings)validRegion(o);
  }
  for(const i of Object.values(p.instances)){if(!p.assets[i.assetId]||i.position.length!==3||!i.position.every(Number.isFinite)||!Number.isInteger(i.rotation)||i.rotation<0||i.rotation>3)throw new Error('无效实例');const seen=new Set<string>();let c=i;while(c.parent){if(seen.has(c.id)||!p.instances[c.parent])throw new Error('实例父级缺失或循环');seen.add(c.id);c=p.instances[c.parent];}}
- for(const a of Object.values(p.assemblies??{}))for(const i of a.instances)if(!p.assets[i.assetId]||!i.position.every(Number.isFinite))throw new Error('组合模板引用缺失母版或无效位置');
+ for(const a of Object.values(p.assemblies??{})){for(const i of a.instances)if(!p.assets[i.assetId]||!i.position.every(Number.isFinite))throw new Error('组合模板引用缺失母版或无效位置');if(a.source?.environment!==undefined){const e=a.source.environment;if(!validAuthorEnvironment(e)||new Set(e.skyAssetIds).size!==4||e.skyAssetIds.some(id=>!p.assets[id]?.sky||!a.instances.some(i=>i.assetId===id)))throw new Error('组合环境缺失实际天空组件');}}
  if(p.selection.assetId&&!p.assets[p.selection.assetId])throw new Error('选区引用缺失资产');
  validateCatalog(p);
 }
@@ -91,7 +92,7 @@ export class Engine{
   if(c.op==='produceCatalogAssembly'){
    const e=p.catalog?.entries[c.catalogId];if(!e||e.source['条目类型']!=='组合模板')throw new Error('先导入对应组合清单');
    p.assemblies??={};if(p.assemblies[c.id])throw new Error('组合 ID 重复');
-   const architectural=c.catalogId.startsWith('BUILT-')||c.catalogId.startsWith('ENV-');
+   const architectural=architectureAssemblyIds.includes(c.catalogId)||c.catalogId.startsWith('BUILT-')||c.catalogId.startsWith('ENV-');
    if(architectural)ensureProductionRoles(p,'yunshan');
    else if(Object.keys(c.params??{}).length)throw new Error('生活组合不支持建筑参数');
    const a=architectural?makeArchitectureAssembly(p,c.catalogId,c.id,e.source['中文名称'],c.params??{}):makeLifeAssembly(p,c.catalogId,c.id,e.source['中文名称']);p.assemblies[c.id]=a;

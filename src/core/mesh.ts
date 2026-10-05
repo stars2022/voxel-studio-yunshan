@@ -52,10 +52,10 @@ export function mergeCoplanarMesh(a:Asset,buckets:MeshBucket[]):MeshBucket[]{
 export function displayMesh(a:Asset,materials:Record<string,Material>,mode:'near'|'far'='near',bindPose=false):MeshBucket[]{
  if(a.sky)return skyMesh(a,materials);
  const native=(source:Asset)=>{const raw=meshAsset(source,materials),near=applyWaterFlow(source,raw),far=mode==='far'?applyWaterFlow(source,mergeCoplanarMesh(source,raw)):near;return far.reduce((n,b)=>n+b.indices.length,0)>near.reduce((n,b)=>n+b.indices.length,0)?near:far;};
- if(!a.rig)return [...native(a),...(a.meshes?authoredBuckets(a):[])];
+ if(!a.rig)return [...native(a),...(a.meshes?authoredBuckets(a,materials):[])];
  // Each joint has its own occupied grid, including faces that become exposed after posing.
  // Greedy and far coplanar merges must never cross a joint boundary.
  const groups=new Map<string,Grid>();for(const[v,material]of new Grid(a.chunks).cells()){const owner=a.rig.voxelJoints.find(b=>v.every((n,i)=>n>=b.region.min[i]&&n<b.region.max[i]));if(!owner)throw new Error('原生块缺绑定');let g=groups.get(owner.joint);if(!g){g=new Grid();groups.set(owner.joint,g);}g.set(v,material);}
  const blocks=[...groups].flatMap(([bindingJoint,g])=>native({...a,chunks:g.serialize()}).map(b=>({...b,bindingJoint})));
- return rigBuckets(a,[...blocks,...authoredBuckets(a)],bindPose);
+ return rigBuckets(a,[...blocks,...authoredBuckets(a,materials)],bindPose);
 }

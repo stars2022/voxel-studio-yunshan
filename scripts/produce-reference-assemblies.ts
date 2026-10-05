@@ -1,6 +1,6 @@
 import {readFile,writeFile,mkdir,copyFile,rename,stat} from 'node:fs/promises';
 import path from 'node:path';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';
-import {NodeIO} from '@gltf-transform/core';import {KHRMaterialsEmissiveStrength,KHRMaterialsUnlit} from '@gltf-transform/extensions';
+import {NodeIO} from '@gltf-transform/core';import {KHRMaterialsEmissiveStrength,KHRMaterialsUnlit,KHRLightsPunctual} from '@gltf-transform/extensions';
 import {Engine,validateProject} from '../src/core/engine';import {Grid} from '../src/core/grid';import {displayMesh} from '../src/core/mesh';
 import {productionProject} from '../src/production/style';import {referenceFinishCommands} from '../src/production/reference-finish';
 import {readAtlasIndex,readAtlasProduction,type AtlasProduction,type AtlasAssemblyBuild} from '../src/production/atlas';
@@ -14,7 +14,7 @@ const ids=process.argv.find(v=>v.startsWith('--ids='))?.slice(6).split(','),shee
 if(ids?.some(id=>!/^(LIFE|BUILT|ENV|CHAR)-\d{3}$/.test(id))||sheets?.some(s=>!/^M\d{3}$/.test(s)))throw new Error('Invalid assembly selection');
 const rows=source.entries.filter(e=>architectureAssemblyIds.includes(e.id)&&(!ids||ids.includes(e.id))&&(!sheets||sheets.includes(e.sheet)));assert.ok(rows.length);if(ids)assert.equal(rows.length,new Set(ids).size);assert.ok(rows.every(e=>e.type==='组合模板'));
 const before=await readProductionLibrary(root,{limit:5000}),activeSheets=[...new Set(rows.map(e=>e.sheet))],index:AtlasProduction={format:'yunshan.atlas-production',version:1,run,createdAt:new Date().toISOString(),entries:(old?.entries??[]).filter(e=>!rows.some(r=>r.id===e.id)),studies:(old?.studies??[]).filter(s=>!activeSheets.some(id=>s.id===id+'-gallery'))};
-await mkdir(evidence,{recursive:true});await mkdir(out,{recursive:true});const files:any[]=[],models:any[]=[],projects=new Map<string,Project>(),io=new NodeIO().registerExtensions([KHRMaterialsEmissiveStrength,KHRMaterialsUnlit]);
+await mkdir(evidence,{recursive:true});await mkdir(out,{recursive:true});const files:any[]=[],models:any[]=[],projects=new Map<string,Project>(),io=new NodeIO().registerExtensions([KHRMaterialsEmissiveStrength,KHRMaterialsUnlit,KHRLightsPunctual]);
 function commit(e:Engine,commands:Command[]){const request={expectedVersion:e.project.version,requestId:crypto.randomUUID(),commands},dry=e.execute({...request,dryRun:true});return e.execute({...request,previewToken:dry.previewToken});}
 async function save(p:Project,file:string){validateProject(p);const text=JSON.stringify(p);if(resume){try{assert.equal(await readFile(root+'/'+file,'utf8'),text);}catch(e:any){if(e.code!=='ENOENT')throw e;await writeFile(root+'/'+file,text,{flag:'wx'});}}else await writeFile(root+'/'+file,text,{flag:'wx'});files.push({file,sha256:hash(text),bytes:Buffer.byteLength(text)});}
 for(const row of rows){
@@ -28,11 +28,13 @@ for(const row of rows){
 }
 for(const sheet of activeSheets){
  const selected=index.entries.filter((e):e is AtlasAssemblyBuild=>e.kind==='assembly'&&e.sheet===sheet);const gallery=productionProject(sheet+' · 十二组建筑组合');gallery.catalog={sourceName:'city-assets.csv',importedAt:index.createdAt,entries:{}};gallery.assemblies={};
- const strideX=Math.ceil((Math.max(...selected.map(e=>e.boundsM.max[0]-e.boundsM.min[0]))+12)/.2)*.2,strideZ=Math.ceil((Math.max(...selected.map(e=>e.boundsM.max[2]-e.boundsM.min[2]))+12)/.2)*.2;
+ const framingBounds=new Map<string,ReturnType<typeof assemblyBoundsM>>();
+ for(const row of selected){const doc=JSON.parse(await readFile(root+'/'+row.file,'utf8'));const assembly=doc.assemblies[row.assemblyId];framingBounds.set(row.id,assemblyBoundsM(doc,{instances:assembly.instances.filter((i:any)=>!doc.assets[i.assetId].sky)}));}
+ const strideX=Math.ceil((Math.max(...selected.map(e=>{const b=framingBounds.get(e.id)!;return b.max[0]-b.min[0];}))+12)/.2)*.2,strideZ=Math.ceil((Math.max(...selected.map(e=>{const b=framingBounds.get(e.id)!;return b.max[2]-b.min[2];}))+12)/.2)*.2;
  for(const[j,row]of selected.entries()){
   const doc=projects.get(row.id)??JSON.parse(await readFile(root+'/'+row.file,'utf8'));Object.assign(gallery.catalog.entries,doc.catalog.entries);gallery.palettes=structuredClone(doc.palettes);
   for(const[id,a]of Object.entries(doc.assets) as [string,Project['assets'][string]][]){if(gallery.assets[id])assert.deepEqual(gallery.assets[id],a,'Conflicting reused component '+id);else gallery.assets[id]=structuredClone(a);}
-  gallery.assemblies[row.assemblyId]=structuredClone(doc.assemblies[row.assemblyId]);const offset=[j%4*strideX-Math.floor(row.boundsM.min[0]/.2)*.2,-Math.floor(row.boundsM.min[1]/.2)*.2,Math.floor(j/4)*strideZ-Math.floor(row.boundsM.min[2]/.2)*.2];
+  gallery.assemblies[row.assemblyId]=structuredClone(doc.assemblies[row.assemblyId]);const frame=framingBounds.get(row.id)!,offset=[j%4*strideX-Math.floor(frame.min[0]/.2)*.2,-Math.floor(frame.min[1]/.2)*.2,Math.floor(j/4)*strideZ-Math.floor(frame.min[2]/.2)*.2];
   for(const i of Object.values(doc.instances) as Project['instances'][string][])gallery.instances[i.id]={...structuredClone(i),position:i.position.map((v,d)=>Math.round((v+offset[d])*1e8)/1e8) as [number,number,number]};
  }
  const file=run+'-'+sheet.toLowerCase()+'-gallery.ysvox.json';await save(gallery,file);index.studies.push({id:sheet+'-gallery',name:sheet+' · 十二组真实组合模板',file,assetIds:Object.keys(gallery.assets),note:'每组保留自身米制布局，组间仅作陈列平移；组间按最大实际包围盒留出陈列间隔。派生组件与重复实例均不新增基础母版。',group:'67 张完整图册'});

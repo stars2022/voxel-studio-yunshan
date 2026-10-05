@@ -15,48 +15,48 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 612,
-    "remainingReferenceEntries": 181,
-    "completedReferenceSheets": 51,
+    "referenceCandidates": 624,
+    "remainingReferenceEntries": 169,
+    "completedReferenceSheets": 52,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
       "auxiliaryMasters": 1,
-      "assemblies": 147,
+      "assemblies": 155,
       "variantEntries": 4,
       "variantModels": 9,
       "accepted": 0,
-      "notProduced": 382,
-      "generatedEntries": 686,
+      "notProduced": 374,
+      "generatedEntries": 694,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 612,
+      "atlasReferenceCandidates": 624,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 96
+      "atlasAssemblyCandidates": 108
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M052",
+    "sheet": "M053",
     "state": "queued",
     "ids": [
-      "ENV-115",
-      "ENV-121",
-      "ENV-126",
-      "ENV-129",
-      "ENV-130",
-      "ENV-132",
-      "ENV-133",
-      "ENV-135",
-      "LIFE-058",
-      "LIFE-059",
-      "LIFE-060",
-      "LIFE-061"
+      "LIFE-062",
+      "LIFE-063",
+      "LIFE-097",
+      "LIFE-098",
+      "LIFE-099",
+      "LIFE-100",
+      "LIFE-101",
+      "LIFE-102",
+      "LIFE-103",
+      "LIFE-104",
+      "LIFE-105",
+      "LIFE-128"
     ],
-    "scope": "8个昼夜/天气/谷雾/风/季节/灾后/照明/可搬盆景组合与4个住宅生活房间组合；最小体素与连续面/实际纹理并存，原环境和生活状态不编造。"
+    "scope": "9个卫生间/储物/市场/商店/厨房/工坊/仓储/粮柜/教室空间组合及3套桌面菜品；升级旧配置，保留原件与原状态边界。"
   },
-  "nextBatch": "M052",
+  "nextBatch": "M053",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -68,20 +68,21 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M051共612条技术参考候选，余181；513独立图册母版、3共用引用、96图册组合，人工美术验收0。"
+    "M001–M052共624条技术参考候选，余169；513独立图册母版、3共用引用、108图册组合，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续优先：最小组件体素；斜面和曲面连续；天空、星空使用实际贴图。",
-    "M051完成12组合/13形态（102山步/坡道），新增基础母版0；累计612/793，余181。532基础候选、147组合、686已生成条目。",
-    "86相关回归通过；8本批+9相关地形复验通过；移树到平缓地面后8专项、13实际导出、构建/类型及9组MCP通过。不是全库回归，重复运行不冒称不同测试总数。正式证据 artifacts/atlas/atlas-20261005122554。",
-    "506材质角色256+250同事务，512的style/palette上限保持。新材料须先设计语义与容量兼容策略，不直接扩上限或借相似色用途。",
-    "铺砖灰缝实填至走面；同高园路/亭台/桥接板不重复覆盖。亭柱实接檐梁，原栏杆按本体最小销格放置而非重栅格坡面。",
-    "实际护栏人体阻挡、坐姿/接近空间、石接点、槽腔/槽端、观瀑射线、实涂路线分别核验。所有原母版完整保留，源204失败、巨端块缺陷及社会活动/原身份未绑定保留。",
-    "依赖先查CSV中文名称：082/084挡墙压顶、081和307/308支承、045与LIFE140实体牌。共享桥函数旧默认不变，新场地传正确合同。",
-    "树根域在陡坡可能产生高方台；最终089/101已改为真实平缓植点，初稿移入work/m051/superseded保留，截图只用最后同数据核验版本。人工美术验收仍待。",
-    "M052图和12条CSV已读，work/m052/source.json与review.json仅准备；115/121/126/129/130/132/133不可伪造原时钟天气/风雪/灾害状态，135盆景复用独立盆景原件；LIFE058–061复核legacy配置后沿用真实家具。",
-    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。"
+    "M052完成12组合/22有限形态，新增基础母版0；8新环境组合及4旧住宅配置升级。累计624/793，余169。全库532基础候选、155组合、694已生成条目、374未制作。",
+    "整库504项测试503首轮通过，唯一旧506角色断言更新为511后单项复验通过；当前最初6项M052均通过；最终加入家具逐格用途复核后7项全部复验通过，旋转方向光另复验。构建/类型、22形态导出、121贴图实例、66份GLB前景边界及36默认截图均通过；公开MCP实际流程通过，次数见正式validation.json。不是把重跑次数相加。",
+    "正式证据 artifacts/atlas/atlas-20261005130251。云/雾/雨PNG实际内嵌GLB并随包；日月方向光实际导出，半球光须消费端显式配置。背景天球不参与前景边界，普通查看器需按extras单独绘制天空。",
+    "511材质角色256+255同事务，512的style/palette上限保持。M052新增5个非碰撞water用途且零发光，外来ID实核保留。后续新用途须设计语义与容量兼容，不借同色材质或直接扩上限。",
+    "M052当前家具配方原件保持，历史版本另存；厨房真孔台面、盆底钢承枨、柜体逐格删除派生与烟罩进气槽分别核验。纯原生柜体以真实面连通检查，不套用混合网格细件附着检查。小家具安装相位不重栅格连续坡面。",
+    "M053参考图和12条CSV已读，work/m053/reference.json及review.json为准备，尚未生产模型。097/098/099仅桌面成品菜，不扩展餐厅；读取dish与烹饪/消耗的源合同保持未绑定。",
+    "LIFE105源隔离原型未集成v4、续班/历史上限FAIL必须保留。库存、所有权、预算、售货、工作到岗、服务队列、工资、课堂/考试与真实分钟不可由几何通过冒称集成。",
+    "升级LIFE062后复核tests/production.test.ts中旧公开preload缺母版用例；该用例需按仍适用的旧合同调整，不能让旧假设阻止授权升级。",
+    "每批验证后推送origin/main已授权，不重复确认；单批完成不调用stop_goal，浏览器串行。全部参考候选仍不等于人工美术验收，完整1068清单的未制作条目另计。",
+    "M052最终复核另修正5种家具材质派生，最终7项专项重验；原家具当前配方件与19项历史母版/导出均随包。005/006/017的已有木收边差异逐格记录；002/003/004/018/108的材质派生另存，几何/碰撞/接口不变。源淤泥编号ENV073已去除。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -90,9 +91,9 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M051",
-    "run": "atlas-20261005122554",
+    "sheet": "M052",
+    "run": "atlas-20261005130251",
     "state": "validated",
-    "evidence": "artifacts/atlas/atlas-20261005122554"
+    "evidence": "artifacts/atlas/atlas-20261005130251"
   }
 }

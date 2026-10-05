@@ -4,7 +4,7 @@
 
 本项目位于独立的 `voxel-studio/` 目录，未改动上级项目文件。
 
-67 张完整图册已接入「图册」页，793 条参考逐 ID 对齐。M001–M051 的 **612 个参考 ID（513 个独立图册母版、3 条共享引用、96 个组合模板）**已制作为候选，其余 181 条待制作或复核，人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [M051 切坡、桥岸与公共景观](docs/M051-ARCHITECTURE-ASSEMBLIES.md) · [最新总览](artifacts/atlas/atlas-20261005122554/M051.png)。合并旧库后有 532 个基础候选；实例与参数形态不增加基础资产数。
+67 张完整图册已接入「图册」页，793 条参考逐 ID 对齐。M001–M052 的 **624 个参考 ID（513 个独立图册母版、3 条共享引用、108 个组合模板）**已制作为候选，其余 169 条待制作或复核，人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [M052 昼夜天气与住宅房间](docs/M052-ARCHITECTURE-ASSEMBLIES.md) · [最新总览](artifacts/atlas/atlas-20261005130251/M052.png)。合并旧库后有 532 个基础候选；实例与参数形态不增加基础资产数。
 
 材质按用途与物理类别分配独立 ID，后期统一更换外观。新配方禁止按颜色借用类别；外观包不能改变类别或碰撞设置。[分类约定与当前复核范围](docs/MATERIAL-ROLES.md) · [显微镜真实前后对照](artifacts/microscope-study/comparison.png)。
 

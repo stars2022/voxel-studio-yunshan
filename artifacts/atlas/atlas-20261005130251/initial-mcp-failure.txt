@@ -1,0 +1,51 @@
+read_production_library OK
+list_production_recipes OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction ERROR
+query_voxels OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+export_project OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction ERROR
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"配色方案不存在","code":"OPERATION_FAILED","isError":true}
+    at call (/workspace/voxel-studio-yunshan/scripts/verify-environment-assemblies-mcp.ts:8:610)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async edit (/workspace/voxel-studio-yunshan/scripts/verify-environment-assemblies-mcp.ts:12:130)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-environment-assemblies-mcp.ts:20:345) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0
