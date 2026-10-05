@@ -71,6 +71,8 @@ for row in closure.values():
     directory = root / 'projects/production' / run / 'exports' / row['id']
     for name in ['voxels.ysvox.json', 'visual.glb', 'collision.json', 'interfaces.json', 'atlas.json', 'atlas.png']:
         add(directory / name)
+    if (directory / 'terrain-authority.json').exists():
+        add(directory / 'terrain-authority.json')
     if row['id'] in {e['id'] for e in entries}:
         for name in ['visual-far.glb', 'visual-material.glb']:
             add(directory / name)
@@ -101,7 +103,8 @@ with ZipFile(args.output, 'w', ZIP_DEFLATED, compresslevel=6) as archive:
 projects 中的原生文件保存组件、原件/派生关系和实际实例；整体单位米，Y 轴向上。
 visual.glb 为整组场景，visual-material.glb 带实际参考材质，visual-far.glb 为手动远档。
 通用查看器可直接打开 GLB；编辑器可打开原生单组或 gallery 文件。
-屋面为连续网格，最小销钉保留原生体素。原生格和连续网格分别保存碰撞声明；手动远档不等于自动距离 LOD。
+斜面、曲面及地形保留连续网格，最小块件为原生体素。原生格和连续网格分别保存碰撞声明；手动远档不等于自动距离 LOD。
+若有 terrain-authority.json，须显式加载其中近景实体及实际放置作为物理权威；远景显示面并非体素碰撞代理。
 包内保留本批组合及其递归依赖，不把依赖、重复放置或宽度形态算成新基础母版。
 另有 {len(catalog_contracts)} 条仅清单用途/契约引用，见 catalog-contract-references.json；其独立母版未交付，不冒称已有原件。
 来源给定尺寸与作者布局分别标注，未接入原 FloorPlan、控制器或世界地形；人工美术验收 0。

@@ -91,9 +91,10 @@ export class Engine{
   if(c.op==='produceCatalogAssembly'){
    const e=p.catalog?.entries[c.catalogId];if(!e||e.source['条目类型']!=='组合模板')throw new Error('先导入对应组合清单');
    p.assemblies??={};if(p.assemblies[c.id])throw new Error('组合 ID 重复');
-   if(c.catalogId.startsWith('BUILT-'))ensureProductionRoles(p,'yunshan');
+   const architectural=c.catalogId.startsWith('BUILT-')||c.catalogId.startsWith('ENV-');
+   if(architectural)ensureProductionRoles(p,'yunshan');
    else if(Object.keys(c.params??{}).length)throw new Error('生活组合不支持建筑参数');
-   const a=c.catalogId.startsWith('BUILT-')?makeArchitectureAssembly(p,c.catalogId,c.id,e.source['中文名称'],c.params??{}):makeLifeAssembly(p,c.catalogId,c.id,e.source['中文名称']);p.assemblies[c.id]=a;
+   const a=architectural?makeArchitectureAssembly(p,c.catalogId,c.id,e.source['中文名称'],c.params??{}):makeLifeAssembly(p,c.catalogId,c.id,e.source['中文名称']);p.assemblies[c.id]=a;
    if(c.place)for(const i of a.instances){if(p.instances[i.id])throw new Error('实例 ID 重复');p.instances[i.id]=i;}
    updateCatalogEntry(p,{id:c.catalogId,stage:'modeling',assetIds:[...new Set(a.instances.map(i=>i.assetId))],note:'已生成组合 '+c.id+'；保存真实依赖及实例关系，派生组件不新增基础母版。未接入原 FloorPlan、功能点、供电、库存或行为系统，不能作为游戏集成验收。'});return;
   }

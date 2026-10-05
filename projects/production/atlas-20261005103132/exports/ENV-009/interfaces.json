@@ -1,0 +1,6507 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "env-009": {
+      "id": "env-009",
+      "name": "贯穿城区深谷场景母版",
+      "version": 1,
+      "instances": [
+        {
+          "id": "env-009-0",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0--96-4-near-1f9bea87ec",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            -96,
+            0,
+            -96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-1",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0-0-4-near-84e56855ff",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            -96,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-2",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0-96-4-near-08826daed5",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            -96,
+            0,
+            96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-3",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0--96-4-near-488fda5298",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            -96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-4",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0-0-4-near-837940d12d",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-5",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0-96-4-near-03a167cb7f",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            0,
+            0,
+            96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-6",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0--96-4-near-c4f7296ffe",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            96,
+            0,
+            -96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-7",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0-0-4-near-6d8410fefc",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            96,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-8",
+          "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0-96-4-near-f1f490be88",
+          "name": "连续岩土实体与最小原生岩块",
+          "position": [
+            96,
+            0,
+            96
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-9",
+          "assetId": "architecture-civic-natural-root-seat-deep-valley-city-0-54f11554fe",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-10",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            -124,
+            144.2,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-11",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            -124,
+            144.2,
+            -68
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-12",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            -124,
+            144.2,
+            -52
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-13",
+          "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+          "name": "中轴实开门墙",
+          "position": [
+            -117,
+            144.2,
+            -60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-14",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -131,
+            144.2,
+            -60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-15",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            -126.6,
+            144.2,
+            -64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-16",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            -124,
+            148.4,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-17",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            148.4,
+            -68
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-18",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            148.4,
+            -52
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-19",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -117,
+            148.4,
+            -60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-20",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -131,
+            148.4,
+            -60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-21",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            -126.6,
+            148.4,
+            -64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-22",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            148.4,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-23",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -121.2,
+            148.4,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-24",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            148.4,
+            -55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-25",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            -124,
+            152.6,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-26",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            152.6,
+            -68
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-27",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            152.6,
+            -52
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-28",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -117,
+            152.6,
+            -60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-29",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -131,
+            152.6,
+            -60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-30",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            152.6,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-31",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -121.2,
+            152.6,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-32",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            152.6,
+            -55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-33",
+          "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+          "name": "连续飞檐与梁椽",
+          "position": [
+            -124,
+            156.8,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-34",
+          "assetId": "architecture-civic-natural-root-seat-deep-valley-city-1-7025bc5386",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-35",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            124,
+            144.2,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-36",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            124,
+            144.2,
+            -68
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-37",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            124,
+            144.2,
+            -52
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-38",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            131,
+            144.2,
+            -60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-39",
+          "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+          "name": "中轴实开门墙",
+          "position": [
+            117,
+            144.2,
+            -60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-40",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            121.4,
+            144.2,
+            -64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-41",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            124,
+            148.4,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-42",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            148.4,
+            -68
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-43",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            148.4,
+            -52
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-44",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            131,
+            148.4,
+            -60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-45",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            117,
+            148.4,
+            -60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-46",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            121.4,
+            148.4,
+            -64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-47",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            148.4,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-48",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            126.8,
+            148.4,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-49",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            148.4,
+            -55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-50",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            124,
+            152.6,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-51",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            152.6,
+            -68
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-52",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            152.6,
+            -52
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-53",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            131,
+            152.6,
+            -60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-54",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            117,
+            152.6,
+            -60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-55",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            152.6,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-56",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            126.8,
+            152.6,
+            -64.2
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-57",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            152.6,
+            -55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-58",
+          "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+          "name": "连续飞檐与梁椽",
+          "position": [
+            124,
+            156.8,
+            -60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-59",
+          "assetId": "architecture-civic-natural-root-seat-deep-valley-city-2-cdde1e602a",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-60",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            -124,
+            104.2,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-61",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            -124,
+            104.2,
+            52
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-62",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            -124,
+            104.2,
+            68
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-63",
+          "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+          "name": "中轴实开门墙",
+          "position": [
+            -117,
+            104.2,
+            60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-64",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -131,
+            104.2,
+            60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-65",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            -126.6,
+            104.2,
+            55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-66",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            -124,
+            108.4,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-67",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            108.4,
+            52
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-68",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            108.4,
+            68
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-69",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -117,
+            108.4,
+            60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-70",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -131,
+            108.4,
+            60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-71",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            -126.6,
+            108.4,
+            55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-72",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            108.4,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-73",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -121.2,
+            108.4,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-74",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            108.4,
+            64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-75",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            -124,
+            112.6,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-76",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            112.6,
+            52
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-77",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -124,
+            112.6,
+            68
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-78",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -117,
+            112.6,
+            60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-79",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            -131,
+            112.6,
+            60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-80",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            112.6,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-81",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -121.2,
+            112.6,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-82",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            -126.8,
+            112.6,
+            64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-83",
+          "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+          "name": "连续飞檐与梁椽",
+          "position": [
+            -124,
+            116.8,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-84",
+          "assetId": "architecture-civic-natural-root-seat-deep-valley-city-3-fd85dd11b7",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-85",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            124,
+            104.2,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-86",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            124,
+            104.2,
+            52
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-87",
+          "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+          "name": "中轴实开门墙",
+          "position": [
+            124,
+            104.2,
+            68
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-88",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            131,
+            104.2,
+            60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-89",
+          "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+          "name": "中轴实开门墙",
+          "position": [
+            117,
+            104.2,
+            60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-90",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            121.4,
+            104.2,
+            55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-91",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            124,
+            108.4,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-92",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            108.4,
+            52
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-93",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            108.4,
+            68
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-94",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            131,
+            108.4,
+            60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-95",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            117,
+            108.4,
+            60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-96",
+          "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "name": "双跑连续梁与实体踏步",
+          "position": [
+            121.4,
+            108.4,
+            55.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-97",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            108.4,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-98",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            126.8,
+            108.4,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-99",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            108.4,
+            64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-100",
+          "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            124,
+            112.6,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-101",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            112.6,
+            52
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-102",
+          "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            124,
+            112.6,
+            68
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "env-009-103",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            131,
+            112.6,
+            60
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "env-009-104",
+          "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+          "name": "分格窗洞与木石墙",
+          "position": [
+            117,
+            112.6,
+            60
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-105",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            112.6,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-106",
+          "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            126.8,
+            112.6,
+            55.8
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "env-009-107",
+          "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "name": "石脚与连续金属护栏",
+          "position": [
+            121.2,
+            112.6,
+            64.2
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-108",
+          "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+          "name": "连续飞檐与梁椽",
+          "position": [
+            124,
+            116.8,
+            60
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-109",
+          "assetId": "architecture-civic-fleet-bridge-deep-valley-city-bridge-0-212526d079",
+          "name": "分层路床、承梁、支座和实墩",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-110",
+          "assetId": "architecture-civic-fleet-bridge-deep-valley-city-bridge-1-985c3f787c",
+          "name": "分层路床、承梁、支座和实墩",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-111",
+          "assetId": "architecture-civic-water-ribbon-deep-valley-main-b955d86bf4",
+          "name": "连续水体表面与真实米制流向",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-112",
+          "assetId": "architecture-civic-water-ribbon-deep-valley-tributary-7ed5da3fb4",
+          "name": "连续水体表面与真实米制流向",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-113",
+          "assetId": "architecture-civic-natural-root-seat-valley-forest-0-155b5bad8b",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-114",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            -88,
+            120.4,
+            -110
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-115",
+          "assetId": "architecture-civic-natural-root-seat-valley-forest-1-b2ec845509",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-116",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            76,
+            154.4,
+            -112
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-117",
+          "assetId": "architecture-civic-natural-root-seat-valley-forest-2-570b650a21",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-118",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -62,
+            159.6,
+            108
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-119",
+          "assetId": "architecture-civic-natural-root-seat-valley-forest-3-b53905a1f7",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-120",
+          "assetId": "source-env-055",
+          "name": "柏类柱冠树母版",
+          "position": [
+            80,
+            188,
+            108
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-121",
+          "assetId": "architecture-civic-natural-root-seat-valley-forest-4-b02c974a65",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-122",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            -74,
+            80.6,
+            20
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-123",
+          "assetId": "architecture-civic-natural-root-seat-valley-forest-5-0da26f12b6",
+          "name": "作者根部岩土承接",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "env-009-124",
+          "assetId": "source-env-050-height-16",
+          "name": "既有量化乔木树干与错层冠母版",
+          "position": [
+            80,
+            220,
+            20
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "ENV-009",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M049",
+          "slot": 11,
+          "imageSHA256": "4110cac4eb2d6822921619b819ddf642f8b13cdb600a6719518dcc54dafb71ed"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-001",
+          "BUILT-003",
+          "BUILT-007",
+          "BUILT-008",
+          "BUILT-009",
+          "BUILT-011",
+          "BUILT-012",
+          "BUILT-013",
+          "BUILT-015",
+          "BUILT-017",
+          "BUILT-091",
+          "BUILT-097",
+          "BUILT-134",
+          "BUILT-146",
+          "BUILT-147",
+          "BUILT-154",
+          "BUILT-242",
+          "BUILT-246",
+          "BUILT-247",
+          "BUILT-305",
+          "ENV-001",
+          "ENV-006",
+          "ENV-007",
+          "ENV-027",
+          "ENV-028",
+          "ENV-034",
+          "ENV-035",
+          "ENV-050",
+          "ENV-055"
+        ],
+        "instanceGroups": {
+          "env-009-0": "terrain",
+          "env-009-1": "terrain",
+          "env-009-2": "terrain",
+          "env-009-3": "terrain",
+          "env-009-4": "terrain",
+          "env-009-5": "terrain",
+          "env-009-6": "terrain",
+          "env-009-7": "terrain",
+          "env-009-8": "terrain",
+          "env-009-9": "terrain-anchor",
+          "env-009-10": "floor",
+          "env-009-11": "facade",
+          "env-009-12": "facade",
+          "env-009-13": "facade",
+          "env-009-14": "facade",
+          "env-009-15": "stair",
+          "env-009-16": "floor",
+          "env-009-17": "facade",
+          "env-009-18": "facade",
+          "env-009-19": "facade",
+          "env-009-20": "facade",
+          "env-009-21": "stair",
+          "env-009-22": "guard",
+          "env-009-23": "guard",
+          "env-009-24": "guard",
+          "env-009-25": "floor",
+          "env-009-26": "facade",
+          "env-009-27": "facade",
+          "env-009-28": "facade",
+          "env-009-29": "facade",
+          "env-009-30": "guard",
+          "env-009-31": "guard",
+          "env-009-32": "guard",
+          "env-009-33": "roof",
+          "env-009-34": "terrain-anchor",
+          "env-009-35": "floor",
+          "env-009-36": "facade",
+          "env-009-37": "facade",
+          "env-009-38": "facade",
+          "env-009-39": "facade",
+          "env-009-40": "stair",
+          "env-009-41": "floor",
+          "env-009-42": "facade",
+          "env-009-43": "facade",
+          "env-009-44": "facade",
+          "env-009-45": "facade",
+          "env-009-46": "stair",
+          "env-009-47": "guard",
+          "env-009-48": "guard",
+          "env-009-49": "guard",
+          "env-009-50": "floor",
+          "env-009-51": "facade",
+          "env-009-52": "facade",
+          "env-009-53": "facade",
+          "env-009-54": "facade",
+          "env-009-55": "guard",
+          "env-009-56": "guard",
+          "env-009-57": "guard",
+          "env-009-58": "roof",
+          "env-009-59": "terrain-anchor",
+          "env-009-60": "floor",
+          "env-009-61": "facade",
+          "env-009-62": "facade",
+          "env-009-63": "facade",
+          "env-009-64": "facade",
+          "env-009-65": "stair",
+          "env-009-66": "floor",
+          "env-009-67": "facade",
+          "env-009-68": "facade",
+          "env-009-69": "facade",
+          "env-009-70": "facade",
+          "env-009-71": "stair",
+          "env-009-72": "guard",
+          "env-009-73": "guard",
+          "env-009-74": "guard",
+          "env-009-75": "floor",
+          "env-009-76": "facade",
+          "env-009-77": "facade",
+          "env-009-78": "facade",
+          "env-009-79": "facade",
+          "env-009-80": "guard",
+          "env-009-81": "guard",
+          "env-009-82": "guard",
+          "env-009-83": "roof",
+          "env-009-84": "terrain-anchor",
+          "env-009-85": "floor",
+          "env-009-86": "facade",
+          "env-009-87": "facade",
+          "env-009-88": "facade",
+          "env-009-89": "facade",
+          "env-009-90": "stair",
+          "env-009-91": "floor",
+          "env-009-92": "facade",
+          "env-009-93": "facade",
+          "env-009-94": "facade",
+          "env-009-95": "facade",
+          "env-009-96": "stair",
+          "env-009-97": "guard",
+          "env-009-98": "guard",
+          "env-009-99": "guard",
+          "env-009-100": "floor",
+          "env-009-101": "facade",
+          "env-009-102": "facade",
+          "env-009-103": "facade",
+          "env-009-104": "facade",
+          "env-009-105": "guard",
+          "env-009-106": "guard",
+          "env-009-107": "guard",
+          "env-009-108": "roof",
+          "env-009-109": "bridge",
+          "env-009-110": "bridge",
+          "env-009-111": "water",
+          "env-009-112": "water",
+          "env-009-113": "terrain-anchor",
+          "env-009-114": "vegetation",
+          "env-009-115": "terrain-anchor",
+          "env-009-116": "vegetation",
+          "env-009-117": "terrain-anchor",
+          "env-009-118": "vegetation",
+          "env-009-119": "terrain-anchor",
+          "env-009-120": "vegetation",
+          "env-009-121": "terrain-anchor",
+          "env-009-122": "vegetation",
+          "env-009-123": "terrain-anchor",
+          "env-009-124": "vegetation"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "deep-valley-cliff-house-0 floor 0",
+            "points": [
+              [
+                -122.6,
+                144.20000000000002,
+                -64.5
+              ],
+              [
+                -122.6,
+                144.20000000000002,
+                -67
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-0 floor 1",
+            "points": [
+              [
+                -122.6,
+                148.4,
+                -64.5
+              ],
+              [
+                -122.6,
+                148.4,
+                -67
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-0 floor 2",
+            "points": [
+              [
+                -122.6,
+                152.60000000000002,
+                -64.5
+              ],
+              [
+                -122.6,
+                152.60000000000002,
+                -67
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-0 entrance",
+            "points": [
+              [
+                -124,
+                144.20000000000002,
+                -68.6
+              ],
+              [
+                -124,
+                144.20000000000002,
+                -67
+              ],
+              [
+                -125.4,
+                144.20000000000002,
+                -67
+              ],
+              [
+                -125.4,
+                144.20000000000002,
+                -64.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-1 floor 0",
+            "points": [
+              [
+                125.4,
+                144.20000000000002,
+                -64.5
+              ],
+              [
+                125.4,
+                144.20000000000002,
+                -67
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-1 floor 1",
+            "points": [
+              [
+                125.4,
+                148.4,
+                -64.5
+              ],
+              [
+                125.4,
+                148.4,
+                -67
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-1 floor 2",
+            "points": [
+              [
+                125.4,
+                152.60000000000002,
+                -64.5
+              ],
+              [
+                125.4,
+                152.60000000000002,
+                -67
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-1 entrance",
+            "points": [
+              [
+                124,
+                144.20000000000002,
+                -68.6
+              ],
+              [
+                124,
+                144.20000000000002,
+                -67
+              ],
+              [
+                122.6,
+                144.20000000000002,
+                -67
+              ],
+              [
+                122.6,
+                144.20000000000002,
+                -64.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-2 floor 0",
+            "points": [
+              [
+                -122.6,
+                104.2,
+                55.5
+              ],
+              [
+                -122.6,
+                104.2,
+                53
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-2 floor 1",
+            "points": [
+              [
+                -122.6,
+                108.4,
+                55.5
+              ],
+              [
+                -122.6,
+                108.4,
+                53
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-2 floor 2",
+            "points": [
+              [
+                -122.6,
+                112.60000000000001,
+                55.5
+              ],
+              [
+                -122.6,
+                112.60000000000001,
+                53
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-2 entrance",
+            "points": [
+              [
+                -124,
+                104.2,
+                51.4
+              ],
+              [
+                -124,
+                104.2,
+                53
+              ],
+              [
+                -125.4,
+                104.2,
+                53
+              ],
+              [
+                -125.4,
+                104.2,
+                55.6
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-3 floor 0",
+            "points": [
+              [
+                125.4,
+                104.2,
+                55.5
+              ],
+              [
+                125.4,
+                104.2,
+                53
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-3 floor 1",
+            "points": [
+              [
+                125.4,
+                108.4,
+                55.5
+              ],
+              [
+                125.4,
+                108.4,
+                53
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-3 floor 2",
+            "points": [
+              [
+                125.4,
+                112.60000000000001,
+                55.5
+              ],
+              [
+                125.4,
+                112.60000000000001,
+                53
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-cliff-house-3 entrance",
+            "points": [
+              [
+                124,
+                104.2,
+                51.4
+              ],
+              [
+                124,
+                104.2,
+                53
+              ],
+              [
+                122.6,
+                104.2,
+                53
+              ],
+              [
+                122.6,
+                104.2,
+                55.6
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "deep-valley-city-bridge-0 deck",
+            "points": [
+              [
+                -115,
+                144.2,
+                -59
+              ],
+              [
+                115,
+                144.2,
+                -59
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "deep-valley-city-bridge-1 deck",
+            "points": [
+              [
+                -115,
+                104.2,
+                61
+              ],
+              [
+                115,
+                104.2,
+                61
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "deep-valley bridge to actual side door -124,-60",
+            "points": [
+              [
+                -114,
+                144.2,
+                -59
+              ],
+              [
+                -119,
+                144.2,
+                -59
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "deep-valley bridge to actual side door 124,-60",
+            "points": [
+              [
+                114,
+                144.2,
+                -59
+              ],
+              [
+                119,
+                144.2,
+                -59
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "deep-valley bridge to actual side door -124,60",
+            "points": [
+              [
+                -114,
+                104.2,
+                61
+              ],
+              [
+                -119,
+                104.2,
+                61
+              ]
+            ],
+            "width": 0.7
+          },
+          {
+            "name": "deep-valley bridge to actual side door 124,60",
+            "points": [
+              [
+                114,
+                104.2,
+                61
+              ],
+              [
+                119,
+                104.2,
+                61
+              ]
+            ],
+            "width": 0.7
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [],
+        "clearBoxes": [],
+        "contacts": [
+          {
+            "name": "deep-valley-city-0 anchor contacts terrain",
+            "point": [
+              -124,
+              143.98,
+              -60
+            ],
+            "exclude": "env-009-9"
+          },
+          {
+            "name": "deep-valley-city-1 anchor contacts terrain",
+            "point": [
+              124,
+              143.98,
+              -60
+            ],
+            "exclude": "env-009-34"
+          },
+          {
+            "name": "deep-valley-city-2 anchor contacts terrain",
+            "point": [
+              -124,
+              103.98,
+              60
+            ],
+            "exclude": "env-009-59"
+          },
+          {
+            "name": "deep-valley-city-3 anchor contacts terrain",
+            "point": [
+              124,
+              103.98,
+              60
+            ],
+            "exclude": "env-009-84"
+          },
+          {
+            "name": "deep-valley-city-bridge-0 foundation into actual terrain",
+            "point": [
+              -74.24,
+              74.552912166,
+              -64.15
+            ],
+            "exclude": "env-009-109"
+          },
+          {
+            "name": "deep-valley-city-bridge-0 foundation into actual terrain",
+            "point": [
+              -74.24,
+              62.867057589,
+              -55.85
+            ],
+            "exclude": "env-009-109"
+          },
+          {
+            "name": "deep-valley-city-bridge-0 foundation into actual terrain",
+            "point": [
+              74.24,
+              141.17999999999998,
+              -64.15
+            ],
+            "exclude": "env-009-109"
+          },
+          {
+            "name": "deep-valley-city-bridge-0 foundation into actual terrain",
+            "point": [
+              74.24,
+              141.17999999999998,
+              -55.85
+            ],
+            "exclude": "env-009-109"
+          },
+          {
+            "name": "deep-valley-city-bridge-1 foundation into actual terrain",
+            "point": [
+              -74.24,
+              101.18,
+              55.85
+            ],
+            "exclude": "env-009-110"
+          },
+          {
+            "name": "deep-valley-city-bridge-1 foundation into actual terrain",
+            "point": [
+              -74.24,
+              101.18,
+              64.15
+            ],
+            "exclude": "env-009-110"
+          },
+          {
+            "name": "deep-valley-city-bridge-1 foundation into actual terrain",
+            "point": [
+              74.24,
+              101.18,
+              55.85
+            ],
+            "exclude": "env-009-110"
+          },
+          {
+            "name": "deep-valley-city-bridge-1 foundation into actual terrain",
+            "point": [
+              74.24,
+              101.18,
+              64.15
+            ],
+            "exclude": "env-009-110"
+          },
+          {
+            "name": "valley-forest-0 anchor contacts terrain",
+            "point": [
+              -88,
+              120.090928984,
+              -110
+            ],
+            "exclude": "env-009-113"
+          },
+          {
+            "name": "valley-forest actual tree root to soil",
+            "point": [
+              -88,
+              120.38000000000001,
+              -110
+            ],
+            "exclude": "env-009-114",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "valley-forest-1 anchor contacts terrain",
+            "point": [
+              76,
+              154.157857458,
+              -112
+            ],
+            "exclude": "env-009-115"
+          },
+          {
+            "name": "valley-forest actual tree root to soil",
+            "point": [
+              76,
+              154.38,
+              -112
+            ],
+            "exclude": "env-009-116",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "valley-forest-2 anchor contacts terrain",
+            "point": [
+              -62,
+              159.184201447,
+              108
+            ],
+            "exclude": "env-009-117"
+          },
+          {
+            "name": "valley-forest actual tree root to soil",
+            "point": [
+              -62,
+              159.58,
+              108
+            ],
+            "exclude": "env-009-118",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "valley-forest-3 anchor contacts terrain",
+            "point": [
+              80,
+              187.729020843,
+              108
+            ],
+            "exclude": "env-009-119"
+          },
+          {
+            "name": "valley-forest actual tree root to soil",
+            "point": [
+              80,
+              187.98,
+              108
+            ],
+            "exclude": "env-009-120",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "valley-forest-4 anchor contacts terrain",
+            "point": [
+              -74,
+              80.23626998600001,
+              20
+            ],
+            "exclude": "env-009-121"
+          },
+          {
+            "name": "valley-forest actual tree root to soil",
+            "point": [
+              -74,
+              80.58000000000001,
+              20
+            ],
+            "exclude": "env-009-122",
+            "role": "surfaceSoil"
+          },
+          {
+            "name": "valley-forest-5 anchor contacts terrain",
+            "point": [
+              80,
+              219.723154624,
+              20
+            ],
+            "exclude": "env-009-123"
+          },
+          {
+            "name": "valley-forest actual tree root to soil",
+            "point": [
+              80,
+              219.98,
+              20
+            ],
+            "exclude": "env-009-124",
+            "role": "surfaceSoil"
+          }
+        ],
+        "driverEyes": [],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "terrainAuthority": "Actual authored closed triangles and separate0.2m minimum rock cells. Historical full0.2m voxel masters remain unchanged; no identical continuous/voxel collision claim.",
+        "terrainTiles": [
+          {
+            "instance": "env-009-0",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0--96-4-near-1f9bea87ec",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff--96-0--96-4-near-1f9bea87ec",
+            "origin": [
+              -96,
+              0,
+              -96
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-1",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0-0-4-near-84e56855ff",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff--96-0-0-4-near-84e56855ff",
+            "origin": [
+              -96,
+              0,
+              0
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-2",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0-96-4-near-08826daed5",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff--96-0-96-4-near-08826daed5",
+            "origin": [
+              -96,
+              0,
+              96
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-3",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0--96-4-near-488fda5298",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff-0-0--96-4-near-488fda5298",
+            "origin": [
+              0,
+              0,
+              -96
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-4",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0-0-4-near-837940d12d",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff-0-0-0-4-near-837940d12d",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-5",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0-96-4-near-03a167cb7f",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff-0-0-96-4-near-03a167cb7f",
+            "origin": [
+              0,
+              0,
+              96
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-6",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0--96-4-near-c4f7296ffe",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff-96-0--96-4-near-c4f7296ffe",
+            "origin": [
+              96,
+              0,
+              -96
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-7",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0-0-4-near-6d8410fefc",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff-96-0-0-4-near-6d8410fefc",
+            "origin": [
+              96,
+              0,
+              0
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          },
+          {
+            "instance": "env-009-8",
+            "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0-96-4-near-f1f490be88",
+            "authorityAssetId": "architecture-civic-terrain-deep-valley-cliff-96-0-96-4-near-f1f490be88",
+            "origin": [
+              96,
+              0,
+              96
+            ],
+            "size": 96,
+            "step": 4,
+            "detail": "near"
+          }
+        ],
+        "bearingJoints": [
+          {
+            "name": "deep-valley-city-bridge-0",
+            "point": [
+              -74.24,
+              142.67,
+              -64.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "deep-valley-city-bridge-0",
+            "point": [
+              -74.24,
+              142.67,
+              -55.85
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "deep-valley-city-bridge-0",
+            "point": [
+              74.24,
+              142.67,
+              -64.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "deep-valley-city-bridge-0",
+            "point": [
+              74.24,
+              142.67,
+              -55.85
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "deep-valley-city-bridge-1",
+            "point": [
+              -74.24,
+              102.67,
+              55.85
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "deep-valley-city-bridge-1",
+            "point": [
+              -74.24,
+              102.67,
+              64.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "deep-valley-city-bridge-1",
+            "point": [
+              74.24,
+              102.67,
+              55.85
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          },
+          {
+            "name": "deep-valley-city-bridge-1",
+            "point": [
+              74.24,
+              102.67,
+              64.15
+            ],
+            "roles": [
+              "structuralConcrete",
+              "bridgeBearing"
+            ]
+          }
+        ],
+        "cliffCity": {
+          "sites": [
+            {
+              "x": -124,
+              "z": -60,
+              "level": 144,
+              "side": 1
+            },
+            {
+              "x": 124,
+              "z": -60,
+              "level": 144,
+              "side": 3
+            },
+            {
+              "x": -124,
+              "z": 60,
+              "level": 104,
+              "side": 1
+            },
+            {
+              "x": 124,
+              "z": 60,
+              "level": 104,
+              "side": 3
+            }
+          ],
+          "bridges": [
+            {
+              "instance": "env-009-109",
+              "length": 232,
+              "width": 10,
+              "walkY": 144.2,
+              "piers": [
+                {
+                  "x": -74.24,
+                  "z": -64.15,
+                  "ground": 74.572912166
+                },
+                {
+                  "x": -74.24,
+                  "z": -55.85,
+                  "ground": 62.887057589
+                },
+                {
+                  "x": 74.24,
+                  "z": -64.15,
+                  "ground": 141.2
+                },
+                {
+                  "x": 74.24,
+                  "z": -55.85,
+                  "ground": 141.2
+                }
+              ]
+            },
+            {
+              "instance": "env-009-110",
+              "length": 232,
+              "width": 10,
+              "walkY": 104.2,
+              "piers": [
+                {
+                  "x": -74.24,
+                  "z": 55.85,
+                  "ground": 101.2
+                },
+                {
+                  "x": -74.24,
+                  "z": 64.15,
+                  "ground": 101.2
+                },
+                {
+                  "x": 74.24,
+                  "z": 55.85,
+                  "ground": 101.2
+                },
+                {
+                  "x": 74.24,
+                  "z": 64.15,
+                  "ground": 101.2
+                }
+              ]
+            }
+          ],
+          "houses": [
+            {
+              "key": "deep-valley-cliff-house-0",
+              "position": [
+                -124,
+                144.20000000000002,
+                -60
+              ],
+              "footprint": [
+                14,
+                16
+              ],
+              "floors": 3,
+              "levels": [
+                {
+                  "level": 0,
+                  "walkY": 144.20000000000002,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 1,
+                  "walkY": 148.4,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 2,
+                  "walkY": 152.60000000000002,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                }
+              ],
+              "instanceIds": [
+                "env-009-10",
+                "env-009-11",
+                "env-009-12",
+                "env-009-13",
+                "env-009-14",
+                "env-009-15",
+                "env-009-16",
+                "env-009-17",
+                "env-009-18",
+                "env-009-19",
+                "env-009-20",
+                "env-009-21",
+                "env-009-22",
+                "env-009-23",
+                "env-009-24",
+                "env-009-25",
+                "env-009-26",
+                "env-009-27",
+                "env-009-28",
+                "env-009-29",
+                "env-009-30",
+                "env-009-31",
+                "env-009-32",
+                "env-009-33"
+              ],
+              "frontDoor": [
+                -124,
+                144.20000000000002,
+                -68
+              ],
+              "backDoor": [
+                -124,
+                144.20000000000002,
+                -52
+              ]
+            },
+            {
+              "key": "deep-valley-cliff-house-1",
+              "position": [
+                124,
+                144.20000000000002,
+                -60
+              ],
+              "footprint": [
+                14,
+                16
+              ],
+              "floors": 3,
+              "levels": [
+                {
+                  "level": 0,
+                  "walkY": 144.20000000000002,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 1,
+                  "walkY": 148.4,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 2,
+                  "walkY": 152.60000000000002,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                }
+              ],
+              "instanceIds": [
+                "env-009-35",
+                "env-009-36",
+                "env-009-37",
+                "env-009-38",
+                "env-009-39",
+                "env-009-40",
+                "env-009-41",
+                "env-009-42",
+                "env-009-43",
+                "env-009-44",
+                "env-009-45",
+                "env-009-46",
+                "env-009-47",
+                "env-009-48",
+                "env-009-49",
+                "env-009-50",
+                "env-009-51",
+                "env-009-52",
+                "env-009-53",
+                "env-009-54",
+                "env-009-55",
+                "env-009-56",
+                "env-009-57",
+                "env-009-58"
+              ],
+              "frontDoor": [
+                124,
+                144.20000000000002,
+                -68
+              ],
+              "backDoor": [
+                124,
+                144.20000000000002,
+                -52
+              ]
+            },
+            {
+              "key": "deep-valley-cliff-house-2",
+              "position": [
+                -124,
+                104.2,
+                60
+              ],
+              "footprint": [
+                14,
+                16
+              ],
+              "floors": 3,
+              "levels": [
+                {
+                  "level": 0,
+                  "walkY": 104.2,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 1,
+                  "walkY": 108.4,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 2,
+                  "walkY": 112.60000000000001,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                }
+              ],
+              "instanceIds": [
+                "env-009-60",
+                "env-009-61",
+                "env-009-62",
+                "env-009-63",
+                "env-009-64",
+                "env-009-65",
+                "env-009-66",
+                "env-009-67",
+                "env-009-68",
+                "env-009-69",
+                "env-009-70",
+                "env-009-71",
+                "env-009-72",
+                "env-009-73",
+                "env-009-74",
+                "env-009-75",
+                "env-009-76",
+                "env-009-77",
+                "env-009-78",
+                "env-009-79",
+                "env-009-80",
+                "env-009-81",
+                "env-009-82",
+                "env-009-83"
+              ],
+              "frontDoor": [
+                -124,
+                104.2,
+                52
+              ],
+              "backDoor": [
+                -124,
+                104.2,
+                68
+              ]
+            },
+            {
+              "key": "deep-valley-cliff-house-3",
+              "position": [
+                124,
+                104.2,
+                60
+              ],
+              "footprint": [
+                14,
+                16
+              ],
+              "floors": 3,
+              "levels": [
+                {
+                  "level": 0,
+                  "walkY": 104.2,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 1,
+                  "walkY": 108.4,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                },
+                {
+                  "level": 2,
+                  "walkY": 112.60000000000001,
+                  "proposedUse": "unassigned",
+                  "permissions": "unbound"
+                }
+              ],
+              "instanceIds": [
+                "env-009-85",
+                "env-009-86",
+                "env-009-87",
+                "env-009-88",
+                "env-009-89",
+                "env-009-90",
+                "env-009-91",
+                "env-009-92",
+                "env-009-93",
+                "env-009-94",
+                "env-009-95",
+                "env-009-96",
+                "env-009-97",
+                "env-009-98",
+                "env-009-99",
+                "env-009-100",
+                "env-009-101",
+                "env-009-102",
+                "env-009-103",
+                "env-009-104",
+                "env-009-105",
+                "env-009-106",
+                "env-009-107",
+                "env-009-108"
+              ],
+              "frontDoor": [
+                124,
+                104.2,
+                52
+              ],
+              "backDoor": [
+                124,
+                104.2,
+                68
+              ]
+            }
+          ],
+          "localCutDomains": [
+            {
+              "center": [
+                -124,
+                -60
+              ],
+              "flatHalfSize": 16,
+              "blendOuterHalfSize": 24,
+              "groundLevel": 144
+            },
+            {
+              "center": [
+                124,
+                -60
+              ],
+              "flatHalfSize": 16,
+              "blendOuterHalfSize": 24,
+              "groundLevel": 144
+            },
+            {
+              "center": [
+                -124,
+                60
+              ],
+              "flatHalfSize": 16,
+              "blendOuterHalfSize": 24,
+              "groundLevel": 104
+            },
+            {
+              "center": [
+                124,
+                60
+              ],
+              "flatHalfSize": 16,
+              "blendOuterHalfSize": 24,
+              "groundLevel": 104
+            }
+          ],
+          "roadsCutOnlyAtActualBridgeCorridors": true,
+          "originalUrbanDensityBound": false
+        },
+        "forest": [
+          {
+            "instance": "env-009-114",
+            "catalogId": "ENV-055",
+            "position": [
+              -88,
+              120.4,
+              -110
+            ],
+            "ground": 120.110928984
+          },
+          {
+            "instance": "env-009-116",
+            "catalogId": "ENV-050",
+            "position": [
+              76,
+              154.4,
+              -112
+            ],
+            "ground": 154.177857458
+          },
+          {
+            "instance": "env-009-118",
+            "catalogId": "ENV-050",
+            "position": [
+              -62,
+              159.60000000000002,
+              108
+            ],
+            "ground": 159.204201447
+          },
+          {
+            "instance": "env-009-120",
+            "catalogId": "ENV-055",
+            "position": [
+              80,
+              188,
+              108
+            ],
+            "ground": 187.749020843
+          },
+          {
+            "instance": "env-009-122",
+            "catalogId": "ENV-050",
+            "position": [
+              -74,
+              80.60000000000001,
+              20
+            ],
+            "ground": 80.256269986
+          },
+          {
+            "instance": "env-009-124",
+            "catalogId": "ENV-050",
+            "position": [
+              80,
+              220,
+              20
+            ],
+            "ground": 219.743154624
+          }
+        ],
+        "deepValley": {
+          "authorWorldSize": [
+            288,
+            288
+          ],
+          "shoulderRangeM": [
+            80,
+            220
+          ],
+          "mainValley": true,
+          "sideValley": true,
+          "riverSurfaceY": 8.3,
+          "originalWorldBound": false
+        },
+        "waterJunctions": [
+          {
+            "name": "side branch to main channel",
+            "point": [
+              -4,
+              8.24,
+              0
+            ],
+            "minimumPieces": 2
+          }
+        ]
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff--96-0--96-4-near-1f9bea87ec",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff--96-0-0-4-near-84e56855ff",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff--96-0-96-4-near-08826daed5",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff-0-0--96-4-near-488fda5298",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff-0-0-0-4-near-837940d12d",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff-0-0-96-4-near-03a167cb7f",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff-96-0--96-4-near-c4f7296ffe",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff-96-0-0-4-near-6d8410fefc",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-terrain-deep-valley-cliff-96-0-96-4-near-f1f490be88",
+      "name": "连续岩土实体与最小原生岩块",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 2496
+        },
+        {
+          "name": "material-183",
+          "material": 183,
+          "collision": true,
+          "triangles": 2496
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-deep-valley-city-0-54f11554fe",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+      "name": "石铺面与混凝土承板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "civic-floor",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            14,
+            0,
+            16
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "civic-walk",
+          "position": [
+            0,
+            0,
+            -0.1
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            3.6,
+            3,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 60
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 120
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 24
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 96
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+      "name": "中轴实开门墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "civic-walk",
+          "position": [
+            0,
+            0,
+            -0.1
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            3.6,
+            3,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 108
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 240
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 48
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 48
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 168
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 72
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 180
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 36
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "lower",
+          "kind": "civic-walk",
+          "position": [
+            1.2,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            2.4,
+            2.2,
+            0
+          ],
+          "pitch": 0.02
+        },
+        {
+          "id": "upper",
+          "kind": "civic-walk",
+          "position": [
+            4,
+            4.2,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            2.4,
+            2.2,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 84
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 264
+        },
+        {
+          "name": "material-42",
+          "material": 165,
+          "collision": true,
+          "triangles": 132
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 432
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "civic-floor",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            14,
+            0,
+            16
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 96
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 96
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 96
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-2",
+          "material": 2,
+          "collision": true,
+          "triangles": 72
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 180
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 36
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 36
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 165,
+          "collision": true,
+          "triangles": 324
+        },
+        {
+          "name": "material-42",
+          "material": 79,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-3",
+          "material": 165,
+          "collision": true,
+          "triangles": 216
+        },
+        {
+          "name": "material-42",
+          "material": 79,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+      "name": "连续飞檐与梁椽",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-5",
+          "material": 5,
+          "collision": true,
+          "triangles": 300
+        },
+        {
+          "name": "material-145",
+          "material": 145,
+          "collision": true,
+          "triangles": 288
+        },
+        {
+          "name": "material-3",
+          "material": 3,
+          "collision": true,
+          "triangles": 504
+        },
+        {
+          "name": "material-42",
+          "material": 42,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-41",
+          "material": 41,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-deep-valley-city-1-7025bc5386",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-deep-valley-city-2-cdde1e602a",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-deep-valley-city-3-fd85dd11b7",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-bridge-deep-valley-city-bridge-0-212526d079",
+      "name": "分层路床、承梁、支座和实墩",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 132
+        },
+        {
+          "name": "material-152",
+          "material": 152,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-153",
+          "material": 153,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 2832
+        },
+        {
+          "name": "material-79",
+          "material": 79,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-154",
+          "material": 154,
+          "collision": true,
+          "triangles": 48
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-bridge-deep-valley-city-bridge-1-985c3f787c",
+      "name": "分层路床、承梁、支座和实墩",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 132
+        },
+        {
+          "name": "material-152",
+          "material": 152,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-153",
+          "material": 153,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 2832
+        },
+        {
+          "name": "material-79",
+          "material": 79,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-154",
+          "material": 154,
+          "collision": true,
+          "triangles": 48
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-water-ribbon-deep-valley-main-b955d86bf4",
+      "name": "连续水体表面与真实米制流向",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-192",
+          "material": 192,
+          "collision": false,
+          "triangles": 292
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-water-ribbon-deep-valley-tributary-7ed5da3fb4",
+      "name": "连续水体表面与真实米制流向",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-192",
+          "material": 192,
+          "collision": false,
+          "triangles": 20
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-valley-forest-0-155b5bad8b",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            3.8,
+            0,
+            3.6
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -9,
+              0,
+              -9
+            ],
+            "max": [
+              10,
+              70,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              62,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -5,
+              26,
+              -5
+            ],
+            "max": [
+              7,
+              61,
+              5
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -9,
+              33,
+              -9
+            ],
+            "max": [
+              10,
+              70,
+              8
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-valley-forest-1-b2ec845509",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            11.8,
+            0,
+            11.200000000000001
+          ],
+          "pitch": 0.2
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              -28,
+              0,
+              -28
+            ],
+            "max": [
+              31,
+              80,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "树干与真实多点接地根脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              0,
+              -8
+            ],
+            "max": [
+              9,
+              72,
+              9
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "独立主枝和分叉次级枝架，保留冠间开口",
+          "parent": "root",
+          "region": {
+            "min": [
+              -21,
+              25,
+              -22
+            ],
+            "max": [
+              24,
+              74,
+              23
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "枝端真实量化叶簇，成熟叶与新梢分材质",
+          "parent": "root",
+          "region": {
+            "min": [
+              -28,
+              28,
+              -28
+            ],
+            "max": [
+              31,
+              78,
+              28
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续顶梢和顶端冠，不把细杆顶盒当树种",
+          "parent": "root",
+          "region": {
+            "min": [
+              -8,
+              68,
+              -4
+            ],
+            "max": [
+              5,
+              80,
+              7
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-valley-forest-2-570b650a21",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-valley-forest-3-b53905a1f7",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-valley-forest-4-b02c974a65",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-natural-root-seat-valley-forest-5-0da26f12b6",
+      "name": "作者根部岩土承接",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.2,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-182",
+          "material": 182,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-184",
+          "material": 184,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "env-009-0",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0--96-4-near-1f9bea87ec",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        -96,
+        0,
+        -96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-1",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0-0-4-near-84e56855ff",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        -96,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-2",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff--96-0-96-4-near-08826daed5",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        -96,
+        0,
+        96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-3",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0--96-4-near-488fda5298",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        -96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-4",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0-0-4-near-837940d12d",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-5",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff-0-0-96-4-near-03a167cb7f",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        0,
+        0,
+        96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-6",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0--96-4-near-c4f7296ffe",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        96,
+        0,
+        -96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-7",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0-0-4-near-6d8410fefc",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        96,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-8",
+      "assetId": "architecture-civic-terrain-deep-valley-cliff-96-0-96-4-near-f1f490be88",
+      "name": "连续岩土实体与最小原生岩块",
+      "position": [
+        96,
+        0,
+        96
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-9",
+      "assetId": "architecture-civic-natural-root-seat-deep-valley-city-0-54f11554fe",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-10",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        -124,
+        144.2,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-11",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        -124,
+        144.2,
+        -68
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-12",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        -124,
+        144.2,
+        -52
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-13",
+      "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+      "name": "中轴实开门墙",
+      "position": [
+        -117,
+        144.2,
+        -60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-14",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -131,
+        144.2,
+        -60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-15",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        -126.6,
+        144.2,
+        -64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-16",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        -124,
+        148.4,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-17",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        148.4,
+        -68
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-18",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        148.4,
+        -52
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-19",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -117,
+        148.4,
+        -60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-20",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -131,
+        148.4,
+        -60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-21",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        -126.6,
+        148.4,
+        -64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-22",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        148.4,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-23",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -121.2,
+        148.4,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-24",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        148.4,
+        -55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-25",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        -124,
+        152.6,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-26",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        152.6,
+        -68
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-27",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        152.6,
+        -52
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-28",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -117,
+        152.6,
+        -60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-29",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -131,
+        152.6,
+        -60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-30",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        152.6,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-31",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -121.2,
+        152.6,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-32",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        152.6,
+        -55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-33",
+      "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+      "name": "连续飞檐与梁椽",
+      "position": [
+        -124,
+        156.8,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-34",
+      "assetId": "architecture-civic-natural-root-seat-deep-valley-city-1-7025bc5386",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-35",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        124,
+        144.2,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-36",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        124,
+        144.2,
+        -68
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-37",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        124,
+        144.2,
+        -52
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-38",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        131,
+        144.2,
+        -60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-39",
+      "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+      "name": "中轴实开门墙",
+      "position": [
+        117,
+        144.2,
+        -60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-40",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        121.4,
+        144.2,
+        -64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-41",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        124,
+        148.4,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-42",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        148.4,
+        -68
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-43",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        148.4,
+        -52
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-44",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        131,
+        148.4,
+        -60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-45",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        117,
+        148.4,
+        -60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-46",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        121.4,
+        148.4,
+        -64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-47",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        148.4,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-48",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        126.8,
+        148.4,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-49",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        148.4,
+        -55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-50",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        124,
+        152.6,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-51",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        152.6,
+        -68
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-52",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        152.6,
+        -52
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-53",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        131,
+        152.6,
+        -60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-54",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        117,
+        152.6,
+        -60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-55",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        152.6,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-56",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        126.8,
+        152.6,
+        -64.2
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-57",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        152.6,
+        -55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-58",
+      "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+      "name": "连续飞檐与梁椽",
+      "position": [
+        124,
+        156.8,
+        -60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-59",
+      "assetId": "architecture-civic-natural-root-seat-deep-valley-city-2-cdde1e602a",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-60",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        -124,
+        104.2,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-61",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        -124,
+        104.2,
+        52
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-62",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        -124,
+        104.2,
+        68
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-63",
+      "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+      "name": "中轴实开门墙",
+      "position": [
+        -117,
+        104.2,
+        60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-64",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -131,
+        104.2,
+        60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-65",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        -126.6,
+        104.2,
+        55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-66",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        -124,
+        108.4,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-67",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        108.4,
+        52
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-68",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        108.4,
+        68
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-69",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -117,
+        108.4,
+        60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-70",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -131,
+        108.4,
+        60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-71",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        -126.6,
+        108.4,
+        55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-72",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        108.4,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-73",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -121.2,
+        108.4,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-74",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        108.4,
+        64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-75",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        -124,
+        112.6,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-76",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        112.6,
+        52
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-77",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -124,
+        112.6,
+        68
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-78",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -117,
+        112.6,
+        60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-79",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        -131,
+        112.6,
+        60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-80",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        112.6,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-81",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -121.2,
+        112.6,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-82",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        -126.8,
+        112.6,
+        64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-83",
+      "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+      "name": "连续飞檐与梁椽",
+      "position": [
+        -124,
+        116.8,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-84",
+      "assetId": "architecture-civic-natural-root-seat-deep-valley-city-3-fd85dd11b7",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-85",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pp-7401de2243",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        124,
+        104.2,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-86",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        124,
+        104.2,
+        52
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-87",
+      "assetId": "architecture-civic-district-wall-14-4p2-true-false-c177889175",
+      "name": "中轴实开门墙",
+      "position": [
+        124,
+        104.2,
+        68
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-88",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        131,
+        104.2,
+        60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-89",
+      "assetId": "architecture-civic-district-wall-16-4p2-true-false-7dfe0957c9",
+      "name": "中轴实开门墙",
+      "position": [
+        117,
+        104.2,
+        60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-90",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        121.4,
+        104.2,
+        55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-91",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        124,
+        108.4,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-92",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        108.4,
+        52
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-93",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        108.4,
+        68
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-94",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        131,
+        108.4,
+        60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-95",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        117,
+        108.4,
+        60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-96",
+      "assetId": "architecture-civic-modern-stair-4p2-9b4dc9d984",
+      "name": "双跑连续梁与实体踏步",
+      "position": [
+        121.4,
+        108.4,
+        55.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-97",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        108.4,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-98",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        126.8,
+        108.4,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-99",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        108.4,
+        64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-100",
+      "assetId": "architecture-civic-modern-plate-14-16-0p4-pppminppp-2p8p-4p2p-61f32eac2a",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        124,
+        112.6,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-101",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        112.6,
+        52
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-102",
+      "assetId": "architecture-civic-district-wall-14-4p2-false-false-1774cbb04c",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        124,
+        112.6,
+        68
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "env-009-103",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        131,
+        112.6,
+        60
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "env-009-104",
+      "assetId": "architecture-civic-district-wall-16-4p2-false-false-c0ce6f39ac",
+      "name": "分格窗洞与木石墙",
+      "position": [
+        117,
+        112.6,
+        60
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-105",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        112.6,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-106",
+      "assetId": "architecture-civic-modern-rail-8p4-eed313fe9b",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        126.8,
+        112.6,
+        55.8
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "env-009-107",
+      "assetId": "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+      "name": "石脚与连续金属护栏",
+      "position": [
+        121.2,
+        112.6,
+        64.2
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-108",
+      "assetId": "architecture-civic-roof-14-16-1p5-gable-closed-d3ee8c3d6d",
+      "name": "连续飞檐与梁椽",
+      "position": [
+        124,
+        116.8,
+        60
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-109",
+      "assetId": "architecture-civic-fleet-bridge-deep-valley-city-bridge-0-212526d079",
+      "name": "分层路床、承梁、支座和实墩",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-110",
+      "assetId": "architecture-civic-fleet-bridge-deep-valley-city-bridge-1-985c3f787c",
+      "name": "分层路床、承梁、支座和实墩",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-111",
+      "assetId": "architecture-civic-water-ribbon-deep-valley-main-b955d86bf4",
+      "name": "连续水体表面与真实米制流向",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-112",
+      "assetId": "architecture-civic-water-ribbon-deep-valley-tributary-7ed5da3fb4",
+      "name": "连续水体表面与真实米制流向",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-113",
+      "assetId": "architecture-civic-natural-root-seat-valley-forest-0-155b5bad8b",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-114",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        -88,
+        120.4,
+        -110
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-115",
+      "assetId": "architecture-civic-natural-root-seat-valley-forest-1-b2ec845509",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-116",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        76,
+        154.4,
+        -112
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-117",
+      "assetId": "architecture-civic-natural-root-seat-valley-forest-2-570b650a21",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-118",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -62,
+        159.6,
+        108
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-119",
+      "assetId": "architecture-civic-natural-root-seat-valley-forest-3-b53905a1f7",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-120",
+      "assetId": "source-env-055",
+      "name": "柏类柱冠树母版",
+      "position": [
+        80,
+        188,
+        108
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-121",
+      "assetId": "architecture-civic-natural-root-seat-valley-forest-4-b02c974a65",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-122",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        -74,
+        80.6,
+        20
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-123",
+      "assetId": "architecture-civic-natural-root-seat-valley-forest-5-0da26f12b6",
+      "name": "作者根部岩土承接",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "env-009-124",
+      "assetId": "source-env-050-height-16",
+      "name": "既有量化乔木树干与错层冠母版",
+      "position": [
+        80,
+        220,
+        20
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

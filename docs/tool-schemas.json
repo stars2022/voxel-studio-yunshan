@@ -1669,7 +1669,7 @@
                   },
                   "catalogId": {
                     "type": "string",
-                    "pattern": "^(LIFE|BUILT)-[0-9]{3}$"
+                    "pattern": "^(LIFE|BUILT|ENV)-[0-9]{3}$"
                   },
                   "id": {
                     "type": "string",
@@ -1703,6 +1703,18 @@
                         "enum": [
                           "lightRail",
                           "maglev"
+                        ]
+                      },
+                      "stationMode": {
+                        "enum": [
+                          "bus",
+                          "rail"
+                        ]
+                      },
+                      "terrainDetail": {
+                        "enum": [
+                          "near",
+                          "far"
                         ]
                       },
                       "layoutSeed": {
