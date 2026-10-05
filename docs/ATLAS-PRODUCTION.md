@@ -1,6 +1,6 @@
 # 67 张图册：三维资产转化
 
-截至 M045，累计 **540/793** 条参考技术候选，剩余 253 条，人工美术验收 0。最新 [M045 地标与交通组合说明](M045-ARCHITECTURE-ASSEMBLIES.md)、[进度](../projects/conversion-goal.json) 和 [实际总览](../artifacts/atlas/atlas-20261005061141/M045.png)。当前采用最小体素组件、连续斜面/曲面和天空贴图的混合建模标准。
+截至 M046，累计 **552/793** 条参考技术候选，剩余 241 条，人工美术验收 0。最新 [M046 航空与现代建筑组合](M046-ARCHITECTURE-ASSEMBLIES.md)、[进度](../projects/conversion-goal.json) 和 [实际总览](../artifacts/atlas/atlas-20261005072532/M046.png)。当前采用最小体素组件、连续斜面/曲面和天空贴图的混合建模标准。
 
 以下 M017 及更早数字、约定和验证保留为历史记录，不是最新累计状态。
 

@@ -2,6 +2,8 @@
 
 这是用户要求的持续制作约定，见项目根目录 `AGENTS.md`。体素存储材质 ID；`styles.yunshan` 保存用途角色到 ID 的映射；`materials` 保存物理类别与可替换外观。即使两个角色目前颜色相同，也不能因此合并。
 
+当前累计496个用途角色；最新范围见 [M046航空与现代建筑](M046-ARCHITECTURE-ASSEMBLIES.md)。以下各批数字保留其历史时点，不代表旧资产自动完成新角色审查。
+
 ## 本批落实范围
 
 M007 的 12 件科研、医疗和课堂候选已修正可见的跨类别借用：仪器白色机壳使用涂装金属，硬瓶盖和键帽使用塑料，显示图表使用显示图形，红色呼叫按钮独立于水果，量杯刻度使用印刷标记，纸页独立于织物。显微镜实际格子中分开了以下层：
@@ -292,3 +294,10 @@ BUILT-225/232–235/240–246 按实际石、混凝土、砂浆、木梃、横�
 BUILT-242 的 `stairFlight` / `halfTurn` / `upperWell` 是同一清单家族内三种组件，复用数量不增计基础母版。双跑梯与屋面样件检查实际支承、0.35m 半径/1.72m 身体尺度、井孔及上行出口；不声明原游戏控制器或法规验收。低坡道首尾各 1m 平台，中间 10m 升高 1m，真实上表面按 50mm 原生网格离散；不能把它称为连续解析斜面。
 
 专项证据由 `tests/atlas-neighborhood.test.ts` 和 `scripts/verify-neighborhood-mcp.ts` 生成，包含外观替换、失败回滚、一次撤销、原生/GLB 往返及真实坐标查询。
+
+
+## M046 航空与现代建筑
+
+新增519 `vehicleInactiveOptic`（glass，非碰撞）、520 `authorRouteMarker`（plastic，非碰撞）、521 `architecturalCladding`（metal，实体）、522 `architectureOptic`（glass，非碰撞）。496角色按256+240同事务创建，外来ID不覆盖；四个用途保持零发光。
+
+载具光学面与建筑光学面有效alpha目标0.70，窗玻璃0.30、既有引导面0.65，均读取实际GLB材质UV像素复核。真实涂线使用ink，航空蒙皮与旋翼用各自metal角色，落地脚橡胶与密封分别归类。换材质及一次撤销不改变几何、组件放置、接口或碰撞声明；原188落地脚保持原生哈希。详见 [材质证据](../artifacts/atlas/atlas-20261005072532/material-audit.json) 和 [实际导出验证](../artifacts/atlas/atlas-20261005072532/assembly-verification.json)。

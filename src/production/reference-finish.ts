@@ -3,10 +3,14 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=37;
+export const referenceFinishVersion=38;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ vehicleInactiveOptic:{color:'#91ccd0',roughness:.3,metalness:0,opacity:.7},
+ authorRouteMarker:{color:'#d1ac69',roughness:.8,metalness:0},
+ architecturalCladding:{color:'#b4c1bd',roughness:.42,metalness:.72,...surface('metal',.45,.06,1121)},
+ architectureOptic:{color:'#8bc4cc',roughness:.25,metalness:0,opacity:.7},
  civicGuideOptic:{name:"建筑与交通引导光学条 · 未绑定",color:"#7bbfc5",roughness:.35,metalness:0,opacity:.65,emissive:"#000000",intensity:0},
  distantMasonry:{name:"远景砌石表面",color:"#c5bdab",roughness:.8,metalness:0},
  distantStone:{name:"远景石基与铺石",color:"#767c72",roughness:.8,metalness:0},
