@@ -3,10 +3,19 @@ import {materialAppearance} from '../core/material-appearance';
 
 /** Authored PBR roles for the supplied three reference sheets. No occupancy,
  * collision flags, material IDs, instances or authored geometry are changed. */
-export const referenceFinishVersion=39;
+export const referenceFinishVersion=40;
 type Finish=Pick<Material,'color'|'roughness'|'metalness'> & Partial<Material>;
 const surface=(kind:Material['surface'],scale:number,strength:number,seed:number,rotation=0)=>({surface:kind,surfaceScale:scale,surfaceStrength:strength,surfaceSeed:seed,surfaceRotation:rotation});
 export const referenceFinishes:Record<string,Finish>={
+ transitBody:{color:'#607e82',roughness:.48,metalness:.65,...surface('metal',.2,.06,525)},
+ cabinLiner:{color:'#dad6ca',roughness:.85,metalness:0,...surface('none',.2,.06,526)},
+ passengerUpholstery:{color:'#617e85',roughness:.85,metalness:0,...surface('fabric',.2,.06,527)},
+ passengerRestraint:{color:'#384347',roughness:.85,metalness:0,...surface('fabric',.2,.06,528)},
+ cabinFloor:{color:'#525d60',roughness:.85,metalness:0,...surface('none',.2,.06,529)},
+ vehicleControl:{color:'#414b50',roughness:.85,metalness:0,...surface('none',.2,.06,530)},
+ thrusterLiner:{color:'#8c9695',roughness:.85,metalness:0,...surface('none',.2,.06,531)},
+ spacecraftSkin:{color:'#bcc8c1',roughness:.48,metalness:.65,...surface('metal',.2,.06,532)},
+
  vehicleInactiveOptic:{color:'#91ccd0',roughness:.3,metalness:0,opacity:.7},
  authorRouteMarker:{color:'#d1ac69',roughness:.8,metalness:0},
  architecturalCladding:{color:'#b4c1bd',roughness:.42,metalness:.72,...surface('metal',.45,.06,1121)},
@@ -511,11 +520,16 @@ export const referenceFinishes:Record<string,Finish>={
 const appearance=materialAppearance;
 export function referenceFinishCommands(p:Project):Command[]{
  const roles=p.styles.yunshan;if(!roles)throw new Error('项目缺少云山材质角色');
- const original=p.palettes['原始素色']?Object.fromEntries(Object.entries(p.palettes['原始素色']).map(([id,m])=>[id,appearance(m)])):Object.fromEntries(Object.values(p.materials).map(m=>[m.id,appearance(m)])),finished=Object.fromEntries(Object.values(p.materials).map(m=>[m.id,appearance(m)]));
+ // The style has at most 512 roles, while a document may also contain any
+ // number of unrelated user materials. Do not copy those into this profile.
+ const managed=new Set(Object.values(roles)),snapshot=()=>Object.fromEntries(Object.values(p.materials).filter(m=>managed.has(m.id)).map(m=>[m.id,appearance(m)])),finished=snapshot();
 
  for(const[role,finish]of Object.entries(referenceFinishes)){
   const id=roles[role];if(!id)continue;if(!p.materials[id])throw new Error('角色引用缺失材质 '+role);
   const properties={opacity:1,emissive:'#000000',intensity:0,...finish};Object.assign(finished[id],properties);
  }
- return[{op:'definePalette',name:'原始素色',materials:original},{op:'definePalette',name:'参考材质试作',materials:finished},{op:'palette',name:'参考材质试作'}];
+ // An existing original palette may include deliberate user entries. Leave it
+ // intact instead of replacing, filtering, or expanding that saved baseline.
+ const commands:Command[]=p.palettes['原始素色']?[]:[{op:'definePalette',name:'原始素色',materials:snapshot()}];
+ return[...commands,{op:'definePalette',name:'参考材质试作',materials:finished},{op:'palette',name:'参考材质试作'}];
 }

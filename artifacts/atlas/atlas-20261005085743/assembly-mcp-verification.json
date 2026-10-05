@@ -1,0 +1,5690 @@
+{
+  "run": "atlas-20261005085743",
+  "status": "passed",
+  "checks": [
+    "Actual library reports 576 references, 513 unique atlas masters and 60 atlas assembly templates; assembly recipe types and absence of unverified flight parameters exposed",
+    "Actual atlas opens the 22m wing-span airliner; real cabin, door, eyes and boarding geometry queried and cutaway captured",
+    "Five actual assembly top views and near/far/back mesh-cache swaps preserve authoritative geometry",
+    "Real assembly creation supports dry run, idempotency, compare-and-swap, atomic rollback, and rejects treating a template as a base asset",
+    "Actual native copper pin queried; role-specific palette change synchronizes to WebGL and undoes without changing assemblies or geometry",
+    "Quarter-turn instantiation exports actual repeated placements and shared component geometry, with local template provenance intact",
+    "One undo reverses each placement or creation transaction, including its dependent geometry",
+    "Public MCP creates the distinct maglev undercarriage with actual side air gaps and mechanical stops; schema exposes only two validated static modes",
+    "Canonical save and server restart retain native components, derived-source records and actual assembly definitions"
+  ],
+  "errors": [],
+  "views": [
+    {
+      "id": "BUILT-271",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 4,
+        "assetIds": [
+          "architecture-civic-modern-plate-78-64-0p4-pp-e65c207305",
+          "architecture-civic-modern-plate-48-38-0p4-pp-191cdf61dd",
+          "architecture-civic-district-wall-48-10-false-true-ab126fb5ac",
+          "architecture-civic-district-wall-38-10-false-true-3f46951038",
+          "architecture-civic-district-wall-38-10-true-true-1355ee9e61",
+          "architecture-civic-fleet-hangar-actual-door-f1af294ca3",
+          "architecture-civic-modern-roof-48-38-2p4-gable-closed-5b341b5c1a",
+          "architecture-civic-fleet-airliner-cabin-170b94e307",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-airliner-controls-ba82dc3289",
+          "source-built-294",
+          "architecture-civic-fleet-airliner-nose-bd4acd6481",
+          "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+          "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+          "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+          "source-built-296",
+          "architecture-civic-fleet-boarding-airliner-6193599032",
+          "architecture-civic-modern-plate-12-14-0p4-pp-fa7031e120",
+          "architecture-civic-district-wall-12-4p2-true-true-f1d79706ae",
+          "architecture-civic-district-wall-14-4p2-false-true-c3e01adef4",
+          "architecture-civic-modern-roof-12-14-1p3-hip-closed-523f4e4923"
+        ],
+        "frameIntervalsMs": [
+          57,
+          64.5,
+          39.60000002384186,
+          61,
+          39.39999997615814,
+          60.400000005960464,
+          37.70000001788139,
+          39.099999994039536,
+          56.69999998807907,
+          106.7000000178814,
+          58.19999998807907,
+          38.900000005960464,
+          36.599999994039536,
+          59.19999998807907,
+          41,
+          71.80000001192093,
+          64.09999999403954,
+          43.80000001192093,
+          16.099999994039536,
+          25.69999998807907,
+          13.300000011920929,
+          17.900000005960464,
+          12.900000005960464,
+          5.699999988079071,
+          13.199999988079071,
+          18,
+          18.5,
+          11.700000017881393,
+          16.799999982118607,
+          16.600000023841858,
+          17.299999982118607,
+          16,
+          22,
+          13.099999994039536,
+          14.900000005960464,
+          16.599999994039536,
+          16.600000023841858,
+          18.19999998807907,
+          20.5,
+          11.5,
+          16.900000005960464,
+          16.400000005960464,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.80000001192093,
+          16.5,
+          16.69999998807907,
+          52.80000001192093,
+          54.19999998807907,
+          86.30000001192093,
+          70.90000000596046,
+          86.2999999821186,
+          89.59999999403954,
+          104.90000000596046,
+          105.59999999403954,
+          50.20000001788139,
+          67.5,
+          65.40000000596046,
+          49,
+          96.69999998807907,
+          78.30000001192093,
+          73.69999998807907,
+          53.599999994039536,
+          106.30000001192093,
+          103.7999999821186,
+          132.10000002384186,
+          63.89999997615814,
+          55.70000001788139,
+          47,
+          75.69999998807907,
+          98.2000000178814,
+          82.2999999821186,
+          9.099999994039536,
+          23.100000023841858,
+          2.5,
+          15.199999988079071,
+          16.599999994039536,
+          17.400000005960464,
+          19.30000001192093,
+          13.299999982118607,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          18.700000017881393,
+          14.699999988079071,
+          16.599999994039536,
+          16.700000017881393,
+          16.799999982118607,
+          16.599999994039536,
+          16.600000023841858,
+          16.69999998807907,
+          16.69999998807907,
+          16.5,
+          268,
+          100,
+          132.40000000596046,
+          117.30000001192093,
+          124.90000000596046,
+          111.19999998807907,
+          111.69999998807907,
+          130.40000000596046,
+          114.2000000178814,
+          106.89999997615814,
+          145.30000001192093,
+          108.30000001192093,
+          110.19999998807907,
+          111.09999999403954,
+          117.09999999403954,
+          150.10000002384186,
+          135.69999998807907,
+          167.69999998807907,
+          134.30000001192093,
+          143,
+          106.90000000596046,
+          131,
+          111.09999999403954,
+          188.40000000596046
+        ],
+        "drawCalls": 243,
+        "triangles": 27008,
+        "objects": 243,
+        "lastWorkerMeshMs": 40.900000005960464,
+        "meshedAssetIds": [],
+        "meshJobs": 29,
+        "cachedAssetIds": [
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-airliner-cabin-170b94e307",
+          "architecture-civic-fleet-airliner-controls-ba82dc3289",
+          "source-built-294",
+          "architecture-civic-fleet-airliner-nose-bd4acd6481",
+          "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+          "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+          "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+          "source-built-296",
+          "architecture-civic-fleet-boarding-airliner-6193599032",
+          "architecture-civic-modern-plate-78-64-0p4-pp-e65c207305",
+          "architecture-civic-modern-plate-48-38-0p4-pp-191cdf61dd",
+          "architecture-civic-district-wall-48-10-false-true-ab126fb5ac",
+          "architecture-civic-district-wall-38-10-false-true-3f46951038",
+          "architecture-civic-district-wall-38-10-true-true-1355ee9e61",
+          "architecture-civic-fleet-hangar-actual-door-f1af294ca3",
+          "architecture-civic-modern-roof-48-38-2p4-gable-closed-5b341b5c1a",
+          "architecture-civic-modern-plate-12-14-0p4-pp-fa7031e120",
+          "architecture-civic-district-wall-12-4p2-true-true-f1d79706ae",
+          "architecture-civic-district-wall-14-4p2-false-true-c3e01adef4",
+          "architecture-civic-modern-roof-12-14-1p3-hip-closed-523f4e4923"
+        ],
+        "geometryBytes": 3437256,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 4,
+        "assetIds": [
+          "architecture-civic-modern-plate-78-64-0p4-pp-e65c207305",
+          "architecture-civic-modern-plate-48-38-0p4-pp-191cdf61dd",
+          "architecture-civic-district-wall-48-10-false-true-ab126fb5ac",
+          "architecture-civic-district-wall-38-10-false-true-3f46951038",
+          "architecture-civic-district-wall-38-10-true-true-1355ee9e61",
+          "architecture-civic-fleet-hangar-actual-door-f1af294ca3",
+          "architecture-civic-modern-roof-48-38-2p4-gable-closed-5b341b5c1a",
+          "architecture-civic-fleet-airliner-cabin-170b94e307",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-airliner-controls-ba82dc3289",
+          "source-built-294",
+          "architecture-civic-fleet-airliner-nose-bd4acd6481",
+          "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+          "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+          "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+          "source-built-296",
+          "architecture-civic-fleet-boarding-airliner-6193599032",
+          "architecture-civic-modern-plate-12-14-0p4-pp-fa7031e120",
+          "architecture-civic-district-wall-12-4p2-true-true-f1d79706ae",
+          "architecture-civic-district-wall-14-4p2-false-true-c3e01adef4",
+          "architecture-civic-modern-roof-12-14-1p3-hip-closed-523f4e4923"
+        ],
+        "frameIntervalsMs": [
+          16.5,
+          16.69999998807907,
+          52.80000001192093,
+          54.19999998807907,
+          86.30000001192093,
+          70.90000000596046,
+          86.2999999821186,
+          89.59999999403954,
+          104.90000000596046,
+          105.59999999403954,
+          50.20000001788139,
+          67.5,
+          65.40000000596046,
+          49,
+          96.69999998807907,
+          78.30000001192093,
+          73.69999998807907,
+          53.599999994039536,
+          106.30000001192093,
+          103.7999999821186,
+          132.10000002384186,
+          63.89999997615814,
+          55.70000001788139,
+          47,
+          75.69999998807907,
+          98.2000000178814,
+          82.2999999821186,
+          9.099999994039536,
+          23.100000023841858,
+          2.5,
+          15.199999988079071,
+          16.599999994039536,
+          17.400000005960464,
+          19.30000001192093,
+          13.299999982118607,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          18.700000017881393,
+          14.699999988079071,
+          16.599999994039536,
+          16.700000017881393,
+          16.799999982118607,
+          16.599999994039536,
+          16.600000023841858,
+          16.69999998807907,
+          16.69999998807907,
+          16.5,
+          268,
+          100,
+          132.40000000596046,
+          117.30000001192093,
+          124.90000000596046,
+          111.19999998807907,
+          111.69999998807907,
+          130.40000000596046,
+          114.2000000178814,
+          106.89999997615814,
+          145.30000001192093,
+          108.30000001192093,
+          110.19999998807907,
+          111.09999999403954,
+          117.09999999403954,
+          150.10000002384186,
+          135.69999998807907,
+          167.69999998807907,
+          134.30000001192093,
+          143,
+          106.90000000596046,
+          131,
+          111.09999999403954,
+          188.40000000596046,
+          140.59999999403954,
+          162.19999998807907,
+          1.800000011920929,
+          1.4000000059604645,
+          16.69999998807907,
+          16.80000001192093,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          17.19999998807907,
+          24.599999994039536,
+          14.800000011920929,
+          10.300000011920929,
+          16.399999976158142,
+          18.600000023841858,
+          14.899999976158142,
+          17.700000017881393,
+          15.400000005960464,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          16.69999998807907,
+          16.80000001192093,
+          16.400000005960464,
+          16.69999998807907,
+          16.700000017881393,
+          16.69999998807907,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.599999994039536,
+          16.69999998807907,
+          16.600000023841858,
+          16.69999998807907,
+          18.80000001192093,
+          14.5,
+          16.69999998807907,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          18.5,
+          14.800000011920929,
+          31.299999982118607,
+          167.5,
+          107.30000001192093
+        ],
+        "drawCalls": 243,
+        "triangles": 24364,
+        "objects": 243,
+        "lastWorkerMeshMs": 45.5,
+        "meshedAssetIds": [
+          "architecture-civic-modern-plate-78-64-0p4-pp-e65c207305",
+          "architecture-civic-modern-plate-48-38-0p4-pp-191cdf61dd",
+          "architecture-civic-district-wall-48-10-false-true-ab126fb5ac",
+          "architecture-civic-district-wall-38-10-false-true-3f46951038",
+          "architecture-civic-district-wall-38-10-true-true-1355ee9e61",
+          "architecture-civic-fleet-hangar-actual-door-f1af294ca3",
+          "architecture-civic-modern-roof-48-38-2p4-gable-closed-5b341b5c1a",
+          "architecture-civic-fleet-airliner-cabin-170b94e307",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-airliner-controls-ba82dc3289",
+          "source-built-294",
+          "architecture-civic-fleet-airliner-nose-bd4acd6481",
+          "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+          "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+          "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+          "source-built-296",
+          "architecture-civic-fleet-boarding-airliner-6193599032",
+          "architecture-civic-modern-plate-12-14-0p4-pp-fa7031e120",
+          "architecture-civic-district-wall-12-4p2-true-true-f1d79706ae",
+          "architecture-civic-district-wall-14-4p2-false-true-c3e01adef4",
+          "architecture-civic-modern-roof-12-14-1p3-hip-closed-523f4e4923"
+        ],
+        "meshJobs": 50,
+        "cachedAssetIds": [
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-airliner-cabin-170b94e307",
+          "architecture-civic-fleet-airliner-controls-ba82dc3289",
+          "source-built-294",
+          "architecture-civic-fleet-airliner-nose-bd4acd6481",
+          "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+          "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+          "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+          "source-built-296",
+          "architecture-civic-fleet-boarding-airliner-6193599032",
+          "architecture-civic-modern-plate-78-64-0p4-pp-e65c207305",
+          "architecture-civic-modern-plate-48-38-0p4-pp-191cdf61dd",
+          "architecture-civic-district-wall-48-10-false-true-ab126fb5ac",
+          "architecture-civic-district-wall-38-10-false-true-3f46951038",
+          "architecture-civic-district-wall-38-10-true-true-1355ee9e61",
+          "architecture-civic-fleet-hangar-actual-door-f1af294ca3",
+          "architecture-civic-modern-roof-48-38-2p4-gable-closed-5b341b5c1a",
+          "architecture-civic-modern-plate-12-14-0p4-pp-fa7031e120",
+          "architecture-civic-district-wall-12-4p2-true-true-f1d79706ae",
+          "architecture-civic-district-wall-14-4p2-false-true-c3e01adef4",
+          "architecture-civic-modern-roof-12-14-1p3-hip-closed-523f4e4923"
+        ],
+        "geometryBytes": 3269256,
+        "meshError": null,
+        "isolatedRegion": null
+      }
+    },
+    {
+      "id": "BUILT-275",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 5,
+        "assetIds": [
+          "architecture-civic-modern-plate-44-44-0p4-pp-04ee6aa5bf",
+          "architecture-civic-modern-plate-30-32-0p6-pppminppp-2p8p-14pp-4af92e213a",
+          "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "architecture-civic-metal-column-3p6-0p8-8b7930a81a",
+          "architecture-civic-modern-rail-30-84f85ea343",
+          "architecture-civic-modern-rail-32-b97d059985",
+          "architecture-civic-fleet-starport-pad-and-service-a7deed3360"
+        ],
+        "frameIntervalsMs": [
+          16.700000017881393,
+          16.69999998807907,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.599999994039536,
+          16.69999998807907,
+          16.600000023841858,
+          16.69999998807907,
+          18.80000001192093,
+          14.5,
+          16.69999998807907,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          18.5,
+          14.800000011920929,
+          31.299999982118607,
+          167.5,
+          107.30000001192093,
+          126.69999998807907,
+          170.09999999403954,
+          2.600000023841858,
+          11.199999988079071,
+          24.80000001192093,
+          8.599999994039536,
+          16.69999998807907,
+          16.599999994039536,
+          16.600000023841858,
+          18.5,
+          16.19999998807907,
+          15.300000011920929,
+          16.599999994039536,
+          16.900000005960464,
+          16.5,
+          16.69999998807907,
+          18.599999994039536,
+          14.700000017881393,
+          16.69999998807907,
+          26,
+          7.300000011920929,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          22.099999994039536,
+          12.400000005960464,
+          18.799999982118607,
+          13.400000005960464,
+          18.30000001192093,
+          15.299999982118607,
+          16.400000005960464,
+          16.900000005960464,
+          16.5,
+          16.599999994039536,
+          17.599999994039536,
+          15.800000011920929,
+          19.5,
+          13.900000005960464,
+          16.599999994039536,
+          17.400000005960464,
+          20,
+          13.199999988079071,
+          15.900000005960464,
+          16.599999994039536,
+          16.80000001192093,
+          17.099999994039536,
+          17.19999998807907,
+          15.900000005960464,
+          16.400000005960464,
+          18.400000005960464,
+          14.899999976158142,
+          16.900000005960464,
+          163.2000000178814,
+          136.69999998807907,
+          183.40000000596046,
+          133.2999999821186,
+          158.60000002384186,
+          120.89999997615814,
+          134.10000002384186,
+          148.69999998807907,
+          11.5,
+          18.19999998807907,
+          8.300000011920929,
+          16.30000001192093,
+          16.599999994039536,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          16.80000001192093,
+          17,
+          21.899999976158142,
+          74.60000002384186,
+          68.2999999821186,
+          70.90000000596046,
+          79.19999998807907,
+          82.60000002384186,
+          91.69999998807907,
+          91.69999998807907,
+          113.7000000178814,
+          84.69999998807907,
+          66.2000000178814,
+          82.39999997615814,
+          101.40000000596046,
+          90.5,
+          93.80000001192093,
+          85.90000000596046,
+          88.5,
+          56.89999997615814,
+          74.30000001192093,
+          81.69999998807907,
+          98.90000000596046,
+          88.90000000596046,
+          84.5,
+          64.5,
+          80.69999998807907
+        ],
+        "drawCalls": 93,
+        "triangles": 8520,
+        "objects": 93,
+        "lastWorkerMeshMs": 24.200000017881393,
+        "meshedAssetIds": [],
+        "meshJobs": 80,
+        "cachedAssetIds": [
+          "architecture-civic-modern-plate-44-44-0p4-pp-04ee6aa5bf",
+          "architecture-civic-modern-plate-30-32-0p6-pppminppp-2p8p-14pp-4af92e213a",
+          "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "architecture-civic-metal-column-3p6-0p8-8b7930a81a",
+          "architecture-civic-modern-rail-30-84f85ea343",
+          "architecture-civic-modern-rail-32-b97d059985",
+          "architecture-civic-fleet-starport-pad-and-service-a7deed3360"
+        ],
+        "geometryBytes": 968880,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 5,
+        "assetIds": [
+          "architecture-civic-modern-plate-44-44-0p4-pp-04ee6aa5bf",
+          "architecture-civic-modern-plate-30-32-0p6-pppminppp-2p8p-14pp-4af92e213a",
+          "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "architecture-civic-metal-column-3p6-0p8-8b7930a81a",
+          "architecture-civic-modern-rail-30-84f85ea343",
+          "architecture-civic-modern-rail-32-b97d059985",
+          "architecture-civic-fleet-starport-pad-and-service-a7deed3360"
+        ],
+        "frameIntervalsMs": [
+          16.700000017881393,
+          16.599999994039536,
+          18.5,
+          14.800000011920929,
+          31.299999982118607,
+          167.5,
+          107.30000001192093,
+          126.69999998807907,
+          170.09999999403954,
+          2.600000023841858,
+          11.199999988079071,
+          24.80000001192093,
+          8.599999994039536,
+          16.69999998807907,
+          16.599999994039536,
+          16.600000023841858,
+          18.5,
+          16.19999998807907,
+          15.300000011920929,
+          16.599999994039536,
+          16.900000005960464,
+          16.5,
+          16.69999998807907,
+          18.599999994039536,
+          14.700000017881393,
+          16.69999998807907,
+          26,
+          7.300000011920929,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          22.099999994039536,
+          12.400000005960464,
+          18.799999982118607,
+          13.400000005960464,
+          18.30000001192093,
+          15.299999982118607,
+          16.400000005960464,
+          16.900000005960464,
+          16.5,
+          16.599999994039536,
+          17.599999994039536,
+          15.800000011920929,
+          19.5,
+          13.900000005960464,
+          16.599999994039536,
+          17.400000005960464,
+          20,
+          13.199999988079071,
+          15.900000005960464,
+          16.599999994039536,
+          16.80000001192093,
+          17.099999994039536,
+          17.19999998807907,
+          15.900000005960464,
+          16.400000005960464,
+          18.400000005960464,
+          14.899999976158142,
+          16.900000005960464,
+          163.2000000178814,
+          136.69999998807907,
+          183.40000000596046,
+          133.2999999821186,
+          158.60000002384186,
+          120.89999997615814,
+          134.10000002384186,
+          148.69999998807907,
+          11.5,
+          18.19999998807907,
+          8.300000011920929,
+          16.30000001192093,
+          16.599999994039536,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          16.80000001192093,
+          17,
+          21.899999976158142,
+          74.60000002384186,
+          68.2999999821186,
+          70.90000000596046,
+          79.19999998807907,
+          82.60000002384186,
+          91.69999998807907,
+          91.69999998807907,
+          113.7000000178814,
+          84.69999998807907,
+          66.2000000178814,
+          82.39999997615814,
+          101.40000000596046,
+          90.5,
+          93.80000001192093,
+          85.90000000596046,
+          88.5,
+          56.89999997615814,
+          74.30000001192093,
+          81.69999998807907,
+          98.90000000596046,
+          88.90000000596046,
+          84.5,
+          64.5,
+          80.69999998807907,
+          82.7000000178814,
+          83.5,
+          2.4000000059604645,
+          12.299999982118607,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          17.399999976158142,
+          15.900000005960464,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.599999994039536,
+          71.80000001192093
+        ],
+        "drawCalls": 93,
+        "triangles": 8520,
+        "objects": 93,
+        "lastWorkerMeshMs": 21.299999982118607,
+        "meshedAssetIds": [
+          "architecture-civic-modern-plate-44-44-0p4-pp-04ee6aa5bf",
+          "architecture-civic-modern-plate-30-32-0p6-pppminppp-2p8p-14pp-4af92e213a",
+          "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "architecture-civic-metal-column-3p6-0p8-8b7930a81a",
+          "architecture-civic-modern-rail-30-84f85ea343",
+          "architecture-civic-modern-rail-32-b97d059985",
+          "architecture-civic-fleet-starport-pad-and-service-a7deed3360"
+        ],
+        "meshJobs": 89,
+        "cachedAssetIds": [
+          "architecture-civic-modern-plate-44-44-0p4-pp-04ee6aa5bf",
+          "architecture-civic-modern-plate-30-32-0p6-pppminppp-2p8p-14pp-4af92e213a",
+          "architecture-civic-modern-stair-4p2-9b4dc9d984",
+          "architecture-civic-modern-rail-8p4-eed313fe9b",
+          "architecture-civic-modern-rail-5p6-6fcd6f7e47",
+          "architecture-civic-metal-column-3p6-0p8-8b7930a81a",
+          "architecture-civic-modern-rail-30-84f85ea343",
+          "architecture-civic-modern-rail-32-b97d059985",
+          "architecture-civic-fleet-starport-pad-and-service-a7deed3360"
+        ],
+        "geometryBytes": 968880,
+        "meshError": null,
+        "isolatedRegion": null
+      }
+    },
+    {
+      "id": "BUILT-277",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 6,
+        "assetIds": [
+          "architecture-civic-modern-plate-24-24-0p4-pp-dff33a844f",
+          "architecture-civic-fleet-star-passenger-cabin-4cac5d15a8",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-star-passenger-controls-3bff051247",
+          "architecture-civic-fleet-boarding-star-passenger-5ccddcdfe2",
+          "architecture-civic-fleet-spacecraft-swept-shoulders-ab2b3845f9",
+          "architecture-civic-fleet-spacecraft-propulsion-460308c564",
+          "architecture-civic-fleet-spacecraft-nose-018e473120"
+        ],
+        "frameIntervalsMs": [
+          17.19999998807907,
+          15.900000005960464,
+          16.400000005960464,
+          18.400000005960464,
+          14.899999976158142,
+          16.900000005960464,
+          163.2000000178814,
+          136.69999998807907,
+          183.40000000596046,
+          133.2999999821186,
+          158.60000002384186,
+          120.89999997615814,
+          134.10000002384186,
+          148.69999998807907,
+          11.5,
+          18.19999998807907,
+          8.300000011920929,
+          16.30000001192093,
+          16.599999994039536,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          16.80000001192093,
+          17,
+          21.899999976158142,
+          74.60000002384186,
+          68.2999999821186,
+          70.90000000596046,
+          79.19999998807907,
+          82.60000002384186,
+          91.69999998807907,
+          91.69999998807907,
+          113.7000000178814,
+          84.69999998807907,
+          66.2000000178814,
+          82.39999997615814,
+          101.40000000596046,
+          90.5,
+          93.80000001192093,
+          85.90000000596046,
+          88.5,
+          56.89999997615814,
+          74.30000001192093,
+          81.69999998807907,
+          98.90000000596046,
+          88.90000000596046,
+          84.5,
+          64.5,
+          80.69999998807907,
+          82.7000000178814,
+          83.5,
+          2.4000000059604645,
+          12.299999982118607,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          17.399999976158142,
+          15.900000005960464,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.599999994039536,
+          71.80000001192093,
+          90.80000001192093,
+          91.09999999403954,
+          1.9000000059604645,
+          11.199999988079071,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          17,
+          16.30000001192093,
+          16.900000005960464,
+          16.399999976158142,
+          26.600000023841858,
+          7.5999999940395355,
+          85.7999999821186,
+          102.90000000596046,
+          110.59999999403954,
+          116.7000000178814,
+          109.69999998807907,
+          115.30000001192093,
+          110,
+          141.40000000596046,
+          11.699999988079071,
+          13.400000005960464,
+          15.099999994039536,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          27.900000005960464,
+          64.40000000596046,
+          97,
+          77.19999998807907,
+          82.80000001192093,
+          109.5,
+          98.59999999403954,
+          101.09999999403954,
+          93,
+          88.30000001192093,
+          78.5,
+          86.59999999403954,
+          90.90000000596046,
+          63.39999997615814,
+          75.60000002384186,
+          81.7999999821186,
+          99.59999999403954,
+          81.80000001192093,
+          68.40000000596046,
+          103.90000000596046,
+          92.69999998807907,
+          129.40000000596046,
+          101.69999998807907,
+          110.5,
+          113
+        ],
+        "drawCalls": 106,
+        "triangles": 5496,
+        "objects": 106,
+        "lastWorkerMeshMs": 0,
+        "meshedAssetIds": [],
+        "meshJobs": 106,
+        "cachedAssetIds": [
+          "architecture-civic-modern-plate-24-24-0p4-pp-dff33a844f",
+          "architecture-civic-fleet-star-passenger-cabin-4cac5d15a8",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-star-passenger-controls-3bff051247",
+          "architecture-civic-fleet-boarding-star-passenger-5ccddcdfe2",
+          "architecture-civic-fleet-spacecraft-swept-shoulders-ab2b3845f9",
+          "architecture-civic-fleet-spacecraft-propulsion-460308c564",
+          "architecture-civic-fleet-spacecraft-nose-018e473120"
+        ],
+        "geometryBytes": 783024,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 6,
+        "assetIds": [
+          "architecture-civic-modern-plate-24-24-0p4-pp-dff33a844f",
+          "architecture-civic-fleet-star-passenger-cabin-4cac5d15a8",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-star-passenger-controls-3bff051247",
+          "architecture-civic-fleet-boarding-star-passenger-5ccddcdfe2",
+          "architecture-civic-fleet-spacecraft-swept-shoulders-ab2b3845f9",
+          "architecture-civic-fleet-spacecraft-propulsion-460308c564",
+          "architecture-civic-fleet-spacecraft-nose-018e473120"
+        ],
+        "frameIntervalsMs": [
+          158.60000002384186,
+          120.89999997615814,
+          134.10000002384186,
+          148.69999998807907,
+          11.5,
+          18.19999998807907,
+          8.300000011920929,
+          16.30000001192093,
+          16.599999994039536,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          16.80000001192093,
+          17,
+          21.899999976158142,
+          74.60000002384186,
+          68.2999999821186,
+          70.90000000596046,
+          79.19999998807907,
+          82.60000002384186,
+          91.69999998807907,
+          91.69999998807907,
+          113.7000000178814,
+          84.69999998807907,
+          66.2000000178814,
+          82.39999997615814,
+          101.40000000596046,
+          90.5,
+          93.80000001192093,
+          85.90000000596046,
+          88.5,
+          56.89999997615814,
+          74.30000001192093,
+          81.69999998807907,
+          98.90000000596046,
+          88.90000000596046,
+          84.5,
+          64.5,
+          80.69999998807907,
+          82.7000000178814,
+          83.5,
+          2.4000000059604645,
+          12.299999982118607,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          17.399999976158142,
+          15.900000005960464,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.599999994039536,
+          71.80000001192093,
+          90.80000001192093,
+          91.09999999403954,
+          1.9000000059604645,
+          11.199999988079071,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          17,
+          16.30000001192093,
+          16.900000005960464,
+          16.399999976158142,
+          26.600000023841858,
+          7.5999999940395355,
+          85.7999999821186,
+          102.90000000596046,
+          110.59999999403954,
+          116.7000000178814,
+          109.69999998807907,
+          115.30000001192093,
+          110,
+          141.40000000596046,
+          11.699999988079071,
+          13.400000005960464,
+          15.099999994039536,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          27.900000005960464,
+          64.40000000596046,
+          97,
+          77.19999998807907,
+          82.80000001192093,
+          109.5,
+          98.59999999403954,
+          101.09999999403954,
+          93,
+          88.30000001192093,
+          78.5,
+          86.59999999403954,
+          90.90000000596046,
+          63.39999997615814,
+          75.60000002384186,
+          81.7999999821186,
+          99.59999999403954,
+          81.80000001192093,
+          68.40000000596046,
+          103.90000000596046,
+          92.69999998807907,
+          129.40000000596046,
+          101.69999998807907,
+          110.5,
+          113,
+          105.09999999403954,
+          89.60000002384186,
+          4.299999982118607,
+          16.599999994039536,
+          26,
+          7.200000017881393,
+          16.799999982118607,
+          16.700000017881393,
+          16.599999994039536,
+          78
+        ],
+        "drawCalls": 106,
+        "triangles": 5496,
+        "objects": 106,
+        "lastWorkerMeshMs": 0,
+        "meshedAssetIds": [
+          "architecture-civic-modern-plate-24-24-0p4-pp-dff33a844f",
+          "architecture-civic-fleet-star-passenger-cabin-4cac5d15a8",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-star-passenger-controls-3bff051247",
+          "architecture-civic-fleet-boarding-star-passenger-5ccddcdfe2",
+          "architecture-civic-fleet-spacecraft-swept-shoulders-ab2b3845f9",
+          "architecture-civic-fleet-spacecraft-propulsion-460308c564",
+          "architecture-civic-fleet-spacecraft-nose-018e473120"
+        ],
+        "meshJobs": 114,
+        "cachedAssetIds": [
+          "architecture-civic-modern-plate-24-24-0p4-pp-dff33a844f",
+          "architecture-civic-fleet-star-passenger-cabin-4cac5d15a8",
+          "architecture-civic-fleet-seat-true-af25b349b1",
+          "architecture-civic-fleet-star-passenger-controls-3bff051247",
+          "architecture-civic-fleet-boarding-star-passenger-5ccddcdfe2",
+          "architecture-civic-fleet-spacecraft-swept-shoulders-ab2b3845f9",
+          "architecture-civic-fleet-spacecraft-propulsion-460308c564",
+          "architecture-civic-fleet-spacecraft-nose-018e473120"
+        ],
+        "geometryBytes": 783024,
+        "meshError": null,
+        "isolatedRegion": null
+      }
+    },
+    {
+      "id": "BUILT-280",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 7,
+        "assetIds": [
+          "architecture-civic-modern-plate-18-18-0p4-pp-abac9a15fd",
+          "architecture-civic-fleet-cargo-cab-cabin-de6ea79104",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-cargo-cab-controls-01a2e2beaa",
+          "architecture-civic-fleet-cargo-nose-db867eef6d",
+          "source-built-286",
+          "architecture-civic-fleet-road-underframe-2p8--1p2-5p1-6p6-1p5-2a4e58d1bd",
+          "architecture-civic-fleet-boarding-cargo-cab-4c9c073cb0",
+          "architecture-civic-fleet-empty-cargo-box-0ff344f0a2"
+        ],
+        "frameIntervalsMs": [
+          1.9000000059604645,
+          11.199999988079071,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          17,
+          16.30000001192093,
+          16.900000005960464,
+          16.399999976158142,
+          26.600000023841858,
+          7.5999999940395355,
+          85.7999999821186,
+          102.90000000596046,
+          110.59999999403954,
+          116.7000000178814,
+          109.69999998807907,
+          115.30000001192093,
+          110,
+          141.40000000596046,
+          11.699999988079071,
+          13.400000005960464,
+          15.099999994039536,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          27.900000005960464,
+          64.40000000596046,
+          97,
+          77.19999998807907,
+          82.80000001192093,
+          109.5,
+          98.59999999403954,
+          101.09999999403954,
+          93,
+          88.30000001192093,
+          78.5,
+          86.59999999403954,
+          90.90000000596046,
+          63.39999997615814,
+          75.60000002384186,
+          81.7999999821186,
+          99.59999999403954,
+          81.80000001192093,
+          68.40000000596046,
+          103.90000000596046,
+          92.69999998807907,
+          129.40000000596046,
+          101.69999998807907,
+          110.5,
+          113,
+          105.09999999403954,
+          89.60000002384186,
+          4.299999982118607,
+          16.599999994039536,
+          26,
+          7.200000017881393,
+          16.799999982118607,
+          16.700000017881393,
+          16.599999994039536,
+          78,
+          74.80000001192093,
+          80.2999999821186,
+          3.0999999940395355,
+          13.700000017881393,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          16.599999994039536,
+          17,
+          90,
+          126.80000001192093,
+          133.7999999821186,
+          103.90000000596046,
+          128.59999999403954,
+          23.600000023841858,
+          17.299999982118607,
+          21.900000005960464,
+          7.5999999940395355,
+          13,
+          16.599999994039536,
+          16.80000001192093,
+          16.80000001192093,
+          16.399999976158142,
+          16.700000017881393,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          20.099999994039536,
+          13,
+          18,
+          16.900000005960464,
+          15.199999988079071,
+          16.80000001192093,
+          20.30000001192093,
+          13.199999988079071,
+          16.30000001192093,
+          72,
+          48.29999998211861,
+          69.59999999403954,
+          81.10000002384186,
+          75.59999999403954,
+          67.19999998807907,
+          79.7000000178814,
+          63.29999998211861,
+          67,
+          70.59999999403954,
+          61.400000005960464,
+          77.59999999403954,
+          87.30000001192093,
+          75.69999998807907,
+          51,
+          74.40000000596046,
+          76.59999999403954,
+          62.10000002384186,
+          66.39999997615814,
+          72.30000001192093,
+          59.900000005960464,
+          87.09999999403954,
+          98.40000000596046
+        ],
+        "drawCalls": 52,
+        "triangles": 8208,
+        "objects": 52,
+        "lastWorkerMeshMs": 8.899999976158142,
+        "meshedAssetIds": [],
+        "meshJobs": 131,
+        "cachedAssetIds": [
+          "architecture-civic-modern-plate-18-18-0p4-pp-abac9a15fd",
+          "architecture-civic-fleet-cargo-cab-cabin-de6ea79104",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-cargo-cab-controls-01a2e2beaa",
+          "architecture-civic-fleet-cargo-nose-db867eef6d",
+          "source-built-286",
+          "architecture-civic-fleet-road-underframe-2p8--1p2-5p1-6p6-1p5-2a4e58d1bd",
+          "architecture-civic-fleet-boarding-cargo-cab-4c9c073cb0",
+          "architecture-civic-fleet-empty-cargo-box-0ff344f0a2"
+        ],
+        "geometryBytes": 530088,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 7,
+        "assetIds": [
+          "architecture-civic-modern-plate-18-18-0p4-pp-abac9a15fd",
+          "architecture-civic-fleet-cargo-cab-cabin-de6ea79104",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-cargo-cab-controls-01a2e2beaa",
+          "architecture-civic-fleet-cargo-nose-db867eef6d",
+          "source-built-286",
+          "architecture-civic-fleet-road-underframe-2p8--1p2-5p1-6p6-1p5-2a4e58d1bd",
+          "architecture-civic-fleet-boarding-cargo-cab-4c9c073cb0",
+          "architecture-civic-fleet-empty-cargo-box-0ff344f0a2"
+        ],
+        "frameIntervalsMs": [
+          110,
+          141.40000000596046,
+          11.699999988079071,
+          13.400000005960464,
+          15.099999994039536,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          27.900000005960464,
+          64.40000000596046,
+          97,
+          77.19999998807907,
+          82.80000001192093,
+          109.5,
+          98.59999999403954,
+          101.09999999403954,
+          93,
+          88.30000001192093,
+          78.5,
+          86.59999999403954,
+          90.90000000596046,
+          63.39999997615814,
+          75.60000002384186,
+          81.7999999821186,
+          99.59999999403954,
+          81.80000001192093,
+          68.40000000596046,
+          103.90000000596046,
+          92.69999998807907,
+          129.40000000596046,
+          101.69999998807907,
+          110.5,
+          113,
+          105.09999999403954,
+          89.60000002384186,
+          4.299999982118607,
+          16.599999994039536,
+          26,
+          7.200000017881393,
+          16.799999982118607,
+          16.700000017881393,
+          16.599999994039536,
+          78,
+          74.80000001192093,
+          80.2999999821186,
+          3.0999999940395355,
+          13.700000017881393,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          16.599999994039536,
+          17,
+          90,
+          126.80000001192093,
+          133.7999999821186,
+          103.90000000596046,
+          128.59999999403954,
+          23.600000023841858,
+          17.299999982118607,
+          21.900000005960464,
+          7.5999999940395355,
+          13,
+          16.599999994039536,
+          16.80000001192093,
+          16.80000001192093,
+          16.399999976158142,
+          16.700000017881393,
+          16.799999982118607,
+          16.5,
+          16.80000001192093,
+          20.099999994039536,
+          13,
+          18,
+          16.900000005960464,
+          15.199999988079071,
+          16.80000001192093,
+          20.30000001192093,
+          13.199999988079071,
+          16.30000001192093,
+          72,
+          48.29999998211861,
+          69.59999999403954,
+          81.10000002384186,
+          75.59999999403954,
+          67.19999998807907,
+          79.7000000178814,
+          63.29999998211861,
+          67,
+          70.59999999403954,
+          61.400000005960464,
+          77.59999999403954,
+          87.30000001192093,
+          75.69999998807907,
+          51,
+          74.40000000596046,
+          76.59999999403954,
+          62.10000002384186,
+          66.39999997615814,
+          72.30000001192093,
+          59.900000005960464,
+          87.09999999403954,
+          98.40000000596046,
+          96.2999999821186,
+          85.40000000596046,
+          7.0999999940395355,
+          16.400000005960464,
+          17.80000001192093,
+          15.699999988079071,
+          16.80000001192093,
+          16.400000005960464,
+          16.69999998807907,
+          16.69999998807907,
+          17.400000005960464,
+          15.900000005960464,
+          18,
+          15.400000005960464,
+          16.599999994039536,
+          18,
+          15.900000005960464,
+          63.69999998807907
+        ],
+        "drawCalls": 52,
+        "triangles": 7836,
+        "objects": 52,
+        "lastWorkerMeshMs": 6.9000000059604645,
+        "meshedAssetIds": [
+          "architecture-civic-modern-plate-18-18-0p4-pp-abac9a15fd",
+          "architecture-civic-fleet-cargo-cab-cabin-de6ea79104",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-cargo-cab-controls-01a2e2beaa",
+          "architecture-civic-fleet-cargo-nose-db867eef6d",
+          "source-built-286",
+          "architecture-civic-fleet-road-underframe-2p8--1p2-5p1-6p6-1p5-2a4e58d1bd",
+          "architecture-civic-fleet-boarding-cargo-cab-4c9c073cb0",
+          "architecture-civic-fleet-empty-cargo-box-0ff344f0a2"
+        ],
+        "meshJobs": 140,
+        "cachedAssetIds": [
+          "architecture-civic-modern-plate-18-18-0p4-pp-abac9a15fd",
+          "architecture-civic-fleet-cargo-cab-cabin-de6ea79104",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-cargo-cab-controls-01a2e2beaa",
+          "architecture-civic-fleet-cargo-nose-db867eef6d",
+          "source-built-286",
+          "architecture-civic-fleet-road-underframe-2p8--1p2-5p1-6p6-1p5-2a4e58d1bd",
+          "architecture-civic-fleet-boarding-cargo-cab-4c9c073cb0",
+          "architecture-civic-fleet-empty-cargo-box-0ff344f0a2"
+        ],
+        "geometryBytes": 521408,
+        "meshError": null,
+        "isolatedRegion": null
+      }
+    },
+    {
+      "id": "BUILT-284",
+      "near": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "near",
+        "timeOfDay": "day",
+        "renderedVersion": 8,
+        "assetIds": [
+          "source-built-291",
+          "source-built-292",
+          "source-built-293",
+          "architecture-civic-fleet-ferry-cabin-cabin-78ac9ca663",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-ferry-cabin-controls-19acaa1cfa",
+          "architecture-civic-modern-plate-5-5-0p4-pp-77093bf115",
+          "architecture-civic-fleet-ferry-author-water-60b6692579"
+        ],
+        "frameIntervalsMs": [
+          98.40000000596046,
+          96.2999999821186,
+          85.40000000596046,
+          7.0999999940395355,
+          16.400000005960464,
+          17.80000001192093,
+          15.699999988079071,
+          16.80000001192093,
+          16.400000005960464,
+          16.69999998807907,
+          16.69999998807907,
+          17.400000005960464,
+          15.900000005960464,
+          18,
+          15.400000005960464,
+          16.599999994039536,
+          18,
+          15.900000005960464,
+          63.69999998807907,
+          82,
+          83.5,
+          3.7000000178813934,
+          18.599999994039536,
+          14.599999994039536,
+          16.69999998807907,
+          21.200000017881393,
+          12.099999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          16.69999998807907,
+          21.099999994039536,
+          14.5,
+          14.400000005960464,
+          16.700000017881393,
+          17.299999982118607,
+          16.30000001192093,
+          16.19999998807907,
+          75.30000001192093,
+          128.69999998807907,
+          113.09999999403954,
+          72,
+          73.7000000178814,
+          57.79999998211861,
+          86.5,
+          94.10000002384186,
+          38.19999998807907,
+          10.900000005960464,
+          16.400000005960464,
+          17.099999994039536,
+          16.19999998807907,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          16.900000005960464,
+          16.69999998807907,
+          16.5,
+          16.69999998807907,
+          16.600000023841858,
+          16.69999998807907,
+          16.69999998807907,
+          16.600000023841858,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          20,
+          13.299999982118607,
+          16.700000017881393,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          16.69999998807907,
+          21.099999994039536,
+          12.200000017881393,
+          16.69999998807907,
+          16.69999998807907,
+          20.900000005960464,
+          12.200000017881393,
+          16.799999982118607,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          27.19999998807907,
+          93.7000000178814,
+          51.599999994039536,
+          61.599999994039536,
+          63.30000001192093,
+          39.19999998807907,
+          53.70000001788139,
+          57.5,
+          53,
+          51.39999997615814,
+          60.900000005960464,
+          43.599999994039536,
+          59.5,
+          49,
+          58.80000001192093,
+          46.900000005960464,
+          64.59999999403954,
+          67.30000001192093,
+          44,
+          60.69999998807907,
+          58.5,
+          72,
+          53.30000001192093,
+          38.5,
+          66.19999998807907
+        ],
+        "drawCalls": 50,
+        "triangles": 6886,
+        "objects": 50,
+        "lastWorkerMeshMs": 0,
+        "meshedAssetIds": [],
+        "meshJobs": 156,
+        "cachedAssetIds": [
+          "architecture-civic-fleet-seat-false-a171099927",
+          "source-built-291",
+          "source-built-292",
+          "source-built-293",
+          "architecture-civic-fleet-ferry-cabin-cabin-78ac9ca663",
+          "architecture-civic-fleet-ferry-cabin-controls-19acaa1cfa",
+          "architecture-civic-modern-plate-5-5-0p4-pp-77093bf115",
+          "architecture-civic-fleet-ferry-author-water-60b6692579"
+        ],
+        "geometryBytes": 1021448,
+        "meshError": null,
+        "isolatedRegion": null
+      },
+      "far": {
+        "sky": {
+          "clock": null,
+          "sourceIds": [],
+          "objects": 0,
+          "triangles": 0,
+          "observer": [
+            0,
+            0,
+            0
+          ],
+          "cameraFollowing": true,
+          "originalStateBound": false,
+          "disposedGeometries": 0,
+          "disposedMaterials": 0
+        },
+        "meshMode": "far",
+        "timeOfDay": "day",
+        "renderedVersion": 8,
+        "assetIds": [
+          "source-built-291",
+          "source-built-292",
+          "source-built-293",
+          "architecture-civic-fleet-ferry-cabin-cabin-78ac9ca663",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-ferry-cabin-controls-19acaa1cfa",
+          "architecture-civic-modern-plate-5-5-0p4-pp-77093bf115",
+          "architecture-civic-fleet-ferry-author-water-60b6692579"
+        ],
+        "frameIntervalsMs": [
+          16.900000005960464,
+          16.69999998807907,
+          16.5,
+          16.69999998807907,
+          16.600000023841858,
+          16.69999998807907,
+          16.69999998807907,
+          16.600000023841858,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          20,
+          13.299999982118607,
+          16.700000017881393,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          16.69999998807907,
+          21.099999994039536,
+          12.200000017881393,
+          16.69999998807907,
+          16.69999998807907,
+          20.900000005960464,
+          12.200000017881393,
+          16.799999982118607,
+          16.599999994039536,
+          16.700000017881393,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          27.19999998807907,
+          93.7000000178814,
+          51.599999994039536,
+          61.599999994039536,
+          63.30000001192093,
+          39.19999998807907,
+          53.70000001788139,
+          57.5,
+          53,
+          51.39999997615814,
+          60.900000005960464,
+          43.599999994039536,
+          59.5,
+          49,
+          58.80000001192093,
+          46.900000005960464,
+          64.59999999403954,
+          67.30000001192093,
+          44,
+          60.69999998807907,
+          58.5,
+          72,
+          53.30000001192093,
+          38.5,
+          66.19999998807907,
+          43.599999994039536,
+          64.90000000596046,
+          12.5,
+          16.30000001192093,
+          16.899999976158142,
+          16.5,
+          16.80000001192093,
+          16.5,
+          18.900000005960464,
+          14.5,
+          16.69999998807907,
+          16.700000017881393,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.69999998807907,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          16.69999998807907,
+          16.599999994039536,
+          16.80000001192093,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.599999994039536,
+          16.700000017881393,
+          16.599999994039536,
+          16.599999994039536,
+          16.69999998807907,
+          16.600000023841858,
+          16.69999998807907,
+          16.69999998807907,
+          16.600000023841858,
+          16.599999994039536,
+          16.799999982118607,
+          16.600000023841858,
+          16.69999998807907,
+          16.5,
+          16.80000001192093,
+          16.69999998807907,
+          16.599999994039536,
+          17,
+          16.30000001192093,
+          18.799999982118607,
+          14.600000023841858,
+          16.599999994039536,
+          16.599999994039536,
+          16.80000001192093,
+          16.799999982118607,
+          16.599999994039536,
+          16.5,
+          16.700000017881393,
+          16.69999998807907,
+          43.400000005960464
+        ],
+        "drawCalls": 50,
+        "triangles": 5290,
+        "objects": 50,
+        "lastWorkerMeshMs": 0,
+        "meshedAssetIds": [
+          "source-built-291",
+          "source-built-292",
+          "source-built-293",
+          "architecture-civic-fleet-ferry-cabin-cabin-78ac9ca663",
+          "architecture-civic-fleet-seat-false-a171099927",
+          "architecture-civic-fleet-ferry-cabin-controls-19acaa1cfa",
+          "architecture-civic-modern-plate-5-5-0p4-pp-77093bf115",
+          "architecture-civic-fleet-ferry-author-water-60b6692579"
+        ],
+        "meshJobs": 164,
+        "cachedAssetIds": [
+          "architecture-civic-fleet-seat-false-a171099927",
+          "source-built-291",
+          "source-built-292",
+          "source-built-293",
+          "architecture-civic-fleet-ferry-cabin-cabin-78ac9ca663",
+          "architecture-civic-fleet-ferry-cabin-controls-19acaa1cfa",
+          "architecture-civic-modern-plate-5-5-0p4-pp-77093bf115",
+          "architecture-civic-fleet-ferry-author-water-60b6692579"
+        ],
+        "geometryBytes": 798008,
+        "meshError": null,
+        "isolatedRegion": null
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "event": "state-invalidated",
+      "version": 3,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 4,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 5,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 6,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 7,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 8,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 9,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 10,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 11,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 12,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 13,
+      "bytes": 2319,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 14,
+      "bytes": 1548,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 15,
+      "bytes": 1540,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 16,
+      "bytes": 673,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 17,
+      "bytes": 665,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 18,
+      "bytes": 2310,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 19,
+      "bytes": 3257,
+      "fullProject": false
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "route": {
+    "checks": [
+      {
+        "name": "airliner aisle 1:0",
+        "min": [
+          -0.225,
+          2.675,
+          -8.325
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -7.875
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:1",
+        "min": [
+          -0.225,
+          2.675,
+          -7.824999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -7.375
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:2",
+        "min": [
+          -0.225,
+          2.675,
+          -7.324999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -6.875
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:3",
+        "min": [
+          -0.225,
+          2.675,
+          -6.824999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -6.375
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:4",
+        "min": [
+          -0.225,
+          2.675,
+          -6.324999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -5.875
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:5",
+        "min": [
+          -0.225,
+          2.675,
+          -5.824999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -5.375
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:6",
+        "min": [
+          -0.225,
+          2.675,
+          -5.324999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -4.875
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:7",
+        "min": [
+          -0.225,
+          2.675,
+          -4.824999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -4.375
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:8",
+        "min": [
+          -0.225,
+          2.675,
+          -4.324999999999999
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -3.8749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:9",
+        "min": [
+          -0.225,
+          2.675,
+          -3.8249999999999997
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -3.3749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:10",
+        "min": [
+          -0.225,
+          2.675,
+          -3.3249999999999997
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -2.8749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:11",
+        "min": [
+          -0.225,
+          2.675,
+          -2.8249999999999997
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -2.3749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:12",
+        "min": [
+          -0.225,
+          2.675,
+          -2.3249999999999997
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -1.8749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:13",
+        "min": [
+          -0.225,
+          2.675,
+          -1.8249999999999997
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -1.3749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:14",
+        "min": [
+          -0.225,
+          2.675,
+          -1.3249999999999997
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -0.8749999999999997
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:15",
+        "min": [
+          -0.225,
+          2.675,
+          -0.8249999999999996
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -0.37499999999999967
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:16",
+        "min": [
+          -0.225,
+          2.675,
+          -0.3249999999999996
+        ],
+        "max": [
+          0.225,
+          4.55,
+          0.12500000000000036
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:17",
+        "min": [
+          -0.225,
+          2.675,
+          0.17500000000000035
+        ],
+        "max": [
+          0.225,
+          4.55,
+          0.6250000000000003
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:18",
+        "min": [
+          -0.225,
+          2.675,
+          0.6750000000000004
+        ],
+        "max": [
+          0.225,
+          4.55,
+          1.1250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:19",
+        "min": [
+          -0.225,
+          2.675,
+          1.1750000000000003
+        ],
+        "max": [
+          0.225,
+          4.55,
+          1.6250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:20",
+        "min": [
+          -0.225,
+          2.675,
+          1.6750000000000003
+        ],
+        "max": [
+          0.225,
+          4.55,
+          2.1250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:21",
+        "min": [
+          -0.225,
+          2.675,
+          2.1750000000000003
+        ],
+        "max": [
+          0.225,
+          4.55,
+          2.6250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:22",
+        "min": [
+          -0.225,
+          2.675,
+          2.6750000000000003
+        ],
+        "max": [
+          0.225,
+          4.55,
+          3.1250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:23",
+        "min": [
+          -0.225,
+          2.675,
+          3.1750000000000003
+        ],
+        "max": [
+          0.225,
+          4.55,
+          3.6250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:24",
+        "min": [
+          -0.225,
+          2.675,
+          3.6750000000000003
+        ],
+        "max": [
+          0.225,
+          4.55,
+          4.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:25",
+        "min": [
+          -0.225,
+          2.675,
+          4.175000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          4.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:26",
+        "min": [
+          -0.225,
+          2.675,
+          4.675000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          5.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:27",
+        "min": [
+          -0.225,
+          2.675,
+          5.175000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          5.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:28",
+        "min": [
+          -0.225,
+          2.675,
+          5.675000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          6.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:29",
+        "min": [
+          -0.225,
+          2.675,
+          6.175000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          6.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:30",
+        "min": [
+          -0.225,
+          2.675,
+          6.675000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          7.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:31",
+        "min": [
+          -0.225,
+          2.675,
+          7.175000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          7.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:32",
+        "min": [
+          -0.225,
+          2.675,
+          7.675000000000001
+        ],
+        "max": [
+          0.225,
+          4.55,
+          8.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner aisle 1:33",
+        "min": [
+          -0.225,
+          2.675,
+          8.175
+        ],
+        "max": [
+          0.225,
+          4.55,
+          8.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner true door 1:0",
+        "min": [
+          -0.225,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          0.225,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner true door 1:1",
+        "min": [
+          0.17900000000000002,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          0.629,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner true door 1:2",
+        "min": [
+          0.5830000000000001,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          1.0330000000000001,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner true door 1:3",
+        "min": [
+          0.9870000000000002,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          1.4370000000000003,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner true door 1:4",
+        "min": [
+          1.391,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          1.8410000000000002,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner true door 1:5",
+        "min": [
+          1.795,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          2.245,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner boarding seam 1:0",
+        "min": [
+          1.4249999999999998,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          1.875,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner boarding seam 1:1",
+        "min": [
+          1.8749999999999996,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          2.3249999999999997,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner boarding seam 1:2",
+        "min": [
+          2.3249999999999997,
+          2.675,
+          -6.625
+        ],
+        "max": [
+          2.775,
+          4.55,
+          -6.175000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 0",
+        "min": [
+          2.86,
+          2.498333333333333,
+          -6.5
+        ],
+        "max": [
+          3.06,
+          4.373333333333333,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 1",
+        "min": [
+          3.1799999999999997,
+          2.3216666666666663,
+          -6.5
+        ],
+        "max": [
+          3.38,
+          4.196666666666666,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 2",
+        "min": [
+          3.4999999999999996,
+          2.145,
+          -6.5
+        ],
+        "max": [
+          3.6999999999999997,
+          4.02,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 3",
+        "min": [
+          3.82,
+          1.9683333333333333,
+          -6.5
+        ],
+        "max": [
+          4.02,
+          3.8433333333333333,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 4",
+        "min": [
+          4.140000000000001,
+          1.7916666666666665,
+          -6.5
+        ],
+        "max": [
+          4.34,
+          3.6666666666666665,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 5",
+        "min": [
+          4.46,
+          1.6149999999999998,
+          -6.5
+        ],
+        "max": [
+          4.659999999999999,
+          3.4899999999999998,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 6",
+        "min": [
+          4.78,
+          1.4383333333333332,
+          -6.5
+        ],
+        "max": [
+          4.9799999999999995,
+          3.3133333333333335,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 7",
+        "min": [
+          5.1,
+          1.2616666666666665,
+          -6.5
+        ],
+        "max": [
+          5.299999999999999,
+          3.1366666666666667,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 8",
+        "min": [
+          5.42,
+          1.0849999999999997,
+          -6.5
+        ],
+        "max": [
+          5.619999999999999,
+          2.96,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 9",
+        "min": [
+          5.74,
+          0.9083333333333333,
+          -6.5
+        ],
+        "max": [
+          5.9399999999999995,
+          2.783333333333333,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 10",
+        "min": [
+          6.0600000000000005,
+          0.7316666666666666,
+          -6.5
+        ],
+        "max": [
+          6.26,
+          2.6066666666666665,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 11",
+        "min": [
+          6.380000000000001,
+          0.5549999999999998,
+          -6.5
+        ],
+        "max": [
+          6.58,
+          2.4299999999999997,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 12",
+        "min": [
+          6.7,
+          0.3783333333333331,
+          -6.5
+        ],
+        "max": [
+          6.8999999999999995,
+          2.253333333333333,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 13",
+        "min": [
+          7.0200000000000005,
+          0.20166666666666674,
+          -6.5
+        ],
+        "max": [
+          7.22,
+          2.0766666666666667,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner stair 14",
+        "min": [
+          7.34,
+          0.025,
+          -6.5
+        ],
+        "max": [
+          7.539999999999999,
+          1.9,
+          -6.300000000000001
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "airliner actual side aperture",
+        "min": [
+          1.92,
+          2.6999999999999997,
+          -7.1000000000000005
+        ],
+        "max": [
+          2.02,
+          4.8,
+          -5.7
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "actual driver eye volume 0",
+        "min": [
+          -1.5299999999999998,
+          3.88,
+          -8.5
+        ],
+        "max": [
+          -1.23,
+          4.23,
+          -8.2
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      }
+    ],
+    "contacts": [
+      {
+        "name": "airliner aisle 1:0",
+        "point": [
+          0,
+          2.63,
+          -8.1
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:1",
+        "point": [
+          0,
+          2.63,
+          -7.6
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:2",
+        "point": [
+          0,
+          2.63,
+          -7.1
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:3",
+        "point": [
+          0,
+          2.63,
+          -6.6
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:4",
+        "point": [
+          0,
+          2.63,
+          -6.1
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:5",
+        "point": [
+          0,
+          2.63,
+          -5.6
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:6",
+        "point": [
+          0,
+          2.63,
+          -5.1
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:7",
+        "point": [
+          0,
+          2.63,
+          -4.6
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:8",
+        "point": [
+          0,
+          2.63,
+          -4.1
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:9",
+        "point": [
+          0,
+          2.63,
+          -3.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:10",
+        "point": [
+          0,
+          2.63,
+          -3.0999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:11",
+        "point": [
+          0,
+          2.63,
+          -2.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:12",
+        "point": [
+          0,
+          2.63,
+          -2.0999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:13",
+        "point": [
+          0,
+          2.63,
+          -1.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:14",
+        "point": [
+          0,
+          2.63,
+          -1.0999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:15",
+        "point": [
+          0,
+          2.63,
+          -0.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:16",
+        "point": [
+          0,
+          2.63,
+          -0.09999999999999964
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:17",
+        "point": [
+          0,
+          2.63,
+          0.40000000000000036
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:18",
+        "point": [
+          0,
+          2.63,
+          0.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:19",
+        "point": [
+          0,
+          2.63,
+          1.4000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:20",
+        "point": [
+          0,
+          2.63,
+          1.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:21",
+        "point": [
+          0,
+          2.63,
+          2.4000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:22",
+        "point": [
+          0,
+          2.63,
+          2.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:23",
+        "point": [
+          0,
+          2.63,
+          3.4000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:24",
+        "point": [
+          0,
+          2.63,
+          3.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:25",
+        "point": [
+          0,
+          2.63,
+          4.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:26",
+        "point": [
+          0,
+          2.63,
+          4.9
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:27",
+        "point": [
+          0,
+          2.63,
+          5.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:28",
+        "point": [
+          0,
+          2.63,
+          5.9
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:29",
+        "point": [
+          0,
+          2.63,
+          6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:30",
+        "point": [
+          0,
+          2.63,
+          6.9
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:31",
+        "point": [
+          0,
+          2.63,
+          7.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:32",
+        "point": [
+          0,
+          2.63,
+          7.9
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner aisle 1:33",
+        "point": [
+          0,
+          2.63,
+          8.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner true door 1:0",
+        "point": [
+          0,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner true door 1:1",
+        "point": [
+          0.404,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner true door 1:2",
+        "point": [
+          0.808,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner true door 1:3",
+        "point": [
+          1.2120000000000002,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner true door 1:4",
+        "point": [
+          1.616,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner true door 1:5",
+        "point": [
+          2.02,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "舱门接合平台",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner boarding seam 1:0",
+        "point": [
+          1.65,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner boarding seam 1:1",
+        "point": [
+          2.0999999999999996,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "舱门接合平台",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner boarding seam 1:2",
+        "point": [
+          2.55,
+          2.63,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "舱门接合平台",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 0",
+        "point": [
+          2.96,
+          2.453333333333333,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-0",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 1",
+        "point": [
+          3.28,
+          2.2766666666666664,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-1",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 2",
+        "point": [
+          3.5999999999999996,
+          2.1,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-2",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 3",
+        "point": [
+          3.92,
+          1.9233333333333333,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-3",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 4",
+        "point": [
+          4.24,
+          1.7466666666666666,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-4",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 5",
+        "point": [
+          4.56,
+          1.5699999999999998,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-5",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 6",
+        "point": [
+          4.88,
+          1.3933333333333333,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-6",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 7",
+        "point": [
+          5.199999999999999,
+          1.2166666666666666,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-7",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 8",
+        "point": [
+          5.52,
+          1.0399999999999998,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-8",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 9",
+        "point": [
+          5.84,
+          0.8633333333333333,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-9",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 10",
+        "point": [
+          6.16,
+          0.6866666666666665,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-10",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 11",
+        "point": [
+          6.48,
+          0.5099999999999998,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-11",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 12",
+        "point": [
+          6.8,
+          0.33333333333333304,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-12",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 13",
+        "point": [
+          7.12,
+          0.15666666666666676,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-13",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner stair 14",
+        "point": [
+          7.4399999999999995,
+          -0.02,
+          -6.4
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-0",
+            "part": "实际铺面-0-0",
+            "material": 1
+          },
+          {
+            "instance": "built-285-37",
+            "part": "实际登离踏步-14",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner gear upper plate to cabin underside",
+        "point": [
+          0,
+          2.4,
+          -6.2
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "连续金属承板",
+            "material": 4
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner gear upper plate to cabin underside",
+        "point": [
+          -1.35,
+          2.4,
+          4.6
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "连续金属承板",
+            "material": 4
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner gear upper plate to cabin underside",
+        "point": [
+          1.35,
+          2.4,
+          4.6
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-1",
+            "part": "连续金属承板",
+            "material": 4
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner native engine cap to continuous wing",
+        "point": [
+          -5.2,
+          3.18,
+          0.3
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-33",
+            "part": "连续后掠翼",
+            "material": 161
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "airliner native engine cap to continuous wing",
+        "point": [
+          5.2,
+          3.18,
+          0.3
+        ],
+        "contacts": [
+          {
+            "instance": "built-285-33",
+            "part": "连续后掠翼",
+            "material": 161
+          }
+        ],
+        "supported": true
+      }
+    ],
+    "sampling": {
+      "maximumRouteStepM": 0.5,
+      "bodyHeightM": 1.9,
+      "defaultBodyWidthM": 0.45,
+      "footSampleDepthM": 0.02,
+      "slopeBottomAllowance": "0.025m + half body width times actual slope; avoids counting the same sloping walking surface as a torso obstruction"
+    }
+  },
+  "inspectionDetails": [
+    {
+      "catalogId": "BUILT-277",
+      "assetId": "architecture-civic-fleet-spacecraft-propulsion-460308c564",
+      "scope": "Actual component geometry in asset mode; continuous metal thruster shells, ceramic liners, true open bores and landing struts."
+    }
+  ],
+  "export": {
+    "directory": "/workspace/voxel-studio-yunshan/artifacts/atlas/atlas-20261005085743/fleet-assembly-mcp-runtime/exports/assembly-quarter-turn-1791192322782",
+    "files": [
+      "visual.glb",
+      "voxels.ysvox.json",
+      "collision.json",
+      "interfaces.json",
+      "atlas.png",
+      "atlas.json"
+    ],
+    "glbBytes": 632068,
+    "isError": false
+  },
+  "trainClearance": {
+    "checks": [
+      {
+        "name": "passenger-train aisle 1:0",
+        "min": [
+          -0.225,
+          1.875,
+          -7.324999999999999
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -6.875
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:1",
+        "min": [
+          -0.225,
+          1.875,
+          -6.824999999999999
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -6.375
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:2",
+        "min": [
+          -0.225,
+          1.875,
+          -6.324999999999999
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -5.875
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:3",
+        "min": [
+          -0.225,
+          1.875,
+          -5.824999999999999
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -5.375
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:4",
+        "min": [
+          -0.225,
+          1.875,
+          -5.324999999999999
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -4.875
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:5",
+        "min": [
+          -0.225,
+          1.875,
+          -4.824999999999999
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -4.375
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:6",
+        "min": [
+          -0.225,
+          1.875,
+          -4.324999999999999
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -3.8749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:7",
+        "min": [
+          -0.225,
+          1.875,
+          -3.8249999999999997
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -3.3749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:8",
+        "min": [
+          -0.225,
+          1.875,
+          -3.3249999999999997
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -2.8749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:9",
+        "min": [
+          -0.225,
+          1.875,
+          -2.8249999999999997
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -2.3749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:10",
+        "min": [
+          -0.225,
+          1.875,
+          -2.3249999999999997
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -1.8749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:11",
+        "min": [
+          -0.225,
+          1.875,
+          -1.8249999999999997
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -1.3749999999999996
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:12",
+        "min": [
+          -0.225,
+          1.875,
+          -1.3249999999999997
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -0.8749999999999997
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:13",
+        "min": [
+          -0.225,
+          1.875,
+          -0.8249999999999996
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -0.37499999999999967
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:14",
+        "min": [
+          -0.225,
+          1.875,
+          -0.3249999999999996
+        ],
+        "max": [
+          0.225,
+          3.75,
+          0.12500000000000036
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:15",
+        "min": [
+          -0.225,
+          1.875,
+          0.17500000000000035
+        ],
+        "max": [
+          0.225,
+          3.75,
+          0.6250000000000003
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:16",
+        "min": [
+          -0.225,
+          1.875,
+          0.6750000000000004
+        ],
+        "max": [
+          0.225,
+          3.75,
+          1.1250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:17",
+        "min": [
+          -0.225,
+          1.875,
+          1.1750000000000003
+        ],
+        "max": [
+          0.225,
+          3.75,
+          1.6250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:18",
+        "min": [
+          -0.225,
+          1.875,
+          1.6750000000000003
+        ],
+        "max": [
+          0.225,
+          3.75,
+          2.1250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:19",
+        "min": [
+          -0.225,
+          1.875,
+          2.1750000000000003
+        ],
+        "max": [
+          0.225,
+          3.75,
+          2.6250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:20",
+        "min": [
+          -0.225,
+          1.875,
+          2.6750000000000003
+        ],
+        "max": [
+          0.225,
+          3.75,
+          3.1250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:21",
+        "min": [
+          -0.225,
+          1.875,
+          3.1750000000000003
+        ],
+        "max": [
+          0.225,
+          3.75,
+          3.6250000000000004
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:22",
+        "min": [
+          -0.225,
+          1.875,
+          3.6750000000000003
+        ],
+        "max": [
+          0.225,
+          3.75,
+          4.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:23",
+        "min": [
+          -0.225,
+          1.875,
+          4.175000000000001
+        ],
+        "max": [
+          0.225,
+          3.75,
+          4.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:24",
+        "min": [
+          -0.225,
+          1.875,
+          4.675000000000001
+        ],
+        "max": [
+          0.225,
+          3.75,
+          5.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:25",
+        "min": [
+          -0.225,
+          1.875,
+          5.175000000000001
+        ],
+        "max": [
+          0.225,
+          3.75,
+          5.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:26",
+        "min": [
+          -0.225,
+          1.875,
+          5.675000000000001
+        ],
+        "max": [
+          0.225,
+          3.75,
+          6.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:27",
+        "min": [
+          -0.225,
+          1.875,
+          6.175000000000001
+        ],
+        "max": [
+          0.225,
+          3.75,
+          6.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:28",
+        "min": [
+          -0.225,
+          1.875,
+          6.675000000000001
+        ],
+        "max": [
+          0.225,
+          3.75,
+          7.125
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train aisle 1:29",
+        "min": [
+          -0.225,
+          1.875,
+          7.175000000000001
+        ],
+        "max": [
+          0.225,
+          3.75,
+          7.625
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train true door 1:0",
+        "min": [
+          -0.225,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          0.225,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train true door 1:1",
+        "min": [
+          0.205,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          0.655,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train true door 1:2",
+        "min": [
+          0.635,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          1.085,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train true door 1:3",
+        "min": [
+          1.065,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          1.5150000000000001,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train true door 1:4",
+        "min": [
+          1.4949999999999999,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          1.945,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train boarding seam 1:0",
+        "min": [
+          1.125,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          1.5750000000000002,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train boarding seam 1:1",
+        "min": [
+          1.575,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          2.025,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train boarding seam 1:2",
+        "min": [
+          2.025,
+          1.875,
+          -5.725
+        ],
+        "max": [
+          2.475,
+          3.75,
+          -5.275
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 0",
+        "min": [
+          2.56,
+          1.7068181818181818,
+          -5.6
+        ],
+        "max": [
+          2.7600000000000002,
+          3.581818181818182,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 1",
+        "min": [
+          2.88,
+          1.5386363636363636,
+          -5.6
+        ],
+        "max": [
+          3.08,
+          3.4136363636363636,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 2",
+        "min": [
+          3.1999999999999997,
+          1.3704545454545456,
+          -5.6
+        ],
+        "max": [
+          3.4,
+          3.2454545454545456,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 3",
+        "min": [
+          3.52,
+          1.2022727272727272,
+          -5.6
+        ],
+        "max": [
+          3.72,
+          3.077272727272727,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 4",
+        "min": [
+          3.84,
+          1.0340909090909092,
+          -5.6
+        ],
+        "max": [
+          4.04,
+          2.909090909090909,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 5",
+        "min": [
+          4.16,
+          0.8659090909090911,
+          -5.6
+        ],
+        "max": [
+          4.359999999999999,
+          2.740909090909091,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 6",
+        "min": [
+          4.48,
+          0.6977272727272729,
+          -5.6
+        ],
+        "max": [
+          4.68,
+          2.5727272727272728,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 7",
+        "min": [
+          4.800000000000001,
+          0.5295454545454547,
+          -5.6
+        ],
+        "max": [
+          5,
+          2.4045454545454543,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 8",
+        "min": [
+          5.120000000000001,
+          0.36136363636363644,
+          -5.6
+        ],
+        "max": [
+          5.32,
+          2.2363636363636363,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 9",
+        "min": [
+          5.44,
+          0.1931818181818182,
+          -5.6
+        ],
+        "max": [
+          5.64,
+          2.0681818181818183,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "train stair 10",
+        "min": [
+          5.76,
+          0.025,
+          -5.6
+        ],
+        "max": [
+          5.959999999999999,
+          1.9,
+          -5.4
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "passenger-train actual side aperture",
+        "min": [
+          1.6199999999999999,
+          1.9000000000000001,
+          -6.2
+        ],
+        "max": [
+          1.72,
+          4,
+          -4.8
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "unpowered guide side air gap",
+        "min": [
+          -0.48,
+          0.46,
+          -5.2
+        ],
+        "max": [
+          -0.42,
+          0.86,
+          -3.1
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "unpowered guide side air gap",
+        "min": [
+          -0.48,
+          0.46,
+          3.5
+        ],
+        "max": [
+          -0.42,
+          0.86,
+          5.6
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      },
+      {
+        "name": "actual driver eye volume 0",
+        "min": [
+          -1.23,
+          3.08,
+          -7.5
+        ],
+        "max": [
+          -0.93,
+          3.43,
+          -7.199999999999999
+        ],
+        "excludedInstances": [],
+        "clear": true,
+        "blocked": []
+      }
+    ],
+    "contacts": [
+      {
+        "name": "passenger-train aisle 1:0",
+        "point": [
+          0,
+          1.83,
+          -7.1
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:1",
+        "point": [
+          0,
+          1.83,
+          -6.6
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:2",
+        "point": [
+          0,
+          1.83,
+          -6.1
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:3",
+        "point": [
+          0,
+          1.83,
+          -5.6
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:4",
+        "point": [
+          0,
+          1.83,
+          -5.1
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:5",
+        "point": [
+          0,
+          1.83,
+          -4.6
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:6",
+        "point": [
+          0,
+          1.83,
+          -4.1
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:7",
+        "point": [
+          0,
+          1.83,
+          -3.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:8",
+        "point": [
+          0,
+          1.83,
+          -3.0999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:9",
+        "point": [
+          0,
+          1.83,
+          -2.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:10",
+        "point": [
+          0,
+          1.83,
+          -2.0999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:11",
+        "point": [
+          0,
+          1.83,
+          -1.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:12",
+        "point": [
+          0,
+          1.83,
+          -1.0999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:13",
+        "point": [
+          0,
+          1.83,
+          -0.5999999999999996
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:14",
+        "point": [
+          0,
+          1.83,
+          -0.09999999999999964
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:15",
+        "point": [
+          0,
+          1.83,
+          0.40000000000000036
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:16",
+        "point": [
+          0,
+          1.83,
+          0.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:17",
+        "point": [
+          0,
+          1.83,
+          1.4000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:18",
+        "point": [
+          0,
+          1.83,
+          1.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:19",
+        "point": [
+          0,
+          1.83,
+          2.4000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:20",
+        "point": [
+          0,
+          1.83,
+          2.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:21",
+        "point": [
+          0,
+          1.83,
+          3.4000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:22",
+        "point": [
+          0,
+          1.83,
+          3.9000000000000004
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:23",
+        "point": [
+          0,
+          1.83,
+          4.4
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:24",
+        "point": [
+          0,
+          1.83,
+          4.9
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:25",
+        "point": [
+          0,
+          1.83,
+          5.4
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:26",
+        "point": [
+          0,
+          1.83,
+          5.9
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:27",
+        "point": [
+          0,
+          1.83,
+          6.4
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:28",
+        "point": [
+          0,
+          1.83,
+          6.9
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train aisle 1:29",
+        "point": [
+          0,
+          1.83,
+          7.4
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train true door 1:0",
+        "point": [
+          0,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train true door 1:1",
+        "point": [
+          0.43,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train true door 1:2",
+        "point": [
+          0.86,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train true door 1:3",
+        "point": [
+          1.29,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "passenger-train true door 1:4",
+        "point": [
+          1.72,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "舱门接合平台",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train boarding seam 1:0",
+        "point": [
+          1.35,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "防滑地胶",
+            "material": 529
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train boarding seam 1:1",
+        "point": [
+          1.8,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "舱门接合平台",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train boarding seam 1:2",
+        "point": [
+          2.25,
+          1.83,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "舱门接合平台",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 0",
+        "point": [
+          2.66,
+          1.6618181818181819,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-0",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 1",
+        "point": [
+          2.98,
+          1.4936363636363637,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-1",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 2",
+        "point": [
+          3.3,
+          1.3254545454545457,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-2",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 3",
+        "point": [
+          3.62,
+          1.1572727272727272,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-3",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 4",
+        "point": [
+          3.94,
+          0.9890909090909092,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-4",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 5",
+        "point": [
+          4.26,
+          0.820909090909091,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-5",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 6",
+        "point": [
+          4.58,
+          0.6527272727272728,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-6",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 7",
+        "point": [
+          4.9,
+          0.4845454545454546,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-7",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 8",
+        "point": [
+          5.220000000000001,
+          0.3163636363636364,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-8",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 9",
+        "point": [
+          5.54,
+          0.14818181818181822,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-9",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "train stair 10",
+        "point": [
+          5.859999999999999,
+          -0.02,
+          -5.5
+        ],
+        "contacts": [
+          {
+            "instance": "train-0",
+            "part": "实际铺面-0-0",
+            "material": 1
+          },
+          {
+            "instance": "train-32",
+            "part": "实际登离踏步-10",
+            "material": 79
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "bogie saddle real floor contact",
+        "point": [
+          0,
+          1.6,
+          -4.1
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "连续金属承板",
+            "material": 4
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "bogie saddle real floor contact",
+        "point": [
+          0,
+          1.6,
+          4.6
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "连续金属承板",
+            "material": 4
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "coupler attachment to actual cabin floor",
+        "point": [
+          0,
+          1.62,
+          7.85
+        ],
+        "contacts": [
+          {
+            "instance": "train-1",
+            "part": "连续金属承板",
+            "material": 4
+          }
+        ],
+        "supported": true
+      },
+      {
+        "name": "actual coupler front plate to body attachment",
+        "point": [
+          0,
+          1.52,
+          8.025
+        ],
+        "contacts": [
+          {
+            "instance": "train-30",
+            "part": "车钩前端实际承接座",
+            "material": 4
+          }
+        ],
+        "supported": true
+      }
+    ],
+    "sampling": {
+      "maximumRouteStepM": 0.5,
+      "bodyHeightM": 1.9,
+      "defaultBodyWidthM": 0.45,
+      "footSampleDepthM": 0.02,
+      "slopeBottomAllowance": "0.025m + half body width times actual slope; avoids counting the same sloping walking surface as a torso obstruction"
+    }
+  },
+  "nightScope": "Editor lighting only; magnetic force and original route controller remain unbound"
+}

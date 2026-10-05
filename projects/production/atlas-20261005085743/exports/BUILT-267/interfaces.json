@@ -1,0 +1,4715 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47,
+      "foodRoot": 48,
+      "fruitRed": 49,
+      "grain": 50,
+      "fish": 51,
+      "fishBack": 52,
+      "opticsGlow": 53,
+      "lightCore": 54,
+      "enamel": 55,
+      "signalRed": 56,
+      "displayGlyph": 57,
+      "polymer": 58,
+      "ceramicWhite": 59,
+      "printedMark": 60,
+      "paperSheet": 61,
+      "rubber": 62,
+      "safetyFabric": 63,
+      "webbing": 64,
+      "flexibleClear": 65,
+      "fluidBlue": 66,
+      "fluidAmber": 67,
+      "bookCover": 68,
+      "archiveBoard": 69,
+      "displayWhite": 70,
+      "printedDark": 71,
+      "bannerCloth": 72,
+      "bannerPattern": 73,
+      "cottonWhite": 74,
+      "printedRed": 75,
+      "rigidClear": 76,
+      "ceramicTeal": 77,
+      "polymerDark": 78,
+      "metalBright": 79,
+      "wovenLight": 80,
+      "glassEtch": 81,
+      "rope": 82,
+      "oreVein": 83,
+      "oreMatrix": 84,
+      "grainPale": 85,
+      "vegetableStalk": 86,
+      "fishPale": 87,
+      "fishEye": 88,
+      "bottleAmber": 89,
+      "inkTeal": 90,
+      "paperEdge": 91,
+      "bookCloth": 92,
+      "metalTeal": 93,
+      "printedWarning": 94,
+      "safetyMetal": 95,
+      "lacquerWood": 96,
+      "canvas": 97,
+      "pigmentInk": 98,
+      "pigmentMist": 99,
+      "drumSkin": 100,
+      "instrumentWire": 101,
+      "brushFibre": 102,
+      "redHose": 103,
+      "incense": 104,
+      "ember": 105,
+      "polymerRed": 106,
+      "speakerCone": 107,
+      "festivalRed": 108,
+      "gameFelt": 109,
+      "gameWhite": 110,
+      "gameBlack": 111,
+      "ballOrange": 112,
+      "ballWhite": 113,
+      "ballBlue": 114,
+      "ballYellow": 115,
+      "ballDark": 116,
+      "ballRed": 117,
+      "racketString": 118,
+      "shuttleVanes": 119,
+      "shuttleCork": 120,
+      "giftPaper": 121,
+      "giftRibbon": 122,
+      "cakeCrumb": 123,
+      "cakeCream": 124,
+      "cakeGlaze": 125,
+      "candleWax": 126,
+      "candleWick": 127,
+      "candleFlame": 128,
+      "ceramicRed": 129,
+      "flowerWhite": 130,
+      "flowerAmber": 131,
+      "teaLeaf": 132,
+      "teaLiquid": 133,
+      "petKibble": 134,
+      "cleanerFibre": 135,
+      "cleanerLiquid": 136,
+      "mirrorGlass": 137,
+      "giftWrapRed": 138,
+      "giftWrapBlue": 139,
+      "giftWrapBand": 140,
+      "giftBoard": 141,
+      "plantStem": 142,
+      "structuralConcrete": 143,
+      "mortar": 144,
+      "waterproofMembrane": 145,
+      "earthCutaway": 146,
+      "lanternPaper": 147,
+      "lanternTassel": 148,
+      "signDiffuser": 149,
+      "energyField": 150,
+      "flueLiner": 151,
+      "pavementConcrete": 152,
+      "roadInlay": 153,
+      "bridgeBearing": 154,
+      "jointSeal": 155,
+      "suspensionCable": 156,
+      "signalStopLamp": 157,
+      "signalCautionLamp": 158,
+      "signalGoLamp": 159,
+      "vehicleSeal": 160,
+      "aircraftSkin": 161,
+      "rotorBlade": 162,
+      "landingPadRubber": 163,
+      "facadeSeal": 164,
+      "facadeFrame": 165,
+      "sunshadeMetal": 166,
+      "projectorLens": 167,
+      "projectorEmitter": 168,
+      "timberWindowSeal": 169,
+      "airfieldYellow": 170,
+      "airfieldRed": 171,
+      "couplerHose": 172,
+      "airfieldWhite": 173,
+      "marineHull": 174,
+      "marineAntifouling": 175,
+      "dockFender": 176,
+      "mooringLine": 177,
+      "railWheel": 178,
+      "maglevCoil": 179,
+      "navPortLamp": 180,
+      "navStarboardLamp": 181,
+      "bedrock": 182,
+      "weatheredRock": 183,
+      "surfaceSoil": 184,
+      "moss": 185,
+      "shrubFoliage": 186,
+      "wetPileWood": 187,
+      "cableSheave": 188,
+      "treeBark": 189,
+      "soilSubstrate": 190,
+      "waterWornRock": 191,
+      "flowWater": 192,
+      "fallWater": 193,
+      "waterFoam": 194,
+      "distantRock": 195,
+      "rootHeartwood": 196,
+      "canopyLeaf": 197,
+      "canopyLeafTip": 198,
+      "pineNeedle": 199,
+      "cypressScale": 200,
+      "bambooCulm": 201,
+      "bambooNode": 202,
+      "bambooBlade": 203,
+      "shrubTwig": 204,
+      "shrubLeaf": 205,
+      "shrubBlossom": 206,
+      "wetSoil": 207,
+      "reedBlade": 208,
+      "pollenAnther": 209,
+      "grassBlade": 210,
+      "fernFrond": 211,
+      "groundcoverLeaf": 212,
+      "reedCulm": 213,
+      "reedPanicle": 214,
+      "lotusLeaf": 215,
+      "aquaticPetiole": 216,
+      "vineStem": 217,
+      "vineLeaf": 218,
+      "deadLeaf": 219,
+      "deadWood": 220,
+      "rootRhizome": 221,
+      "drainAggregate": 222,
+      "lotusPetal": 223,
+      "lotusReceptacle": 224,
+      "drainGrate": 225,
+      "landscapeGlass": 226,
+      "landscapeEmitter": 227,
+      "skyZenith": 228,
+      "skyHorizon": 229,
+      "skyDusk": 230,
+      "skyNight": 231,
+      "sunSurface": 232,
+      "sunEdge": 233,
+      "moonSurface": 234,
+      "moonMaria": 235,
+      "starPoint": 236,
+      "skinSurface": 237,
+      "skinLip": 238,
+      "skinNail": 239,
+      "eyeWhite": 240,
+      "eyeIris": 241,
+      "eyePupil": 242,
+      "hairMass": 243,
+      "hairRidge": 244,
+      "characterCloth": 245,
+      "characterLining": 246,
+      "characterWeave": 247,
+      "characterArmor": 248,
+      "characterFastener": 249,
+      "characterLeather": 250,
+      "characterSole": 251,
+      "characterOptic": 252,
+      "hairRibbon": 253,
+      "skinCrease": 254,
+      "modelSuit": 255,
+      "modelSuitTrim": 256,
+      "hatCloth": 257,
+      "hatBand": 258,
+      "hatHardware": 259,
+      "bagCloth": 260,
+      "bagLeather": 261,
+      "bagHardware": 262,
+      "bagLining": 263,
+      "bagLabel": 264,
+      "hatBadgeGlass": 265,
+      "rigGuide": 266,
+      "rigJointMarker": 267,
+      "rigSocketMarker": 268,
+      "handWrap": 269,
+      "hairOrnament": 270,
+      "hairGem": 271,
+      "headWrap": 272,
+      "headWrapBand": 273,
+      "beardHair": 274,
+      "browHair": 275,
+      "sparseHair": 276,
+      "sparseHairRidge": 277,
+      "guardHelmet": 278,
+      "helmetPad": 279,
+      "helmetStrap": 280,
+      "workHelmet": 281,
+      "strawWeave": 282,
+      "spectaclesFrame": 283,
+      "spectaclesLens": 284,
+      "gogglesFrame": 285,
+      "gogglesLens": 286,
+      "gogglesSeal": 287,
+      "medicalMask": 288,
+      "maskElastic": 289,
+      "respiratorShell": 290,
+      "respiratorFilter": 291,
+      "respiratorGrille": 292,
+      "medicalEmblem": 293,
+      "hygieneCapCloth": 294,
+      "hygieneCapBand": 295,
+      "earringMetal": 296,
+      "earringGem": 297,
+      "garmentOuter": 298,
+      "garmentLight": 299,
+      "garmentLining": 300,
+      "garmentTrim": 301,
+      "garmentPattern": 302,
+      "garmentStrap": 303,
+      "garmentBuckle": 304,
+      "trouserCloth": 305,
+      "bootUpper": 306,
+      "shoeCloth": 307,
+      "shoeLining": 308,
+      "footwearSole": 309,
+      "footwearEdge": 310,
+      "sleepCloth": 311,
+      "infantWrap": 312,
+      "schoolCloth": 313,
+      "uniformCloth": 314,
+      "workReinforcement": 315,
+      "fieldCloth": 316,
+      "medicalCloth": 317,
+      "medicalTrim": 318,
+      "labCoat": 319,
+      "serviceCloth": 320,
+      "apronCloth": 321,
+      "armorPlate": 322,
+      "armorPad": 323,
+      "uniformInsignia": 324,
+      "uniformIdBack": 325,
+      "uniformIdPrint": 326,
+      "courtCloth": 327,
+      "ceremonyTrim": 328,
+      "weddingCloth": 329,
+      "mourningCloth": 330,
+      "rainMembrane": 331,
+      "rainSeam": 332,
+      "scarfCloth": 333,
+      "scarfFringe": 334,
+      "gloveLeather": 335,
+      "glovePad": 336,
+      "rescueShell": 337,
+      "rescueFoam": 338,
+      "rescueReflective": 339,
+      "pilotLeather": 340,
+      "pilotFleece": 341,
+      "bandageCloth": 342,
+      "braceMetal": 343,
+      "bracePad": 344,
+      "travelCanvas": 345,
+      "travelLeather": 346,
+      "equipmentIndicator": 347,
+      "equipmentCase": 348,
+      "toolBeltLeather": 349,
+      "toolBeltLiner": 350,
+      "badgePlate": 351,
+      "badgeInk": 352,
+      "badgeClip": 353,
+      "umbrellaPaper": 354,
+      "umbrellaWood": 355,
+      "umbrellaRib": 356,
+      "umbrellaEdge": 357,
+      "mobilityShaft": 358,
+      "mobilityGrip": 359,
+      "mobilityTip": 360,
+      "crutchPad": 361,
+      "shoppingCanvas": 362,
+      "shoppingStrap": 363,
+      "foodPackagePaper": 364,
+      "heldLeafFood": 365,
+      "heldRootFood": 366,
+      "breadCrust": 367,
+      "breadScore": 368,
+      "heldCeramic": 369,
+      "heldCeramicGlaze": 370,
+      "chopstickWood": 371,
+      "ladleBowl": 372,
+      "broomFibre": 373,
+      "broomBinding": 374,
+      "heldSoup": 375,
+      "heldTofu": 376,
+      "heldVesselLid": 377,
+      "utensilFerrule": 378,
+      "ladleHandle": 379,
+      "broomHandle": 380,
+      "heldLabelInk": 381,
+      "heldFitting": 382,
+      "cleaningCloth": 383,
+      "cleaningStripe": 384,
+      "bucketMetal": 385,
+      "bucketWater": 386,
+      "bucketGrip": 387,
+      "heldBookCover": 388,
+      "heldBookPaper": 389,
+      "heldBookEdge": 390,
+      "heldBookSpine": 391,
+      "heldBookInk": 392,
+      "heldBookTrim": 393,
+      "heldBookCorner": 394,
+      "writingWood": 395,
+      "writingFibre": 396,
+      "writingInk": 397,
+      "deviceDisplay": 398,
+      "deviceButton": 399,
+      "deviceSeal": 400,
+      "deviceLens": 401,
+      "deviceGrip": 402,
+      "recordBoard": 403,
+      "recordPaper": 404,
+      "recordInk": 405,
+      "diagnosticHose": 406,
+      "diagnosticMetal": 407,
+      "diagnosticEarTip": 408,
+      "firstAidShell": 409,
+      "firstAidLiner": 410,
+      "firstAidMark": 411,
+      "portableFrame": 412,
+      "portableGlazing": 413,
+      "portableLamp": 414,
+      "radioAntenna": 415,
+      "batonShaft": 416,
+      "batonGrip": 417,
+      "diagnosticShell": 418,
+      "toolSteel": 419,
+      "toolGrip": 420,
+      "toolWood": 421,
+      "basketWood": 422,
+      "basketEdge": 423,
+      "basketMetal": 424,
+      "basketTie": 425,
+      "parcelBoard": 426,
+      "parcelTape": 427,
+      "parcelLabel": 428,
+      "parcelInk": 429,
+      "bouquetStem": 430,
+      "bouquetLeaf": 431,
+      "weddingRed": 432,
+      "weddingPink": 433,
+      "bouquetWhite": 434,
+      "bouquetPollen": 435,
+      "bouquetPaper": 436,
+      "bouquetRibbon": 437,
+      "mourningTie": 438,
+      "carrierFabric": 439,
+      "carrierLiner": 440,
+      "carrierWeb": 441,
+      "carrierBuckle": 442,
+      "leashWeb": 443,
+      "leashMetal": 444,
+      "petFoodPaper": 445,
+      "petFoodInk": 446,
+      "heldPetKibble": 447,
+      "animalFurWhite": 448,
+      "animalFurGinger": 449,
+      "animalFurBrown": 450,
+      "animalFurDark": 451,
+      "animalSkin": 452,
+      "animalNose": 453,
+      "animalIris": 454,
+      "animalPupil": 455,
+      "animalClaw": 456,
+      "animalTongue": 457,
+      "faunaFurGray": 458,
+      "featherCream": 459,
+      "featherOchre": 460,
+      "featherDark": 461,
+      "featherGreen": 462,
+      "featherBlue": 463,
+      "featherYellow": 464,
+      "birdBeak": 465,
+      "birdFoot": 466,
+      "birdComb": 467,
+      "liveScaleOrange": 468,
+      "liveScaleWhite": 469,
+      "liveFin": 470,
+      "liveGill": 471,
+      "livestockSkin": 472,
+      "livestockSnout": 473,
+      "animalHoof": 474,
+      "animalHorn": 475,
+      "deerAntler": 476,
+      "animalTusk": 477,
+      "seedNutShell": 478,
+      "birdBeakDark": 479,
+      "liveMouth": 480,
+      "featherGray": 481,
+      "featherSlate": 482,
+      "insectCuticle": 483,
+      "butterflyScaleBlue": 484,
+      "insectWingMembrane": 485,
+      "butterflyScaleDark": 486,
+      "butterflyScalePale": 487,
+      "insectWingVein": 488,
+      "beePile": 489,
+      "insectEye": 490,
+      "insectCuticleGreen": 491,
+      "petWebbing": 492,
+      "petHardware": 493,
+      "petBuckle": 494,
+      "petOptic": 495,
+      "petTagMetal": 496,
+      "petTagEnamel": 497,
+      "petTagInk": 498,
+      "harnessLiner": 499,
+      "livestockWebbing": 500,
+      "livestockTagEnamel": 501,
+      "birdFootDark": 502,
+      "distantMasonry": 503,
+      "distantStone": 504,
+      "distantTimber": 505,
+      "distantTimberEdge": 506,
+      "distantRoofTile": 507,
+      "distantFrame": 508,
+      "distantBronze": 509,
+      "distantGlazing": 510,
+      "distantConcrete": 511,
+      "distantMortar": 512,
+      "distantMembrane": 513,
+      "distantLamp": 514,
+      "architecturePin": 515,
+      "distantGlazingFrame": 516,
+      "distantFastener": 517,
+      "civicGuideOptic": 518,
+      "vehicleInactiveOptic": 519,
+      "authorRouteMarker": 520,
+      "architecturalCladding": 521,
+      "architectureOptic": 522,
+      "magneticCore": 523,
+      "coilInsulator": 524,
+      "transitBody": 525,
+      "cabinLiner": 526,
+      "passengerUpholstery": 527,
+      "passengerRestraint": 528,
+      "cabinFloor": 529,
+      "vehicleControl": 530,
+      "thrusterLiner": 531,
+      "spacecraftSkin": 532
+    }
+  },
+  "assemblies": {
+    "built-267": {
+      "id": "built-267",
+      "name": "机场共享实体机坪模板",
+      "version": 1,
+      "instances": [
+        {
+          "id": "built-267-0",
+          "assetId": "architecture-civic-modern-plate-86-68-0p4-pp-175a2b9c73",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-1",
+          "assetId": "architecture-civic-modern-plate-100-18-0p4-pp-33330a125c",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            0,
+            0,
+            45
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-2",
+          "assetId": "architecture-civic-modern-plate-14-2-0p4-pp-28602ad87e",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            0,
+            0,
+            35
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-3",
+          "assetId": "architecture-civic-modern-plate-40-10-0p4-pp-eb3ed64a15",
+          "name": "石铺面与混凝土承板",
+          "position": [
+            0,
+            0,
+            -27
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-4",
+          "assetId": "architecture-civic-district-wall-40-4p2-true-true-17cafc2ac6",
+          "name": "金属框、密封环与独立幕墙玻璃",
+          "position": [
+            0,
+            0,
+            -32
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-5",
+          "assetId": "architecture-civic-district-wall-40-4p2-true-true-17cafc2ac6",
+          "name": "金属框、密封环与独立幕墙玻璃",
+          "position": [
+            0,
+            0,
+            -22
+          ],
+          "rotation": 2,
+          "parent": null
+        },
+        {
+          "id": "built-267-6",
+          "assetId": "architecture-civic-district-wall-10-4p2-false-true-f7e622a603",
+          "name": "金属框、密封环与独立幕墙玻璃",
+          "position": [
+            20,
+            0,
+            -27
+          ],
+          "rotation": 1,
+          "parent": null
+        },
+        {
+          "id": "built-267-7",
+          "assetId": "architecture-civic-district-wall-10-4p2-false-true-f7e622a603",
+          "name": "金属框、密封环与独立幕墙玻璃",
+          "position": [
+            -20,
+            0,
+            -27
+          ],
+          "rotation": 3,
+          "parent": null
+        },
+        {
+          "id": "built-267-8",
+          "assetId": "architecture-civic-modern-roof-40-10-1p3-hip-closed-879292361a",
+          "name": "连续瓦檐与金属承板、钢梁",
+          "position": [
+            0,
+            4.2,
+            -27
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-9",
+          "assetId": "architecture-civic-fleet-airliner-cabin-170b94e307",
+          "name": "独立乘舱壳、真实窗封和常开侧舱口",
+          "position": [
+            -20,
+            2.65,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-10",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            -6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-11",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            -5.25
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-12",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            -4.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-13",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            -4.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-14",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            -2.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-15",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            -2.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-16",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            -1.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-17",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            -1.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-18",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            -0.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-19",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            -0.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-20",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            0.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-21",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            0.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-22",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            1.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-23",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            1.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-24",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-25",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-26",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            3.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-27",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            3.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-28",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            5.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-29",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            5.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-30",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            6.25
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-31",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            6.25
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-32",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.45,
+            2.65,
+            7.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-33",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -18.55,
+            2.65,
+            7.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-34",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            -21.38,
+            2.65,
+            -8.05
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-35",
+          "assetId": "architecture-civic-fleet-airliner-controls-ba82dc3289",
+          "name": "驾驶控制台与未绑定光学面",
+          "position": [
+            -21.38,
+            2.65,
+            -8.73
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-36",
+          "assetId": "source-built-294",
+          "name": "公共客机起落架与轮组",
+          "position": [
+            -20.9,
+            0,
+            -6.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-37",
+          "assetId": "source-built-294",
+          "name": "公共客机起落架与轮组",
+          "position": [
+            -22.25,
+            0,
+            4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-38",
+          "assetId": "source-built-294",
+          "name": "公共客机起落架与轮组",
+          "position": [
+            -19.55,
+            0,
+            4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-39",
+          "assetId": "architecture-civic-fleet-airliner-nose-bd4acd6481",
+          "name": "连续倾斜前围与分离光学灯",
+          "position": [
+            -20,
+            2.65,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-40",
+          "assetId": "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+          "name": "连续收尖机鼻、尾锥和实体垂尾",
+          "position": [
+            -20,
+            2.65,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-41",
+          "assetId": "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+          "name": "连续后掠翼及薄翼缘",
+          "position": [
+            -20,
+            3.1,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-42",
+          "assetId": "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+          "name": "连续后掠翼及薄翼缘",
+          "position": [
+            -20,
+            4,
+            9.7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-43",
+          "assetId": "source-built-296",
+          "name": "公共客机发动机/推力体组件",
+          "position": [
+            -26,
+            0.8,
+            -1.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-44",
+          "assetId": "source-built-296",
+          "name": "公共客机发动机/推力体组件",
+          "position": [
+            -15.6,
+            0.8,
+            -1.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-45",
+          "assetId": "architecture-civic-fleet-boarding-airliner-6193599032",
+          "name": "可登离实体踏步与连续金属梯梁",
+          "position": [
+            -18,
+            0,
+            -6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-46",
+          "assetId": "architecture-civic-fleet-airliner-cabin-170b94e307",
+          "name": "独立乘舱壳、真实窗封和常开侧舱口",
+          "position": [
+            20,
+            2.65,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-47",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            -6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-48",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            -5.25
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-49",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            -4.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-50",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            -4.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-51",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            -2.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-52",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            -2.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-53",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            -1.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-54",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            -1.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-55",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            -0.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-56",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            -0.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-57",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            0.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-58",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            0.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-59",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            1.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-60",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            1.65
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-61",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-62",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            2.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-63",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            3.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-64",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            3.95
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-65",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            5.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-66",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            5.1
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-67",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            6.25
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-68",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            6.25
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-69",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.55,
+            2.65,
+            7.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-70",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            21.45,
+            2.65,
+            7.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-71",
+          "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+          "name": "客座软垫、金属承脚与独立织带",
+          "position": [
+            18.62,
+            2.65,
+            -8.05
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-72",
+          "assetId": "architecture-civic-fleet-airliner-controls-ba82dc3289",
+          "name": "驾驶控制台与未绑定光学面",
+          "position": [
+            18.62,
+            2.65,
+            -8.73
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-73",
+          "assetId": "source-built-294",
+          "name": "公共客机起落架与轮组",
+          "position": [
+            19.1,
+            0,
+            -6.8
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-74",
+          "assetId": "source-built-294",
+          "name": "公共客机起落架与轮组",
+          "position": [
+            17.75,
+            0,
+            4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-75",
+          "assetId": "source-built-294",
+          "name": "公共客机起落架与轮组",
+          "position": [
+            20.45,
+            0,
+            4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-76",
+          "assetId": "architecture-civic-fleet-airliner-nose-bd4acd6481",
+          "name": "连续倾斜前围与分离光学灯",
+          "position": [
+            20,
+            2.65,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-77",
+          "assetId": "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+          "name": "连续收尖机鼻、尾锥和实体垂尾",
+          "position": [
+            20,
+            2.65,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-78",
+          "assetId": "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+          "name": "连续后掠翼及薄翼缘",
+          "position": [
+            20,
+            3.1,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-79",
+          "assetId": "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+          "name": "连续后掠翼及薄翼缘",
+          "position": [
+            20,
+            4,
+            9.7
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-80",
+          "assetId": "source-built-296",
+          "name": "公共客机发动机/推力体组件",
+          "position": [
+            14,
+            0.8,
+            -1.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-81",
+          "assetId": "source-built-296",
+          "name": "公共客机发动机/推力体组件",
+          "position": [
+            24.4,
+            0.8,
+            -1.5
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-82",
+          "assetId": "architecture-civic-fleet-boarding-airliner-6193599032",
+          "name": "可登离实体踏步与连续金属梯梁",
+          "position": [
+            22,
+            0,
+            -6.4
+          ],
+          "rotation": 0,
+          "parent": null
+        },
+        {
+          "id": "built-267-83",
+          "assetId": "architecture-civic-fleet-apron-shared-markings-79a46d498e",
+          "name": "同源滑行线、机位实涂边与航站步行界面",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "parent": null
+        }
+      ],
+      "source": {
+        "kind": "catalog-assembly",
+        "catalogId": "BUILT-267",
+        "recipeRevision": 1,
+        "reference": {
+          "sheet": "M048",
+          "slot": 2,
+          "imageSHA256": "5dc46fd594db5a91b91db5142820dbc1e3d788594bf124b068747729a734d89d"
+        },
+        "units": "metres",
+        "authority": "author",
+        "originalRuntimeBound": false,
+        "notCatalogBase": true,
+        "dependencies": [
+          "BUILT-001",
+          "BUILT-003",
+          "BUILT-011",
+          "BUILT-012",
+          "BUILT-013",
+          "BUILT-170",
+          "BUILT-218",
+          "BUILT-246",
+          "BUILT-247",
+          "BUILT-294",
+          "BUILT-295",
+          "BUILT-296",
+          "BUILT-297",
+          "BUILT-298",
+          "LIFE-013"
+        ],
+        "instanceGroups": {
+          "built-267-0": "floor",
+          "built-267-1": "floor",
+          "built-267-2": "floor",
+          "built-267-3": "floor",
+          "built-267-4": "facade",
+          "built-267-5": "facade",
+          "built-267-6": "facade",
+          "built-267-7": "facade",
+          "built-267-8": "roof",
+          "built-267-9": "cabin",
+          "built-267-10": "seat",
+          "built-267-11": "seat",
+          "built-267-12": "seat",
+          "built-267-13": "seat",
+          "built-267-14": "seat",
+          "built-267-15": "seat",
+          "built-267-16": "seat",
+          "built-267-17": "seat",
+          "built-267-18": "seat",
+          "built-267-19": "seat",
+          "built-267-20": "seat",
+          "built-267-21": "seat",
+          "built-267-22": "seat",
+          "built-267-23": "seat",
+          "built-267-24": "seat",
+          "built-267-25": "seat",
+          "built-267-26": "seat",
+          "built-267-27": "seat",
+          "built-267-28": "seat",
+          "built-267-29": "seat",
+          "built-267-30": "seat",
+          "built-267-31": "seat",
+          "built-267-32": "seat",
+          "built-267-33": "seat",
+          "built-267-34": "seat",
+          "built-267-35": "controls",
+          "built-267-36": "gear",
+          "built-267-37": "gear",
+          "built-267-38": "gear",
+          "built-267-39": "vehicle",
+          "built-267-40": "tail",
+          "built-267-41": "wing",
+          "built-267-42": "wing",
+          "built-267-43": "engine",
+          "built-267-44": "engine",
+          "built-267-45": "boarding",
+          "built-267-46": "cabin",
+          "built-267-47": "seat",
+          "built-267-48": "seat",
+          "built-267-49": "seat",
+          "built-267-50": "seat",
+          "built-267-51": "seat",
+          "built-267-52": "seat",
+          "built-267-53": "seat",
+          "built-267-54": "seat",
+          "built-267-55": "seat",
+          "built-267-56": "seat",
+          "built-267-57": "seat",
+          "built-267-58": "seat",
+          "built-267-59": "seat",
+          "built-267-60": "seat",
+          "built-267-61": "seat",
+          "built-267-62": "seat",
+          "built-267-63": "seat",
+          "built-267-64": "seat",
+          "built-267-65": "seat",
+          "built-267-66": "seat",
+          "built-267-67": "seat",
+          "built-267-68": "seat",
+          "built-267-69": "seat",
+          "built-267-70": "seat",
+          "built-267-71": "seat",
+          "built-267-72": "controls",
+          "built-267-73": "gear",
+          "built-267-74": "gear",
+          "built-267-75": "gear",
+          "built-267-76": "vehicle",
+          "built-267-77": "tail",
+          "built-267-78": "wing",
+          "built-267-79": "wing",
+          "built-267-80": "engine",
+          "built-267-81": "engine",
+          "built-267-82": "boarding",
+          "built-267-83": "vehicle"
+        },
+        "parameters": {},
+        "routes": [
+          {
+            "name": "apron-service-terminal floor 0",
+            "points": [
+              [
+                1.4,
+                0,
+                -31.5
+              ],
+              [
+                1.4,
+                0,
+                -31
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "apron-service-terminal entrance",
+            "points": [
+              [
+                0,
+                0,
+                -32.6
+              ],
+              [
+                0,
+                0,
+                -31
+              ],
+              [
+                -1.4,
+                0,
+                -31
+              ],
+              [
+                -1.4,
+                0,
+                -31.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "stand -20 airliner aisle",
+            "points": [
+              [
+                -20,
+                2.65,
+                -8.1
+              ],
+              [
+                -20,
+                2.65,
+                8.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "stand -20 airliner true door",
+            "points": [
+              [
+                -20,
+                2.65,
+                -6.4
+              ],
+              [
+                -17.98,
+                2.65,
+                -6.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "stand -20 airliner boarding seam",
+            "points": [
+              [
+                -18.35,
+                2.65,
+                -6.4
+              ],
+              [
+                -17.45,
+                2.65,
+                -6.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "stand 20 airliner aisle",
+            "points": [
+              [
+                20,
+                2.65,
+                -8.1
+              ],
+              [
+                20,
+                2.65,
+                8.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "stand 20 airliner true door",
+            "points": [
+              [
+                20,
+                2.65,
+                -6.4
+              ],
+              [
+                22.02,
+                2.65,
+                -6.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "stand 20 airliner boarding seam",
+            "points": [
+              [
+                21.65,
+                2.65,
+                -6.4
+              ],
+              [
+                22.55,
+                2.65,
+                -6.4
+              ]
+            ],
+            "width": 0.45
+          },
+          {
+            "name": "terminal apron pedestrian connection",
+            "points": [
+              [
+                0,
+                0,
+                -23
+              ],
+              [
+                0,
+                0,
+                -21
+              ],
+              [
+                0,
+                0,
+                -16
+              ],
+              [
+                0,
+                0,
+                20
+              ]
+            ],
+            "width": 0.45
+          }
+        ],
+        "scope": "Explicit author geometry and finite circulation samples. Original Building/FloorPlan, terrain, permissions, identities, energy/flight controllers and world coordinates are unavailable and remain unbound. Technical candidate; human art acceptance pending.",
+        "walkSamples": [
+          {
+            "name": "stand -20 airliner stair 0",
+            "point": [
+              -17.04,
+              2.473333333333333,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 1",
+            "point": [
+              -16.72,
+              2.2966666666666664,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 2",
+            "point": [
+              -16.4,
+              2.12,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 3",
+            "point": [
+              -16.08,
+              1.9433333333333334,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 4",
+            "point": [
+              -15.76,
+              1.7666666666666666,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 5",
+            "point": [
+              -15.440000000000001,
+              1.5899999999999999,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 6",
+            "point": [
+              -15.120000000000001,
+              1.4133333333333333,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 7",
+            "point": [
+              -14.8,
+              1.2366666666666666,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 8",
+            "point": [
+              -14.48,
+              1.0599999999999998,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 9",
+            "point": [
+              -14.16,
+              0.8833333333333333,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 10",
+            "point": [
+              -13.84,
+              0.7066666666666666,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 11",
+            "point": [
+              -13.52,
+              0.5299999999999998,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 12",
+            "point": [
+              -13.2,
+              0.35333333333333306,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 13",
+            "point": [
+              -12.879999999999999,
+              0.17666666666666675,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand -20 airliner stair 14",
+            "point": [
+              -12.56,
+              0,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 0",
+            "point": [
+              22.96,
+              2.473333333333333,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 1",
+            "point": [
+              23.28,
+              2.2966666666666664,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 2",
+            "point": [
+              23.6,
+              2.12,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 3",
+            "point": [
+              23.92,
+              1.9433333333333334,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 4",
+            "point": [
+              24.240000000000002,
+              1.7666666666666666,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 5",
+            "point": [
+              24.56,
+              1.5899999999999999,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 6",
+            "point": [
+              24.88,
+              1.4133333333333333,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 7",
+            "point": [
+              25.2,
+              1.2366666666666666,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 8",
+            "point": [
+              25.52,
+              1.0599999999999998,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 9",
+            "point": [
+              25.84,
+              0.8833333333333333,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 10",
+            "point": [
+              26.16,
+              0.7066666666666666,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 11",
+            "point": [
+              26.48,
+              0.5299999999999998,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 12",
+            "point": [
+              26.8,
+              0.35333333333333306,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 13",
+            "point": [
+              27.12,
+              0.17666666666666675,
+              -6.4
+            ],
+            "width": 0.2
+          },
+          {
+            "name": "stand 20 airliner stair 14",
+            "point": [
+              27.439999999999998,
+              0,
+              -6.4
+            ],
+            "width": 0.2
+          }
+        ],
+        "clearBoxes": [
+          {
+            "name": "stand -20 airliner actual side aperture",
+            "min": [
+              -18.08,
+              2.6999999999999997,
+              -7.1000000000000005
+            ],
+            "max": [
+              -17.98,
+              4.8,
+              -5.7
+            ]
+          },
+          {
+            "name": "real wing and fin stand envelope -20",
+            "min": [
+              -31.2,
+              0.05,
+              -12.2
+            ],
+            "max": [
+              -8.8,
+              6.4,
+              12.2
+            ],
+            "exclude": [
+              "built-267-9",
+              "built-267-10",
+              "built-267-11",
+              "built-267-12",
+              "built-267-13",
+              "built-267-14",
+              "built-267-15",
+              "built-267-16",
+              "built-267-17",
+              "built-267-18",
+              "built-267-19",
+              "built-267-20",
+              "built-267-21",
+              "built-267-22",
+              "built-267-23",
+              "built-267-24",
+              "built-267-25",
+              "built-267-26",
+              "built-267-27",
+              "built-267-28",
+              "built-267-29",
+              "built-267-30",
+              "built-267-31",
+              "built-267-32",
+              "built-267-33",
+              "built-267-34",
+              "built-267-35",
+              "built-267-36",
+              "built-267-37",
+              "built-267-38",
+              "built-267-39",
+              "built-267-40",
+              "built-267-41",
+              "built-267-42",
+              "built-267-43",
+              "built-267-44",
+              "built-267-45"
+            ]
+          },
+          {
+            "name": "stand 20 airliner actual side aperture",
+            "min": [
+              21.92,
+              2.6999999999999997,
+              -7.1000000000000005
+            ],
+            "max": [
+              22.02,
+              4.8,
+              -5.7
+            ]
+          },
+          {
+            "name": "real wing and fin stand envelope 20",
+            "min": [
+              8.8,
+              0.05,
+              -12.2
+            ],
+            "max": [
+              31.2,
+              6.4,
+              12.2
+            ],
+            "exclude": [
+              "built-267-46",
+              "built-267-47",
+              "built-267-48",
+              "built-267-49",
+              "built-267-50",
+              "built-267-51",
+              "built-267-52",
+              "built-267-53",
+              "built-267-54",
+              "built-267-55",
+              "built-267-56",
+              "built-267-57",
+              "built-267-58",
+              "built-267-59",
+              "built-267-60",
+              "built-267-61",
+              "built-267-62",
+              "built-267-63",
+              "built-267-64",
+              "built-267-65",
+              "built-267-66",
+              "built-267-67",
+              "built-267-68",
+              "built-267-69",
+              "built-267-70",
+              "built-267-71",
+              "built-267-72",
+              "built-267-73",
+              "built-267-74",
+              "built-267-75",
+              "built-267-76",
+              "built-267-77",
+              "built-267-78",
+              "built-267-79",
+              "built-267-80",
+              "built-267-81",
+              "built-267-82"
+            ]
+          }
+        ],
+        "contacts": [
+          {
+            "name": "stand -20 airliner gear upper plate to cabin underside",
+            "point": [
+              -20,
+              2.4,
+              -6.2
+            ],
+            "exclude": "built-267-36",
+            "role": "metal"
+          },
+          {
+            "name": "stand -20 airliner gear upper plate to cabin underside",
+            "point": [
+              -21.35,
+              2.4,
+              4.6
+            ],
+            "exclude": "built-267-37",
+            "role": "metal"
+          },
+          {
+            "name": "stand -20 airliner gear upper plate to cabin underside",
+            "point": [
+              -18.65,
+              2.4,
+              4.6
+            ],
+            "exclude": "built-267-38",
+            "role": "metal"
+          },
+          {
+            "name": "stand -20 airliner native engine cap to continuous wing",
+            "point": [
+              -25.2,
+              3.18,
+              0.3
+            ],
+            "exclude": "built-267-43"
+          },
+          {
+            "name": "stand -20 airliner native engine cap to continuous wing",
+            "point": [
+              -14.8,
+              3.18,
+              0.3
+            ],
+            "exclude": "built-267-44"
+          },
+          {
+            "name": "stand 20 airliner gear upper plate to cabin underside",
+            "point": [
+              20,
+              2.4,
+              -6.2
+            ],
+            "exclude": "built-267-73",
+            "role": "metal"
+          },
+          {
+            "name": "stand 20 airliner gear upper plate to cabin underside",
+            "point": [
+              18.65,
+              2.4,
+              4.6
+            ],
+            "exclude": "built-267-74",
+            "role": "metal"
+          },
+          {
+            "name": "stand 20 airliner gear upper plate to cabin underside",
+            "point": [
+              21.35,
+              2.4,
+              4.6
+            ],
+            "exclude": "built-267-75",
+            "role": "metal"
+          },
+          {
+            "name": "stand 20 airliner native engine cap to continuous wing",
+            "point": [
+              14.8,
+              3.18,
+              0.3
+            ],
+            "exclude": "built-267-80"
+          },
+          {
+            "name": "stand 20 airliner native engine cap to continuous wing",
+            "point": [
+              25.2,
+              3.18,
+              0.3
+            ],
+            "exclude": "built-267-81"
+          }
+        ],
+        "driverEyes": [
+          [
+            -21.38,
+            3.98,
+            -8.35
+          ],
+          [
+            18.62,
+            3.98,
+            -8.35
+          ]
+        ],
+        "identityBound": false,
+        "controllerBound": false,
+        "cargoInventoryBound": false,
+        "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+        "apron": {
+          "stands": [
+            {
+              "authorId": "stand-west",
+              "center": [
+                -20,
+                0,
+                0
+              ],
+              "envelope": {
+                "min": [
+                  -31.2,
+                  0,
+                  -12.2
+                ],
+                "max": [
+                  -8.8,
+                  6.4,
+                  12.2
+                ]
+              },
+              "plane": {
+                "cabin": {
+                  "shell": "built-267-9",
+                  "seats": [
+                    "built-267-10",
+                    "built-267-11",
+                    "built-267-12",
+                    "built-267-13",
+                    "built-267-14",
+                    "built-267-15",
+                    "built-267-16",
+                    "built-267-17",
+                    "built-267-18",
+                    "built-267-19",
+                    "built-267-20",
+                    "built-267-21",
+                    "built-267-22",
+                    "built-267-23",
+                    "built-267-24",
+                    "built-267-25",
+                    "built-267-26",
+                    "built-267-27",
+                    "built-267-28",
+                    "built-267-29",
+                    "built-267-30",
+                    "built-267-31",
+                    "built-267-32",
+                    "built-267-33",
+                    "built-267-34"
+                  ],
+                  "door": [
+                    2,
+                    2.65,
+                    -6.4
+                  ],
+                  "width": 4,
+                  "length": 18,
+                  "floorY": 2.65,
+                  "roofY": 5.95,
+                  "driverEyes": [
+                    [
+                      -1.38,
+                      3.98,
+                      -8.35
+                    ]
+                  ]
+                },
+                "gear": [
+                  "built-267-36",
+                  "built-267-37",
+                  "built-267-38"
+                ],
+                "engines": [
+                  "built-267-43",
+                  "built-267-44"
+                ],
+                "spanM": 22,
+                "bodyLengthM": 24,
+                "doorWidthM": 1.6,
+                "original185Preserved": true,
+                "original169ProxyPreserved": true,
+                "gearState": "static deployed",
+                "boarding": {
+                  "instance": "built-267-45",
+                  "run": 4.8,
+                  "landing": 0.8,
+                  "groundEnd": [
+                    7.6,
+                    0,
+                    -6.4
+                  ]
+                },
+                "offset": [
+                  -20,
+                  0,
+                  0
+                ],
+                "instanceIds": [
+                  "built-267-9",
+                  "built-267-10",
+                  "built-267-11",
+                  "built-267-12",
+                  "built-267-13",
+                  "built-267-14",
+                  "built-267-15",
+                  "built-267-16",
+                  "built-267-17",
+                  "built-267-18",
+                  "built-267-19",
+                  "built-267-20",
+                  "built-267-21",
+                  "built-267-22",
+                  "built-267-23",
+                  "built-267-24",
+                  "built-267-25",
+                  "built-267-26",
+                  "built-267-27",
+                  "built-267-28",
+                  "built-267-29",
+                  "built-267-30",
+                  "built-267-31",
+                  "built-267-32",
+                  "built-267-33",
+                  "built-267-34",
+                  "built-267-35",
+                  "built-267-36",
+                  "built-267-37",
+                  "built-267-38",
+                  "built-267-39",
+                  "built-267-40",
+                  "built-267-41",
+                  "built-267-42",
+                  "built-267-43",
+                  "built-267-44",
+                  "built-267-45"
+                ]
+              }
+            },
+            {
+              "authorId": "stand-east",
+              "center": [
+                20,
+                0,
+                0
+              ],
+              "envelope": {
+                "min": [
+                  8.8,
+                  0,
+                  -12.2
+                ],
+                "max": [
+                  31.2,
+                  6.4,
+                  12.2
+                ]
+              },
+              "plane": {
+                "cabin": {
+                  "shell": "built-267-46",
+                  "seats": [
+                    "built-267-47",
+                    "built-267-48",
+                    "built-267-49",
+                    "built-267-50",
+                    "built-267-51",
+                    "built-267-52",
+                    "built-267-53",
+                    "built-267-54",
+                    "built-267-55",
+                    "built-267-56",
+                    "built-267-57",
+                    "built-267-58",
+                    "built-267-59",
+                    "built-267-60",
+                    "built-267-61",
+                    "built-267-62",
+                    "built-267-63",
+                    "built-267-64",
+                    "built-267-65",
+                    "built-267-66",
+                    "built-267-67",
+                    "built-267-68",
+                    "built-267-69",
+                    "built-267-70",
+                    "built-267-71"
+                  ],
+                  "door": [
+                    2,
+                    2.65,
+                    -6.4
+                  ],
+                  "width": 4,
+                  "length": 18,
+                  "floorY": 2.65,
+                  "roofY": 5.95,
+                  "driverEyes": [
+                    [
+                      -1.38,
+                      3.98,
+                      -8.35
+                    ]
+                  ]
+                },
+                "gear": [
+                  "built-267-73",
+                  "built-267-74",
+                  "built-267-75"
+                ],
+                "engines": [
+                  "built-267-80",
+                  "built-267-81"
+                ],
+                "spanM": 22,
+                "bodyLengthM": 24,
+                "doorWidthM": 1.6,
+                "original185Preserved": true,
+                "original169ProxyPreserved": true,
+                "gearState": "static deployed",
+                "boarding": {
+                  "instance": "built-267-82",
+                  "run": 4.8,
+                  "landing": 0.8,
+                  "groundEnd": [
+                    7.6,
+                    0,
+                    -6.4
+                  ]
+                },
+                "offset": [
+                  20,
+                  0,
+                  0
+                ],
+                "instanceIds": [
+                  "built-267-46",
+                  "built-267-47",
+                  "built-267-48",
+                  "built-267-49",
+                  "built-267-50",
+                  "built-267-51",
+                  "built-267-52",
+                  "built-267-53",
+                  "built-267-54",
+                  "built-267-55",
+                  "built-267-56",
+                  "built-267-57",
+                  "built-267-58",
+                  "built-267-59",
+                  "built-267-60",
+                  "built-267-61",
+                  "built-267-62",
+                  "built-267-63",
+                  "built-267-64",
+                  "built-267-65",
+                  "built-267-66",
+                  "built-267-67",
+                  "built-267-68",
+                  "built-267-69",
+                  "built-267-70",
+                  "built-267-71",
+                  "built-267-72",
+                  "built-267-73",
+                  "built-267-74",
+                  "built-267-75",
+                  "built-267-76",
+                  "built-267-77",
+                  "built-267-78",
+                  "built-267-79",
+                  "built-267-80",
+                  "built-267-81",
+                  "built-267-82"
+                ]
+              }
+            }
+          ],
+          "taxiRoute": [
+            [
+              0,
+              0,
+              45
+            ],
+            [
+              0,
+              0,
+              22.5
+            ],
+            [
+              -20,
+              0,
+              22.5
+            ],
+            [
+              20,
+              0,
+              22.5
+            ]
+          ],
+          "runwayY": 0,
+          "terminalDoor": [
+            0,
+            0,
+            -22
+          ],
+          "sharedAuthorGeometry": true,
+          "sourceSharedDescriptorBound": false
+        }
+      }
+    }
+  },
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "architecture-civic-modern-plate-86-68-0p4-pp-175a2b9c73",
+      "name": "石铺面与混凝土承板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "civic-floor",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            86,
+            0,
+            68
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-plate-100-18-0p4-pp-33330a125c",
+      "name": "石铺面与混凝土承板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "civic-floor",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            100,
+            0,
+            18
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-plate-14-2-0p4-pp-28602ad87e",
+      "name": "石铺面与混凝土承板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "civic-floor",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            14,
+            0,
+            2
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-plate-40-10-0p4-pp-eb3ed64a15",
+      "name": "石铺面与混凝土承板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "top",
+          "kind": "civic-floor",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            40,
+            0,
+            10
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-143",
+          "material": 143,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-144",
+          "material": 144,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-1",
+          "material": 1,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-40-4p2-true-true-17cafc2ac6",
+      "name": "金属框、密封环与独立幕墙玻璃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [
+        {
+          "id": "door",
+          "kind": "modern-walk",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            0,
+            -1
+          ],
+          "size": [
+            3.6,
+            3,
+            0
+          ],
+          "pitch": 0.02
+        }
+      ],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-165",
+          "material": 165,
+          "collision": true,
+          "triangles": 360
+        },
+        {
+          "name": "material-521",
+          "material": 521,
+          "collision": true,
+          "triangles": 348
+        },
+        {
+          "name": "material-164",
+          "material": 164,
+          "collision": true,
+          "triangles": 672
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 168
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-district-wall-10-4p2-false-true-f7e622a603",
+      "name": "金属框、密封环与独立幕墙玻璃",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-165",
+          "material": 165,
+          "collision": true,
+          "triangles": 108
+        },
+        {
+          "name": "material-521",
+          "material": 521,
+          "collision": true,
+          "triangles": 96
+        },
+        {
+          "name": "material-164",
+          "material": 164,
+          "collision": true,
+          "triangles": 192
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 48
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-modern-roof-40-10-1p3-hip-closed-879292361a",
+      "name": "连续瓦檐与金属承板、钢梁",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-5",
+          "material": 5,
+          "collision": true,
+          "triangles": 580
+        },
+        {
+          "name": "material-145",
+          "material": 145,
+          "collision": true,
+          "triangles": 568
+        },
+        {
+          "name": "material-3",
+          "material": 521,
+          "collision": true,
+          "triangles": 904
+        },
+        {
+          "name": "material-42",
+          "material": 79,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-41",
+          "material": 41,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-airliner-cabin-170b94e307",
+      "name": "独立乘舱壳、真实窗封和常开侧舱口",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-529",
+          "material": 529,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-161",
+          "material": 161,
+          "collision": true,
+          "triangles": 2032
+        },
+        {
+          "name": "material-526",
+          "material": 526,
+          "collision": true,
+          "triangles": 288
+        },
+        {
+          "name": "material-160",
+          "material": 160,
+          "collision": true,
+          "triangles": 1152
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 324
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-526",
+          "material": 526,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-527",
+          "material": 527,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-528",
+          "material": 528,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-airliner-controls-ba82dc3289",
+      "name": "驾驶控制台与未绑定光学面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-530",
+          "material": 530,
+          "collision": true,
+          "triangles": 152
+        },
+        {
+          "name": "material-519",
+          "material": 519,
+          "collision": false,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "source-built-294",
+      "name": "公共客机起落架与轮组",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.8,
+            0,
+            1.2000000000000002
+          ],
+          "pitch": 0.05
+        },
+        {
+          "id": "mount",
+          "kind": "gear-mount",
+          "position": [
+            0.9,
+            2.4,
+            0.6
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.2,
+            0,
+            1
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              36,
+              48,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "两个真实橡胶轮胎和独立轮圈",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              36,
+              24,
+              24
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "横轴、双叉与减震活塞",
+          "parent": "root",
+          "region": {
+            "min": [
+              8,
+              10,
+              9
+            ],
+            "max": [
+              28,
+              44,
+              15
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "外筒、实心上安装板和连接锁",
+          "parent": "root",
+          "region": {
+            "min": [
+              6,
+              28,
+              2
+            ],
+            "max": [
+              30,
+              48,
+              22
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "真实防扭连杆和铜铰轴",
+          "parent": "root",
+          "region": {
+            "min": [
+              14,
+              16,
+              16
+            ],
+            "max": [
+              17,
+              39,
+              18
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "轮轴外帽与维护涂印",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              11,
+              4
+            ],
+            "max": [
+              36,
+              48,
+              13
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "客机双轮起落架放下静态形状：轮胎、独立轮圈、双叉、减震外筒、活塞和上安装板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              36,
+              48,
+              24
+            ]
+          }
+        }
+      ],
+      "openings": []
+    },
+    {
+      "id": "architecture-civic-fleet-airliner-nose-bd4acd6481",
+      "name": "连续倾斜前围与分离光学灯",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-161",
+          "material": 161,
+          "collision": true,
+          "triangles": 12
+        },
+        {
+          "name": "material-519",
+          "material": 519,
+          "collision": false,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+      "name": "连续收尖机鼻、尾锥和实体垂尾",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-161",
+          "material": 161,
+          "collision": true,
+          "triangles": 100
+        },
+        {
+          "name": "material-6",
+          "material": 6,
+          "collision": false,
+          "triangles": 12
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+      "name": "连续后掠翼及薄翼缘",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-161",
+          "material": 161,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+      "name": "连续后掠翼及薄翼缘",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-161",
+          "material": 161,
+          "collision": true,
+          "triangles": 24
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "id": "source-built-296",
+      "name": "公共客机发动机/推力体组件",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.05,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6,
+            0,
+            3.2
+          ],
+          "pitch": 0.05
+        },
+        {
+          "id": "wing",
+          "kind": "engine-cap",
+          "position": [
+            0.8,
+            2.3,
+            1.8
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            0.7,
+            0,
+            1.4
+          ],
+          "pitch": 0.05
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              32,
+              48,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "真实环形蒙皮与金属内衬",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              32,
+              32,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "八片实际风扇和中央轮毂",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              3,
+              12
+            ],
+            "max": [
+              30,
+              30,
+              16
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "开放尾喷圈与实体红色外环",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              24
+            ],
+            "max": [
+              32,
+              32,
+              64
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "连续挂柱与宽上承帽",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              30,
+              22
+            ],
+            "max": [
+              23,
+              48,
+              50
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "实际铜销与短侧接头",
+          "parent": "root",
+          "region": {
+            "min": [
+              9,
+              1,
+              3
+            ],
+            "max": [
+              22,
+              47,
+              48
+            ]
+          }
+        },
+        {
+          "id": "part-5",
+          "name": "独立发动机吊舱：环形双层蒙皮、真实进排气空腔、八片静态风扇、挂柱和跨翼上承帽",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              32,
+              48,
+              64
+            ]
+          }
+        }
+      ],
+      "openings": [
+        {
+          "min": [
+            10,
+            10,
+            0
+          ],
+          "max": [
+            22,
+            22,
+            10
+          ]
+        },
+        {
+          "min": [
+            12,
+            12,
+            52
+          ],
+          "max": [
+            20,
+            20,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-boarding-airliner-6193599032",
+      "name": "可登离实体踏步与连续金属梯梁",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-79",
+          "material": 79,
+          "collision": true,
+          "triangles": 240
+        },
+        {
+          "name": "material-4",
+          "material": 4,
+          "collision": true,
+          "triangles": 144
+        }
+      ]
+    },
+    {
+      "id": "architecture-civic-fleet-apron-shared-markings-79a46d498e",
+      "name": "同源滑行线、机位实涂边与航站步行界面",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.02,
+      "ports": [],
+      "parts": [],
+      "openings": [],
+      "representation": "voxel-and-mesh",
+      "meshes": [
+        {
+          "name": "material-170",
+          "material": 170,
+          "collision": true,
+          "triangles": 72
+        },
+        {
+          "name": "material-173",
+          "material": 173,
+          "collision": true,
+          "triangles": 108
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "built-267-0",
+      "assetId": "architecture-civic-modern-plate-86-68-0p4-pp-175a2b9c73",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-1",
+      "assetId": "architecture-civic-modern-plate-100-18-0p4-pp-33330a125c",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        0,
+        0,
+        45
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-2",
+      "assetId": "architecture-civic-modern-plate-14-2-0p4-pp-28602ad87e",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        0,
+        0,
+        35
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-3",
+      "assetId": "architecture-civic-modern-plate-40-10-0p4-pp-eb3ed64a15",
+      "name": "石铺面与混凝土承板",
+      "position": [
+        0,
+        0,
+        -27
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-4",
+      "assetId": "architecture-civic-district-wall-40-4p2-true-true-17cafc2ac6",
+      "name": "金属框、密封环与独立幕墙玻璃",
+      "position": [
+        0,
+        0,
+        -32
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-5",
+      "assetId": "architecture-civic-district-wall-40-4p2-true-true-17cafc2ac6",
+      "name": "金属框、密封环与独立幕墙玻璃",
+      "position": [
+        0,
+        0,
+        -22
+      ],
+      "rotation": 2,
+      "parent": null
+    },
+    {
+      "id": "built-267-6",
+      "assetId": "architecture-civic-district-wall-10-4p2-false-true-f7e622a603",
+      "name": "金属框、密封环与独立幕墙玻璃",
+      "position": [
+        20,
+        0,
+        -27
+      ],
+      "rotation": 1,
+      "parent": null
+    },
+    {
+      "id": "built-267-7",
+      "assetId": "architecture-civic-district-wall-10-4p2-false-true-f7e622a603",
+      "name": "金属框、密封环与独立幕墙玻璃",
+      "position": [
+        -20,
+        0,
+        -27
+      ],
+      "rotation": 3,
+      "parent": null
+    },
+    {
+      "id": "built-267-8",
+      "assetId": "architecture-civic-modern-roof-40-10-1p3-hip-closed-879292361a",
+      "name": "连续瓦檐与金属承板、钢梁",
+      "position": [
+        0,
+        4.2,
+        -27
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-9",
+      "assetId": "architecture-civic-fleet-airliner-cabin-170b94e307",
+      "name": "独立乘舱壳、真实窗封和常开侧舱口",
+      "position": [
+        -20,
+        2.65,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-10",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        -6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-11",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        -5.25
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-12",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        -4.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-13",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        -4.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-14",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        -2.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-15",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        -2.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-16",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        -1.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-17",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        -1.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-18",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        -0.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-19",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        -0.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-20",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-21",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-22",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        1.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-23",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        1.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-24",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-25",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-26",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        3.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-27",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        3.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-28",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        5.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-29",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        5.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-30",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        6.25
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-31",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        6.25
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-32",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.45,
+        2.65,
+        7.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-33",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -18.55,
+        2.65,
+        7.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-34",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        -21.38,
+        2.65,
+        -8.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-35",
+      "assetId": "architecture-civic-fleet-airliner-controls-ba82dc3289",
+      "name": "驾驶控制台与未绑定光学面",
+      "position": [
+        -21.38,
+        2.65,
+        -8.73
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-36",
+      "assetId": "source-built-294",
+      "name": "公共客机起落架与轮组",
+      "position": [
+        -20.9,
+        0,
+        -6.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-37",
+      "assetId": "source-built-294",
+      "name": "公共客机起落架与轮组",
+      "position": [
+        -22.25,
+        0,
+        4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-38",
+      "assetId": "source-built-294",
+      "name": "公共客机起落架与轮组",
+      "position": [
+        -19.55,
+        0,
+        4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-39",
+      "assetId": "architecture-civic-fleet-airliner-nose-bd4acd6481",
+      "name": "连续倾斜前围与分离光学灯",
+      "position": [
+        -20,
+        2.65,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-40",
+      "assetId": "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+      "name": "连续收尖机鼻、尾锥和实体垂尾",
+      "position": [
+        -20,
+        2.65,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-41",
+      "assetId": "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+      "name": "连续后掠翼及薄翼缘",
+      "position": [
+        -20,
+        3.1,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-42",
+      "assetId": "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+      "name": "连续后掠翼及薄翼缘",
+      "position": [
+        -20,
+        4,
+        9.7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-43",
+      "assetId": "source-built-296",
+      "name": "公共客机发动机/推力体组件",
+      "position": [
+        -26,
+        0.8,
+        -1.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-44",
+      "assetId": "source-built-296",
+      "name": "公共客机发动机/推力体组件",
+      "position": [
+        -15.6,
+        0.8,
+        -1.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-45",
+      "assetId": "architecture-civic-fleet-boarding-airliner-6193599032",
+      "name": "可登离实体踏步与连续金属梯梁",
+      "position": [
+        -18,
+        0,
+        -6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-46",
+      "assetId": "architecture-civic-fleet-airliner-cabin-170b94e307",
+      "name": "独立乘舱壳、真实窗封和常开侧舱口",
+      "position": [
+        20,
+        2.65,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-47",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        -6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-48",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        -5.25
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-49",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        -4.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-50",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        -4.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-51",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        -2.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-52",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        -2.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-53",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        -1.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-54",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        -1.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-55",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        -0.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-56",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        -0.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-57",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-58",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        0.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-59",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        1.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-60",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        1.65
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-61",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-62",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        2.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-63",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        3.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-64",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        3.95
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-65",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        5.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-66",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        5.1
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-67",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        6.25
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-68",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        6.25
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-69",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.55,
+        2.65,
+        7.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-70",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        21.45,
+        2.65,
+        7.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-71",
+      "assetId": "architecture-civic-fleet-seat-true-af25b349b1",
+      "name": "客座软垫、金属承脚与独立织带",
+      "position": [
+        18.62,
+        2.65,
+        -8.05
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-72",
+      "assetId": "architecture-civic-fleet-airliner-controls-ba82dc3289",
+      "name": "驾驶控制台与未绑定光学面",
+      "position": [
+        18.62,
+        2.65,
+        -8.73
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-73",
+      "assetId": "source-built-294",
+      "name": "公共客机起落架与轮组",
+      "position": [
+        19.1,
+        0,
+        -6.8
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-74",
+      "assetId": "source-built-294",
+      "name": "公共客机起落架与轮组",
+      "position": [
+        17.75,
+        0,
+        4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-75",
+      "assetId": "source-built-294",
+      "name": "公共客机起落架与轮组",
+      "position": [
+        20.45,
+        0,
+        4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-76",
+      "assetId": "architecture-civic-fleet-airliner-nose-bd4acd6481",
+      "name": "连续倾斜前围与分离光学灯",
+      "position": [
+        20,
+        2.65,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-77",
+      "assetId": "architecture-civic-fleet-airliner-aerodynamic-ends-668df99921",
+      "name": "连续收尖机鼻、尾锥和实体垂尾",
+      "position": [
+        20,
+        2.65,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-78",
+      "assetId": "architecture-civic-fleet-airliner-main-wing-393ad76dbc",
+      "name": "连续后掠翼及薄翼缘",
+      "position": [
+        20,
+        3.1,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-79",
+      "assetId": "architecture-civic-fleet-airliner-tailplane-c3625b9754",
+      "name": "连续后掠翼及薄翼缘",
+      "position": [
+        20,
+        4,
+        9.7
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-80",
+      "assetId": "source-built-296",
+      "name": "公共客机发动机/推力体组件",
+      "position": [
+        14,
+        0.8,
+        -1.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-81",
+      "assetId": "source-built-296",
+      "name": "公共客机发动机/推力体组件",
+      "position": [
+        24.4,
+        0.8,
+        -1.5
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-82",
+      "assetId": "architecture-civic-fleet-boarding-airliner-6193599032",
+      "name": "可登离实体踏步与连续金属梯梁",
+      "position": [
+        22,
+        0,
+        -6.4
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "built-267-83",
+      "assetId": "architecture-civic-fleet-apron-shared-markings-79a46d498e",
+      "name": "同源滑行线、机位实涂边与航站步行界面",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ]
+}

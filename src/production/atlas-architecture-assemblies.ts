@@ -9,12 +9,16 @@ import {metropolisInfrastructureIds,makeMetropolisInfrastructure} from './metrop
 import {districtConnectionIds,makeDistrictConnection} from './district-connections';
 import {districtCourtIds,makeDistrictCourt} from './district-courts';
 import {makeDistrictTerminal} from './district-terminal';
+import {fleetAirportIds,makeFleetAirport} from './fleet-airports';
+import {fleetVehicleIds,makeFleetVehicle} from './fleet-vehicles';
+export const fleetAssemblyIds=[...fleetAirportIds,...fleetVehicleIds];
 export const districtAssemblyIds=[...districtConnectionIds,...districtCourtIds,'BUILT-265'];
 export const metropolisAssemblyIds=[...metropolisTowerIds,...metropolisAviationIds,...metropolisInfrastructureIds];
-export const architectureAssemblyIds=['BUILT-019','BUILT-020','BUILT-021','BUILT-022','BUILT-023','BUILT-024','BUILT-040','BUILT-042','BUILT-075','BUILT-076','BUILT-077','BUILT-078',...civicLandmarkIds,...civicTransportIds,...metropolisAssemblyIds,...districtAssemblyIds];
+export const architectureAssemblyIds=['BUILT-019','BUILT-020','BUILT-021','BUILT-022','BUILT-023','BUILT-024','BUILT-040','BUILT-042','BUILT-075','BUILT-076','BUILT-077','BUILT-078',...civicLandmarkIds,...civicTransportIds,...metropolisAssemblyIds,...districtAssemblyIds,...fleetAssemblyIds];
 export function architectureAssemblyParameters(id:string):Record<string,unknown>{
  if(id==='BUILT-023'||id==='BUILT-079')return{program:{enum:['bank','medical'],default:'bank'}};
  if(id==='BUILT-164')return{liftStop:{enum:['bottom','top'],default:'bottom'}};
+ if(id==='BUILT-281')return{trainMode:{enum:['lightRail','maglev'],default:'lightRail'}};
  if(id==='BUILT-042')return{layoutSeed:{enum:[7,19],default:7}};
  if(['BUILT-075','BUILT-076','BUILT-077','BUILT-078'].includes(id))return{roofWidth:{enum:['standard','wide'],default:'standard'}};
  return{};
@@ -30,6 +34,8 @@ export function makeArchitectureAssembly(p:Project,catalogId:string,id:string,na
  if(districtConnectionIds.includes(catalogId))return makeDistrictConnection(p,catalogId,id,name);
  if(districtCourtIds.includes(catalogId))return makeDistrictCourt(p,catalogId,id,name);
  if(catalogId==='BUILT-265')return makeDistrictTerminal(p,id,name);
+ if(fleetAirportIds.includes(catalogId))return makeFleetAirport(p,catalogId,id,name);
+ if(fleetVehicleIds.includes(catalogId))return makeFleetVehicle(p,catalogId,id,name,params);
  if(catalogId==='BUILT-040'||catalogId==='BUILT-042')return distantArchitecture(p,catalogId,id,name,params);
  if(Number(catalogId.slice(6))>=75)return roofArchitecture(p,catalogId,id,name,String(params.roofWidth??'standard'));
  return nearArchitecture(p,catalogId,id,name,String(params.program??'default'));

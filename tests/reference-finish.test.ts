@@ -33,6 +33,17 @@ test('reapplying the profile does not overwrite original palette; both looks rem
  commit(e,[{op:'palette',name:'原始素色'}]);assert.equal(e.project.materials[3].surface,'none');assert.equal(e.project.materials[6].opacity,1);assert.equal(e.project.materials[11].intensity,0);
  commit(e,[{op:'palette',name:'参考材质试作'}]);assert.equal(e.project.materials[3].surface,'wood');assert.equal(e.project.materials[3].surfaceSeed,117);assert.equal(e.project.materials[42].surfaceRotation,90);
 });
+test('reference appearance stays bounded with more than 512 document materials and preserves unrelated user material/palette entries',()=>{
+ const e=setup();for(let id=6000;id<6032;id++)e.project.materials[id]={...e.project.materials[2],id,name:'user '+id,color:'#936b4a'};
+ assert.ok(Object.keys(e.project.materials).length>512);const before=structuredClone(e.project),commands=referenceFinishCommands(e.project);
+ for(const c of commands)if(c.op==='definePalette'){assert.ok(Object.keys(c.materials).length<=512);assert.ok(!c.materials['6000']);}
+ assert.deepEqual(e.project,before);assert.throws(()=>commit(e,[...commands,{op:'palette',name:'missing-palette'}]));assert.deepEqual(e.project,before);
+ commit(e,commands);for(let id=6000;id<6032;id++)assert.deepEqual(e.project.materials[id],before.materials[id]);assert.deepEqual(e.project.assets,before.assets);
+ commit(e,[{op:'undo'}]);assert.deepEqual(e.project.materials,before.materials);assert.deepEqual(e.project.palettes,before.palettes);
+ e.project.palettes['原始素色']={'3':{color:'#123456'},'6000':{color:'#abcdef'}};const saved=structuredClone(e.project.palettes['原始素色']);
+ commit(e,referenceFinishCommands(e.project));assert.deepEqual(e.project.palettes['原始素色'],saved);assert.deepEqual(e.project.materials[6000],before.materials[6000]);
+ commit(e,[{op:'palette',name:'原始素色'}]);assert.equal(e.project.materials[6000].color,'#abcdef');
+});
 test('export embeds PBR maps, transparent glass, physical scale, and real emissive strength',async()=>{
  const e=setup();commit(e,referenceFinishCommands(e.project));const {glb}=await buildGLB(e.project),doc=await new NodeIO().registerExtensions([KHRMaterialsEmissiveStrength]).readBinary(glb),mats=doc.getRoot().listMaterials(),byId=(id:number)=>mats.find(m=>m.getExtras().voxelMaterialId===id)!;
  const wood=byId(3);assert.ok(wood.getBaseColorTexture()?.getImage()?.length);assert.ok(wood.getNormalTexture()?.getImage()?.length);assert.ok(wood.getMetallicRoughnessTexture()?.getImage()?.length);assert.equal(wood.getExtras().surfaceScaleM,.75);assert.equal(wood.getExtras().surfaceSeed,117);
