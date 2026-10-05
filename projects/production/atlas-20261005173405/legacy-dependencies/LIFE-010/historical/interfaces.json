@@ -1,0 +1,174 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47
+    }
+  },
+  "assemblies": {},
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "life-010",
+      "name": "沙发框架",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.9000000000000001,
+            0,
+            0.8200000000000001
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              190,
+              80,
+              82
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "四柱、套肩和石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              190,
+              80,
+              82
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "座框与承托条",
+          "parent": "root",
+          "region": {
+            "min": [
+              4,
+              20,
+              4
+            ],
+            "max": [
+              186,
+              28,
+              79
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "透空扶手、下枨与侧竖枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              3,
+              28,
+              6
+            ],
+            "max": [
+              188,
+              61,
+              73
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "透空背架、上枨与嵌接座",
+          "parent": "root",
+          "region": {
+            "min": [
+              7,
+              27,
+              75
+            ],
+            "max": [
+              183,
+              78,
+              80
+            ]
+          }
+        },
+        {
+          "id": "part-4",
+          "name": "透空木构双人沙发框、独立扶手与石脚",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              0,
+              0
+            ],
+            "max": [
+              190,
+              80,
+              82
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

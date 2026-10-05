@@ -1,0 +1,175 @@
+{
+  "status": "superseded-material-assignment",
+  "run": "atlas-20261005170539",
+  "record": {
+    "id": "LIFE-228",
+    "params": {},
+    "isDefault": true,
+    "directory": "projects/production/atlas-20261005170539/exports/LIFE-228",
+    "instances": 4,
+    "closed": [
+      {
+        "assetId": "architecture-community-continuous-flower-flowerWhite",
+        "parts": 30
+      },
+      {
+        "assetId": "architecture-community-continuous-flower-shrubBlossom",
+        "parts": 30
+      },
+      {
+        "assetId": "architecture-community-continuous-flower-flowerAmber",
+        "parts": 30
+      }
+    ],
+    "pins": [
+      {
+        "assetId": "architecture-community-continuous-flower-flowerWhite",
+        "nativeDetails": 1
+      },
+      {
+        "assetId": "architecture-community-continuous-flower-shrubBlossom",
+        "nativeDetails": 1
+      },
+      {
+        "assetId": "architecture-community-continuous-flower-flowerAmber",
+        "nativeDetails": 1
+      }
+    ],
+    "routes": {
+      "checks": [],
+      "contacts": [],
+      "sampling": {
+        "maximumRouteStepM": 0.5,
+        "bodyHeightM": 1.9,
+        "defaultBodyWidthM": 0.45,
+        "footSampleDepthM": 0.02,
+        "slopeBottomAllowance": "0.025m + half body width times actual slope; avoids counting the same sloping walking surface as a torso obstruction"
+      }
+    },
+    "room": {
+      "atmospheric": [],
+      "uses": [],
+      "seats": [],
+      "bearings": [],
+      "mounts": [],
+      "kitchen": null,
+      "bonsai": [],
+      "drain": null,
+      "nativeTriangles": 5332,
+      "scope": "Independent queries of actual triangles/cells and evaluated texture alpha. Finite author snapshots only; no simulated wind, precipitation, temperature, hydrology or room controllers."
+    },
+    "extra": {
+      "students": [],
+      "drain": null,
+      "basin": null,
+      "door": null,
+      "meals": null,
+      "awning": null,
+      "scope": "Actual occupied cells, independent closed-part triangles and finite body volumes. Seated student checks include the complete two-island workstation; foods are queried despite nonphysical roles. No control, inventory, fluid, full privacy or structural certification."
+    },
+    "community": {
+      "bundledSeats": [],
+      "volumes": [],
+      "stage": [],
+      "plantings": [
+        {
+          "instance": "life-228-1",
+          "trough": "life-228-0",
+          "rootPoint": [
+            0.3,
+            0.34,
+            0.22
+          ],
+          "soilTopY": 0.38,
+          "sourceStemOffsetX": -0.39999999999999997,
+          "rootVisible": true,
+          "actualSoilContact": true
+        },
+        {
+          "instance": "life-228-2",
+          "trough": "life-228-0",
+          "rootPoint": [
+            0.7,
+            0.34,
+            0.22
+          ],
+          "soilTopY": 0.38,
+          "sourceStemOffsetX": 0,
+          "rootVisible": true,
+          "actualSoilContact": true
+        },
+        {
+          "instance": "life-228-3",
+          "trough": "life-228-0",
+          "rootPoint": [
+            1.1,
+            0.34,
+            0.22
+          ],
+          "soilTopY": 0.38,
+          "sourceStemOffsetX": 0.40000000000000013,
+          "rootVisible": true,
+          "actualSoilContact": true
+        }
+      ],
+      "drains": [
+        {
+          "name": "actual original trough drain",
+          "min": [
+            0.321,
+            0.055,
+            0.2
+          ],
+          "max": [
+            0.339,
+            0.385,
+            0.22
+          ],
+          "excludedInstances": [],
+          "clear": true,
+          "blocked": []
+        },
+        {
+          "name": "actual original trough drain",
+          "min": [
+            1.0310000000000001,
+            0.055,
+            0.2
+          ],
+          "max": [
+            1.049,
+            0.385,
+            0.22
+          ],
+          "excludedInstances": [],
+          "clear": true,
+          "blocked": []
+        }
+      ],
+      "resident": null,
+      "scope": "Actual finite community furniture, native soil and flower-root contact, original drains and posed standing resident geometry. No original activity/simulation binding or human art acceptance."
+    },
+    "materialDerivatives": [],
+    "nearTriangles": 5332,
+    "farTriangles": 4252,
+    "exports": [
+      {
+        "key": "visual-far",
+        "bytes": 625000,
+        "boundsErrorM": 2.3841858043383013e-08,
+        "toleranceM": 5e-06,
+        "alpha": []
+      },
+      {
+        "key": "visual-material",
+        "bytes": 3446160,
+        "boundsErrorM": 2.3841858043383013e-08,
+        "toleranceM": 5e-06,
+        "alpha": []
+      }
+    ],
+    "geometrySHA256": "3a771bf46e6bc76537765dadc30ade7ee039ee9079ff3c0f0e14aed2fbfa8599",
+    "nativeInterfacesAndActualCollisionIdentical": true
+  },
+  "semanticFinding": "The previous geometric checks did not distinguish flowerAmber petals from the centre. Corrected in finalRun atlas-20261005173405; this record is historical, not final acceptance."
+}

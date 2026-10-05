@@ -1,0 +1,1473 @@
+{
+  "instances": [
+    {
+      "id": "top-0-body",
+      "assetId": "slot-adultA-CHAR-113-CHAR-118-CHAR-121",
+      "name": "衣装替换身体框架 · adultA",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-CHAR-113",
+      "assetId": "char-113-adultA",
+      "name": "CHAR-113",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-CHAR-118",
+      "assetId": "char-118-adultA",
+      "name": "CHAR-118",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-CHAR-121",
+      "assetId": "char-121-adultA",
+      "name": "CHAR-121",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-head",
+      "assetId": "mounted-head-adult-adultA-head",
+      "name": "独立成人头 · 衣装安装",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-hair",
+      "assetId": "mounted-hair-adult-adultA-head",
+      "name": "独立hair · 衣装安装",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-hand-1",
+      "assetId": "mounted-hand-adult-adultA-wrist-1",
+      "name": "独立hand · 衣装安装",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-foot-1",
+      "assetId": "mounted-foot-adult-reflected-adultA-ankle-1",
+      "name": "独立foot · 镜像 · 衣装安装",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-hand1",
+      "assetId": "mounted-hand-adult-reflected-adultA-wrist1",
+      "name": "独立hand · 镜像 · 衣装安装",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    },
+    {
+      "id": "top-0-foot1",
+      "assetId": "mounted-foot-adult-adultA-ankle1",
+      "name": "独立foot · 衣装安装",
+      "position": [
+        -0.95,
+        0.02,
+        0
+      ],
+      "rotation": 0,
+      "parent": null
+    }
+  ],
+  "assets": [
+    {
+      "id": "slot-adultA-CHAR-113-CHAR-118-CHAR-121",
+      "source": {
+        "kind": "author-garment-body-slot",
+        "notCatalogMaster": true,
+        "sourceAssetId": "body-adultA",
+        "originalBodyRetained": true,
+        "removedMeshes": [
+          "髋腹胸肩连续衣身",
+          "衣领承接颈部",
+          "裤腿膝踝连续收束--1",
+          "膝前衣褶--1",
+          "肩肘腕连续袖身--1",
+          "袖口织边--1",
+          "裤脚织边--1",
+          "裤腿膝踝连续收束-1",
+          "膝前衣褶-1",
+          "肩肘腕连续袖身-1",
+          "袖口织边-1",
+          "裤脚织边-1"
+        ],
+        "removedNativeParts": [
+          "胸前最小织标",
+          "腹部拉链止挡"
+        ],
+        "exposedArmsAreAuthorProfileStudy": false,
+        "cutSourceMeshesAtActualElbowKnee": true,
+        "oldCoveredExtremitiesExcluded": true,
+        "hiddenBodyPolicy": "Replace covered torso/sleeve/trouser display surfaces; do not overlay duplicate old clothing"
+      },
+      "bounds": {
+        "min": [
+          -0.0432,
+          1.43,
+          -0.042
+        ],
+        "max": [
+          0.0432,
+          1.463,
+          0.042
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    },
+    {
+      "id": "body-adultA",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-059",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {
+          "extremities": "sockets"
+        },
+        "nominalDesignSizeM": [
+          0.54,
+          1.46,
+          0.3
+        ],
+        "features": "成人A直肩髋衣身；独立肘膝腕踝挂点",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M032",
+          "slot": 4,
+          "imageSHA256": "676fbbac1034601abbc6cc686d2a101f03c330e38af1fb070e86f3a32921b228"
+        },
+        "referenceStage": "candidate",
+        "limitations": "作者混合几何候选：5mm基础细块、连续斜面与曲面。全部为非碰撞外观，不写Citizen/模拟或改变原0.2m玩法网格。原源码、尺寸矩阵、骨骼、年龄/种子条件与面部图集未收件，尺寸比例为作者研究；静态装配不是绑定、蒙皮或动画。身体不含头发和精细头部；人工美术验收待定。历史5cm细格说明不覆盖用户允许连续曲面的最新修正。",
+        "units": "metres",
+        "front": "-Z",
+        "gameIntegration": false,
+        "animation": false,
+        "collision": "none; visual-only",
+        "detail": {
+          "proportions": {
+            "heightM": 1.7,
+            "headM": 0.24,
+            "hipYM": 0.86,
+            "kneeYM": 0.46,
+            "shoulderYM": 1.37,
+            "shoulderHalfWidthM": 0.205,
+            "hipHalfWidthM": 0.1,
+            "waistHalfWidthM": 0.14,
+            "hipRadiusM": 0.164,
+            "section": "bevelled"
+          },
+          "overallHeightIncludesSeparateHead": true,
+          "headExcluded": true,
+          "hairExcluded": true,
+          "extremities": "sockets",
+          "coveredExtremities": "neutral fully clothed modelling suit mittens/socks; not CHAR070 articulated hands or CHAR071 bare feet",
+          "futureRig": [
+            "CHAR-073",
+            "CHAR-074"
+          ],
+          "genderOrIdentityInferred": false,
+          "elderBentBackReservedFor": "CHAR-080",
+          "originalSkeletonBound": false
+        },
+        "dimensionsM": [
+          0.588296,
+          1.3717,
+          0.227996
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "modelSuit",
+            "modelSuitTrim"
+          ],
+          "note": "衣套/帽布/帽皮圈/帽五金/玻璃徽/包布/皮边/五金/衬/油墨独立；皮肤、褶线、唇、眼、眉独立。全部非碰撞，装饰玻璃非灯。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.294148,
+          0.1003,
+          -0.115
+        ],
+        "max": [
+          0.294148,
+          1.472,
+          0.112996
+        ]
+      },
+      "rig": null
+    },
+    {
+      "id": "char-113-adultA",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-113",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {
+          "bodyFit": "adultA"
+        },
+        "features": "独立交领短上衣；真领/腰/袖口和分件织带",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M036",
+          "slot": 1,
+          "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+        },
+        "referenceStage": "candidate",
+        "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+        "units": "metres",
+        "front": "-Z",
+        "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+        "gameIntegration": false,
+        "animationClips": false,
+        "manualRigidBinding": true,
+        "collision": "none; visual-only",
+        "detail": {
+          "bodyFit": "adultA",
+          "torsoProfiles": [
+            {
+              "y": 0.88,
+              "rx": 0.21648,
+              "rz": 0.14924
+            },
+            {
+              "y": 1.0436,
+              "rx": 0.14600000000000002,
+              "rz": 0.10979800000000002
+            },
+            {
+              "y": 1.1400000000000001,
+              "rx": 0.18039999999999998,
+              "rz": 0.12045800000000001
+            },
+            {
+              "y": 1.4000000000000001,
+              "rx": 0.2009,
+              "rz": 0.10660000000000001
+            },
+            {
+              "y": 1.446,
+              "rx": 0.0528,
+              "rz": 0.049199999999999994
+            }
+          ],
+          "neckAndWaistOpen": true,
+          "realArmholeGaps": true,
+          "sleeveless": false,
+          "openFront": false,
+          "sourceBodyShellReplacement": true,
+          "coatRequiresIndependentUnderlayer": false,
+          "restSleeveSeamY": 1.1252,
+          "clothDynamics": false
+        },
+        "dimensionsM": [
+          0.768608036,
+          0.566,
+          0.31223999999999996
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "garmentLight",
+            "garmentLining",
+            "garmentTrim",
+            "garmentStrap",
+            "garmentBuckle"
+          ],
+          "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.384304018,
+          0.88,
+          -0.16
+        ],
+        "max": [
+          0.384304018,
+          1.446,
+          0.15224
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    },
+    {
+      "id": "char-118-adultA",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-118",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {
+          "bodyFit": "adultA"
+        },
+        "features": "成对日常裤腿；实际腰孔、膝分件和裤脚",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M036",
+          "slot": 6,
+          "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+        },
+        "referenceStage": "candidate",
+        "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+        "units": "metres",
+        "front": "-Z",
+        "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+        "gameIntegration": false,
+        "animationClips": false,
+        "manualRigidBinding": true,
+        "collision": "none; visual-only",
+        "detail": {
+          "bodyFit": "adultA",
+          "pairedLegs": true,
+          "waistAndAnklesOpen": true,
+          "hipAndKneeRigidSections": true,
+          "clothDynamics": false
+        },
+        "dimensionsM": [
+          0.38048,
+          0.7867000000000001,
+          0.249722
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "garmentTrim",
+            "garmentPattern",
+            "garmentBuckle",
+            "trouserCloth"
+          ],
+          "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.19024,
+          0.1253,
+          -0.125
+        ],
+        "max": [
+          0.19024,
+          0.912,
+          0.124722
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    },
+    {
+      "id": "char-121-adultA",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-121",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {
+          "bodyFit": "adultA"
+        },
+        "features": "成对皮质短靴；真鞋腔、布衬与橡胶底",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M036",
+          "slot": 9,
+          "imageSHA256": "48d3ad7cd650278c83544c409e817691eb8235c2a45adc395ec5456399c0470c"
+        },
+        "referenceStage": "candidate",
+        "limitations": "技术候选：最小扣件/织标5mm原生体素，衣面、斜领、褶片和鞋壳连续网格。全部非碰撞。作者逐组件刚性关节，未绑定软布、原骨骼、动作片段、原受保护净空或游戏运行；长下摆仅站姿作者适配。服装不包含头、头发、手足或原身体；原图中的配件不夹带成新母版。人工美术验收0。",
+        "units": "metres",
+        "front": "-Z",
+        "originConvention": "author body rest origin, ground Y0; shoe sole extends below ground by its stated thickness",
+        "gameIntegration": false,
+        "animationClips": false,
+        "manualRigidBinding": true,
+        "collision": "none; visual-only",
+        "detail": {
+          "bodyFit": "adultA",
+          "pairedFootwear": true,
+          "footExcluded": true,
+          "shoeCavity": true,
+          "independentLiningAndSole": true,
+          "fitsFoot": "CHAR-071 adult",
+          "sourceBody": "CHAR-059",
+          "soleGroundOffsetM": -0.02,
+          "poseScope": "rigid ankle binding; no sole compression or toe flex"
+        },
+        "dimensionsM": [
+          0.368,
+          0.265,
+          0.314
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "garmentStrap",
+            "garmentBuckle",
+            "bootUpper",
+            "shoeLining",
+            "footwearSole",
+            "footwearEdge"
+          ],
+          "note": "服装织物、织入纹样、固定带、金属扣、裤布、靴皮、鞋布、鞋衬、橡胶鞋底/鞋沿及寝衣布独立；全部非碰撞零发光。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.184,
+          -0.02,
+          -0.215
+        ],
+        "max": [
+          0.184,
+          0.245,
+          0.099
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    },
+    {
+      "id": "mounted-head-adult-adultA-head",
+      "source": {
+        "kind": "author-garment-mounted-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "head-adult",
+        "originOnlyRelocation": true,
+        "rigidBodyJoint": "head",
+        "originalComponentRigRetainedInSource": true
+      },
+      "bounds": {
+        "min": [
+          -0.098,
+          1.438,
+          -0.116
+        ],
+        "max": [
+          0.098,
+          1.7,
+          0.086
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    },
+    {
+      "id": "head-adult",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-066",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {},
+        "nominalDesignSizeM": [
+          0.2,
+          0.24,
+          0.21
+        ],
+        "features": "成人精细颅颊颌曲面；独立鼻耳眼唇材质",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M032",
+          "slot": 11,
+          "imageSHA256": "676fbbac1034601abbc6cc686d2a101f03c330e38af1fb070e86f3a32921b228"
+        },
+        "referenceStage": "candidate",
+        "limitations": "作者混合几何候选：5mm基础细块、连续斜面与曲面。全部为非碰撞外观，不写Citizen/模拟或改变原0.2m玩法网格。原源码、尺寸矩阵、骨骼、年龄/种子条件与面部图集未收件，尺寸比例为作者研究；静态装配不是绑定、蒙皮或动画。身体不含头发和精细头部；人工美术验收待定。历史5cm细格说明不覆盖用户允许连续曲面的最新修正。",
+        "units": "metres",
+        "front": "-Z",
+        "gameIntegration": false,
+        "animation": false,
+        "collision": "none; visual-only",
+        "detail": {
+          "stage": "adult",
+          "heightM": 0.24,
+          "adultUniformScale": false,
+          "headHairExcluded": true,
+          "faceAtlasBound": false,
+          "faceRepresentation": "actual skin mesh and 5mm ocular/lip/brow components",
+          "cranialProfiles": [
+            {
+              "y": 0,
+              "rx": 0.039,
+              "rz": 0.047,
+              "z": -0.009
+            },
+            {
+              "y": 0.018,
+              "rx": 0.056,
+              "rz": 0.058,
+              "z": -0.006
+            },
+            {
+              "y": 0.043,
+              "rx": 0.071,
+              "rz": 0.068,
+              "z": -0.003
+            },
+            {
+              "y": 0.07,
+              "rx": 0.082,
+              "rz": 0.08
+            },
+            {
+              "y": 0.1,
+              "rx": 0.085,
+              "rz": 0.084
+            },
+            {
+              "y": 0.128,
+              "rx": 0.084,
+              "rz": 0.086
+            },
+            {
+              "y": 0.154,
+              "rx": 0.084,
+              "rz": 0.083
+            },
+            {
+              "y": 0.19,
+              "rx": 0.079,
+              "rz": 0.077
+            },
+            {
+              "y": 0.218,
+              "rx": 0.062,
+              "rz": 0.061
+            },
+            {
+              "y": 0.235,
+              "rx": 0.033,
+              "rz": 0.034
+            },
+            {
+              "y": 0.24,
+              "rx": 0.013,
+              "rz": 0.018
+            }
+          ],
+          "originalAgeConditionBound": false
+        },
+        "dimensionsM": [
+          0.196,
+          0.262,
+          0.202
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "skinSurface",
+            "skinCrease",
+            "skinLip",
+            "eyeWhite",
+            "eyeIris",
+            "eyePupil",
+            "hairMass"
+          ],
+          "note": "衣套/帽布/帽皮圈/帽五金/玻璃徽/包布/皮边/五金/衬/油墨独立；皮肤、褶线、唇、眼、眉独立。全部非碰撞，装饰玻璃非灯。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.098,
+          -0.022,
+          -0.116
+        ],
+        "max": [
+          0.098,
+          0.24,
+          0.086
+        ]
+      },
+      "rig": null
+    },
+    {
+      "id": "mounted-hair-adult-adultA-head",
+      "source": {
+        "kind": "author-garment-mounted-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "hair-adult",
+        "originOnlyRelocation": true,
+        "rigidBodyJoint": "head",
+        "originalComponentRigRetainedInSource": true
+      },
+      "bounds": {
+        "min": [
+          -0.137905171,
+          1.535,
+          -0.134
+        ],
+        "max": [
+          0.137905171,
+          1.735,
+          0.134
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    },
+    {
+      "id": "hair-adult",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-085",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {
+          "hairFit": "adult"
+        },
+        "nominalDesignSizeM": [
+          0.24,
+          0.28,
+          0.25
+        ],
+        "features": "整齐短发完整内腔；侧后发束与额前短束",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M033",
+          "slot": 9,
+          "imageSHA256": "0c6786ad600d5ce87fbf4f4b977eff5ab91834a8ef25f18e46a5a29d654f6926"
+        },
+        "referenceStage": "candidate",
+        "limitations": "作者三维候选：最小组件保留5mm体素，斜面曲面为连续网格；全部角色外观非碰撞。头部、发型、手足、衣覆腹段和绑定导架独立。手/骨架/第一人称组件具真实关节、逆绑定矩阵及刚性分件权重，未实现软皮肤、IK、动作片段或原角色控制器。原源码、尺寸、骨骼、面部图集未收件；不写Citizen/模拟。人工美术验收待定。",
+        "units": "metres",
+        "front": "-Z",
+        "gameIntegration": false,
+        "animationClips": false,
+        "manualRigidBinding": false,
+        "collision": "none; visual-only",
+        "detail": {
+          "style": "CHAR-085",
+          "fit": "adult",
+          "fullHair": true,
+          "headExcluded": true,
+          "innerRim": [
+            [
+              0,
+              0.158,
+              -0.108
+            ],
+            [
+              0.042860544424890054,
+              0.1516820011984368,
+              -0.09977898951121897
+            ],
+            [
+              0.07919595949289332,
+              0.13368986283848344,
+              -0.07636753236814714
+            ],
+            [
+              0.10347450764126412,
+              0.10676272488630245,
+              -0.0413298106954297
+            ],
+            [
+              0.112,
+              0.075,
+              -6.613092715395707e-18
+            ],
+            [
+              0.10347450764126412,
+              0.075,
+              0.04132981069542969
+            ],
+            [
+              0.07919595949289333,
+              0.075,
+              0.07636753236814713
+            ],
+            [
+              0.04286054442489007,
+              0.075,
+              0.09977898951121897
+            ],
+            [
+              1.3716044150450356e-17,
+              0.075,
+              0.108
+            ],
+            [
+              -0.04286054442489005,
+              0.075,
+              0.09977898951121898
+            ],
+            [
+              -0.07919595949289332,
+              0.075,
+              0.07636753236814715
+            ],
+            [
+              -0.10347450764126409,
+              0.075,
+              0.04132981069542976
+            ],
+            [
+              -0.112,
+              0.075,
+              1.983927814618712e-17
+            ],
+            [
+              -0.1034745076412641,
+              0.10676272488630248,
+              -0.04132981069542972
+            ],
+            [
+              -0.07919595949289335,
+              0.13368986283848344,
+              -0.07636753236814711
+            ],
+            [
+              -0.042860544424890124,
+              0.15168200119843678,
+              -0.09977898951121894
+            ]
+          ],
+          "innerCrown": [
+            [
+              [
+                0,
+                0.158,
+                -0.108
+              ],
+              [
+                0.042860544424890054,
+                0.1516820011984368,
+                -0.09977898951121897
+              ],
+              [
+                0.07919595949289332,
+                0.13368986283848344,
+                -0.07636753236814714
+              ],
+              [
+                0.10347450764126412,
+                0.10676272488630245,
+                -0.0413298106954297
+              ],
+              [
+                0.112,
+                0.075,
+                -6.613092715395707e-18
+              ],
+              [
+                0.10347450764126412,
+                0.075,
+                0.04132981069542969
+              ],
+              [
+                0.07919595949289333,
+                0.075,
+                0.07636753236814713
+              ],
+              [
+                0.04286054442489007,
+                0.075,
+                0.09977898951121897
+              ],
+              [
+                1.3716044150450356e-17,
+                0.075,
+                0.108
+              ],
+              [
+                -0.04286054442489005,
+                0.075,
+                0.09977898951121898
+              ],
+              [
+                -0.07919595949289332,
+                0.075,
+                0.07636753236814715
+              ],
+              [
+                -0.10347450764126409,
+                0.075,
+                0.04132981069542976
+              ],
+              [
+                -0.112,
+                0.075,
+                1.983927814618712e-17
+              ],
+              [
+                -0.1034745076412641,
+                0.10676272488630248,
+                -0.04132981069542972
+              ],
+              [
+                -0.07919595949289335,
+                0.13368986283848344,
+                -0.07636753236814711
+              ],
+              [
+                -0.042860544424890124,
+                0.15168200119843678,
+                -0.09977898951121894
+              ]
+            ],
+            [
+              [
+                0,
+                0.2,
+                -0.099
+              ],
+              [
+                0.03865102666887407,
+                0.2,
+                -0.0914640737186174
+              ],
+              [
+                0.0714177848998413,
+                0.2,
+                -0.0700035713374682
+              ],
+              [
+                0.09331183278363997,
+                0.2,
+                -0.03788565980414389
+              ],
+              [
+                0.101,
+                0.2,
+                -6.062001655779399e-18
+              ],
+              [
+                0.09331183278363997,
+                0.2,
+                0.037885659804143886
+              ],
+              [
+                0.07141778489984131,
+                0.2,
+                0.0700035713374682
+              ],
+              [
+                0.03865102666887408,
+                0.2,
+                0.0914640737186174
+              ],
+              [
+                1.2368932671388268e-17,
+                0.2,
+                0.099
+              ],
+              [
+                -0.03865102666887406,
+                0.2,
+                0.09146407371861741
+              ],
+              [
+                -0.0714177848998413,
+                0.2,
+                0.07000357133746822
+              ],
+              [
+                -0.09331183278363994,
+                0.2,
+                0.03788565980414395
+              ],
+              [
+                -0.101,
+                0.2,
+                1.8186004967338195e-17
+              ],
+              [
+                -0.09331183278363996,
+                0.2,
+                -0.03788565980414391
+              ],
+              [
+                -0.07141778489984132,
+                0.2,
+                -0.07000357133746819
+              ],
+              [
+                -0.038651026668874135,
+                0.2,
+                -0.09146407371861737
+              ]
+            ],
+            [
+              [
+                0,
+                0.244,
+                -0.065
+              ],
+              [
+                0.024874423103730836,
+                0.244,
+                -0.06005216961323364
+              ],
+              [
+                0.045961940777125586,
+                0.244,
+                -0.04596194077712559
+              ],
+              [
+                0.06005216961323364,
+                0.244,
+                -0.02487442310373084
+              ],
+              [
+                0.065,
+                0.244,
+                -3.980102097228898e-18
+              ],
+              [
+                0.06005216961323364,
+                0.244,
+                0.024874423103730833
+              ],
+              [
+                0.04596194077712559,
+                0.244,
+                0.045961940777125586
+              ],
+              [
+                0.024874423103730843,
+                0.244,
+                0.06005216961323364
+              ],
+              [
+                7.960204194457797e-18,
+                0.244,
+                0.065
+              ],
+              [
+                -0.02487442310373083,
+                0.244,
+                0.06005216961323365
+              ],
+              [
+                -0.045961940777125586,
+                0.244,
+                0.0459619407771256
+              ],
+              [
+                -0.060052169613233626,
+                0.244,
+                0.024874423103730874
+              ],
+              [
+                -0.065,
+                0.244,
+                1.1940306291686694e-17
+              ],
+              [
+                -0.06005216961323363,
+                0.244,
+                -0.02487442310373085
+              ],
+              [
+                -0.0459619407771256,
+                0.244,
+                -0.04596194077712558
+              ],
+              [
+                -0.024874423103730878,
+                0.244,
+                -0.060052169613233626
+              ]
+            ],
+            [
+              [
+                0,
+                0.263,
+                -0.025
+              ],
+              [
+                0.009184402376762156,
+                0.263,
+                -0.02309698831278217
+              ],
+              [
+                0.01697056274847714,
+                0.263,
+                -0.01767766952966369
+              ],
+              [
+                0.022173108780270883,
+                0.263,
+                -0.009567085809127247
+              ],
+              [
+                0.024,
+                0.263,
+                -1.5308084989341916e-18
+              ],
+              [
+                0.022173108780270883,
+                0.263,
+                0.009567085809127244
+              ],
+              [
+                0.016970562748477143,
+                0.263,
+                0.017677669529663688
+              ],
+              [
+                0.009184402376762157,
+                0.263,
+                0.02309698831278217
+              ],
+              [
+                2.9391523179536477e-18,
+                0.263,
+                0.025
+              ],
+              [
+                -0.009184402376762152,
+                0.263,
+                0.023096988312782174
+              ],
+              [
+                -0.01697056274847714,
+                0.263,
+                0.01767766952966369
+              ],
+              [
+                -0.022173108780270876,
+                0.263,
+                0.00956708580912726
+              ],
+              [
+                -0.024,
+                0.263,
+                4.592425496802574e-18
+              ],
+              [
+                -0.02217310878027088,
+                0.263,
+                -0.00956708580912725
+              ],
+              [
+                -0.016970562748477146,
+                0.263,
+                -0.017677669529663684
+              ],
+              [
+                -0.00918440237676217,
+                0.263,
+                -0.023096988312782164
+              ]
+            ]
+          ],
+          "childFitPreservesHeadWidth": true,
+          "childHeadMaster": "CHAR-068 school",
+          "adultHeadMaster": "CHAR-066",
+          "clippedForeheadAvoidance": true,
+          "hairColorIsPalette": true,
+          "lowestAuthoredStrandM": 0.088,
+          "originalScalpOrRigBound": false
+        },
+        "dimensionsM": [
+          0.275810342,
+          0.2,
+          0.268
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "hairMass",
+            "hairRidge"
+          ],
+          "note": "实际皮肤/指甲/皮套/衣料/毛发分离；导架为作者塑料标识，不冒称人体骨材；全部非碰撞。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.137905171,
+          0.075,
+          -0.134
+        ],
+        "max": [
+          0.137905171,
+          0.275,
+          0.134
+        ]
+      },
+      "rig": null
+    },
+    {
+      "id": "mounted-hand-adult-adultA-wrist-1",
+      "source": {
+        "kind": "author-garment-mounted-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "hand-adult",
+        "originOnlyRelocation": true,
+        "rigidBodyJoint": "hand-basis",
+        "originalComponentRigRetainedInSource": true
+      },
+      "bounds": {
+        "min": [
+          -0.362537323,
+          0.75371894,
+          -0.075683332
+        ],
+        "max": [
+          -0.265537861,
+          0.928954816,
+          0.050319056
+        ]
+      },
+      "rig": {
+        "joints": 17
+      }
+    },
+    {
+      "id": "hand-adult",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-070",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {
+          "limbFit": "adult",
+          "handPose": "open"
+        },
+        "nominalDesignSizeM": [
+          0.24,
+          0.28,
+          0.25
+        ],
+        "features": "十五指节关节；张手与握持；半掌皮套与真腕圈",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M033",
+          "slot": 3,
+          "imageSHA256": "0c6786ad600d5ce87fbf4f4b977eff5ab91834a8ef25f18e46a5a29d654f6926"
+        },
+        "referenceStage": "candidate",
+        "limitations": "作者三维候选：最小组件保留5mm体素，斜面曲面为连续网格；全部角色外观非碰撞。头部、发型、手足、衣覆腹段和绑定导架独立。手/骨架/第一人称组件具真实关节、逆绑定矩阵及刚性分件权重，未实现软皮肤、IK、动作片段或原角色控制器。原源码、尺寸、骨骼、面部图集未收件；不写Citizen/模拟。人工美术验收待定。",
+        "units": "metres",
+        "front": "-Z",
+        "gameIntegration": false,
+        "animationClips": false,
+        "manualRigidBinding": true,
+        "collision": "none; visual-only",
+        "detail": {
+          "fit": "adult",
+          "pose": "open",
+          "canonicalSide": "thumb +X; reflect X and rewind for the opposite side",
+          "fullyBare": false,
+          "halfPalmWrap": true,
+          "actualFingerJoints": 15,
+          "weighting": "one rigid joint per closed segment and native nail block",
+          "softSkinWeights": false,
+          "graspControllerBound": false,
+          "gripSocketIsAuthorStudy": true
+        },
+        "dimensionsM": [
+          0.12866676,
+          0.16999999999999998,
+          0.06926384
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "skinSurface",
+            "skinNail",
+            "handWrap",
+            "characterFastener"
+          ],
+          "note": "实际皮肤/指甲/皮套/衣料/毛发分离；导架为作者塑料标识，不冒称人体骨材；全部非碰撞。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.04465152,
+          -0.155,
+          -0.035
+        ],
+        "max": [
+          0.08401524,
+          0.015,
+          0.03426384
+        ]
+      },
+      "rig": {
+        "joints": 17
+      }
+    },
+    {
+      "id": "mounted-foot-adult-reflected-adultA-ankle-1",
+      "source": {
+        "kind": "author-garment-mounted-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "foot-adult-reflected",
+        "originOnlyRelocation": true,
+        "rigidBodyJoint": "ankle-1",
+        "originalComponentRigRetainedInSource": true
+      },
+      "bounds": {
+        "min": [
+          -0.158,
+          0,
+          -0.181
+        ],
+        "max": [
+          -0.042,
+          0.1263,
+          0.066
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    },
+    {
+      "id": "foot-adult-reflected",
+      "source": {
+        "kind": "author-reflected-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "foot-adult",
+        "sourceParameters": {
+          "limbFit": "adult"
+        },
+        "exactNativeReflection": true
+      },
+      "bounds": {
+        "min": [
+          -0.058,
+          -0.1003,
+          -0.181
+        ],
+        "max": [
+          0.058,
+          0.026,
+          0.066
+        ]
+      },
+      "rig": null
+    },
+    {
+      "id": "foot-adult",
+      "source": {
+        "kind": "catalog-recipe",
+        "catalogId": "CHAR-071",
+        "recipeRevision": 1,
+        "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+        "styleRevision": 44,
+        "parameters": {
+          "limbFit": "adult"
+        },
+        "nominalDesignSizeM": [
+          0.24,
+          0.28,
+          0.25
+        ],
+        "features": "五枚独立足趾；抬升足弓；成人/儿童踝口",
+        "geometryStage": "candidate",
+        "reference": {
+          "sheet": "M033",
+          "slot": 4,
+          "imageSHA256": "0c6786ad600d5ce87fbf4f4b977eff5ab91834a8ef25f18e46a5a29d654f6926"
+        },
+        "referenceStage": "candidate",
+        "limitations": "作者三维候选：最小组件保留5mm体素，斜面曲面为连续网格；全部角色外观非碰撞。头部、发型、手足、衣覆腹段和绑定导架独立。手/骨架/第一人称组件具真实关节、逆绑定矩阵及刚性分件权重，未实现软皮肤、IK、动作片段或原角色控制器。原源码、尺寸、骨骼、面部图集未收件；不写Citizen/模拟。人工美术验收待定。",
+        "units": "metres",
+        "front": "-Z",
+        "gameIntegration": false,
+        "animationClips": false,
+        "manualRigidBinding": false,
+        "collision": "none; visual-only",
+        "detail": {
+          "fit": "adult",
+          "bareSkin": true,
+          "shoesExcluded": true,
+          "groundYM": -0.10029999999999999,
+          "actualArchGapM": 0.028,
+          "canonicalSide": "right; left mirrors X, not another master",
+          "fiveToeMeshes": true
+        },
+        "dimensionsM": [
+          0.116,
+          0.1263,
+          0.247
+        ],
+        "materialAssignmentReview": {
+          "revision": 1,
+          "method": "actual-voxel-and-mesh-role-check",
+          "roles": [
+            "skinSurface",
+            "skinNail"
+          ],
+          "note": "实际皮肤/指甲/皮套/衣料/毛发分离；导架为作者塑料标识，不冒称人体骨材；全部非碰撞。"
+        }
+      },
+      "bounds": {
+        "min": [
+          -0.058,
+          -0.1003,
+          -0.181
+        ],
+        "max": [
+          0.058,
+          0.026,
+          0.066
+        ]
+      },
+      "rig": null
+    },
+    {
+      "id": "mounted-hand-adult-reflected-adultA-wrist1",
+      "source": {
+        "kind": "author-garment-mounted-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "hand-adult-reflected",
+        "originOnlyRelocation": true,
+        "rigidBodyJoint": "hand-basis",
+        "originalComponentRigRetainedInSource": true
+      },
+      "bounds": {
+        "min": [
+          0.265537861,
+          0.75371894,
+          -0.075683332
+        ],
+        "max": [
+          0.362537323,
+          0.928954816,
+          0.050319056
+        ]
+      },
+      "rig": {
+        "joints": 17
+      }
+    },
+    {
+      "id": "hand-adult-reflected",
+      "source": {
+        "kind": "author-reflected-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "hand-adult",
+        "sourceParameters": {
+          "limbFit": "adult",
+          "handPose": "open"
+        },
+        "exactNativeReflection": true
+      },
+      "bounds": {
+        "min": [
+          -0.08401524,
+          -0.155,
+          -0.035
+        ],
+        "max": [
+          0.04465152,
+          0.015,
+          0.03426384
+        ]
+      },
+      "rig": {
+        "joints": 17
+      }
+    },
+    {
+      "id": "mounted-foot-adult-adultA-ankle1",
+      "source": {
+        "kind": "author-garment-mounted-component",
+        "notCatalogMaster": true,
+        "sourceAssetId": "foot-adult",
+        "originOnlyRelocation": true,
+        "rigidBodyJoint": "ankle1",
+        "originalComponentRigRetainedInSource": true
+      },
+      "bounds": {
+        "min": [
+          0.042,
+          0,
+          -0.181
+        ],
+        "max": [
+          0.158,
+          0.1263,
+          0.066
+        ]
+      },
+      "rig": {
+        "joints": 16
+      }
+    }
+  ],
+  "flowerRoles": [
+    "flowerWhite",
+    "flowerAmber",
+    "shrubBlossom",
+    "lotusPetal"
+  ]
+}
