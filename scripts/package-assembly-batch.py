@@ -118,7 +118,7 @@ with ZipFile(args.output, 'w', ZIP_DEFLATED, compresslevel=6) as archive:
         archive.write(p, p.relative_to(root))
     archive.writestr('batch-manifest.json', json.dumps(manifest, ensure_ascii=False, indent=2))
     archive.writestr('catalog-contract-references.json', json.dumps(list(catalog_contracts.values()), ensure_ascii=False, indent=2))
-    archive.writestr('使用说明.txt', f'''{args.sheet} 建筑组合模板：{reference_count} 条参考，{form_count} 种有限形态，新增基础母版 0。
+    archive.writestr('使用说明.txt', f'''{args.sheet} 资产组合模板：{reference_count} 条参考，{form_count} 种有限形态，新增基础母版 0。
 projects 中的原生文件保存组件、原件/派生关系和实际实例；整体单位米，Y 轴向上。
 visual.glb 为整组场景，visual-material.glb 带实际参考材质，visual-far.glb 为手动远档。
 通用查看器可读取GLB；编辑器可打开原生单组或gallery文件。若含天球，应按场景extras在独立背景通道绘制天空，按前景几何构图，避免天球半径使场景缩小；半球光须消费端配置。云雾雨与天空PNG同时随包。
@@ -151,7 +151,7 @@ if result['archiveBytes'] > args.part_size_mib * 1024**2:
     shutil.move(args.output, retained)
     base = 'https://github.com/stars2022/voxel-studio-yunshan/raw/main/' + str(out.relative_to(root)) + '/'
     text = '\n'.join([
-        f'{args.sheet} 建筑资产包：完整 ZIP 的 {len(parts)} 个二进制分卷；请下载全部分卷到同一文件夹。',
+        f'{args.sheet} 资产包：完整 ZIP 的 {len(parts)} 个二进制分卷；请下载全部分卷到同一文件夹。',
         f'内容：{reference_count} 个组合模板、{form_count} 种有限形态、{len(manifest["dependencies"])} 个递归依赖；人工美术验收 0。',
         '各卷不能单独解压。可用 7-Zip 打开 .001，或先按下面顺序合并，再解压 ZIP。',
         '', *[base + p['file'] for p in parts], '',

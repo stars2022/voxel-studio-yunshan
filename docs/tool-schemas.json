@@ -1681,6 +1681,37 @@
                   "params": {
                     "type": "object",
                     "properties": {
+                      "handPose": {
+                        "enum": [
+                          "open",
+                          "grip"
+                        ]
+                      },
+                      "view": {
+                        "enum": [
+                          "observer",
+                          "first-person-open",
+                          "first-person-grip"
+                        ]
+                      },
+                      "wear": {
+                        "enum": [
+                          "collars",
+                          "harnesses"
+                        ]
+                      },
+                      "group": {
+                        "enum": [
+                          "farmyard",
+                          "small-stock"
+                        ]
+                      },
+                      "habitat": {
+                        "enum": [
+                          "forest-bank",
+                          "stream"
+                        ]
+                      },
                       "privacyDoor": {
                         "enum": [
                           "open",

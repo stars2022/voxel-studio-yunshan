@@ -1,0 +1,77 @@
+{
+  "status": "preparation-only-not-produced",
+  "sheet": "M059",
+  "sourceImageActuallyInspected": "projects/reference-atlas/images/M059.png",
+  "imageSHA256": "6846692c3d064e0636dff09d32d962753512169b01fae2b8c53e9161a48d62c0",
+  "types": {
+    "assemblies": [
+      "CHAR-174",
+      "CHAR-175",
+      "CHAR-176",
+      "CHAR-332",
+      "CHAR-333",
+      "CHAR-334"
+    ],
+    "parameterVariants": [
+      "BUILT-025",
+      "BUILT-026",
+      "BUILT-027",
+      "BUILT-028",
+      "BUILT-029",
+      "BUILT-030"
+    ]
+  },
+  "decisions": [
+    "Preserve user correction: continuous clothing/skin/building slopes and curves, native smallest components; no grid staircase requirement.",
+    "Split actual assembly and parameter-variant production paths; final sheet completion only after both are done. Do not label six dimension/floor families new assemblies or standalone masters.",
+    "174 actual124+145 has extensive real body/clothing/wrist overlap in unmodified source test. Preserve failed probe; need source-retaining fitted derivative and duplicate-neck omission. Previous145 bare-body study is not proof of pajamas fit.",
+    "175 source075 first-person hands default empty because no actual player inventory provided. Explicit view bounds and limited public pose controls must be checked; never add invented inventory props or claim UI action integration.",
+    "176 full-body appearance must share actual NPC sources and explicit first-person visibility strategy; no third-person gameplay claim.",
+    "332 actual unmodified cat/dog collar and329 tag placement has accessory ring intersections despite prior skin-only checks. Full garment/accessory triangle checks needed; source originals retained. Cat/dog harness and cow-tag source whole pairs pass in current probe, but genuine body attachment contacts still need proof. Rabbit328/330 variants do not exist and must be explicit rabbit-body installation derivatives.",
+    "333/334 retain actual finite species bodies and separately declared habitat/ground context. No invented newborns, health, ownership, livestock production or biodiversity entities.",
+    "025–030 original contracts specify large multi-floor dimensions and seeded.4m quantization; old019–022 are author opt-in small assemblies, not original game FloorPlan. Preserve baseline source status and do not scale miniature images as physical building geometry."
+  ],
+  "actualSourceProbe": "source-combination-probe.json",
+  "productionCodeChanged": false,
+  "humanArtAccepted": 0,
+  "patientPreparation": {
+    "file": "patient-final-clips-1.ysvox.json",
+    "status": "scratch-only-no-final-provenance-or-public-api",
+    "result": "Actual bandage loops fit displayed pajama surfaces; first forearm wrap shortened above wrist wraps. Closed diagonal strap follows actual front envelope. Only first rebuilt native clip moves one5mm cell forward; all actual wearer pairs and native attachments pass in study. Exact posed contact witnesses, preserved source graph, public pipeline, exports and visuals still needed.",
+    "failedStudies": [
+      "patient-fitted-study.json",
+      "patient-fitted-clips-study.json"
+    ],
+    "clipSweep": "patient-per-clip-probe.json"
+  },
+  "tagPreparation": {
+    "file": "tag-installation-probe.json",
+    "result": "Original cat/dog tag ring placement intersects collar hardware. A5mm downward shift clears at yaw0/1/3; actual tangent contact/interlock not yet verified, so this is not accepted placement."
+  },
+  "firstPersonPreparation": {
+    "file": "first-person-view-study.json",
+    "candidateOffset": [
+      0,
+      -0.2,
+      -0.4
+    ],
+    "camera": {
+      "verticalFOV": 70,
+      "aspect": "16:9",
+      "near": 0.05
+    },
+    "coverage": "Actual posed triangle raster union320x180 covers9.90%open/10.24%grip of viewport; central±.12NDC window has0sample hits and near-plane separation. Forearm tails intentionally extend below viewport. This is finite author-camera evidence, not original camera/controller integration.",
+    "heldObjects": 0
+  },
+  "petCollarPreparation": {
+    "file": "pet-collar-contact-probe.json",
+    "status": "scratch-only-no-formal-source-graph",
+    "result": "Only inner soft-liner thickness changes after actual tilted neck-frame clipping:cat0.0097392795m,dog0.00716748865m. Actual body/liner contact errors below5e-10m; whole animal/accessory pairs, shell closure and native attachment pass. Original outer collar, hardware and body stay fixed."
+  },
+  "rabbitCollarPreparation": {
+    "file": "rabbit-collar-contact-probe.json",
+    "positionProbe": "rabbit-collar-position-probe.json",
+    "status": "scratch-only-no-formal-source-graph",
+    "result": "Use unchanged original cat328 outer geometry at explicit rabbit placement offset[0,.011,.046]m. Actual rabbit308 body stays unchanged. Fit only inner liner thickness.01748536136m; actual contact error under4e-10m, full animal/accessory pairs, shell closure and native attachments pass. Must record explicit rabbit installation derivative, never claim public328 rabbit variant exists."
+  }
+}
