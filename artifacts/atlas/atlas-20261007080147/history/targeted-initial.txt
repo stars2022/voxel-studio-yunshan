@@ -1,0 +1,56 @@
+✔ One192×16RGBAresource holds6distinct32×16age/moodcells; skin, eye, lip, eyebrow and grey temple purposes remain independent (17.97645ms)
+✖ All6facecells retain3actual independent historical heads, unchanged closed continuous geometry and native5mmears; old facial cells can be restored exactly (25.513994ms)
+✖ Actual6headGLBembeds one shared lit face PNG and correctUVcells; role recolour changes real texels only and undo restores exact source (12.655739ms)
+✖ Official face commands preserve occupied gray-hairID, reject wrongcells/types and rollback; singleundo removes whole generated resource graph (43.139263ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 848.495722
+
+✖ failing tests:
+
+test at tests/atlas-face-variants.test.ts:37:1
+✖ All6facecells retain3actual independent historical heads, unchanged closed continuous geometry and native5mmears; old facial cells can be restored exactly (25.513994ms)
+  Error: 面孔安装缺少真实头壳或可保留原生耳细件
+      at faceHead (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:13:181)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:23:288)
+      at ArchitectureBuilder.asset (/workspace/voxel-studio-yunshan/src/production/architecture-near-assembly.ts:19:149)
+      at makeFaceVariant (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:23:224)
+      at all (/workspace/voxel-studio-yunshan/tests/atlas-face-variants.test.ts:26:74)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-face-variants.test.ts:38:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+
+test at tests/atlas-face-variants.test.ts:50:1
+✖ Actual6headGLBembeds one shared lit face PNG and correctUVcells; role recolour changes real texels only and undo restores exact source (12.655739ms)
+  Error: 面孔安装缺少真实头壳或可保留原生耳细件
+      at faceHead (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:13:181)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:23:288)
+      at ArchitectureBuilder.asset (/workspace/voxel-studio-yunshan/src/production/architecture-near-assembly.ts:19:149)
+      at makeFaceVariant (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:23:224)
+      at all (/workspace/voxel-studio-yunshan/tests/atlas-face-variants.test.ts:26:74)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-face-variants.test.ts:51:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+
+test at tests/atlas-face-variants.test.ts:59:1
+✖ Official face commands preserve occupied gray-hairID, reject wrongcells/types and rollback; singleundo removes whole generated resource graph (43.139263ms)
+  Error: 面孔安装缺少真实头壳或可保留原生耳细件
+      at faceHead (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:13:181)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:23:288)
+      at ArchitectureBuilder.asset (/workspace/voxel-studio-yunshan/src/production/architecture-near-assembly.ts:19:149)
+      at makeFaceVariant (/workspace/voxel-studio-yunshan/src/production/face-variants.ts:23:224)
+      at makeCatalogVariant (/workspace/voxel-studio-yunshan/src/production/catalog-variants.ts:15:390)
+      at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:96:12)
+      at Engine.execute (/workspace/voxel-studio-yunshan/src/core/engine.ts:55:39)
+      at commit (/workspace/voxel-studio-yunshan/tests/atlas-face-variants.test.ts:25:135)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-face-variants.test.ts:60:183)
+      at Test.runInAsyncScope (node:async_hooks:227:14)

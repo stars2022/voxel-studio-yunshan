@@ -4,7 +4,7 @@ import {skyMesh} from './sky';
 import {applyWaterFlow} from './water-flow';
 import {Grid,CHUNK} from './grid';
 import type {V3,Material,Asset} from './types';
-export type MeshBucket={bindingJoint?:string;meshName?:string;joints?:number[];weights?:number[];material:number;positions:number[];normals:number[];indices:number[];uvs:number[];texture?:{width:number;height:number;data:Uint8Array;transparent:boolean};colors?:number[];unlit?:boolean;doubleSided?:boolean;opacity?:number;quads:number};
+export type MeshBucket={bindingJoint?:string;meshName?:string;joints?:number[];weights?:number[];material:number;positions:number[];normals:number[];indices:number[];uvs:number[];texture?:{width:number;height:number;data:Uint8Array;transparent:boolean;nearest?:boolean;key?:string};faceAtlas?:import('./face-atlas').FaceAtlas;colors?:number[];unlit?:boolean;doubleSided?:boolean;opacity?:number;quads:number};
 // Axis-aligned greedy meshing, scoped to a dirty chunk; neighbours are queried across chunk boundaries.
 export function meshChunk(grid:Grid,key:string,materials:Record<string,Material>,size=1,origin:V3=[0,0,0]):MeshBucket[]{
  const buckets=new Map<number,MeshBucket>(),base=key.split(',').map(n=>Number(n)*CHUNK),N=CHUNK;

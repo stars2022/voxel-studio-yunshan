@@ -1,4 +1,7 @@
 import {architectureAssemblyIds,architectureAssemblyParameters} from './atlas-architecture-assemblies';
+import {validateFaceAtlas} from '../core/face-atlas';
+import {geometryData} from '../core/sky';
+import {outfitHash} from './outfit-components';
 import {catalogVariantIds,catalogVariantParameters,catalogVariantSpec} from './catalog-variant-spec';
 import {nonReferenceBaseRecipes} from './shared-wall';
 import {wildlifeRecipes,wildlifeParameters} from './atlas-wildlife';
@@ -28,7 +31,7 @@ import {readAtlasProduction} from './atlas';
 import {atlasLifeRecipes,atlasSource} from './atlas-life';
 import {atlasBuiltRecipes,builtWidthParameter} from './atlas-built';
 
-export type LibraryEntry={id:string;primaryMasterId?:string;name:string;type:string;stage:'geometry-candidate'|'layout-candidate'|'variant-candidate'|'not-produced';file?:string;assetIds:string[];assemblyId?:string;voxels?:number;triangles?:number;sha256?:string;note:string};
+export type LibraryEntry={id:string;primaryMasterId?:string;name:string;type:string;stage:'geometry-candidate'|'layout-candidate'|'variant-candidate'|'material-candidate'|'not-produced';file?:string;assetIds:string[];assemblyId?:string;voxels?:number;triangles?:number;sha256?:string;note:string};
 export type ProductionIndex={format:'yunshan.production-index';version:1;createdAt:string;sourceSHA256:string;counts:Record<string,number>;entries:LibraryEntry[];packs:{file:string;name:string;entries:number;uniqueMasters:number}[];studies?:{id:string;name:string;file:string;assetIds:string[];note:string;group?:string}[];metrics:Record<string,unknown>};
 const page=<T>(rows:T[],args:any)=>{const offset=args.offset??0,limit=args.limit??24;return{total:rows.length,offset,entries:rows.slice(offset,offset+limit),nextOffset:offset+limit<rows.length?offset+limit:null};};
 export async function readProductionLibrary(root:string,args:any){
@@ -46,8 +49,13 @@ export async function readProductionLibrary(root:string,args:any){
   if(assembly&&row.type!=='组合模板'||variant&&row.type!=='配色尺寸变体'||!template&&row.type!=='基础组件')throw new Error('图册制作类型与清单不一致');
   if(variant){
    const expected=catalogVariantSpec(upgrade.id),parent=atlas.entries.find(e=>e.id===expected.parentCatalogId),storedParent=index.entries.find(e=>e.id===expected.parentCatalogId);
-   const valid=expected.parentKind==='assembly'?parent?.kind==='assembly':parent?(parent.kind!=='assembly'&&parent.kind!=='variant'&&!parent.primaryMasterId):storedParent?.type==='基础组件'&&storedParent.stage==='geometry-candidate'&&!!storedParent.file&&storedParent.assetIds.length>0;
-   if(upgrade.parentCatalogId!==expected.parentCatalogId||!valid)throw new Error('参数变体必须保留准确类型的已制作父模板或基础母版');
+   const valid=expected.parentKind==='material'?storedParent?.type==='材质贴图'&&storedParent.stage==='material-candidate'&&!!storedParent.file&&storedParent.assetIds.length>0:expected.parentKind==='assembly'?parent?.kind==='assembly':parent?(parent.kind!=='assembly'&&parent.kind!=='variant'&&!parent.primaryMasterId):storedParent?.type==='基础组件'&&storedParent.stage==='geometry-candidate'&&!!storedParent.file&&storedParent.assetIds.length>0;
+   if(upgrade.parentCatalogId!==expected.parentCatalogId||!valid)throw new Error('参数变体必须保留准确类型的已制作父模板或基础母版或材质资源');
+   if(expected.parentKind==='material'){
+    const native=await read(storedParent!.file!),assets=storedParent!.assetIds.map(id=>native?.assets?.[id]);
+    if(assets.length!==1||assets.some(a=>a?.source?.kind!=='catalog-material'||a.source.catalogId!==expected.parentCatalogId||a.source.materialResourceGeometrySHA256!==outfitHash(geometryData(a))))throw new Error('面孔材质父件缺少真实可核对的图谱原生资源');
+    validateFaceAtlas(assets[0].meshes?.[0]?.faceAtlas,native.materials);
+   }
   }
   if(variant&&(!Number.isInteger(upgrade.finiteForms)||upgrade.finiteForms<1))throw new Error('建筑变体形态数无效');
   if(row.stage==='not-produced'){

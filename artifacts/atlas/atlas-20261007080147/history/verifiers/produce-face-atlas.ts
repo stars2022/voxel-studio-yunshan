@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {readFile,writeFile,mkdir,copyFile,rename} from 'node:fs/promises';
+import sharp from 'sharp';
+import {NodeIO} from '@gltf-transform/core';
+import {KHRMaterialsEmissiveStrength,KHRMaterialsUnlit} from '@gltf-transform/extensions';
+import {productionProject} from '../src/production/style';
+import {parseCatalogCSV} from '../src/core/catalog';
+import {validateProject} from '../src/core/engine';
+import {faceAtlasPixels,faceAtlasRoles,faceAtlasRolePixels} from '../src/core/face-atlas';
+import {ensureFaceAtlasResource} from '../src/production/face-atlas-resource';
+import {geometryData,assetBoundsM} from '../src/core/sky';
+import {outfitHash as hash} from '../src/production/outfit-components';
+import {exportProject} from '../src/export/exporter';
+
+const run=process.argv.find(a=>a.startsWith('--run='))?.slice(6);assert.ok(run&&/^atlas-\d{14}$/.test(run));
+const root='projects',out=root+'/production/'+run,evidence='artifacts/atlas/'+run,id='CHAR-023',file=run+'-char-023-material.ysvox.json',directory=out+'/materials/'+id,index=JSON.parse(await readFile(root+'/production-index.json','utf8')),entry=index.entries.find((r:any)=>r.id===id);assert.equal(entry.type,'材质贴图');assert.equal(entry.stage,'not-produced');
+const p=productionProject('CHAR-023 · 真实共享面孔材质图谱');p.catalog={sourceName:'city-assets.csv',importedAt:new Date().toISOString(),entries:Object.fromEntries(parseCatalogCSV(await readFile(root+'/catalog/city-assets.csv','utf8')).filter(r=>r.id===id).map(r=>[r.id,r]))};const a=ensureFaceAtlasResource(p);p.instances.preview={id:'preview',assetId:a.id,name:'six-cell material swatch',position:[0,0,0],rotation:0,parent:null};validateProject(p);
+await mkdir(out,{recursive:true});await mkdir(evidence,{recursive:true});await writeFile(root+'/'+file,JSON.stringify(p),{flag:'wx'});const exported=await exportProject(p,directory),descriptor=a.meshes![0].faceAtlas!,pixels=faceAtlasPixels(descriptor,p.materials),png=exported.files.filter(file=>file.startsWith('face-atlas-')&&file.endsWith('.png'));assert.equal(png.length,1);const bytes=await sharp(directory+'/'+png[0]).ensureAlpha().raw().toBuffer();assert.deepEqual(bytes,Buffer.from(pixels.data));
+const g=await new NodeIO().registerExtensions([KHRMaterialsEmissiveStrength,KHRMaterialsUnlit]).read(directory+'/visual.glb'),textures=g.getRoot().listTextures().filter(t=>t.getExtras().catalogId===id);assert.equal(textures.length,1);assert.deepEqual(await sharp(textures[0].getImage()!).ensureAlpha().raw().toBuffer(),bytes);
+const resourceDescription={format:'yunshan.face-atlas',version:1,catalogId:id,descriptor,roles:faceAtlasRoles,pixelRoles:[...faceAtlasRolePixels()],materials:Object.fromEntries(faceAtlasRoles.map(r=>[r,p.materials[descriptor.materials[r]]])),cells:['adult-calm','elder-calm','child-calm','adult-stressed','elder-stressed','child-stressed'],image:png[0],originalPixelsProvided:false,originalControllerBound:false};await writeFile(directory+'/face-atlas.json',JSON.stringify(resourceDescription,null,2));
+const record={id,kind:'material',file,assetId:a.id,assetIds:[a.id],exportDirectory:directory,dependencyCatalogIds:[],sha256:hash(geometryData(a)),boundsM:assetBoundsM(a),voxels:0,triangles:2,texture:png[0],textureWidth:192,textureHeight:16,actualExportFiles:[...exported.files,'face-atlas.json'],note:'新交付单张192×16RGBA六格材质资源；原像素源码未收件，作者像素实现。二维载体仅预览材质，不计基础母版。'};
+await copyFile(root+'/production-index.json',out+'/previous-production-index.json');Object.assign(entry,{stage:'material-candidate',file,assetIds:[a.id],voxels:0,triangles:2,sha256:record.sha256,note:record.note});index.counts.materialEntries=(index.counts.materialEntries??0)+1;index.counts.generatedEntries++;index.counts.notProduced--;await writeFile(root+'/production-index.json.tmp',JSON.stringify(index));await rename(root+'/production-index.json.tmp',root+'/production-index.json');
+const report={run,status:'passed',newIndependentMasters:0,newMaterialEntries:1,atlasReferenceEntries:0,record,sharedImageCount:1,realPNGAndEmbeddedGLBEqual:true,canonicalNativeIdentical:hash(JSON.parse(await readFile(directory+'/voxels.ysvox.json','utf8')).assets[a.id])===hash(a)};assert.ok(report.canonicalNativeIdentical);await writeFile(evidence+'/new-material-production.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));

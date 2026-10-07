@@ -1,3 +1,5 @@
+import {texturedFaceMaterial} from './face-material';
+import {faceAtlasSignature} from '../core/face-atlas';
 import {texturedSkyMaterial,disposeSkyMaterial} from './sky-material';
 import {activeAuthorEnvironment} from '../core/author-environment';
 import {SkyPreview} from './sky-preview';
@@ -35,9 +37,9 @@ export class Viewer {
  aoEnabled=false;composer!:EffectComposer;renderPass!:RenderPass;aoPass!:SSAOPass;
  bloomEnabled=false;bloomPass!:UnrealBloomPass;
  clayEnabled=false;
- // Unlit, base-colour face-normal contrast: no scene lights, maps, emission,
+ // Base-colour face-normal contrast; saved face/sky textures remain visible. No scene lights, emission,
  // transparency, environment, shadows, AO or bloom. Occupancy is unchanged.
- clayMaterial=new THREE.ShaderMaterial({transparent:true,side:THREE.DoubleSide,clipping:true,toneMapped:false,uniforms:{baseColor:{value:new THREE.Color(0xffffff)},unlitComponent:{value:false},skyMap:{value:null},skyOpacity:{value:1}},
+ clayMaterial=new THREE.ShaderMaterial({transparent:true,side:THREE.DoubleSide,clipping:true,toneMapped:false,uniforms:{baseColor:{value:new THREE.Color(0xffffff)},unlitComponent:{value:false},texturedComponent:{value:false},skyMap:{value:null},skyOpacity:{value:1}},
   vertexShader:`#include <common>
    #include <clipping_planes_pars_vertex>
    attribute vec4 color;
@@ -50,6 +52,7 @@ export class Viewer {
   fragmentShader:`#include <clipping_planes_pars_fragment>
    uniform vec3 baseColor;
    uniform bool unlitComponent;
+   uniform bool texturedComponent;
    uniform sampler2D skyMap;
    uniform float skyOpacity;
    varying vec3 clayVertexColor;
@@ -59,7 +62,7 @@ export class Viewer {
    #include <clipping_planes_fragment>
    vec3 n=normalize(clayNormal)*(gl_FrontFacing?1.0:-1.0);
    float shade=unlitComponent?1.0:0.58+0.39*max(0.0,dot(n,normalize(vec3(-0.35,0.65,1.0))));
-   gl_FragColor=unlitComponent?texture2D(skyMap,skyUV):vec4(baseColor*clayVertexColor*shade,1.0);if(unlitComponent){gl_FragColor.a*=skyOpacity;if(gl_FragColor.a<0.01)discard;}
+   gl_FragColor=texturedComponent?texture2D(skyMap,skyUV)*vec4(vec3(shade),1.0):vec4(baseColor*clayVertexColor*shade,1.0);if(texturedComponent){gl_FragColor.a*=skyOpacity;if(gl_FragColor.a<0.01)discard;}
    #include <colorspace_fragment>
    }`});
  emitterCache=new Map<string,VoxelEmitter[]>();practicalLights=new THREE.Group();practicalsEnabled=false;
@@ -113,7 +116,7 @@ export class Viewer {
   const tasks:Promise<void>[]=[];
   for(const key of visible){
    const a=project.assets[key],gridAsset=displayAsset(a,this.mode==='asset'?this.layer:null,this.mode==='asset'?this.isolatedRegion:null),old=this.cacheSources.get(key),assetSignature=signature+(a.sky?JSON.stringify(Object.values(a.sky.materials).map(id=>[id,project.materials[id].color,project.materials[id].opacity])):'');
-   const effectSignature=assetSignature+JSON.stringify((a.meshes??[]).filter(m=>m.atmosphere).map(m=>[m.material,project.materials[m.material].color,project.materials[m.material].opacity]));
+   const effectSignature=assetSignature+JSON.stringify((a.meshes??[]).filter(m=>m.atmosphere||m.faceAtlas).map(m=>m.faceAtlas?faceAtlasSignature(m.faceAtlas,project.materials):[m.material,project.materials[m.material].color,project.materials[m.material].opacity]));
    const changed=dirtyMeshChunks(old?.asset,gridAsset,old?.signature!==effectSignature);this.cacheAccess.set(key,++this.accessClock);
    if(!changed.length){this.cacheSources.set(key,{asset:gridAsset,signature:effectSignature});continue;}
    const id=crypto.randomUUID();this.lastMeshedAssets.push(key);this.meshJobs++;
@@ -147,7 +150,7 @@ export class Viewer {
   const merged:Built[]=[];for(const [key,geometries]of groups){const geometry=mergeGeometries(geometries,false);if(geometry){geometry.computeBoundingSphere();merged.push({...settings.get(key)!,geometry});}}this.renderCache.set(id,merged);return merged;
  }
  rebuild(){
-  this.original.visible=false;this.proceduralMaterials.forEach(disposeSkyMaterial);this.proceduralMaterials=[];this.root.clear();this.practicalLights.clear();let lightCount=0;const add=(a:Asset,position:V3,rotation:number,instanceId:string|null)=>{if(a.sky&&(this.skyPreview.clock||this.mode==='scene'&&Object.values(this.project.assemblies??{}).some(v=>(v.source?.environment as any)?.skyAssetIds?.includes(a.id))))return;const group=new THREE.Group();group.position.fromArray(position);group.rotation.y=rotation*Math.PI/2;for(const b of this.merged(a.id)){const sourceMaterial=this.materials.get(b.material);if(!sourceMaterial)continue;const material=b.unlit?texturedSkyMaterial(b):sourceMaterial;if(b.unlit)this.proceduralMaterials.push(material);const mesh=new THREE.Mesh(b.geometry,material);mesh.userData={assetId:a.id,instanceId};mesh.onBeforeRender=()=>{if(this.clayEnabled){this.clayMaterial.uniforms.baseColor.value.copy(material.color);this.clayMaterial.uniforms.unlitComponent.value=!!b.unlit;this.clayMaterial.uniforms.skyMap.value=b.unlit?(material as THREE.MeshBasicMaterial).map:null;this.clayMaterial.uniforms.skyOpacity.value=material.opacity;this.clayMaterial.uniformsNeedUpdate=true;}};mesh.castShadow=!b.unlit&&!material.transparent;mesh.receiveShadow=!b.unlit&&!material.transparent;mesh.renderOrder=material.transparent?2:sourceMaterial.emissiveIntensity>0?1:0;group.add(mesh);}this.root.add(group);
+  this.original.visible=false;this.proceduralMaterials.forEach(disposeSkyMaterial);this.proceduralMaterials=[];const faceMaterials=new Map<string,THREE.MeshStandardMaterial>();this.root.clear();this.practicalLights.clear();let lightCount=0;const add=(a:Asset,position:V3,rotation:number,instanceId:string|null)=>{if(a.sky&&(this.skyPreview.clock||this.mode==='scene'&&Object.values(this.project.assemblies??{}).some(v=>(v.source?.environment as any)?.skyAssetIds?.includes(a.id))))return;const group=new THREE.Group();group.position.fromArray(position);group.rotation.y=rotation*Math.PI/2;for(const b of this.merged(a.id)){const sourceMaterial=this.materials.get(b.material);if(!sourceMaterial)continue;let material:THREE.MeshStandardMaterial|THREE.MeshBasicMaterial=sourceMaterial;if(b.unlit){material=texturedSkyMaterial(b);this.proceduralMaterials.push(material);}else if(b.texture){const key=b.material+':'+b.texture.key;let face=faceMaterials.get(key);if(!face){face=texturedFaceMaterial(b,sourceMaterial);faceMaterials.set(key,face);this.proceduralMaterials.push(face);}material=face;}if(b.texture)setMaterialClip(material,this.clipY);const mesh=new THREE.Mesh(b.geometry,material);mesh.userData={assetId:a.id,instanceId};mesh.onBeforeRender=()=>{if(this.clayEnabled){this.clayMaterial.uniforms.baseColor.value.copy(material.color);this.clayMaterial.uniforms.unlitComponent.value=!!b.unlit;this.clayMaterial.uniforms.texturedComponent.value=!!b.texture;this.clayMaterial.uniforms.skyMap.value=b.texture?material.map:null;this.clayMaterial.uniforms.skyOpacity.value=material.opacity;this.clayMaterial.uniformsNeedUpdate=true;}};mesh.castShadow=!b.unlit&&!material.transparent;mesh.receiveShadow=!b.unlit&&!material.transparent;mesh.renderOrder=material.transparent?2:sourceMaterial.emissiveIntensity>0?1:0;group.add(mesh);}this.root.add(group);
    for(const e of this.emitterCache.get(a.id)??[]){if(lightCount>=8)break;const mat=this.project.materials[e.material];if(!mat?.intensity)continue;const light=new THREE.PointLight(mat.emissive,Math.min(4,mat.intensity*e.area*35),1.35,2);light.position.fromArray(e.position).applyAxisAngle(new THREE.Vector3(0,1,0),rotation*Math.PI/2).add(new THREE.Vector3().fromArray(position));this.practicalLights.add(light);lightCount++;}
   };
   if(this.mode==='asset'&&this.assetId&&this.project.assets[this.assetId])add(this.project.assets[this.assetId],[0,0,0],0,null);else for(const i of Object.values(this.project.instances))add(this.project.assets[i.assetId],i.position,i.rotation,i.id);
@@ -194,7 +197,7 @@ export class Viewer {
   if(enabled){this.renderer.setClearColor(this.project?.assets[this.assetId!]?.sky?.kind==='stars'?0x071125:0xcacaca);this.renderer.shadowMap.enabled=false;this.scene.environment=null;this.ground.visible=false;this.grid.visible=false;this.practicalLights.visible=false;this.hover.visible=false;this.selection.visible=false;this.preview.visible=false;}
   else this.setStudio(this.studio);
  }
- setClip(value:number){if(!Number.isFinite(value)&&value!==Infinity)throw new Error("Invalid clip height");this.clipY=value;setMaterialClip(this.clayMaterial,value);this.practicalLights.children.forEach(l=>l.visible=l.position.y<value);setMaterialClip(this.aoPass.normalMaterial,value);for(const material of this.materials.values())setMaterialClip(material,value);}
+ setClip(value:number){if(!Number.isFinite(value)&&value!==Infinity)throw new Error("Invalid clip height");this.clipY=value;setMaterialClip(this.clayMaterial,value);this.practicalLights.children.forEach(l=>l.visible=l.position.y<value);setMaterialClip(this.aoPass.normalMaterial,value);for(const material of [...this.materials.values(),...this.proceduralMaterials])setMaterialClip(material,value);}
  setStudio(enabled:boolean){
   this.studio=enabled;const soft=enabled&&this.referenceLighting;
   this.practicalLights.visible=enabled&&this.practicalsEnabled;document.body.classList.toggle('studio-light',enabled);

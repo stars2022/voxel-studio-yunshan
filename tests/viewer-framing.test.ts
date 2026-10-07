@@ -19,11 +19,11 @@ for(const projection of ['perspective','orthographic'] as const)test(`${projecti
 });
 
 
-test('clip toggles synchronise native, clay, AO and lights, and reject invalid heights atomically',()=>{
- const clayMaterial=new THREE.ShaderMaterial(),normalMaterial=new THREE.MeshNormalMaterial(),native=new THREE.MeshStandardMaterial(),light=new THREE.PointLight();light.position.y=254.5;
- const fixture={clipY:Infinity,clayMaterial,aoPass:{normalMaterial},materials:new Map([[1,native]]),practicalLights:{children:[light]}};
+test('clip toggles synchronise native, clay, AO, face textures and lights, and reject invalid heights atomically',()=>{
+ const clayMaterial=new THREE.ShaderMaterial(),normalMaterial=new THREE.MeshNormalMaterial(),native=new THREE.MeshStandardMaterial(),face=new THREE.MeshStandardMaterial({map:new THREE.DataTexture(new Uint8Array(192*16*4),192,16)}),light=new THREE.PointLight();light.position.y=254.5;
+ const fixture={clipY:Infinity,clayMaterial,aoPass:{normalMaterial},materials:new Map([[1,native]]),proceduralMaterials:[face],practicalLights:{children:[light]}};
  const clip=(v:number)=>Viewer.prototype.setClip.call(fixture as unknown as Viewer,v);
- clip(254.2);for(const m of[clayMaterial,normalMaterial,native])assert.equal(m.clippingPlanes![0].constant,254.2);assert.equal(light.visible,false);
- clip(Infinity);for(const m of[clayMaterial,normalMaterial,native])assert.deepEqual(m.clippingPlanes,[]);assert.equal(light.visible,true);
+ clip(254.2);for(const m of[clayMaterial,normalMaterial,native,face])assert.equal(m.clippingPlanes![0].constant,254.2);assert.equal(light.visible,false);
+ clip(Infinity);for(const m of[clayMaterial,normalMaterial,native,face])assert.deepEqual(m.clippingPlanes,[]);assert.equal(light.visible,true);
  for(const invalid of[NaN,-Infinity])assert.throws(()=>clip(invalid));assert.equal(fixture.clipY,Infinity);
 });
