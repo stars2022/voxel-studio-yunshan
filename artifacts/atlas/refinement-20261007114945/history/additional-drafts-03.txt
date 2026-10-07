@@ -1,0 +1,26 @@
+ if(catalogId==='LIFE-027'){
+  const bands:[number,number,string][]=[[0,.055,'fabric'],[.055,.07,'fabricEdge'],[.07,.19,'wovenLight'],[.19,.2075,'fabric'],[.2075,.2225,'wovenLight'],[.2225,1.73,'fabric']];
+  for(const [lo,hi,role] of bands){const id=b.role(role);b.mesh(foldedCloth('连续帘面分用途带'+lo,id,lo,hi,p.materials[id].solid));}
+  for(let i=0;i<6;i++){
+   const x=.024+i*.142,z=.045+.033*Math.cos((x+.026)/.8*Math.PI*11);
+   for(const xx of[x,x+.043])b.box('织物吊耳双侧','fabric',[xx,1.72,z],[.009,.075,.008],.0015);
+   b.box('吊耳上缘','fabric',[x+.009,1.786,z],[.034,.009,.008],.0015,0);
+   b.box('吊耳下缘','fabric',[x+.009,1.72,z],[.034,.009,.008],.0015,0);
+   b.voxel('fabricEdge',[Math.round(x/.005)*.005,1.72,Math.round(z/.005)*.005],[.01,.01,.01]);
+  }
+  return b.finish('帘片连续褶面草稿：真实薄壳、米制织纹UV、双下摆和真空吊耳',{dimensionsM:[.8,1.8,.1],patternStatus:'woven border present; Hui pattern texture still pending reference refinement',simulation:'static continuous drape, no cloth simulation'});
+ }
+ if(catalogId==='LIFE-030'){
+  const slots=[{x:.027,y:.077,width:.006,height:.017},{x:.049,y:.077,width:.006,height:.017},{x:.038,y:.045,width:.006,height:.016},{x:.021,y:.022,width:.006,height:.018,angle:-.55},{x:.055,y:.022,width:.006,height:.018,angle:.55}];
+  const metal=b.role('metal');b.mesh(slottedPlate('贯通插孔金属背盒',metal,[0,0,0],[.28,.16,.035],slots.map(s=>({...s,x:s.x+.022,y:s.y+.025})),true));
+  for(const x of[0,.268])b.box('竖向深铁压框','metal',[x,0,-.012],[.012,.16,.018],.002,1);
+  for(const y of[0,.148])b.box('横向深铁压框','metal',[.012,y,-.012],[.256,.012,.018],.002,0);
+  const poly=b.role('polymer');b.mesh(slottedPlate('真实通孔绝缘插座',poly,[.022,.025,-.02],[.078,.111,.025],slots,p.materials[poly].solid));
+  for(const x of[.115,.146]){b.box('独立摇臂座','metal',[x,.025,-.017],[.027,.111,.018],.002);b.mesh(rigidMesh(bevelBox('正常斜面摇臂',b.role('polymerDark'),[x+.002,.029,-.027],[.023,.101,.016],.002,true),[0,0,0],.055,0,[x+.0135,.0795,-.019]));b.voxel('displayGlyph',[x+.005,.105,-.03],[.015,.005,.005]);}
+  for(const [y,hh] of[[.087,.048],[.025,.05]]){b.box('屏幕独立金属框','metal',[.186,y,-.022],[.068,hh,.029],.003);b.box('真实屏幕底面','screen',[.194,y+.008,-.025],[.052,hh-.016,.006],.001);}
+  b.voxel('displayGlyph',[.2075,.1025,-.03],[.025,.015,.005]);
+  for(const x of[.201,.231])b.voxel('displayGlyph',[x,.038,-.03],[.005,.025,.005]);
+  for(const y of[.038,.058])b.voxel('displayGlyph',[.206,y,-.03],[.025,.005,.005]);
+  for(const x of[0,.255])for(const y of[0,.135]){b.box('面板四角铁锁','metal',[x,y,-.022],[.025,.025,.032],.003);b.voxel('bronze',[x+.005,y+.005,-.025],[.015,.015,.015]);}
+  return b.finish('控制面板细化：五个实际贯通插孔、正常斜面双摇臂、独立屏底/图形及铜角',{dimensionsM:[.28,.16,.035],throughSlots:slots,display:'static authored symbols; no electrical or switch state binding'});
+ }

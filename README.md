@@ -4,7 +4,9 @@
 
 本项目位于独立的 `voxel-studio/` 目录，未改动上级项目文件。
 
-67 张完整参考图册已接入「图册」页，793 条参考逐 ID 对齐。累计 **793 个参考 ID（513 个独立图册母版、3 条共享引用、186 个组合模板、91 类参数变体）**已制作为候选，参考转化余 0 条；人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [最后一批环境与家具](docs/M066-M067-FINAL-VARIANTS.md) · [下载](artifacts/atlas/atlas-20261007102004/PACKAGE-DOWNLOAD.txt)。M001–M067 的参考转化已完整，正在从 M001 开始视觉打磨。补齐全部转换后，将从 M001 开始按效果图逐项打磨，并继续分批推送。
+67 张完整参考图册已接入「图册」页，793 条参考逐 ID 对齐。累计 **793 个参考 ID（513 个独立图册母版、3 条共享引用、186 个组合模板、91 类参数变体）**已制作为候选，参考转化余 0 条；人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [最后一批环境与家具](docs/M066-M067-FINAL-VARIANTS.md)。已从 M001 开始按效果图逐项打磨，并继续分批推送。
+
+**M001 的 12 件家居细部已交付首轮参考打磨**：保留最小体素块件，重做连续倒角、斜杆、圆弧与真实帘布 PBR 贴图；新旧原生和 GLB 完整保留，39 张实际截图逐张检查，52 项回归通过。[本轮变化与剩余差距](docs/M001-REFERENCE-REFINEMENT.md) · [实际总览](artifacts/atlas/refinement-20261007114945/M001-materials.png) · [同机位前后对照](artifacts/atlas/refinement-20261007114945/review.html) · [下载](artifacts/atlas/refinement-20261007114945/PACKAGE-DOWNLOAD.txt)。首轮打磨交付 1/67 张，接续 M002；最终美术验收另计。
 
 材质按用途与物理类别分配独立 ID，后期统一更换外观。新配方禁止按颜色借用类别；外观包不能改变类别或碰撞设置。[分类约定与当前复核范围](docs/MATERIAL-ROLES.md) · [显微镜真实前后对照](artifacts/microscope-study/comparison.png)。
 

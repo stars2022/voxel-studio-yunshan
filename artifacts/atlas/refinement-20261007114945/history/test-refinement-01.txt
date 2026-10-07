@@ -1,0 +1,56 @@
+✔ all 12 refinements are explicit; defaults and the baseline selection preserve earlier geometry, ports and roles (3418.601477ms)
+✔ closed continuous components retain connected native fasteners and their actual material collision flags (1341.575117ms)
+✔ socket holes pass through the entire front and backing; stool cap UVs have two noncollapsed axes (469.072322ms)
+✖ public create/rebuild, rejected transactions and one undo retain custom role IDs and original masters (1779.199139ms)
+✔ woven border uses two actual fabric purposes; changing either appearance preserves geometry and every other purpose (1578.735434ms)
+✖ exported curtain contains the exact lit artwork, normal and ORM pixels, source role IDs and unchanged UVs (8742.162994ms)
+✔ lit cloth material uses all three maps and frees each GPU texture once (363.234202ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 5
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18782.841748
+
+✖ failing tests:
+
+test at tests/reference-refinement.test.ts:1:5516
+✖ public create/rebuild, rejected transactions and one undo retain custom role IDs and original masters (1779.199139ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      category: 'base',
+      cellSize: 0.005,
+      chunks: {
+        '0,21,0': [
+  ...
+      },
+  +   version: 3
+  -   version: 1
+    }
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/reference-refinement.test.ts:53:255)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { id: 'curtain', name: '窗帘帘片', version: 3, category: 'base', cellSize: 0.005, origin: [ 0, 0, 0 ], chunks: { '0,21,0': [Array], '2,21,0': [Array], '3,21,0': [Array], '5,21,0': [Array], '7,21,0': [Array], '9,21,0': [Array] }, parts: [], openings: [], ports: [ [Object], [Object], [Object], [Object], [Object], [Object] ], source: { kind: 'catalog-recipe', catalogId: 'LIFE-027', recipeRevision: 'reference-v1', styleReference: '参考/云山巨城·未来家居资产图鉴.png', styleRevision: 44, dimensionsM: [Array], parameters: [Object], features: '帘片细化：真实薄壳、米制织纹UV、双下摆和真空吊耳', geometryStage: 'candidate', gameIntegration: false, animation: false, units: 'metres', front: '-Z', reference: [Object], dimensionBasis: 'authored metres; no dimensions recoverable from a single independently scaled image tile', limitations: '作者静态参考精修候选；原游戏功能和动画未绑定，人工美术验收未完成。', kinematics: 'static; no rig or runtime motion', referenceStage: 'candidate', materialAssignmentReview: [Object], componentIndexRanges: [Array], refinement: [Object], refinedBoundsM: [Object], style: 'yunshan' }, meshes: [ [Object], [Object], [Object], [Object] ] },
+    expected: { id: 'curtain', name: '窗帘帘片', version: 1, category: 'base', cellSize: 0.005, origin: [ 0, 0, 0 ], chunks: { '0,21,0': [Array], '2,21,0': [Array], '3,21,0': [Array], '5,21,0': [Array], '7,21,0': [Array], '9,21,0': [Array] }, parts: [], openings: [], ports: [ [Object], [Object], [Object], [Object], [Object], [Object] ], source: { kind: 'catalog-recipe', catalogId: 'LIFE-027', recipeRevision: 'reference-v1', styleReference: '参考/云山巨城·未来家居资产图鉴.png', styleRevision: 44, dimensionsM: [Array], parameters: [Object], features: '帘片细化：真实薄壳、米制织纹UV、双下摆和真空吊耳', geometryStage: 'candidate', gameIntegration: false, animation: false, units: 'metres', front: '-Z', reference: [Object], dimensionBasis: 'authored metres; no dimensions recoverable from a single independently scaled image tile', limitations: '作者静态参考精修候选；原游戏功能和动画未绑定，人工美术验收未完成。', kinematics: 'static; no rig or runtime motion', referenceStage: 'candidate', materialAssignmentReview: [Object], componentIndexRanges: [Array], refinement: [Object], refinedBoundsM: [Object], style: 'yunshan' }, meshes: [ [Object], [Object], [Object], [Object] ] },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/reference-refinement.test.ts:1:8338
+✖ exported curtain contains the exact lit artwork, normal and ORM pixels, source role IDs and unchanged UVs (8742.162994ms)
+  TypeError: Cannot read properties of undefined (reading 'getMaterial')
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/reference-refinement.test.ts:66:517)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

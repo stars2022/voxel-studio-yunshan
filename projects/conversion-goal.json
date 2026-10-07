@@ -42,27 +42,27 @@
   },
   "activeBatch": {
     "sheets": [
-      "M001"
+      "M002"
     ],
     "subBatch": "reference-art-refinement",
-    "state": "starting",
+    "state": "queued",
     "ids": [
-      "LIFE-008",
-      "LIFE-009",
-      "LIFE-019",
-      "LIFE-020",
-      "LIFE-023",
-      "LIFE-024",
-      "LIFE-025",
-      "LIFE-026",
-      "LIFE-027",
-      "LIFE-028",
-      "LIFE-029",
-      "LIFE-030"
+      "LIFE-031",
+      "LIFE-032",
+      "LIFE-037",
+      "LIFE-038",
+      "LIFE-039",
+      "LIFE-040",
+      "LIFE-041",
+      "LIFE-042",
+      "LIFE-043",
+      "LIFE-044",
+      "LIFE-045",
+      "LIFE-046"
     ],
-    "scope": "Follow user extension: after all793reference conversions, refine sequentially fromM001 toward reference-render quality. Actual shape/proportions, continuous bevels/curves, purpose-correct textures/materials and lighting; preserve originals and validate/push each batch."
+    "scope": "按图册及格位顺序接续参考形体、用途材质、纹理和实际对照；保留旧母版并分批推送。"
   },
-  "nextBatch": "M001",
+  "nextBatch": "M002",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -78,12 +78,13 @@
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "参考清单793/793已转化，67张图册齐全；逐条读取原生文件和实际GLB的闭环审计见reference-completion.json。",
-    "本批11条参考/88形态，264实际GLB、118历史父核对/19配置；实际截图及回归见validation.json。",
-    "原生最小组件保留体素；大形、曲面、斜面正常连续。不得把技术检查通过当作效果图达标。",
-    "接续M001衣柜内胆、梳妆镜、键盘、折臂台灯、圆凳、鞋柜、搁板、挂轨、帘片、顶灯、壁灯和面板。",
-    "每批验证后推送origin/main已授权，继续执行。浏览器严格串行，冻结实际源代码。",
-    "磁盘紧张，仅无损归档已关闭scratch并验证恢复字节，不删除正式资产或Git历史。"
+    "793/793参考已完成技术转化，67张齐全；原闭环证明保留于atlas-20261007102004/reference-completion.json。",
+    "M001首轮12件已交付：13原生、12新GLB、12历史原生/GLB、39逐张检查实拍、52回归；本轮没有新增参考或基础母版。",
+    "继续M002；沿用显式refinement版本，默认旧配方和历史原件保持可追溯。",
+    "最小组件保留5mm体素；斜面、倒角和曲面可连续，适合的视觉图形用实际导出贴图。",
+    "M001镜面环境反射、独立陈设组合、灯面细纹和孔洞背景对比仍有差距，后续细化清单见visual-review.json；人工美术验收仍为0。",
+    "每批验证后推送origin/main已授权。浏览器严格串行并冻结源代码；构建后核实际加载bundle SHA。",
+    "磁盘紧张，只对已关闭scratch做无损归档并验证恢复字节，不删除正式资产或Git历史。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -93,21 +94,19 @@
   },
   "lastCompletedBatch": {
     "sheets": [
-      "M066",
-      "M067"
+      "M001"
     ],
-    "subBatch": "environment-furniture",
-    "run": "atlas-20261007102004",
-    "state": "validated",
-    "wholeSheetComplete": true,
-    "newReferences": 11,
-    "finiteForms": 88,
-    "sheetProducedReferences": 13,
-    "sheetReferenceCount": 13,
-    "evidence": "artifacts/atlas/atlas-20261007102004"
+    "subBatch": "reference-art-refinement-v1",
+    "run": "refinement-20261007114945",
+    "state": "validated-first-pass",
+    "wholeSheetFirstPassDelivered": true,
+    "refinedReferences": 12,
+    "newReferences": 0,
+    "humanArtAccepted": false,
+    "evidence": "artifacts/atlas/refinement-20261007114945"
   },
   "refinementPhase": {
-    "status": "queued-after-reference-conversion",
+    "status": "in-progress",
     "startSheet": "M001",
     "order": "reference sheet and slot order",
     "target": "效果图级别",
@@ -120,7 +119,10 @@
       "验证原生、GLB、接口及历史依赖后分批推送"
     ],
     "acceptance": "技术通过不等于视觉达标；人工验收不自动记通过",
-    "authorization": "用户：搞完后从头开始打磨，达到效果图级别"
+    "authorization": "用户：搞完后从头开始打磨，达到效果图级别",
+    "firstPassSheets": 1,
+    "lastDeliveredSheet": "M001",
+    "nextSheet": "M002"
   },
   "conversionPhase": {
     "status": "complete-technical-candidates",
@@ -134,6 +136,28 @@
     "startSheet": "M001",
     "target": "reference-render quality",
     "completedSheets": 0,
-    "scope": "Sequential reference-art refinement; retain source masters and same-camera actual before/after3D views."
+    "scope": "Sequential reference-art refinement; retain source masters and same-camera actual before/after3D views.",
+    "firstPassSheets": 1,
+    "firstPassReferences": 12,
+    "lastDeliveredSheet": "M001",
+    "nextSheet": "M002",
+    "humanArtAccepted": 0,
+    "evidence": "artifacts/atlas/refinement-20261007114945/visual-review.json",
+    "completedSheetsMeaning": "最终效果图质量验收；首轮打磨交付另记firstPassSheets，技术通过不自动等于最终视觉达标。"
+  },
+  "lastConversionBatch": {
+    "sheets": [
+      "M066",
+      "M067"
+    ],
+    "subBatch": "environment-furniture",
+    "run": "atlas-20261007102004",
+    "state": "validated",
+    "wholeSheetComplete": true,
+    "newReferences": 11,
+    "finiteForms": 88,
+    "sheetProducedReferences": 13,
+    "sheetReferenceCount": 13,
+    "evidence": "artifacts/atlas/atlas-20261007102004"
   }
 }

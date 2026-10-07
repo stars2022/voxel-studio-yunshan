@@ -22,7 +22,7 @@ function topologyEdges(faces:Face[]){const edges=new Map<string,{a:number;b:numb
 export function reduceMesh(m:AuthoredMesh,tolerance:number,ratio:number,protectedPoints:V3[],contactDistance:number,posed:(p:V3)=>V3=p=>p,preserveThinLayer=false){
  const{points,faces:original}=meshTopology(m),edges0=topologyEdges(original),identity=points.map((_,i)=>i),base={mesh:m.name,sourceMeshSHA256:hash(m),beforeTriangles:original.length,afterTriangles:original.length,toleranceM:tolerance,maxVertexDisplacementM:0,vertexMap:identity,sourceFaceIndices:original.map(f=>f.source),closed:true,lockedVertices:0,lockedVertexIndices:[]as number[],collapses:0};
  if(preserveThinLayer)return{mesh:structuredClone(m),proof:{...base,lockedVertices:points.length,lockedVertexIndices:identity,thinLayerPreservedExactly:true,reason:'Thin material layer or hollow passage retained together with its support triangles'}};
- if(m.faceAtlas||m.atmosphere||[...edges0.values()].some(e=>e.faces.length!==2||e.direction!==0))return{mesh:structuredClone(m),proof:{...base,closed:false,reason:'Texture-specific or non-closed surface retained exactly'}};
+ if(m.faceAtlas||m.atmosphere||m.wovenPattern||[...edges0.values()].some(e=>e.faces.length!==2||e.direction!==0))return{mesh:structuredClone(m),proof:{...base,closed:false,reason:'Texture-specific or non-closed surface retained exactly'}};
  const planes=points.map(p=>[...p,...posed(p)]),min=[0,1,2,3,4,5].map(k=>Math.min(...planes.map(p=>p[k]))),max=[0,1,2,3,4,5].map(k=>Math.max(...planes.map(p=>p[k]))),locked=new Set<number>();
  const constraints=planes.map(p=>p.map((n,k)=>n===min[k]||n===max[k]));
  const q=new Vector3(),closest=new Vector3(),tri=new Triangle();

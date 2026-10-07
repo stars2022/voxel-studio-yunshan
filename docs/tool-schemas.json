@@ -300,6 +300,12 @@
                   "params": {
                     "type": "object",
                     "properties": {
+                      "refinement": {
+                        "enum": [
+                          "baseline",
+                          "reference-v1"
+                        ]
+                      },
                       "width": {
                         "type": "number",
                         "exclusiveMinimum": 0,
@@ -987,6 +993,12 @@
                   "params": {
                     "type": "object",
                     "properties": {
+                      "refinement": {
+                        "enum": [
+                          "baseline",
+                          "reference-v1"
+                        ]
+                      },
                       "width": {
                         "type": "number",
                         "exclusiveMinimum": 0,

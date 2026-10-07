@@ -1,3 +1,4 @@
+import {wovenPatternSignature} from '../core/woven-pattern';
 import {texturedFaceMaterial} from './face-material';
 import {faceAtlasSignature} from '../core/face-atlas';
 import {texturedSkyMaterial,disposeSkyMaterial} from './sky-material';
@@ -116,7 +117,7 @@ export class Viewer {
   const tasks:Promise<void>[]=[];
   for(const key of visible){
    const a=project.assets[key],gridAsset=displayAsset(a,this.mode==='asset'?this.layer:null,this.mode==='asset'?this.isolatedRegion:null),old=this.cacheSources.get(key),assetSignature=signature+(a.sky?JSON.stringify(Object.values(a.sky.materials).map(id=>[id,project.materials[id].color,project.materials[id].opacity])):'');
-   const effectSignature=assetSignature+JSON.stringify((a.meshes??[]).filter(m=>m.atmosphere||m.faceAtlas).map(m=>m.faceAtlas?faceAtlasSignature(m.faceAtlas,project.materials):[m.material,project.materials[m.material].color,project.materials[m.material].opacity]));
+   const effectSignature=assetSignature+JSON.stringify((a.meshes??[]).filter(m=>m.atmosphere||m.faceAtlas||m.wovenPattern).map(m=>m.wovenPattern?wovenPatternSignature(m.wovenPattern,project.materials):m.faceAtlas?faceAtlasSignature(m.faceAtlas,project.materials):[m.material,project.materials[m.material].color,project.materials[m.material].opacity]));
    const changed=dirtyMeshChunks(old?.asset,gridAsset,old?.signature!==effectSignature);this.cacheAccess.set(key,++this.accessClock);
    if(!changed.length){this.cacheSources.set(key,{asset:gridAsset,signature:effectSignature});continue;}
    const id=crypto.randomUUID();this.lastMeshedAssets.push(key);this.meshJobs++;
@@ -183,7 +184,7 @@ export class Viewer {
 
  view(name:string){if(this.skyPreview.clock)this.setSkyPreview(null);const box=new THREE.Box3().setFromObject(this.original.visible&&this.original.children.length?this.original:this.root),center=box.isEmpty()?new THREE.Vector3():box.getCenter(new THREE.Vector3()),d=box.isEmpty()?5:Math.max(...box.getSize(new THREE.Vector3()).toArray(),1),aspect=this.el.clientWidth/this.el.clientHeight;const perspective=name==='perspective';
   const old=this.controls.target.clone();this.controls.dispose();this.camera=perspective?new THREE.PerspectiveCamera(37,aspect,.01,500):new THREE.OrthographicCamera(-d*.8*aspect,d*.8*aspect,d*.8,-d*.8,.01,500);
-  const directions:Record<string,number[]>={perspective:[1.15,.85,-1.5],isometric:[1,1,-1],front:[0,0,-1],back:[0,0,1],left:[-1,0,0],right:[1,0,0],top:[0,1,0],bottom:[0,-1,0]};const dir=new THREE.Vector3().fromArray(directions[name]??directions.perspective);if(name==='top')this.camera.up.set(0,0,1);else if(name==='bottom')this.camera.up.set(0,0,-1);this.camera.position.copy(center).add(dir.multiplyScalar(d*1.8));this.controls=new OrbitControls(this.camera,this.renderer.domElement);this.controls.target.copy(center);this.controls.enableDamping=true;this.setTool(this.tool);this.controls.update();this.ground.visible=!this.clayEnabled&&this.studio&&name!=='bottom'&&!this.project?.assets[this.assetId!]?.sky;this.renderPass.camera=this.camera;this.aoPass.camera=this.camera;this.frame();
+  const directions:Record<string,number[]>={perspective:[1.15,.85,-1.5],isometric:[1,1,-1],front:[0,0,-1],back:[0,0,1],left:[-1,0,0],right:[1,0,0],top:[0,1,0],bottom:[0,-1,0],underside:[1,-.8,-1.25]};const dir=new THREE.Vector3().fromArray(directions[name]??directions.perspective);if(name==='top')this.camera.up.set(0,0,1);else if(name==='bottom')this.camera.up.set(0,0,-1);this.camera.position.copy(center).add(dir.multiplyScalar(d*1.8));this.controls=new OrbitControls(this.camera,this.renderer.domElement);this.controls.target.copy(center);this.controls.enableDamping=true;this.setTool(this.tool);this.controls.update();this.ground.visible=!this.clayEnabled&&this.studio&&name!=='bottom'&&name!=='underside'&&!this.project?.assets[this.assetId!]?.sky;this.renderPass.camera=this.camera;this.aoPass.camera=this.camera;this.frame();
  }
  toggleProjection(){this.view(this.camera instanceof THREE.PerspectiveCamera?'front':'perspective');}
  setSkyPreview(clock:SkyClock|null){

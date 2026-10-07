@@ -1,3 +1,4 @@
+import {makeReferenceRefinement,referenceRefinementIds} from './reference-refinement';
 import {wildlifeRecipes,makeWildlifeAsset} from './atlas-wildlife';
 import {faunaRecipes,makeFaunaAsset} from './atlas-fauna';
 import {careRecipes,makeCareAsset} from './atlas-care';
@@ -43,6 +44,13 @@ export function atlasRecipe(catalogId:string){
  return atlasBuiltRecipes[catalogId];
 }
 export function makeCatalogAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number|string>={},context?:Project){
+ if(params.refinement!==undefined){
+  const {refinement,...rest}=params;
+  if(!referenceRefinementIds.includes(catalogId)||Object.keys(rest).length||!['baseline','reference-v1'].includes(String(refinement)))throw new Error('未验证的精修资产或参数组合');
+  if(refinement==='baseline')return makeLifeAsset(catalogId,name,id,style);
+  if(!context)throw new Error('精修需要实际项目材质映射');
+  return makeReferenceRefinement(catalogId,name,id,style,context);
+ }
  if(catalogId==='BUILT-004')return makeSharedWall(name,id,style,params,context);
  if(wildlifeRecipes[catalogId])return makeWildlifeAsset(catalogId,name,id,style,params);
  if(faunaRecipes[catalogId])return makeFaunaAsset(catalogId,name,id,style,params);

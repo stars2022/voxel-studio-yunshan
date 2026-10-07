@@ -1,6 +1,8 @@
 # 67 张图册：三维资产转化
 
-累计 **793/793** 条参考技术候选，M001–M067 的参考转化齐全；人工美术验收 0。最新 [环境与家具参数](M066-M067-FINAL-VARIANTS.md)、[进度](../projects/conversion-goal.json) 与 [下载](../artifacts/atlas/atlas-20261007102004/PACKAGE-DOWNLOAD.txt)。最后一批 11 条参考、88 种有限形态。从 M001 开始按图册顺序做效果图级视觉打磨，继续分批推送。
+累计 **793/793** 条参考技术候选，M001–M067 的参考转化齐全；人工美术验收 0。技术转化最后一批为 [环境与家具参数](M066-M067-FINAL-VARIANTS.md) 的 11 条参考、88 种有限形态。
+
+最新视觉打磨为 [M001 的 12 件首轮精修](M001-REFERENCE-REFINEMENT.md)：39 张逐张检查的实际截图、12 对同机位前后图，52 项回归通过。首轮打磨交付 1/67 张，接续 M002；本轮不增加基础母版或参考 ID 数量。[实际总览](../artifacts/atlas/refinement-20261007114945/M001-materials.png) · [进度](../projects/conversion-goal.json) · [下载](../artifacts/atlas/refinement-20261007114945/PACKAGE-DOWNLOAD.txt)。继续按图册顺序向效果图级别打磨并分批推送。
 
 以下 M017 及更早数字、约定和验证保留为历史记录，不是最新累计状态。
 
