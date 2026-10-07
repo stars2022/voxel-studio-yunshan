@@ -1,0 +1,163 @@
+{
+  "ids": [
+    "CHAR-357",
+    "CHAR-358",
+    "CHAR-359",
+    "CHAR-360",
+    "CHAR-361",
+    "CHAR-362",
+    "CHAR-363",
+    "CHAR-364"
+  ],
+  "sourceImagesOpened": [
+    {
+      "file": "projects/reference-atlas/images/M065.png",
+      "sha256": "ee3a42d98b70ba8dfdf136a8dc0b3ce044a33f00521fed0a045fdf3c000861d9"
+    },
+    {
+      "file": "projects/reference-atlas/images/M066.png",
+      "sha256": "4b630447986de0322d48b6ddd531485e565223908a8a52123437a96255348bdf"
+    }
+  ],
+  "sourceRows": [
+    {
+      "asset_id": "CHAR-357",
+      "中文名称": "精细人体近景LOD装配",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（当前LOD来自程序粗部件）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "只读Citizen.id/position/state/role + extension.actorProfiles.age/alive；拟visualDescriptor/骨骼socket；不写模拟或碰撞",
+      "基础母版ID": "CHAR-059",
+      "派生规则": "近景保五官/手足/衣饰层次，复用人体与衣装母版；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    },
+    {
+      "asset_id": "CHAR-358",
+      "中文名称": "精细人体中景LOD派生",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（当前LOD来自程序粗部件）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "只读Citizen.id/position/state/role + extension.actorProfiles.age/alive；拟visualDescriptor/骨骼socket；不写模拟或碰撞",
+      "基础母版ID": "CHAR-059",
+      "派生规则": "合并不影响轮廓的衣饰，人物位置/朝向/年龄不变；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    },
+    {
+      "asset_id": "CHAR-359",
+      "中文名称": "精细人体远景LOD派生",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（当前LOD来自程序粗部件）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "只读Citizen.id/position/state/role + extension.actorProfiles.age/alive；拟visualDescriptor/骨骼socket；不写模拟或碰撞",
+      "基础母版ID": "CHAR-059",
+      "派生规则": "体态轮廓代理/低骨骼频率，实例颜色保持，远景不能变另一个人；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    },
+    {
+      "asset_id": "CHAR-360",
+      "中文名称": "儿童人体LOD派生",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（当前LOD来自程序粗部件）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "只读Citizen.id/position/state/role + extension.actorProfiles.age/alive；拟visualDescriptor/骨骼socket；不写模拟或碰撞",
+      "基础母版ID": "CHAR-063",
+      "派生规则": "各级保儿童头身比例，不能用成人代理仅缩小；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    },
+    {
+      "asset_id": "CHAR-361",
+      "中文名称": "四足动物LOD族派生",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（现仅程序near/far）；开发备忘录.md:322；docs/需求实现验证矩阵.md:56；src/types.ts:33,48（有biodiversity数值，无动物实体/外观契约）；src/renderer.ts:829-832（只消费居民、货品、车辆）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "拟动物实体id/species/owner/position/age/state + 可见区池接口；当前types.ts无该契约，资产不假造生态或库存",
+      "基础母版ID": "CHAR-306",
+      "派生规则": "按每个已确认四足母版生成近/中/远几何，族规则不算每色新model；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    },
+    {
+      "asset_id": "CHAR-362",
+      "中文名称": "鸟类动物LOD族派生",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（现仅程序near/far）；开发备忘录.md:322；docs/需求实现验证矩阵.md:56；src/types.ts:33,48（有biodiversity数值，无动物实体/外观契约）；src/renderer.ts:829-832（只消费居民、货品、车辆）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "拟动物实体id/species/owner/position/age/state + 可见区池接口；当前types.ts无该契约，资产不假造生态或库存",
+      "基础母版ID": "CHAR-319",
+      "派生规则": "保鸟翼/尾/落地尺寸，远距代理不穿栖息面；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    },
+    {
+      "asset_id": "CHAR-363",
+      "中文名称": "鱼类动物LOD族派生",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（现仅程序near/far）；开发备忘录.md:322；docs/需求实现验证矩阵.md:56；src/types.ts:33,48（有biodiversity数值，无动物实体/外观契约）；src/renderer.ts:829-832（只消费居民、货品、车辆）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "拟动物实体id/species/owner/position/age/state + 可见区池接口；当前types.ts无该契约，资产不假造生态或库存",
+      "基础母版ID": "CHAR-321",
+      "派生规则": "保水下轮廓与实际水域，只读动物位置；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    },
+    {
+      "asset_id": "CHAR-364",
+      "中文名称": "昆虫动物LOD族派生",
+      "类别": "角色动物LOD",
+      "条目类型": "配色尺寸变体",
+      "用途关联系统": "可见区/画质/池化",
+      "状态": "缺失待制",
+      "现有证据": "提示词.md:145-149；src/rendering/citizen-appearance.ts:121-134（现仅程序near/far）；开发备忘录.md:322；docs/需求实现验证矩阵.md:56；src/types.ts:33,48（有biodiversity数值，无动物实体/外观契约）；src/renderer.ts:829-832（只消费居民、货品、车辆）",
+      "生产方式": "从已验近景母版离线减面/合并图集与socket派生",
+      "依赖接口": "拟动物实体id/species/owner/position/age/state + 可见区池接口；当前types.ts无该契约，资产不假造生态或库存",
+      "基础母版ID": "CHAR-322",
+      "派生规则": "按距离减少翼动/几何，不假造群落产出；近远LOD不是独立model",
+      "验收要求": "在固定相机/昼夜对照检查切换形体与颜色稳定、无弹跳或分身；预算记录实测，macOS帧率未测不声称通过"
+    }
+  ],
+  "invariants": [
+    "Alllevels derive from complete retained near parents; never count a LOD as a newbase.",
+    "Preserve actual placement,units,orientation,rolecolors,ground/socketanchors.",
+    "Minimum components remain native voxels; continuous surfaces may be decimated with measured bounds.",
+    "Use actual independent child parents,not scaled adult.",
+    "Cover allconfirmed animalmasters in family; no species or simulation ownership invention.",
+    "No original automated distance,state or animation timing binding; finite manually selected levels.",
+    "Current formalbodyfiles frozen through push; LODdrafts underworkonly."
+  ],
+  "scope": "8reference families, finite defaults for actual confirmed species; near/middle/far. Original full parents plus measured display budget and screenshot comparison.",
+  "status": "reviewed",
+  "counts": {
+    "references": 8,
+    "finiteForms": 60,
+    "sourceIdentities": 20,
+    "newMasters": 0,
+    "newSpecies": 0
+  },
+  "acceptedInterpretation": [
+    "Use complete historicalCHAR001andCHAR165 as adult/child near identities.",
+    "Retain every confirmed animal default identity; no inferred state/animation binding.",
+    "Voxel minimum components and UV/native/rig/interfaces remain exact; bounded continuous mesh reduction only.",
+    "Keep thin overlays, hollow passages and contact triangles exact.",
+    "Near/middle/far compare at equal metres, actual source bounds and transforms.",
+    "Default source child bag proportions and angular fur patterns remain later visual refinement work."
+  ],
+  "sourceRowsUnmodified": true
+}

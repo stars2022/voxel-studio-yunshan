@@ -1,0 +1,25 @@
+{"n":306,"level":"near","triangles":5568,"instances":1}
+{"n":306,"level":"middle","triangles":5208,"instances":1}
+{"n":306,"level":"far","triangles":3804,"instances":1}
+{"n":319,"level":"near","triangles":4188,"instances":1}
+{"n":319,"level":"middle","triangles":4010,"instances":1}
+{"n":319,"level":"far","triangles":2914,"instances":1}
+{"n":322,"level":"near","triangles":5752,"instances":1}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(closed.every(c=>c.closed&&c.oriented))
+
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/lod-variants/probe-lod.ts:28:641) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

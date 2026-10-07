@@ -1,0 +1,19 @@
+{"n":306,"level":"near","triangles":5568,"instances":1}
+{"n":306,"level":"middle","triangles":5208,"instances":1}
+{"n":306,"level":"far","triangles":3804,"instances":1}
+{"n":319,"level":"near","triangles":4188,"instances":1}
+{"n":319,"level":"middle","triangles":4010,"instances":1}
+{"n":319,"level":"far","triangles":2914,"instances":1}
+{"n":322,"level":"near","triangles":5752,"instances":1}
+{"n":322,"level":"middle","triangles":4528,"instances":1}
+{"n":322,"level":"far","triangles":2716,"instances":1}
+{"n":0,"level":"near","triangles":12760,"instances":9}
+/workspace/voxel-studio-yunshan/src/core/engine.ts:29
+  if(id!==a.id||!/^[a-zA-Z0-9_-]{1,80}$/.test(id)||!Number.isFinite(a.cellSize)||a.cellSize<.001||a.cellSize>1||a.origin.length!==3||!a.origin.every(Number.isFinite))throw new Error('无效资产坐标系');
+                                                                                                                                                                            ^
+
+Error: 无效资产坐标系
+    at validateProject (/workspace/voxel-studio-yunshan/src/core/engine.ts:29:173)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/lod-variants/probe-lod.ts:29:135)
+
+Node.js v24.19.0

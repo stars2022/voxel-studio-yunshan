@@ -1,0 +1,23 @@
+{"n":0,"level":"near","triangles":12760,"instances":9}
+{"n":0,"level":"middle","triangles":10056,"instances":9}
+{"n":0,"level":"far","triangles":7344,"instances":9}
+{"n":1,"level":"near","triangles":13032,"instances":10}
+{"n":1,"level":"middle","triangles":10564,"instances":10}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(before.min.every((v,k)=>Math.abs(v-after.min[k])<1e-8)&&before.max.every((v,k)=>Math.abs(v-after.max[k])<1e-8))
+
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/lod-variants/probe-lod.ts:28:376) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

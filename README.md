@@ -4,7 +4,7 @@
 
 本项目位于独立的 `voxel-studio/` 目录，未改动上级项目文件。
 
-67 张完整参考图册已接入「图册」页，793 条参考逐 ID 对齐。累计 **774 个参考 ID（513 个独立图册母版、3 条共享引用、186 个组合模板、72 类参数变体）**已制作为候选，余 19 条；人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [本批体型/成长/肤色](docs/M064-M065-BODY-VARIANTS.md) · [下载](artifacts/atlas/atlas-20261007084442/PACKAGE-DOWNLOAD.txt)。M001–M064 已完整，M065 为 6/12。补齐全部转换后，将从 M001 开始按效果图逐项打磨，并继续分批推送。
+67 张完整参考图册已接入「图册」页，793 条参考逐 ID 对齐。累计 **782 个参考 ID（513 个独立图册母版、3 条共享引用、186 个组合模板、80 类参数变体）**已制作为候选，余 11 条；人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [本批人物与动物 LOD](docs/M065-M066-LOD-VARIANTS.md) · [下载](artifacts/atlas/atlas-20261007090922/PACKAGE-DOWNLOAD.txt)。M001–M065 已完整，M066 为 2/12。补齐全部转换后，将从 M001 开始按效果图逐项打磨，并继续分批推送。
 
 材质按用途与物理类别分配独立 ID，后期统一更换外观。新配方禁止按颜色借用类别；外观包不能改变类别或碰撞设置。[分类约定与当前复核范围](docs/MATERIAL-ROLES.md) · [显微镜真实前后对照](artifacts/microscope-study/comparison.png)。
 
