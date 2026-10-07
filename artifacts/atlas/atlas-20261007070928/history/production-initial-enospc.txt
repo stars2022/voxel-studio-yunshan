@@ -1,0 +1,14 @@
+node:internal/fs/promises:916
+  return await PromisePrototypeThen(
+         ^
+
+Error: ENOSPC: no space left on device, mkdir 'artifacts/atlas/atlas-20261007070653'
+    at async mkdir (node:internal/fs/promises:916:10)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/produce-reference-variants.ts:22:1) {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'mkdir',
+  path: 'artifacts/atlas/atlas-20261007070653'
+}
+
+Node.js v24.19.0

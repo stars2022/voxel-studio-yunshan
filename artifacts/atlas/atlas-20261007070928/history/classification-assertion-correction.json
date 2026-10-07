@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "reason": "Two existing BUILT-only query assertions included every catalogVariantId; first CHAR variants exposed that incorrect expectation. Filter the expected variant IDs by the query prefix. Production code and the other 375 source/test files are unchanged.",
+  "changes": {
+    "tests/atlas-domestic.test.ts": {
+      "before": "440c99c19dae9c97fd304dd63f731d79626d81168380346a1234c86e3d44f58c",
+      "after": "3ffe016c773a34f5dd1fa202d683b27981653a5d9ee066c72bf0bc1c5d946e24"
+    },
+    "tests/atlas-structure.test.ts": {
+      "before": "d64c664113cc014f49e8a3cbcbcf14d33d7b232e0146ffcf54711c564538bdcb",
+      "after": "e0acc821575728bfb747777b71cb85cb388ce15d2ece8fb5caaafaa45cdb38dd"
+    }
+  },
+  "productionUnchanged": true,
+  "affectedFilesRerunInFull": [
+    "tests/atlas-domestic.test.ts",
+    "tests/atlas-structure.test.ts"
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "run": "atlas-20261007070928",
+  "status": "passed",
+  "records": [
+    {
+      "id": "CHAR-017",
+      "params": {
+        "ageBand": "infant"
+      },
+      "isDefault": true,
+      "directory": "projects/production/atlas-20261007070928/exports/CHAR-017",
+      "file": "atlas-20261007070928-char-017.ysvox.json",
+      "assemblyId": "char-017",
+      "parentCatalogId": "CHAR-001",
+      "dependencyCatalogIds": [
+        "CHAR-001",
+        "CHAR-059",
+        "CHAR-061",
+        "CHAR-066",
+        "CHAR-067",
+        "CHAR-070",
+        "CHAR-071",
+        "CHAR-085",
+        "CHAR-113",
+        "CHAR-118",
+        "CHAR-121"
+      ],
+      "instances": 2,
+      "audit": {
+        "passed": true,
+        "catalogId": "CHAR-017",
+        "parameters": {
+          "ageBand": "infant"
+        },
+        "actualHeightM": 0.6,
+        "unscaledHeadHeightM": 0.19,
+        "headToHeightRatio": 0.3166666666666667,
+        "sourceBody": "CHAR-061",
+        "originalParentComponents": 9,
+        "sources": [
+          {
+            "id": "source-char-113-bodyFit-adultA",
+            "unchanged": true
+          },
+          {
+            "id": "source-char-118-bodyFit-adultA",
+            "unchanged": true
+          },
+          {
+            "id": "source-char-121-bodyFit-adultA",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-head-adult-adultA-head",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-hair-adult-adultA-head",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-hand-adult-adultA-wrist-1",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-foot-adult-reflected-adultA-ankle-1",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-hand-adult-reflected-adultA-wrist1",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-foot-adult-adultA-ankle1",
+            "unchanged": true
+          }
+        ],
+        "components": [
+          {
+            "id": "source-char-061-extremities-covered",
+            "closedParts": 16,
+            "nativeCells": 127,
+            "nativeIslands": 1,
+            "allNativeAttached": true,
+            "nonphysical": true
+          },
+          {
+            "id": "source-char-067-headStage-infant",
+            "closedParts": 5,
+            "nativeCells": 264,
+            "nativeIslands": 7,
+            "allNativeAttached": true,
+            "nonphysical": true
+          }
+        ],
+        "nativeCellsMovedAsRigidIslands": 0,
+        "neckSolidOverlapSamples": 9,
+        "intendedNeckInsertion": {
+          "pairs": 3,
+          "contained": 507,
+          "crossing": 348,
+          "details": [
+            {
+              "a": "髋腹胸肩连续衣身",
+              "b": "颈部插接",
+              "contained": 144,
+              "crossing": 112
+            },
+            {
+              "a": "衣领承接颈部",
+              "b": "独立颅额颧颊下颌-infant",
+              "contained": 187,
+              "crossing": 124
+            },
+            {
+              "a": "衣领承接颈部",
+              "b": "颈部插接",
+              "contained": 176,
+              "crossing": 112
+            }
+          ]
+        },
+        "bodyAndHeadSourceUnchanged": true,
+        "originalProfileBound": false,
+        "scope": "Independent age-specific clothed body/head with two real sole contacts and actual neck insertion; neutral mittens/socks, static standing, no detailed hand/foot claim or runtime age controller."
+      },
+      "nearTriangles": 2488,
+      "farTriangles": 2452,
+      "exports": [
+        {
+          "key": "visual",
+          "bytes": 455524,
+          "boundsErrorM": 2.9206276008775234e-9,
+          "toleranceM": 0.000005,
+          "alphaChecks": []
+        },
+        {
+          "key": "visual-far",
+          "bytes": 452784,
+          "boundsErrorM": 2.9206276008775234e-9,
+          "toleranceM": 0.000005,
+          "alphaChecks": []
+        },
+        {
+          "key": "visual-material",
+          "bytes": 3194500,
+          "boundsErrorM": 2.9206276008775234e-9,
+          "toleranceM": 0.000005,
+          "alphaChecks": [
+            {
+              "materialId": 237,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 238,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 240,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 241,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 242,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 243,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 254,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 255,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 256,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            }
+          ]
+        }
+      ],
+      "geometrySHA256": "c71f9c1dbd0f06dd993881fb3cc3973f2c2148b276d583b5b3efe665032a0414",
+      "nativeInterfacesAndActualCollisionIdentical": true,
+      "ageHeightAndOriginalRuntimeBoundaryPreserved": true
+    },
+    {
+      "id": "CHAR-018",
+      "params": {
+        "ageBand": "preschool"
+      },
+      "isDefault": true,
+      "directory": "projects/production/atlas-20261007070928/exports/CHAR-018",
+      "file": "atlas-20261007070928-char-018.ysvox.json",
+      "assemblyId": "char-018",
+      "parentCatalogId": "CHAR-001",
+      "dependencyCatalogIds": [
+        "CHAR-001",
+        "CHAR-059",
+        "CHAR-062",
+        "CHAR-066",
+        "CHAR-067",
+        "CHAR-070",
+        "CHAR-071",
+        "CHAR-085",
+        "CHAR-113",
+        "CHAR-118",
+        "CHAR-121"
+      ],
+      "instances": 2,
+      "audit": {
+        "passed": true,
+        "catalogId": "CHAR-018",
+        "parameters": {
+          "ageBand": "preschool"
+        },
+        "actualHeightM": 1,
+        "unscaledHeadHeightM": 0.205,
+        "headToHeightRatio": 0.205,
+        "sourceBody": "CHAR-062",
+        "originalParentComponents": 9,
+        "sources": [
+          {
+            "id": "source-char-113-bodyFit-adultA",
+            "unchanged": true
+          },
+          {
+            "id": "source-char-118-bodyFit-adultA",
+            "unchanged": true
+          },
+          {
+            "id": "source-char-121-bodyFit-adultA",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-head-adult-adultA-head",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-hair-adult-adultA-head",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-hand-adult-adultA-wrist-1",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-foot-adult-reflected-adultA-ankle-1",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-hand-adult-reflected-adultA-wrist1",
+            "unchanged": true
+          },
+          {
+            "id": "architecture-community-resident-mounted-foot-adult-adultA-ankle1",
+            "unchanged": true
+          }
+        ],
+        "components": [
+          {
+            "id": "architecture-age-body-preschool-1",
+            "closedParts": 16,
+            "nativeCells": 136,
+            "nativeIslands": 2,
+            "allNativeAttached": true,
+            "nonphysical": true
+          },
+          {
+            "id": "source-char-067-headStage-toddler",
+            "closedParts": 5,
+            "nativeCells": 224,
+            "nativeIslands": 7,
+            "allNativeAttached": true,
+            "nonphysical": true
+          }
+        ],
+        "nativeCellsMovedAsRigidIslands": 136,
+        "neckSolidOverlapSamples": 9,
+        "intendedNeckInsertion": {
+          "pairs": 3,
+          "contained": 509,
+          "crossing": 350,
+          "details": [
+            {
+              "a": "髋腹胸肩连续衣身",
+              "b": "颈部插接",
+              "contained": 144,
+              "crossing": 112
+            },
+            {
+              "a": "衣领承接颈部",
+              "b": "独立颅额颧颊下颌-toddler",
+              "contained": 189,
+              "crossing": 126
+            },
+            {
+              "a": "衣领承接颈部",
+              "b": "颈部插接",
+              "contained": 176,
+              "crossing": 112
+            }
+          ]
+        },
+        "bodyAndHeadSourceUnchanged": true,
+        "originalProfileBound": false,
+        "scope": "Independent age-specific clothed body/head with two real sole contacts and actual neck insertion; neutral mittens/socks, static standing, no detailed hand/foot claim or runtime age controller."
+      },
+      "nearTriangles": 2516,
+      "farTriangles": 2448,
+      "exports": [
+        {
+          "key": "visual",
+          "bytes": 457952,
+          "boundsErrorM": 3.2782554587607038e-9,
+          "toleranceM": 0.000005,
+          "alphaChecks": []
+        },
+        {
+          "key": "visual-far",
+          "bytes": 452776,
+          "boundsErrorM": 3.2782554587607038e-9,
+          "toleranceM": 0.000005,
+          "alphaChecks": []
+        },
+        {
+          "key": "visual-material",
+          "bytes": 3196928,
+          "boundsErrorM": 3.2782554587607038e-9,
+          "toleranceM": 0.000005,
+          "alphaChecks": [
+            {
+              "materialId": 237,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 238,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 240,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 241,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 242,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 243,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 254,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 255,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            },
+            {
+              "materialId": 256,
+              "effectiveAlpha": 1,
+              "actualUVPixel": true
+            }
+          ]
+        }
+      ],
+      "geometrySHA256": "b13b9b8152b834a494d19e0c63c7d706833aff845dc48f6522d52cf6a5fe8e32",
+      "nativeInterfacesAndActualCollisionIdentical": true,
+      "ageHeightAndOriginalRuntimeBoundaryPreserved": true
+    }
+  ],
+  "variants": [],
+  "gallery": "M061-gallery",
+  "galleryBounds": [
+    {
+      "id": "built-084",
+      "min": [
+        0,
+        0,
+        0
+      ],
+      "max": [
+        13.6,
+        5.32,
+        7.2
+      ]
+    },
+    {
+      "id": "built-085",
+      "min": [
+        26.6,
+        0,
+        0.16
+      ],
+      "max": [
+        31,
+        3.2,
+        0.76
+      ]
+    },
+    {
+      "id": "built-170",
+      "min": [
+        53.35,
+        0,
+        0.02499999999999991
+      ],
+      "max": [
+        55.85,
+        2.3,
+        5.55
+      ]
+    },
+    {
+      "id": "built-171",
+      "min": [
+        79.94999999999999,
+        0,
+        0.17499999999999893
+      ],
+      "max": [
+        83.25,
+        2.3,
+        16.2
+      ]
+    },
+    {
+      "id": "built-172",
+      "min": [
+        0.15000000000000013,
+        0,
+        30.175000000000004
+      ],
+      "max": [
+        3.45,
+        2.3,
+        46.2
+      ]
+    },
+    {
+      "id": "built-173",
+      "min": [
+        26.75,
+        0.1,
+        30.025000000000002
+      ],
+      "max": [
+        29.25,
+        2.4,
+        33.55
+      ]
+    },
+    {
+      "id": "built-174",
+      "min": [
+        53.35,
+        0,
+        30.025
+      ],
+      "max": [
+        55.85,
+        2.3,
+        35.55
+      ]
+    },
+    {
+      "id": "built-175",
+      "min": [
+        79.95,
+        0,
+        30.075000000000003
+      ],
+      "max": [
+        84.45,
+        2.3,
+        41.1
+      ]
+    },
+    {
+      "id": "built-176",
+      "min": [
+        0,
+        0,
+        60.074999999999996
+      ],
+      "max": [
+        14,
+        2.6,
+        77.1
+      ]
+    },
+    {
+      "id": "built-182",
+      "min": [
+        26.6,
+        0.05000000000000002,
+        60
+      ],
+      "max": [
+        41.1,
+        3.4000000000000004,
+        78
+      ]
+    },
+    {
+      "id": "char-017",
+      "min": [
+        53.249352,
+        0,
+        60.098000000000006
+      ],
+      "max": [
+        53.550647999999995,
+        0.6,
+        60.286
+      ]
+    },
+    {
+      "id": "char-018",
+      "min": [
+        79.836804,
+        0,
+        60.095000000000006
+      ],
+      "max": [
+        80.163196,
+        1,
+        60.282000000000004
+      ]
+    }
+  ],
+  "galleryGroupsDisjoint": true,
+  "defaultVariants": 2,
+  "finiteForms": 2,
+  "distinctGeometryMaterialConfigurations": 2,
+  "distinctShapeConfigurations": 2,
+  "distinctPhysicalGeometryConfigurations": 0,
+  "newBaseMasters": 0,
+  "newAssemblies": 0,
+  "batchComplete": true,
+  "wholeSheetComplete": true,
+  "sheetProducedReferences": 12,
+  "sheetReferenceCount": 12,
+  "humanArtAccepted": 0
+}

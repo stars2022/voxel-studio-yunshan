@@ -1,0 +1,77 @@
+{
+  "run": "atlas-20261007070928",
+  "status": "passed",
+  "candidates": 2,
+  "pendingCandidates": 0,
+  "newRoles": [],
+  "totalRoles": 512,
+  "creationBatches": [
+    256,
+    256
+  ],
+  "checks": [
+    {
+      "id": "CHAR-017",
+      "params": {
+        "ageBand": "infant"
+      },
+      "assetId": "source-char-061-extremities-covered",
+      "roles": [
+        "modelSuit",
+        "modelSuitTrim"
+      ],
+      "nativeCellSizeM": 0.005,
+      "nonphysical": true
+    },
+    {
+      "id": "CHAR-017",
+      "params": {
+        "ageBand": "infant"
+      },
+      "assetId": "source-char-067-headStage-infant",
+      "roles": [
+        "skinSurface",
+        "skinLip",
+        "eyeWhite",
+        "eyeIris",
+        "eyePupil",
+        "hairMass",
+        "skinCrease"
+      ],
+      "nativeCellSizeM": 0.005,
+      "nonphysical": true
+    },
+    {
+      "id": "CHAR-018",
+      "params": {
+        "ageBand": "preschool"
+      },
+      "assetId": "architecture-age-body-preschool-1",
+      "roles": [
+        "modelSuit",
+        "modelSuitTrim"
+      ],
+      "nativeCellSizeM": 0.005,
+      "nonphysical": true
+    },
+    {
+      "id": "CHAR-018",
+      "params": {
+        "ageBand": "preschool"
+      },
+      "assetId": "source-char-067-headStage-toddler",
+      "roles": [
+        "skinSurface",
+        "skinLip",
+        "eyeWhite",
+        "eyeIris",
+        "eyePupil",
+        "hairMass",
+        "skinCrease"
+      ],
+      "nativeCellSizeM": 0.005,
+      "nonphysical": true
+    }
+  ],
+  "note": "Two age-specific clothed body/head variants retain512existing purpose roles. Native5mmdetails remain rigid islands. Skin, lip, eyes, brow hair and neutral suit/trims remain separate nonphysical nonemissive roles. Full parent001and original061/062/067 retained; no runtime age/profile binding."
+}

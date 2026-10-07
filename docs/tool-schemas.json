@@ -1669,7 +1669,7 @@
                   },
                   "catalogId": {
                     "type": "string",
-                    "pattern": "^BUILT-[0-9]{3}$"
+                    "pattern": "^(BUILT|CHAR)-[0-9]{3}$"
                   },
                   "id": {
                     "type": "string",
@@ -1802,6 +1802,12 @@
                       "padSize": {
                         "enum": [
                           "military-14m"
+                        ]
+                      },
+                      "ageBand": {
+                        "enum": [
+                          "infant",
+                          "preschool"
                         ]
                       }
                     },
