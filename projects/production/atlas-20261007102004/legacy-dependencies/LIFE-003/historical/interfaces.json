@@ -1,0 +1,157 @@
+{
+  "format": "yunshan.interfaces",
+  "version": 1,
+  "units": "metres",
+  "upAxis": "Y",
+  "materialRoles": {
+    "yunshan": {
+      "stone": 1,
+      "wall": 2,
+      "wood": 3,
+      "metal": 4,
+      "roof": 5,
+      "glass": 6,
+      "ceramic": 7,
+      "fabric": 8,
+      "leaf": 9,
+      "water": 10,
+      "energy": 11,
+      "warm": 12,
+      "soil": 13,
+      "screen": 14,
+      "bronze": 41,
+      "woodEdge": 42,
+      "trim": 43,
+      "recess": 44,
+      "paper": 45,
+      "leafAlt": 46,
+      "fabricEdge": 47
+    }
+  },
+  "assemblies": {},
+  "assemblySpace": "local template coordinates; instances are actual scene placements",
+  "assets": [
+    {
+      "id": "life-003",
+      "name": "床头靠板",
+      "version": 1,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "cellSize": 0.01,
+      "ports": [
+        {
+          "id": "base",
+          "kind": "support",
+          "position": [
+            0,
+            0.42,
+            -0.06
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "size": [
+            1.6300000000000001,
+            0,
+            0.18
+          ],
+          "pitch": 0.01
+        }
+      ],
+      "parts": [
+        {
+          "id": "root",
+          "name": "整体",
+          "parent": null,
+          "region": {
+            "min": [
+              0,
+              42,
+              -6
+            ],
+            "max": [
+              163,
+              100,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-0",
+          "name": "床头立柱、榫肩与横枨",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              42,
+              0
+            ],
+            "max": [
+              160,
+              100,
+              12
+            ]
+          }
+        },
+        {
+          "id": "part-1",
+          "name": "凹槽浅色嵌板和回纹",
+          "parent": "root",
+          "region": {
+            "min": [
+              12,
+              47,
+              0
+            ],
+            "max": [
+              148,
+              92,
+              11
+            ]
+          }
+        },
+        {
+          "id": "part-2",
+          "name": "柱侧可更换控制盒",
+          "parent": "root",
+          "region": {
+            "min": [
+              153,
+              64,
+              -6
+            ],
+            "max": [
+              163,
+              83,
+              0
+            ]
+          }
+        },
+        {
+          "id": "part-3",
+          "name": "双立柱、浅色嵌芯、回纹浮雕与侧控面板",
+          "parent": "root",
+          "region": {
+            "min": [
+              0,
+              42,
+              -6
+            ],
+            "max": [
+              163,
+              100,
+              12
+            ]
+          }
+        }
+      ],
+      "openings": []
+    }
+  ],
+  "instances": []
+}

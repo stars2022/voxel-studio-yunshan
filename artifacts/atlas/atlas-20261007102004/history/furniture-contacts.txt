@@ -1,0 +1,24 @@
+{"id":"LIFE-033","size":"standard","pairs":[]}
+{"id":"LIFE-033","size":"compact","pairs":[]}
+{"id":"LIFE-033","size":"wide","pairs":[]}
+{"id":"LIFE-034","size":"standard","pairs":[{"j":0,"k":1,"overlap":0,"touch":1496,"up":1496,"volumeM3":0}]}
+{"id":"LIFE-034","size":"compact","pairs":[{"j":0,"k":1,"overlap":0,"touch":1264,"up":1264,"volumeM3":0}]}
+{"id":"LIFE-034","size":"wide","pairs":[{"j":0,"k":1,"overlap":0,"touch":1824,"up":1824,"volumeM3":0}]}
+{"id":"LIFE-035","size":"standard","pairs":[{"j":0,"k":1,"overlap":0,"touch":16728,"up":16728,"volumeM3":0},{"j":0,"k":2,"overlap":0,"touch":148,"up":148,"volumeM3":0},{"j":0,"k":3,"overlap":0,"touch":0,"up":0,"volumeM3":0},{"j":1,"k":2,"overlap":0,"touch":4,"up":0,"volumeM3":0},{"j":1,"k":3,"overlap":0,"touch":19872,"up":19872,"volumeM3":0},{"j":2,"k":3,"overlap":0,"touch":0,"up":0,"volumeM3":0}]}
+/workspace/voxel-studio-yunshan/src/production/life.ts:227
+ for(let i=0;i<3;i++)if(!Number.isFinite(dims[i])||dims[i]<recipe.size[i]*.75||dims[i]>recipe.size[i]*1.5)throw new Error('尺寸只允许配方默认值的 0.75–1.5 倍；细节重新体素化');
+                                                                                                                ^
+
+Error: 尺寸只允许配方默认值的 0.75–1.5 倍；细节重新体素化
+    at makeLifeAsset (/workspace/voxel-studio-yunshan/src/production/life.ts:227:113)
+    at makeCatalogAsset (/workspace/voxel-studio-yunshan/src/production/catalog-assets.ts:60:133)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/environment-furniture/furniture-variants.ts:15:117)
+    at ArchitectureBuilder.asset (/workspace/voxel-studio-yunshan/src/production/architecture-near-assembly.ts:19:149)
+    at install (/workspace/voxel-studio-yunshan/work/environment-furniture/furniture-variants.ts:15:87)
+    at makeFurnitureVariant (/workspace/voxel-studio-yunshan/work/environment-furniture/furniture-variants.ts:18:2)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/environment-furniture/furniture-contacts.ts:4:41)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0

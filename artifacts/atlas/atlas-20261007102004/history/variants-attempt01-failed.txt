@@ -1,0 +1,24 @@
+{"id":"ENV-007","params":{"cliffForm":"concave"},"instances":1,"components":1,"near":400,"far":400}
+{"id":"ENV-007","params":{"cliffForm":"convex"},"instances":1,"components":1,"near":400,"far":400}
+{"id":"ENV-007","params":{"cliffForm":"end"},"instances":1,"components":1,"near":400,"far":400}
+{"id":"ENV-007","params":{"cliffForm":"multiple"},"instances":1,"components":1,"near":400,"far":400}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"large","rockWetness":"dry"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"large","rockWetness":"wet"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"small","rockWetness":"dry"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"small","rockWetness":"wet"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"large","rockWetness":"dry"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"large","rockWetness":"wet"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"small","rockWetness":"dry"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"small","rockWetness":"wet"},"instances":1,"components":1,"near":140,"far":132}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"large","rockWetness":"dry"},"instances":1,"components":1,"near":264,"far":264}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"large","rockWetness":"wet"},"instances":1,"components":1,"near":264,"far":264}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"small","rockWetness":"dry"},"instances":1,"components":1,"near":264,"far":264}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"small","rockWetness":"wet"},"instances":1,"components":1,"near":264,"far":264}
+/workspace/voxel-studio-yunshan/scripts/verify-final-variants.ts:67
+   const materialId=Number(mat.getExtras().voxelMaterialId);assert.ok(doc.materials[materialId]);const uv=primitive.getAttribute('TEXCOORD_0')!.getArray()!,img=await sharp(mat.getBaseColorTexture()!.getImage()!).ensureAlpha().raw().toBuffer({resolveWithObject:true}),x=Math.floor(((uv[0]%1+1)%1)*img.info.width),y=Math.floor(((uv[1]%1+1)%1)*img.info.height),effectiveAlpha=img.data[(y*img.info.width+x)*4+3]/255*mat.getBaseColorFactor()[3];assert.ok(Math.abs(effectiveAlpha-doc.materials[materialId].opacity)<1/255+1e-8);alphaChecks.push({materialId,effectiveAlpha,actualUVPixel:true});
+                                                                                                                                                                                                    ^
+
+TypeError: Cannot read properties of null (reading 'getImage')
+    at <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-final-variants.ts:67:197)
+
+Node.js v24.19.0

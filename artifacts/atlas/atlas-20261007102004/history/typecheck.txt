@@ -1,0 +1,12 @@
+work/environment-furniture/environment-variants.ts(66,385): error TS2345: Argument of type '{ height: number; habit?: undefined; } | { habit: string; height?: undefined; } | { height?: undefined; habit?: undefined; }' is not assignable to parameter of type 'Record<string, string | number> | undefined'.
+  Type '{ height: number; habit?: undefined; }' is not assignable to type 'Record<string, string | number>'.
+    Property 'habit' is incompatible with index signature.
+      Type 'undefined' is not assignable to type 'string | number'.
+work/environment-furniture/furniture-variants.ts(11,560): error TS2345: Argument of type '{ wood: { color: string; }; woodEdge: { color: string; }; fabric?: undefined; fabricEdge?: undefined; } | { wood?: undefined; woodEdge?: undefined; fabric?: undefined; fabricEdge?: undefined; } | { fabric: { ...; }; fabricEdge: { ...; }; wood?: undefined; woodEdge?: undefined; }' is not assignable to parameter of type 'Record<string, Partial<Material>>'.
+  Type '{ wood: { color: string; }; woodEdge: { color: string; }; fabric?: undefined; fabricEdge?: undefined; }' is not assignable to type 'Record<string, Partial<Material>>'.
+    Property 'fabric' is incompatible with index signature.
+      Type 'undefined' is not assignable to type 'Partial<Material>'.
+work/environment-furniture/furniture-variants.ts(15,176): error TS2345: Argument of type '{ width?: undefined; } | { width: number; }' is not assignable to parameter of type 'Record<string, string | number> | undefined'.
+  Type '{ width?: undefined; }' is not assignable to type 'Record<string, string | number>'.
+    Property 'width' is incompatible with index signature.
+      Type 'undefined' is not assignable to type 'string | number'.

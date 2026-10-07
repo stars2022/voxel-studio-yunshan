@@ -15,54 +15,54 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 782,
-    "remainingReferenceEntries": 11,
-    "completedReferenceSheets": 65,
+    "referenceCandidates": 793,
+    "remainingReferenceEntries": 0,
+    "completedReferenceSheets": 67,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 533,
       "auxiliaryMasters": 1,
       "assemblies": 186,
-      "variantEntries": 84,
-      "variantModels": 249,
+      "variantEntries": 91,
+      "variantModels": 328,
       "accepted": 0,
-      "notProduced": 261,
-      "generatedEntries": 807,
+      "notProduced": 254,
+      "generatedEntries": 814,
       "materialEntries": 1,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 782,
+      "atlasReferenceCandidates": 793,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
       "atlasAssemblyCandidates": 186,
-      "atlasVariantCandidates": 80,
-      "atlasVariantForms": 240
+      "atlasVariantCandidates": 91,
+      "atlasVariantForms": 328
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
     "sheets": [
-      "M066",
-      "M067"
+      "M001"
     ],
-    "subBatch": "environment-furniture",
-    "state": "drafting",
+    "subBatch": "reference-art-refinement",
+    "state": "starting",
     "ids": [
-      "ENV-007",
-      "ENV-018",
-      "ENV-033",
-      "ENV-051",
-      "ENV-058",
-      "ENV-075",
-      "ENV-083",
-      "LIFE-033",
-      "LIFE-034",
-      "LIFE-035",
-      "LIFE-036"
+      "LIFE-008",
+      "LIFE-009",
+      "LIFE-019",
+      "LIFE-020",
+      "LIFE-023",
+      "LIFE-024",
+      "LIFE-025",
+      "LIFE-026",
+      "LIFE-027",
+      "LIFE-028",
+      "LIFE-029",
+      "LIFE-030"
     ],
-    "scope": "Final seven environment and four furniture parameter references; retain real original parents and purpose roles. Then start reference-art refinement from M001."
+    "scope": "Follow user extension: after all793reference conversions, refine sequentially fromM001 toward reference-render quality. Actual shape/proportions, continuous bevels/curves, purpose-correct textures/materials and lighting; preserve originals and validate/push each batch."
   },
-  "nextBatch": "M066",
+  "nextBatch": "M001",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -74,16 +74,15 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M065完整，累计782条技术候选，余11。513独立图册母版、3共享引用、186图册组合、80变体参考/240有限形态；人工美术验收0。"
+    "M001–M067的793条参考均已完成技术候选转化。513独立图册母版、3共享引用、186组合、91变体参考/328有限形态；人工美术验收0。已开始从M001顺序做效果图级打磨。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正：仅最小组件体素；斜面曲面连续，天空星空使用真实贴图。",
-    "用户新目标：补齐793条后从M001开始逐项打磨至效果图级别，继续分批推送；技术通过不计最终美术达标。",
-    "本批8参考60形态、180实际GLB、108父核对22配置；119相关回归与3新LOD测试通过。公开MCP全部60形态创建/旋转撤销、8图册入口和60实拍通过。",
-    "累计782/793，余11；基础533、组合186、变体84类/249形态、材质资源1。",
-    "接续M066七环境及三家具参数、M067沙发参数，共11条；草稿在work/environment-furniture。",
-    "每批验证后推送origin/main已授权，不停总目标。验证冻结实际源代码，浏览器严格串行。",
+    "参考清单793/793已转化，67张图册齐全；逐条读取原生文件和实际GLB的闭环审计见reference-completion.json。",
+    "本批11条参考/88形态，264实际GLB、118历史父核对/19配置；实际截图及回归见validation.json。",
+    "原生最小组件保留体素；大形、曲面、斜面正常连续。不得把技术检查通过当作效果图达标。",
+    "接续M001衣柜内胆、梳妆镜、键盘、折臂台灯、圆凳、鞋柜、搁板、挂轨、帘片、顶灯、壁灯和面板。",
+    "每批验证后推送origin/main已授权，继续执行。浏览器严格串行，冻结实际源代码。",
     "磁盘紧张，仅无损归档已关闭scratch并验证恢复字节，不删除正式资产或Git历史。"
   ],
   "modelingDirection": {
@@ -94,18 +93,18 @@
   },
   "lastCompletedBatch": {
     "sheets": [
-      "M065",
-      "M066"
+      "M066",
+      "M067"
     ],
-    "subBatch": "human-animal-lod",
-    "run": "atlas-20261007090922",
+    "subBatch": "environment-furniture",
+    "run": "atlas-20261007102004",
     "state": "validated",
-    "wholeSheetComplete": false,
-    "newReferences": 8,
-    "finiteForms": 60,
-    "sheetProducedReferences": 14,
-    "sheetReferenceCount": 24,
-    "evidence": "artifacts/atlas/atlas-20261007090922"
+    "wholeSheetComplete": true,
+    "newReferences": 11,
+    "finiteForms": 88,
+    "sheetProducedReferences": 13,
+    "sheetReferenceCount": 13,
+    "evidence": "artifacts/atlas/atlas-20261007102004"
   },
   "refinementPhase": {
     "status": "queued-after-reference-conversion",
@@ -122,5 +121,19 @@
     ],
     "acceptance": "技术通过不等于视觉达标；人工验收不自动记通过",
     "authorization": "用户：搞完后从头开始打磨，达到效果图级别"
+  },
+  "conversionPhase": {
+    "status": "complete-technical-candidates",
+    "referenceCount": 793,
+    "completedSheets": 67,
+    "evidence": "artifacts/atlas/atlas-20261007102004/reference-completion.json",
+    "humanArtAccepted": 0
+  },
+  "visualRefinementPhase": {
+    "status": "in-progress",
+    "startSheet": "M001",
+    "target": "reference-render quality",
+    "completedSheets": 0,
+    "scope": "Sequential reference-art refinement; retain source masters and same-camera actual before/after3D views."
   }
 }

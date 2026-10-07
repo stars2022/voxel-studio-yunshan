@@ -200,10 +200,14 @@ export class Viewer {
  setClip(value:number){if(!Number.isFinite(value)&&value!==Infinity)throw new Error("Invalid clip height");this.clipY=value;setMaterialClip(this.clayMaterial,value);this.practicalLights.children.forEach(l=>l.visible=l.position.y<value);setMaterialClip(this.aoPass.normalMaterial,value);for(const material of [...this.materials.values(),...this.proceduralMaterials])setMaterialClip(material,value);}
  setStudio(enabled:boolean){
   this.studio=enabled;const soft=enabled&&this.referenceLighting;
+  const shadowType=soft?THREE.VSMShadowMap:THREE.PCFSoftShadowMap,shadowChanged=this.renderer.shadowMap.enabled!==enabled||this.renderer.shadowMap.type!==shadowType;
   this.practicalLights.visible=enabled&&this.practicalsEnabled;document.body.classList.toggle('studio-light',enabled);
   const backdrop=soft?0xd6d7d3:0xc5c9c8;this.renderer.setClearColor(enabled?backdrop:0x27332e);(this.ground.material as THREE.MeshStandardMaterial).color.setHex(backdrop);
   this.grid.visible=!enabled;this.ground.visible=enabled;this.renderer.shadowMap.enabled=enabled;
-  this.renderer.shadowMap.type=soft?THREE.VSMShadowMap:THREE.PCFSoftShadowMap;this.sun.shadow.radius=soft?5:3;this.sun.shadow.blurSamples=8;
+  this.renderer.shadowMap.type=shadowType;this.sun.shadow.radius=soft?5:3;this.sun.shadow.blurSamples=8;
+  // Shadow enablement and filtering are shader defines. Cached materials must
+  // recompile when these change, including currently hidden asset materials.
+  if(shadowChanged){const affected=new Set<THREE.Material>(this.materials.values());this.scene.traverse(o=>{if(o instanceof THREE.Mesh)for(const m of Array.isArray(o.material)?o.material:[o.material])affected.add(m);});for(const m of affected)m.needsUpdate=true;}
   this.ambient.intensity=enabled?(soft?.8:1.25):2.6;this.sun.intensity=enabled?(soft?2.6:3.6):3.1;this.sun.color.setHex(soft?0xfff6e9:0xfff1dd);this.fill.intensity=soft?.6:.7;
   this.scene.environment=enabled?this.environment:null;this.scene.environmentIntensity=soft?.75:.28;this.renderer.toneMappingExposure=enabled?(soft?1:.85):1.1;
   if(this.aoPass){this.aoPass.kernelRadius=soft?.085:.25;this.aoPass.minDistance=soft?.00001:.00005;this.aoPass.maxDistance=soft?.001:.015;

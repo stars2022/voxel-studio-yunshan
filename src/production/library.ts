@@ -31,7 +31,7 @@ import {readAtlasProduction} from './atlas';
 import {atlasLifeRecipes,atlasSource} from './atlas-life';
 import {atlasBuiltRecipes,builtWidthParameter} from './atlas-built';
 
-export type LibraryEntry={id:string;primaryMasterId?:string;name:string;type:string;stage:'geometry-candidate'|'layout-candidate'|'variant-candidate'|'material-candidate'|'not-produced';file?:string;assetIds:string[];assemblyId?:string;voxels?:number;triangles?:number;sha256?:string;note:string};
+export type LibraryEntry={id:string;primaryMasterId?:string;name:string;type:string;stage:'geometry-candidate'|'layout-candidate'|'variant-candidate'|'material-candidate'|'not-produced';file?:string;assetIds:string[];assemblyId?:string;finiteForms?:number;voxels?:number;triangles?:number;sha256?:string;note:string};
 export type ProductionIndex={format:'yunshan.production-index';version:1;createdAt:string;sourceSHA256:string;counts:Record<string,number>;entries:LibraryEntry[];packs:{file:string;name:string;entries:number;uniqueMasters:number}[];studies?:{id:string;name:string;file:string;assetIds:string[];note:string;group?:string}[];metrics:Record<string,unknown>};
 const page=<T>(rows:T[],args:any)=>{const offset=args.offset??0,limit=args.limit??24;return{total:rows.length,offset,entries:rows.slice(offset,offset+limit),nextOffset:offset+limit<rows.length?offset+limit:null};};
 export async function readProductionLibrary(root:string,args:any){
@@ -58,6 +58,12 @@ export async function readProductionLibrary(root:string,args:any){
    }
   }
   if(variant&&(!Number.isInteger(upgrade.finiteForms)||upgrade.finiteForms<1))throw new Error('建筑变体形态数无效');
+  if(variant&&row.stage==='variant-candidate'){
+   // Legacy indexes counted generated component assets; newer indexes count finite forms.
+   // Replace the existing contribution when upgrading the same catalogue entry.
+   const priorForms=row.finiteForms??row.assetIds.length;
+   index.counts.variantModels=(index.counts.variantModels??0)-priorForms+upgrade.finiteForms;
+  }
   if(row.stage==='not-produced'){
    if(variant){index.counts.variantEntries=(index.counts.variantEntries??0)+1;index.counts.variantModels=(index.counts.variantModels??0)+upgrade.finiteForms;}
    else if(assembly)index.counts.assemblies=(index.counts.assemblies??0)+1;

@@ -1,0 +1,15 @@
+{"id":"ENV-007","ms":1153,"bounds":{"min":[-8,0,-6],"max":[8,18,6]},"cells":4,"triangles":8704}
+/workspace/voxel-studio-yunshan/work/environment-furniture/environment-variants.ts:29
+ const profile=samples.map(t=>{const y=Math.min(bounds.max[1]-1,Math.floor(bounds.min[1]+t*(bounds.max[1]-bounds.min[1]))),layer=cells.filter(([v])=>v[1]===y).map(([v])=>v);if(!layer.length)throw new Error('Missing real rock cross section');const lo=[0,2].map(k=>Math.min(...layer.map(v=>v[k]))*.2),hi=[0,2].map(k=>(Math.max(...layer.map(v=>v[k]))+1)*.2);return{y:.2+t*H*sy,rx:(hi[0]-lo[0])/2*sx*(split?.47:1),rz:(hi[1]-lo[1])/2*sx,x:((hi[0]+lo[0])/2+parent.origin[0])*sx,z:((hi[1]+lo[1])/2+parent.origin[2])*sx};});
+                                                                                                                                                                                                    ^
+
+Error: Missing real rock cross section
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/environment-furniture/environment-variants.ts:29:197)
+    at Array.map (<anonymous>)
+    at rock (/workspace/voxel-studio-yunshan/work/environment-furniture/environment-variants.ts:29:24)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/environment-furniture/environment-variants.ts:72:149)
+    at ArchitectureBuilder.asset (/workspace/voxel-studio-yunshan/src/production/architecture-near-assembly.ts:19:149)
+    at makeEnvironmentVariant (/workspace/voxel-studio-yunshan/work/environment-furniture/environment-variants.ts:69:16)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/environment-furniture/probe.ts:10:135)
+
+Node.js v24.19.0

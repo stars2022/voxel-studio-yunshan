@@ -1,0 +1,91 @@
+{
+  "references": {
+    "ENV-007": {
+      "parent": "ENV-006",
+      "goal": "concave/convex/end/multi-turn common cross-sections, no corner seams"
+    },
+    "ENV-018": {
+      "parent": "ENV-015",
+      "goal": "long-flat/block/fractured sizes and dry/wet PBR, bottom contact"
+    },
+    "ENV-033": {
+      "parent": "ENV-028",
+      "goal": "narrow/wide/split flow curtains sharing153m drop and source path"
+    },
+    "ENV-051": {
+      "parent": "ENV-050",
+      "goal": "nine colour indices (not species),16/24/31m existing height configurations"
+    },
+    "ENV-058": {
+      "parent": "ENV-057",
+      "goal": "young/juvenile branch and crown proportion changes, not uniform scaling"
+    },
+    "ENV-075": {
+      "parent": "ENV-061",
+      "goal": "healthy/damaged/recovery leaf density and colour, ecology state unbound"
+    },
+    "ENV-083": {
+      "parent": "ENV-082",
+      "goal": "straight/concave/convex/stepped/end walls with footing/thickness by height"
+    },
+    "LIFE-033": {
+      "parent": "LIFE-016",
+      "goal": "controlled desk dimensions; preserve pins, leg thickness, cable slot and clear knee space"
+    },
+    "LIFE-034": {
+      "parent": "LIFE-014",
+      "goal": "controlled tea-table dimensions and independent surface material, preserve leg fittings"
+    },
+    "LIFE-035": {
+      "parent": "LIFE-001",
+      "goal": "bed sizes and actual002mattress/003headboard/004bedding dependencies, independent fabric palette"
+    },
+    "LIFE-036": {
+      "parent": "LIFE-010",
+      "goal": "sofa lengths and actual011/013cushion dependency, independent cloth palette"
+    }
+  },
+  "sourceFiles": [
+    "src/production/atlas-terrain.ts",
+    "src/production/atlas-hydrology.ts",
+    "src/production/atlas-ecology.ts",
+    "src/production/atlas-groundscape.ts",
+    "src/production/life.ts"
+  ],
+  "instructions": [
+    "Follow user correction: only minimum components require voxel geometry, slopes/curves can use continuous meshes.",
+    "Retain complete prior parents and512semantic material roles.",
+    "No new master/species per colour or parameter.",
+    "No original world/terrain/ecology/runtime binding without source.",
+    "After completion startM001visual refinement sequentially; continue batch pushes."
+  ],
+  "status": "research only, no production implementation yet",
+  "furnitureImplementationNotes": {
+    "widthAPI": "Existing makeLifeAsset/makeCatalogAsset supports controlled width rebuild for1,2,3,4,10,11,14,15,16; range0.75\u20131.5ofsource. Use exact default parent plus a separately recorded assembly-derived resized asset, do not claim new historical custom-width parent.",
+    "deskWidths": [
+      1.2,
+      1.4,
+      1.8
+    ],
+    "teaWidths": [
+      0.9,
+      1.1,
+      1.4
+    ],
+    "bedWidths": [
+      1.2,
+      1.6,
+      2.0
+    ],
+    "sofaWidths": [
+      1.5,
+      1.9,
+      2.4
+    ],
+    "bedAssembly": "Default parent001 frame retained.002mattress width=max(1.12,w-.12) at x=(w-mattressWidth)/2,y=.42,z=.04;004bedding samewidth at y=.62,z=.04;003headboard width=w at z=1.98,y=0 (its legs starty=.42), check real surfaces and no intersections.",
+    "sofaAssembly": "Parent010frame retained;011two-seat cushions width=w-.22 at x=.11,y=.28,z=.04, check actual source supports. Length parameter, not invented three-seat count.",
+    "semantic": "makeCatalogAsset applies current material correction; call it rather than raw stale lifeRecipes colours. Scoped appearance helper must allow solid furniture materials and preserve solid/category unlike character-only palette helper.",
+    "importantCorrection": "Parents001/002/003/004/010/011/014/015/016are NOT atlas reference entries. Actual legacy production-index entries all share life-20261002143409-models-01.ysvox.json; raw makeCatalogAsset matches them exactly. Must retain these real parents and deliver legacy-dependency exports, not claim atlas prior files. makeCatalogAsset does NOT correct their roles automatically.",
+    "materialCorrections": "Old paper45 is shared book/cotton fabric; scope-remap actual bedding45to cottonWhite74, not global rename. Mattress2stone band must become fabric edge. Scope-remap wall2on actual furniture stonefeet/inlays to stone role, and headboard energy11display pixels to non-active properdisplayGlyph. Preserve originals untouched. See legacy-furniture-materials.json."
+  }
+}

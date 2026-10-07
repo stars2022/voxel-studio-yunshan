@@ -1,0 +1,3859 @@
+{
+  "run": "atlas-20261007102004",
+  "status": "failed",
+  "checks": [
+    "All11atlas buttons and official recipes expose exact environment/furniture parameters;793references,533bases,91variant entries,328forms.",
+    "Both default and extreme form of each of11families created through officialMCP, quarterturned and undone with exact parent,geometry,materials and state preservation. All88forms separately exported and audited."
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: {\"error\":\"实例位置必须吸附到母版格距\",\"code\":\"OPERATION_FAILED\",\"isError\":true}\n    at call (/workspace/voxel-studio-yunshan/scripts/verify-final-mcp.ts:30:308)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async edit (/workspace/voxel-studio-yunshan/scripts/verify-final-mcp.ts:33:377)\n    at async compare (/workspace/voxel-studio-yunshan/scripts/verify-final-mcp.ts:46:96)\n    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-final-mcp.ts:48:305)"
+  ],
+  "views": [
+    {
+      "key": "final-ENV-007-front",
+      "file": "variant-final-ENV-007-front.png",
+      "view": "front",
+      "material": true,
+      "time": "day",
+      "preserveCamera": false,
+      "lighting": {
+        "direction": [
+          -0.21749983007832407,
+          0.9062492919930171,
+          -0.36249971679720683
+        ],
+        "directionalIntensity": 2.6,
+        "hemisphereIntensity": 0.8,
+        "fillIntensity": 0.6,
+        "exposure": 1
+      },
+      "triangles": 1606,
+      "renderedVersion": 147,
+      "imageSHA256": "51b55d52a09f0772cc2c967a89845e1e362b7798918687a4faf93b5a630c9149"
+    },
+    {
+      "key": "final-ENV-007-isometric",
+      "file": "variant-final-ENV-007-isometric.png",
+      "view": "isometric",
+      "material": true,
+      "time": "day",
+      "preserveCamera": false,
+      "lighting": {
+        "direction": [
+          -0.21749983007832407,
+          0.9062492919930171,
+          -0.36249971679720683
+        ],
+        "directionalIntensity": 2.6,
+        "hemisphereIntensity": 0.8,
+        "fillIntensity": 0.6,
+        "exposure": 1
+      },
+      "triangles": 1606,
+      "renderedVersion": 147,
+      "imageSHA256": "e390cfbfce729f8f562ab6a134c6be1129305a9d6d5dd26622cc172358a3951a"
+    },
+    {
+      "key": "final-ENV-007-night",
+      "file": "variant-final-ENV-007-night.png",
+      "view": "isometric",
+      "material": true,
+      "time": "night",
+      "preserveCamera": true,
+      "lighting": {
+        "direction": [
+          -0.21749983007832407,
+          0.9062492919930171,
+          -0.36249971679720683
+        ],
+        "directionalIntensity": 0.5,
+        "hemisphereIntensity": 0.25,
+        "fillIntensity": 0.16,
+        "exposure": 0.9
+      },
+      "triangles": 1606,
+      "renderedVersion": 147,
+      "imageSHA256": "b85a1df256ec03dd02e60ac70a2e167d8c26951a57aed0d1df42fafa189b63b5"
+    }
+  ],
+  "atlasButtons": [
+    "ENV-007",
+    "ENV-018",
+    "ENV-033",
+    "ENV-051",
+    "ENV-058",
+    "ENV-075",
+    "ENV-083",
+    "LIFE-033",
+    "LIFE-034",
+    "LIFE-035",
+    "LIFE-036"
+  ],
+  "publicForms": [
+    {
+      "id": "ENV-007",
+      "params": {
+        "cliffForm": "concave"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-007",
+        "params": {
+          "cliffForm": "concave"
+        },
+        "bounds": {
+          "min": [
+            -8,
+            0,
+            -6
+          ],
+          "max": [
+            8,
+            18,
+            6
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-1f26bd0228c0dfa55639243b",
+            "cells": 4,
+            "closure": [
+              {
+                "name": "joint bedrock/weathered exterior",
+                "closed": true,
+                "oriented": true,
+                "jointMaterialShell": true,
+                "signedVolumeM3": 1639.7005568375948
+              }
+            ],
+            "attached": [
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  -40,
+                  0,
+                  -30
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  -40,
+                  0,
+                  29
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  39,
+                  0,
+                  -30
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  39,
+                  0,
+                  29
+                ]
+              }
+            ],
+            "materials": [
+              13487,
+              20778
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-006",
+            "parameters": {},
+            "geometrySHA256": "693008fb3d67520b9e9844a60f80ae3030d2ffae2ed8160ccf80a32f7b31c6a0"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-007",
+      "params": {
+        "cliffForm": "multiple"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-007",
+        "params": {
+          "cliffForm": "multiple"
+        },
+        "bounds": {
+          "min": [
+            -8,
+            0,
+            -6
+          ],
+          "max": [
+            8,
+            18,
+            6
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-335291e0a55bc45ffc50c21a",
+            "cells": 4,
+            "closure": [
+              {
+                "name": "joint bedrock/weathered exterior",
+                "closed": true,
+                "oriented": true,
+                "jointMaterialShell": true,
+                "signedVolumeM3": 1948.5599999999965
+              }
+            ],
+            "attached": [
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  -40,
+                  0,
+                  -30
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  -40,
+                  0,
+                  29
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  39,
+                  0,
+                  -30
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-182",
+                "sampleCell": [
+                  39,
+                  0,
+                  29
+                ]
+              }
+            ],
+            "materials": [
+              13487,
+              20778
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-006",
+            "parameters": {},
+            "geometrySHA256": "693008fb3d67520b9e9844a60f80ae3030d2ffae2ed8160ccf80a32f7b31c6a0"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-018",
+      "params": {
+        "rockForm": "block",
+        "rockSize": "large",
+        "rockWetness": "dry"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-018",
+        "params": {
+          "rockForm": "block",
+          "rockSize": "large",
+          "rockWetness": "dry"
+        },
+        "bounds": {
+          "min": [
+            -2.284590278,
+            0,
+            -2.654401628
+          ],
+          "max": [
+            2.367159095,
+            7.823972421,
+            2.461125241
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-4d3cba7546726cdf4ff3f181",
+            "cells": 2,
+            "closure": [
+              {
+                "name": "原岩断裂面派生0",
+                "closed": true,
+                "oriented": true
+              }
+            ],
+            "attached": [
+              {
+                "cells": 2,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-183",
+                "sampleCell": [
+                  -1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "materials": [
+              18901,
+              5051
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-015",
+            "parameters": {},
+            "geometrySHA256": "d4c3f169968c18b2defc0b831566aa715e2130a67394af4f32c0977a5624882e"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-018",
+      "params": {
+        "rockForm": "split",
+        "rockSize": "small",
+        "rockWetness": "wet"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-018",
+        "params": {
+          "rockForm": "split",
+          "rockSize": "small",
+          "rockWetness": "wet"
+        },
+        "bounds": {
+          "min": [
+            -1.111878715,
+            0,
+            -1.327200814
+          ],
+          "max": [
+            1.131282387,
+            4.011986211,
+            1.23056262
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-d0806ebacfb4f438dec73014",
+            "cells": 4,
+            "closure": [
+              {
+                "name": "原岩断裂面派生-1",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原岩断裂面派生1",
+                "closed": true,
+                "oriented": true
+              }
+            ],
+            "attached": [
+              {
+                "cells": 2,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-183",
+                "sampleCell": [
+                  -4,
+                  0,
+                  0
+                ]
+              },
+              {
+                "cells": 2,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-183",
+                "sampleCell": [
+                  2,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "materials": [
+              12098,
+              3043
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-015",
+            "parameters": {},
+            "geometrySHA256": "d4c3f169968c18b2defc0b831566aa715e2130a67394af4f32c0977a5624882e"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-033",
+      "params": {
+        "waterfallForm": "wide",
+        "waterfallFlow": "full"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-033",
+        "params": {
+          "waterfallForm": "wide",
+          "waterfallFlow": "full"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            1.120000062
+          ],
+          "max": [
+            24,
+            153,
+            1.4000000000000001
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-6f6619315bab79768048810d",
+            "cells": 2,
+            "closure": [
+              {
+                "name": "连续水帘0",
+                "closed": true,
+                "oriented": true
+              }
+            ],
+            "attached": [
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-193",
+                "sampleCell": [
+                  60,
+                  764,
+                  6
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-193",
+                "sampleCell": [
+                  60,
+                  0,
+                  6
+                ]
+              }
+            ],
+            "materials": [
+              192,
+              194,
+              193
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-028",
+            "parameters": {},
+            "geometrySHA256": "240ca50f23eb63d9a5f724b06d3a6a595c0c51a0d21fe8c0ad08ca0d81d02486"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-033",
+      "params": {
+        "waterfallForm": "split",
+        "waterfallFlow": "low"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-033",
+        "params": {
+          "waterfallForm": "split",
+          "waterfallFlow": "low"
+        },
+        "bounds": {
+          "min": [
+            6,
+            0,
+            1.120000062
+          ],
+          "max": [
+            18,
+            153,
+            1.4000000000000001
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-e29d504cd97d440e01ec213c",
+            "cells": 4,
+            "closure": [
+              {
+                "name": "连续水帘0",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "连续水帘1",
+                "closed": true,
+                "oriented": true
+              }
+            ],
+            "attached": [
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-193",
+                "sampleCell": [
+                  43,
+                  764,
+                  6
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-193",
+                "sampleCell": [
+                  43,
+                  0,
+                  6
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-193",
+                "sampleCell": [
+                  77,
+                  764,
+                  6
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-193",
+                "sampleCell": [
+                  77,
+                  0,
+                  6
+                ]
+              }
+            ],
+            "materials": [
+              192,
+              194,
+              193
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-028",
+            "parameters": {},
+            "geometrySHA256": "240ca50f23eb63d9a5f724b06d3a6a595c0c51a0d21fe8c0ad08ca0d81d02486"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-051",
+      "params": {
+        "treeHeight": 16,
+        "treeTone": 0
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-051",
+        "params": {
+          "treeHeight": 16,
+          "treeTone": 0
+        },
+        "bounds": {
+          "min": [
+            -5.6000000000000005,
+            0,
+            -5.6000000000000005
+          ],
+          "max": [
+            6.2,
+            16,
+            5.6000000000000005
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-088664f9a24d5d1936acdb8a",
+            "cells": 19531,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              189,
+              2641,
+              3406
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-050",
+            "parameters": {
+              "height": 16
+            },
+            "geometrySHA256": "c97a1346b7546d69a01d327f5b85c1f43fb9c595bc4341d85489b29671eac450"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-051",
+      "params": {
+        "treeHeight": 31,
+        "treeTone": 8
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-051",
+        "params": {
+          "treeHeight": 31,
+          "treeTone": 8
+        },
+        "bounds": {
+          "min": [
+            -11,
+            0,
+            -11
+          ],
+          "max": [
+            12,
+            31,
+            11
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-4bb4cf2e90001cedc8c3c647",
+            "cells": 139832,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              189,
+              21386,
+              7881
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-050",
+            "parameters": {
+              "height": 31
+            },
+            "geometrySHA256": "f031a18501ecf2afec172b4ffa20cb1898f4eb3cfab015e2f22df65961e1419d"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-058",
+      "params": {
+        "treeStage": "young"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-058",
+        "params": {
+          "treeStage": "young"
+        },
+        "bounds": {
+          "min": [
+            -4.455218539,
+            0,
+            -4.326034058
+          ],
+          "max": [
+            4.454969019,
+            7.43322,
+            4.326134537
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-47dc2a03c3a555a7599bead2",
+            "cells": 14,
+            "closure": [
+              {
+                "name": "原分枝派生0",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生1",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生2",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生3",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生4",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生5",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生6",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生7",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生8",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生9",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生10",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生11",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生12",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生13",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生14",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生15",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生16",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生17",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生18",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生19",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生20",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生21",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生22",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生23",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生24",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生25",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生26",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇0",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇1",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇2",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇3",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇4",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇5",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇6",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇7",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇8",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇9",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇10",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇11",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇12",
+                "closed": true,
+                "oriented": true
+              }
+            ],
+            "attached": [
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -1,
+                  34,
+                  1
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -14,
+                  36,
+                  9
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -10,
+                  36,
+                  13
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  17,
+                  31,
+                  2
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  15,
+                  31,
+                  8
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  6,
+                  33,
+                  15
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  1,
+                  33,
+                  17
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -17,
+                  31,
+                  -2
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -15,
+                  31,
+                  -8
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -6,
+                  33,
+                  -15
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -1,
+                  33,
+                  -17
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  10,
+                  36,
+                  -13
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  14,
+                  36,
+                  -9
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-189",
+                "sampleCell": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "materials": [
+              198,
+              189,
+              197
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-057",
+            "parameters": {},
+            "geometrySHA256": "fb8689fe782886c0052daee3b5f04a6ff29ead34771fee2b9ceb4f6ba0fdeef7"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-058",
+      "params": {
+        "treeStage": "juvenile"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-058",
+        "params": {
+          "treeStage": "juvenile"
+        },
+        "bounds": {
+          "min": [
+            -2.746335824,
+            0,
+            -2.667263372
+          ],
+          "max": [
+            2.746181709,
+            5.29194,
+            2.667325432
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-e282952b92a3a0bf88b27c4f",
+            "cells": 14,
+            "closure": [
+              {
+                "name": "原分枝派生0",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生1",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生2",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生3",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生4",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生5",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生6",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生7",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生8",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生9",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生10",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生11",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生12",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生13",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生14",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生15",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生16",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生17",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生18",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生19",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生20",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生21",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生22",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生23",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生24",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生25",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原分枝派生26",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇0",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇1",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇2",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇3",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇4",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇5",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇6",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇7",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇8",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇9",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇10",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇11",
+                "closed": true,
+                "oriented": true
+              },
+              {
+                "name": "原枝端连续叶簇12",
+                "closed": true,
+                "oriented": true
+              }
+            ],
+            "attached": [
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -1,
+                  24,
+                  0
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -9,
+                  25,
+                  6
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -6,
+                  25,
+                  8
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  10,
+                  22,
+                  1
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  9,
+                  22,
+                  5
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  1,
+                  24,
+                  10
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  4,
+                  24,
+                  10
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -4,
+                  24,
+                  -10
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -1,
+                  24,
+                  -10
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -9,
+                  22,
+                  -5
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  -10,
+                  22,
+                  -1
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-197",
+                "sampleCell": [
+                  6,
+                  25,
+                  -8
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "inside-closed-mesh",
+                "mesh": "material-197",
+                "sampleCell": [
+                  9,
+                  25,
+                  -6
+                ]
+              },
+              {
+                "cells": 1,
+                "attached": true,
+                "via": "triangle-contact",
+                "mesh": "material-189",
+                "sampleCell": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "materials": [
+              198,
+              189,
+              197
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-057",
+            "parameters": {},
+            "geometrySHA256": "fb8689fe782886c0052daee3b5f04a6ff29ead34771fee2b9ceb4f6ba0fdeef7"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-075",
+      "params": {
+        "vegetationState": "healthy"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-075",
+        "params": {
+          "vegetationState": "healthy"
+        },
+        "bounds": {
+          "min": [
+            -2.6,
+            0,
+            -2.2
+          ],
+          "max": [
+            2.6,
+            3.2,
+            2.2
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-996ff2bfbf8b95326eee7951",
+            "cells": 2285,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              204,
+              205,
+              198,
+              206,
+              209
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-061",
+            "parameters": {
+              "habit": "spreading"
+            },
+            "geometrySHA256": "5f0f6f223988fd65889abb0f74bb5fb9e668bec255f3a62da00f56b7cf3e565d"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-075",
+      "params": {
+        "vegetationState": "recovering"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-075",
+        "params": {
+          "vegetationState": "recovering"
+        },
+        "bounds": {
+          "min": [
+            -2.6,
+            0,
+            -2.2
+          ],
+          "max": [
+            2.6,
+            3.2,
+            1.6
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-b5cd7e374e6ec20c50ca43e9",
+            "cells": 1843,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              204,
+              205,
+              198,
+              206,
+              209
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-061",
+            "parameters": {
+              "habit": "spreading"
+            },
+            "geometrySHA256": "5f0f6f223988fd65889abb0f74bb5fb9e668bec255f3a62da00f56b7cf3e565d"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-083",
+      "params": {
+        "wallForm": "straight",
+        "wallHeight": 2.4
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-083",
+        "params": {
+          "wallForm": "straight",
+          "wallHeight": 2.4
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            8,
+            2.4000000000000004,
+            2.8000000000000003
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-3faf23045124f84aed1abadf",
+            "cells": 3976,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              144
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-082",
+            "parameters": {
+              "height": 2.4
+            },
+            "geometrySHA256": "ac793ce4c0e2bc4a6acac67dda8569a2791b993bb7a5e361cbb55a8487bad880"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "ENV-083",
+      "params": {
+        "wallForm": "end",
+        "wallHeight": 3.6
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "ENV-083",
+        "params": {
+          "wallForm": "end",
+          "wallHeight": 3.6
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            4,
+            3.6,
+            2.8000000000000003
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-environment-aa3d0e82f16e44d598480737",
+            "cells": 2628,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              144
+            ]
+          }
+        ],
+        "parentConfigurations": [
+          {
+            "id": "ENV-082",
+            "parameters": {
+              "height": 3.6
+            },
+            "geometrySHA256": "5651f62f85ddc5eaed39c83b1ae31ea649b742563d3796f9bdff70ff2107723b"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-033",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-033",
+        "params": {
+          "furnitureSize": "standard",
+          "furnitureFinish": "standard"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            1.4000000000000001,
+            0.76,
+            0.7000000000000001
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-eb5754dbdb44bd2d5ac2be64",
+            "cells": 90765,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              4,
+              3,
+              41,
+              42,
+              44
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 90765,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-033-0"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 90765
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-033-0": []
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-016",
+            "parameters": {},
+            "geometrySHA256": "d43250a39d6283e827031613a411407b795d7feab210960a60a77a2af7f9c1b9"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-033",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-033",
+        "params": {
+          "furnitureSize": "wide",
+          "furnitureFinish": "warm"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            1.8,
+            0.76,
+            0.7000000000000001
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-6c8122ca4b858ac55cf9e325",
+            "cells": 108415,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              4,
+              8637,
+              41,
+              21782,
+              44
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 108415,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-033-0"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 108415
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-033-0": []
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-016",
+            "parameters": {},
+            "geometrySHA256": "d43250a39d6283e827031613a411407b795d7feab210960a60a77a2af7f9c1b9"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-034",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-034",
+        "params": {
+          "furnitureSize": "standard",
+          "furnitureFinish": "standard"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            1.1,
+            0.47,
+            0.62
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-575a86c9bbdd4cc023de8ca6",
+            "cells": 34652,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              4,
+              3,
+              41,
+              42
+            ]
+          },
+          {
+            "assetId": "architecture-final-5696eb1069c12128dd2b53dd",
+            "cells": 34100,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              4,
+              3,
+              41,
+              1,
+              44
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 68752,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-034-0",
+                "life-034-1"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 68752
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-034-0": [],
+            "life-034-1": [
+              "life-034-0"
+            ]
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-014",
+            "parameters": {},
+            "geometrySHA256": "791429d4b4535faa35267699a2dee844167eed03c3b7c0bc3b6f8a50f8ee9e72"
+          },
+          {
+            "id": "LIFE-015",
+            "parameters": {},
+            "geometrySHA256": "7b5723d2aaa8687f0a3117d6428fd57f8a316cf3cdf387ff5fed40ba645fd6c9"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-034",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-034",
+        "params": {
+          "furnitureSize": "wide",
+          "furnitureFinish": "warm"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            1.4000000000000001,
+            0.47,
+            0.62
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-52ea101b92a9ab0086614390",
+            "cells": 43352,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              4,
+              6335,
+              41,
+              20027
+            ]
+          },
+          {
+            "assetId": "architecture-final-df0ff3c367f9bf58406ab116",
+            "cells": 43400,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              4,
+              6335,
+              41,
+              1,
+              44
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 86752,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-034-0",
+                "life-034-1"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 86752
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-034-0": [],
+            "life-034-1": [
+              "life-034-0"
+            ]
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-014",
+            "parameters": {},
+            "geometrySHA256": "791429d4b4535faa35267699a2dee844167eed03c3b7c0bc3b6f8a50f8ee9e72"
+          },
+          {
+            "id": "LIFE-015",
+            "parameters": {},
+            "geometrySHA256": "7b5723d2aaa8687f0a3117d6428fd57f8a316cf3cdf387ff5fed40ba645fd6c9"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-035",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-035",
+        "params": {
+          "furnitureSize": "standard",
+          "furnitureFinish": "standard"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            1.6300000000000001,
+            1,
+            2.1
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-dc81a6171487bd4681f1d166",
+            "cells": 18354,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              41,
+              4,
+              3,
+              42
+            ]
+          },
+          {
+            "assetId": "architecture-final-e8ac1ffe6399634f43b0d5d7",
+            "cells": 71808,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              74,
+              47
+            ]
+          },
+          {
+            "assetId": "architecture-final-4e64c0d59ca9b85c3fee1df3",
+            "cells": 55480,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              3,
+              41,
+              44,
+              4,
+              1,
+              57,
+              14
+            ]
+          },
+          {
+            "assetId": "architecture-final-cb94b608de2dcf811264f4c4",
+            "cells": 233124,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              8,
+              47,
+              74
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 1009900,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-035-0",
+                "life-035-1",
+                "life-035-2",
+                "life-035-3"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 1009900
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-035-0": [],
+            "life-035-1": [
+              "life-035-0"
+            ],
+            "life-035-2": [
+              "life-035-0"
+            ],
+            "life-035-3": [
+              "life-035-1"
+            ]
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-001",
+            "parameters": {},
+            "geometrySHA256": "5de1bf78ae26473b8ba5017913b8bde80d850c2430e8cfca36215d91e08f7e26"
+          },
+          {
+            "id": "LIFE-002",
+            "parameters": {},
+            "geometrySHA256": "2696632358a22f69027aa6ede16d9ff0d3c35a53ce2bff6fb9402262fa707272"
+          },
+          {
+            "id": "LIFE-003",
+            "parameters": {},
+            "geometrySHA256": "a3f5e23595cc221c6290e91df08c1a55f03544cd77ca4c9e55a20e9fc12ea28f"
+          },
+          {
+            "id": "LIFE-004",
+            "parameters": {},
+            "geometrySHA256": "8efaa0a1811ee07a79d85467b42246bde2b09185bf0fa05ce6b93f69a2b467ee"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-035",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-035",
+        "params": {
+          "furnitureSize": "wide",
+          "furnitureFinish": "warm"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            2.0300000000000002,
+            1,
+            2.1
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-e07571abbab3e0ef70ecf9d9",
+            "cells": 21734,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              41,
+              4,
+              3,
+              42
+            ]
+          },
+          {
+            "assetId": "architecture-final-ace00e5dc0c362b918759cc9",
+            "cells": 91328,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              74,
+              12434
+            ]
+          },
+          {
+            "assetId": "architecture-final-a95a5c79b5c006b44f9879e5",
+            "cells": 67120,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              3,
+              41,
+              44,
+              4,
+              1,
+              57,
+              14
+            ]
+          },
+          {
+            "assetId": "architecture-final-683b75b29393c350eac0bd90",
+            "cells": 298924,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              13502,
+              12434,
+              74
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 1270540,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-035-0",
+                "life-035-1",
+                "life-035-2",
+                "life-035-3"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 1270540
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-035-0": [],
+            "life-035-1": [
+              "life-035-0"
+            ],
+            "life-035-2": [
+              "life-035-0"
+            ],
+            "life-035-3": [
+              "life-035-1"
+            ]
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-001",
+            "parameters": {},
+            "geometrySHA256": "5de1bf78ae26473b8ba5017913b8bde80d850c2430e8cfca36215d91e08f7e26"
+          },
+          {
+            "id": "LIFE-002",
+            "parameters": {},
+            "geometrySHA256": "2696632358a22f69027aa6ede16d9ff0d3c35a53ce2bff6fb9402262fa707272"
+          },
+          {
+            "id": "LIFE-003",
+            "parameters": {},
+            "geometrySHA256": "a3f5e23595cc221c6290e91df08c1a55f03544cd77ca4c9e55a20e9fc12ea28f"
+          },
+          {
+            "id": "LIFE-004",
+            "parameters": {},
+            "geometrySHA256": "8efaa0a1811ee07a79d85467b42246bde2b09185bf0fa05ce6b93f69a2b467ee"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-036",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-036",
+        "params": {
+          "furnitureSize": "standard",
+          "furnitureFinish": "standard"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            1.9000000000000001,
+            0.8,
+            0.8200000000000001
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-67d7047b3acd53a8be0b7683",
+            "cells": 69312,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              41,
+              4,
+              3
+            ]
+          },
+          {
+            "assetId": "architecture-final-9c092450946d0815dec6bc95",
+            "cells": 249600,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              47,
+              8
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 318912,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-036-0",
+                "life-036-1"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 318912
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-036-0": [],
+            "life-036-1": [
+              "life-036-0"
+            ]
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-010",
+            "parameters": {},
+            "geometrySHA256": "5491cad70d79cd5b3bbd84a273187fbec21d5e4f24712ea893fb52f526536f66"
+          },
+          {
+            "id": "LIFE-011",
+            "parameters": {},
+            "geometrySHA256": "fcb2b86a19019f1ab989e9403d9a3acb2929d1b574f8893c513a7033e37345ad"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    },
+    {
+      "id": "LIFE-036",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "audit": {
+        "passed": true,
+        "catalogId": "LIFE-036",
+        "params": {
+          "furnitureSize": "wide",
+          "furnitureFinish": "warm"
+        },
+        "bounds": {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            2.4,
+            0.8,
+            0.8200000000000001
+          ]
+        },
+        "components": [
+          {
+            "assetId": "architecture-final-a73f80e192a5856e29d27731",
+            "cells": 81285,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              1,
+              41,
+              4,
+              3
+            ]
+          },
+          {
+            "assetId": "architecture-final-4a22d0398656731ac1ecc859",
+            "cells": 326250,
+            "closure": [],
+            "attached": [],
+            "materials": [
+              5011,
+              9833
+            ]
+          }
+        ],
+        "nativeContacts": {
+          "pitchM": 0.01,
+          "occupiedCollisionCells": 407535,
+          "collisionGrids": [
+            {
+              "instanceIds": [
+                "life-036-0",
+                "life-036-1"
+              ],
+              "pitchM": 0.01,
+              "occupiedCells": 407535
+            }
+          ],
+          "cellCountUnits": "one shared grid",
+          "collisions": [],
+          "unsupported": [],
+          "contacts": {
+            "life-036-0": [],
+            "life-036-1": [
+              "life-036-0"
+            ]
+          },
+          "gaps": [],
+          "openings": [],
+          "clearances": [],
+          "warnings": [],
+          "limitations": [
+            "支撑检查为垂直接触检测，不作结构受力分析。",
+            "间隙为包围盒邻近提示；没有设计公差或自动修补。",
+            "共享格以精确X行区间存储；每组最多3,000,000个行区间展开项，统计仍是实际共享格数量。"
+          ]
+        },
+        "parentConfigurations": [
+          {
+            "id": "LIFE-010",
+            "parameters": {},
+            "geometrySHA256": "5491cad70d79cd5b3bbd84a273187fbec21d5e4f24712ea893fb52f526536f66"
+          },
+          {
+            "id": "LIFE-011",
+            "parameters": {},
+            "geometrySHA256": "fcb2b86a19019f1ab989e9403d9a3acb2929d1b574f8893c513a7033e37345ad"
+          }
+        ],
+        "originalRuntimeBound": false
+      },
+      "foreignMaterialsPreserved": true
+    }
+  ],
+  "quarterTurns": [
+    {
+      "id": "ENV-007",
+      "params": {
+        "cliffForm": "concave"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-007",
+      "params": {
+        "cliffForm": "multiple"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-018",
+      "params": {
+        "rockForm": "block",
+        "rockSize": "large",
+        "rockWetness": "dry"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-018",
+      "params": {
+        "rockForm": "split",
+        "rockSize": "small",
+        "rockWetness": "wet"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-033",
+      "params": {
+        "waterfallForm": "wide",
+        "waterfallFlow": "full"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-033",
+      "params": {
+        "waterfallForm": "split",
+        "waterfallFlow": "low"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-051",
+      "params": {
+        "treeHeight": 16,
+        "treeTone": 0
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-051",
+      "params": {
+        "treeHeight": 31,
+        "treeTone": 8
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-058",
+      "params": {
+        "treeStage": "young"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-058",
+      "params": {
+        "treeStage": "juvenile"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-075",
+      "params": {
+        "vegetationState": "healthy"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-075",
+      "params": {
+        "vegetationState": "recovering"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-083",
+      "params": {
+        "wallForm": "straight",
+        "wallHeight": 2.4
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "ENV-083",
+      "params": {
+        "wallForm": "end",
+        "wallHeight": 3.6
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-033",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-033",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-034",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-034",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-035",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-035",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-036",
+      "params": {
+        "furnitureSize": "standard",
+        "furnitureFinish": "standard"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    },
+    {
+      "id": "LIFE-036",
+      "params": {
+        "furnitureSize": "wide",
+        "furnitureFinish": "warm"
+      },
+      "passed": true,
+      "actualPositionsAndUnchangedAssetsVerified": true
+    }
+  ],
+  "notifications": [
+    {
+      "event": "state-invalidated",
+      "version": 3,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 4,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 5,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 6,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 7,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 8,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 9,
+      "bytes": 105,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 10,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 11,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 12,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 13,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 14,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 15,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 16,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 17,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 18,
+      "bytes": 1439,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 19,
+      "bytes": 2029,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 20,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 21,
+      "bytes": 290,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 22,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 23,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 24,
+      "bytes": 1439,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 25,
+      "bytes": 2029,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 26,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 27,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 28,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 29,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 30,
+      "bytes": 670,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 31,
+      "bytes": 790,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 32,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 33,
+      "bytes": 290,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 34,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 35,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 36,
+      "bytes": 671,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 37,
+      "bytes": 790,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 38,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 39,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 40,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 41,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 42,
+      "bytes": 4506,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 43,
+      "bytes": 4499,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 44,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 45,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 46,
+      "bytes": 281,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 47,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 48,
+      "bytes": 4532,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 49,
+      "bytes": 4524,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 50,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 51,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 52,
+      "bytes": 281,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 53,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 54,
+      "bytes": 1628,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 55,
+      "bytes": 1808,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 56,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 57,
+      "bytes": 290,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 58,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 59,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 60,
+      "bytes": 4434,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 61,
+      "bytes": 4758,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 62,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 63,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 64,
+      "bytes": 281,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 65,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 66,
+      "bytes": 1192,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 67,
+      "bytes": 1183,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 68,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 69,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 70,
+      "bytes": 281,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 71,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 72,
+      "bytes": 1111,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 73,
+      "bytes": 1102,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 74,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 75,
+      "bytes": 290,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 76,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 77,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 78,
+      "bytes": 776,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 79,
+      "bytes": 769,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 80,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 81,
+      "bytes": 289,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 82,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 83,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 84,
+      "bytes": 776,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 85,
+      "bytes": 767,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 86,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 87,
+      "bytes": 290,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 88,
+      "bytes": 281,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 89,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 90,
+      "bytes": 765,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 91,
+      "bytes": 758,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 92,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 93,
+      "bytes": 290,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 94,
+      "bytes": 282,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 95,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 96,
+      "bytes": 797,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 97,
+      "bytes": 789,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 98,
+      "bytes": 106,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 99,
+      "bytes": 290,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 100,
+      "bytes": 284,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 101,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 102,
+      "bytes": 2772,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 103,
+      "bytes": 2764,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 104,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 105,
+      "bytes": 292,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 106,
+      "bytes": 284,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 107,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 108,
+      "bytes": 2180,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 109,
+      "bytes": 3053,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 110,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 111,
+      "bytes": 312,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 112,
+      "bytes": 305,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 113,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 114,
+      "bytes": 2880,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 115,
+      "bytes": 2871,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 116,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 117,
+      "bytes": 313,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 118,
+      "bytes": 305,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 119,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 120,
+      "bytes": 2271,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 121,
+      "bytes": 3174,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 122,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 123,
+      "bytes": 355,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 124,
+      "bytes": 346,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 125,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 126,
+      "bytes": 8971,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 127,
+      "bytes": 8963,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 128,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 129,
+      "bytes": 356,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 130,
+      "bytes": 348,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 131,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 132,
+      "bytes": 6176,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 133,
+      "bytes": 9839,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 134,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 135,
+      "bytes": 313,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 136,
+      "bytes": 306,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 137,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 138,
+      "bytes": 7436,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 139,
+      "bytes": 7428,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 140,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 141,
+      "bytes": 314,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 142,
+      "bytes": 306,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 143,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 144,
+      "bytes": 4767,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 145,
+      "bytes": 8274,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 146,
+      "bytes": 107,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 147,
+      "bytes": 1713,
+      "fullProject": false
+    },
+    {
+      "event": "state-invalidated",
+      "version": 148,
+      "bytes": 107,
+      "fullProject": false
+    }
+  ],
+  "expectedInvalidationVersions": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148
+  ],
+  "textureUploads": [],
+  "browser": "153.0.8010.12",
+  "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "libraryCounts": {
+    "catalogEntries": 1068,
+    "baseModels": 533,
+    "auxiliaryMasters": 1,
+    "assemblies": 186,
+    "variantEntries": 91,
+    "variantModels": 328,
+    "accepted": 0,
+    "notProduced": 254,
+    "generatedEntries": 814,
+    "materialEntries": 1,
+    "referenceDesigns": 28,
+    "materialStudies": 40,
+    "atlasReferenceCandidates": 793,
+    "atlasSharedMasterReferences": 3,
+    "atlasUniqueMasters": 513,
+    "atlasAssemblyCandidates": 186,
+    "atlasVariantCandidates": 91,
+    "atlasVariantForms": 328
+  },
+  "final-ENV-007": {
+    "file": "final-ENV-007.ysvox.json",
+    "models": [
+      {
+        "id": "ENV-007",
+        "params": {
+          "cliffForm": "concave"
+        },
+        "min": [
+          -8,
+          0,
+          -6
+        ],
+        "max": [
+          8,
+          18,
+          6
+        ]
+      },
+      {
+        "id": "ENV-007",
+        "params": {
+          "cliffForm": "multiple"
+        },
+        "min": [
+          -8,
+          0,
+          -6
+        ],
+        "max": [
+          8,
+          18,
+          6
+        ]
+      }
+    ]
+  }
+}

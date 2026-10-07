@@ -1,0 +1,74 @@
+{"id":"ENV-007","params":{"cliffForm":"concave"},"passed":true}
+{"id":"ENV-007","params":{"cliffForm":"convex"},"passed":true}
+{"id":"ENV-007","params":{"cliffForm":"end"},"passed":true}
+{"id":"ENV-007","params":{"cliffForm":"multiple"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"large","rockWetness":"dry"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"large","rockWetness":"wet"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"small","rockWetness":"dry"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"block","rockSize":"small","rockWetness":"wet"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"large","rockWetness":"dry"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"large","rockWetness":"wet"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"small","rockWetness":"dry"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"lowWide","rockSize":"small","rockWetness":"wet"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"large","rockWetness":"dry"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"large","rockWetness":"wet"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"small","rockWetness":"dry"},"passed":true}
+{"id":"ENV-018","params":{"rockForm":"split","rockSize":"small","rockWetness":"wet"},"passed":true}
+{"id":"ENV-033","params":{"waterfallForm":"wide","waterfallFlow":"full"},"passed":true}
+{"id":"ENV-033","params":{"waterfallForm":"wide","waterfallFlow":"low"},"passed":true}
+{"id":"ENV-033","params":{"waterfallForm":"narrow","waterfallFlow":"full"},"passed":true}
+{"id":"ENV-033","params":{"waterfallForm":"narrow","waterfallFlow":"low"},"passed":true}
+{"id":"ENV-033","params":{"waterfallForm":"split","waterfallFlow":"full"},"passed":true}
+{"id":"ENV-033","params":{"waterfallForm":"split","waterfallFlow":"low"},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":0},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":1},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":2},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":3},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":4},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":5},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":6},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":7},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":16,"treeTone":8},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":0},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":1},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":2},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":3},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":4},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":5},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":6},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":7},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":24,"treeTone":8},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":0},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":1},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":2},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":3},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":4},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":5},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":6},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":7},"passed":true}
+{"id":"ENV-051","params":{"treeHeight":31,"treeTone":8},"passed":true}
+{"id":"ENV-058","params":{"treeStage":"young"},"passed":true}
+{"id":"ENV-058","params":{"treeStage":"juvenile"},"passed":true}
+{"id":"ENV-075","params":{"vegetationState":"healthy"},"passed":true}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+6 !== 1
+
+    at auditFinalVariant (/workspace/voxel-studio-yunshan/work/environment-furniture/final-variant-audit.ts:27:319)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/environment-furniture/audit-probe.ts:2:321)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 6,
+  expected: 1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

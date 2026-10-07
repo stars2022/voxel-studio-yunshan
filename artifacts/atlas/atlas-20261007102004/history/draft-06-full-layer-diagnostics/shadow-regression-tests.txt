@@ -1,0 +1,16 @@
+✔ colour and roughness edits retain GPU materials, texture objects and shader versions across all other roles (36.559025ms)
+✔ appearance undo changes surface and transparency without disposing shared shader-owning materials (21.14773ms)
+✔ removing a material releases only its textures and material while keeping unrelated roles alive (19.253172ms)
+✔ disabled clipping shows native assets above 100m without infinite GPU planes, and finite heights reuse the shader (4.610186ms)
+✔ perspective framing keeps small assets, 160m bridges and 960m runways inside all six clip planes (6.373427ms)
+✔ orthographic framing keeps small assets, 160m bridges and 960m runways inside all six clip planes (2.748988ms)
+✔ clip toggles synchronise native, clay, AO, face textures and lights, and reject invalid heights atomically (1.638112ms)
+✔ studio shadow toggles and PCF/VSM changes invalidate cached, imported and ground shaders without replacing materials (1.918825ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 480.133202

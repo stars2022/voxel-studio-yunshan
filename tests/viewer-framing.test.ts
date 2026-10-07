@@ -27,3 +27,15 @@ test('clip toggles synchronise native, clay, AO, face textures and lights, and r
  clip(Infinity);for(const m of[clayMaterial,normalMaterial,native,face])assert.deepEqual(m.clippingPlanes,[]);assert.equal(light.visible,true);
  for(const invalid of[NaN,-Infinity])assert.throws(()=>clip(invalid));assert.equal(fixture.clipY,Infinity);
 });
+
+test('studio shadow toggles and PCF/VSM changes invalidate cached, imported and ground shaders without replacing materials',()=>{
+ const documentBefore=Object.getOwnPropertyDescriptor(globalThis,'document');Object.defineProperty(globalThis,'document',{configurable:true,value:{body:{classList:{toggle(){}}}}});
+ try{
+  const cached=new THREE.MeshStandardMaterial(),imported=new THREE.MeshStandardMaterial(),ground=new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.MeshStandardMaterial()),scene=new THREE.Scene();scene.add(ground,new THREE.Mesh(new THREE.BoxGeometry(),[cached,imported]));
+  const fixture={studio:true,referenceLighting:false,renderer:{shadowMap:{enabled:true,type:THREE.PCFSoftShadowMap},setClearColor(){},toneMappingExposure:1},materials:new Map([[1,cached]]),scene,ground,grid:{visible:false},practicalLights:{visible:false},practicalsEnabled:false,sun:new THREE.DirectionalLight(),ambient:new THREE.HemisphereLight(),fill:new THREE.DirectionalLight(),environment:null,fitLight(){},clayEnabled:false};
+  const materials=[cached,imported,ground.material],versions=()=>materials.map(m=>m.version),set=(enabled:boolean)=>Viewer.prototype.setStudio.call(fixture as unknown as Viewer,enabled);let previous=versions();
+  set(true);assert.deepEqual(versions(),previous);
+  for(const[enabled,soft]of[[false,false],[true,false],[true,true],[true,false]]){fixture.referenceLighting=soft;set(enabled);assert.equal(fixture.renderer.shadowMap.enabled,enabled);assert.equal(fixture.renderer.shadowMap.type,enabled&&soft?THREE.VSMShadowMap:THREE.PCFSoftShadowMap);assert.deepEqual(versions(),previous.map(v=>v+1));previous=versions();set(enabled);assert.deepEqual(versions(),previous);}
+  assert.equal(fixture.materials.get(1),cached);assert.equal(ground.material,materials[2]);
+ }finally{if(documentBefore)Object.defineProperty(globalThis,'document',documentBefore);else Reflect.deleteProperty(globalThis,'document');}
+});

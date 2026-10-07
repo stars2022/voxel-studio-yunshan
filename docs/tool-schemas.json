@@ -1669,7 +1669,7 @@
                   },
                   "catalogId": {
                     "type": "string",
-                    "pattern": "^(BUILT|CHAR)-[0-9]{3}$"
+                    "pattern": "^(BUILT|CHAR|ENV|LIFE)-[0-9]{3}$"
                   },
                   "id": {
                     "type": "string",
@@ -1681,6 +1681,110 @@
                   "params": {
                     "type": "object",
                     "properties": {
+                      "cliffForm": {
+                        "enum": [
+                          "concave",
+                          "convex",
+                          "end",
+                          "multiple"
+                        ]
+                      },
+                      "rockForm": {
+                        "enum": [
+                          "block",
+                          "lowWide",
+                          "split"
+                        ]
+                      },
+                      "rockSize": {
+                        "enum": [
+                          "large",
+                          "small"
+                        ]
+                      },
+                      "rockWetness": {
+                        "enum": [
+                          "dry",
+                          "wet"
+                        ]
+                      },
+                      "waterfallForm": {
+                        "enum": [
+                          "wide",
+                          "narrow",
+                          "split"
+                        ]
+                      },
+                      "waterfallFlow": {
+                        "enum": [
+                          "full",
+                          "low"
+                        ]
+                      },
+                      "treeHeight": {
+                        "enum": [
+                          16,
+                          24,
+                          31
+                        ],
+                        "type": "integer"
+                      },
+                      "treeTone": {
+                        "enum": [
+                          0,
+                          1,
+                          2,
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "type": "integer"
+                      },
+                      "treeStage": {
+                        "enum": [
+                          "young",
+                          "juvenile"
+                        ]
+                      },
+                      "vegetationState": {
+                        "enum": [
+                          "healthy",
+                          "damaged",
+                          "recovering"
+                        ]
+                      },
+                      "wallForm": {
+                        "enum": [
+                          "straight",
+                          "concave",
+                          "convex",
+                          "stepped",
+                          "end"
+                        ]
+                      },
+                      "wallHeight": {
+                        "enum": [
+                          2.4,
+                          3.6
+                        ],
+                        "type": "number"
+                      },
+                      "furnitureSize": {
+                        "enum": [
+                          "standard",
+                          "compact",
+                          "wide"
+                        ]
+                      },
+                      "furnitureFinish": {
+                        "enum": [
+                          "standard",
+                          "warm"
+                        ]
+                      },
                       "buildingPlan": {
                         "enum": [
                           "quarter-1",
