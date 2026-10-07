@@ -1,0 +1,39 @@
+{
+  "scope": "Next batch preflight only; no M060 assets made or counted.",
+  "ids": [
+    "BUILT-031",
+    "BUILT-032",
+    "BUILT-033",
+    "BUILT-034",
+    "BUILT-035",
+    "BUILT-036",
+    "BUILT-037",
+    "BUILT-038",
+    "BUILT-039",
+    "BUILT-041",
+    "BUILT-082",
+    "BUILT-083"
+  ],
+  "contractsFile": "contracts.json",
+  "requirements": [
+    "031 civic parent022 42x34/5 floors/h3.8.",
+    "032 bank parent023 44x36; market12-15, other7-9; h4.4; preserve actual bank parent.",
+    "033 medical variant of023 must call nearArchitecture(...,medical), preserve original H-footprint and medical furniture; h3.8,7-9 floors.",
+    "034 waterfront parent024 with normal44x32/3/h4.2 and fixed core60x40/6 exception; fixed core cannot receive .94/1.06 size multiplier.",
+    "035 terminal120x70/6/h6; actual source125.6x70.4 must be separate named fixture rather than pretend seed recovered.",
+    "036130x90/14/h6.6;03736x22/2/h3.8; missing civicPlan remains unbound.",
+    "Existing floor/stair audit assumes enough bay width/depth and first upper wing connection; validate for each new family and highest floors.",
+    "038/039 shared011 roof source and X/Z ridge orientation are actual finite component variants; variant library currently requires assembly parent, so generalize typed parent validation deliberately.",
+    "041 wall004 actual purpose palette only, geometry unchanged; unavailable exact source colors must be authored, no invented seed algorithm.",
+    "082/083 retain075 parent and original roof failure boundary; farther roof geometry and true innerHole need distinct implementation and verification.",
+    "Do not mutate M059 source while its full suite and MCP checks are running."
+  ],
+  "referenceImage": {
+    "path": "projects/reference-atlas/images/M060.png",
+    "sha256": "c90413bc53f2381809e0c8e183e98d2d5c44eba3c87bb8dc4176edb3b2baf7d6",
+    "actuallyViewed": true,
+    "observations": "First seven slots show ornate low-rise paired buildings, whereas source contracts specify 2-15 floors and much larger footprints. Preserve this conflict. Roof direction slots show shared continuous gable forms. Wall-color slot changes appearance on shared wall; final two roof slots show distant simplification and stacked roof opening."
+  },
+  "baselineCommit": "d950ce1c0188fba60b26cd89f6024d96b4bb36de",
+  "storageNote": "17 untracked scratch ZIPs now stored as original raw ZIP segments in content-addressed storage, with every original archive byte compared before deduplication. Freed4069228544bytes. One original11713620byte archive restored with exact SHA256 and CRC verified; see storage-verification.json. No committed file removed."
+}

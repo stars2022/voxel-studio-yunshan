@@ -1,0 +1,472 @@
+{
+  "BUILT-004": {
+    "standaloneMasterProduced": false,
+    "note": "Original production-index lists not-produced; do not claim an existing saved canonical wall004. Inspect actual catalog recipe availability and any cited source contract separately."
+  },
+  "BUILT-011": {
+    "entry": {
+      "id": "BUILT-011",
+      "sheet": "M013",
+      "slot": 4,
+      "file": "atlas-20261003104805-built-011.ysvox.json",
+      "assetId": "built-011",
+      "revision": 3,
+      "referenceSHA256": "20f4ed41628078e31c90810e2a97e37b28d189d44dffaecc5ea11c97cd7e4b8a",
+      "voxels": 600131,
+      "triangles": 23946,
+      "cellSizeM": 0.02,
+      "sha256": "41d959867f898fa1d6df322395429fadc1d9e802ae68d08261fa5f430022d708",
+      "boundsM": {
+        "min": [
+          0.04,
+          0,
+          0
+        ],
+        "max": [
+          3.98,
+          1.86,
+          3.2
+        ]
+      },
+      "note": "独立屋面与封闭山墙端，保留空屋腔；不是整幢建筑。瓦曲线以阶梯格表达，未接入 RoofRegion、屋顶行走或雨水模拟。 已按图重建候选，待人工美术验收。"
+    },
+    "nativeAssetCount": 1,
+    "assetSource": {
+      "kind": "catalog-recipe",
+      "catalogId": "BUILT-011",
+      "recipeRevision": 3,
+      "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+      "styleRevision": 8,
+      "dimensionsM": [
+        4,
+        1.86,
+        3.2
+      ],
+      "parameters": {},
+      "features": "双坡屋面：真实瓦垄、重叠瓦口、端山墙、可接屋脊与檐下椽梁",
+      "geometryStage": "candidate",
+      "gameIntegration": false,
+      "animation": false,
+      "units": "metres",
+      "front": "-Z",
+      "reference": {
+        "sheet": "M013",
+        "slot": 4,
+        "imageSHA256": "20f4ed41628078e31c90810e2a97e37b28d189d44dffaecc5ea11c97cd7e4b8a"
+      },
+      "referenceStage": "candidate",
+      "dimensionBasis": "authored metres on 20 mm grid; staircase rise/tread and default window rhythm follow catalogue constraints; other dimensions are not measured from the image",
+      "limitations": "独立屋面与封闭山墙端，保留空屋腔；不是整幢建筑。瓦曲线以阶梯格表达，未接入 RoofRegion、屋顶行走或雨水模拟。",
+      "kinematics": "static; no rig or runtime motion",
+      "materialAssignmentReview": {
+        "revision": 1,
+        "method": "authored-use-and-actual-voxel-check",
+        "note": "瓦片、木基层、弹性橡胶防水膜、金属泛水与铜锁件分别归类；膜层不会借轮胎角色。"
+      },
+      "style": "yunshan"
+    },
+    "cellSize": 0.02,
+    "ports": [
+      {
+        "id": "base",
+        "kind": "support",
+        "position": [
+          0.04,
+          0,
+          0
+        ],
+        "normal": [
+          0,
+          -1,
+          0
+        ],
+        "size": [
+          3.94,
+          0,
+          3.2
+        ],
+        "pitch": 0.02
+      },
+      {
+        "id": "ridge-left",
+        "kind": "gable-ridge",
+        "position": [
+          0,
+          1.76,
+          1.6
+        ],
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "size": [
+          0,
+          0.2,
+          0.3
+        ],
+        "pitch": 0.02
+      },
+      {
+        "id": "ridge-right",
+        "kind": "gable-ridge",
+        "position": [
+          4,
+          1.76,
+          1.6
+        ],
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "size": [
+          0,
+          0.2,
+          0.3
+        ],
+        "pitch": 0.02
+      }
+    ],
+    "openings": [
+      {
+        "min": [
+          30,
+          20,
+          65
+        ],
+        "max": [
+          40,
+          40,
+          75
+        ]
+      }
+    ]
+  },
+  "BUILT-075": {
+    "entry": {
+      "kind": "assembly",
+      "id": "BUILT-075",
+      "sheet": "M044",
+      "slot": 9,
+      "file": "atlas-20261004190922-built-075.ysvox.json",
+      "assemblyId": "built-075",
+      "assetIds": [
+        "architecture-column-3p2",
+        "architecture-floor-3p1999999999999993-3p2",
+        "architecture-floor-3p2-3p2",
+        "architecture-roof-hip-12p8-6p4"
+      ],
+      "dependencyCatalogIds": [
+        "BUILT-003",
+        "BUILT-011",
+        "BUILT-012",
+        "BUILT-013",
+        "BUILT-059"
+      ],
+      "instances": 19,
+      "revision": 1,
+      "referenceSHA256": "24cf77da633f9b670b54f365c781c24da875527a5c67dde29a5db612560270d5",
+      "voxels": 16,
+      "triangles": 3884,
+      "sha256": "5616d9363e4f58e26d4c8d45aacaac6e61ba7cec79fa5baec5ac25086ee62185",
+      "boundsM": {
+        "min": [
+          -0.4,
+          0,
+          -0.4
+        ],
+        "max": [
+          13.2,
+          5.54,
+          6.8
+        ]
+      },
+      "note": "真实组合模板；依赖母版、明确派生组件及重复实例分别保存，不新增基础清单母版。作者尺寸与布局，未绑定原 FloorPlan / 控制器 / 世界地形，待人工美术验收。"
+    },
+    "nativeAssetCount": 4,
+    "assemblySource": {
+      "kind": "catalog-assembly",
+      "catalogId": "BUILT-075",
+      "recipeRevision": 1,
+      "reference": {
+        "sheet": "M044",
+        "slot": 9,
+        "imageSHA256": "24cf77da633f9b670b54f365c781c24da875527a5c67dde29a5db612560270d5"
+      },
+      "units": "metres",
+      "authority": "author",
+      "originalRuntimeBound": false,
+      "notCatalogBase": true,
+      "dependencies": [
+        "BUILT-003",
+        "BUILT-011",
+        "BUILT-012",
+        "BUILT-013",
+        "BUILT-059"
+      ],
+      "instanceGroups": {
+        "built-075-0": "structure",
+        "built-075-1": "structure",
+        "built-075-2": "structure",
+        "built-075-3": "structure",
+        "built-075-4": "structure",
+        "built-075-5": "structure",
+        "built-075-6": "structure",
+        "built-075-7": "structure",
+        "built-075-8": "structure",
+        "built-075-9": "structure",
+        "built-075-10": "structure",
+        "built-075-11": "structure",
+        "built-075-12": "structure",
+        "built-075-13": "structure",
+        "built-075-14": "structure",
+        "built-075-15": "structure",
+        "built-075-16": "structure",
+        "built-075-17": "structure",
+        "built-075-18": "roof"
+      },
+      "variant": "standard",
+      "parameters": {
+        "roofWidth": "standard"
+      },
+      "roofForm": "hip",
+      "dimensionsM": [
+        12.8,
+        5.7,
+        6.4
+      ],
+      "scope": "Continuous roof alternative in an explicit author opt-in assembly. Original roofHeightAt/programRoof code unavailable; historical high-eave art FAIL not relabelled as passed. Support frame and repeated components do not create base catalogue masters."
+    },
+    "instances": [
+      {
+        "id": "built-075-0",
+        "assetId": "architecture-floor-3p2-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-1",
+        "assetId": "architecture-floor-3p2-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          0,
+          0,
+          3.2
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-2",
+        "assetId": "architecture-floor-3p2-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          3.2,
+          0,
+          0
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-3",
+        "assetId": "architecture-floor-3p2-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          3.2,
+          0,
+          3.2
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-4",
+        "assetId": "architecture-floor-3p2-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          6.4,
+          0,
+          0
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-5",
+        "assetId": "architecture-floor-3p2-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          6.4,
+          0,
+          3.2
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-6",
+        "assetId": "architecture-floor-3p1999999999999993-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          9.6,
+          0,
+          0
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-7",
+        "assetId": "architecture-floor-3p1999999999999993-3p2",
+        "name": "石铺面与混凝土楼板",
+        "position": [
+          9.6,
+          0,
+          3.2
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-8",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          0.3,
+          0.2,
+          0.3
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-9",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          0.3,
+          0.2,
+          6.1
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-10",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          12.5,
+          0.2,
+          0.3
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-11",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          12.5,
+          0.2,
+          6.1
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-12",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          3.5,
+          0.2,
+          0.3
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-13",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          3.5,
+          0.2,
+          6.1
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-14",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          6.7,
+          0.2,
+          0.3
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-15",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          6.7,
+          0.2,
+          6.1
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-16",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          9.9,
+          0.2,
+          0.3
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-17",
+        "assetId": "architecture-column-3p2",
+        "name": "木柱、石础与金属抱箍",
+        "position": [
+          9.9,
+          0.2,
+          6.1
+        ],
+        "rotation": 0,
+        "parent": null
+      },
+      {
+        "id": "built-075-18",
+        "assetId": "architecture-roof-hip-12p8-6p4",
+        "name": "连续屋面 · hip",
+        "position": [
+          0,
+          3.4,
+          0
+        ],
+        "rotation": 0,
+        "parent": null
+      }
+    ]
+  }
+}

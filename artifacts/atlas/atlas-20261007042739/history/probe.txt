@@ -1,0 +1,33 @@
+{"id":"BUILT-031","params":{"buildingPlan":"police","sizeCase":"compact","floors":5},"passed":true,"instances":293,"ms":4619.294755,"counts":{"routes":84,"links":208,"floors":56,"columns":114,"roofs":5},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-031","params":{"buildingPlan":"police","sizeCase":"expanded","floors":5},"passed":true,"instances":293,"ms":1138.626918,"counts":{"routes":84,"links":236,"floors":56,"columns":114,"roofs":5},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-other","sizeCase":"compact","floors":7},"passed":true,"instances":299,"ms":1603.7687070000002,"counts":{"routes":144,"links":330,"floors":72,"columns":125,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-other","sizeCase":"compact","floors":8},"passed":true,"instances":335,"ms":1200.0840990000006,"counts":{"routes":168,"links":385,"floors":80,"columns":140,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-other","sizeCase":"compact","floors":9},"passed":true,"instances":371,"ms":1146.526555999999,"counts":{"routes":192,"links":440,"floors":88,"columns":155,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-other","sizeCase":"expanded","floors":7},"passed":true,"instances":299,"ms":1041.4204410000002,"counts":{"routes":144,"links":372,"floors":72,"columns":125,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-other","sizeCase":"expanded","floors":8},"passed":true,"instances":335,"ms":1102.989192000001,"counts":{"routes":168,"links":434,"floors":80,"columns":140,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-other","sizeCase":"expanded","floors":9},"passed":true,"instances":371,"ms":1163.057229,"counts":{"routes":192,"links":496,"floors":88,"columns":155,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"compact","floors":12},"passed":true,"instances":479,"ms":1262.3366430000005,"counts":{"routes":264,"links":605,"floors":112,"columns":200,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"compact","floors":13},"passed":true,"instances":515,"ms":1348.1675079999986,"counts":{"routes":288,"links":660,"floors":120,"columns":215,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"compact","floors":14},"passed":true,"instances":551,"ms":1449.9874019999988,"counts":{"routes":312,"links":715,"floors":128,"columns":230,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"compact","floors":15},"passed":true,"instances":587,"ms":1502.0465619999995,"counts":{"routes":336,"links":770,"floors":136,"columns":245,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"expanded","floors":12},"passed":true,"instances":479,"ms":1343.8961420000014,"counts":{"routes":264,"links":682,"floors":112,"columns":200,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"expanded","floors":13},"passed":true,"instances":515,"ms":1450.3170839999984,"counts":{"routes":288,"links":744,"floors":120,"columns":215,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"expanded","floors":14},"passed":true,"instances":551,"ms":1555.7671599999994,"counts":{"routes":312,"links":806,"floors":128,"columns":230,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+{"id":"BUILT-032","params":{"buildingPlan":"bank-market","sizeCase":"expanded","floors":15},"passed":true,"instances":587,"ms":1693.4763280000006,"counts":{"routes":336,"links":868,"floors":136,"columns":245,"roofs":2},"failed":{"routes":0,"links":0,"floors":0,"columns":0,"roofs":0,"components":0}}
+/workspace/voxel-studio-yunshan/src/production/mesh-shapes.ts:7
+export function triangle(m:AuthoredMesh,a:V3,b:V3,c:V3,outward:V3){let u=b.map((v,i)=>v-a[i]),v=c.map((v,i)=>v-a[i]),n:V3=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];if(n.reduce((s,v,i)=>s+v*outward[i],0)<0){[b,c]=[c,b];n=n.map(v=>-v) as V3;}const l=Math.hypot(...n);if(l<1e-12)throw new Error('退化构造面 '+m.name);n=n.map(v=>v/l||0) as V3;const k=m.positions.length/3;for(const p of[a,b,c]){m.positions.push(...p.map(v=>Math.round(v*1e9)/1e9));m.normals.push(...n);m.uvs.push(p[0],p[1]);}m.indices.push(k,k+1,k+2);}
+                                                                                                                                                                                                                                                                                                              ^
+
+Error: 退化构造面 铺面-0-1.6
+    at triangle (/workspace/voxel-studio-yunshan/src/production/mesh-shapes.ts:7:303)
+    at quad (/workspace/voxel-studio-yunshan/src/production/mesh-shapes.ts:8:56)
+    at ArchitectureComponent.box (/workspace/voxel-studio-yunshan/src/production/architecture-components.ts:13:442)
+    at architectureFloor (/workspace/voxel-studio-yunshan/src/production/architecture-components.ts:38:58)
+    at variantFloor (/workspace/voxel-studio-yunshan/src/production/building-variant-components.ts:9:10)
+    at variantCoreFloor (/workspace/voxel-studio-yunshan/src/production/building-variant-components.ts:65:256)
+    at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:19:162)
+    at ArchitectureBuilder.asset (/workspace/voxel-studio-yunshan/src/production/architecture-near-assembly.ts:19:149)
+    at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:19:115)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/m060/probe.ts:12:10)
+
+Node.js v24.19.0

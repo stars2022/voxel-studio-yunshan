@@ -1,0 +1,11 @@
+{
+  "scope": "Read-only planning for the following M060 roof/wall sub-batch; no assets counted or implemented.",
+  "parentEvidence": "roof-wall-parent-preflight.json",
+  "findings": [
+    "BUILT-011 is a previously committed native voxel gable component, currently in atlas-20261003104805. Retain original bytes and geometry; new axis variants should use an explicit continuous roof derivative with true rotation/winding and correctly transformed roof-support ports. gableAxis names the cross-section axis, not ridge direction.",
+    "BUILT-075 is a previously committed continuous roof assembly in atlas-20261004190922, with standard and wide finite widths. Retain its native source components and original roof/art failure boundaries. Far sampling and inner-hole variants must preserve these actual dependencies and disclose missing original roofHeightAt/emitter data.",
+    "BUILT-004 is NOT in the atlas and the production index explicitly marks it not-produced; no current src recipe reference found. Do not fabricate an existing canonical wall004 or silently accept a missing parent. A real separately identified authored shared-wall parent will be needed before claiming purpose-color derivatives, with explicit catalog/dependency/count treatment.",
+    "Exact wall purpose colors and remaining seed palette values are absent. If authored, label them as authored presets, keep geometry and actual material-purpose role unchanged, and do not claim the source seed algorithm.",
+    "Do not edit active tested production code while the M060031-037 suite, export, preview and MCP checks are running."
+  ]
+}

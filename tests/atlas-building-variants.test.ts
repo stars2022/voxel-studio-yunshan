@@ -7,7 +7,7 @@ import {Engine,validateProject} from '../src/core/engine';
 import {newProject} from '../src/core/materials';
 import {productionProject} from '../src/production/style';
 import {parseCatalogCSV} from '../src/core/catalog';
-import {buildingVariantIds,buildingVariantForms,buildingVariantSpec} from '../src/production/building-variant-spec';
+import {m059BuildingVariantIds as buildingVariantIds,buildingVariantForms,buildingVariantSpec} from '../src/production/building-variant-spec';
 import {makeBuildingVariant} from '../src/production/building-variants';
 import {auditBuildingVariant} from '../scripts/lib/building-variant-audit';
 import {architectureComponents} from '../scripts/lib/architecture-audit';

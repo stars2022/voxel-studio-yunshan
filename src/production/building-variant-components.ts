@@ -3,6 +3,7 @@ import type {Project,V3} from '../core/types';
 import {Grid} from '../core/grid';
 import {ArchitectureComponent,architectureFloor} from './architecture-components';
 import {emptyMesh,quad,triangle} from './mesh-shapes';
+import type {Cell} from './architecture-plans';
 
 export function variantFloor(p:Project,id:string,w:number,d:number){
  const a=architectureFloor(p,id,w,d),from=p.styles.yunshan.wall,to=p.styles.yunshan.stone;
@@ -91,5 +92,34 @@ export function variantFarmRoof(p:Project,id:string,w:number,d:number){
  const bearing=[[0,0],[2*w,0],[2*w,2*d],[4*w,2*d],[4*w,0],[W,0],[W,D],[0,D]];
  for(let k=0;k<bearing.length;k++){const a=bearing[k],c=bearing[(k+1)%bearing.length];b.box('U形檐下承梁','woodEdge',Math.min(a[0],c[0])-.12,-.14,Math.min(a[1],c[1])-.12,Math.abs(c[0]-a[0])+.24,.22,Math.abs(c[1]-a[1])+.24);}
  for(const[x,z]of[[.1,.1],[W-.1,.1],[.1,D-.1],[W-.1,D-.1]])b.pin('屋面最小定位销','bronze',[x,height(x,z)-.125,z]);
+ return b.finish();
+}
+
+/** Union of the actual medical wings, with shared slab edges and no intersecting rectangular roofs. */
+export function variantMedicalRoof(p:Project,id:string,w:number,d:number,cells:Cell[]){
+ const e=.4,W=(Math.max(...cells.map(c=>c[0]))+1)*w,D=(Math.max(...cells.map(c=>c[1]))+1)*d;
+ const b=new ArchitectureComponent(p,id,'医馆连续H形平屋面',['BUILT-011','BUILT-012','BUILT-013'],{form:'continuous-medical-h-roof',w:W,d:D,overhang:e,occupiedCells:cells});
+ const rectangles=cells.map(([x,z])=>[x*w-e,z*d-e,(x+1)*w+e,(z+1)*d+e]);
+ const ordered=(a:number[])=>[...new Set(a)].sort((x,y)=>x-y),xs=ordered(rectangles.flatMap(r=>[r[0],r[2]])),zs=ordered(rectangles.flatMap(r=>[r[1],r[3]]));
+ const exists=(i:number,j:number)=>i>=0&&j>=0&&i<xs.length-1&&j<zs.length-1&&rectangles.some(r=>(xs[i]+xs[i+1])/2>r[0]&&(xs[i]+xs[i+1])/2<r[2]&&(zs[j]+zs[j+1])/2>r[1]&&(zs[j]+zs[j+1])/2<r[3]);
+ for(const [role,top,thickness]of[['roof',.18,.07],['waterproofMembrane',.11,.015],['wood',.095,.08]]as const){
+  const m=emptyMesh('连续H形屋面-'+role,b.role(role)),point=(i:number,j:number,low=false):V3=>[xs[i],top-(low?thickness:0),zs[j]];
+  for(let i=0;i<xs.length-1;i++)for(let j=0;j<zs.length-1;j++)if(exists(i,j)){
+   quad(m,[point(i,j),point(i+1,j),point(i+1,j+1),point(i,j+1)],[0,1,0]);quad(m,[point(i,j,true),point(i+1,j,true),point(i+1,j+1,true),point(i,j+1,true)],[0,-1,0]);
+   if(!exists(i,j-1))quad(m,[point(i,j),point(i+1,j),point(i+1,j,true),point(i,j,true)],[0,0,-1]);
+   if(!exists(i,j+1))quad(m,[point(i,j+1),point(i+1,j+1),point(i+1,j+1,true),point(i,j+1,true)],[0,0,1]);
+   if(!exists(i-1,j))quad(m,[point(i,j),point(i,j+1),point(i,j+1,true),point(i,j,true)],[-1,0,0]);
+   if(!exists(i+1,j))quad(m,[point(i+1,j),point(i+1,j+1),point(i+1,j+1,true),point(i+1,j,true)],[1,0,0]);
+  }b.mesh(m);
+ }
+ const occupied=new Set(cells.map(c=>c.join(','))),probes:V3[]=[],bearings:{from:[number,number];to:[number,number]}[]=[];
+ for(const[x,z]of cells)for(const[dx,dz,ax,az,cx,cz]of[[0,-1,x*w,z*d,(x+1)*w,z*d],[0,1,x*w,(z+1)*d,(x+1)*w,(z+1)*d],[-1,0,x*w,z*d,x*w,(z+1)*d],[1,0,(x+1)*w,z*d,(x+1)*w,(z+1)*d]]){
+  if(occupied.has([x+dx,z+dz].join(',')))continue;
+  b.box('H形檐下承梁','woodEdge',ax-.12,-.14,az-.12,cx-ax+.24,.22,cz-az+.24);
+  bearings.push({from:[ax,az],to:[cx,cz]});
+  probes.push([ax+(dx?.05:.1),-.15,az+(dx?.1:.05)],[cx+(dx?.05:-.1),-.15,cz+(dx?-.1:.05)]);
+ }
+ for(const[x,z]of cells)b.pin('屋面最小定位销','bronze',[(x+.5)*w,.18,(z+.5)*d]);
+ b.parameters.bearingEdges=bearings;b.parameters.bearingProbePoints=probes;
  return b.finish();
 }

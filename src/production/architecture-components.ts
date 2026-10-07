@@ -35,7 +35,7 @@ export function architectureFloor(p:Project,id:string,w=3.2,d=3.2){
  const b=new ArchitectureComponent(p,id,'石铺面与混凝土楼板', ['BUILT-003'],{w,d});
  b.box('承板','structuralConcrete',0,0,0,w,.16,d);
  b.box('砂浆结合层','mortar',0,.16,0,w,.02,d);
- for(let x=0;x<w-.001;x+=.8)for(let z=0;z<d-.001;z+=.8)b.box('铺面-'+x+'-'+z,'wall',x+.01,.18,z+.01,Math.min(.78,w-x-.02),.02,Math.min(.78,d-z-.02));
+ for(let x=0;x<w-.001;x+=.8)for(let z=0;z<d-.001;z+=.8){const ww=Math.min(.78,w-x-.02),dd=Math.min(.78,d-z-.02);if(Math.min(ww,dd)>1e-8)b.box('铺面-'+x+'-'+z,'wall',x+.01,.18,z+.01,ww,.02,dd);}
  for(const x of[.06,w-.08])for(const z of[.06,d-.08])b.pin('定位销','bronze',[x,.16,z]);
  b.ports=[{id:'top',kind:'architecture-floor',position:[w/2,.2,d/2],normal:[0,1,0],size:[w,0,d],pitch:.02}];return b.finish();
 }
