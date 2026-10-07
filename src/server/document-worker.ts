@@ -24,7 +24,7 @@ const summary=()=>Object.values(engine.project.assets).map(a=>{const g=new Grid(
 async function handle(method:string,args:any){
  const p=engine.project;
  if(method==='state')return{project:p,history:{undo:engine.undoStack.length,redo:engine.redoStack.length},recovery:recoveryInfo};
- if(method==='list_assets')return{templates:Object.fromEntries(Object.entries(templateCatalog).map(([id,name])=>[id,{name,parameters:templateParameters(id),dimensionUnit:'metres',integerParameters:['detail','glass','steps']} ])),version:p.version,assets:summary(),assemblies:p.assemblies??{},instances:Object.values(p.instances),palettes:Object.keys(p.palettes),counts:{uniqueAssets:Object.keys(p.assets).length,placements:Object.keys(p.instances).length,assemblies:Object.keys(p.assemblies??{}).length}};
+ if(method==='list_assets')return{templates:Object.fromEntries(Object.entries(templateCatalog).map(([id,name])=>[id,{name,parameters:templateParameters(id),dimensionUnit:'metres',integerParameters:['detail','glass','steps']} ])),version:p.version,assets:summary(),assemblies:p.assemblies??{},instances:Object.values(p.instances),palettes:Object.keys(p.palettes),counts:{uniqueAssets:Object.keys(p.assets).length,placements:Object.keys(p.instances).length,assemblies:Object.values(p.assemblies??{}).filter(a=>a.source?.kind!=='catalog-variant').length,variants:Object.values(p.assemblies??{}).filter(a=>a.source?.kind==='catalog-variant').length}};
  if(method==='read_catalog')return queryCatalog(p,args);
  if(method==='read_production_library')return readProductionLibrary(root,args);
  if(method==='read_reference_atlas')return readReferenceAtlas(root,p,args);

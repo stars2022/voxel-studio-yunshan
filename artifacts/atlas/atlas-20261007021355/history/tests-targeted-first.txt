@@ -1,0 +1,41 @@
+✔ M059 building variants preserve independent design size and floor-height contracts in38finite forms (2.142182ms)
+✔ M059 all38actual building forms have closed parts, connected native details, supported floors and clear stairs and wing connections (62695.871343ms)
+✔ M059 first and last stairs meet actual0.2m floor levels and single-storey farm has no invented upper floor (5669.182571ms)
+✔ M059 public variant creation preserves foreign material IDs and rejects invalid kind and parameter combinations atomically (35909.513956ms)
+✔ M059 counts keep six variants and38forms separate from four parent templates and existing legacy variants (13.711138ms)
+✔ M059 recipe discovery and JSON round trip retain the variant type, parent, parameters and complete source graph (1849.80695ms)
+✖ M059 quarter turns and independent roof, masonry and glass palettes preserve geometry and undo exactly (2142.123064ms)
+✖ M059 actual exported GLB has one node per placed component with independent metre bounds (3185.825528ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 6
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 112715.198387
+
+✖ failing tests:
+
+test at tests/atlas-building-variants.test.ts:81:1
+✖ M059 quarter turns and independent roof, masonry and glass palettes preserve geometry and undo exactly (2142.123064ms)
+  Error: 实例位置必须吸附到母版格距
+      at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:171:160)
+      at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:115:349)
+      at Engine.execute (/workspace/voxel-studio-yunshan/src/core/engine.ts:55:39)
+      at commit (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:23:141)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:82:47)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+
+test at tests/atlas-building-variants.test.ts:87:1
+✖ M059 actual exported GLB has one node per placed component with independent metre bounds (3185.825528ms)
+  Error: Method requires Uint8Array parameter; received "object".
+      at BufferUtils.assertView (/workspace/voxel-studio-yunshan/node_modules/@gltf-transform/core/dist/index.js:168:48)
+      at NodeIO.readBinary (/workspace/voxel-studio-yunshan/node_modules/@gltf-transform/core/dist/index.js:5329:60)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:88:127)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

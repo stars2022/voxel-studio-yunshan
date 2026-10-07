@@ -15,6 +15,7 @@ import {transactionSchema} from './schema';
 import {makeCatalogAsset} from '../production/catalog-assets';
 import {makeLifeAssembly} from '../production/layouts';
 import {makeArchitectureAssembly,architectureAssemblyIds} from '../production/atlas-architecture-assemblies';
+import {makeBuildingVariant} from '../production/building-variants';
 import {ensureProductionRoles} from '../production/style';
 import {appearanceKeys,materialAppearance} from './material-appearance';
 const ajv=new Ajv({strict:false,allErrors:true}),validate=ajv.compile(transactionSchema);
@@ -88,6 +89,13 @@ export class Engine{
   if(c.op==='rebuildCatalogAsset'){
    const old=p.assets[c.assetId];if(old?.source?.kind!=='catalog-recipe')throw new Error('不是清单配方生成的母版');
    const styleName=String(old.source.style??'yunshan');ensureProductionRoles(p,styleName);const a=makeCatalogAsset(String(old.source.catalogId),old.name,old.id,p.styles[styleName],{...(old.source.parameters as Record<string,number|string>),...c.params});a.origin=[...old.origin];if(old.source.catalogId==='ENV-001'){const tileX=Number((a.source!.parameters as any).tileX??0);a.origin[0]+=24*(tileX-Number((old.source.parameters as any).tileX??0));for(const port of a.ports)port.position=port.position.map((v,d)=>v+a.origin[d]-(d===0?tileX*24:0)) as V3;}a.source!.style=styleName;p.assets[a.id]=a;warnings.push('重新生成母版几何；手工体素修改会被替换，所有放置实例同步。');return;
+  }
+  if(c.op==='produceCatalogVariant'){
+   const entry=p.catalog?.entries[c.catalogId];if(!entry||entry.source['条目类型']!=='配色尺寸变体')throw new Error('先导入对应参数变体清单');
+   p.assemblies??={};if(p.assemblies[c.id])throw new Error('变体 ID 重复');ensureProductionRoles(p,'yunshan');
+   const a=makeBuildingVariant(p,c.catalogId,c.id,entry.source['中文名称'],c.params??{});p.assemblies[c.id]=a;
+   if(c.place)for(const i of a.instances){if(p.instances[i.id])throw new Error('变体实例 ID 重复');p.instances[i.id]=i;}
+   updateCatalogEntry(p,{id:c.catalogId,stage:'modeling',assetIds:[...new Set(a.instances.map(i=>i.assetId))],note:'已生成母版参数变体 '+c.id+'；原母版与派生关系保留，不新增基础母版或组合清单。原游戏房间、容量、门位、用途点与控制器未接入。'});return;
   }
   if(c.op==='produceCatalogAssembly'){
    const e=p.catalog?.entries[c.catalogId];if(!e||e.source['条目类型']!=='组合模板')throw new Error('先导入对应组合清单');

@@ -75,7 +75,7 @@
   },
   {
     "name": "list_production_recipes",
-    "description": "List implemented metre-space catalog recipes and relative furnishing layouts. Create them using produceCatalogAsset / produceCatalogAssembly in edit_transaction; these use the same canonical native voxel document as the UI.",
+    "description": "List implemented metre-space catalog recipes and relative furnishing layouts. Create them using produceCatalogAsset / produceCatalogAssembly / produceCatalogVariant in edit_transaction; these use the same canonical native voxel document as the UI.",
     "inputSchema": {
       "type": "object",
       "properties": {
@@ -1658,6 +1658,72 @@
                   "op",
                   "assetId",
                   "params"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "op": {
+                    "const": "produceCatalogVariant"
+                  },
+                  "catalogId": {
+                    "type": "string",
+                    "pattern": "^BUILT-[0-9]{3}$"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(?!__proto__$|prototype$|constructor$)[a-zA-Z0-9_-]{1,80}$"
+                  },
+                  "place": {
+                    "type": "boolean"
+                  },
+                  "params": {
+                    "type": "object",
+                    "properties": {
+                      "buildingPlan": {
+                        "enum": [
+                          "quarter-1",
+                          "quarter-2",
+                          "quarter-3",
+                          "quarter-4",
+                          "farm",
+                          "bank-street",
+                          "market-street",
+                          "workshop",
+                          "civic",
+                          "academy"
+                        ]
+                      },
+                      "sizeCase": {
+                        "enum": [
+                          "compact",
+                          "expanded"
+                        ]
+                      },
+                      "floors": {
+                        "type": "integer",
+                        "enum": [
+                          1,
+                          2,
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          12
+                        ]
+                      }
+                    },
+                    "required": [],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "op",
+                  "catalogId",
+                  "id"
                 ],
                 "additionalProperties": false
               },

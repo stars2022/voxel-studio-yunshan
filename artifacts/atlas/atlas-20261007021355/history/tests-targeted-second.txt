@@ -1,0 +1,102 @@
+✔ M059 building variants preserve independent design size and floor-height contracts in38finite forms (5.870369ms)
+✖ M059 all38actual building forms have closed parts, connected native details, supported floors and clear stairs and wing connections (6821.379187ms)
+✖ M059 first and last stairs meet actual0.2m floor levels and single-storey farm has no invented upper floor (988.66637ms)
+✖ M059 public variant creation preserves foreign material IDs and rejects invalid kind and parameter combinations atomically (6137.153468ms)
+✔ M059 counts keep six variants and38forms separate from four parent templates and existing legacy variants (38.182512ms)
+✖ M059 recipe discovery and JSON round trip retain the variant type, parent, parameters and complete source graph (1922.657365ms)
+✖ M059 quarter turns and independent roof, masonry and glass palettes preserve geometry and undo exactly (759.333763ms)
+✖ M059 actual exported GLB has one node per placed component with independent metre bounds (729.650825ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 2
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19076.412377
+
+✖ failing tests:
+
+test at tests/atlas-building-variants.test.ts:38:1
+✖ M059 all38actual building forms have closed parts, connected native details, supported floors and clear stairs and wing connections (6821.379187ms)
+  TypeError: Cannot read properties of undefined (reading '3')
+      at needsNativeGrid (/workspace/voxel-studio-yunshan/src/core/grid-policy.ts:4:156)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:140)
+      at Array.map (<anonymous>)
+      at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:40)
+      at make (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:23:187)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:41:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+
+test at tests/atlas-building-variants.test.ts:51:1
+✖ M059 first and last stairs meet actual0.2m floor levels and single-storey farm has no invented upper floor (988.66637ms)
+  TypeError: Cannot read properties of undefined (reading '3')
+      at needsNativeGrid (/workspace/voxel-studio-yunshan/src/core/grid-policy.ts:4:156)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:140)
+      at Array.map (<anonymous>)
+      at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:40)
+      at make (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:23:187)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:52:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+
+test at tests/atlas-building-variants.test.ts:59:1
+✖ M059 public variant creation preserves foreign material IDs and rejects invalid kind and parameter combinations atomically (6137.153468ms)
+  TypeError: Cannot read properties of undefined (reading '3')
+      at needsNativeGrid (/workspace/voxel-studio-yunshan/src/core/grid-policy.ts:4:156)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:140)
+      at Array.map (<anonymous>)
+      at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:40)
+      at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:96:12)
+      at Engine.execute (/workspace/voxel-studio-yunshan/src/core/engine.ts:55:39)
+      at commit (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:24:141)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:61:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+
+test at tests/atlas-building-variants.test.ts:77:1
+✖ M059 recipe discovery and JSON round trip retain the variant type, parent, parameters and complete source graph (1922.657365ms)
+  TypeError: Cannot read properties of undefined (reading '3')
+      at needsNativeGrid (/workspace/voxel-studio-yunshan/src/core/grid-policy.ts:4:156)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:140)
+      at Array.map (<anonymous>)
+      at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:40)
+      at make (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:23:187)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:78:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+
+test at tests/atlas-building-variants.test.ts:83:1
+✖ M059 quarter turns and independent roof, masonry and glass palettes preserve geometry and undo exactly (759.333763ms)
+  TypeError: Cannot read properties of undefined (reading '3')
+      at needsNativeGrid (/workspace/voxel-studio-yunshan/src/core/grid-policy.ts:4:156)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:140)
+      at Array.map (<anonymous>)
+      at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:40)
+      at make (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:23:187)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:84:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+
+test at tests/atlas-building-variants.test.ts:90:1
+✖ M059 actual exported GLB has one node per placed component with independent metre bounds (729.650825ms)
+  TypeError: Cannot read properties of undefined (reading '3')
+      at needsNativeGrid (/workspace/voxel-studio-yunshan/src/core/grid-policy.ts:4:156)
+      at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:140)
+      at Array.map (<anonymous>)
+      at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:46:40)
+      at make (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:23:187)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-building-variants.test.ts:91:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)

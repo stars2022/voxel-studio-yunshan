@@ -15,43 +15,51 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 702,
-    "remainingReferenceEntries": 91,
-    "completedReferenceSheets": 58,
+    "referenceCandidates": 708,
+    "remainingReferenceEntries": 85,
+    "completedReferenceSheets": 59,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 532,
       "auxiliaryMasters": 1,
       "assemblies": 186,
-      "variantEntries": 4,
-      "variantModels": 9,
+      "variantEntries": 10,
+      "variantModels": 47,
       "accepted": 0,
-      "notProduced": 343,
-      "generatedEntries": 725,
+      "notProduced": 337,
+      "generatedEntries": 731,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 702,
+      "atlasReferenceCandidates": 708,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
-      "atlasAssemblyCandidates": 186
+      "atlasAssemblyCandidates": 186,
+      "atlasVariantCandidates": 6,
+      "atlasVariantForms": 38
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M059",
+    "sheet": "M060",
     "subBatch": "building-parameter-variants",
     "state": "queued",
     "ids": [
-      "BUILT-025",
-      "BUILT-026",
-      "BUILT-027",
-      "BUILT-028",
-      "BUILT-029",
-      "BUILT-030"
+      "BUILT-031",
+      "BUILT-032",
+      "BUILT-033",
+      "BUILT-034",
+      "BUILT-035",
+      "BUILT-036",
+      "BUILT-037",
+      "BUILT-038",
+      "BUILT-039",
+      "BUILT-041",
+      "BUILT-082",
+      "BUILT-083"
     ],
-    "scope": "025–030原建筑尺寸和层数参数变体；需要真实variant类型管线，不能计新基础母版或组合。角色动物六项已有独立提交，不重复制作。"
+    "scope": "按真实清单分别实现建筑尺寸层数组、共享坡顶朝向、墙面用途配色及旧屋顶有限形态；保持变体类型、父模板、真实构件厚度与来源边界。"
   },
-  "nextBatch": "M059",
+  "nextBatch": "M060",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -63,20 +71,19 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M058与M059角色动物子批共702条技术候选，余91；513独立图册母版、3共用引用、186图册组合，完整图册58张，人工美术验收0。"
+    "M001–M059共708条技术候选，余85；513独立图册母版、3共用引用、186图册组合、6建筑变体参考，完整图册59张，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正持续优先：最小组件体素，斜面和曲面连续，天空、星空使用实际贴图。",
-    "M059角色动物6模板/12形态已完成；10不同形状配置，175与176双手形状共用但袖料用途不同。36GLB、18默认截图、21额外MCP视图和555整库测试通过，证据atlas-20261005194636。",
-    "累计702/793，余91；全库532基础候选、186组合、725已生成条目、343未制作。M059仍有6建筑变体，完整图册数58，人工美术验收0。",
-    "174实际124病衣+145显式拟合，原生夹只第1枚另移一格；175无库存默认空手；176复用001完整NPC，第一人称只绘075袖料用途派生，完整NPC定义保留。",
-    "美术待办：174刚性绷带非接点处有局部留缝；175/176静态低位袖管遮挡大部分掌部，4张真实GLB相机图已记录，中央净空通过不等于最终第一人称表现验收。",
-    "332猫犬兔各原身体不缩放，328/330只拟合内衬；兔只用328猫项圈显式安装派生。333/334真实物种组合，水中形态只有明确放置，原动物实体/健康/物权/生态未接入。",
-    "下一子批025–030必须新增真实variant类型统计与公开创建路线。现有AtlasBuild仅base/assembly，readProductionLibrary按类型严格检查，不能伪装成base或assembly。",
-    "work/m059/building-variant-preparation.json已按真实合同计算20个0.4m尺寸端点样本，尚未制作。原world/FloorPlan门位/容量、seed算法、core公务翼特殊值和civicPlan覆盖值未提供，不编造已复原原游戏。",
-    "19–22是明确作者小尺寸二层组合。后续尺寸形态需重新安排分件及真实层高/墙板厚/门洞，保存父模板、实际依赖和来源边界；不能整体拉伸现有小楼。",
-    "混合图册后续gallery必须保留本次六个组合并加入六个variant；只有两个真实类型均验证后才将M059计为完整。M059本次原生、包和历史不能覆盖。",
+    "用户修正持续优先：最小组件体素，斜面和曲面连续，天空/星空使用实际贴图。",
+    "M059两个独立子批已完成：角色动物6组合/12形态，建筑6变体/38形态；后者证据atlas-20261007021355，整库563测试、114份GLB和38次公开旋转撤销验证通过。",
+    "累计708/793，余85；全库532基础候选、186组合、10类变体/47有限变体模型，731已生成条目，337未制作；人工美术验收0。",
+    "旧角色动物病衣绷带局部留缝及第一人称袖管遮掌限制仍保留，不因建筑子批通过覆盖。",
+    "新produceCatalogVariant和variant索引/统计已接通，但当前实现只覆盖025–030；M060必须逐合同扩展，不能直接拿尺寸缩放充作完成。",
+    "M059保留019–022实际父模板，墙面/楼层/坡顶重排，原生家具安装只用自身格距。农庄是单层连续U形坡顶；工坊逐层完整楼面为明确作者变体。",
+    "原world/FloorPlan门位容量、seed算法、core公务翼特殊值和civicPlan覆盖未提供，继续未绑定。",
+    "M060的031–037分别核具体母版和层高，038/039核X/Z截面朝向，041核实际墙面用途；082/083旧屋顶必须保留历史几何/美术失败边界。",
+    "M059混合gallery保留旧六组合及六新变体；当前包包含四父模板和递归组件，历史角色动物提交与包未覆盖。",
     "每批验证后推送origin/main已授权，不重复确认。单批完成不调用stop_goal；浏览器串行；源代码回归运行期间不改被测生产代码。"
   ],
   "modelingDirection": {
@@ -87,10 +94,10 @@
   },
   "lastCompletedBatch": {
     "sheet": "M059",
-    "subBatch": "character-animal-assemblies",
-    "run": "atlas-20261005194636",
+    "subBatch": "building-parameter-variants",
+    "run": "atlas-20261007021355",
     "state": "validated",
-    "wholeSheetComplete": false,
-    "evidence": "artifacts/atlas/atlas-20261005194636"
+    "wholeSheetComplete": true,
+    "evidence": "artifacts/atlas/atlas-20261007021355"
   }
 }

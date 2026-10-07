@@ -1,0 +1,45 @@
+read_production_library OK
+list_production_recipes OK
+list_assets OK
+load_project OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction ERROR
+edit_transaction OK
+edit_transaction OK
+export_project OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+load_project OK
+query_voxels OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+edit_transaction OK
+save_project OK
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(report.notifications.length>=10)
+
+    at <anonymous> (/workspace/voxel-studio-yunshan/scripts/finish-building-variants-mcp.ts:54:378)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

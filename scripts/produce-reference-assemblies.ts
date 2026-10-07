@@ -3,7 +3,7 @@ import path from 'node:path';import {createHash} from 'node:crypto';import asser
 import {NodeIO} from '@gltf-transform/core';import {KHRMaterialsEmissiveStrength,KHRMaterialsUnlit,KHRLightsPunctual} from '@gltf-transform/extensions';
 import {Engine,validateProject} from '../src/core/engine';import {Grid} from '../src/core/grid';import {displayMesh} from '../src/core/mesh';
 import {productionProject} from '../src/production/style';import {referenceFinishCommands} from '../src/production/reference-finish';
-import {readAtlasIndex,readAtlasProduction,type AtlasProduction,type AtlasAssemblyBuild} from '../src/production/atlas';
+import {readAtlasIndex,readAtlasProduction,type AtlasProduction,type AtlasAssemblyBuild,type AtlasVariantBuild} from '../src/production/atlas';
 import {architectureAssemblyIds} from '../src/production/atlas-architecture-assemblies';import {assemblyGeometryData,assemblyBoundsM,assemblyExportToleranceM} from '../src/production/assembly-geometry';
 import {parseCatalogCSV} from '../src/core/catalog';import {readProductionLibrary} from '../src/production/library';import {exportProject} from '../src/export/exporter';
 import {gltfPoints,pointBounds} from './lib/skin-audit';import type {Project,Command} from '../src/core/types';
@@ -27,7 +27,7 @@ for(const row of rows){
  index.entries.push(record);models.push({...record,representation:'assembly',componentAssets:assetIds.length,glbBoundsMaxErrorM:error,glbBoundsToleranceM:assemblyExportToleranceM(doc,assembly),glbBytes:exported.glbBytes,reusedExistingDocument:!!reused,totalMs:performance.now()-t});console.log(JSON.stringify({id:row.id,components:assetIds.length,instances:record.instances,storedVoxels:voxels,displayTriangles:triangles,ms:Math.round(performance.now()-t)}));
 }
 for(const sheet of activeSheets){
- const selected=index.entries.filter((e):e is AtlasAssemblyBuild=>e.kind==='assembly'&&e.sheet===sheet);const gallery=productionProject(sheet+' · '+selected.length+'组资产组合');gallery.catalog={sourceName:'city-assets.csv',importedAt:index.createdAt,entries:{}};gallery.assemblies={};
+ const selected=index.entries.filter((e):e is AtlasAssemblyBuild|AtlasVariantBuild=>(e.kind==='assembly'||e.kind==='variant')&&e.sheet===sheet);const gallery=productionProject(sheet+' · '+selected.length+'组资产组合');gallery.catalog={sourceName:'city-assets.csv',importedAt:index.createdAt,entries:{}};gallery.assemblies={};
  const framingBounds=new Map<string,ReturnType<typeof assemblyBoundsM>>();
  for(const row of selected){const doc=JSON.parse(await readFile(root+'/'+row.file,'utf8'));const assembly=doc.assemblies[row.assemblyId];framingBounds.set(row.id,assemblyBoundsM(doc,{instances:assembly.instances.filter((i:any)=>!doc.assets[i.assetId].sky)}));}
  const strideX=Math.ceil((Math.max(...selected.map(e=>{const b=framingBounds.get(e.id)!;return b.max[0]-b.min[0];}))+12)/.2)*.2,strideZ=Math.ceil((Math.max(...selected.map(e=>{const b=framingBounds.get(e.id)!;return b.max[2]-b.min[2];}))+12)/.2)*.2;

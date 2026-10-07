@@ -1,0 +1,17 @@
+/workspace/voxel-studio-yunshan/src/production/mesh-shapes.ts:7
+export function triangle(m:AuthoredMesh,a:V3,b:V3,c:V3,outward:V3){let u=b.map((v,i)=>v-a[i]),v=c.map((v,i)=>v-a[i]),n:V3=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];if(n.reduce((s,v,i)=>s+v*outward[i],0)<0){[b,c]=[c,b];n=n.map(v=>-v) as V3;}const l=Math.hypot(...n);if(l<1e-12)throw new Error('退化构造面 '+m.name);n=n.map(v=>v/l||0) as V3;const k=m.positions.length/3;for(const p of[a,b,c]){m.positions.push(...p.map(v=>Math.round(v*1e9)/1e9));m.normals.push(...n);m.uvs.push(p[0],p[1]);}m.indices.push(k,k+1,k+2);}
+                                                                                                                                                                                                                                                                                                              ^
+
+Error: 退化构造面 连续钢筋混凝土梯段
+    at triangle (/workspace/voxel-studio-yunshan/src/production/mesh-shapes.ts:7:303)
+    at profile (/workspace/voxel-studio-yunshan/src/production/building-variant-components.ts:29:80)
+    at variantStairs (/workspace/voxel-studio-yunshan/src/production/building-variant-components.ts:37:3)
+    at <anonymous> (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:18:60)
+    at ArchitectureBuilder.asset (/workspace/voxel-studio-yunshan/src/production/architecture-near-assembly.ts:19:149)
+    at makeBuildingVariant (/workspace/voxel-studio-yunshan/src/production/building-variants.ts:18:30)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/m059-buildings/probe-defaults.ts:7:69)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0

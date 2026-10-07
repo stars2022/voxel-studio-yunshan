@@ -1,0 +1,944 @@
+{
+  "run": "atlas-20261007021355",
+  "status": "completed-prefix-verified",
+  "overallMCPStatus": "interrupted-before-final-report",
+  "originalVerifier": "scripts/verify-building-variants-mcp.ts",
+  "originalVerifierSHA256": "d26b17ffe6475fdee057bc93d71b566d136ec01d59786a278e6b5188824ca8ad",
+  "log": "history/mcp-interrupted.txt",
+  "logSHA256": "f62b45a10e830440875e1bea4ab832cf88612626966b54910cd99a700bce0035",
+  "exactExpectedLogLines": 297,
+  "serial38FormLoopEndLine": 275,
+  "proof": "The297-line log matches the unchanged verifier operation sequence exactly, including the five intentional rejection cases. Subsequent public creation/export/query/palette calls are reachable only after all38 serial quarter-turn/undo assertions and48 capture assertions. The final finite-form runtime native bytes match the final verified shape. No final save/restart or near/far assertion is inferred from the interrupted suffix; these and public cases are repeated in the completion run. Original browser triangle counts and notification data were held in memory and are not invented.",
+  "quarterTurns": [
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-1",
+        "sizeCase": "compact",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-1",
+        "sizeCase": "expanded",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-2",
+        "sizeCase": "compact",
+        "floors": 8
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-2",
+        "sizeCase": "expanded",
+        "floors": 8
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-3",
+        "sizeCase": "compact",
+        "floors": 12
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-3",
+        "sizeCase": "expanded",
+        "floors": 12
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-4",
+        "sizeCase": "compact",
+        "floors": 6
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-025",
+      "params": {
+        "buildingPlan": "quarter-4",
+        "sizeCase": "expanded",
+        "floors": 6
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-026",
+      "params": {
+        "buildingPlan": "farm",
+        "sizeCase": "compact",
+        "floors": 1
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-026",
+      "params": {
+        "buildingPlan": "farm",
+        "sizeCase": "expanded",
+        "floors": 1
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "bank-street",
+        "sizeCase": "compact",
+        "floors": 2
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "bank-street",
+        "sizeCase": "compact",
+        "floors": 3
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "bank-street",
+        "sizeCase": "compact",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "bank-street",
+        "sizeCase": "expanded",
+        "floors": 2
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "bank-street",
+        "sizeCase": "expanded",
+        "floors": 3
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "bank-street",
+        "sizeCase": "expanded",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "market-street",
+        "sizeCase": "compact",
+        "floors": 2
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "market-street",
+        "sizeCase": "compact",
+        "floors": 3
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "market-street",
+        "sizeCase": "compact",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "market-street",
+        "sizeCase": "expanded",
+        "floors": 2
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "market-street",
+        "sizeCase": "expanded",
+        "floors": 3
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-027",
+      "params": {
+        "buildingPlan": "market-street",
+        "sizeCase": "expanded",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-028",
+      "params": {
+        "buildingPlan": "workshop",
+        "sizeCase": "compact",
+        "floors": 3
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-028",
+      "params": {
+        "buildingPlan": "workshop",
+        "sizeCase": "compact",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-028",
+      "params": {
+        "buildingPlan": "workshop",
+        "sizeCase": "compact",
+        "floors": 5
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-028",
+      "params": {
+        "buildingPlan": "workshop",
+        "sizeCase": "expanded",
+        "floors": 3
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-028",
+      "params": {
+        "buildingPlan": "workshop",
+        "sizeCase": "expanded",
+        "floors": 4
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-028",
+      "params": {
+        "buildingPlan": "workshop",
+        "sizeCase": "expanded",
+        "floors": 5
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-029",
+      "params": {
+        "buildingPlan": "civic",
+        "sizeCase": "compact",
+        "floors": 6
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-029",
+      "params": {
+        "buildingPlan": "civic",
+        "sizeCase": "compact",
+        "floors": 7
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-029",
+      "params": {
+        "buildingPlan": "civic",
+        "sizeCase": "compact",
+        "floors": 8
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-029",
+      "params": {
+        "buildingPlan": "civic",
+        "sizeCase": "expanded",
+        "floors": 6
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-029",
+      "params": {
+        "buildingPlan": "civic",
+        "sizeCase": "expanded",
+        "floors": 7
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-029",
+      "params": {
+        "buildingPlan": "civic",
+        "sizeCase": "expanded",
+        "floors": 8
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-030",
+      "params": {
+        "buildingPlan": "academy",
+        "sizeCase": "compact",
+        "floors": 5
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-030",
+      "params": {
+        "buildingPlan": "academy",
+        "sizeCase": "compact",
+        "floors": 6
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-030",
+      "params": {
+        "buildingPlan": "academy",
+        "sizeCase": "expanded",
+        "floors": 5
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    },
+    {
+      "id": "BUILT-030",
+      "params": {
+        "buildingPlan": "academy",
+        "sizeCase": "expanded",
+        "floors": 6
+      },
+      "passed": true,
+      "evidence": "verified original control-flow prefix; see interrupted-mcp-recovery.json"
+    }
+  ],
+  "views": [
+    {
+      "key": "BUILT-025-back",
+      "file": "variant-BUILT-025-back.png",
+      "sha256": "127101622efc2f553172398e38e77eb14a5cac1ae57aa3aec03d2018a4c215df",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default capture"
+    },
+    {
+      "key": "BUILT-025-first-floor-cutaway",
+      "file": "variant-BUILT-025-first-floor-cutaway.png",
+      "sha256": "b185acc926778e21832103118bb9d9230339820f4840e37bf3527c933d6379a3",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default cutaway"
+    },
+    {
+      "key": "BUILT-025-stair-component",
+      "file": "variant-BUILT-025-stair-component.png",
+      "sha256": "7d054476f95499d49de1123f7ad721ed3c2ecffb178cb88a4bf9b594dbbfee40",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default source-component capture"
+    },
+    {
+      "key": "BUILT-026-back",
+      "file": "variant-BUILT-026-back.png",
+      "sha256": "b86d1c2bddbb1d405109197a84c808b0e35b76ea7c1d9d0e2fec320611053f60",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default capture"
+    },
+    {
+      "key": "BUILT-027-back",
+      "file": "variant-BUILT-027-back.png",
+      "sha256": "36e1cd534b8b5773895220e591ee197e38cfdda57d7a7d4d26f94e5bde0b06cf",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default capture"
+    },
+    {
+      "key": "BUILT-027-first-floor-cutaway",
+      "file": "variant-BUILT-027-first-floor-cutaway.png",
+      "sha256": "e7ba542d4e18e63f355f9fb72d057d3b412a9140dab06f6ea1b798b91b7e945b",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default cutaway"
+    },
+    {
+      "key": "BUILT-027-stair-component",
+      "file": "variant-BUILT-027-stair-component.png",
+      "sha256": "a4002e84d5d04bb7d10dd8b8b89880380ff0dd7303897bae25864c0b14864458",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default source-component capture"
+    },
+    {
+      "key": "BUILT-028-back",
+      "file": "variant-BUILT-028-back.png",
+      "sha256": "e6c67caeb86df7991d8ec3bd1bc89f9b1c3b73c480da729d12fafba8ecdbf2a7",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default capture"
+    },
+    {
+      "key": "BUILT-028-first-floor-cutaway",
+      "file": "variant-BUILT-028-first-floor-cutaway.png",
+      "sha256": "d259fdb5e6bcf20399fbabdf03a4a0f43df961222350c5a34d465132cd4aae2b",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default cutaway"
+    },
+    {
+      "key": "BUILT-028-stair-component",
+      "file": "variant-BUILT-028-stair-component.png",
+      "sha256": "8e9162a35a02e4e3173e43a658f65d9a5af0288ebccc0377c09e62b8afe75dbe",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default source-component capture"
+    },
+    {
+      "key": "BUILT-029-back",
+      "file": "variant-BUILT-029-back.png",
+      "sha256": "355f2581124a2b7084a3e4712d4c3cfaf5fe643f730b3fcf33e06edf28e5e957",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default capture"
+    },
+    {
+      "key": "BUILT-029-first-floor-cutaway",
+      "file": "variant-BUILT-029-first-floor-cutaway.png",
+      "sha256": "6c6c956e49ed20a9ee34e9e163e68df4e38d38f6b1e5070eea0d9c2d759b86b3",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default cutaway"
+    },
+    {
+      "key": "BUILT-029-stair-component",
+      "file": "variant-BUILT-029-stair-component.png",
+      "sha256": "0234dfb988731c1a57e14772f7a2f24a679c64c4348803fa839026e87559f70a",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default source-component capture"
+    },
+    {
+      "key": "BUILT-030-back",
+      "file": "variant-BUILT-030-back.png",
+      "sha256": "1635f8946797fddeac2bcaf3407a8541453993f98850d01c1a3cac56d60f992f",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default capture"
+    },
+    {
+      "key": "BUILT-030-first-floor-cutaway",
+      "file": "variant-BUILT-030-first-floor-cutaway.png",
+      "sha256": "2fceaf7043c31fa3fb2ffcc6b5456003c92530fcc1f5d730b9fb3f088afd09ec",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default cutaway"
+    },
+    {
+      "key": "BUILT-030-stair-component",
+      "file": "variant-BUILT-030-stair-component.png",
+      "sha256": "1fd501d3fd6f65b6800ec77a2d777f7f1e37795052c4f5b1a01b4b85f11534ee",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original default source-component capture"
+    },
+    {
+      "key": "BUILT-025-quarter-1-expanded-4",
+      "file": "variant-BUILT-025-quarter-1-expanded-4.png",
+      "sha256": "a60004d00f4ae1a9c1cf89f79e528c06aae38f22202d4e9c0347c9dcc40c764d",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-025-quarter-2-compact-8",
+      "file": "variant-BUILT-025-quarter-2-compact-8.png",
+      "sha256": "31015d776d888cd7cd445ec386278b95abe261fcc75060f8f303b5b59bfea0bf",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-025-quarter-2-expanded-8",
+      "file": "variant-BUILT-025-quarter-2-expanded-8.png",
+      "sha256": "cea452e03fa0c65253f832fca218b22e162d438ce52b0315fbba416eded71f54",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-025-quarter-3-compact-12",
+      "file": "variant-BUILT-025-quarter-3-compact-12.png",
+      "sha256": "ec5e3dff9f103e4f15e1c6a17a4d88e7d384246380a3e3ced74460b6b6ccd6d2",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-025-quarter-3-expanded-12",
+      "file": "variant-BUILT-025-quarter-3-expanded-12.png",
+      "sha256": "b2152994148612ed42b64d07479e1fda471ff3dc6889815fc1ac32927e2096ae",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-025-quarter-4-compact-6",
+      "file": "variant-BUILT-025-quarter-4-compact-6.png",
+      "sha256": "1331e2a669469529036eb22a28970dfb6712ee26630322a7254b220744aa8953",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-025-quarter-4-expanded-6",
+      "file": "variant-BUILT-025-quarter-4-expanded-6.png",
+      "sha256": "d23b4dd298d3ab03084bb9c67d1b126dc1c5e9a2857370b5123ff027aa1d68ad",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-026-farm-expanded-1",
+      "file": "variant-BUILT-026-farm-expanded-1.png",
+      "sha256": "7d7a4123c4d6419a85ba8215b70590f27656010867f3d861f31f4e8cc40762cd",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-bank-street-compact-3",
+      "file": "variant-BUILT-027-bank-street-compact-3.png",
+      "sha256": "05c2070442608dfd4722e6670ff1e6e29a6c16fd410de4a11b70de30726b198e",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-bank-street-compact-4",
+      "file": "variant-BUILT-027-bank-street-compact-4.png",
+      "sha256": "f0c150af71224f51e9c580aabdb0bba95d90d92938ae13dd6b33f0b1e78dd580",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-bank-street-expanded-2",
+      "file": "variant-BUILT-027-bank-street-expanded-2.png",
+      "sha256": "085f177b522cc7a5b62099f162d8cd0cfb299f74f686203ba75f7dee913037c0",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-bank-street-expanded-3",
+      "file": "variant-BUILT-027-bank-street-expanded-3.png",
+      "sha256": "33a00f1cd6c771e89ea341702f6458e653bfcf9bbe4ef867387d997e17025dfc",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-bank-street-expanded-4",
+      "file": "variant-BUILT-027-bank-street-expanded-4.png",
+      "sha256": "069f1c50c423189e7eaec956f07e2c3e60034047f95e5c4c2094d833d1fc12ba",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-market-street-compact-2",
+      "file": "variant-BUILT-027-market-street-compact-2.png",
+      "sha256": "19bc37ea2d63e51e67da79615e127a2fc79532c3d8b2ad6a19d62ae18a531c2e",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-market-street-compact-3",
+      "file": "variant-BUILT-027-market-street-compact-3.png",
+      "sha256": "7cb7c45311dd2caabece90328a7e50d3d99dabc7bab2c7b2df2f3c459a131f86",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-market-street-compact-4",
+      "file": "variant-BUILT-027-market-street-compact-4.png",
+      "sha256": "1d8cc9774ab0b4bcba805348b8bbb218ecc1bd96823b8d72ab4e310255d8a6e0",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-market-street-expanded-2",
+      "file": "variant-BUILT-027-market-street-expanded-2.png",
+      "sha256": "81fd1f60937b9e88f4480d84dc4f7517b79d5841af1820fdb6218ca3652d583b",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-market-street-expanded-3",
+      "file": "variant-BUILT-027-market-street-expanded-3.png",
+      "sha256": "359539bdb3b183fb69b30265229dc6db9e71b4356f1ff2874b1577c7c588ee04",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-027-market-street-expanded-4",
+      "file": "variant-BUILT-027-market-street-expanded-4.png",
+      "sha256": "80226e3edb1023138210b6e106b5b111ecf8222d045b622b6ff57c5d1293911f",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-028-workshop-compact-4",
+      "file": "variant-BUILT-028-workshop-compact-4.png",
+      "sha256": "46fb8138212ba6c05762e63893b4c498e22dc46e30f14fe7d7beaf65fdfc5bf3",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-028-workshop-compact-5",
+      "file": "variant-BUILT-028-workshop-compact-5.png",
+      "sha256": "7aabd343a1734177d4993af5b223cd23d4de5a7fd5e6a7c9a7580730b5d7d26c",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-028-workshop-expanded-3",
+      "file": "variant-BUILT-028-workshop-expanded-3.png",
+      "sha256": "953b963858797349056bceb7096428cbabb957eae81f5a1b3fa7a8cbf3474433",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-028-workshop-expanded-4",
+      "file": "variant-BUILT-028-workshop-expanded-4.png",
+      "sha256": "9da61840e5d3e824162e557cde3adf892e9800cfeb3217245fd9c3d7b268eda4",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-028-workshop-expanded-5",
+      "file": "variant-BUILT-028-workshop-expanded-5.png",
+      "sha256": "a3c842840a80e196c3b430872aae347e1c8c8d725423595aa9f8900f8515fb64",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-029-civic-compact-7",
+      "file": "variant-BUILT-029-civic-compact-7.png",
+      "sha256": "233434079f454b6dc272ea92f37b37f86aedc7d2cc71c43391446da88c78cb1f",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-029-civic-compact-8",
+      "file": "variant-BUILT-029-civic-compact-8.png",
+      "sha256": "be42f2d1c15e3cd75d30c2da3f0e02106d0c27efa2180197ba5e7ecae295eabc",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-029-civic-expanded-6",
+      "file": "variant-BUILT-029-civic-expanded-6.png",
+      "sha256": "c3c0c101961169025b18f8d31fbef942f3916be6262524a09d69d9adc9b4b069",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-029-civic-expanded-7",
+      "file": "variant-BUILT-029-civic-expanded-7.png",
+      "sha256": "6693c4161dc29200b9cc4809f5a659f81bb74b3554331e4a73079f8cf15c7b22",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-029-civic-expanded-8",
+      "file": "variant-BUILT-029-civic-expanded-8.png",
+      "sha256": "34728e449deb9348e6371c7f129321c65579bc13ced9c7768fd15a4bce21656f",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-030-academy-compact-6",
+      "file": "variant-BUILT-030-academy-compact-6.png",
+      "sha256": "b9303de206f657cc7235fdbfae3ec005487a24c68f245607b1e395706c3b7875",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-030-academy-expanded-5",
+      "file": "variant-BUILT-030-academy-expanded-5.png",
+      "sha256": "d97dcf0bd253e51119e1f43818d49652270bb5e02703e9e44354f13839043d01",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "BUILT-030-academy-expanded-6",
+      "file": "variant-BUILT-030-academy-expanded-6.png",
+      "sha256": "ba069c13dcfce6a0118c7e56ec78d01ff2e0ce9d7af1fb991859eb664460cba5",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original finite-form capture"
+    },
+    {
+      "key": "farm-public-create",
+      "file": "variant-farm-public-create.png",
+      "sha256": "f022d6890b350dcb9630247157b98c94f5c60d7bbff629461b69582886a941d5",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original interrupted public-case capture; repeated in completion run",
+      "retainedCopy": "history/interrupted-variant-farm-public-create.png"
+    },
+    {
+      "key": "farm-quarter-turn",
+      "file": "variant-farm-quarter-turn.png",
+      "sha256": "397ddc49e69e83a140dc1d118b93690563baa88aedff732677089b91608697d7",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original interrupted public-case capture; repeated in completion run",
+      "retainedCopy": "history/interrupted-variant-farm-quarter-turn.png"
+    },
+    {
+      "key": "farm-purpose-palette",
+      "file": "variant-farm-purpose-palette.png",
+      "sha256": "437f30336ff2617c42f33d2ee6080ba8934bb68adb10df0e900391a6a6a31d54",
+      "dimensions": [
+        876,
+        864
+      ],
+      "evidence": "original interrupted public-case capture; repeated in completion run",
+      "retainedCopy": "history/interrupted-variant-farm-purpose-palette.png"
+    }
+  ],
+  "completedCaptureCount": 51,
+  "originalPublicExportFiles": [
+    {
+      "file": "artifacts/atlas/atlas-20261007021355/variant-mcp-runtime/exports/building-variant-quarter-turn-1791344587692/atlas.json",
+      "bytes": 142405,
+      "sha256": "86d958d9cbc8bc71bea53a34d5dc7d577f36d6f7c3497a3737ebf3ad59dc0378"
+    },
+    {
+      "file": "artifacts/atlas/atlas-20261007021355/variant-mcp-runtime/exports/building-variant-quarter-turn-1791344587692/atlas.png",
+      "bytes": 6679,
+      "sha256": "dcac9e537df1302db33d9810473040ccf8ed0858f646ff3587496cb49d4f97b9"
+    },
+    {
+      "file": "artifacts/atlas/atlas-20261007021355/variant-mcp-runtime/exports/building-variant-quarter-turn-1791344587692/collision.json",
+      "bytes": 31208416,
+      "sha256": "98f72b622663b71db6d418eb90c6dca71ea96faa94ad1232359ca4fd7f637f84"
+    },
+    {
+      "file": "artifacts/atlas/atlas-20261007021355/variant-mcp-runtime/exports/building-variant-quarter-turn-1791344587692/interfaces.json",
+      "bytes": 186835,
+      "sha256": "2b02b41c0dae193b39bd9c79c9ac40e0ab475216b3d7c7a879fc9ae0907ea4d2"
+    },
+    {
+      "file": "artifacts/atlas/atlas-20261007021355/variant-mcp-runtime/exports/building-variant-quarter-turn-1791344587692/visual.glb",
+      "bytes": 834296,
+      "sha256": "be9c9ca90707d3e1ea15c00ec8ed27d375d8324f9cbb507e542ca3ab3e3ce7e9"
+    },
+    {
+      "file": "artifacts/atlas/atlas-20261007021355/variant-mcp-runtime/exports/building-variant-quarter-turn-1791344587692/voxels.ysvox.json",
+      "bytes": 21717374,
+      "sha256": "ccc455fda3c854c8d7b6f11b58c10d5711dabf5217f7cb0a767edcd8e977f726"
+    }
+  ],
+  "sourceAndTestsUnchanged": true,
+  "runtimeArchiveEvidence": "history/interrupted-mcp-runtime-archive-verification.json"
+}

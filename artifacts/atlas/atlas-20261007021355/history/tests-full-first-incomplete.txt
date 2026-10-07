@@ -1,0 +1,459 @@
+
+> yunshan-voxel-studio@0.1.0 test:cloud
+> tsx --test --test-concurrency=2 tests/*.test.ts
+
+✔ the two supplied architecture sheets produce 28 distinct editable native structures (5477.401577ms)
+✔ entrances, straight bridge and corner gallery retain real clear passages (3592.102397ms)
+✔ default architecture has no floating roof teeth, light strips, glazing or finials (20048.654393ms)
+✔ coarser masonry and step lamps remain attached after quantisation (102.689425ms)
+✔ window lattice, soil setback and roof layering are actual occupied/empty cells (439.694068ms)
+✔ door open parameter rebuilds leaves as geometry and opens a real passage (452.431149ms)
+✔ MCP command path preserves CAS, preview, rollback and whole-transaction undo for the new templates (2575.298082ms)
+✔ adjacent floor ports join on-grid without overlap; sparse part metadata does not lift edit limits (1801.395729ms)
+✔ detail templates preserve real cells, part hierarchy and deterministic regeneration (4678.285918ms)
+✔ detailed bay retains a clear door after parameter change and atomic undo (4579.266172ms)
+✔ planter is hollow and contains distinct stems, leaves, flowers and raised ornament cells (85.627222ms)
+✔ rail gap, joinery and lantern emitters are geometry; shading keeps the same occupancy (571.621472ms)
+✔ detail budget, unsupported pitch and invalid texture input fail without changing document (3.603258ms)
+✔ M021 has twelve measured native masters, faithful source hashes, empty openings and two intentional side windows (3208.213427ms)
+✔ aircraft coating, golden blade, landing rubber, window seal, glass, control pixels and bridge layers use distinct real cells (0.769521ms)
+✔ four arms, four blades and four legs dock to an explicit auxiliary fixture with real vertical contacts (436.307077ms)
+✔ two separated cockpit windows receive the roof and leave the authored eye line open above the low console (3295.637349ms)
+✔ 8.4m wing root is supported independently while the 4m tail, fin and power box assemble without covering intake cavities (3990.463727ms)
+✔ six high-bridge decks, five joints and six beams keep exact 254.6/254/252.8 elevations, support contacts and historical limitations (1671.308615ms)
+✔ new aircraft roles remain separate through appearance changes, native and GLB export, then undo once (6142.306095ms)
+✔ occupied IDs and missing roles are preserved, new roles create atomically, and unverified depth rejects without partial changes (134.353439ms)
+✔ M044 new solids have consistently oriented closed surfaces, true door apertures and independently assigned structural layers (163.046659ms)
+✔ six near buildings retain true repeated instances, original stairs and explicit curb-removal provenance; finite human routes and full-height courts stay clear (43793.339078ms)
+✔ bank and medical H layouts differ; all four wide roof alternatives regenerate actual metric geometry without becoming base masters (7270.886175ms)
+✔ far structural derivatives retain separate nonphysical families and deterministic actual 24-site transforms with exclusion volumes (111730.61684ms)
+✔ assembly transaction preserves foreign role IDs, rejects wrong types, rolls back, applies once, rotates real instances and undoes together (219.553162ms)
+✔ appearance replacement keeps assembly authority unchanged and edited dependencies are rejected instead of silently labelled canonical (229.338858ms)
+✔ atlas assembly overlay adds generated templates without changing base-master or alias counts (86.023995ms)
+✔ M038 twelve independent masters and twenty-four variants have closed oriented surfaces, attached native details and correct provenance (864.063788ms)
+✔ M038 named scenes and every supported variant clear actual body, clothing, head, hair, hand and foot triangles, including reflected gloves (41838.630412ms)
+✔ M038 true neck, cuff, finger, hood and bag apertures retain their intended floors and closed ends (1615.979542ms)
+✔ M038 both bag lids clear the actual body and fixed straps at eight stated angles about the actual prop pivot (1581.315759ms)
+✔ M038 retained sources and explicit derivatives do not inflate catalog masters or retain hidden old body/wrap surfaces (2171.935167ms)
+✔ M038 humanoid, hand and prop skins roundtrip independently evaluated posed GLB bounds and real socket transforms (920.514754ms)
+✔ M038 purpose-specific appearance updates and one undo preserve all native data, continuous surfaces, rigs and holes (1087.197091ms)
+✔ M038 preserves all M036/M037 geometry hashes, rejects unsupported parameters and refuses semantic role substitution (1116.910042ms)
+✔ M033 twelve distinct masters and twenty-six variants keep closed oriented real meshes, attached blocks and source provenance (4970.145578ms)
+✔ every posed rig exports genuine joint/IBM/weight data evaluated independently, including translated rotated copies and mirrored hand (13553.077938ms)
+✔ all four adult and independent-width child hair shells clear actual scalp, ears, eyes and voxel facial details (3634.522424ms)
+✔ bare foot has a real underside arch gap and five toe surfaces; fully clothed abdomen replaces the original body middle (23.374926ms)
+✔ new poses rebuild atomically, preserve bind cells, support independent material pack undo and reject unknown enums (503.413761ms)
+✔ seven author studies use real head/limb replacements, label derivatives and retain source masters (660.6251ms)
+✔ curled fingers keep separate surfaces and an actual fifteen-millimetre grip gauge clears the adult hand (64.624125ms)
+✔ M019 has twelve distinct connected native masters, exact reference provenance and genuinely empty declared openings (8874.67162ms)
+✔ actual cable, road, glass, lamp, masonry and roofing cells have independent physical roles (1.117967ms)
+✔ catalogue spans, offsets, post widths and openings remain measurable geometry (85.441914ms)
+✔ coarse rail bed and fine guard strips assemble without expanding three hundred million individual cells (16025.941993ms)
+✔ shaft keeps the car path empty and the side guide on supported external brackets; cable fixture realizes 9m/8.5m centres (2225.955989ms)
+✔ four independent bridge posts receive four reused horizontal rails with clear travel space (872.600943ms)
+✔ 160m main cables, correctly located towers and three central hanger stations have true faces and no intersections (4883.155793ms)
+✔ only verified hanger heights rebuild atomically; occupied preferred cable IDs survive with one undo (134.946908ms)
+✔ material pack changes only appearance and exports intact native IDs, with one undo and transaction rollback (6611.681253ms)
+✔ M059 building variants preserve independent design size and floor-height contracts in38finite forms (1.455417ms)
+✔ M059 all38actual building forms have closed parts, connected native details, supported floors and clear stairs and wing connections (69255.860787ms)
+✔ M059 first and last stairs meet actual0.2m floor levels and single-storey farm has no invented upper floor (6081.901288ms)
+✔ M059 public variant creation preserves foreign material IDs and rejects invalid kind and parameter combinations atomically (42196.524342ms)
+✔ M059 counts keep six variants and38forms separate from four parent templates and existing legacy variants (18.160351ms)
+✔ M059 recipe discovery and JSON round trip retain the variant type, parent, parameters and complete source graph (2570.087514ms)
+✔ M059 quarter turns and independent roof, masonry and glass palettes preserve geometry and undo exactly (14797.004752ms)
+✔ M059 actual exported GLB has one node per placed component with independent metre bounds (6003.678056ms)
+✔ M041 24 finite shapes retain actual source, closed oriented components, native detail attachment and measured dimensions (2983.90277ms)
+✔ M041 actual physical graph joins fine details to main surfaces and preserves jaw, basket, strap, package and animal clearances (16426.434827ms)
+✔ M041 basket retains every original LIFE069 native cell with semantic remap and preserves canonical dependency (708.963653ms)
+✔ M041 material pack and single undo preserve geometry, roles, interfaces and rigid ownership (3132.017035ms)
+✔ M041 keeps all prior M040 geometry intact, distinguishes cat/dog and refuses unsupported runtime modes or material borrowing (862.844848ms)
+✔ M041 seven finite grips clear all actual skin and nail triangles while retained source hands remain intact (10055.623009ms)
+✔ M031 has twelve distinct masters, thirteen parameter shapes, reference evidence and bounded real mixed geometry (1345.693743ms)
+✔ head preserves the explicit author interpretation of 0.2m width with real nose, bare skin and separate ocular/hair roles (4.937894ms)
+✔ all character visuals including armour and sole are noncollision, with original optical power unbound (49.903781ms)
+✔ near segmented legs and cheap whole-leg replacement share hip/ankle endpoints without double drawing either segment (187.401778ms)
+✔ seated study keeps shins vertical, removes robe, rotates whole sleeves about exact shoulder sockets, and joins wrists (0.542609ms)
+✔ mirrored static hand preserves actual fingers and correct winding; five separate fingers retain air gaps (2.595818ms)
+✔ short back hair is an actual open-front hollow shell; extensions and garment skirt are separate attachable masters (4.897373ms)
+✔ bonsai root plug fits its independently authored ENV097 shallow pot and leaves a continuous drain; old square pot unchanged (49.097525ms)
+✔ pose native masters remain distinct from derived static meshes; GLB and collision roundtrip preserve the exact visual contract (892.166776ms)
+✔ CHAR catalogue transactions preserve IDs, parameter limits, independent appearances, atomic rollback and one undo (295.297297ms)
+✔ every native detail island actually contacts or embeds in a mesh, including leaf crowns and the shoe side clasp (104.511745ms)
+✔ visual-only components accept continuous off-grid pivots, while actual solid blocks retain exact-grid warnings (657.349354ms)
+✔ right shoulder and robe waist connect through exported native ports; a reflected left shoulder reverses its socket normal (87.005365ms)
+✔ M045 fourteen finite civic forms retain closed oriented component shells, nondegenerate UVs and attached native pins (6142.771902ms)
+✔ M045 actual solids preserve stair headroom, floor holes, column contact and finite boarding paths (2739.975748ms)
+✔ M045 source envelopes and author limits are explicit; finite variants change actual geometry and reject unsupported states (260.169843ms)
+✔ M045 concrete, ceramic and unbound optical surfaces retain actual semantics under appearance replacement (991.859268ms)
+✔ M008 references preserve metre coordinates, static limits and intentional separated rail/table-chair bodies (20753.474912ms)
+✔ drawer interior, lifting handles, sink, ballot chute, case grip and open cabinet approach remain genuine voids (654.088427ms)
+✔ actual M008 cells separate rubber, textile, straps, liquid, plastic, paper and screen graphics by meaning (505.365544ms)
+✔ changing rubber and textile appearances preserves voxel assignments, other semantic roles and supports one undo (678.265211ms)
+✔ conference station keeps exactly six independent chairs and reading-room layout no longer adds duplicate seats (171.580215ms)
+✔ emergency furnishing study places 5 mm instrument tray on the new wash counter with no collisions or blocked openings (2221.721627ms)
+✔ 5 mm native grids use the shared transaction path, survive serialization and enforce pitch compatibility (358.993931ms)
+✔ tiny food, bottles and books use 5 mm cells without substituting emissive or metal materials for food colours (1263.885585ms)
+✔ unplaced fine masters do not change scene collision precision or expand coarse occupancy (43.868162ms)
+✔ distant fine instances get a local collision grid, while remote opening blockers remain checked (17.007799ms)
+✔ fish tail fork, stiff book overhang and scroll inlay remain explicit geometry (6.787744ms)
+✔ packaging has an empty internal volume and a graspable handle; lectern rear remains open (631.861162ms)
+✔ M006 masters retain exact source slots, physical units and explicit noninteractive limits (1379.061683ms)
+✔ M056 community rooms, rooted plants and detailed resident retain closed continuous parts and real native minimum connections (30477.607528ms)
+✔ M056 explicit optical material derivatives preserve every occupied cell and canonical metadata (27565.882306ms)
+✔ M056 public resident creation preserves foreign IDs, rejects unimplemented seated state and rolls back atomically (2754.125496ms)
+✔ M056 all twelve templates support public quarter-turn placement and reversible independent appearance (43571.878774ms)
+✔ M056 complete-chair body checks, actual walking feet, original drains, roots and posed resident triangles (177680.378646ms)
+✔ M056 separates original integrated source contracts from new author visual assemblies and retains omitted neck source (1.319662ms)
+✔ M037 twelve masters and twenty-three shapes retain closed oriented meshes, attached voxels, source provenance and independent materials (2280.645986ms)
+✔ M037 all named installations clear actual garment, head, hair, hands, feet and body triangles (65155.009457ms)
+✔ M037 necks, sleeve ends and pocket entrances are open, with actual pocket floors (3132.513382ms)
+✔ M037 seven wearing studies retain original sources, replace hidden body shells and specify neutral infant/teen ends (4931.599207ms)
+✔ M037 pose transforms actual joint-owned native and continuous geometry and exports independently evaluated skins (2139.329763ms)
+✔ M037 independent appearance updates and one undo preserve geometry, apertures, collision and actual rig descriptors (2512.952039ms)
+✔ M037 extending independent age frames leaves every M036 native and continuous geometry unchanged (788.888009ms)
+✔ M037 strict costume parameters and per-purpose material review reject unsupported or misclassified output (28.904433ms)
+✔ M010 twelve authored candidates preserve reference source, axis, editable cavities and actual connected support (13780.748722ms)
+✔ same-colour fire equipment, paper, canvas, pigment, membrane and acoustic/optical surfaces use distinct actual material cells (385.384183ms)
+✔ drum bore, print feed slit, lyre sound holes, open reel spindle and hanging brush intervals are actual voids (0.253943ms)
+✔ two stage units dock along actual flush sides and the revised performance arrangement has supported instruments (5835.103785ms)
+✔ independent role-pack replacement affects no geometry, category or collision flags and one undo restores everything (11262.471646ms)
+✔ M010 semantic roles can be allocated in a foreign palette atomically; failed creation restores IDs and document (10645.156185ms)
+✔ M047 twelve assemblies have closed continuous solids, area UVs and attached minimum native components (2412.822401ms)
+✔ M047 actual doors, floors, stairs, columns, skylights and metre-space routes remain clear and supported (749.099263ms)
+✔ M047 source dimensions, proposed uses and unbound source-runtime constraints are explicit (22.007204ms)
+✔ M047 actual metal, insulation, winding and glass roles survive palette replacement with one undo (4477.521712ms)
+✔ M047 all templates can be quarter-turned through public instantiation and undone without changing geometry (5243.914037ms)
+✔ M047 differently spaced canopy columns keep distinct matching rafter assets (21.509653ms)
+✔ M012 native masters preserve the source, real voids, supported details and distinct catalog domains (20863.026754ms)
+✔ actual tea, pet food, nylon, coated metal, glass, mirror and wrapping cells are classified independently (1603.30537ms)
+✔ washer cylinder, gift interiors, teapot spout, floor layering and 0.2m stair risers are actual voxel geometry (4.730289ms)
+✔ M012 material packs retain voxel identities and physical flags; GLB and native export preserve new roles (22650.071427ms)
+✖ mixed LIFE and BUILT creation uses one previewed transaction with collision-safe IDs, rollback and one undo (6376.984386ms)
+✔ dependent domestic arrangements keep master scope, real support and free access (17267.207573ms)
+✔ BUILT floor and stair ports assemble a supported two-level route without collisions or blocked headroom (1235.626776ms)
+✔ library counts newly modelled BUILT IDs once while retaining existing LIFE upgrade counts (37.426066ms)
+✔ M028 has twelve reference families and twenty-one distinct face-connected full-grid shapes (5823.892933ms)
+✔ actual cells separate bamboo walls, node diaphragms, hollow internodes, root wood and living leaves (178.219826ms)
+✔ species have distinct native silhouettes, branched skeletons and leaf-free trunk gaps; 16/24/31m heights and low shrub dimensions stay literal (1574.981762ms)
+✔ root families maintain actual rock contact and real ground feet without claiming original terrain (48.573935ms)
+✔ headwater shares exact bed and water lip; all three bank water layers rest on real occupied beds (1152.062662ms)
+✔ eight installed author scenes have native support, no occupied collisions, and clear body paths; 80 foam placements reuse one master (37375.484828ms)
+✔ new plant roles allocate around all thirteen foreign IDs and failed family parameters roll back the complete transaction (370.394672ms)
+✔ independent plant palette and one undo preserve all cells, roots, ports, collision and other materials; near/far GLB retains leaf alpha semantics (29569.350201ms)
+
+Interrupted while running:
+
+⚠ tests/atlas-environment-assemblies.test.ts (tests/atlas-environment-assemblies.test.ts:1:1)
+⚠ tests/atlas-exterior.test.ts (tests/atlas-exterior.test.ts:1:1)
+✖ tests/atlas-environment-assemblies.test.ts (54717.687147ms)
+✖ tests/atlas-exterior.test.ts (33979.635206ms)
+✖ tests/atlas-fauna.test.ts
+✖ tests/atlas-festival.test.ts
+✖ tests/atlas-figure.test.ts
+✖ tests/atlas-fleet-assemblies.test.ts
+✖ tests/atlas-garments.test.ts
+✖ tests/atlas-groundscape.test.ts
+✖ tests/atlas-habitat-assemblies.test.ts
+✖ tests/atlas-headwear.test.ts
+✖ tests/atlas-held.test.ts
+✖ tests/atlas-hydrology.test.ts
+✖ tests/atlas-institutional-assemblies.test.ts
+✖ tests/atlas-joinery.test.ts
+✖ tests/atlas-landscape.test.ts
+✖ tests/atlas-legacy-building.test.ts
+✖ tests/atlas-life-space-assemblies.test.ts
+✖ tests/atlas-living-assemblies.test.ts
+✖ tests/atlas-material-correction.test.ts
+✖ tests/atlas-metropolis-assemblies.test.ts
+✖ tests/atlas-neighborhood.test.ts
+✖ tests/atlas-outfit-assemblies.test.ts
+✖ tests/atlas-park-assemblies.test.ts
+✖ tests/atlas-portals.test.ts
+✖ tests/atlas-profession-assemblies.test.ts
+✖ tests/atlas-public-service.test.ts
+✖ tests/atlas-public-space-assemblies.test.ts
+✖ tests/atlas-regional-assemblies.test.ts
+✖ tests/atlas-research.test.ts
+✖ tests/atlas-service.test.ts
+✖ tests/atlas-stations.test.ts
+✖ tests/atlas-structure.test.ts
+✖ tests/atlas-terrain.test.ts
+✖ tests/atlas-transport.test.ts
+✖ tests/atlas-urban.test.ts
+✖ tests/atlas-vessels.test.ts
+✖ tests/atlas-waterfront.test.ts
+✖ tests/atlas-wearables.test.ts
+✖ tests/atlas-wildlife.test.ts
+✖ tests/atlas-workshop.test.ts
+✖ tests/atlas.test.ts
+✖ tests/catalog.test.ts
+✖ tests/collision-intervals.test.ts
+✖ tests/core.test.ts
+✖ tests/document-sync.test.ts
+✖ tests/geometry-study.test.ts
+✖ tests/import-export.test.ts
+✖ tests/material-roles.test.ts
+✖ tests/mesh-plan.test.ts
+✖ tests/millimetre-grid.test.ts
+✖ tests/polish.test.ts
+✖ tests/production.test.ts
+✖ tests/reference-finish.test.ts
+✖ tests/reference.test.ts
+✖ tests/render-materials.test.ts
+✖ tests/rig.test.ts
+✖ tests/viewer-framing.test.ts
+ℹ tests 195
+ℹ suites 0
+ℹ pass 137
+ℹ fail 1
+ℹ cancelled 57
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 617392.093736
+
+✖ failing tests:
+
+test at tests/atlas-domestic.test.ts:56:1
+✖ mixed LIFE and BUILT creation uses one previewed transaction with collision-safe IDs, rollback and one undo (6376.984386ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  235 !== 229
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-domestic.test.ts:58:466)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 235,
+    expected: 229,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/atlas-environment-assemblies.test.ts:1:1
+✖ tests/atlas-environment-assemblies.test.ts (54717.687147ms)
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-exterior.test.ts:1:1
+✖ tests/atlas-exterior.test.ts (33979.635206ms)
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-fauna.test.ts:1:1
+✖ tests/atlas-fauna.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-festival.test.ts:1:1
+✖ tests/atlas-festival.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-figure.test.ts:1:1
+✖ tests/atlas-figure.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-fleet-assemblies.test.ts:1:1
+✖ tests/atlas-fleet-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-garments.test.ts:1:1
+✖ tests/atlas-garments.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-groundscape.test.ts:1:1
+✖ tests/atlas-groundscape.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-habitat-assemblies.test.ts:1:1
+✖ tests/atlas-habitat-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-headwear.test.ts:1:1
+✖ tests/atlas-headwear.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-held.test.ts:1:1
+✖ tests/atlas-held.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-hydrology.test.ts:1:1
+✖ tests/atlas-hydrology.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-institutional-assemblies.test.ts:1:1
+✖ tests/atlas-institutional-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-joinery.test.ts:1:1
+✖ tests/atlas-joinery.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-landscape.test.ts:1:1
+✖ tests/atlas-landscape.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-legacy-building.test.ts:1:1
+✖ tests/atlas-legacy-building.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-life-space-assemblies.test.ts:1:1
+✖ tests/atlas-life-space-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-living-assemblies.test.ts:1:1
+✖ tests/atlas-living-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-material-correction.test.ts:1:1
+✖ tests/atlas-material-correction.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-metropolis-assemblies.test.ts:1:1
+✖ tests/atlas-metropolis-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-neighborhood.test.ts:1:1
+✖ tests/atlas-neighborhood.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-outfit-assemblies.test.ts:1:1
+✖ tests/atlas-outfit-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-park-assemblies.test.ts:1:1
+✖ tests/atlas-park-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-portals.test.ts:1:1
+✖ tests/atlas-portals.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-profession-assemblies.test.ts:1:1
+✖ tests/atlas-profession-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-public-service.test.ts:1:1
+✖ tests/atlas-public-service.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-public-space-assemblies.test.ts:1:1
+✖ tests/atlas-public-space-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-regional-assemblies.test.ts:1:1
+✖ tests/atlas-regional-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-research.test.ts:1:1
+✖ tests/atlas-research.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-service.test.ts:1:1
+✖ tests/atlas-service.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-stations.test.ts:1:1
+✖ tests/atlas-stations.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-structure.test.ts:1:1
+✖ tests/atlas-structure.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-terrain.test.ts:1:1
+✖ tests/atlas-terrain.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-transport.test.ts:1:1
+✖ tests/atlas-transport.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-urban.test.ts:1:1
+✖ tests/atlas-urban.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-vessels.test.ts:1:1
+✖ tests/atlas-vessels.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-waterfront.test.ts:1:1
+✖ tests/atlas-waterfront.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-wearables.test.ts:1:1
+✖ tests/atlas-wearables.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-wildlife.test.ts:1:1
+✖ tests/atlas-wildlife.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-workshop.test.ts:1:1
+✖ tests/atlas-workshop.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas.test.ts:1:1
+✖ tests/atlas.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/catalog.test.ts:1:1
+✖ tests/catalog.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/collision-intervals.test.ts:1:1
+✖ tests/collision-intervals.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/core.test.ts:1:1
+✖ tests/core.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/document-sync.test.ts:1:1
+✖ tests/document-sync.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/geometry-study.test.ts:1:1
+✖ tests/geometry-study.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/import-export.test.ts:1:1
+✖ tests/import-export.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/material-roles.test.ts:1:1
+✖ tests/material-roles.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/mesh-plan.test.ts:1:1
+✖ tests/mesh-plan.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/millimetre-grid.test.ts:1:1
+✖ tests/millimetre-grid.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/polish.test.ts:1:1
+✖ tests/polish.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/production.test.ts:1:1
+✖ tests/production.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/reference-finish.test.ts:1:1
+✖ tests/reference-finish.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/reference.test.ts:1:1
+✖ tests/reference.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/render-materials.test.ts:1:1
+✖ tests/render-materials.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/rig.test.ts:1:1
+✖ tests/rig.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/viewer-framing.test.ts:1:1
+✖ tests/viewer-framing.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'

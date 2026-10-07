@@ -55,7 +55,7 @@ for(const row of rows){
 }
 for(const[sheet,p]of galleries){
  // Rebuild a complete sheet gallery even when only one dependency was revised.
- for(const row of index.entries.filter((r):r is AtlasBaseBuild=>r.kind!=='assembly'&&r.sheet===sheet&&!p.assets[r.assetId])){
+ for(const row of index.entries.filter((r):r is AtlasBaseBuild=>r.kind!=='assembly'&&r.kind!=='variant'&&r.sheet===sheet&&!p.assets[r.assetId])){
   const prior=JSON.parse(await readFile(path.join(root,row.file),'utf8')) as Project,a=prior.assets[row.assetId];assert.ok(a,'Missing gallery dependency '+row.id);
   for(const[,m]of new Grid(a.chunks).cells()){assert.ok(p.materials[m]);assert.equal(p.materials[m].category,prior.materials[m].category);assert.equal(p.materials[m].solid,prior.materials[m].solid);}
   p.assets[a.id]=structuredClone(a);p.catalog!.entries[row.id]=structuredClone(prior.catalog!.entries[row.id]);p.instances[a.id+'-display']={id:a.id+'-display',assetId:a.id,name:a.name,position:[0,0,0],rotation:0,parent:null};
