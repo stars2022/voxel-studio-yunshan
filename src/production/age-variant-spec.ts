@@ -1,8 +1,11 @@
-export const ageVariantIds=['CHAR-017','CHAR-018'];
+export const ageVariantIds=['CHAR-017','CHAR-018','CHAR-019','CHAR-020','CHAR-021'];
 export type AgeVariantDefinition={band:string;range:[number,number];heightM:number;body:string;head:string;headParameters:Record<string,string>;headHeightM:number};
 const definitions:Record<string,AgeVariantDefinition>={
  'CHAR-017':{band:'infant',range:[0,2],heightM:.6,body:'CHAR-061',head:'CHAR-067',headParameters:{headStage:'infant'},headHeightM:.19},
- 'CHAR-018':{band:'preschool',range:[2,6],heightM:1,body:'CHAR-062',head:'CHAR-067',headParameters:{headStage:'toddler'},headHeightM:.205}
+ 'CHAR-018':{band:'preschool',range:[2,6],heightM:1,body:'CHAR-062',head:'CHAR-067',headParameters:{headStage:'toddler'},headHeightM:.205},
+ 'CHAR-019':{band:'school',range:[6,12],heightM:1.2,body:'CHAR-063',head:'CHAR-068',headParameters:{headStage:'school'},headHeightM:.215},
+ 'CHAR-020':{band:'teen',range:[12,18],heightM:1.6,body:'CHAR-064',head:'CHAR-068',headParameters:{headStage:'teen'},headHeightM:.23},
+ 'CHAR-021':{band:'adult',range:[18,140],heightM:1.8,body:'CHAR-059',head:'CHAR-066',headParameters:{},headHeightM:.24}
 };
 export function ageVariantParameters(id:string):Record<string,{enum:string[];default:string}>{const d=definitions[id];if(!d)throw new Error('未知年龄身高变体');return{ageBand:{enum:[d.band],default:d.band}};}
 export function ageVariantForms(id:string){const p=ageVariantParameters(id);return[{ageBand:p.ageBand.default}];}

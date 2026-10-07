@@ -15,49 +15,46 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 732,
-    "remainingReferenceEntries": 61,
-    "completedReferenceSheets": 61,
+    "referenceCandidates": 759,
+    "remainingReferenceEntries": 34,
+    "completedReferenceSheets": 62,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 533,
       "auxiliaryMasters": 1,
       "assemblies": 186,
-      "variantEntries": 34,
-      "variantModels": 120,
+      "variantEntries": 61,
+      "variantModels": 159,
       "accepted": 0,
-      "notProduced": 312,
-      "generatedEntries": 756,
+      "notProduced": 285,
+      "generatedEntries": 783,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 732,
+      "atlasReferenceCandidates": 759,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
       "atlasAssemblyCandidates": 186,
-      "atlasVariantCandidates": 30,
-      "atlasVariantForms": 111
+      "atlasVariantCandidates": 57,
+      "atlasVariantForms": 150
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
     "sheet": "M062",
-    "subBatch": "age-face-skin-variants",
+    "subBatch": "shared-six-cell-face-atlas",
     "state": "queued",
     "ids": [
-      "CHAR-019",
-      "CHAR-020",
-      "CHAR-021",
       "CHAR-024",
       "CHAR-025",
       "CHAR-026",
       "CHAR-027",
       "CHAR-028",
-      "CHAR-029",
-      "CHAR-030",
-      "CHAR-031",
-      "CHAR-032"
+      "CHAR-029"
     ],
-    "scope": "1.2/1.6/1.8m年龄、023真实192×16RGBA父面部图谱和024–029六UV单元、030–032肤色。"
+    "additionalMaterialParents": [
+      "CHAR-023"
+    ],
+    "scope": "Actual shared192×16RGBAatlas and six32×16UV cells with retained adult/elder/child heads;023is a material resource, not a base master."
   },
   "nextBatch": "M061",
   "workflow": [
@@ -71,19 +68,19 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M061完整，累计732条技术候选，余61。513独立图册母版、3共享引用、186图册组合、30变体参考/111有限形态，完整图册61张，人工美术验收0。"
+    "M001–M061及M063完整，累计759条技术候选，余34。513独立图册母版、3共享引用、186图册组合、57变体参考/150有限形态，完整图册62张，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
-    "用户修正持续优先：最小组件体素，斜面和曲面连续，天空/星空使用真实贴图。",
-    "M061完整12/12，两个子批合27形态。最新017/018两个年龄形态通过6实际GLB、6历史父件、2次公开创建/旋转撤销、19精确通知；125项相关测试跨初跑及两文件修正复跑通过。575整库通过仅是a31c7202历史基线。",
-    "累计732/793，余61；基础533、组合186、变体34类/120形态、已生成756条、未制作312条。",
-    "017使用原061和067infant，018安装身体由062纵向派生到1m，原062保留、原生细件按整数格刚性移动；头部不缩放。只有中性全覆衣站姿和衣套端部，原图坐姿/发型/背包未宣称。",
-    "CHAR019/020/021继续独立063/064/059身体及068/066头，实际全高1.2/1.6/1.8m；不能统一缩小成人001。完整原001及源身体/头保留。",
-    "CHAR023是材质贴图而非基础组件，真实192×16RGBA六格atlas缺失，须先交付非图册材质父件并在类型/索引/包中如实计数。024–029复用同图谱UV单元；030–034是同用途肤色。",
-    "公开变体schema已支持BUILT与CHAR；ENV/LIFE后续须显式扩展。512语义用途上限保持，不能把脸贴图借用大气water材质通道。",
-    "每批验证后推送origin/main已授权；完成子批不停止总目标。正式验证冻结生产代码，浏览器串行且设置PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。",
-    "磁盘紧张：仅归档已关闭scratch并校验可逐字节还原。Git本地gc.auto=0、maintenance.auto=false，防止大临时包复发；不删正式资产或历史对象。"
+    "用户修正优先：最小组件体素，斜面和曲面连续，天空/星空使用真实贴图。",
+    "最新27参考/39形态通过117实际GLB、45父核对、39MCP创建/旋转撤销、242精确通知和142相关回归。575整库测试仅是a31c7202历史基线。",
+    "累计759/793，余34；基础533、组合186、变体61类/159形态、已生成783条、未制作285条。M0626/12、M06312/12、M0649/12。",
+    "019/020/021实际1.2/1.6/1.8m使用独立年龄身体与原头，030–053按RGB用途换色。002两种躯干、004单大腿、010短发后片，不称完整服装或新母版；512用途不扩。",
+    "CHAR023是材质贴图而非基础组件，须交付真实192×16RGBA六格父图谱及实际材质类型计数。024–029复用同图谱UV单元；原始像素源码缺失，设计只能称作者实现。",
+    "下一批脸atlas使用原066/069/068school头，保存原件和明确的旧面部体素移除记录，保持连续头壳和原生耳细件；不借大气water通道。原profile/心情/年龄自动条件未绑定。",
+    "剩余另有M0643形体、M06512形体/LOD、M06612动物/环境/家具、M0671沙发；按真实参数范围派生并保留父件。",
+    "每批验证后推送origin/main已授权，子批完成不停止总目标。正式验证冻结源代码，浏览器严格串行且设置PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。",
+    "磁盘紧张，仅归档已关闭scratch并校验逐字节恢复；本地gc.auto=0、maintenance.auto=false，不删除正式资产或Git历史。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -92,13 +89,17 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M061",
-    "subBatch": "infant-preschool-age-variants",
-    "run": "atlas-20261007070928",
+    "sheets": [
+      "M062",
+      "M063",
+      "M064"
+    ],
+    "subBatch": "age-character-palettes",
+    "run": "atlas-20261007072858",
     "state": "validated",
-    "wholeSheetComplete": true,
-    "sheetProducedReferences": 12,
-    "sheetReferenceCount": 12,
-    "evidence": "artifacts/atlas/atlas-20261007070928"
+    "wholeSheetComplete": false,
+    "sheetProducedReferences": 27,
+    "sheetReferenceCount": 36,
+    "evidence": "artifacts/atlas/atlas-20261007072858"
   }
 }

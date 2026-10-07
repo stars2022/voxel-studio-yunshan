@@ -1,0 +1,46 @@
+/workspace/voxel-studio-yunshan/src/production/character-palette-spec.ts:10
+['警|police','卫|soldier','师|teacher','商|merchant'].forEach((condition,i)=>characterPaletteDefinitions['CHAR-'+(50+i)].sourceCondition=condition);
+                                                                                                                         ^
+
+TypeError: Cannot set properties of undefined (setting 'sourceCondition')
+    at <anonymous> (/workspace/voxel-studio-yunshan/src/production/character-palette-spec.ts:10:118)
+    at Array.forEach (<anonymous>)
+    at <anonymous> (/workspace/voxel-studio-yunshan/src/production/character-palette-spec.ts:10:51)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0
+✖ tests/atlas-age-variants.test.ts (550.326041ms)
+/workspace/voxel-studio-yunshan/src/production/character-palette-spec.ts:10
+['警|police','卫|soldier','师|teacher','商|merchant'].forEach((condition,i)=>characterPaletteDefinitions['CHAR-'+(50+i)].sourceCondition=condition);
+                                                                                                                         ^
+
+TypeError: Cannot set properties of undefined (setting 'sourceCondition')
+    at <anonymous> (/workspace/voxel-studio-yunshan/src/production/character-palette-spec.ts:10:118)
+    at Array.forEach (<anonymous>)
+    at <anonymous> (/workspace/voxel-studio-yunshan/src/production/character-palette-spec.ts:10:51)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0
+✖ tests/atlas-character-palettes.test.ts (488.982903ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1047.461359
+
+✖ failing tests:
+
+test at tests/atlas-age-variants.test.ts:1:1
+✖ tests/atlas-age-variants.test.ts (550.326041ms)
+  'test failed'
+
+test at tests/atlas-character-palettes.test.ts:1:1
+✖ tests/atlas-character-palettes.test.ts (488.982903ms)
+  'test failed'
