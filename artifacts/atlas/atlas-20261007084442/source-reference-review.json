@@ -1,0 +1,95 @@
+{
+  "ids": [
+    "CHAR-076",
+    "CHAR-077",
+    "CHAR-078",
+    "CHAR-079",
+    "CHAR-080",
+    "CHAR-081",
+    "CHAR-082",
+    "CHAR-083",
+    "CHAR-084"
+  ],
+  "sourceImagesOpened": [
+    {
+      "file": "projects/reference-atlas/images/M064.png",
+      "sha256": "be4ab74edf007045f7608939d44848dbdaad2484cf646912f38dd12ac42fef76"
+    },
+    {
+      "file": "projects/reference-atlas/images/M065.png",
+      "sha256": "ee3a42d98b70ba8dfdf136a8dc0b3ce044a33f00521fed0a045fdf3c000861d9"
+    }
+  ],
+  "sourceContract": "Actual CSV describes local shoulder/waist/limb ratios, controlled height and mount positions, spinal posture, read-only health appearance, pregnancy intervals, age heads/textures and5skincolors; image outfits are not supplied body geometry.",
+  "parents": {
+    "CHAR-076": "CHAR-059",
+    "CHAR-077": "CHAR-060",
+    "CHAR-078": "CHAR-059",
+    "CHAR-079": "CHAR-059",
+    "CHAR-080": "CHAR-065",
+    "CHAR-081": "CHAR-059",
+    "CHAR-082": "CHAR-072",
+    "CHAR-083": "CHAR-066",
+    "CHAR-084": "CHAR-066"
+  },
+  "invariants": [
+    "Retain complete realparents and precise sourcehashes",
+    "Continuous surfaces remain meshes; connected minimum5mmcomponents translate rigidly by integercells",
+    "No Citizen/profile/health/pregnancy timer writes; authorstatic finitevariants only",
+    "Explicit body sockets follow actual deformation and feet stay onoriginalground",
+    "No new base masters, no new semantics beyond512roles"
+  ],
+  "phase": "read-only preparation while face batch full regression is frozen",
+  "finitePlan": {
+    "CHAR-076": [
+      "thin"
+    ],
+    "CHAR-077": [
+      "full"
+    ],
+    "CHAR-078": [
+      "1.55m author short"
+    ],
+    "CHAR-079": [
+      "1.88m author tall"
+    ],
+    "CHAR-080": [
+      "0.18m forward spine,0.045m shoulder lowering,unchanged head"
+    ],
+    "CHAR-081": [
+      "thin profile,0.085m forward spine,0.020m lowering"
+    ],
+    "CHAR-082": [
+      "adultA early/middle/late",
+      "adultB early/middle/late"
+    ],
+    "CHAR-083": [
+      "infant",
+      "toddler",
+      "preschool",
+      "school",
+      "teen",
+      "adult",
+      "elder"
+    ],
+    "CHAR-084": [
+      "five original RGBs,original066head070hands071feet on059sockets"
+    ]
+  },
+  "totalFiniteForms": 24,
+  "prototypeFindings": [
+    "Sixbodyforms preserve closed oriented continuous meshes and all original native islands remain attached.",
+    "Cardinal port normal contract must remain; actual displaced points authoritative, derived surface normals separatemetadata, no automatic tilted mounting. Initial noncardinalport failure retained.",
+    "First bent-body draft made arms slant back; later draft keeps arm fronts under shoulders.",
+    "Sixbellyforms passed closed and native contact; latestage exactlyequalsoriginal072geometry."
+  ],
+  "status": "reviewed",
+  "scope": "Nine parameter references, not nine new actors or complete pictured outfits.",
+  "authorChoices": [
+    "1.55m and1.88m height bands",
+    "Static forward spinal curves and lowerings",
+    "Three pregnancy ratios.25/.60/1.0",
+    "Seven finite head-selection age ranges; only18/62thresholds supplied"
+  ],
+  "refinement": "User explicitly requested a full visual refinement pass from M001 after all793conversions. Current body variants remain technical candidates, human art acceptance0."
+}

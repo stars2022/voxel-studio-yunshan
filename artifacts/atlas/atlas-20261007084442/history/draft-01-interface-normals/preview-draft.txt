@@ -1,0 +1,10 @@
+/workspace/voxel-studio-yunshan/src/core/engine.ts:34
+  for(const port of a.ports)if(![...port.position,...port.normal,...port.size,port.pitch].every(Number.isFinite)||port.pitch<=0||port.normal.filter(n=>Math.abs(n)===1).length!==1||port.normal.some(n=>![0,1,-1].includes(n)))throw new Error('无效安装接口');
+                                                                                                                                                                                                                                     ^
+
+Error: 无效安装接口
+    at validateProject (/workspace/voxel-studio-yunshan/src/core/engine.ts:34:230)
+    at new Engine (/workspace/voxel-studio-yunshan/src/core/engine.ts:46:25)
+    at <anonymous> (/workspace/voxel-studio-yunshan/work/body-variants/preview-draft.ts:12:99)
+
+Node.js v24.19.0

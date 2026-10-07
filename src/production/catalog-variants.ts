@@ -1,3 +1,5 @@
+import {bodyVariantIds} from './body-variant-spec';
+import {makeBodyVariant} from './body-variants';
 import {faceVariantIds} from './face-variant-spec';
 import {makeFaceVariant} from './face-variants';
 import {characterPaletteIds} from './character-palette-spec';
@@ -12,5 +14,5 @@ import {legacyVariantIds} from './legacy-variant-spec';
 import {makeAgeVariant} from './age-variants';
 
 export function makeCatalogVariant(p:Project,catalogId:string,id:string,name:string,params:Record<string,string|number>={}){
- return buildingVariantIds.includes(catalogId)?makeBuildingVariant(p,catalogId,id,name,params):roofWallVariantIds.includes(catalogId)?makeRoofWallVariant(p,catalogId,id,name,params):legacyVariantIds.includes(catalogId)?makeLegacyVariant(p,catalogId,id,name,params):characterPaletteIds.includes(catalogId)?makeCharacterPalette(p,catalogId,id,name,params):faceVariantIds.includes(catalogId)?makeFaceVariant(p,catalogId,id,name,params):makeAgeVariant(p,catalogId,id,name,params);
+ return bodyVariantIds.includes(catalogId)?makeBodyVariant(p,catalogId,id,name,params):buildingVariantIds.includes(catalogId)?makeBuildingVariant(p,catalogId,id,name,params):roofWallVariantIds.includes(catalogId)?makeRoofWallVariant(p,catalogId,id,name,params):legacyVariantIds.includes(catalogId)?makeLegacyVariant(p,catalogId,id,name,params):characterPaletteIds.includes(catalogId)?makeCharacterPalette(p,catalogId,id,name,params):faceVariantIds.includes(catalogId)?makeFaceVariant(p,catalogId,id,name,params):makeAgeVariant(p,catalogId,id,name,params);
 }

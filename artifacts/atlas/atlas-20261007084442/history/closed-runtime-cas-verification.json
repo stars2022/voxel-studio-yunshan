@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "archives": [
+    {
+      "manifest": "work/snapshot-archive-cas/manifests/body-variants-closed-draft-runtime-01.zip.a0531a4b627d.json",
+      "archive": "work/snapshot-archives/body-variants-closed-draft-runtime-01.zip",
+      "sha256": "a0531a4b627da3fc1f73d10e2306e6b9ddfe906be6cc19252b8e89520fc85d9c",
+      "bytes": 11147749,
+      "restoration": "python3 work/maintenance/deduplicate-zip-storage.py --restore work/snapshot-archive-cas/manifests/body-variants-closed-draft-runtime-01.zip.a0531a4b627d.json"
+    },
+    {
+      "manifest": "work/snapshot-archive-cas/manifests/body-variants-closed-preview-runtime.zip.7a6b8a1cc8f8.json",
+      "archive": "work/snapshot-archives/body-variants-closed-preview-runtime.zip",
+      "sha256": "7a6b8a1cc8f832ab2e624cee8384a16d5aeaa1c77d6fa127a9059c305fae09e4",
+      "bytes": 154879455,
+      "restoration": "python3 work/maintenance/deduplicate-zip-storage.py --restore work/snapshot-archive-cas/manifests/body-variants-closed-preview-runtime.zip.7a6b8a1cc8f8.json"
+    },
+    {
+      "manifest": "work/snapshot-archive-cas/manifests/body-variants-mcp-attempt01-runtime.zip.f85cfbac0509.json",
+      "archive": "work/snapshot-archives/body-variants-mcp-attempt01-runtime.zip",
+      "sha256": "f85cfbac0509c08762969310f66be096d651d201e2a2347a9c2d67acc74b0bc1",
+      "bytes": 154318752,
+      "restoration": "python3 work/maintenance/deduplicate-zip-storage.py --restore work/snapshot-archive-cas/manifests/body-variants-mcp-attempt01-runtime.zip.f85cfbac0509.json"
+    },
+    {
+      "manifest": "work/snapshot-archive-cas/manifests/body-variants-mcp-final-runtime.zip.8cee4161dd34.json",
+      "archive": "work/snapshot-archives/body-variants-mcp-final-runtime.zip",
+      "sha256": "8cee4161dd3440a42072b8893a3de5720adf4d1634e3e5f99ab0db648d223edb",
+      "bytes": 159334014,
+      "restoration": "python3 work/maintenance/deduplicate-zip-storage.py --restore work/snapshot-archive-cas/manifests/body-variants-mcp-final-runtime.zip.8cee4161dd34.json"
+    }
+  ],
+  "evidence": "Each archive script verifies CRC and every original SHA256, then CAS script verifies exact ZIP byte reconstruction before removing the expanded scratch/ZIP."
+}

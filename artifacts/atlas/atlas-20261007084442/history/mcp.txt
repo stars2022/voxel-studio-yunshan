@@ -1,0 +1,18 @@
+read_production_library ERROR
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"error":"面孔材质父件缺少真实可核对的图谱原生资源","code":"OPERATION_FAILED","isError":true}
+    at call (/workspace/voxel-studio-yunshan/scripts/verify-body-mcp.ts:30:308)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/workspace/voxel-studio-yunshan/scripts/verify-body-mcp.ts:40:12) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

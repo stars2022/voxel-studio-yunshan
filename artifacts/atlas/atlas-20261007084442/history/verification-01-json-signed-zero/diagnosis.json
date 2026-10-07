@@ -1,0 +1,5 @@
+{
+  "cause": "JSON writes mirrored origin -0 as 0. Exact field comparator wrongly distinguished zero signs after native save. Geometry, rig and source bytes unaffected.",
+  "fix": "Compare canonical native-JSON field hashes, preserving exact nonzero values and all fields. Test all24 in-memory and saved-native forms.",
+  "productionFilesChanged": false
+}
