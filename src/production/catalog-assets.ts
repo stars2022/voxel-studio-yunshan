@@ -19,9 +19,12 @@ import {environmentRecipes,makeEnvironmentAsset} from './atlas-terrain';
 import {makeLifeAsset} from './life';
 import {atlasLifeRecipes} from './atlas-life';
 import {atlasBuiltRecipes,makeAtlasBuiltAsset} from './atlas-built';
+import {makeSharedWall,nonReferenceBaseRecipes} from './shared-wall';
+import type {Project} from '../core/types';
 
 /** Dispatch by complete catalog ID; BUILT-003 must never alias LIFE-003. */
 export function atlasRecipe(catalogId:string){
+ if(catalogId==='BUILT-004')return nonReferenceBaseRecipes[catalogId];
  if(wildlifeRecipes[catalogId])return wildlifeRecipes[catalogId];
  if(faunaRecipes[catalogId])return faunaRecipes[catalogId];
  if(careRecipes[catalogId])return careRecipes[catalogId];
@@ -39,7 +42,8 @@ export function atlasRecipe(catalogId:string){
  if(/^ENV-\d{3}$/.test(catalogId))return environmentRecipes[catalogId]??hydrologyRecipes[catalogId]??ecologyRecipes[catalogId]??groundscapeRecipes[catalogId]??landscapeRecipes[catalogId];
  return atlasBuiltRecipes[catalogId];
 }
-export function makeCatalogAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number|string>={}){
+export function makeCatalogAsset(catalogId:string,name:string,id:string,style:Record<string,number>,params:Record<string,number|string>={},context?:Project){
+ if(catalogId==='BUILT-004')return makeSharedWall(name,id,style,params,context);
  if(wildlifeRecipes[catalogId])return makeWildlifeAsset(catalogId,name,id,style,params);
  if(faunaRecipes[catalogId])return makeFaunaAsset(catalogId,name,id,style,params);
  if(careRecipes[catalogId])return makeCareAsset(catalogId,name,id,style,params);

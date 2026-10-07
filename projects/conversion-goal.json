@@ -15,44 +15,49 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 715,
-    "remainingReferenceEntries": 78,
-    "completedReferenceSheets": 59,
+    "referenceCandidates": 720,
+    "remainingReferenceEntries": 73,
+    "completedReferenceSheets": 60,
     "catalogCounts": {
       "catalogEntries": 1068,
-      "baseModels": 532,
+      "baseModels": 533,
       "auxiliaryMasters": 1,
       "assemblies": 186,
-      "variantEntries": 17,
-      "variantModels": 79,
+      "variantEntries": 22,
+      "variantModels": 93,
       "accepted": 0,
-      "notProduced": 330,
-      "generatedEntries": 738,
+      "notProduced": 324,
+      "generatedEntries": 744,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 715,
+      "atlasReferenceCandidates": 720,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
       "atlasAssemblyCandidates": 186,
-      "atlasVariantCandidates": 13,
-      "atlasVariantForms": 70
+      "atlasVariantCandidates": 18,
+      "atlasVariantForms": 84
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
-    "sheet": "M060",
-    "subBatch": "roof-orientation-wall-purpose-roof-detail-variants",
+    "sheet": "M061",
+    "subBatch": "legacy-roof-wall-transport-variants",
     "state": "queued",
     "ids": [
-      "BUILT-038",
-      "BUILT-039",
-      "BUILT-041",
-      "BUILT-082",
-      "BUILT-083"
+      "BUILT-084",
+      "BUILT-085",
+      "BUILT-170",
+      "BUILT-171",
+      "BUILT-172",
+      "BUILT-173",
+      "BUILT-174",
+      "BUILT-175",
+      "BUILT-176",
+      "BUILT-182"
     ],
-    "scope": "实现共享山墙X/Z朝向、墙面用途配色、旧长脊远档和真实层间屋顶孔；041父004尚无独立模型，需要先明确制作与计数，不能伪造已有母版。"
+    "scope": "保留真实076/058/169/181父资产，制作单/双脊、11种墙色、7种载具三盒代理和14m机位；CHAR017/018年龄比例另作子批。"
   },
-  "nextBatch": "M060",
+  "nextBatch": "M061",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -64,17 +69,18 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M059及M060首批共715条技术候选，余78；513独立图册母版、3共享引用、186图册组合、13建筑变体参考，完整图册59张，人工美术验收0。"
+    "M001–M060累计720条技术候选，余73；513独立图册母版、3共享引用、186图册组合、18变体参考/84有限形态，完整图册60张，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续优先：最小组件体素，斜面和曲面连续，天空/星空使用真实贴图。",
-    "M060首批七类建筑32有限形态已验证，整库569测试、96份GLB、32次公开旋转撤销和固定尺寸公开创建通过；M060仍有五条未完成，整张图册数保持59。",
-    "累计715/793，余78；全库基础532、组合186、变体17类/79形态、已生成738条、未制作330条。",
-    "医馆保留实际023医疗父配置与病床，新增各上层重复真实H占地及显式楼梯核心；连续H屋面各材料层真实闭合。",
-    "034核心换乘殿固定60×40m/6层，035已知主种子固定125.6×70.4m/6层；公开sizeCase=fixed，不能再乘.94/1.06。原seed、FloorPlan容量门位、civicPlan和控制器仍未绑定。",
-    "下一子批011和075已有真实原件，004未在atlas且production-index标为not-produced，源代码当前无004配方。041须先落实真实父几何和依赖/计数，不得称为已有旧墙母版。",
-    "新MCP验证逐形态落盘并绑定脚本、原生及截图哈希。追加几何图使用素色；七类默认材质图和全部32材质GLB单独核验，不能混称全为PBR实图。",
+    "M060整张12/12参考已完成技术转化：第一子批7类32形态，第二子批5类14形态。两个下载包共同交付全部46形态；最新包另含前一子批7个默认组合以打开整张gallery。",
+    "第二子批整库575测试、43份实际GLB、14次公开创建和14次90度旋转撤销、99条精确版本更新通知全部通过。011完整600131格与075standard父源保持；004新增真实墙母版单独计数，不能继续称其缺失。",
+    "累计720/793，余73；全库基础533、组合186、变体22类/93形态、已生成744条、未制作324条。",
+    "墙色为8个wall用途外观实例，仍512用途上限。远档保留近景物理权威侧文件；上层屋顶为穿孔/承托样件，无通达楼梯。原seedRGB、屋面生成器及控制器仍未绑定。",
+    "M061五个父资产已在atlas核实，旧production-index的not-produced记录不代表父资产缺失。085保留058实际386556格，只换墙面用途；084双脊须真实处理谷部。",
+    "170–176是原169三盒代理尺寸/类型变体，172与171共形，不能冒称新增Vehicle身份、完整载具或真实路线绑定。182为181真实7m站台的14m尺寸派生。",
+    "CHAR017/018保留0.6m/1m身高阶梯，同时使用真实婴幼儿比例，不能仅缩小成人001。公开变体schema目前仅BUILT，接入CHAR须明确扩展并验证。",
     "每批验证后推送origin/main已授权；完成当前子批不能调用stop_goal。源代码回归或正式验证期间不修改被测生产代码。浏览器串行，使用PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。"
   ],
   "modelingDirection": {
@@ -85,10 +91,10 @@
   },
   "lastCompletedBatch": {
     "sheet": "M060",
-    "subBatch": "building-dimension-floor-variants",
-    "run": "atlas-20261007042739",
+    "subBatch": "roof-orientation-wall-purpose-roof-detail-variants",
+    "run": "atlas-20261007054954",
     "state": "validated",
-    "wholeSheetComplete": false,
-    "evidence": "artifacts/atlas/atlas-20261007042739"
+    "wholeSheetComplete": true,
+    "evidence": "artifacts/atlas/atlas-20261007054954"
   }
 }

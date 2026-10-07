@@ -1,4 +1,4 @@
-"""Package a validated building variant batch with its transitive native/export dependencies."""
+"""Package validated catalog variants with real parent and transitive native/export dependencies."""
 import argparse
 import hashlib
 import json
@@ -35,6 +35,13 @@ assert not previews['errors'] and previews['run'] == latest['run']
 assert {r['id'] for r in previews['items']} == {r['id'] for r in sheet_entries}
 assert all({'isometric', 'front', 'material'} <= r['files'].keys() for r in previews['items'])
 by_id = {r['id']: r for r in index['entries']}
+new_bases = latest.get('additionalMasters', [])
+for row in new_bases:
+    assert row['id'] not in by_id and row['kind'] == 'base'
+    report = read(out / 'new-base-production.json')
+    assert report['status'] == 'passed' and report['run'] == latest['run'] and report['canonicalNativeAndCollisionIdentical']
+    assert report['record'] == row
+    by_id[row['id']] = row
 legacy_report = out / 'legacy-dependencies.json'
 if legacy_report.exists():
     legacy = read(legacy_report)
@@ -110,7 +117,12 @@ parent_verification = read(out / 'retained-parent-verification.json')
 assert parent_verification['status'] == 'passed' and parent_verification['run'] == latest['run']
 selected_parent_configurations = []
 for parent in parent_verification['checks']:
-    assert parent['layoutSame'] and parent['floorPlanSame'] and all(g['same'] for g in parent['geometry'])
+    if parent.get('kind') == 'base':
+        assert parent['geometrySame'] and parent['geometrySHA256']
+    elif parent.get('kind') == 'assembly':
+        assert parent['layoutSame'] and parent['parametersSame'] and all(g['same'] for g in parent['geometry'])
+    else:
+        assert parent['layoutSame'] and parent['floorPlanSame'] and all(g['same'] for g in parent['geometry'])
     parent_path = root / parent['parentFile']
     if not parent_path.exists():
         parent_path = root / 'projects' / parent['parentFile']
@@ -120,11 +132,11 @@ for parent in parent_verification['checks']:
         assert parent_path.resolve().is_relative_to((root / 'projects/production').resolve())
         for name in ['voxels.ysvox.json', 'visual.glb', 'collision.json', 'interfaces.json', 'atlas.json', 'atlas.png']:
             add(parent_path.parent / name)
-    configuration = {'parent': parent['parent'], 'program': parent.get('program', 'default'), 'file': str(parent_path.relative_to(root))}
+    configuration = {'parent': parent['parent'], 'program': parent.get('program', 'default'), 'file': str(parent_path.relative_to(root)), **({'parameters': parent['parameters']} if 'parameters' in parent else {})}
     if configuration not in selected_parent_configurations:
         selected_parent_configurations.append(configuration)
 gallery = next(r for r in index['studies'] if r['id'] == args.sheet + '-gallery')
-for p in [root / 'projects' / gallery['file'], root / 'projects/atlas-production-index.json', root / 'projects/reference-atlas/index.json', root / 'projects/reference-atlas/images' / (args.sheet + '.png'), root / 'docs' / (args.sheet + '-BUILDING-VARIANTS.md')]:
+for p in [root / 'projects' / gallery['file'], root / 'projects/atlas-production-index.json', root / 'projects/production-index.json', root / 'projects/reference-atlas/index.json', root / 'projects/reference-atlas/images' / (args.sheet + '.png'), root / 'docs' / (args.sheet + ('-ROOF-WALL-VARIANTS.md' if new_bases else '-BUILDING-VARIANTS.md'))]:
     add(p)
 for p in out.iterdir():
     if p.is_file() and p.suffix in {'.json', '.png', '.html', '.txt'} and p.name not in {'batch-package.json', 'previews.partial.json', 'PACKAGE-DOWNLOAD.txt', 'package-verification.json', 'downloads.json'}:
@@ -135,7 +147,7 @@ for p in (out / 'screenshots').iterdir():
 for p in (out / 'history').rglob('*'):
     if p.is_file():
         add(p)
-manifest = {'format': 'yunshan.variant-batch', 'version': 1, 'sheet': args.sheet, 'run': latest['run'], 'candidateReferences': reference_count, 'candidateMasters': 0, 'candidateAssemblies': 0, 'candidateVariants': reference_count, 'finiteForms': form_count, 'humanArtAccepted': 0, 'variants': entries, 'galleryAssemblyDependencies': gallery_dependencies, 'dependencies': [r for key, r in closure.items() if key not in {e['id'] for e in entries}], 'files': [{'path': str(p.relative_to(root)), 'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(files)]}
+manifest = {'format': 'yunshan.variant-batch', 'version': 1, 'sheet': args.sheet, 'run': latest['run'], 'candidateReferences': reference_count, 'candidateMasters': len(new_bases), 'additionalMasters': new_bases, 'candidateAssemblies': 0, 'candidateVariants': reference_count, 'finiteForms': form_count, 'humanArtAccepted': 0, 'variants': entries, 'galleryAssemblyDependencies': gallery_dependencies, 'dependencies': [r for key, r in closure.items() if key not in {e['id'] for e in entries}], 'files': [{'path': str(p.relative_to(root)), 'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(files)]}
 manifest['catalogContractReferences'] = list(catalog_contracts.values())
 manifest['selectedParentConfigurations'] = selected_parent_configurations
 manifest['sheetProducedReferences'] = len(sheet_entries)
@@ -147,13 +159,13 @@ with ZipFile(args.output, 'w', ZIP_DEFLATED, compresslevel=6) as archive:
         archive.write(p, p.relative_to(root))
     archive.writestr('batch-manifest.json', json.dumps(manifest, ensure_ascii=False, indent=2))
     archive.writestr('catalog-contract-references.json', json.dumps(list(catalog_contracts.values()), ensure_ascii=False, indent=2))
-    archive.writestr('使用说明.txt', f'''{args.sheet} 建筑参数变体：{reference_count} 条参考，{form_count} 种有限形态，新增基础母版 0。
+    archive.writestr('使用说明.txt', f'''{args.sheet} 参数变体：{reference_count} 条参考，{form_count} 种有限形态，新增基础母版 {len(new_bases)}。
 projects 中的原生文件保存父模板、参数、组件、原件/派生关系和实际实例；整体单位米，Y 轴向上。
 visual.glb 为整组场景，visual-material.glb 带实际参考材质，visual-far.glb 为手动远档。
 通用查看器可读取GLB；编辑器可打开原生单组或gallery文件。若含天球，应按场景extras在独立背景通道绘制天空，按前景几何构图，避免天球半径使场景缩小；半球光须消费端配置。云雾雨与天空PNG同时随包。
 斜面、曲面及地形保留连续网格，最小块件为原生体素。原生格和连续网格分别保存碰撞声明；手动远档不等于自动距离 LOD。
 若有 terrain-authority.json，须显式加载其中近景实体及实际放置作为物理权威；远景显示面并非体素碰撞代理。
-包内保留本批变体及其递归依赖，不把依赖、重复放置或宽度形态算成新基础母版。
+包内保留本批变体及其递归依赖；额外新基础母版见additionalMasters，复用依赖、重复放置或尺寸形态不重复计数。
 另有 {len(catalog_contracts)} 条仅清单用途/契约引用，见 catalog-contract-references.json；其独立母版未交付，不冒称已有原件。
 来源给定尺寸与作者布局分别标注，未接入原 FloorPlan、控制器或世界地形；人工美术验收 0。
 源码：https://github.com/stars2022/voxel-studio-yunshan
@@ -181,7 +193,7 @@ if result['archiveBytes'] > args.part_size_mib * 1024**2:
     base = 'https://github.com/stars2022/voxel-studio-yunshan/raw/main/' + str(out.relative_to(root)) + '/'
     text = '\n'.join([
         f'{args.sheet} 资产包：完整 ZIP 的 {len(parts)} 个二进制分卷；请下载全部分卷到同一文件夹。',
-        f'内容：{reference_count} 类建筑参数变体、{form_count} 种有限形态、{len(manifest["dependencies"])} 个递归依赖；人工美术验收 0。',
+        f'内容：{reference_count} 类参数变体、{form_count} 种有限形态、{len(manifest["dependencies"])} 个递归依赖；人工美术验收 0。',
         '各卷不能单独解压。可用 7-Zip 打开 .001，或先按下面顺序合并，再解压 ZIP。',
         '', *[base + p['file'] for p in parts], '',
         'macOS / Linux：',
@@ -194,6 +206,6 @@ if result['archiveBytes'] > args.part_size_mib * 1024**2:
     ])
     (out / 'PACKAGE-DOWNLOAD.txt').write_text(text + '\n')
 if 'archiveParts' not in result:
-    (out / 'PACKAGE-DOWNLOAD.txt').write_text(f'{args.sheet}：{reference_count} 类建筑参数变体、{form_count} 种有限形态；人工美术验收 0。\n' + '下载完整 ZIP：https://github.com/stars2022/voxel-studio-yunshan/raw/main/' + str(out.relative_to(root)) + '/' + result['archive'] + '\nSHA-256：' + result['archiveSHA256'] + '\n')
+    (out / 'PACKAGE-DOWNLOAD.txt').write_text(f'{args.sheet}：{reference_count} 类参数变体、{form_count} 种有限形态；人工美术验收 0。\n' + '下载完整 ZIP：https://github.com/stars2022/voxel-studio-yunshan/raw/main/' + str(out.relative_to(root)) + '/' + result['archive'] + '\nSHA-256：' + result['archiveSHA256'] + '\n')
 (out / 'batch-package.json').write_text(json.dumps(result, ensure_ascii=False, indent=2))
-print(json.dumps({'references': reference_count, 'assemblies': 0, 'variants': reference_count, 'masters': 0, 'dependencies': len(manifest['dependencies']), 'files': len(files), 'bytes': result['archiveBytes'], 'path': str(args.output), 'parts': result.get('archiveParts', [])}, ensure_ascii=False))
+print(json.dumps({'references': reference_count, 'assemblies': 0, 'variants': reference_count, 'masters': len(new_bases), 'dependencies': len(manifest['dependencies']), 'files': len(files), 'bytes': result['archiveBytes'], 'path': str(args.output), 'parts': result.get('archiveParts', [])}, ensure_ascii=False))

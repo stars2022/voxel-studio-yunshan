@@ -1,4 +1,5 @@
-import {buildingVariantIds} from '../src/production/building-variant-spec';
+import {catalogVariantIds} from '../src/production/catalog-variant-spec';
+import {nonReferenceBaseRecipes} from '../src/production/shared-wall';
 import {architectureAssemblyIds} from '../src/production/atlas-architecture-assemblies';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -56,7 +57,7 @@ test('only validated widths regenerate legal voxel structures and interfaces',()
  for(const width of[1.2,1.6]){const a=makeCatalogAsset('BUILT-007','flight','flight',s,{width});assert.equal(new Grid(a.chunks).bounds()!.max[0]*.02,width);assert.equal(a.ports.find(p=>p.id==='top-walkway')!.kind,width===1.6?'walkway-1600':'walkway-1200');}
  for(const width of[7.2,12.8,14.4]){const a=makeCatalogAsset('BUILT-017','wall','wall',s,{width}),g=new Grid(a.chunks);assert.equal(g.bounds()!.max[0]*.02,width);for(const box of a.openings)eachCell(box,q=>assert.equal(g.get(q),0));assert.equal(a.ports.find(p=>p.id==='wall-right')!.position[0],width);}
  for(const width of[0,-1,Infinity,7.3,14.6])assert.throws(()=>makeCatalogAsset('BUILT-017','bad','bad',s,{width}));assert.throws(()=>makeCatalogAsset('BUILT-007','bad','bad',s,{width:1.4}));assert.throws(()=>makeCatalogAsset('BUILT-013','bad','bad',s,{height:3}));
- const recipes=productionRecipes(p,{query:'BUILT-',limit:100});assert.equal(recipes.total,Object.keys(atlasBuiltRecipes).length+architectureAssemblyIds.filter(id=>id.startsWith('BUILT-')).length+buildingVariantIds.length);assert.ok(recipes.entries.some(e=>e.id==='BUILT-017'));
+ const recipes=productionRecipes(p,{query:'BUILT-',limit:100});assert.equal(recipes.total,Object.keys(atlasBuiltRecipes).length+architectureAssemblyIds.filter(id=>id.startsWith('BUILT-')).length+catalogVariantIds.length+Object.keys(nonReferenceBaseRecipes).length);assert.ok(recipes.entries.some(e=>e.id==='BUILT-017'));
 });
 
 test('structural appearance pack changes no occupancy, interface, role, category or collision and undoes together',async()=>{

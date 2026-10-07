@@ -1,5 +1,6 @@
 import {architectureAssemblyIds,architectureAssemblyParameters} from './atlas-architecture-assemblies';
-import {buildingVariantIds,buildingVariantParameters,buildingVariantParents} from './building-variant-spec';
+import {catalogVariantIds,catalogVariantParameters,catalogVariantSpec} from './catalog-variant-spec';
+import {nonReferenceBaseRecipes} from './shared-wall';
 import {wildlifeRecipes,wildlifeParameters} from './atlas-wildlife';
 import {faunaRecipes,faunaParameters} from './atlas-fauna';
 import {careRecipes,careParameters} from './atlas-care';
@@ -43,7 +44,11 @@ export async function readProductionLibrary(root:string,args:any){
   const assembly=upgrade.kind==='assembly',variant=upgrade.kind==='variant',template=assembly||variant,primary=template?undefined:upgrade.primaryMasterId;
   if(primary&&!atlas.entries.some(e=>e.id===primary&&e.kind!=='assembly'&&e.kind!=='variant'&&!e.primaryMasterId))throw new Error('共享主母版必须引用已有独立图册资产');
   if(assembly&&row.type!=='组合模板'||variant&&row.type!=='配色尺寸变体'||!template&&row.type!=='基础组件')throw new Error('图册制作类型与清单不一致');
-  if(variant&&!atlas.entries.some(e=>e.id===upgrade.parentCatalogId&&e.kind==='assembly'))throw new Error('建筑变体必须保留已制作的父模板');
+  if(variant){
+   const expected=catalogVariantSpec(upgrade.id),parent=atlas.entries.find(e=>e.id===expected.parentCatalogId),storedParent=index.entries.find(e=>e.id===expected.parentCatalogId);
+   const valid=expected.parentKind==='assembly'?parent?.kind==='assembly':parent?(parent.kind!=='assembly'&&parent.kind!=='variant'&&!parent.primaryMasterId):storedParent?.type==='基础组件'&&storedParent.stage==='geometry-candidate'&&!!storedParent.file&&storedParent.assetIds.length>0;
+   if(upgrade.parentCatalogId!==expected.parentCatalogId||!valid)throw new Error('参数变体必须保留准确类型的已制作父模板或基础母版');
+  }
   if(variant&&(!Number.isInteger(upgrade.finiteForms)||upgrade.finiteForms<1))throw new Error('建筑变体形态数无效');
   if(row.stage==='not-produced'){
    if(variant){index.counts.variantEntries=(index.counts.variantEntries??0)+1;index.counts.variantModels=(index.counts.variantModels??0)+upgrade.finiteForms;}
@@ -61,10 +66,11 @@ export async function readProductionLibrary(root:string,args:any){
 export function productionRecipes(p:Project,args:any){
  const q=String(args.query??'').toLowerCase(),models:(Record<string,unknown>&{id:string;name:string})[]=Object.entries(lifeRecipes).map(([n,r])=>{const id='LIFE-'+n.padStart(3,'0');return{id,kind:'base',name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,...(atlasLifeRecipes[Number(n)]?{recipeRevision:3,reference:atlasSource(id),limitations:atlasLifeRecipes[Number(n)].limits}:{}),parameters:[1,2,3,4,10,11,14,15,16].includes(Number(n))?{width:{minimum:r.size[0]*.75,maximum:r.size[0]*1.5,default:r.size[0],unit:'metres'}}:{}};});
  for(const[id,r]of Object.entries(atlasBuiltRecipes))models.push({id,kind:'base',name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,recipeRevision:3,reference:atlasSource(id),limitations:r.limits,parameters:builtWidthParameter(id)});
+ for(const[id,r]of Object.entries(nonReferenceBaseRecipes))models.push({id,kind:'base',name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,recipeRevision:1,reference:null,limitations:r.limits,parameters:{}});
  for(const[id,r]of Object.entries({...environmentRecipes,...hydrologyRecipes,...ecologyRecipes,...groundscapeRecipes,...landscapeRecipes,...characterRecipes,...figureRecipes,...avatarRecipes,...headwearRecipes,...wearableRecipes,...garmentRecipes,...costumeRecipes,...attireRecipes,...heldRecipes,...serviceRecipes,...careRecipes,...faunaRecipes,...wildlifeRecipes}))models.push({id,kind:(r as {primaryMasterId?:string}).primaryMasterId?'shared-master':'base',...((r as {primaryMasterId?:string}).primaryMasterId?{primaryMasterId:(r as {primaryMasterId?:string}).primaryMasterId}:{}),name:p.catalog?.entries[id]?.source['中文名称']??id,dimensionsM:r.size,cellSizeM:r.pitch,features:r.features,recipeRevision:wildlifeRecipes[id]||faunaRecipes[id]||careRecipes[id]||serviceRecipes[id]||heldRecipes[id]||attireRecipes[id]||costumeRecipes[id]||garmentRecipes[id]||wearableRecipes[id]||headwearRecipes[id]||avatarRecipes[id]||figureRecipes[id]?1:3,reference:atlasSource(id),limitations:r.limits,parameters:wildlifeRecipes[id]?wildlifeParameters(id):faunaRecipes[id]?faunaParameters(id):careRecipes[id]?careParameters(id):serviceRecipes[id]?serviceParameters(id):heldRecipes[id]?heldParameters(id):attireRecipes[id]?attireParameters(id):costumeRecipes[id]?costumeParameters(id):garmentRecipes[id]?garmentParameters(id):wearableRecipes[id]?wearableParameters(id):headwearRecipes[id]?headwearParameters(id):avatarRecipes[id]?avatarParameters(id):figureRecipes[id]?figureParameters(id):characterRecipes[id]?characterParameters(id):landscapeRecipes[id]?landscapeParameters(id):groundscapeRecipes[id]?groundscapeParameters(id):ecologyRecipes[id]?ecologyParameters(id):hydrologyRecipes[id]?hydrologyParameters(id):environmentParameters(id)});
  const layouts=Object.keys(lifeLayouts).filter(n=>!architectureAssemblyIds.includes('LIFE-'+n.padStart(3,'0'))).map(n=>{const id='LIFE-'+n.padStart(3,'0');return{id,kind:'assembly',name:p.catalog?.entries[id]?.source['中文名称']??id,dependencies:layoutDependencies(Number(n)),instances:lifeLayouts[Number(n)].length};});
  const architectureLayouts=architectureAssemblyIds.map(id=>({id,kind:'assembly',name:p.catalog?.entries[id]?.source['中文名称']??id,parameters:architectureAssemblyParameters(id),geometryAuthority:'Separate reusable components and actual instances',originalRuntimeBound:false}));
- const variants=buildingVariantIds.map(id=>({id,kind:'variant',parentCatalogId:buildingVariantParents[id],name:p.catalog?.entries[id]?.source['中文名称']??id,parameters:buildingVariantParameters(id),geometryAuthority:'Parameterized child of a retained parent template',originalRuntimeBound:false}));
+ const variants=catalogVariantIds.map(id=>({id,kind:'variant',parentCatalogId:catalogVariantSpec(id).parentCatalogId,parentKind:catalogVariantSpec(id).parentKind,name:p.catalog?.entries[id]?.source['中文名称']??id,parameters:catalogVariantParameters(id),geometryAuthority:'Parameterized child of a retained actual parent',originalRuntimeBound:false}));
  const rows=[...models,...layouts,...architectureLayouts,...variants].filter(e=>!q||(e.id+' '+e.name).toLowerCase().includes(q)).sort((a,b)=>a.id.localeCompare(b.id));
  return{units:'metres',upAxis:'Y',geometryStage:'candidate',runtimeIntegration:false,...page(rows,args)};
 }

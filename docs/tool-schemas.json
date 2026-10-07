@@ -1713,7 +1713,6 @@
                         ]
                       },
                       "floors": {
-                        "type": "integer",
                         "enum": [
                           4,
                           8,
@@ -1728,6 +1727,37 @@
                           13,
                           14,
                           15
+                        ],
+                        "type": "integer"
+                      },
+                      "gableAxis": {
+                        "enum": [
+                          "x",
+                          "z"
+                        ]
+                      },
+                      "wallTone": {
+                        "enum": [
+                          "clinic",
+                          "bank",
+                          "workshop",
+                          "school",
+                          "fallback1",
+                          "fallback2",
+                          "fallback3",
+                          "fallback4"
+                        ]
+                      },
+                      "roofSampling": {
+                        "enum": [
+                          "far1",
+                          "far2"
+                        ]
+                      },
+                      "upperFootprint": {
+                        "enum": [
+                          "compact",
+                          "expanded"
                         ]
                       }
                     },
