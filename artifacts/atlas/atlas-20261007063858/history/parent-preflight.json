@@ -1,0 +1,648 @@
+[
+  {
+    "id": "BUILT-058",
+    "atlas": {
+      "id": "BUILT-058",
+      "sheet": "M014",
+      "slot": 6,
+      "file": "atlas-20261003120646-built-058.ysvox.json",
+      "assetId": "built-058",
+      "revision": 3,
+      "referenceSHA256": "d563f28f4fd387add98cb621a8e2e6c457c4bbe8035601eb6bfbdd3d9b37ffd5",
+      "voxels": 386556,
+      "triangles": 4172,
+      "cellSizeM": 0.02,
+      "sha256": "9dae5763121bee70ed993ef9f6082041ef1ee6ea28bb9b0a1b65f2ff9bb6a07c",
+      "boundsM": {
+        "min": [
+          0,
+          0,
+          -0.04
+        ],
+        "max": [
+          4.4,
+          3.2,
+          0.56
+        ]
+      },
+      "note": "墙体母版保留门窗空洞，门扇和玻璃分别实例化；没有将参考图中窗后家具焊入墙。未接入原游戏 architectureFacadeLayout、碰撞权限及旧档。 已按图重建候选，待人工美术验收。"
+    },
+    "stored": {
+      "id": "BUILT-058",
+      "name": "旧楼分段入口及窗洞墙",
+      "type": "基础组件",
+      "stage": "not-produced",
+      "assetIds": [],
+      "note": "尚未制作；不以占位体或实例计数。"
+    },
+    "actualSource": {
+      "kind": "catalog-recipe",
+      "catalogId": "BUILT-058",
+      "recipeRevision": 3,
+      "styleReference": "参考/云山巨城·未来家居资产图鉴.png",
+      "styleRevision": 9,
+      "dimensionsM": [
+        4.4,
+        3.2,
+        0.56
+      ],
+      "parameters": {},
+      "features": "分段入口与窗洞墙：真实贯穿门洞和窗洞、砌石墙垛、木框、石脚、铜锁件及分层梁",
+      "geometryStage": "candidate",
+      "gameIntegration": false,
+      "animation": false,
+      "units": "metres",
+      "front": "-Z",
+      "reference": {
+        "sheet": "M014",
+        "slot": 6,
+        "imageSHA256": "d563f28f4fd387add98cb621a8e2e6c457c4bbe8035601eb6bfbdd3d9b37ffd5"
+      },
+      "referenceStage": "candidate",
+      "dimensionBasis": "authored metres on 20 mm grid; explicit catalogue dimensions are stated in limitations, remaining dimensions are authored, not measured from the image",
+      "limitations": "墙体母版保留门窗空洞，门扇和玻璃分别实例化；没有将参考图中窗后家具焊入墙。未接入原游戏 architectureFacadeLayout、碰撞权限及旧档。",
+      "kinematics": "static; no rig or runtime motion",
+      "materialAssignmentReview": {
+        "revision": 1,
+        "method": "authored-use-and-actual-voxel-check",
+        "note": "按实际建筑层次分类：石块/灰缝/承板、实木/收边、金属/铜接件、玻璃/蚀刻/灯芯保持可单独替换；未按颜色借用。"
+      },
+      "style": "yunshan"
+    },
+    "assetIds": [
+      "built-058"
+    ],
+    "actualInstances": 0,
+    "materialRoles": 121
+  },
+  {
+    "id": "BUILT-076",
+    "atlas": {
+      "kind": "assembly",
+      "id": "BUILT-076",
+      "sheet": "M044",
+      "slot": 10,
+      "file": "atlas-20261004190922-built-076.ysvox.json",
+      "assemblyId": "built-076",
+      "assetIds": [
+        "architecture-column-3p2",
+        "architecture-floor-3p1999999999999993-3p2",
+        "architecture-floor-3p2-3p2",
+        "architecture-roof-gable-12p8-6p4"
+      ],
+      "dependencyCatalogIds": [
+        "BUILT-003",
+        "BUILT-011",
+        "BUILT-012",
+        "BUILT-013",
+        "BUILT-059"
+      ],
+      "instances": 19,
+      "revision": 1,
+      "referenceSHA256": "24cf77da633f9b670b54f365c781c24da875527a5c67dde29a5db612560270d5",
+      "voxels": 16,
+      "triangles": 3884,
+      "sha256": "c5f2cd63bb1788ee2b6268e30cd6f96cf8f7d9bc4beb7955e2fcc11674f37515",
+      "boundsM": {
+        "min": [
+          -0.4,
+          0,
+          -0.4
+        ],
+        "max": [
+          13.2,
+          5.54,
+          6.8
+        ]
+      },
+      "note": "真实组合模板；依赖母版、明确派生组件及重复实例分别保存，不新增基础清单母版。作者尺寸与布局，未绑定原 FloorPlan / 控制器 / 世界地形，待人工美术验收。"
+    },
+    "stored": {
+      "id": "BUILT-076",
+      "name": "旧中式悬山式屋顶",
+      "type": "组合模板",
+      "stage": "not-produced",
+      "assetIds": [],
+      "note": "尚未制作；不以占位体或实例计数。"
+    },
+    "actualSource": {
+      "kind": "catalog-assembly",
+      "catalogId": "BUILT-076",
+      "recipeRevision": 1,
+      "reference": {
+        "sheet": "M044",
+        "slot": 10,
+        "imageSHA256": "24cf77da633f9b670b54f365c781c24da875527a5c67dde29a5db612560270d5"
+      },
+      "units": "metres",
+      "authority": "author",
+      "originalRuntimeBound": false,
+      "notCatalogBase": true,
+      "dependencies": [
+        "BUILT-003",
+        "BUILT-011",
+        "BUILT-012",
+        "BUILT-013",
+        "BUILT-059"
+      ],
+      "instanceGroups": {
+        "built-076-0": "structure",
+        "built-076-1": "structure",
+        "built-076-2": "structure",
+        "built-076-3": "structure",
+        "built-076-4": "structure",
+        "built-076-5": "structure",
+        "built-076-6": "structure",
+        "built-076-7": "structure",
+        "built-076-8": "structure",
+        "built-076-9": "structure",
+        "built-076-10": "structure",
+        "built-076-11": "structure",
+        "built-076-12": "structure",
+        "built-076-13": "structure",
+        "built-076-14": "structure",
+        "built-076-15": "structure",
+        "built-076-16": "structure",
+        "built-076-17": "structure",
+        "built-076-18": "roof"
+      },
+      "variant": "standard",
+      "parameters": {
+        "roofWidth": "standard"
+      },
+      "roofForm": "gable",
+      "dimensionsM": [
+        12.8,
+        5.7,
+        6.4
+      ],
+      "scope": "Continuous roof alternative in an explicit author opt-in assembly. Original roofHeightAt/programRoof code unavailable; historical high-eave art FAIL not relabelled as passed. Support frame and repeated components do not create base catalogue masters."
+    },
+    "assetIds": [
+      "architecture-floor-3p2-3p2",
+      "architecture-floor-3p1999999999999993-3p2",
+      "architecture-column-3p2",
+      "architecture-roof-gable-12p8-6p4"
+    ],
+    "actualInstances": 19,
+    "materialRoles": 491
+  },
+  {
+    "id": "BUILT-169",
+    "atlas": {
+      "kind": "assembly",
+      "id": "BUILT-169",
+      "sheet": "M046",
+      "slot": 3,
+      "file": "atlas-20261005072532-built-169.ysvox.json",
+      "assemblyId": "built-169",
+      "assetIds": [
+        "architecture-civic-public-three-box-road-08aebbc0e7"
+      ],
+      "dependencyCatalogIds": [
+        "BUILT-169"
+      ],
+      "instances": 1,
+      "revision": 1,
+      "referenceSHA256": "e05b7a551aefc00b8d1acb7789d7357658e211bbd108b5f7755926640338ef82",
+      "voxels": 1,
+      "triangles": 48,
+      "sha256": "b83928b3ee92de0ed12a6fb701654cef24ff9867c0447571cb0c0612d4cf151e",
+      "boundsM": {
+        "min": [
+          -1.25,
+          0,
+          -2.775
+        ],
+        "max": [
+          1.25,
+          2.3,
+          2.75
+        ]
+      },
+      "note": "真实组合模板；依赖母版、明确派生组件及重复实例分别保存，不新增基础清单母版。作者尺寸与布局，未绑定原 FloorPlan / 控制器 / 世界地形，待人工美术验收。"
+    },
+    "stored": {
+      "id": "BUILT-169",
+      "name": "既有公共交通三块载具体代理母版",
+      "type": "组合模板",
+      "stage": "not-produced",
+      "assetIds": [],
+      "note": "尚未制作；不以占位体或实例计数。"
+    },
+    "actualSource": {
+      "kind": "catalog-assembly",
+      "catalogId": "BUILT-169",
+      "recipeRevision": 1,
+      "reference": {
+        "sheet": "M046",
+        "slot": 3,
+        "imageSHA256": "e05b7a551aefc00b8d1acb7789d7357658e211bbd108b5f7755926640338ef82"
+      },
+      "units": "metres",
+      "authority": "author",
+      "originalRuntimeBound": false,
+      "notCatalogBase": true,
+      "dependencies": [
+        "BUILT-169"
+      ],
+      "instanceGroups": {
+        "built-169-0": "vehicle-proxy"
+      },
+      "parameters": {},
+      "instance": "built-169-0",
+      "mode": "road",
+      "sourceParts": [
+        "body",
+        "head",
+        "trim"
+      ],
+      "authorHeadAndTrimPlacement": true,
+      "scope": "Source road body envelope with exactly three display boxes and a native detail pin. No wheels, working doors, driving cockpit, fleet identity or Simulation state; this remains a geometry proxy."
+    },
+    "assetIds": [
+      "architecture-civic-public-three-box-road-08aebbc0e7"
+    ],
+    "actualInstances": 1,
+    "materialRoles": 496
+  },
+  {
+    "id": "BUILT-181",
+    "atlas": {
+      "kind": "assembly",
+      "id": "BUILT-181",
+      "sheet": "M046",
+      "slot": 4,
+      "file": "atlas-20261005072532-built-181.ysvox.json",
+      "assemblyId": "built-181",
+      "assetIds": [
+        "architecture-civic-seven-metre-rental-pad-56d08eeb41"
+      ],
+      "dependencyCatalogIds": [
+        "BUILT-181",
+        "BUILT-183"
+      ],
+      "instances": 1,
+      "revision": 1,
+      "referenceSHA256": "e05b7a551aefc00b8d1acb7789d7357658e211bbd108b5f7755926640338ef82",
+      "voxels": 1,
+      "triangles": 108,
+      "sha256": "acc33ec950a43eacafee6af4e9fabee96121f6b551e61ed479c1258405c74471",
+      "boundsM": {
+        "min": [
+          -3.5,
+          -0.15,
+          -7.5
+        ],
+        "max": [
+          4,
+          3.2,
+          3.5
+        ]
+      },
+      "note": "真实组合模板；依赖母版、明确派生组件及重复实例分别保存，不新增基础清单母版。作者尺寸与布局，未绑定原 FloorPlan / 控制器 / 世界地形，待人工美术验收。"
+    },
+    "stored": {
+      "id": "BUILT-181",
+      "name": "城市7m无人机租用机位母版",
+      "type": "组合模板",
+      "stage": "not-produced",
+      "assetIds": [],
+      "note": "尚未制作；不以占位体或实例计数。"
+    },
+    "actualSource": {
+      "kind": "catalog-assembly",
+      "catalogId": "BUILT-181",
+      "recipeRevision": 1,
+      "reference": {
+        "sheet": "M046",
+        "slot": 4,
+        "imageSHA256": "e05b7a551aefc00b8d1acb7789d7357658e211bbd108b5f7755926640338ef82"
+      },
+      "units": "metres",
+      "authority": "author",
+      "originalRuntimeBound": false,
+      "notCatalogBase": true,
+      "dependencies": [
+        "BUILT-181",
+        "BUILT-183"
+      ],
+      "instanceGroups": {
+        "built-181-0": "pad"
+      },
+      "parameters": {},
+      "sourcePadM": [
+        7,
+        0.2,
+        7
+      ],
+      "authorEntry": [
+        0,
+        0,
+        -7.5
+      ],
+      "authorPadWalkY": 0.2,
+      "goldStrips": 3,
+      "scope": "A real seven-metre pad with three paint strips, blank sign and author street ramp. Original pad ID, terrain flattening/exclusion, rental and boarding controller are unavailable."
+    },
+    "assetIds": [
+      "architecture-civic-seven-metre-rental-pad-56d08eeb41"
+    ],
+    "actualInstances": 1,
+    "materialRoles": 496
+  },
+  {
+    "id": "CHAR-001",
+    "atlas": {
+      "kind": "assembly",
+      "id": "CHAR-001",
+      "sheet": "M056",
+      "slot": 12,
+      "file": "atlas-20261005173405-char-001.ysvox.json",
+      "assemblyId": "char-001",
+      "assetIds": [
+        "architecture-community-resident-mounted-foot-adult-adultA-ankle1",
+        "architecture-community-resident-mounted-foot-adult-reflected-adultA-ankle-1",
+        "architecture-community-resident-mounted-hair-adult-adultA-head",
+        "architecture-community-resident-mounted-hand-adult-adultA-wrist-1",
+        "architecture-community-resident-mounted-hand-adult-reflected-adultA-wrist1",
+        "architecture-community-resident-mounted-head-adult-adultA-head",
+        "source-char-113-bodyFit-adultA",
+        "source-char-118-bodyFit-adultA",
+        "source-char-121-bodyFit-adultA"
+      ],
+      "dependencyCatalogIds": [
+        "CHAR-059",
+        "CHAR-066",
+        "CHAR-070",
+        "CHAR-071",
+        "CHAR-085",
+        "CHAR-113",
+        "CHAR-118",
+        "CHAR-121"
+      ],
+      "instances": 9,
+      "revision": 1,
+      "referenceSHA256": "47060a881c571f7a7f5faa856384737d071a9a39dc6fa7d9a1b1febc53a7af39",
+      "voxels": 1024,
+      "triangles": 12760,
+      "sha256": "0230802735b94b4140c2b56b3e7ce6bfc4e9971261c9321175fef29d6eff6764",
+      "boundsM": {
+        "min": [
+          -0.384304018,
+          0,
+          -0.215
+        ],
+        "max": [
+          0.384304018,
+          1.7550000000000001,
+          0.15224
+        ]
+      },
+      "note": "真实组合模板；依赖母版、明确派生组件及重复实例分别保存，不新增基础清单母版。作者尺寸与布局，未绑定原 FloorPlan / 控制器 / 世界地形，待人工美术验收。"
+    },
+    "stored": {
+      "id": "CHAR-001",
+      "name": "现有居民近景程序组合母版",
+      "type": "组合模板",
+      "stage": "not-produced",
+      "assetIds": [],
+      "note": "尚未制作；不以占位体或实例计数。"
+    },
+    "actualSource": {
+      "kind": "catalog-assembly",
+      "catalogId": "CHAR-001",
+      "recipeRevision": 1,
+      "reference": {
+        "sheet": "M056",
+        "slot": 12,
+        "imageSHA256": "47060a881c571f7a7f5faa856384737d071a9a39dc6fa7d9a1b1febc53a7af39"
+      },
+      "units": "metres",
+      "authority": "author",
+      "originalRuntimeBound": false,
+      "notCatalogBase": true,
+      "dependencies": [
+        "CHAR-059",
+        "CHAR-066",
+        "CHAR-070",
+        "CHAR-071",
+        "CHAR-085",
+        "CHAR-113",
+        "CHAR-118",
+        "CHAR-121"
+      ],
+      "instanceGroups": {
+        "char-001-0": "resident",
+        "char-001-1": "resident",
+        "char-001-2": "resident",
+        "char-001-3": "resident",
+        "char-001-4": "resident",
+        "char-001-5": "resident",
+        "char-001-6": "resident",
+        "char-001-7": "resident",
+        "char-001-8": "resident"
+      },
+      "parameters": {},
+      "routes": [],
+      "scope": "Author detailed standing resident; original integrated coarse describeCitizen baseline retained as source contract, new detailed asset not runtime bound.",
+      "walkSamples": [],
+      "clearBoxes": [],
+      "contacts": [],
+      "driverEyes": [],
+      "identityBound": false,
+      "controllerBound": false,
+      "cargoInventoryBound": false,
+      "kinematics": "Static authored boarding state only; no transport, flight, steering, buoyancy or permission integration.",
+      "forest": [],
+      "park": {
+        "pads": [],
+        "guards": [],
+        "seats": [],
+        "steps": [],
+        "rockContacts": [],
+        "drains": [],
+        "viewRays": [],
+        "wayfinding": [],
+        "activityPoints": [],
+        "scope": "Finite author scene geometry. No original world, social activity, hydrology, automatic residency, guard safety certification or human art acceptance."
+      },
+      "community": {
+        "clearVolumes": [],
+        "plantings": [],
+        "drains": [],
+        "resident": {
+          "instances": [
+            {
+              "sourceInstance": "top-0-CHAR-113",
+              "instance": "char-001-0",
+              "assetId": "source-char-113-bodyFit-adultA"
+            },
+            {
+              "sourceInstance": "top-0-CHAR-118",
+              "instance": "char-001-1",
+              "assetId": "source-char-118-bodyFit-adultA"
+            },
+            {
+              "sourceInstance": "top-0-CHAR-121",
+              "instance": "char-001-2",
+              "assetId": "source-char-121-bodyFit-adultA"
+            },
+            {
+              "sourceInstance": "top-0-head",
+              "instance": "char-001-3",
+              "assetId": "architecture-community-resident-mounted-head-adult-adultA-head"
+            },
+            {
+              "sourceInstance": "top-0-hair",
+              "instance": "char-001-4",
+              "assetId": "architecture-community-resident-mounted-hair-adult-adultA-head"
+            },
+            {
+              "sourceInstance": "top-0-hand-1",
+              "instance": "char-001-5",
+              "assetId": "architecture-community-resident-mounted-hand-adult-adultA-wrist-1"
+            },
+            {
+              "sourceInstance": "top-0-foot-1",
+              "instance": "char-001-6",
+              "assetId": "architecture-community-resident-mounted-foot-adult-reflected-adultA-ankle-1"
+            },
+            {
+              "sourceInstance": "top-0-hand1",
+              "instance": "char-001-7",
+              "assetId": "architecture-community-resident-mounted-hand-adult-reflected-adultA-wrist1"
+            },
+            {
+              "sourceInstance": "top-0-foot1",
+              "instance": "char-001-8",
+              "assetId": "architecture-community-resident-mounted-foot-adult-adultA-ankle1"
+            }
+          ],
+          "sources": [
+            {
+              "sourceSceneAsset": "body-adultA",
+              "retainedAsset": "source-char-059-extremities-sockets"
+            },
+            {
+              "sourceSceneAsset": "slot-adultA-CHAR-113-CHAR-118-CHAR-121",
+              "retainedAsset": "architecture-community-resident-slot-adultA-CHAR-113-CHAR-118-CHAR-121"
+            },
+            {
+              "sourceSceneAsset": "char-113-adultA",
+              "retainedAsset": "source-char-113-bodyFit-adultA"
+            },
+            {
+              "sourceSceneAsset": "char-118-adultA",
+              "retainedAsset": "source-char-118-bodyFit-adultA"
+            },
+            {
+              "sourceSceneAsset": "char-121-adultA",
+              "retainedAsset": "source-char-121-bodyFit-adultA"
+            },
+            {
+              "sourceSceneAsset": "head-adult",
+              "retainedAsset": "source-char-066"
+            },
+            {
+              "sourceSceneAsset": "mounted-head-adult-adultA-head",
+              "retainedAsset": "architecture-community-resident-mounted-head-adult-adultA-head"
+            },
+            {
+              "sourceSceneAsset": "hair-adult",
+              "retainedAsset": "source-char-085-hairFit-adult"
+            },
+            {
+              "sourceSceneAsset": "mounted-hair-adult-adultA-head",
+              "retainedAsset": "architecture-community-resident-mounted-hair-adult-adultA-head"
+            },
+            {
+              "sourceSceneAsset": "hand-adult",
+              "retainedAsset": "source-char-070-limbFit-adult-handPose-open"
+            },
+            {
+              "sourceSceneAsset": "mounted-hand-adult-adultA-wrist-1",
+              "retainedAsset": "architecture-community-resident-mounted-hand-adult-adultA-wrist-1"
+            },
+            {
+              "sourceSceneAsset": "foot-adult",
+              "retainedAsset": "source-char-071-limbFit-adult"
+            },
+            {
+              "sourceSceneAsset": "foot-adult-reflected",
+              "retainedAsset": "architecture-community-resident-foot-adult-reflected"
+            },
+            {
+              "sourceSceneAsset": "mounted-foot-adult-reflected-adultA-ankle-1",
+              "retainedAsset": "architecture-community-resident-mounted-foot-adult-reflected-adultA-ankle-1"
+            },
+            {
+              "sourceSceneAsset": "hand-adult-reflected",
+              "retainedAsset": "architecture-community-resident-hand-adult-reflected"
+            },
+            {
+              "sourceSceneAsset": "mounted-hand-adult-reflected-adultA-wrist1",
+              "retainedAsset": "architecture-community-resident-mounted-hand-adult-reflected-adultA-wrist1"
+            },
+            {
+              "sourceSceneAsset": "mounted-foot-adult-adultA-ankle1",
+              "retainedAsset": "architecture-community-resident-mounted-foot-adult-adultA-ankle1"
+            }
+          ],
+          "omittedRetainedInstances": [
+            {
+              "sourceInstance": "top-0-body",
+              "assetId": "architecture-community-resident-slot-adultA-CHAR-113-CHAR-118-CHAR-121",
+              "reason": "After clothing replacement this asset contains only a short neck connector. CHAR066 already carries its real neck insert; retaining both caused actual overlap, so the redundant connector is retained but not installed."
+            }
+          ],
+          "sourceScene": "M036 garmentScene tops, complete top-0 only",
+          "bodyFit": "adultA",
+          "groundOffsetM": 0.02,
+          "declaredGroundY": 0,
+          "originalBaseline": {
+            "catalogId": "CHAR-001",
+            "integratedCoarseSource": true,
+            "source": "external citizen-appearance.ts describeCitizen",
+            "coarsePitchM": 0.2,
+            "readOnlyInputs": [
+              "id",
+              "position",
+              "state",
+              "role",
+              "actorProfiles.age",
+              "alive"
+            ]
+          },
+          "originalRuntimeBound": false,
+          "authorRigidJoints": true,
+          "softSkin": false,
+          "animationClips": false,
+          "ageSeedRoleBinding": false,
+          "scope": "One author standing resident, not a recovered original describeCitizen implementation. Original canonical parts and exact derivative/rig graph retained; no gallery duplicates, no new base master."
+        }
+      }
+    },
+    "assetIds": [
+      "source-char-059-extremities-sockets",
+      "architecture-community-resident-slot-adultA-CHAR-113-CHAR-118-CHAR-121",
+      "source-char-113-bodyFit-adultA",
+      "source-char-118-bodyFit-adultA",
+      "source-char-121-bodyFit-adultA",
+      "source-char-066",
+      "architecture-community-resident-mounted-head-adult-adultA-head",
+      "source-char-085-hairFit-adult",
+      "architecture-community-resident-mounted-hair-adult-adultA-head",
+      "source-char-070-limbFit-adult-handPose-open",
+      "architecture-community-resident-mounted-hand-adult-adultA-wrist-1",
+      "source-char-071-limbFit-adult",
+      "architecture-community-resident-foot-adult-reflected",
+      "architecture-community-resident-mounted-foot-adult-reflected-adultA-ankle-1",
+      "architecture-community-resident-hand-adult-reflected",
+      "architecture-community-resident-mounted-hand-adult-reflected-adultA-wrist1",
+      "architecture-community-resident-mounted-foot-adult-adultA-ankle1"
+    ],
+    "actualInstances": 9,
+    "materialRoles": 512
+  }
+]

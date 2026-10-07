@@ -1,0 +1,30 @@
+✔ M06125forms have real closed roof valleys, actual column/bearing/floor contacts, exact native walls and source transport envelopes (11371.875765ms)
+✔ M061 retains actual historic076roof,058native wall,169proxy and181pad without replacing their geometry or layouts (398.96639ms)
+✖ M061 eleven wall appearances coexist with foreign IDs; one scoped palette and failed parameter transactions preserve every geometry and undo (45462.328714ms)
+✔ M061 public variants survive actual GLB export after metre-space quarter turns, with one undo restoring their original positions (8614.988091ms)
+✔ M061 road/lift and maglev/lightRail preserve shared actual proxy geometry, while cable offset and distinct role contracts remain explicit (22.709185ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 66805.109391
+
+✖ failing tests:
+
+test at tests/atlas-legacy-variants.test.ts:42:1
+✖ M061 eleven wall appearances coexist with foreign IDs; one scoped palette and failed parameter transactions preserve every geometry and undo (45462.328714ms)
+  TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+      at Hash.update (node:internal/crypto/hash:153:11)
+      at outfitHash (/workspace/voxel-studio-yunshan/src/production/outfit-components.ts:13:63)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/atlas-legacy-variants.test.ts:51:131)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }

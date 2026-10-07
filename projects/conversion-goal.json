@@ -15,47 +15,39 @@
     "catalogEntries": 1068
   },
   "progress": {
-    "referenceCandidates": 720,
-    "remainingReferenceEntries": 73,
+    "referenceCandidates": 730,
+    "remainingReferenceEntries": 63,
     "completedReferenceSheets": 60,
     "catalogCounts": {
       "catalogEntries": 1068,
       "baseModels": 533,
       "auxiliaryMasters": 1,
       "assemblies": 186,
-      "variantEntries": 22,
-      "variantModels": 93,
+      "variantEntries": 32,
+      "variantModels": 118,
       "accepted": 0,
-      "notProduced": 324,
-      "generatedEntries": 744,
+      "notProduced": 314,
+      "generatedEntries": 754,
       "referenceDesigns": 28,
       "materialStudies": 40,
-      "atlasReferenceCandidates": 720,
+      "atlasReferenceCandidates": 730,
       "atlasSharedMasterReferences": 3,
       "atlasUniqueMasters": 513,
       "atlasAssemblyCandidates": 186,
-      "atlasVariantCandidates": 18,
-      "atlasVariantForms": 84
+      "atlasVariantCandidates": 28,
+      "atlasVariantForms": 109
     },
     "humanArtAccepted": 0
   },
   "activeBatch": {
     "sheet": "M061",
-    "subBatch": "legacy-roof-wall-transport-variants",
+    "subBatch": "infant-preschool-age-variants",
     "state": "queued",
     "ids": [
-      "BUILT-084",
-      "BUILT-085",
-      "BUILT-170",
-      "BUILT-171",
-      "BUILT-172",
-      "BUILT-173",
-      "BUILT-174",
-      "BUILT-175",
-      "BUILT-176",
-      "BUILT-182"
+      "CHAR-017",
+      "CHAR-018"
     ],
-    "scope": "保留真实076/058/169/181父资产，制作单/双脊、11种墙色、7种载具三盒代理和14m机位；CHAR017/018年龄比例另作子批。"
+    "scope": "0.6m婴儿和1.0m幼儿，真实独立年龄比例；保留001组合与061/062等实际父组件。"
   },
   "nextBatch": "M061",
   "workflow": [
@@ -69,19 +61,19 @@
   "limitations": [
     "reference-candidate为技术转化候选，不能视为人工美术验收",
     "角色/动画/场景组合须按清单类型实现，不得把实例或换色重复计为基础母版",
-    "M001–M060累计720条技术候选，余73；513独立图册母版、3共享引用、186图册组合、18变体参考/84有限形态，完整图册60张，人工美术验收0。"
+    "M001–M060完整，M061完成10/12；累计730条技术候选，余63。513独立图册母版、3共享引用、186图册组合、28变体参考/109有限形态，完整图册60张，人工美术验收0。"
   ],
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "用户修正持续优先：最小组件体素，斜面和曲面连续，天空/星空使用真实贴图。",
-    "M060整张12/12参考已完成技术转化：第一子批7类32形态，第二子批5类14形态。两个下载包共同交付全部46形态；最新包另含前一子批7个默认组合以打开整张gallery。",
-    "第二子批整库575测试、43份实际GLB、14次公开创建和14次90度旋转撤销、99条精确版本更新通知全部通过。011完整600131格与075standard父源保持；004新增真实墙母版单独计数，不能继续称其缺失。",
-    "累计720/793，余73；全库基础533、组合186、变体22类/93形态、已生成744条、未制作324条。",
-    "墙色为8个wall用途外观实例，仍512用途上限。远档保留近景物理权威侧文件；上层屋顶为穿孔/承托样件，无通达楼梯。原seedRGB、屋面生成器及控制器仍未绑定。",
-    "M061五个父资产已在atlas核实，旧production-index的not-produced记录不代表父资产缺失。085保留058实际386556格，只换墙面用途；084双脊须真实处理谷部。",
-    "170–176是原169三盒代理尺寸/类型变体，172与171共形，不能冒称新增Vehicle身份、完整载具或真实路线绑定。182为181真实7m站台的14m尺寸派生。",
-    "CHAR017/018保留0.6m/1m身高阶梯，同时使用真实婴幼儿比例，不能仅缩小成人001。公开变体schema目前仅BUILT，接入CHAR须明确扩展并验证。",
-    "每批验证后推送origin/main已授权；完成当前子批不能调用stop_goal。源代码回归或正式验证期间不修改被测生产代码。浏览器串行，使用PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。"
+    "M061首批10条参考25形态已完成验证；99相关回归、75实际GLB、25次公开创建和旋转撤销、168条精确通知、10历史父源检查通过。a31c7202整库575测试为上一批基线，并非本次重跑。",
+    "累计730/793，余63；全库基础533、组合186、变体32类/118形态、已生成754条、未制作314条。M061年龄017/018未完成，完整图册仍60张。",
+    "084双脊三层连续跨谷，实际底面三角承托；085完整058的386556格保留。11墙色及2瓦色只作同用途外观实例，全库仍512语义用途。",
+    "170–176保留169原三盒代理合同，171/172与170/174分别共形；参考图更详细，不能冒称完整Vehicle。完整277/279–285另在M048。182为181的14m机位派生，原控制器仍未绑定。",
+    "CHAR017/018保留0.6m/1m阶梯，必须使用061婴儿/062幼儿真实比例；018需要明确1m幼儿安装派生，不能缩小成人001。019/020/021后续为1.2/1.6/1.8m。",
+    "CHAR023父面部图谱确实缺失，制作024–029前须先交付真实023非图册父资产；肤色030–034只作同用途外观，不增加人物身份或母版。",
+    "公开变体schema目前仍BUILT-only，接入CHAR须明确扩展并验证非法类型、原子回滚及一次撤销。",
+    "每批验证后推送origin/main已授权；完成当前子批不能停止整个目标。正式验证期间不修改被测生产代码；浏览器串行并设置PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright。"
   ],
   "modelingDirection": {
     "userCorrection": "仅最小组件采用体素；斜面/曲面允许连续网格，天空/星空使用贴图",
@@ -90,11 +82,13 @@
     "physicalProxyMustBeLabeled": true
   },
   "lastCompletedBatch": {
-    "sheet": "M060",
-    "subBatch": "roof-orientation-wall-purpose-roof-detail-variants",
-    "run": "atlas-20261007054954",
+    "sheet": "M061",
+    "subBatch": "legacy-roof-wall-transport-variants",
+    "run": "atlas-20261007063858",
     "state": "validated",
-    "wholeSheetComplete": true,
-    "evidence": "artifacts/atlas/atlas-20261007054954"
+    "wholeSheetComplete": false,
+    "sheetProducedReferences": 10,
+    "sheetReferenceCount": 12,
+    "evidence": "artifacts/atlas/atlas-20261007063858"
   }
 }
