@@ -1,0 +1,4 @@
+tests/kitchen-refinement.test.ts(34,228): error TS2345: Argument of type '{ refinement?: undefined; } | { refinement: string; }' is not assignable to parameter of type 'Record<string, string | number> | undefined'.
+  Type '{ refinement?: undefined; }' is not assignable to type 'Record<string, string | number>'.
+    Property 'refinement' is incompatible with index signature.
+      Type 'undefined' is not assignable to type 'string | number'.

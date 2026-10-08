@@ -1,0 +1,59 @@
+✔ M002 is opt-in and the shared builder preserves every published M001 geometry hash (11358.788048ms)
+✖ all closed shells, native fasteners and real contact groups survive native JSON and actual solid flags (2395.171945ms)
+✔ counter cutouts, sink drain and vessel interiors are real geometry openings (729.422099ms)
+✖ public transactions keep foreign purpose IDs, preserve solid flags and undo failed/rebuilt kitchen batches (2656.871424ms)
+✖ rug artwork has four mirrored woven corners; recolor and undo preserve every other purpose and geometry (108.630381ms)
+✔ actual rug GLB carries identical lit PBR pixels, purpose IDs and UVs (2297.668117ms)
+✔ physical surfaces at actual kitchen coordinates use their own replaceable purposes (3301.231755ms)
+✔ every normal-mapped rug triangle retains two UV axes, including its thin vertical edge (114.010217ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 5
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 23931.056865
+
+✖ failing tests:
+
+test at tests/kitchen-refinement.test.ts:1:3374
+✖ all closed shells, native fasteners and real contact groups survive native JSON and actual solid flags (2395.171945ms)
+  Error: 织入纹样只用于对应布面及归一化UV
+      at validateAuthoredMeshes (/workspace/voxel-studio-yunshan/src/core/authored-mesh.ts:8:1056)
+      at validateProject (/workspace/voxel-studio-yunshan/src/core/engine.ts:30:30)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/kitchen-refinement.test.ts:39:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/kitchen-refinement.test.ts:1:5360
+✖ public transactions keep foreign purpose IDs, preserve solid flags and undo failed/rebuilt kitchen batches (2656.871424ms)
+  Error: 织入纹样只用于对应布面及归一化UV
+      at validateAuthoredMeshes (/workspace/voxel-studio-yunshan/src/core/authored-mesh.ts:8:1056)
+      at validateProject (/workspace/voxel-studio-yunshan/src/core/engine.ts:30:30)
+      at Engine.execute (/workspace/voxel-studio-yunshan/src/core/engine.ts:56:3)
+      at commit (/workspace/voxel-studio-yunshan/tests/kitchen-refinement.test.ts:28:135)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/kitchen-refinement.test.ts:55:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+
+test at tests/kitchen-refinement.test.ts:1:6949
+✖ rug artwork has four mirrored woven corners; recolor and undo preserve every other purpose and geometry (108.630381ms)
+  Error: 织入纹样只用于对应布面及归一化UV
+      at validateAuthoredMeshes (/workspace/voxel-studio-yunshan/src/core/authored-mesh.ts:8:1056)
+      at validateProject (/workspace/voxel-studio-yunshan/src/core/engine.ts:30:30)
+      at new Engine (/workspace/voxel-studio-yunshan/src/core/engine.ts:46:25)
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/kitchen-refinement.test.ts:60:35)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

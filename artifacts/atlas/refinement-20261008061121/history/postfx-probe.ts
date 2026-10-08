@@ -1,0 +1,18 @@
+import {mkdir,writeFile,readFile} from 'node:fs/promises';
+import {spawn} from 'node:child_process';
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {validationBrowserOptions} from '../../scripts/browser-options';
+import {productionProject} from '../../src/production/style';
+import {makeCatalogAsset} from '../../src/production/catalog-assets';
+import {kitchenRefinementIds} from '../../src/production/kitchen-refinement';
+import {referenceFinishCommands} from '../../src/production/reference-finish';
+import {refinementFinishCommands} from '../../src/production/refinement-finish';
+import {Engine} from '../../src/core/engine';
+import {assetBoundsM} from '../../src/core/sky';
+const runtime='/tmp/yunshan-m002-postfx',out=process.argv[2]??'work/m002-refinement/postfx';await mkdir(runtime,{recursive:true});await mkdir(out,{recursive:true});
+const p=productionProject('M002 preview');for(const id of kitchenRefinementIds){const a=makeCatalogAsset(id,id,id.toLowerCase(),p.styles.yunshan,{refinement:'reference-v1'},p);p.assets[a.id]=a;}
+const e=new Engine(p),r={expectedVersion:p.version,requestId:crypto.randomUUID(),commands:[...referenceFinishCommands(p),...refinementFinishCommands(p,'M002')]},dry=e.execute({...r,dryRun:true});e.execute({...r,previewToken:dry.previewToken});await writeFile(runtime+'/autosave.ysvox.json',JSON.stringify(e.project));
+let log='';const server=spawn(process.execPath,['--import','tsx','src/server/main.ts'],{env:{...process.env,VOXEL_PORT:'4413',VOXEL_PROJECT_DIR:runtime},stdio:['ignore','pipe','pipe']});server.stdout.on('data',d=>log+=d);server.stderr.on('data',d=>log+=d);let browser:any;const rows=[];
+try{let ready=false;for(let i=0;i<200;i++){try{if((await fetch('http://127.0.0.1:4413/api/state')).ok){ready=true;break;}}catch{}if(server.exitCode!==null)throw Error(log);await new Promise(r=>setTimeout(r,100));}assert.ok(ready);browser=await chromium.launch(validationBrowserOptions());const page=await browser.newPage({viewport:{width:1120,height:780}});page.on('console',m=>{if(m.type()==='error'||m.type()==='warning')console.log(m.type(),m.text());});page.on('pageerror',e=>console.log('PAGEERROR',e.message));await page.goto('http://127.0.0.1:4413/?flat=1');await page.waitForFunction(()=>!!(window as any).voxelStudio?.ready);for(const a of [e.project.assets['life-031']]){const b=assetBoundsM(a)!,region={min:b.min.map((v,k)=>(v-a.origin[k])/a.cellSize),max:b.max.map((v,k)=>(v-a.origin[k])/a.cellSize)};await page.evaluate(async({id,region})=>{const v=(window as any).voxelStudio;await v.mode('asset',id);v.clay(false);v.studio(true);v.referenceLighting(true);v.ao(false);v.bloom(false);v.practicals(false);v.view('perspective');v.focus(region);},{id:a.id,region});for(let k=0;k<2;k++)await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));const perf=await page.evaluate(()=>(window as any).voxelStudio.performance);assert.equal(perf.meshError,null);for(const [name,ao,bloom]of[['plain',false,false],['ao',true,false],['bloom',false,true],['both',true,true]]as const){await page.evaluate(({ao,bloom})=>{(window as any).voxelStudio.ao(ao);(window as any).voxelStudio.bloom(bloom);},{ao,bloom});for(let k=0;k<2;k++)await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));await page.screenshot({path:out+'/'+name+'.png',clip:(await page.locator('#viewport').boundingBox())!});console.log(name);} rows.push({id:a.id,camera:perf.camera});console.log(a.id);}}
+finally{await browser?.close();server.kill();await new Promise(r=>server.once('exit',r));await writeFile(out+'/server.txt',log);await writeFile(out+'/report.json',JSON.stringify(rows,null,2));}

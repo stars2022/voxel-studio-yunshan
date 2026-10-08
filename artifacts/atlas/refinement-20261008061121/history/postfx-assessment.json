@@ -1,0 +1,9 @@
+{
+  "status": "bounded-preview-investigation",
+  "initialFailure": "draft01/life-031.png: first capture after enabling AO and bloom showed an almost white rug",
+  "controlledReplay": "postfx/plain.png, ao.png, bloom.png, both.png all retained the rug artwork with the original renderer when enabled in sequence",
+  "conclusion": "The initial visual failure is not a consistently reproducible simultaneous-effects defect. No proven renderer root cause is asserted.",
+  "rendererExperiment": "A single-sampled postprocessing / FXAA experiment was prepared but reverted because the controlled replay did not establish the proposed MSAA cause.",
+  "delivery": "Use the existing default direct PBR pipeline with studio/reference lighting, AO/bloom/practical lights disabled for both baseline and refined M002 views.",
+  "independentGeometryRepair": "Thin vertical rug edges had collapsed projected UVs. Preserve their nondegenerate planar UVs; apply the rug artwork projection only to the top and bottom. This has a direct regression test and does not claim to explain the initial preview failure."
+}

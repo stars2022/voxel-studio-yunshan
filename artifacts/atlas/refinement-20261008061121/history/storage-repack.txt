@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/voxel-studio-yunshan/work/maintenance/repack-preserving-objects.py", line 11, in <module>
+    result=subprocess.run(['git','-c','pack.threads=2','-c','pack.windowMemory=256m','pack-objects','--no-reuse-delta','--window=30','--depth=50','--max-pack-size=100m',str(packdir/'pack')],input=oids,capture_output=True,check=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', '-c', 'pack.threads=2', '-c', 'pack.windowMemory=256m', 'pack-objects', '--no-reuse-delta', '--window=30', '--depth=50', '--max-pack-size=100m', '/tmp/yunshan-m002-repack/objects/pack/pack']' died with <Signals.SIGTERM: 15>.
