@@ -1,3 +1,4 @@
+import {researchRefinementIds} from '../src/production/research-refinement';
 import {commerceRefinementIds} from '../src/production/commerce-refinement';
 import assert from 'node:assert/strict';
 import {readFile,writeFile,mkdir,copyFile,readdir} from 'node:fs/promises';
@@ -15,7 +16,7 @@ import {Engine} from '../src/core/engine';
 import {geometryData} from '../src/core/sky';
 import {outfitHash as hash} from '../src/production/outfit-components';
 import type {Project,Command} from '../src/core/types';
-const sheet=process.argv[2]??'M001';assert.ok(['M001','M002','M003','M004','M005','M006'].includes(sheet));
+const sheet=process.argv[2]??'M001';assert.ok(['M001','M002','M003','M004','M005','M006','M007'].includes(sheet));
 const info=JSON.parse(await readFile('work/'+sheet.toLowerCase()+'-refinement/production-location.json','utf8')),root=info.root,reportData=JSON.parse(await readFile(root+'/production.json','utf8')),rows=reportData.models,runtime='/tmp/yunshan-'+info.run+'-browser-runtime',url='http://127.0.0.1:4412';
 await mkdir(runtime+'/reference-atlas/images',{recursive:true});await mkdir(root+'/screenshots',{recursive:true});
 for(const file of['atlas-production-index.json','production-index.json','architecture-index.json','material-index.json',...reportData.files.map((r:any)=>r.file)])await copyFile('projects/'+file,runtime+'/'+file);
@@ -45,12 +46,14 @@ try{
    await page.evaluate(async({aid,region,under,postFX})=>{const v=(window as any).voxelStudio;await v.mode('asset',aid);v.clay(false);v.studio(true);v.referenceLighting(true);v.ao(postFX);v.bloom(postFX);v.practicals(false);v.view(under?'underside':'perspective');v.focus(region);},{aid,region,under:row.id==='LIFE-028',postFX:sheet==='M001'});
 
    pair.push(await shot(row.id+'-'+phase+'-material'));
-   if(phase==='after'){const top=sheet==='M006'&&['LIFE-092','LIFE-094','LIFE-106','LIFE-107','LIFE-109'].includes(row.id)||sheet==='M004'&&['LIFE-073','LIFE-075'].includes(row.id)||sheet==='M005'&&['LIFE-078','LIFE-079','LIFE-080','LIFE-081','LIFE-085'].includes(row.id);await page.evaluate(top=>{const v=(window as any).voxelStudio;v.clay(true);v.view(top?'top':'front');},top);await shot(row.id+'-after-'+(top?'top':'front')+'-clay');}
+   if(phase==='after'){const top=sheet==='M007'&&['LIFE-112','LIFE-114','LIFE-115','LIFE-117','LIFE-119'].includes(row.id)||sheet==='M006'&&['LIFE-092','LIFE-094','LIFE-106','LIFE-107','LIFE-109'].includes(row.id)||sheet==='M004'&&['LIFE-073','LIFE-075'].includes(row.id)||sheet==='M005'&&['LIFE-078','LIFE-079','LIFE-080','LIFE-081','LIFE-085'].includes(row.id);await page.evaluate(top=>{const v=(window as any).voxelStudio;v.clay(true);v.view(top?'top':'front');},top);await shot(row.id+'-after-'+(top?'top':'front')+'-clay');}
   }
   const ca=pair[0].camera,cb=pair[1].camera;assert.equal(ca.type,cb.type);const maxError=Math.max(...['position','target','quaternion','projectionMatrix'].flatMap(k=>ca[k].map((v:number,i:number)=>Math.abs(v-cb[k][i]))));assert.ok(maxError<1e-7,JSON.stringify({id:row.id,maxError}));report.cameraComparisons.push({id:row.id,bounds,maxError,baselineGeometryUnchanged:true,appearance:'both versions use same actual purpose finish'});console.log(row.id+' compared');
  }
  let p0:Project;
- if(sheet==='M006'){
+ if(sheet==='M007'){
+  const item=rows.find((r:any)=>r.id==='LIFE-115');await load(item.file);await page.evaluate(async(aid)=>{const v=(window as any).voxelStudio;await v.mode('asset',aid);v.clay(false);v.studio(true);v.referenceLighting(true);v.ao(false);v.bloom(false);v.practicals(false);v.view('front');v.focus({min:[9,8,6],max:[35,48,36]});},item.assetId);await shot('LIFE-115-mark-closeup');p0=await state();await edit([{op:'material',id:p0.styles.yunshan.printedMark,properties:{color:'#af454d'}}]);const p1=await state();assert.deepEqual(p1.assets,p0.assets);for(const[id,mat]of Object.entries(p0.materials))if(Number(id)!==p0.styles.yunshan.printedMark)assert.deepEqual(p1.materials[id],mat);await shot('LIFE-115-mark-recolor');await edit([{op:'undo'}]);assert.deepEqual((await state()).materials,p0.materials);await shot('LIFE-115-mark-undo');
+ }else if(sheet==='M006'){
   const item=rows.find((r:any)=>r.id==='LIFE-107');await load(item.file);await page.evaluate(async(aid)=>{const v=(window as any).voxelStudio;await v.mode('asset',aid);v.clay(false);v.studio(true);v.referenceLighting(true);v.ao(false);v.bloom(false);v.practicals(false);v.view('top');v.focus({min:[12,0,13],max:[99,16,57]});},item.assetId);await shot('LIFE-107-artwork-closeup');p0=await state();const m=p0.assets[item.assetId].meshes!.find(m=>m.artwork)!,d=m.artwork!;await edit([{op:'material',id:d.materials.motif,properties:{color:'#b5444d'}}]);const p1=await state();assert.deepEqual(p1.assets,p0.assets);for(const[id,mat]of Object.entries(p0.materials))if(Number(id)!==d.materials.motif)assert.deepEqual(p1.materials[id],mat);await shot('LIFE-107-artwork-recolor');await edit([{op:'undo'}]);assert.deepEqual((await state()).materials,p0.materials);await shot('LIFE-107-artwork-undo');
  }else if(sheet==='M005'){
   const item=rows.find((r:any)=>r.id==='LIFE-088');await load(item.file);await page.evaluate(async(aid)=>{const v=(window as any).voxelStudio;await v.mode('asset',aid);v.clay(false);v.studio(true);v.referenceLighting(true);v.ao(false);v.bloom(false);v.practicals(false);v.view('front');v.focus({min:[56,28,-8],max:[118,88,20]});},item.assetId);await shot('LIFE-088-mark-closeup');p0=await state();await edit([{op:'material',id:p0.styles.yunshan.inkTeal,properties:{color:'#af4543'}}]);const p1=await state();assert.deepEqual(p1.assets,p0.assets);for(const [id,m] of Object.entries(p0.materials))if(Number(id)!==p0.styles.yunshan.inkTeal)assert.deepEqual(p1.materials[id],m);await shot('LIFE-088-mark-recolor');await edit([{op:'undo'}]);assert.deepEqual((await state()).materials,p0.materials);await shot('LIFE-088-mark-undo');

@@ -6,7 +6,7 @@
 
 67 张完整参考图册已接入「图册」页，793 条参考逐 ID 对齐。累计 **793 个参考 ID（513 个独立图册母版、3 条共享引用、186 个组合模板、91 类参数变体）**已制作为候选，参考转化余 0 条；人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [最后一批环境与家具](docs/M066-M067-FINAL-VARIANTS.md)。已从 M001 开始按效果图逐项打磨，并继续分批推送。
 
-**M006 的12件终端、食材与书画已交付首轮参考精修**：连续斜面、真实叶片与鱼尾、空心药瓶、书册与画卷，以及随GLB导出的屏幕/画心贴图；91项回归与39张逐图检查实拍。[本轮变化](docs/M006-REFERENCE-REFINEMENT.md) · [实际总览](artifacts/atlas/refinement-20261013135409/M006-materials.png) · [GLB](artifacts/atlas/refinement-20261013135409/exports) · [下载包](artifacts/atlas/refinement-20261013135409/PACKAGE-DOWNLOAD.txt)。累计首轮6/67张、72件，接续M007；最终效果图验收另计。[M001](docs/M001-REFERENCE-REFINEMENT.md) · [M002](docs/M002-REFERENCE-REFINEMENT.md) · [M003](docs/M003-REFERENCE-REFINEMENT.md) · [M004](docs/M004-REFERENCE-REFINEMENT.md) · [M005](docs/M005-REFERENCE-REFINEMENT.md)。
+**M007的12件科研与医疗器具已交付首轮精修**：连续斜玻璃罩、双目筒、空心样品容器、真实载台孔与贯通扫描环；60项相关回归，39张逐图检查实拍。[变化](docs/M007-REFERENCE-REFINEMENT.md) · [总览](artifacts/atlas/refinement-20261013191231/M007-materials.png) · [GLB](artifacts/atlas/refinement-20261013191231/exports) · [下载包](artifacts/atlas/refinement-20261013191231/PACKAGE-DOWNLOAD.txt)。累计首轮7/67张、84件，接续M008；最终效果图验收另计。[M001](docs/M001-REFERENCE-REFINEMENT.md) · [M002](docs/M002-REFERENCE-REFINEMENT.md) · [M003](docs/M003-REFERENCE-REFINEMENT.md) · [M004](docs/M004-REFERENCE-REFINEMENT.md) · [M005](docs/M005-REFERENCE-REFINEMENT.md) · [M006](docs/M006-REFERENCE-REFINEMENT.md)。
 
 材质按用途与物理类别分配独立 ID，后期统一更换外观。新配方禁止按颜色借用类别；外观包不能改变类别或碰撞设置。[分类约定与当前复核范围](docs/MATERIAL-ROLES.md) · [显微镜真实前后对照](artifacts/microscope-study/comparison.png)。
 

@@ -1,0 +1,79 @@
+✔ same-looking materials have separate IDs, categories and independent authored roles (55968.780661ms)
+✔ pottery, textile motifs, sockets and instrument panels use physical categories at actual cells (18.012707ms)
+✔ paper, ink, food, book cloth, bottle glass and plastic caps never borrow one another (239.125154ms)
+✔ cloth-only pack edits leave bowls, paper, glass and display pixels unchanged and undo once (2184.387115ms)
+✔ new semantic role allocation respects occupied foreign IDs and rolls back the complete creation (2072.6007ms)
+✔ corrected assignments survive native and GLB export including food and ink categories (9474.187014ms)
+✔ the optical glass, emitting layer, bright core, screen graphics, coating and structural metals are independently addressable (4615.665725ms)
+✔ catalog creation allocates missing semantic IDs without overwriting foreign IDs; undo and failed batches restore bindings (9303.693741ms)
+✔ appearance swaps and GLB/native/atlas/interface export preserve role bindings, occupancy and collision semantics (24491.175618ms)
+✔ research controls, printed marks, paper, plastic caps and chart glyphs do not borrow food, stone or fabric roles (7610.193376ms)
+✔ resource-pack Schema accepts the complete role library but rejects reclassifying materials or changing collision (44.461795ms)
+✔ large classified material libraries keep atomic upserts, bounded schema, dry-run, duplicate rejection and complete undo (53.30297ms)
+✔ M029 plant tissue and drainage roles preserve all fifteen foreign IDs, failed parameters roll back, and one undo removes newly allocated roles (286.391341ms)
+✔ M030 imported IDs survive mixed mesh and textured sky production; one undo removes newly allocated semantic roles (508.605049ms)
+✔ M031 skin eye hair leather and noncollision garment roles preserve foreign IDs and creation rollback (268.575445ms)
+✔ M032 independent suit hat and satchel roles preserve eleven occupied foreign IDs and undo their atomic creation (567.312404ms)
+✔ M033 actual skin binding and plastic guide roles preserve foreign IDs with atomic creation and one undo (908.002344ms)
+✔ M034 hair ornaments, cloth, beard, brows and sparse hair preserve eight foreign IDs and atomic undo (533.153745ms)
+✔ M035 bounded material chunks and larger complete role maps retain atomic rollback and one undo (21.302553ms)
+✔ M035 twenty independent headwear roles preserve foreign slots, creation failure and one undo (622.880574ms)
+✔ M036 fourteen independent garment roles preserve foreign slots, creation failure and one undo (1120.496519ms)
+✔ M037 fifteen costume roles preserve foreign slots, real material assignments, failure rollback and one undo (2342.829151ms)
+✔ M038 twenty-two attire roles preserve foreign slots, real material assignments, failure rollback and one undo (1514.592497ms)
+✔ M039 thirty-four held-prop roles preserve foreign IDs, actual assignments, failure rollback and a single undo (900.557421ms)
+✔ M040 thirty-six service-prop roles preserve foreign IDs, actual assignments, failure rollback and a single undo (1494.952059ms)
+✔ M041 thirty-nine care-prop and animal roles preserve foreign IDs, actual assignments, failure rollback and a single undo (3030.50082ms)
+✔ M042 twenty-three species-specific animal roles preserve foreign IDs, actual assignments, failure rollback and a single undo (2969.556851ms)
+✔ M043 twenty-two wildlife and animal-wear roles preserve occupied IDs, actual assignments, rollback and one undo (2502.017975ms)
+✔ M045 unbound civic guide glass preserves foreign ID 518, batches all current roles, rolls back and undoes with its assembly (188.192615ms)
+✔ M046 aircraft optics, author route markers and facade roles preserve foreign IDs in one reversible transaction (642.098013ms)
+✔ M047 magnetic core and insulation preserve occupied IDs, real assignments, atomic rollback and one undo (403.558107ms)
+✔ M048 eight fleet roles preserve foreign IDs, real uses, atomic rollback and one undo (1253.357778ms)
+✔ library models mesh only when selected or actually instantiated; placements share cache (8.766575ms)
+✔ hidden edits compare against each cached source, including neighboring chunks and deletions (0.987316ms)
+✔ region isolation and layers generate display copies without changing native occupancy (1.925441ms)
+✔ palette/roughness changes reuse geometry; opacity and emission presence invalidate correct caches (0.396899ms)
+✔ upgrading existing furniture variants replaces legacy component counts without duplicating entries (58.828472ms)
+✔ all 12 refinements are explicit; defaults and the baseline selection preserve earlier geometry, ports and roles (6743.097751ms)
+✔ closed continuous components retain connected native fasteners and their actual material collision flags (11961.297394ms)
+✔ socket holes pass through the entire front and backing; stool cap UVs have two noncollapsed axes (870.556467ms)
+✔ public create/rebuild, rejected transactions and one undo retain custom role IDs and original masters (2431.435807ms)
+✔ woven border uses two actual fabric purposes; changing either appearance preserves geometry and every other purpose (2597.342043ms)
+✔ exported curtain contains the exact lit artwork, normal and ORM pixels, source role IDs and unchanged UVs (15732.351492ms)
+✔ lit cloth material uses all three maps and frees each GPU texture once (457.522278ms)
+✔ M007 stays opt-in and preserves all 72 published refinement geometries (69136.815108ms)
+✔ M007 actual arrays closure native attachment and declared assembly groups are valid (24970.350152ms)
+✔ M007 microscope stage bore and independent objective tubes are genuine apertures (2234.920306ms)
+✔ M007 laboratory drain socket slits server vents and tool-ring holes remain physically open (4002.61222ms)
+✔ M007 empty vessel floors clamp stop planes wall contacts and scanner clearance are actual (6280.051272ms)
+✔ M007 purposeful paper bag plastic glass steel and unpowered optics preserve original contracts (20342.653994ms)
+✔ M007 foreign role IDs public rebuild undo and invalid mixed requests remain atomic (21727.585491ms)
+✖ M007 actual GLB glass alpha artwork PBR and isolated graduation ink recolor undo are retained (11754.625564ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 51
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 235081.383261
+
+✖ failing tests:
+
+test at tests/research-refinement.test.ts:1:10002
+✖ M007 actual GLB glass alpha artwork PBR and isolated graduation ink recolor undo are retained (11754.625564ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3 !== 5
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/research-refinement.test.ts:66:989)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

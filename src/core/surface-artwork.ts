@@ -2,10 +2,10 @@ import type {Material} from './types';
 import {surfacePixels} from './surface';
 
 /** Authored pigment/display artwork, saved as a purpose-aware recipe, never a baked render. */
-export type SurfaceArtwork={version:1;design:'finance-v1'|'parcel-v1'|'lesson-v1'|'landscape-v1'|'book-v1'|'control-v1';width:1024;height:768;sizeM:[number,number];materials:{ground:number;motif:number;detail:number}};
+export type SurfaceArtwork={version:1;design:'finance-v1'|'energy-v1'|'parcel-v1'|'lesson-v1'|'landscape-v1'|'book-v1'|'control-v1';width:1024;height:768;sizeM:[number,number];materials:{ground:number;motif:number;detail:number}};
 export function validateSurfaceArtwork(d:SurfaceArtwork,materials?:Record<string,Material>){
- if(!d||d.version!==1||!['finance-v1','parcel-v1','lesson-v1','landscape-v1','book-v1','control-v1'].includes(d.design)||d.width!==1024||d.height!==768||!Array.isArray(d.sizeM)||d.sizeM.length!==2||d.sizeM.some(v=>!Number.isFinite(v)||v<=0||v>10)||!d.materials||Object.keys(d.materials).length!==3||!['ground','motif','detail'].every(k=>Number.isInteger(d.materials[k as 'ground'])&&d.materials[k as 'ground']>0&&d.materials[k as 'ground']<=65535)||new Set(Object.values(d.materials)).size!==3)throw Error('无效纸面/显示图形描述或独立用途映射');
- if(materials){const ms=Object.values(d.materials).map(id=>materials[id]),display=['finance-v1','parcel-v1','lesson-v1','control-v1'].includes(d.design),categories=display?['metal','emissive','emissive']:['paper','ink','ink'];if(ms.some((m,i)=>!m||m.category!==categories[i]||m.intensity!==0))throw Error('图形必须采用实际独立纸/油墨或显示底面/像素用途，并保持零发光');}
+ if(!d||d.version!==1||!['finance-v1','energy-v1','parcel-v1','lesson-v1','landscape-v1','book-v1','control-v1'].includes(d.design)||d.width!==1024||d.height!==768||!Array.isArray(d.sizeM)||d.sizeM.length!==2||d.sizeM.some(v=>!Number.isFinite(v)||v<=0||v>10)||!d.materials||Object.keys(d.materials).length!==3||!['ground','motif','detail'].every(k=>Number.isInteger(d.materials[k as 'ground'])&&d.materials[k as 'ground']>0&&d.materials[k as 'ground']<=65535)||new Set(Object.values(d.materials)).size!==3)throw Error('无效纸面/显示图形描述或独立用途映射');
+ if(materials){const ms=Object.values(d.materials).map(id=>materials[id]),display=['finance-v1','energy-v1','parcel-v1','lesson-v1','control-v1'].includes(d.design),categories=display?['metal','emissive','emissive']:['paper','ink','ink'];if(ms.some((m,i)=>!m||m.category!==categories[i]||m.intensity!==0))throw Error('图形必须采用实际独立纸/油墨或显示底面/像素用途，并保持零发光');}
 }
 export function surfaceArtworkSignature(d:SurfaceArtwork,materials:Record<string,Material>){return JSON.stringify([d,Object.values(d.materials).map(id=>materials[id])]);}
 
@@ -18,7 +18,7 @@ export function surfaceArtworkPixels(d:SurfaceArtwork,materials:Record<string,Ma
  const frame=(x:number,y:number,w:number,h:number,t=.002,r=1,a=1)=>{line(x,y,x+w,y,t,r,a);line(x+w,y,x+w,y+h,t,r,a);line(x+w,y+h,x,y+h,t,r,a);line(x,y+h,x,y,t,r,a);};
  const circle=(x:number,y:number,rx:number,ry=rx,t=.002,r=1,a=1)=>{for(let j=0;j<80;j++){const aa=j*Math.PI/40,bb=(j+1)*Math.PI/40;line(x+rx*Math.cos(aa),y+ry*Math.sin(aa),x+rx*Math.cos(bb),y+ry*Math.sin(bb),t,r,a);}};
  const cube=(x:number,y:number,s:number)=>{const points:[[number,number],[number,number]][]=[[[x,y+s],[x-s,y+s*.5]],[[x-s,y+s*.5],[x,y]],[[x,y],[x+s,y+s*.5]],[[x+s,y+s*.5],[x,y+s]],[[x-s,y+s*.5],[x-s,y-s*.65]],[[x+s,y+s*.5],[x+s,y-s*.65]],[[x-s,y-s*.65],[x,y-s*1.15]],[[x+s,y-s*.65],[x,y-s*1.15]],[[x,y],[x,y-s*1.15]]];for(const[a,b]of points)line(...a,...b,.004);line(x-s*.55,y+s*.78,x+s*.43,y+s*.29,.002,2);};
- if(['finance-v1','parcel-v1','lesson-v1','control-v1'].includes(d.design)){
+ if(['finance-v1','energy-v1','parcel-v1','lesson-v1','control-v1'].includes(d.design)){
   frame(.028,.034,.944,.932,.003);frame(.037,.047,.926,.906,.001,2,.6);
   for(const[x,y]of[[.035,.045],[.035,.93],[.915,.045],[.915,.93]]){line(x,y,x+.045,y,.005,2);line(x,y,x,y+.024,.005,2);}
   if(d.design==='finance-v1'){
@@ -27,6 +27,8 @@ export function surfaceArtworkPixels(d:SurfaceArtwork,materials:Record<string,Ma
    for(let j=0;j<heights.length-1;j++)line(.194+j*.0305,.29+heights[j]*.48,.194+(j+1)*.0305,.29+heights[j+1]*.48,.003,2);
    for(let j=0;j<4;j++){frame(.065,.25+j*.145,.06,.068,.002);rect(.077,.269+j*.145,.015,.036,2);rect(.097,.276+j*.145,.017,.012);circle(.865,.30+j*.155,.041,.051,.002);line(.85,.30+j*.155,.88,.30+j*.155,.003,2);}
    for(let j=0;j<5;j++)rect(.20+j*.12,.11,.078-j*.004,.012,j%2?1:2,.85);rect(.20,.82,.34,.028,2);rect(.20,.866,.18,.014);rect(.61,.82,.14,.065,1,.35);
+  }else if(d.design==='energy-v1'){
+   circle(.32,.62,.165,.24,.003);circle(.32,.62,.14,.203,.001,2,.65);circle(.32,.62,.023,.034,.003,2);for(let j=0;j<8;j++){const a=j*Math.PI/4,x=.32+.14*Math.cos(a),y=.62+.203*Math.sin(a);line(.32,.62,x,y,.002);circle(x,y,.014,.021,.002,2);line(x,y,x+.017*Math.cos(a),y+.025*Math.sin(a),.004,2);}for(let j=0;j<7;j++){frame(.57,.37+j*.075,.034,.042,.002);rect(.635,.385+j*.075,.23-j%3*.027,.008,2);rect(.635,.405+j*.075,.11+j%3*.021,.004,1,.6);}for(let j=0;j<22;j++){const h=.037+.055*(1+Math.sin(j*2.3))+.005*j;rect(.13+j*.034,.125,.020,h,j%5?1:2,.8);if(j)line(.14+(j-1)*.034,.16+.065*(1+Math.sin((j-1)*.7)),.14+j*.034,.16+.065*(1+Math.sin(j*.7)),.002,2);}line(.10,.105,.91,.105,.002);
   }else if(d.design==='parcel-v1'){
    cube(.47,.65,.23);for(let j=0;j<3;j++){frame(.15,.14+j*.09,.04,.04,.002);line(.16,.16+j*.09,.178,.175+j*.09,.004,2);rect(.24,.154+j*.09,.51-j*.065,.009,2);rect(.24,.176+j*.09,.20+j*.05,.006,1,.65);}rect(.15,.87,.40,.015,2);rect(.66,.87,.13,.015);frame(.83,.26,.06,.56,.002);for(let j=0;j<6;j++)rect(.845,.29+j*.079,.03,.03,j%2?2:1,.75);
   }else if(d.design==='lesson-v1'){
