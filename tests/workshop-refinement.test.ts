@@ -45,7 +45,7 @@ test('M005 conveyor has actual upper and lower returns and ports on the steel ch
 test('M005 lift under-space vents pegboard bores wrench rings and cutter bore are true openings',()=>{
  const p=prepared(['LIFE-079','LIFE-082','LIFE-083','LIFE-084']);assert.equal(hits(p,p.assets['life-079'],[.31,.36,-.1],[0,0,1]).length,0);assert.ok(hits(p,p.assets['life-079'],[.78,.383,-.1],[0,0,1]).length>0);
  for(let j=0;j<99;j++){const x=.96-(.117+j%11*.067),y=.631+Math.floor(j/11)*.070;assert.equal(hits(p,p.assets['life-083'],[x,y,.1],[0,0,1],'九十九孔涂装钢挂板').length,0);}assert.ok(hits(p,p.assets['life-083'],[.817,.631,.1],[0,0,1],'九十九孔涂装钢挂板').length>0);
- for(const x of[.647,.487]){assert.equal(hits(p,p.assets['life-083'],[x,1.181,0],[0,0,1],'扳手真实贯通环口').length,0);assert.ok(hits(p,p.assets['life-083'],[x+.034,1.181,0],[0,0,1],'扳手真实贯通环口').length>0);}
+ for(const x of[.647,.487]){assert.equal(hits(p,p.assets['life-083'],[x,1.181,0],[0,0,1],'扳手真实贯通环口').length,0);assert.ok(hits(p,p.assets['life-083'],[x+.034,1.181,0],[0,0,1],'扳手真实贯通环口').length>0);assert.equal(hits(p,p.assets['life-083'],[x,.845,0],[0,0,1],'扳手').length,0,'actual lower bore must remain clear through the complete wrench, not only its ring component');assert.ok(hits(p,p.assets['life-083'],[x+.018,.845,0],[0,0,1],'扳手').length>0);}
  assert.ok(Math.abs(hits(p,p.assets['life-082'],[1.4,.36,.176],[-1,0,0])[0].p.x-.212)<1e-7);assert.ok(Math.abs(hits(p,p.assets['life-082'],[.60,.8,.03],[0,0,1])[0].p.z-.737)<1e-7);
  assert.equal(hits(p,p.assets['life-084'],[.41,.735,.1],[0,0,1],'一体钢刀盘').length,0);assert.ok(hits(p,p.assets['life-084'],[.18,.735,.1],[0,0,1],'一体钢刀盘').length>0);
 });
