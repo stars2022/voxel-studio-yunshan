@@ -1,3 +1,4 @@
+import {surfaceArtworkSignature} from '../core/surface-artwork';
 import {wovenPatternSignature} from '../core/woven-pattern';
 import {texturedFaceMaterial} from './face-material';
 import {faceAtlasSignature} from '../core/face-atlas';
@@ -117,7 +118,7 @@ export class Viewer {
   const tasks:Promise<void>[]=[];
   for(const key of visible){
    const a=project.assets[key],gridAsset=displayAsset(a,this.mode==='asset'?this.layer:null,this.mode==='asset'?this.isolatedRegion:null),old=this.cacheSources.get(key),assetSignature=signature+(a.sky?JSON.stringify(Object.values(a.sky.materials).map(id=>[id,project.materials[id].color,project.materials[id].opacity])):'');
-   const effectSignature=assetSignature+JSON.stringify((a.meshes??[]).filter(m=>m.atmosphere||m.faceAtlas||m.wovenPattern).map(m=>m.wovenPattern?wovenPatternSignature(m.wovenPattern,project.materials):m.faceAtlas?faceAtlasSignature(m.faceAtlas,project.materials):[m.material,project.materials[m.material].color,project.materials[m.material].opacity]));
+   const effectSignature=assetSignature+JSON.stringify((a.meshes??[]).filter(m=>m.atmosphere||m.faceAtlas||m.wovenPattern||m.artwork).map(m=>m.artwork?surfaceArtworkSignature(m.artwork,project.materials):m.wovenPattern?wovenPatternSignature(m.wovenPattern,project.materials):m.faceAtlas?faceAtlasSignature(m.faceAtlas,project.materials):[m.material,project.materials[m.material].color,project.materials[m.material].opacity]));
    const changed=dirtyMeshChunks(old?.asset,gridAsset,old?.signature!==effectSignature);this.cacheAccess.set(key,++this.accessClock);
    if(!changed.length){this.cacheSources.set(key,{asset:gridAsset,signature:effectSignature});continue;}
    const id=crypto.randomUUID();this.lastMeshedAssets.push(key);this.meshJobs++;

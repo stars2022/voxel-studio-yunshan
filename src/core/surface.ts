@@ -1,4 +1,4 @@
-export const surfaceKinds = ['none','stone','wood','metal','ceramic','fabric'] as const;
+export const surfaceKinds = ['none','stone','wood','metal','ceramic','fabric','paper'] as const;
 export type SurfaceKind = typeof surfaceKinds[number];
 // Deterministic, tileable material detail. This is shading, never occupancy or geometry.
 // Shared by the WebGL editor and GLB export; coordinates are in local metres.
@@ -13,6 +13,7 @@ export function surfacePixels(kind:SurfaceKind,strength=.35,size=128,seed=0){
   else if(kind==='metal')h=.65*hash(x,0)+.35*n;
   else if(kind==='fabric')h=.5+.2*Math.cos(u*tau*32)+.2*Math.cos(v*tau*32)+.1*n;
   else if(kind==='ceramic')h=.65+.25*n+.1*low;
+  else if(kind==='paper')h=.55*n+.25*hash(x+1,y)+.20*low;
   else h=.5*n+.3*low+.2*Math.sin(v*tau*9)*Math.cos(u*tau*7);
   height[y*size+x]=h;
   const shade=Math.round(255*(1-strength*(1-h)*.36)),o=(y*size+x)*4;
@@ -48,6 +49,8 @@ function authoredSurface(kind:SurfaceKind,strength:number,size:number,seed:numbe
    h=.16*noise(u,v,71,2)+.1*fine;shade=1-strength*(.035+.13*fine);r=.91-.13*noise(u,v,32,3);
   }else if(kind==='fabric'){
    h=.45+.16*Math.sin(u*Math.PI*64)+.16*Math.sin(v*Math.PI*64)+.1*fine;shade=1-strength*(.12+.17*h);r=.97;
+  }else if(kind==='paper'){
+   h=.50*noise(u,v,37,9)+.30*fine+.20*mid;shade=1-strength*(.02+.16*h);r=.98-.03*mid;
   }else if(kind==='ceramic'){
    h=.12*mid+.04*fine;shade=1-strength*(.04+.14*broad);r=.96-.12*mid;
   }else{

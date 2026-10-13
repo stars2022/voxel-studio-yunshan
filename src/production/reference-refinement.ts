@@ -1,3 +1,4 @@
+import {commerceRefinementIds,makeCommerceRefinement} from './commerce-refinement';
 import {DetailBuilder} from './refinement-builder';
 import {kitchenRefinementIds,makeKitchenRefinement} from './kitchen-refinement';
 import {domesticRefinementIds,makeDomesticRefinement} from './domestic-refinement';
@@ -14,12 +15,13 @@ import {slottedPlate,foldedCloth} from './refinement-detail-shapes';
 import {bevelBox,bevelMember,roundMember,radialUV} from './refinement-shapes';
 
 export const m001RefinementIds=['LIFE-008','LIFE-009','LIFE-019','LIFE-020','LIFE-023','LIFE-024','LIFE-025','LIFE-026','LIFE-027','LIFE-028','LIFE-029','LIFE-030'];
-export const referenceRefinementIds=[...m001RefinementIds,...kitchenRefinementIds,...domesticRefinementIds,...marketRefinementIds,...workshopRefinementIds];
+export const referenceRefinementIds=[...m001RefinementIds,...kitchenRefinementIds,...domesticRefinementIds,...marketRefinementIds,...workshopRefinementIds,...commerceRefinementIds];
 export function makeReferenceRefinement(catalogId:string,name:string,id:string,style:Record<string,number>,context:Project){
  if(!referenceRefinementIds.includes(catalogId))throw Error('此资产尚未验证参考精修版本');
  if(kitchenRefinementIds.includes(catalogId))return makeKitchenRefinement(catalogId,name,id,style,context);
  if(domesticRefinementIds.includes(catalogId))return makeDomesticRefinement(catalogId,name,id,style,context);
  if(marketRefinementIds.includes(catalogId))return makeMarketRefinement(catalogId,name,id,style,context);
+ if(commerceRefinementIds.includes(catalogId))return makeCommerceRefinement(catalogId,name,id,style,context);
  if(workshopRefinementIds.includes(catalogId))return makeWorkshopRefinement(catalogId,name,id,style,context);
  const p=context,original=makeLifeAsset(catalogId,name,id,style),b=new DetailBuilder(p,original,style);
  if(catalogId==='LIFE-008'){

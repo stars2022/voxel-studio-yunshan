@@ -1,0 +1,17 @@
+/workspace/voxel-studio-yunshan/src/production/refinement-builder.ts:23
+  const plane=(name:string,part:AuthoredMesh,axis:number,sign:number,kind:string)=>{const coords=Array.from({length:part.positions.length/3},(_,i)=>part.positions.slice(i*3,i*3+3)as V3),limit=sign<0?Math.min(...coords.map(v=>v[axis])):Math.max(...coords.map(v=>v[axis])),ps=coords.filter(v=>Math.abs(v[axis]-limit)<1e-8),lo=[0,1,2].map(k=>Math.min(...ps.map(p=>p[k]))),hi=[0,1,2].map(k=>Math.max(...ps.map(p=>p[k]))),normal=[0,0,0]as V3;normal[axis]=sign;return port(name,lo.map((v,k)=>(v+hi[k])/2)as V3,normal,lo.map((v,k)=>hi[k]-v)as V3,kind);};
+                                                                                                                                                                                                            ^
+
+RangeError: Maximum call stack size exceeded
+    at plane (/workspace/voxel-studio-yunshan/src/production/refinement-builder.ts:23:205)
+    at DetailBuilder.mountPorts (/workspace/voxel-studio-yunshan/src/production/refinement-builder.ts:30:10)
+    at DetailBuilder.finish (/workspace/voxel-studio-yunshan/src/production/refinement-builder.ts:39:21)
+    at done (/workspace/voxel-studio-yunshan/src/production/commerce-refinement.ts:20:152)
+    at makeCommerceRefinement (/workspace/voxel-studio-yunshan/src/production/commerce-refinement.ts:47:10)
+    at makeReferenceRefinement (/workspace/voxel-studio-yunshan/src/production/reference-refinement.ts:24:54)
+    at makeCatalogAsset (/workspace/voxel-studio-yunshan/src/production/catalog-assets.ts:52:10)
+    at Engine.apply (/workspace/voxel-studio-yunshan/src/core/engine.ts:86:12)
+    at Engine.execute (/workspace/voxel-studio-yunshan/src/core/engine.ts:55:39)
+    at edit (/workspace/voxel-studio-yunshan/work/m006-refinement/preview-draft.ts:18:124)
+
+Node.js v24.19.0

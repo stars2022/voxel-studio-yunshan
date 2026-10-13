@@ -42,27 +42,27 @@
   },
   "activeBatch": {
     "sheets": [
-      "M006"
+      "M007"
     ],
     "subBatch": "reference-art-refinement",
     "state": "queued",
     "ids": [
-      "LIFE-089",
-      "LIFE-090",
-      "LIFE-091",
-      "LIFE-092",
-      "LIFE-093",
-      "LIFE-094",
-      "LIFE-095",
-      "LIFE-096",
-      "LIFE-106",
-      "LIFE-107",
-      "LIFE-109",
-      "LIFE-110"
+      "LIFE-111",
+      "LIFE-112",
+      "LIFE-113",
+      "LIFE-114",
+      "LIFE-115",
+      "LIFE-116",
+      "LIFE-117",
+      "LIFE-118",
+      "LIFE-119",
+      "LIFE-120",
+      "LIFE-121",
+      "LIFE-122"
     ],
     "scope": "按图册及格位顺序接续参考形体、用途材质、纹理和实际对照；保留旧母版并分批推送。"
   },
-  "nextBatch": "M006",
+  "nextBatch": "M007",
   "workflow": [
     "核对清单范围、明确米制尺寸并查看参考图",
     "制作基础体素块件、适用的连续网格/贴图、独立用途材质和安装接口",
@@ -79,8 +79,8 @@
   "historicalEvidence": "M001–M016 evidence retains its original run and host; not relabelled as new cloud checks",
   "nextBatchNotes": [
     "793/793参考已完成技术转化，67张齐全；原闭环证明保留于atlas-20261007102004/reference-completion.json。",
-    "M005首轮12件已交付：13原生、12新GLB、12历史母版/GLB、39逐图检查实拍、83项回归；不增加参考或基础母版。",
-    "继续M006；沿用显式refinement版本，默认旧配方和历史原件保持可追溯。",
+    "M006首轮12件已交付：13原生、12新GLB、27张图形PNG、12历史母版/GLB、39逐图检查实拍、91项回归；不增加参考或基础母版。",
+    "继续M007；沿用显式refinement版本，默认旧配方和历史原件保持可追溯。",
     "最小组件保留5mm体素；斜面、倒角和曲面可连续，适合的视觉图形用实际导出贴图。",
     "M001镜面环境反射、独立陈设组合、灯面细纹和孔洞背景对比仍有差距，后续细化清单见visual-review.json；人工美术验收仍为0。",
     "每批验证后推送origin/main已授权。浏览器严格串行并冻结源代码；构建后核实际加载bundle SHA。",
@@ -94,16 +94,16 @@
   },
   "lastCompletedBatch": {
     "sheets": [
-      "M005"
+      "M006"
     ],
     "subBatch": "reference-art-refinement-v1",
-    "run": "refinement-20261013114151",
+    "run": "refinement-20261013135409",
     "state": "validated-first-pass",
     "wholeSheetFirstPassDelivered": true,
     "refinedReferences": 12,
     "newReferences": 0,
     "humanArtAccepted": false,
-    "evidence": "artifacts/atlas/refinement-20261013114151"
+    "evidence": "artifacts/atlas/refinement-20261013135409"
   },
   "refinementPhase": {
     "status": "in-progress",
@@ -120,9 +120,9 @@
     ],
     "acceptance": "技术通过不等于视觉达标；人工验收不自动记通过",
     "authorization": "用户：搞完后从头开始打磨，达到效果图级别",
-    "firstPassSheets": 5,
-    "lastDeliveredSheet": "M005",
-    "nextSheet": "M006"
+    "firstPassSheets": 6,
+    "lastDeliveredSheet": "M006",
+    "nextSheet": "M007"
   },
   "conversionPhase": {
     "status": "complete-technical-candidates",
@@ -137,12 +137,12 @@
     "target": "reference-render quality",
     "completedSheets": 0,
     "scope": "Sequential reference-art refinement; retain source masters and same-camera actual before/after3D views.",
-    "firstPassSheets": 5,
-    "firstPassReferences": 60,
-    "lastDeliveredSheet": "M005",
-    "nextSheet": "M006",
+    "firstPassSheets": 6,
+    "firstPassReferences": 72,
+    "lastDeliveredSheet": "M006",
+    "nextSheet": "M007",
     "humanArtAccepted": 0,
-    "evidence": "artifacts/atlas/refinement-20261013114151/visual-review.json",
+    "evidence": "artifacts/atlas/refinement-20261013135409/visual-review.json",
     "completedSheetsMeaning": "最终效果图质量验收；首轮打磨交付另记firstPassSheets，技术通过不自动等于最终视觉达标。"
   },
   "lastConversionBatch": {
