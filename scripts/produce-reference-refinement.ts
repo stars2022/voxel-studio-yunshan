@@ -7,6 +7,7 @@ import {KHRMaterialsEmissiveStrength,KHRMaterialsUnlit,KHRLightsPunctual} from '
 import {productionProject} from '../src/production/style';
 import {m001RefinementIds} from '../src/production/reference-refinement';
 import {kitchenRefinementIds} from '../src/production/kitchen-refinement';
+import {domesticRefinementIds} from '../src/production/domestic-refinement';
 import {referenceFinishCommands} from '../src/production/reference-finish';
 import {refinementFinishCommands} from '../src/production/refinement-finish';
 import {Engine,validateProject} from '../src/core/engine';
@@ -20,8 +21,8 @@ import {exportProject} from '../src/export/exporter';
 import {outfitHash as hash} from '../src/production/outfit-components';
 import {layoutAtlasGallery} from '../src/production/gallery-layout';
 import type {Project,Command} from '../src/core/types';
-const sheet=process.argv[2]??'M001';assert.ok(['M001','M002'].includes(sheet),'Expected M001 or M002');
-const referenceRefinementIds=sheet==='M001'?m001RefinementIds:kitchenRefinementIds;
+const sheet=process.argv[2]??'M001';assert.ok(['M001','M002','M003'].includes(sheet),'Expected M001, M002 or M003');
+const referenceRefinementIds=sheet==='M001'?m001RefinementIds:sheet==='M002'?kitchenRefinementIds:domesticRefinementIds;
 await mkdir('work/'+sheet.toLowerCase()+'-refinement',{recursive:true});
 const run='refinement-'+new Date().toISOString().replace(/\D/g,'').slice(0,14),root='artifacts/atlas/'+run;
 await mkdir(root+'/baselines',{recursive:true});
