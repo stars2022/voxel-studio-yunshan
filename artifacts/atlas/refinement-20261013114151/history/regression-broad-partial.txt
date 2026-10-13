@@ -1,0 +1,491 @@
+
+> yunshan-voxel-studio@0.1.0 test:cloud
+> tsx --test --test-concurrency=2 tests/*.test.ts
+
+✔ the two supplied architecture sheets produce 28 distinct editable native structures (10295.847089ms)
+✔ entrances, straight bridge and corner gallery retain real clear passages (5316.844628ms)
+✔ default architecture has no floating roof teeth, light strips, glazing or finials (26145.416185ms)
+✔ coarser masonry and step lamps remain attached after quantisation (119.382341ms)
+✔ window lattice, soil setback and roof layering are actual occupied/empty cells (1147.661492ms)
+✔ door open parameter rebuilds leaves as geometry and opens a real passage (696.590299ms)
+✔ MCP command path preserves CAS, preview, rollback and whole-transaction undo for the new templates (3661.106907ms)
+✔ adjacent floor ports join on-grid without overlap; sparse part metadata does not lift edit limits (2743.026493ms)
+✔ detail templates preserve real cells, part hierarchy and deterministic regeneration (6661.961749ms)
+✔ detailed bay retains a clear door after parameter change and atomic undo (9436.618556ms)
+✔ planter is hollow and contains distinct stems, leaves, flowers and raised ornament cells (159.268658ms)
+✔ rail gap, joinery and lantern emitters are geometry; shading keeps the same occupancy (632.493684ms)
+✔ detail budget, unsupported pitch and invalid texture input fail without changing document (4.407444ms)
+✔ M021 has twelve measured native masters, faithful source hashes, empty openings and two intentional side windows (5356.645004ms)
+✔ aircraft coating, golden blade, landing rubber, window seal, glass, control pixels and bridge layers use distinct real cells (0.801635ms)
+✔ four arms, four blades and four legs dock to an explicit auxiliary fixture with real vertical contacts (610.263896ms)
+✔ two separated cockpit windows receive the roof and leave the authored eye line open above the low console (4791.031627ms)
+✔ 8.4m wing root is supported independently while the 4m tail, fin and power box assemble without covering intake cavities (4676.482269ms)
+✔ six high-bridge decks, five joints and six beams keep exact 254.6/254/252.8 elevations, support contacts and historical limitations (1603.255165ms)
+✔ new aircraft roles remain separate through appearance changes, native and GLB export, then undo once (6069.881048ms)
+✔ occupied IDs and missing roles are preserved, new roles create atomically, and unverified depth rejects without partial changes (122.642846ms)
+✔ M061 real independent infant/preschool bodies meet0.6m/1mheights with unscaled heads, retained5mmnative details and actual neck/sole contact (2162.363239ms)
+✔ M061 age variants retain exact historic adult001parent plus real061/062and067source geometry (2776.351713ms)
+✔ M061 official schema admits CHAR age variants while wrong bands, cross-family keys and wrong catalog types roll back and one undo restores all content (4480.198308ms)
+✔ M061 age variants export actual nonphysical GLB metre bounds afterquarterturn with one undo restoring exact source placements (7087.243919ms)
+
+Interrupted while running:
+
+⚠ tests/atlas-architecture-assemblies.test.ts (tests/atlas-architecture-assemblies.test.ts:1:1)
+⚠ tests/atlas-attire.test.ts (tests/atlas-attire.test.ts:1:1)
+⚠ tests/atlas-avatar.test.ts (tests/atlas-avatar.test.ts:1:1)
+⚠ tests/atlas-body-variants.test.ts (tests/atlas-body-variants.test.ts:1:1)
+⚠ tests/atlas-bridges.test.ts (tests/atlas-bridges.test.ts:1:1)
+⚠ tests/atlas-building-variants.test.ts (tests/atlas-building-variants.test.ts:1:1)
+✖ tests/atlas-architecture-assemblies.test.ts (248883.617433ms)
+✔ M038 twelve independent masters and twenty-four variants have closed oriented surfaces, attached native details and correct provenance (1369.320067ms)
+✔ M038 named scenes and every supported variant clear actual body, clothing, head, hair, hand and foot triangles, including reflected gloves (84299.019475ms)
+✔ M038 true neck, cuff, finger, hood and bag apertures retain their intended floors and closed ends (4182.182538ms)
+✔ M038 both bag lids clear the actual body and fixed straps at eight stated angles about the actual prop pivot (3845.770417ms)
+✔ M038 retained sources and explicit derivatives do not inflate catalog masters or retain hidden old body/wrap surfaces (4243.620301ms)
+✔ M038 humanoid, hand and prop skins roundtrip independently evaluated posed GLB bounds and real socket transforms (3323.251305ms)
+✔ M038 purpose-specific appearance updates and one undo preserve all native data, continuous surfaces, rigs and holes (2946.683231ms)
+✔ M038 preserves all M036/M037 geometry hashes, rejects unsupported parameters and refuses semantic role substitution (1794.925588ms)
+✔ M033 twelve distinct masters and twenty-six variants keep closed oriented real meshes, attached blocks and source provenance (6313.573726ms)
+✔ every posed rig exports genuine joint/IBM/weight data evaluated independently, including translated rotated copies and mirrored hand (16748.176985ms)
+✔ all four adult and independent-width child hair shells clear actual scalp, ears, eyes and voxel facial details (3527.100881ms)
+✔ bare foot has a real underside arch gap and five toe surfaces; fully clothed abdomen replaces the original body middle (32.366411ms)
+✔ new poses rebuild atomically, preserve bind cells, support independent material pack undo and reject unknown enums (777.427125ms)
+✔ seven author studies use real head/limb replacements, label derivatives and retain source masters (1136.574684ms)
+✔ curled fingers keep separate surfaces and an actual fifteen-millimetre grip gauge clears the adult hand (58.630913ms)
+✔ M064–M065 all24body/growth/skin forms retain actual parents, closed surfaces,5mmattached islands and exact foot/head boundaries (4246.404494ms)
+✔ Both072abdomen families keep true matching seams and strictly increasing closed volumes; late stage retains exact original geometry (537.913898ms)
+✔ Five fine-skin variants coexist and change only their own actual head/hands/feet while preserving mirrored joints and all other purposes (4644.527029ms)
+✔ Official body schema preserves foreign2200/1800 and rejects cross-family parameters/types with complete rollback and one undo (2457.2856ms)
+✔ M019 has twelve distinct connected native masters, exact reference provenance and genuinely empty declared openings (12147.012544ms)
+✔ actual cable, road, glass, lamp, masonry and roofing cells have independent physical roles (1.264942ms)
+✔ catalogue spans, offsets, post widths and openings remain measurable geometry (66.199957ms)
+✔ coarse rail bed and fine guard strips assemble without expanding three hundred million individual cells (17412.460272ms)
+✔ shaft keeps the car path empty and the side guide on supported external brackets; cable fixture realizes 9m/8.5m centres (2161.630418ms)
+✔ four independent bridge posts receive four reused horizontal rails with clear travel space (1373.224053ms)
+✔ 160m main cables, correctly located towers and three central hanger stations have true faces and no intersections (7182.628617ms)
+✔ only verified hanger heights rebuild atomically; occupied preferred cable IDs survive with one undo (172.882123ms)
+✔ material pack changes only appearance and exports intact native IDs, with one undo and transaction rollback (9297.987527ms)
+✖ tests/atlas-building-variants.test.ts (37822.714828ms)
+✖ tests/atlas-care.test.ts
+✖ tests/atlas-character-palettes.test.ts
+✖ tests/atlas-character.test.ts
+✖ tests/atlas-civic-assemblies.test.ts
+✖ tests/atlas-civic.test.ts
+✖ tests/atlas-commerce.test.ts
+✖ tests/atlas-community-assemblies.test.ts
+✖ tests/atlas-costumes.test.ts
+✖ tests/atlas-culture.test.ts
+✖ tests/atlas-district-assemblies.test.ts
+✖ tests/atlas-domestic.test.ts
+✖ tests/atlas-ecology.test.ts
+✖ tests/atlas-environment-assemblies.test.ts
+✖ tests/atlas-exterior.test.ts
+✖ tests/atlas-face-variants.test.ts
+✖ tests/atlas-fauna.test.ts
+✖ tests/atlas-festival.test.ts
+✖ tests/atlas-figure.test.ts
+✖ tests/atlas-final-variants.test.ts
+✖ tests/atlas-fleet-assemblies.test.ts
+✖ tests/atlas-garments.test.ts
+✖ tests/atlas-groundscape.test.ts
+✖ tests/atlas-habitat-assemblies.test.ts
+✖ tests/atlas-headwear.test.ts
+✖ tests/atlas-held.test.ts
+✖ tests/atlas-hydrology.test.ts
+✖ tests/atlas-institutional-assemblies.test.ts
+✖ tests/atlas-joinery.test.ts
+✖ tests/atlas-landscape.test.ts
+✖ tests/atlas-legacy-building.test.ts
+✖ tests/atlas-legacy-variants.test.ts
+✖ tests/atlas-life-space-assemblies.test.ts
+✖ tests/atlas-living-assemblies.test.ts
+✖ tests/atlas-lod-variants.test.ts
+✖ tests/atlas-m060-buildings.test.ts
+✖ tests/atlas-material-correction.test.ts
+✖ tests/atlas-metropolis-assemblies.test.ts
+✖ tests/atlas-neighborhood.test.ts
+✖ tests/atlas-outfit-assemblies.test.ts
+✖ tests/atlas-park-assemblies.test.ts
+✖ tests/atlas-portals.test.ts
+✖ tests/atlas-profession-assemblies.test.ts
+✖ tests/atlas-public-service.test.ts
+✖ tests/atlas-public-space-assemblies.test.ts
+✖ tests/atlas-regional-assemblies.test.ts
+✖ tests/atlas-research.test.ts
+✖ tests/atlas-roof-wall-variants.test.ts
+✖ tests/atlas-service.test.ts
+✖ tests/atlas-stations.test.ts
+✖ tests/atlas-structure.test.ts
+✖ tests/atlas-terrain.test.ts
+✖ tests/atlas-transport.test.ts
+✖ tests/atlas-urban.test.ts
+✖ tests/atlas-vessels.test.ts
+✖ tests/atlas-waterfront.test.ts
+✖ tests/atlas-wearables.test.ts
+✖ tests/atlas-wildlife.test.ts
+✖ tests/atlas-workshop.test.ts
+✖ tests/atlas.test.ts
+✖ tests/catalog.test.ts
+✖ tests/collision-intervals.test.ts
+✖ tests/core.test.ts
+✖ tests/document-sync.test.ts
+✖ tests/domestic-refinement.test.ts
+✖ tests/geometry-study.test.ts
+✖ tests/import-export.test.ts
+✖ tests/kitchen-refinement.test.ts
+✖ tests/market-refinement.test.ts
+✖ tests/material-roles.test.ts
+✖ tests/mesh-plan.test.ts
+✖ tests/millimetre-grid.test.ts
+✖ tests/polish.test.ts
+✖ tests/production-library-counts.test.ts
+✖ tests/production.test.ts
+✖ tests/reference-finish.test.ts
+✖ tests/reference-refinement.test.ts
+✖ tests/reference.test.ts
+✖ tests/render-materials.test.ts
+✖ tests/rig.test.ts
+✖ tests/viewer-framing.test.ts
+✖ tests/workshop-refinement.test.ts
+ℹ tests 136
+ℹ suites 0
+ℹ pass 53
+ℹ fail 0
+ℹ cancelled 83
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 300717.317812
+
+✖ failing tests:
+
+test at tests/atlas-architecture-assemblies.test.ts:1:1
+✖ tests/atlas-architecture-assemblies.test.ts (248883.617433ms)
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-building-variants.test.ts:1:1
+✖ tests/atlas-building-variants.test.ts (37822.714828ms)
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-care.test.ts:1:1
+✖ tests/atlas-care.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-character-palettes.test.ts:1:1
+✖ tests/atlas-character-palettes.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-character.test.ts:1:1
+✖ tests/atlas-character.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-civic-assemblies.test.ts:1:1
+✖ tests/atlas-civic-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-civic.test.ts:1:1
+✖ tests/atlas-civic.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-commerce.test.ts:1:1
+✖ tests/atlas-commerce.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-community-assemblies.test.ts:1:1
+✖ tests/atlas-community-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-costumes.test.ts:1:1
+✖ tests/atlas-costumes.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-culture.test.ts:1:1
+✖ tests/atlas-culture.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-district-assemblies.test.ts:1:1
+✖ tests/atlas-district-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-domestic.test.ts:1:1
+✖ tests/atlas-domestic.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-ecology.test.ts:1:1
+✖ tests/atlas-ecology.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-environment-assemblies.test.ts:1:1
+✖ tests/atlas-environment-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-exterior.test.ts:1:1
+✖ tests/atlas-exterior.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-face-variants.test.ts:1:1
+✖ tests/atlas-face-variants.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-fauna.test.ts:1:1
+✖ tests/atlas-fauna.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-festival.test.ts:1:1
+✖ tests/atlas-festival.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-figure.test.ts:1:1
+✖ tests/atlas-figure.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-final-variants.test.ts:1:1
+✖ tests/atlas-final-variants.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-fleet-assemblies.test.ts:1:1
+✖ tests/atlas-fleet-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-garments.test.ts:1:1
+✖ tests/atlas-garments.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-groundscape.test.ts:1:1
+✖ tests/atlas-groundscape.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-habitat-assemblies.test.ts:1:1
+✖ tests/atlas-habitat-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-headwear.test.ts:1:1
+✖ tests/atlas-headwear.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-held.test.ts:1:1
+✖ tests/atlas-held.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-hydrology.test.ts:1:1
+✖ tests/atlas-hydrology.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-institutional-assemblies.test.ts:1:1
+✖ tests/atlas-institutional-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-joinery.test.ts:1:1
+✖ tests/atlas-joinery.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-landscape.test.ts:1:1
+✖ tests/atlas-landscape.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-legacy-building.test.ts:1:1
+✖ tests/atlas-legacy-building.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-legacy-variants.test.ts:1:1
+✖ tests/atlas-legacy-variants.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-life-space-assemblies.test.ts:1:1
+✖ tests/atlas-life-space-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-living-assemblies.test.ts:1:1
+✖ tests/atlas-living-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-lod-variants.test.ts:1:1
+✖ tests/atlas-lod-variants.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-m060-buildings.test.ts:1:1
+✖ tests/atlas-m060-buildings.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-material-correction.test.ts:1:1
+✖ tests/atlas-material-correction.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-metropolis-assemblies.test.ts:1:1
+✖ tests/atlas-metropolis-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-neighborhood.test.ts:1:1
+✖ tests/atlas-neighborhood.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-outfit-assemblies.test.ts:1:1
+✖ tests/atlas-outfit-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-park-assemblies.test.ts:1:1
+✖ tests/atlas-park-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-portals.test.ts:1:1
+✖ tests/atlas-portals.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-profession-assemblies.test.ts:1:1
+✖ tests/atlas-profession-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-public-service.test.ts:1:1
+✖ tests/atlas-public-service.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-public-space-assemblies.test.ts:1:1
+✖ tests/atlas-public-space-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-regional-assemblies.test.ts:1:1
+✖ tests/atlas-regional-assemblies.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-research.test.ts:1:1
+✖ tests/atlas-research.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-roof-wall-variants.test.ts:1:1
+✖ tests/atlas-roof-wall-variants.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-service.test.ts:1:1
+✖ tests/atlas-service.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-stations.test.ts:1:1
+✖ tests/atlas-stations.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-structure.test.ts:1:1
+✖ tests/atlas-structure.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-terrain.test.ts:1:1
+✖ tests/atlas-terrain.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-transport.test.ts:1:1
+✖ tests/atlas-transport.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-urban.test.ts:1:1
+✖ tests/atlas-urban.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-vessels.test.ts:1:1
+✖ tests/atlas-vessels.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-waterfront.test.ts:1:1
+✖ tests/atlas-waterfront.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-wearables.test.ts:1:1
+✖ tests/atlas-wearables.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-wildlife.test.ts:1:1
+✖ tests/atlas-wildlife.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas-workshop.test.ts:1:1
+✖ tests/atlas-workshop.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/atlas.test.ts:1:1
+✖ tests/atlas.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/catalog.test.ts:1:1
+✖ tests/catalog.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/collision-intervals.test.ts:1:1
+✖ tests/collision-intervals.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/core.test.ts:1:1
+✖ tests/core.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/document-sync.test.ts:1:1
+✖ tests/document-sync.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/domestic-refinement.test.ts:1:1
+✖ tests/domestic-refinement.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/geometry-study.test.ts:1:1
+✖ tests/geometry-study.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/import-export.test.ts:1:1
+✖ tests/import-export.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/kitchen-refinement.test.ts:1:1
+✖ tests/kitchen-refinement.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/market-refinement.test.ts:1:1
+✖ tests/market-refinement.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/material-roles.test.ts:1:1
+✖ tests/material-roles.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/mesh-plan.test.ts:1:1
+✖ tests/mesh-plan.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/millimetre-grid.test.ts:1:1
+✖ tests/millimetre-grid.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/polish.test.ts:1:1
+✖ tests/polish.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/production-library-counts.test.ts:1:1
+✖ tests/production-library-counts.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/production.test.ts:1:1
+✖ tests/production.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/reference-finish.test.ts:1:1
+✖ tests/reference-finish.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/reference-refinement.test.ts:1:1
+✖ tests/reference-refinement.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/reference.test.ts:1:1
+✖ tests/reference.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/render-materials.test.ts:1:1
+✖ tests/render-materials.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/rig.test.ts:1:1
+✖ tests/rig.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/viewer-framing.test.ts:1:1
+✖ tests/viewer-framing.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
+
+test at tests/workshop-refinement.test.ts:1:1
+✖ tests/workshop-refinement.test.ts
+  'Promise resolution is still pending but the event loop has already resolved'
