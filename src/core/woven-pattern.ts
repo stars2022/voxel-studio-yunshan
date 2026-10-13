@@ -2,9 +2,9 @@ import type {Material} from './types';
 import {surfacePixels} from './surface';
 
 /** Saved cloth artwork, evaluated from the actual two fabric purposes. */
-export type WovenPattern={version:1;width:1024;materials:{ground:number;motif:number}} & ({design:'hui-border-v1';height:192;sizeM:[.8,.12]}|{design:'hui-rug-v1';height:768;sizeM:[1.8,1.2]}|{design:'hui-towel-v1';height:384;sizeM:[.18,.065]});
+export type WovenPattern={version:1;width:1024;materials:{ground:number;motif:number}} & ({design:'hui-border-v1';height:192;sizeM:[.8,.12]}|{design:'hui-rug-v1';height:768;sizeM:[1.8,1.2]}|{design:'hui-towel-v1';height:384;sizeM:[.18,.065]}|{design:'market-stripe-v1';height:192;sizeM:[1.4,.12]});
 export function validateWovenPattern(d:WovenPattern,materials?:Record<string,Material>){
- const specs={'hui-border-v1':{height:192,size:[.8,.12]},'hui-rug-v1':{height:768,size:[1.8,1.2]},'hui-towel-v1':{height:384,size:[.18,.065]}},s=d&&specs[d.design];
+ const specs={'hui-border-v1':{height:192,size:[.8,.12]},'hui-rug-v1':{height:768,size:[1.8,1.2]},'hui-towel-v1':{height:384,size:[.18,.065]},'market-stripe-v1':{height:192,size:[1.4,.12]}},s=d&&specs[d.design];
  if(!d||!s||d.version!==1||d.width!==1024||d.height!==s.height||JSON.stringify(d.sizeM)!==JSON.stringify(s.size)||!d.materials||Object.keys(d.materials).length!==2||!['ground','motif'].every(k=>Number.isInteger(d.materials[k as 'ground'])&&d.materials[k as 'ground']>0&&d.materials[k as 'ground']<=65535)||d.materials.ground===d.materials.motif)throw Error('无效织入回纹描述或用途映射');
  if(materials){const values=Object.values(d.materials).map(id=>materials[id]);if(values.some(m=>!m||m.category!=='fabric'||m.intensity!==0)||values[0].solid!==values[1].solid)throw Error('回纹必须采用碰撞属性一致的独立零发光织物用途');}
 }
@@ -21,6 +21,7 @@ export function wovenPatternPixels(d:WovenPattern,materials:Record<string,Materi
   let role=0;
   if(d.design==='hui-rug-v1'){const edge=Math.min(px,1.8-px,py,1.2-py);if(edge>=.045&&edge<=.07||edge>=.09&&edge<=.102)role=1;const a=Math.floor((Math.min(px,1.8-px)-.12)/.023),b=Math.floor((Math.min(py,1.2-py)-.12)/.023);if(a>=0&&a<7&&b>=0&&b<7&&spiral[b][a]==='1')role=1;}
   else if(d.design==='hui-towel-v1'){if(py>=.005&&py<=.008||py>=.057&&py<=.060)role=1;for(const center of[.032,.090,.148]){const a=Math.floor((px-center+.021)/.042*7),b=6-Math.floor((py-.0115)/.042*7);if(a>=0&&a<7&&b>=0&&b<7&&spiral[b][a]==='1')role=1;}}
+  else if(d.design==='market-stripe-v1'){if(py>=.008&&py<=.016||py>=.023&&py<=.027||py>=.108&&py<=.113&&Math.floor(px/.014)%2===0)role=1;}
   else for(const center of[.075,.725]){const a=Math.floor((px-center+.045)/.09*7),b=6-Math.floor((py-.015)/.09*7);if(a>=0&&a<7&&b>=0&&b<7&&spiral[b][a]==='1')role=1;}
   rolePixels[y*d.width+x]=role;const m=roles[role],s=maps[role],angle=(m.surfaceRotation??0)*Math.PI/180,c=Math.cos(angle),sn=Math.sin(angle),scale=m.surfaceScale??.5;
   const sx=Math.floor(((c*px+sn*py)/scale%1+1)%1*128),sy=Math.floor(((-sn*px+c*py)/scale%1+1)%1*128),k=(sy*128+sx)*4,o=(y*d.width+x)*4,shade=m.surface&&m.surface!=='none'?s.albedo[k]/255:1;
