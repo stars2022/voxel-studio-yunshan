@@ -1,0 +1,95 @@
+✔ M003 remains opt-in and preserves all 24 published M001/M002 geometries (14958.452647ms)
+✖ M003 real shells are closed oriented and connected with native details and actual solid flags (3082.098934ms)
+✖ M003 actual cups, blade hole, service opening, drains, four pipe bores and cable hole remain open (2788.67944ms)
+✖ M003 public create rebuild rollback and undo preserve foreign purpose IDs (8427.803643ms)
+✔ M003 actual ceramic, glass, mirror, safety steel and screen surfaces use separate purposes (2725.182068ms)
+✔ M003 independent woven towel purposes retain two UV axes and isolate recoloring and undo (1534.649953ms)
+✔ M003 actual GLB includes both lit towel PBR textures with correct pixels purpose IDs and UVs (1061.466888ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 4
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 37437.080421
+
+✖ failing tests:
+
+test at tests/domestic-refinement.test.ts:1:3225
+✖ M003 real shells are closed oriented and connected with native details and actual solid flags (3082.098934ms)
+  AssertionError [ERR_ASSERTION]: life-049 [["0:托盘底板","1:连续木条托面","2:连续木条托面","3:连续木条托面","4:连续木条托面","5:连续木条托面","6:连续木条托面","7:连续木条托面","10:托盘前后攒边","11:托盘前后攒边","12:托盘左右攒边","13:托盘左右攒边","15:铁包角","16:铁包角","17:铁包角","18:铁包角","native-island-0","native-island-1","native-island-2","native-island-3","23:杯底铜圈足","24:杯底铜圈足","25:杯底铜圈足","26:杯底铜圈足","19:厚壁空心陶杯","20:厚壁空心陶杯","21:厚壁空心陶杯","22:厚壁空心陶杯","28:独立回纹竖","29:独立回纹竖","30:独立回纹横","31:独立回纹横","32:回纹内折","33:回纹内竖","34:独立回纹竖","35:独立回纹竖","36:独立回纹横","37:独立回纹横","38:回纹内折","39:回纹内竖","40:独立回纹竖","41:独立回纹竖","42:独立回纹横","43:独立回纹横","44:回纹内折","45:回纹内竖","46:独立回纹竖","47:独立回纹竖","48:独立回纹横","49:独立回纹横","50:回纹内折","51:回纹内竖"],["8:木提梁立足","14:木提梁横握","53:静态闭合壶盖","9:木提梁立足","27:铜盖钮","52:连续青釉空心茶壶","54:开放茶嘴","55:独立回纹竖","56:独立回纹竖","57:独立回纹横","58:独立回纹横","59:回纹内折","60:回纹内竖"]]
+  
+  2 !== 1
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/domestic-refinement.test.ts:36:462)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/domestic-refinement.test.ts:1:4200
+✖ M003 actual cups, blade hole, service opening, drains, four pipe bores and cable hole remain open (2788.67944ms)
+  AssertionError [ERR_ASSERTION]: life-051
+  
+  2 !== 0
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/domestic-refinement.test.ts:43:104)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/domestic-refinement.test.ts:1:5093
+✖ M003 public create rebuild rollback and undo preserve foreign purpose IDs (8427.803643ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      'life-047': {
+        category: 'base',
+        cellSize: 0.005,
+        chunks: {
+  ...
+        },
+  +     version: 3
+  -     version: 1
+      },
+      'life-052': {
+        category: 'base',
+        cellSize: 0.005,
+        chunks: {
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/domestic-refinement.test.ts:50:384)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { 'life-047': { id: 'life-047', name: '杯壶器具', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-048': { id: 'life-048', name: '砧板与切配工具', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-049': { id: 'life-049', name: '茶具壶及杯组合', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-050': { id: 'life-050', name: '洗面台柜体', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-051': { id: 'life-051', name: '洗面盆及龙头', version: 3, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [Array], ports: [Array], source: [Object], meshes: [Array] }, 'life-052': { id: 'life-052', name: '卫生间坐便器', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-053': { id: 'life-053', name: '淋浴/浴缸盆体', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [Array], ports: [Array], source: [Object], meshes: [Array] }, 'life-054': { id: 'life-054', name: '淋浴隔屏', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-055': { id: 'life-055', name: '卫生间壁镜', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-056': { id: 'life-056', name: '给排水接头与阀门', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [Array], ports: [Array], source: [Object], meshes: [Array] }, 'life-057': { id: 'life-057', name: '毛巾挂架', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-064': { id: 'life-064', name: '商铺公共售货柜台', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] } },
+    expected: { 'life-047': { id: 'life-047', name: '杯壶器具', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-048': { id: 'life-048', name: '砧板与切配工具', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-049': { id: 'life-049', name: '茶具壶及杯组合', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-050': { id: 'life-050', name: '洗面台柜体', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-051': { id: 'life-051', name: '洗面盆及龙头', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [Array], ports: [Array], source: [Object], meshes: [Array] }, 'life-052': { id: 'life-052', name: '卫生间坐便器', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-053': { id: 'life-053', name: '淋浴/浴缸盆体', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [Array], ports: [Array], source: [Object], meshes: [Array] }, 'life-054': { id: 'life-054', name: '淋浴隔屏', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-055': { id: 'life-055', name: '卫生间壁镜', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-056': { id: 'life-056', name: '给排水接头与阀门', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [Array], ports: [Array], source: [Object], meshes: [Array] }, 'life-057': { id: 'life-057', name: '毛巾挂架', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] }, 'life-064': { id: 'life-064', name: '商铺公共售货柜台', version: 1, category: 'base', cellSize: 0.005, origin: [Array], chunks: [Object], parts: [], openings: [], ports: [Array], source: [Object], meshes: [Array] } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
