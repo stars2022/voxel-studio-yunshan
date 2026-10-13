@@ -6,7 +6,7 @@
 
 67 张完整参考图册已接入「图册」页，793 条参考逐 ID 对齐。累计 **793 个参考 ID（513 个独立图册母版、3 条共享引用、186 个组合模板、91 类参数变体）**已制作为候选，参考转化余 0 条；人工美术验收为 0。[模型与历史记录](docs/ATLAS-PRODUCTION.md) · [最后一批环境与家具](docs/M066-M067-FINAL-VARIANTS.md)。已从 M001 开始按效果图逐项打磨，并继续分批推送。
 
-**M003 的 12 件杯壶与卫浴器物已交付首轮参考精修**：空心器皿、连续盆壁、四口管路和双毛巾真实织纹；67 项回归与 39 张实际截图。[本轮变化](docs/M003-REFERENCE-REFINEMENT.md) · [实际总览](artifacts/atlas/refinement-20261013041132/M003-materials.png) · [GLB](artifacts/atlas/refinement-20261013041132/exports) · [下载包](artifacts/atlas/refinement-20261013041132/PACKAGE-DOWNLOAD.txt)。累计首轮 3/67 张、36 件，接续 M004；最终效果图验收另计。[M001](docs/M001-REFERENCE-REFINEMENT.md) · [M002](docs/M002-REFERENCE-REFINEMENT.md)。
+**M004 的 12 件商铺与物流配件已交付首轮参考精修**：五层货架、六抽屉双开格、连续布棚与真实织边、四向叉孔托盘和独立棘轮绑带；75 项回归与 39 张实际截图。[本轮变化](docs/M004-REFERENCE-REFINEMENT.md) · [实际总览](artifacts/atlas/refinement-20261013062511/M004-materials.png) · [GLB](artifacts/atlas/refinement-20261013062511/exports) · [下载包](artifacts/atlas/refinement-20261013062511/PACKAGE-DOWNLOAD.txt)。累计首轮 4/67 张、48 件，接续 M005；最终效果图验收另计。[M001](docs/M001-REFERENCE-REFINEMENT.md) · [M002](docs/M002-REFERENCE-REFINEMENT.md) · [M003](docs/M003-REFERENCE-REFINEMENT.md)。
 
 材质按用途与物理类别分配独立 ID，后期统一更换外观。新配方禁止按颜色借用类别；外观包不能改变类别或碰撞设置。[分类约定与当前复核范围](docs/MATERIAL-ROLES.md) · [显微镜真实前后对照](artifacts/microscope-study/comparison.png)。
 
