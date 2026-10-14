@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "run": "refinement-20261014061255",
+  "referenceSheet": "M008",
+  "referencesRefined": 12,
+  "newIndependentMasters": 0,
+  "referenceConversionStill": 793,
+  "humanArtAccepted": 0,
+  "nativeDocuments": 13,
+  "retainedHistoricalNativeDocuments": 12,
+  "newActualGLBsRead": 12,
+  "retainedHistoricalGLBsRead": 12,
+  "finalExportFilesHashed": 105,
+  "retainedExportFilesHashed": 48,
+  "newTexturePNGs": 33,
+  "triangles": 85172,
+  "nativeMinimumCells": 1243,
+  "closedOrientedComponents": 1536,
+  "contactGroups": "10 single-group masters; parallel-rail kit two groups and table-and-six-chair kit seven groups",
+  "publicCreates": 12,
+  "publicRebuildsAndUndo": 12,
+  "atlasButtons": 12,
+  "capturedAndInspectedViews": 39,
+  "sameCameraPairs": 12,
+  "maxCameraError": 6.217248937900877e-15,
+  "regressionTests": 69,
+  "regressionScope": {
+    "uniquePassingChecks": 69,
+    "unchangedSuiteChecksRetained": 60,
+    "M008CurrentContourChecks": 9,
+    "M008ContourRawPasses": 8,
+    "M008CornerQueryRetestPasses": 1,
+    "rawFiles": [
+      {
+        "file": "regression-before-flange.txt",
+        "sha256": "69e880d47503007995777ab4bace4661fca0ccf3de45f1d053dfc8a27bc06afd"
+      },
+      {
+        "file": "regression-after-contour.txt",
+        "sha256": "d9f79f61e6e5133068b5caa46223687f7423c9d884a48c034e4c94735df8ccaa"
+      },
+      {
+        "file": "regression-corner-query.txt",
+        "sha256": "c59c1f166cedd1f46a19b1cb4f0d6bf8e612be9eb797e83dd59ca8f39eea6e51"
+      }
+    ],
+    "queryCorrection": "The first y=1.10 corner query began inside an existing plastic dispenser; its current y=.970 ray starts below that dispenser and above the basin rim. Geometry and expected ceramic role were retained.",
+    "geometryChange": "Only M008 basin flange profile changed; all nine M008 behaviors and the 84 previously published geometry hashes were checked with the new profile."
+  },
+  "build": "passed",
+  "sourceSnapshotUnchanged": true,
+  "loadedClientBundlesMatchBuiltFiles": true,
+  "unchangedOtherReferenceEntries": 781,
+  "presentation": {
+    "studio": true,
+    "referenceLighting": true,
+    "ao": false,
+    "bloom": false,
+    "practicals": false
+  },
+  "limits": [
+    "First reference refinement pass; final art acceptance remains separate.",
+    "Static medical and civic fixtures only; no infusion, water flow, sterilization, diagnosis, voting, identity, records, network, power or articulated movement binding.",
+    "LIFE-126 is one parallel-rail kit with two separate frames; LIFE-141 one table-and-six-chair kit with seven separate forms; repeats are not new independent assets.",
+    "Notice title and cards, portrait and check mark, fluid colors and device labels are static author illustrations; optical faces have zero emissive intensity."
+  ]
+}

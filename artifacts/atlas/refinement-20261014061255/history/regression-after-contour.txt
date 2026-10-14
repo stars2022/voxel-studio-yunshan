@@ -1,0 +1,40 @@
+✔ M008 remains opt-in and preserves 84 published refinement geometries (43179.928702ms)
+✔ M008 actual arrays minimum voxels closure attachment and declared 2 and 7 groups are valid (16976.740014ms)
+✔ M008 soft bag inner walls fluids real eyes and hollow drip tubes remain separate (1448.949284ms)
+✔ M008 stretcher grip loops and finite route between separate recovery rails stay open (1524.445278ms)
+✖ M008 full wash assembly basin samples first hit ceramic and drain clears the real cabinet (12362.302742ms)
+✔ M008 full ballot slot reaches chamber floor and drawer and case openings are genuine (3890.969402ms)
+✔ M008 material purposes and static author artwork preserve original scopes and zero optical emission (15749.992319ms)
+✔ M008 foreign purpose IDs public creation rebuild undo and invalid batches stay atomic (31248.9148ms)
+✔ M008 actual GLB bag alpha and lit notice portrait PBR textures preserve isolated recolor undo (20012.736983ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 8
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 148279.521183
+
+✖ failing tests:
+
+test at tests/civic-refinement.test.ts:1:6082
+✖ M008 full wash assembly basin samples first hit ceramic and drain clears the real cabinet (12362.302742ms)
+  AssertionError [ERR_ASSERTION]: inner flange corners must not expose cabinet wood
+  
+  58 !== 59
+  
+      at TestContext.<anonymous> (/workspace/voxel-studio-yunshan/tests/civic-refinement.test.ts:48:476)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 58,
+    expected: 59,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,23 @@
+{
+  "uniquePassingChecks": 69,
+  "unchangedSuiteChecksRetained": 60,
+  "M008CurrentContourChecks": 9,
+  "M008ContourRawPasses": 8,
+  "M008CornerQueryRetestPasses": 1,
+  "rawFiles": [
+    {
+      "file": "regression-before-flange.txt",
+      "sha256": "69e880d47503007995777ab4bace4661fca0ccf3de45f1d053dfc8a27bc06afd"
+    },
+    {
+      "file": "regression-after-contour.txt",
+      "sha256": "d9f79f61e6e5133068b5caa46223687f7423c9d884a48c034e4c94735df8ccaa"
+    },
+    {
+      "file": "regression-corner-query.txt",
+      "sha256": "c59c1f166cedd1f46a19b1cb4f0d6bf8e612be9eb797e83dd59ca8f39eea6e51"
+    }
+  ],
+  "queryCorrection": "The first y=1.10 corner query began inside an existing plastic dispenser; its current y=.970 ray starts below that dispenser and above the basin rim. Geometry and expected ceramic role were retained.",
+  "geometryChange": "Only M008 basin flange profile changed; all nine M008 behaviors and the 84 previously published geometry hashes were checked with the new profile."
+}
