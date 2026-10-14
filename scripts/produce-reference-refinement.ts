@@ -1,3 +1,4 @@
+import {civicRefinementIds} from '../src/production/civic-refinement';
 import {researchRefinementIds} from '../src/production/research-refinement';
 import {commerceRefinementIds} from '../src/production/commerce-refinement';
 import {heldContactGroups} from './lib/held-audit';
@@ -25,8 +26,8 @@ import {exportProject} from '../src/export/exporter';
 import {outfitHash as hash} from '../src/production/outfit-components';
 import {layoutAtlasGallery} from '../src/production/gallery-layout';
 import type {Project,Command} from '../src/core/types';
-const sheet=process.argv[2]??'M001';assert.ok(['M001','M002','M003','M004','M005','M006','M007'].includes(sheet),'Expected M001–M007');
-const referenceRefinementIds=sheet==='M001'?m001RefinementIds:sheet==='M002'?kitchenRefinementIds:sheet==='M003'?domesticRefinementIds:sheet==='M004'?marketRefinementIds:sheet==='M005'?workshopRefinementIds:sheet==='M006'?commerceRefinementIds:researchRefinementIds;
+const sheet=process.argv[2]??'M001';assert.ok(['M001','M002','M003','M004','M005','M006','M007','M008'].includes(sheet),'Expected M001–M008');
+const referenceRefinementIds=sheet==='M001'?m001RefinementIds:sheet==='M002'?kitchenRefinementIds:sheet==='M003'?domesticRefinementIds:sheet==='M004'?marketRefinementIds:sheet==='M005'?workshopRefinementIds:sheet==='M006'?commerceRefinementIds:sheet==='M007'?researchRefinementIds:civicRefinementIds;
 await mkdir('work/'+sheet.toLowerCase()+'-refinement',{recursive:true});
 const run='refinement-'+new Date().toISOString().replace(/\D/g,'').slice(0,14),root='artifacts/atlas/'+run;
 await mkdir(root+'/baselines',{recursive:true});
